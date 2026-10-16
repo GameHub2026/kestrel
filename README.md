@@ -30,4 +30,16 @@ Dann <http://localhost:4321> öffnen. (`node_modules` liegt als `node_modules.no
 
 ## Veröffentlichen
 
-Jeder `git push` auf `main` baut die Seite bei Cloudflare Pages neu (Build-Befehl `npm run build`, Ausgabe `dist`). Öffentlich, ohne Cloudflare Access.
+Repo: <https://github.com/GameHub2026/kestrel> (öffentlich: auch Entwürfe in `Texte/` sind dort lesbar).
+Jeder `git push` auf `main` baut die Seite bei Cloudflare Pages neu. Öffentlich, **ohne** Cloudflare Access.
+
+### Einmalig: Cloudflare Pages verbinden
+
+1. <https://dash.cloudflare.com> → **Workers & Pages** → **Erstellen** → Reiter **Pages** → **Vorhandenes Git-Repository importieren**.
+2. GitHub wählen. Falls `kestrel` nicht in der Liste steht: **GitHub-Berechtigungen konfigurieren** und dem Cloudflare-App-Zugriff das Repo `GameHub2026/kestrel` hinzufügen.
+3. Repo `kestrel` auswählen → **Einrichtung beginnen**.
+4. Projektname: `kestrel` (ergibt `kestrel.pages.dev`). Produktionszweig: `main`.
+5. Framework-Voreinstellung: **Astro**. Build-Befehl: `npm run build`. Ausgabeverzeichnis: `dist`. (Die Node-Version kommt aus `.node-version`.)
+6. **Speichern und bereitstellen.** Kein Access/Zero-Trust einrichten.
+
+Bekommt das Projekt eine andere Adresse als `kestrel.pages.dev` (Name vergeben), in `astro.config.mjs` den Wert `site` anpassen.
