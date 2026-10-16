@@ -1,0 +1,129 @@
+{
+  "title": "Kestrel: Wie soll deine Seite aussehen?",
+  "question": "Gewürfelt wurde „Die Abrisskarte“. Behalten, eine Alternative nehmen oder neu würfeln.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Die Abrisskarte",
+      "kicker": "THE ROLL",
+      "lineage": "Eintrittskarten-Rollen, Kinokarten, Abrissblöcke, Sammelalben",
+      "thesis": "Jeder Text ist eine Eintrittskarte, die du behalten hast: Abriss, Seriennummer, Datum, Wertung.",
+      "palette": ["#c8342b", "#1f5fa8", "#e8b21d", "#121212", "#f2efe8"],
+      "materials": ["Perforation und Abrisskante", "Rollen-Kartenkarton in kräftigen Farben", "Nummernstempel"],
+      "viewport": "Oben die neueste Karte groß und schräg angerissen, Titel und Wertung in fetten Ziffern; darunter die nächsten Karten als Abriss-Stapel.",
+      "risk": "Wird zur Bastelei, wenn Perforation und Farben zögerlich oder überall gleichzeitig eingesetzt werden.",
+      "raised": [
+        { "from": "Schneidetisch", "raise": "Der Stand ist eine Markierung, keine Farbe: Abspann = gelocht, 100 % = Doppellochung, Abgebrochen = eingerissen, Läuft noch = offener Abriss." },
+        { "from": "Monochrome Produktseite", "raise": "Jede Wertungszahl steht immer mit ihrem festen Satz aus „Wie ich werte“, nie allein." },
+        { "from": "Wolken-Steinbruch", "raise": "Volle Materialtreue: Seriennummern, Datum und Spielzeit in Stempel-Ziffern, überall dieselbe Karten-Grammatik bis zu Filtern und Links." }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Die Programmzeitschrift",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "TV Spielfilm, Hörzu, TV Movie: das Fernsehprogramm-Heft",
+      "thesis": "Kestrel als dein persönliches Programmheft: dichte Spalten, Tipp-Kästen, Daumen-Urteil, Medienfarben wie Senderleisten.",
+      "palette": ["#e30613", "#ffd200", "#0a0a0a", "#ffffff", "#2a6fb0"],
+      "materials": ["dünnes Zeitschriftenpapier", "Farbleisten pro Medium", "Tipp-Stempel"],
+      "viewport": "Wie eine Programmseite: links Zeitleiste mit Datum, rechts die Texte als Einträge, der beste als großer „Tipp des Monats“ mit Wertungskasten.",
+      "risk": "Sehr vertraut, das liegt nahe bei vielen Medienseiten; kann nach Zeitschriftenkopie aussehen, wenn sie nicht konsequent persönlich bleibt."
+    },
+    {
+      "id": "challenger-belichtung",
+      "label": "Belichtungsprotokoll",
+      "verdict": "competitive",
+      "lineage": "Dunkelkammer: Zonen-Graukeil und Protokollkarte",
+      "thesis": "Die Wertung als Graukeil: 1–10 sind Belichtungsstufen, jeder Text ist ein Protokollblatt.",
+      "palette": ["#0e0e0e", "#5a5a5a", "#bdbdbd", "#f4f4f4", "#d0237f"],
+      "materials": ["Transparentpapier-Blätter", "Graukeil mit elf Stufen", "Schraffur"],
+      "viewport": "Ein großer Graukeil quer über die Seite, die neueste Wertung leuchtet auf ihrer Stufe, darüber das Protokoll.",
+      "case": "Die Skala als Graukeil macht die Wertung sehr klar; Leser aus Google erkennen die Dunkelkammer aber nicht wieder.",
+      "risk": "Wirkt kühl und technisch, kann steif werden.",
+      "hero": "https://impeccable.style/worlds/cards/operate-b-exposure-record-zone-sheets-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/operate-b-exposure-record-zone-sheets.webp"
+    },
+    {
+      "id": "challenger-lexikon",
+      "label": "Lexikonseite",
+      "verdict": "competitive",
+      "lineage": "Konversationslexikon des 19. Jahrhunderts",
+      "thesis": "Kestrel als dein Nachschlagewerk: Stichwörter oben zeigen, welchen Zeitraum du gerade liest; Bilder nur auf eingerahmten Tafeln.",
+      "palette": ["#141414", "#efe7d6", "#c23b22", "#1d4e9e", "#2f7a4a"],
+      "materials": ["ungestrichenes Papier", "farbige Bildtafeln", "Randspalte"],
+      "viewport": "Eine Lexikon-Spalte mit dem neuesten Eintrag, oben die Kolumnentitel „Okt. 2026 – Aug. 2026“, rechts Randspalte mit Jahr-Daumenregister.",
+      "case": "Ideal fürs Lesen und für das Archiv nach Jahren; fühlt sich aber schnell zu seriös an.",
+      "risk": "Du wolltest es ausdrücklich nicht zu steif: genau hier liegt die Gefahr.",
+      "hero": "https://impeccable.style/worlds/cards/rw-lexicon-shoulder-and-plate-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/rw-lexicon-shoulder-and-plate.webp"
+    },
+    {
+      "id": "challenger-band",
+      "label": "Das rote Band",
+      "verdict": "competitive",
+      "lineage": "Museums-Provenienz: die Lebensgeschichte eines Objekts",
+      "thesis": "Ein rotes Band läuft durch jeden Text: Erstwertung, dann jeder Nachtrag als Knick im Band, über die Jahre.",
+      "palette": ["#e6dcc6", "#b3202a", "#8a8a8a", "#2b2b2b"],
+      "materials": ["Seidenband", "Archivkarton", "verblasste Stempel"],
+      "viewport": "Senkrechtes rotes Band links, daran die Texte nach Datum aufgereiht; Nachträge als Knicke mit Datum.",
+      "case": "Zeigt dein Nachtrags-Prinzip so ehrlich wie keine andere Richtung; Leser kennen die Museumsform aber kaum.",
+      "risk": "Kann museal und still wirken, wenige Texte sehen am Anfang dünn aus.",
+      "hero": "https://impeccable.style/worlds/cards/exhibition-museum-curation-provenance-ribbon-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/exhibition-museum-curation-provenance-ribbon.webp"
+    },
+    {
+      "id": "challenger-schneidetisch",
+      "label": "Schneidetisch",
+      "verdict": "declined",
+      "lineage": "Filmschnitt-Arbeitskopie",
+      "thesis": "Texte als Filmbilder auf einer gelochten Schiene.",
+      "palette": ["#0a0a0a", "#ff6a13", "#ffffff"],
+      "materials": ["Filmkorn", "Klebeband-Fähnchen"],
+      "viewport": "Eine Filmschiene quer, Texte als Einzelbilder.",
+      "case": "Nur für Film schlüssig, Spiele und Serien fallen heraus.",
+      "risk": "Grenzt Spiele aus.",
+      "kept": "Stand als Markierung statt Farbe.",
+      "hero": "https://impeccable.style/worlds/cards/operate-a-cutting-bench-select-rail-hero.webp"
+    },
+    {
+      "id": "challenger-monochrom",
+      "label": "Monochrome Produktseite",
+      "verdict": "declined",
+      "lineage": "Software-Marketing",
+      "thesis": "Neutralgrau, ein Akzent, jede Aussage mit Beleg.",
+      "palette": ["#fafafa", "#111111", "#3b5bdb"],
+      "materials": ["Raster", "Screenshots"],
+      "viewport": "Aussage und Beleg im Wechsel.",
+      "case": "Genau das Beliebige, das du nicht willst.",
+      "risk": "Austauschbar.",
+      "kept": "Jede Zahl mit ihrem Beleg-Satz.",
+      "hero": "https://impeccable.style/worlds/cards/digital-design-canon-monochrome-product-marketing-hero.webp"
+    },
+    {
+      "id": "challenger-wolken",
+      "label": "Wolken-Steinbruch",
+      "verdict": "declined",
+      "lineage": "surreale Traumwelten",
+      "thesis": "Texte als geschnittene Wolkenblöcke.",
+      "palette": ["#f5f7fa", "#6fa8dc", "#5b6470", "#c0c6cc"],
+      "materials": ["Wolkenmasse", "Schablonenschrift"],
+      "viewport": "Gestapelte Blöcke mit blauen Lücken.",
+      "case": "Hat mit Spielen, Filmen und Serien nichts zu tun.",
+      "risk": "Verspielt und schwer lesbar.",
+      "kept": "Volle Materialtreue bis ins Detail.",
+      "hero": "https://impeccable.style/worlds/cards/dream-surreal-impossible-worlds-cloud-quarry-hero.webp"
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "Der Standard (wie Letterboxd/Trakt)",
+    "thesis": "Dunkle Seite, Poster-Raster, Wertung als farbiges Abzeichen, sauber gemacht.",
+    "palette": ["#14181c", "#2c3440", "#00c030", "#ffffff"],
+    "materials": ["Poster-Kacheln", "dunkler Grund"],
+    "viewport": "Raster mit Postern der neuesten Texte, Wertung unten auf jeder Kachel.",
+    "risk": "Sieht aus wie Letterboxd und Co., also eher beliebig."
+  },
+  "steer": true
+}

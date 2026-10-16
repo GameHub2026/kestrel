@@ -1,0 +1,63 @@
+---
+import Base from '../layouts/Base.astro';
+import Ticket from '../components/Ticket.astro';
+import { alleTexte } from '../lib';
+
+const texte = await alleTexte();
+const [neuester, ...rest] = texte;
+const weitere = rest.slice(0, 6);
+---
+<Base>
+  <section class="intro wrap">
+    <h1>Spiele, Filme und Serien.<br />Behalten, bewertet, nachgetragen.</h1>
+    <p>Ich bin Kevin. Hier landet alles, was ich gespielt oder geschaut habe, mit einer Wertung von 1 bis 10. <a href="/wie-ich-werte/">Wie ich werte</a> gilt für alle drei Medien gleich. Alte Wertungen bleiben stehen; wenn ich etwas später anders sehe, kommt ein datierter Nachtrag dazu.</p>
+  </section>
+
+  {neuester ? (
+    <>
+      <section class="lead wrap" aria-label="Neuester Text">
+        <div class="lead-card">
+          <Ticket text={neuester} size="hero" />
+        </div>
+      </section>
+      {weitere.length > 0 && (
+        <section class="stack wrap" aria-labelledby="stack-h">
+          <h2 id="stack-h" class="stack-h">Davor</h2>
+          <ol class="stack-list">
+            {weitere.map((t) => <li><Ticket text={t} headingLevel="h3" /></li>)}
+          </ol>
+        </section>
+      )}
+      <p class="more wrap"><a href="/texte/">Alle {texte.length} Texte ansehen</a></p>
+    </>
+  ) : (
+    <p class="empty wrap">Noch keine Karten im Album. Der erste Text kommt bald.</p>
+  )}
+</Base>
+
+<style>
+  .intro { padding-top: clamp(28px, 6vw, 72px); padding-bottom: clamp(28px, 4vw, 48px); display: grid; gap: 20px; }
+  .intro h1 {
+    font-family: var(--display); font-weight: 900; text-transform: uppercase; margin: 0;
+    font-size: clamp(2.6rem, 7.5vw, 5.75rem); line-height: 0.88; letter-spacing: -0.005em; text-wrap: balance; max-width: 16ch;
+  }
+  .intro p { margin: 0; max-width: 58ch; font-size: 1.125rem; color: var(--ink-2); }
+  .intro p a { color: var(--ink); }
+
+  .lead-card { transform: rotate(-1.2deg); transform-origin: 30% 50%; margin: 8px 0 0; }
+  @media (max-width: 720px) { .lead-card { transform: rotate(-0.8deg); } }
+
+  .stack { margin-top: clamp(56px, 8vw, 96px); }
+  .stack-h {
+    font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em;
+    font-size: 1.25rem; margin: 0 0 18px; display: flex; align-items: center; gap: 14px;
+  }
+  .stack-h::after { content: ''; flex: 1; border-top: 2px dashed var(--rule); }
+  .stack-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  /* Stapel: jede Karte minimal versetzt, wie aus der Rolle gerissen */
+  .stack-list li:nth-child(odd) { transform: rotate(0.35deg); }
+  .stack-list li:nth-child(even) { transform: rotate(-0.35deg) translateX(6px); }
+
+  .more { margin-top: 32px; font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; font-size: 1.3rem; }
+  .empty { padding: 48px 0; font-size: 1.2rem; }
+</style>

@@ -1,0 +1,110 @@
+@import '@fontsource-variable/big-shoulders-display';
+@import '@fontsource-variable/source-serif-4';
+@import '@fontsource-variable/source-serif-4/wght-italic.css';
+@import '@fontsource-variable/red-hat-mono';
+
+/* Die Abrisskarte: jeder Text ist eine Eintrittskarte. Medienfarben = Kartenkarton. */
+:root {
+  --film: #c8342b;
+  --serie: #1f5fa8;
+  --spiel: #e8b21d;
+  --film-ink: #ffffff;
+  --serie-ink: #ffffff;
+  --spiel-ink: #17140c;
+
+  --ground: #dcdfe3;        /* Kassentresen, kühles Grau */
+  --ground-2: #cdd1d6;
+  --ink: #121417;
+  --ink-2: #3f454d;
+  --paper: #f7f8f9;         /* Rückseite / Lesefläche */
+  --rule: #121417;
+  --stamp: #7a1f8f;         /* Entwertungsstempel-Violett */
+  --focus: #1f5fa8;
+  --shadow: 0 1px 1px rgb(18 20 23 / 0.10), 0 10px 24px -10px rgb(18 20 23 / 0.35);
+  --shadow-lift: 0 2px 2px rgb(18 20 23 / 0.10), 0 22px 40px -14px rgb(18 20 23 / 0.45);
+
+  --display: 'Big Shoulders Display Variable', 'Arial Narrow', sans-serif;
+  --text: 'Source Serif 4 Variable', Georgia, serif;
+  --mono: 'Red Hat Mono Variable', ui-monospace, monospace;
+
+  --gutter: clamp(16px, 4vw, 48px);
+  --measure: 68ch;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --ground: #141619;
+    --ground-2: #1d2024;
+    --ink: #eceef0;
+    --ink-2: #a9b0b8;
+    --paper: #1b1e22;
+    --rule: #eceef0;
+    --stamp: #c98ad8;
+    --focus: #8fb8ee;
+    --shadow: 0 1px 1px rgb(0 0 0 / 0.4), 0 12px 28px -10px rgb(0 0 0 / 0.7);
+    --shadow-lift: 0 2px 2px rgb(0 0 0 / 0.4), 0 24px 44px -12px rgb(0 0 0 / 0.8);
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --ground: #141619;
+  --ground-2: #1d2024;
+  --ink: #eceef0;
+  --ink-2: #a9b0b8;
+  --paper: #1b1e22;
+  --rule: #eceef0;
+  --stamp: #c98ad8;
+  --focus: #8fb8ee;
+  --shadow: 0 1px 1px rgb(0 0 0 / 0.4), 0 12px 28px -10px rgb(0 0 0 / 0.7);
+  --shadow-lift: 0 2px 2px rgb(0 0 0 / 0.4), 0 24px 44px -12px rgb(0 0 0 / 0.8);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 400 1.0625rem/1.6 var(--text);
+  font-optical-sizing: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main { flex: 1; }
+::selection { background: var(--spiel); color: var(--spiel-ink); }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+a { color: inherit; text-decoration-thickness: 1.5px; text-underline-offset: 0.2em; }
+a:hover { text-decoration-thickness: 3px; }
+img { max-width: 100%; height: auto; display: block; }
+html { scrollbar-color: var(--ink-2) var(--ground); }
+
+.wrap { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 var(--gutter); }
+
+/* Medium setzt die Kartenfarbe */
+[data-medium='film']  { --card: var(--film);  --card-ink: var(--film-ink); }
+[data-medium='serie'] { --card: var(--serie); --card-ink: var(--serie-ink); }
+[data-medium='spiel'] { --card: var(--spiel); --card-ink: var(--spiel-ink); }
+
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
+.display { font-family: var(--display); font-weight: 800; text-transform: uppercase; line-height: 0.9; letter-spacing: -0.01em; }
+
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); white-space: nowrap;
+}
+
+/* Seitentitel im Kartenstil */
+.page-head { padding-top: clamp(32px, 6vw, 72px); padding-bottom: clamp(20px, 3vw, 32px); }
+.page-head h1 {
+  font-family: var(--display); font-weight: 900; text-transform: uppercase;
+  font-size: clamp(3rem, 10vw, 6rem); line-height: 0.86; margin: 0; letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+.page-head p { max-width: 52ch; margin: 16px 0 0; color: var(--ink-2); font-size: 1.125rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}

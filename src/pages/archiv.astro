@@ -1,0 +1,94 @@
+---
+import Base from '../layouts/Base.astro';
+import { MEDIUM, TEXTFORM, SKALA } from '../wertung';
+import { alleTexte, jahr, monat, nummer, url, type Text } from '../lib';
+
+const texte = await alleTexte();
+const jahre = new Map<number, Map<string, Text[]>>();
+for (const t of texte) {
+  const j = jahr(t.data.datum);
+  const m = monat(t.data.datum);
+  if (!jahre.has(j)) jahre.set(j, new Map());
+  const ms = jahre.get(j)!;
+  if (!ms.has(m)) ms.set(m, []);
+  ms.get(m)!.push(t);
+}
+const zaehle = (liste: Text[], medium: string) => liste.filter((t) => t.data.medium === medium).length;
+const plural = { spiel: ['Spiel', 'Spiele'], film: ['Film', 'Filme'], serie: ['Serie', 'Serien'] } as const;
+---
+<Base title="Archiv" description="Alle Texte nach Jahr und Monat, als Rückblick: was Kevin wann gespielt und geschaut hat.">
+  <header class="page-head wrap">
+    <h1>Archiv</h1>
+    <p>Jahr für Jahr, Monat für Monat. Jede Karte steht dort, wo ich sie geschrieben habe.</p>
+  </header>
+
+  {[...jahre].map(([j, monate]) => {
+    const alle = [...monate.values()].flat();
+    const teile = (['spiel', 'film', 'serie'] as const)
+      .map((m) => [m, zaehle(alle, m)] as const)
+      .filter(([, n]) => n > 0)
+      .map(([m, n]) => `${n} ${plural[m][n === 1 ? 0 : 1]}`);
+    return (
+      <section class="year wrap" aria-labelledby={`j${j}`}>
+        <header class="year-head">
+          <h2 id={`j${j}`} class="year-num">{j}</h2>
+          <p class="year-sum mono">{alle.length} {alle.length === 1 ? 'Text' : 'Texte'} · {teile.join(' · ')}</p>
+        </header>
+        {[...monate].map(([m, liste]) => (
+          <div class="month">
+            <h3 class="month-name">{m}</h3>
+            <ol class="stubs">
+              {liste.map((t) => (
+                <li data-medium={t.data.medium}>
+                  <a href={url(t)} class="stub-row">
+                    <span class="s-nr mono">{nummer(t.nr)}</span>
+                    <span class="s-title">{t.data.titel}</span>
+                    <span class="s-kind mono">{MEDIUM[t.data.medium]} · {TEXTFORM[t.data.textform]}</span>
+                    <span class="s-say">{SKALA[t.data.wertung]}</span>
+                    <span class="s-score"><span class="display">{t.data.wertung}</span><span class="visually-hidden"> von 10</span></span>
+                  </a>
+                </li>
+              ))}
+            </ol>
+          </div>
+        ))}
+      </section>
+    );
+  })}
+  {texte.length === 0 && <p class="wrap">Das Album ist noch leer.</p>}
+</Base>
+
+<style>
+  .year { margin-bottom: clamp(48px, 8vw, 96px); }
+  .year-head { display: flex; align-items: baseline; gap: 12px 28px; flex-wrap: wrap; border-bottom: 2px dashed var(--rule); padding-bottom: 12px; margin-bottom: 20px; }
+  .year-num { font-family: var(--display); font-weight: 900; font-size: clamp(4.5rem, 16vw, 9rem); line-height: 0.8; margin: 0; font-variant-numeric: tabular-nums; }
+  .year-sum { margin: 0; color: var(--ink-2); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; }
+
+  .month { display: grid; grid-template-columns: 9rem 1fr; gap: 16px; padding: 14px 0; }
+  .month + .month { border-top: 1px dashed color-mix(in srgb, var(--ink) 25%, transparent); }
+  .month-name { margin: 6px 0 0; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.3rem; letter-spacing: 0.04em; }
+  .stubs { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+
+  .stub-row {
+    display: grid; grid-template-columns: 5.2rem 1fr auto minmax(8rem, 12rem) 3.2rem; align-items: center; gap: 14px;
+    background: var(--card); color: var(--card-ink); text-decoration: none; border-radius: 4px;
+    padding: 8px 12px 8px 0; box-shadow: var(--shadow);
+    transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .stub-row:hover { transform: translateX(4px); box-shadow: var(--shadow-lift); }
+  .s-nr { font-size: 0.72rem; font-weight: 700; padding: 0 10px; border-right: 2px dashed color-mix(in srgb, var(--card-ink) 55%, transparent); align-self: stretch; display: grid; place-items: center; }
+  .s-title { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.3rem; line-height: 1; min-width: 0; }
+  .s-kind { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+  .s-say { font-size: 0.8rem; line-height: 1.2; font-weight: 600; text-align: right; }
+  .s-score { text-align: right; }
+  .s-score .display { font-size: 2rem; line-height: 0.9; }
+
+  @media (max-width: 720px) {
+    .month { grid-template-columns: 1fr; gap: 8px; }
+    .stub-row { grid-template-columns: 4.4rem 1fr 2.6rem; row-gap: 3px; }
+    .s-kind { grid-column: 2; grid-row: 2; }
+    .s-say { grid-column: 2; grid-row: 3; text-align: left; }
+    .s-score { grid-column: 3; grid-row: 1 / 4; }
+    .s-nr { grid-row: 1 / 4; }
+  }
+</style>

@@ -1,0 +1,109 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description = 'Kevin schreibt über Spiele, Filme und Serien. Eine Skala von 1 bis 10 für alles, alte Wertungen bleiben stehen, Nachträge kommen dazu.' } = Astro.props;
+const fullTitle = title ? `${title} · Kestrel` : 'Kestrel · Spiele, Filme und Serien von Kevin';
+const path = Astro.url.pathname;
+const nav = [
+  { href: '/texte/', label: 'Alle Texte' },
+  { href: '/archiv/', label: 'Archiv' },
+  { href: '/wie-ich-werte/', label: 'Wie ich werte' },
+];
+const canonical = new URL(path, Astro.site);
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="de_DE" />
+    <meta name="theme-color" content="#dcdfe3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141619" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+  </head>
+  <body>
+    <Fragment set:html={`<!--
+THESIS: Jeder Text ist eine Eintrittskarte, die Kevin behalten hat. Abgelehnt: Poster-Raster mit Wertungsabzeichen (Letterboxd-Standard) und Gaming-Score-Kästen.
+OWN-WORLD: Rollen-Kartenkarton in Medienfarben (Film #c8342b, Serie #1f5fa8, Spiel #e8b21d) auf kühlem Tresengrau; Perforation, Abriss-Abschnitt mit Seriennummer, Lochung als Stand-Marke, violette Entwertungsstempel für Nachträge. Big Shoulders Display, Source Serif 4, Red Hat Mono für Nummern.
+STORY: Ein Suchender sieht in einer Sekunde Titel, Wertung mit festem Satz, Fazit und Für wen; liest weiter; findet über Archiv und Skala zurück. Kevin blättert Jahre wie ein Kartenalbum.
+FIRST VIEWPORT: Startseite: Wortmarke-Abriss links oben, Nav rechts; neueste Karte groß, leicht schräg, Wertungsziffer ~9rem rechts im Karteninnern, Abriss links mit Nº; darunter Stapel der nächsten Karten. Einzeltext: Karte volle Breite oben, Abriss reißt einmalig ab, Steckbrief auf der Rückseite, dann Text.
+FORM: Abrisskarte, Platz 6 meiner geordneten Liste, Seed aaafd604.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->`} />
+    <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+    <header class="site-head wrap">
+      <a class="wordmark" href="/" aria-label="Kestrel, Startseite">
+        <span class="wordmark-stub mono" aria-hidden="true">Nº</span>
+        <span class="wordmark-name">Kestrel</span>
+      </a>
+      <nav aria-label="Hauptnavigation">
+        <ul>
+          {nav.map((n) => (
+            <li><a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a></li>
+          ))}
+        </ul>
+      </nav>
+    </header>
+    <main id="inhalt">
+      <slot />
+    </main>
+    <footer class="wrap"><div class="site-foot">
+      <p>Kestrel ist eine private Sammlung von Kevin. Texte über Spiele, Filme und Serien, eine Skala für alles. Alte Wertungen werden nie geändert, nur durch Nachträge ergänzt.</p>
+      <p class="mono"><a href="/wie-ich-werte/">Wie ich werte</a> · <a href="/archiv/">Archiv</a></p>
+    </div></footer>
+  </body>
+</html>
+
+<style>
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--ground); padding: 8px 12px; z-index: 10; }
+  .skip:focus { left: 8px; }
+
+  .site-head {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+    padding-top: 20px; padding-bottom: 20px;
+  }
+  .wordmark {
+    display: inline-flex; align-items: stretch; text-decoration: none; color: var(--film-ink);
+    filter: drop-shadow(0 6px 10px rgb(18 20 23 / 0.25));
+  }
+  .wordmark-stub, .wordmark-name { background: var(--film); }
+  .wordmark-stub {
+    display: grid; place-items: center; padding: 0 10px; font-size: 0.8rem; font-weight: 600;
+    border-radius: 4px 0 0 4px;
+    border-right: 2px dashed rgb(255 255 255 / 0.6);
+  }
+  .wordmark-name {
+    font-family: var(--display); font-weight: 900; text-transform: uppercase;
+    font-size: 1.75rem; line-height: 1; padding: 8px 14px 6px 10px; border-radius: 0 4px 4px 0;
+    letter-spacing: 0.02em;
+  }
+  .wordmark:hover .wordmark-name, .wordmark:hover .wordmark-stub { background: #b02c24; }
+
+  nav ul { list-style: none; display: flex; gap: 4px 20px; margin: 0; padding: 0; flex-wrap: wrap; }
+  nav a {
+    font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+    font-size: 1.125rem; text-decoration: none; padding: 6px 0; display: inline-block;
+    border-bottom: 2px solid transparent;
+  }
+  nav a:hover { border-bottom-color: currentColor; }
+  nav a[aria-current='page'] { border-bottom: 2px dashed currentColor; }
+
+  .site-foot {
+    margin-top: clamp(64px, 10vw, 120px); padding-top: 28px; padding-bottom: 40px;
+    border-top: 2px dashed var(--rule); color: var(--ink-2); font-size: 0.95rem;
+    display: flex; justify-content: space-between; gap: 16px 40px; flex-wrap: wrap;
+  }
+  .site-foot p { margin: 0; max-width: 60ch; }
+  .site-foot .mono { font-size: 0.85rem; }
+</style>
