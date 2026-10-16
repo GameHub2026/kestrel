@@ -18,8 +18,6 @@ Technik: Astro (statische Seite aus Markdown), Hosting: Cloudflare Pages (`kestr
 
 Dateien, die mit `_` beginnen, werden nie veröffentlicht.
 
-**Vor dem Start löschen:** `Texte/mafia-the-old-country.md` (Beispieltext) und `Texte/beispiel-*.md` (Test-Entwürfe).
-
 ## Lokal ansehen
 
 ```bash

@@ -48,7 +48,6 @@ Eine Stimme, eine feste Skala über alle Medien hinweg, und eine Chronik: alte W
 
 ## Evidence on Hand
 
-- Ein Beispieltext (`Texte/mafia-the-old-country.md`) als Platzhalter, vor dem Start ersetzen.
 - Noch keine echten Texte, keine Leserzahlen, keine Zitate. Nichts davon erfinden.
 
 ## Product Principles
