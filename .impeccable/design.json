@@ -1,0 +1,286 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-16T00:00:00Z",
+  "title": "Design System: Kestrel",
+  "extensions": {
+    "colorMeta": {
+      "film": {
+        "role": "primary",
+        "displayName": "Kinokarten-Rot",
+        "tonalRamp": [
+          "oklch(15% 0.17 27)",
+          "oklch(26% 0.17 27)",
+          "oklch(37% 0.17 27)",
+          "oklch(48% 0.17 27)",
+          "oklch(60% 0.17 27)",
+          "oklch(71% 0.17 27)",
+          "oklch(83% 0.17 27)",
+          "oklch(95% 0.17 27)"
+        ]
+      },
+      "serie": {
+        "role": "primary",
+        "displayName": "Serienkarten-Blau",
+        "tonalRamp": [
+          "oklch(15% 0.13 255)",
+          "oklch(26% 0.13 255)",
+          "oklch(37% 0.13 255)",
+          "oklch(48% 0.13 255)",
+          "oklch(60% 0.13 255)",
+          "oklch(71% 0.13 255)",
+          "oklch(83% 0.13 255)",
+          "oklch(95% 0.13 255)"
+        ]
+      },
+      "spiel": {
+        "role": "primary",
+        "displayName": "Spielkarten-Gelb",
+        "tonalRamp": [
+          "oklch(15% 0.16 85)",
+          "oklch(26% 0.16 85)",
+          "oklch(37% 0.16 85)",
+          "oklch(48% 0.16 85)",
+          "oklch(60% 0.16 85)",
+          "oklch(71% 0.16 85)",
+          "oklch(83% 0.16 85)",
+          "oklch(95% 0.16 85)"
+        ]
+      },
+      "stamp": {
+        "role": "secondary",
+        "displayName": "Entwertungsstempel-Violett",
+        "tonalRamp": [
+          "oklch(15% 0.15 320)",
+          "oklch(26% 0.15 320)",
+          "oklch(37% 0.15 320)",
+          "oklch(48% 0.15 320)",
+          "oklch(60% 0.15 320)",
+          "oklch(71% 0.15 320)",
+          "oklch(83% 0.15 320)",
+          "oklch(95% 0.15 320)"
+        ]
+      },
+      "ground": {
+        "role": "neutral",
+        "displayName": "Tresengrau",
+        "tonalRamp": [
+          "oklch(15% 0.006 250)",
+          "oklch(26% 0.006 250)",
+          "oklch(37% 0.006 250)",
+          "oklch(48% 0.006 250)",
+          "oklch(60% 0.006 250)",
+          "oklch(71% 0.006 250)",
+          "oklch(83% 0.006 250)",
+          "oklch(95% 0.006 250)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Kartenrückseite",
+        "tonalRamp": [
+          "oklch(15% 0.003 250)",
+          "oklch(26% 0.003 250)",
+          "oklch(37% 0.003 250)",
+          "oklch(48% 0.003 250)",
+          "oklch(60% 0.003 250)",
+          "oklch(71% 0.003 250)",
+          "oklch(83% 0.003 250)",
+          "oklch(95% 0.003 250)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Druckschwarz",
+        "tonalRamp": [
+          "oklch(15% 0.008 260)",
+          "oklch(26% 0.008 260)",
+          "oklch(37% 0.008 260)",
+          "oklch(48% 0.008 260)",
+          "oklch(60% 0.008 260)",
+          "oklch(71% 0.008 260)",
+          "oklch(83% 0.008 260)",
+          "oklch(95% 0.008 260)"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Graphit",
+        "tonalRamp": [
+          "oklch(15% 0.015 255)",
+          "oklch(26% 0.015 255)",
+          "oklch(37% 0.015 255)",
+          "oklch(48% 0.015 255)",
+          "oklch(60% 0.015 255)",
+          "oklch(71% 0.015 255)",
+          "oklch(83% 0.015 255)",
+          "oklch(95% 0.015 255)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Seitentitel, Versalien."
+      },
+      "headline": {
+        "displayName": "Hero-Titel",
+        "purpose": "Titel auf der Hero-Karte."
+      },
+      "title": {
+        "displayName": "Kartentitel",
+        "purpose": "Titel auf Stapel- und Listenkarten."
+      },
+      "score": {
+        "displayName": "Wertungsziffer",
+        "purpose": "Große Ziffer im Karteninnern."
+      },
+      "label": {
+        "displayName": "Nummerator",
+        "purpose": "Mono-Meta, Nummern, Daten."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow",
+        "value": "0 1px 1px rgb(18 20 23 / 0.10), 0 10px 24px -10px rgb(18 20 23 / 0.35)",
+        "purpose": "Papierflächen, Filter, Archivzeilen."
+      },
+      {
+        "name": "shadow-lift",
+        "value": "0 2px 2px rgb(18 20 23 / 0.10), 0 22px 40px -14px rgb(18 20 23 / 0.45)",
+        "purpose": "Hover auf Archivzeilen."
+      },
+      {
+        "name": "ticket-drop",
+        "value": "drop-shadow(0 1px 1px rgb(18 20 23 / 0.12)) drop-shadow(0 10px 14px rgb(18 20 23 / 0.22))",
+        "purpose": "Maskierte Tickets (filter)."
+      },
+      {
+        "name": "hole",
+        "value": "inset 0 2px 2px rgb(0 0 0 / 0.35)",
+        "purpose": "Gestanzte Löcher."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-card",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Hover-Anheben, Filter, Abriss (240-280ms)."
+      },
+      {
+        "name": "tear",
+        "value": "1100ms ease-card 300ms",
+        "purpose": "Abriss reißt im Einzeltext einmal ab."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone-narrow",
+        "value": "480px"
+      },
+      {
+        "name": "phone",
+        "value": "720px"
+      },
+      {
+        "name": "tablet",
+        "value": "900px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Ticket (Row)",
+      "kind": "card",
+      "refersTo": "ticket-film",
+      "description": "Kartenstapel-Eintrag mit Abriss, Perforation und Wertungsziffer.",
+      "html": "<article class=\"ds-ticket\"><div class=\"ds-stub\">Nº 012</div><div class=\"ds-rest\"><div><h3 class=\"ds-title\">Heat</h3><p class=\"ds-meta\">Film / Test</p><p class=\"ds-fazit\">Ein Duell, das nicht altert.</p></div><div class=\"ds-score\">9</div></div></article>",
+      "css": ".ds-ticket{display:grid;grid-template-columns:64px 1fr;color:#fff;filter:drop-shadow(0 1px 1px rgb(18 20 23/.12)) drop-shadow(0 10px 14px rgb(18 20 23/.22));transition:transform 280ms cubic-bezier(.16,1,.3,1)}.ds-ticket:hover{transform:translateY(-3px) rotate(-.4deg)}.ds-stub,.ds-rest{background:var(--film,#c8342b)}.ds-stub{border-radius:6px 0 0 6px;border-right:2px dashed rgb(255 255 255/.55);writing-mode:vertical-rl;transform:rotate(180deg);display:grid;place-items:center;font:700 .68rem 'Red Hat Mono Variable',monospace}.ds-rest{border-radius:0 6px 6px 0;display:grid;grid-template-columns:1fr auto;padding:16px 18px 16px 20px}.ds-title{margin:0;font:900 1.9rem/.92 'Big Shoulders Display Variable','Arial Narrow',sans-serif;text-transform:uppercase}.ds-meta{margin:8px 0 0;font:600 .72rem 'Red Hat Mono Variable',monospace;letter-spacing:.1em;text-transform:uppercase}.ds-fazit{margin:10px 0 0;font:italic 1rem/1.4 'Source Serif 4 Variable',Georgia,serif}.ds-score{font:900 4.5rem/.8 'Big Shoulders Display Variable',sans-serif;align-self:center}"
+    },
+    {
+      "name": "Filter-Abriss",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Papier-Abriss mit gestricheltem Loch; gewählt = gestanzt.",
+      "html": "<label class=\"ds-chip\"><input type=\"checkbox\"><span>Film</span></label>",
+      "css": ".ds-chip{position:relative;cursor:pointer}.ds-chip input{position:absolute;opacity:0;inset:0;margin:0}.ds-chip span{display:inline-flex;align-items:center;gap:10px;font:800 1.05rem 'Big Shoulders Display Variable',sans-serif;text-transform:uppercase;letter-spacing:.04em;padding:7px 14px 6px 10px;background:var(--paper,#f7f8f9);color:var(--ink,#121417);border-radius:4px;box-shadow:0 1px 1px rgb(18 20 23/.1),0 10px 24px -10px rgb(18 20 23/.35);transition:transform 200ms cubic-bezier(.16,1,.3,1)}.ds-chip span::before{content:'';width:10px;height:10px;border-radius:50%;border:1.5px dashed currentColor;opacity:.6}.ds-chip:hover span{transform:translateY(-2px)}.ds-chip input:checked+span{background:var(--ink,#121417);color:var(--ground,#dcdfe3)}.ds-chip input:checked+span::before{border:0;background:var(--ground,#dcdfe3);opacity:1;box-shadow:inset 0 2px 2px rgb(0 0 0/.35)}.ds-chip input:focus-visible+span{outline:3px solid var(--focus,#1f5fa8);outline-offset:3px}"
+    },
+    {
+      "name": "Nachtrag-Stempel",
+      "kind": "custom",
+      "refersTo": "stamp",
+      "description": "Violetter Entwertungsstempel, nur auf Papier oder Grund.",
+      "html": "<span class=\"ds-stamp\">Nachtrag<br><strong>3. März 2026</strong></span>",
+      "css": ".ds-stamp{display:inline-block;color:var(--stamp,#7a1f8f);border:2.5px solid currentColor;border-radius:4px;padding:6px 10px;font:.7rem/1.35 'Red Hat Mono Variable',monospace;text-transform:uppercase;letter-spacing:.12em;transform:rotate(-4deg);text-align:center;opacity:.92}.ds-stamp strong{font-size:.82rem;letter-spacing:.04em}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Wortmarke als roter Abriss, Display-Nav mit gestrichelter Aktiv-Linie.",
+      "html": "<header class=\"ds-head\"><a class=\"ds-mark\" href=\"#\"><span class=\"ds-mark-stub\">Nº</span><span class=\"ds-mark-name\">Kestrel</span></a><nav><a href=\"#\" aria-current=\"page\">Alle Texte</a><a href=\"#\">Archiv</a></nav></header>",
+      "css": ".ds-head{display:flex;justify-content:space-between;align-items:center;gap:16px}.ds-mark{display:inline-flex;text-decoration:none;color:#fff}.ds-mark-stub,.ds-mark-name{background:var(--film,#c8342b)}.ds-mark-stub{display:grid;place-items:center;padding:0 10px;font:600 .8rem 'Red Hat Mono Variable',monospace;border-radius:4px 0 0 4px;border-right:2px dashed rgb(255 255 255/.6)}.ds-mark-name{font:900 1.75rem/1 'Big Shoulders Display Variable',sans-serif;text-transform:uppercase;padding:8px 14px 6px 10px;border-radius:0 4px 4px 0}.ds-head nav{display:flex;gap:20px}.ds-head nav a{font:700 1.125rem 'Big Shoulders Display Variable',sans-serif;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;color:var(--ink,#121417);padding:6px 0;border-bottom:2px solid transparent}.ds-head nav a:hover{border-bottom-color:currentColor}.ds-head nav a[aria-current=page]{border-bottom:2px dashed currentColor}"
+    },
+    {
+      "name": "Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Seltener druckschwarzer Aktionsknopf.",
+      "html": "<button class=\"ds-btn\">Filter zurücksetzen</button>",
+      "css": ".ds-btn{font:800 1rem 'Big Shoulders Display Variable',sans-serif;text-transform:uppercase;background:var(--ink,#121417);color:var(--ground,#dcdfe3);border:0;border-radius:4px;padding:6px 12px;cursor:pointer}.ds-btn:focus-visible{outline:3px solid var(--focus,#1f5fa8);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Die Abrisskarte",
+    "overview": "Jeder Text ist eine Eintrittskarte, die Kevin behalten hat. Die Seite ist ein Kassentresen in kühlem Grau, auf dem Rollen-Kartenkarton in drei Medienfarben liegt: Film rot, Serie blau, Spiel gelb. Jede Karte hat einen Abriss mit Seriennummer, eine Perforation mit halbrunden Kerben, eine Lochung als Stand-Marke und, wenn das Urteil später ergänzt wurde, einen Entwertungsstempel. Die Wertungsziffer steht groß im Karteninnern, nicht in einem Abzeichen.\n\nDie Dichte ist die eines Kartenalbums: oben eine große, leicht schräg gelegte Karte, darunter ein Stapel kleinerer, minimal versetzter Karten. Typografie trägt den Ton: eine schmale, schwere Plakat-Grotesk in Versalien für alles, was auf der Karte gedruckt steht, eine ruhige Serifenschrift zum Lesen, eine Mono für Nummern, Daten und Meta-Angaben. Abgelehnt sind Poster-Raster mit Wertungsabzeichen im Letterboxd-Stil und Gaming-Score-Kästen.\n\nDie Medienfarbe kommt über `data-medium` als lokales Paar `--card` / `--card-ink` in jede Komponente. Kein Bauteil kennt die drei Farben direkt; es liest nur Karte und Karten-Tinte.",
+    "keyCharacteristics": [
+      "Kartenkarton in drei vollgesättigten Medienfarben auf kühlem, entsättigtem Grund.",
+      "Gestrichelte Linien (2px dashed) als durchgehende Perforations-Sprache: Abriss, Trenner, Fußzeile, aktive Navigation.",
+      "Versal-Display für Titel, Ziffern und Überschriften; Serif nur zum Lesen.",
+      "Leichte Drehungen (−1,2° Hero, ±0,35° Stapel) statt gerader Kachelraster.",
+      "Ein einziger inszenierter Moment: Der Abriss reißt beim Öffnen eines Textes einmal ab."
+    ],
+    "rules": [
+      {
+        "name": "The Karton-Tinte Rule",
+        "body": "Auf Kartenkarton steht nur `--card-ink`, nie eine andere Farbe. Deshalb druckt der „Nachtrag\"-Aufdruck auf der Hero-Karte in Karten-Tinte (`currentColor`), nicht in Stempel-Violett: Violett fällt auf dem roten Film- und dem blauen Serienkarton durch den Kontrast. Violett bleibt den Nachtrag-Stempeln im Text auf Papier oder Grund vorbehalten.",
+        "section": "colors"
+      },
+      {
+        "name": "The Drei-Kartons Rule",
+        "body": "Die Medienfarben sind Material, keine Akzente. Sie füllen ganze Karten, Abrisse und den „Für wen?\"-Streifen, nie einzelne Wörter oder Icons. Neutrale Bedienelemente (Skala, Filter ohne Medium) bleiben auf Papier.",
+        "section": "colors"
+      },
+      {
+        "name": "The Versal-Druck Rule",
+        "body": "Alles in Display-Schrift steht in Versalien. Die Serif erscheint nie in Versalien, die Display-Schrift nie als Fließtext.",
+        "section": "typography"
+      },
+      {
+        "name": "The Ziffer-im-Karton Rule",
+        "body": "Die Wertung ist eine riesige Display-Ziffer im Karteninneren mit „von 10\" in Mono und dem festen Skalensatz daneben, nie in einem Kreis, Kasten oder Abzeichen.",
+        "section": "typography"
+      },
+      {
+        "name": "The Abheben Rule",
+        "body": "Hover hebt die Karte an (−3px, −0,4° Drehung, tieferer Schatten) bzw. schiebt Archivzeilen 4px nach rechts. Übergänge 240–280ms mit `cubic-bezier(0.16, 1, 0.3, 1)`.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do Medienfarbe nur über `data-medium` → `--card` / `--card-ink` an Bauteile geben.",
+      "Do auf Kartenkarton ausschließlich Karten-Tinte verwenden, auch für Aufdrucke wie „Nachtrag\".",
+      "Do Trenner, aktive Zustände und Abriss-Kanten als 2px gestrichelte Linie zeichnen.",
+      "Do Wertungen als große Display-Ziffer mit „von 10\" und dem festen Skalensatz zeigen.",
+      "Do maskierte Karten mit `filter: drop-shadow` statt `box-shadow` beschatten.",
+      "Do Bewegung bei `prefers-reduced-motion` abschalten; der Abriss-Moment bleibt der einzige inszenierte Effekt."
+    ],
+    "donts": [
+      "Don't Stempel-Violett auf roten oder blauen Kartenkarton setzen; es fällt dort durch den Kontrast.",
+      "Don't Wertungen in Kreise, Kästen oder Score-Abzeichen packen.",
+      "Don't Texte als Poster-Raster mit Wertungs-Badges anlegen; Listen bleiben Kartenstapel.",
+      "Don't Medienfarben als Textakzent oder Icon-Farbe verwenden.",
+      "Don't harte Versatzschatten verwenden; Karten liegen weich auf dem Tresen."
+    ]
+  }
+}
