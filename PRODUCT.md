@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Astro (statische Seite aus Markdown-Dateien), gehostet auf Cloudflare Pages unter `kestrel.pages.dev` (eigene Domain später möglich). Jeder Push auf `main` deployt automatisch. Öffentlich, kein Cloudflare Access. Getrennt vom privaten GameHub/Wrenfell.
+Astro (statische Seite aus Markdown-Dateien), gehostet auf Cloudflare Pages unter `kestrel-2tf.pages.dev` (eigene Domain später möglich). Jeder Push auf `main` deployt automatisch. Öffentlich, kein Cloudflare Access. Getrennt vom privaten GameHub/Wrenfell.
 
 ## Users
 
