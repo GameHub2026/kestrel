@@ -6,7 +6,7 @@ Technik: Astro (statische Seite aus Markdown), Hosting: Cloudflare Pages (`kestr
 ## Schreiben (in Obsidian)
 
 1. In Obsidian **„Ordner als Vault öffnen"** → den Ordner `Texte` in diesem Projekt wählen.
-2. `_Vorlage.md` kopieren, umbenennen (z. B. `alan-wake-2.md`). Der Dateiname wird die Adresse: `kestrel-2tf.pages.dev/texte/alan-wake-2/`.
+2. Im passenden Ordner (`Spiele`, `Filme` oder `Serien`) `_Vorlage.md` duplizieren und umbenennen (z. B. `alan-wake-2.md`). Ordner und Dateiname werden die Adresse: `kestrel-2tf.pages.dev/texte/spiele/alan-wake-2/`. Die Vorlage jedes Ordners hat das `medium` schon richtig eingetragen.
 3. Steckbrief oben ausfüllen, darunter den Text schreiben. Überschriften mit `##`, Zitat-Zeile mit `>`.
 4. Solange `entwurf: true` dasteht, erscheint der Text nur lokal, nicht online. Zum Veröffentlichen auf `entwurf: false` setzen.
 
