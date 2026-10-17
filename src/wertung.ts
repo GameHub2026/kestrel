@@ -25,3 +25,7 @@ export const STAND = {
   abgebrochen: 'Abgebrochen',
   laufend: 'Läuft noch',
 } as const;
+
+// Felder, die vor dem Veröffentlichen (entwurf: false) ausgefüllt sein müssen.
+export const PFLICHT = ['titel', 'medium', 'textform', 'stand', 'gespielt_geschaut', 'wertung', 'fazit', 'fuer_wen'] as const;
+export const vollstaendig = (d: Record<string, unknown>) => PFLICHT.every((k) => d[k] !== undefined);
