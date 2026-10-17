@@ -12,7 +12,7 @@ fuer_wen: Für alle die abseits vom Mainstream etwas ganz anderes schauen, lache
 bild: ofmd-cover.jpg
 bild_quelle: KI generiert
 datum: 2026-10-17
-entwurf: true
+entwurf: false
 ---
 
 Hier schreibst du deinen Text. Überschriften mit `##`, ein großes Zitat mit `>`.
