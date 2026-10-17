@@ -16,4 +16,19 @@ entwurf: true          # auf false setzen, wenn der Text online gehen soll
 #     text: Nach dem DLC sehe ich das Ende milder.
 ---
 
+<!--
+Ausfüllhilfe (erscheint nicht auf der Seite, darf aber gelöscht werden):
+medium:            spiel | film | serie
+textform:          test | kurzkritik | ersteindruck | rueckblick
+plattform:         Spiel: Xbox, PS5, PC (Steam) … · Film: Kino, Netflix, Blu-ray … · Serie: Netflix, Disney+ …
+gespielt_geschaut: Zeitraum, z. B. Sept.–Okt. 2026
+spielzeit:         Spiel: 38 Std · Film: 2 Std 14 Min · Serie: Staffel 1–3 (optional)
+stand:             abspann | 100% | abgebrochen | laufend
+wertung:           ganze Zahl 1–10 (siehe Wie ich werte)
+fazit:             ein Satz, was bleibt
+fuer_wen:          ein Satz, für wen sich das lohnt
+datum:             Tag der Veröffentlichung
+entwurf:           Haken an = nur lokal · Haken aus = geht online
+-->
+
 Hier schreibst du deinen Text.

@@ -2,11 +2,11 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 
 export type Text = CollectionEntry<'tests'> & { nr: number };
 
-// Alle veröffentlichten Texte, neueste zuerst. Entwürfe sieht man nur lokal (npm run dev).
+// Alle veröffentlichten Texte, neueste zuerst. Entwürfe sieht man nur lokal (npm run dev), und nur wenn schon eine Wertung drinsteht.
 // nr = laufende Kartennummer nach Datum (ältester Text = 1).
 export async function alleTexte(): Promise<Text[]> {
   const alle = (await getCollection('tests'))
-    .filter((t) => !(import.meta.env.PROD && t.data.entwurf))
+    .filter((t) => !(t.data.entwurf && (import.meta.env.PROD || t.data.wertung === undefined)))
     .sort((a, b) => a.data.datum.getTime() - b.data.datum.getTime());
   return alle.map((t, i) => ({ ...t, nr: i + 1 })).reverse();
 }
