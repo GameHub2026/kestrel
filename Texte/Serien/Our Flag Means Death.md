@@ -9,7 +9,7 @@ stand: abspann
 wertung: "8"
 fazit: Außergewöhnlich, angenehme Laufzeit pro Folge, sympathische Charaktere, sehr unterhaltsam, witzig
 fuer_wen: Für alle die abseits vom Mainstream etwas ganz anderes schauen, lachen und symphatische Charaktere sehen wollen in einem ganz unverbrauchten Setting
-bild: ofmd-cover.png
+bild: ofmd-cover.jpg
 bild_quelle: KI generiert
 datum: 2026-10-17
 entwurf: true

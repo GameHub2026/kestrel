@@ -3,6 +3,9 @@
 cd "$(dirname "$0")" || exit 1
 pause() { echo; read -k 1 "?Taste drücken zum Schließen …"; }
 
+echo "Bilder prüfen …"
+./tools/bilder-verkleinern.sh Texte
+
 echo "Prüfe die Seite …"
 if ! npm run build >/tmp/kestrel-build.log 2>&1; then
   echo "\n✗ Da stimmt noch etwas nicht, es wurde NICHTS veröffentlicht:\n"
