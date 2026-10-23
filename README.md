@@ -41,3 +41,15 @@ Jeder `git push` auf `main` baut die Seite bei Cloudflare Pages neu. Öffentlich
 6. **Speichern und bereitstellen.** Kein Access/Zero-Trust einrichten.
 
 Bekommt das Projekt eine andere Adresse als `kestrel-2tf.pages.dev` (Name vergeben), in `astro.config.mjs` den Wert `site` anpassen.
+
+## Merkliste (privat)
+
+`kestrel-2tf.pages.dev/merkliste/` ist privat (nicht verlinkt, nicht in Suchmaschinen, nur mit Zugangsschlüssel). Suchen, merken, Termine verfolgen; Termine kommen von IGDB (Spiele) und TMDB (Filme, Serien) und werden alle 12 Stunden beim Abruf erneuert. Der Kalender lässt sich in Apple Kalender abonnieren.
+
+- Daten: Cloudflare-KV `MERK` (siehe `wrangler.toml`), Server-Code in `server/merk.js` und `functions/`.
+- Schlüssel: stehen in `api-keys.txt` der Spiele-Bibliothek und werden mit `tools/secrets-setzen.sh` ins Pages-Projekt übertragen (danach einmal neu deployen).
+- Kalender-Selbsttest: `node tools/test-kalender.mjs`.
+
+## Obsidian-Listen
+
+In jedem Ordner liegen `_Ideen.md`, `_Topliste 2026.md` und eine Schreibhilfe `_So schreibe ich über …`. Ideen und Toplisten sind per `.gitignore` aus dem öffentlichen Repo herausgehalten und liegen nur in iCloud.
