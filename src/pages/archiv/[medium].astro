@@ -1,0 +1,52 @@
+---
+import Base from '../../layouts/Base.astro';
+import ArchivZeile from '../../components/ArchivZeile.astro';
+import ArchivTabs from '../../components/ArchivTabs.astro';
+import { alleTexte, type Text } from '../../lib';
+
+const MEDIEN = { spiele: ['spiel', 'Spiele'], filme: ['film', 'Filme'], serien: ['serie', 'Serien'] } as const;
+
+export function getStaticPaths() {
+  return ['spiele', 'filme', 'serien'].map((medium) => ({ params: { medium } }));
+}
+const [medium, name] = MEDIEN[Astro.params.medium as keyof typeof MEDIEN];
+const az = new Intl.Collator('de', { sensitivity: 'base', numeric: true, ignorePunctuation: true });
+const liste = (await alleTexte()).filter((t) => t.data.medium === medium).sort((a, b) => az.compare(a.data.titel!, b.data.titel!));
+
+// Nach Anfangsbuchstabe gruppieren; Ziffern und Sonderzeichen landen unter "#".
+const gruppen = new Map<string, Text[]>();
+for (const t of liste) {
+  const b = t.data.titel!.trim().charAt(0).toLocaleUpperCase('de').normalize('NFD').charAt(0);
+  const k = /[A-Z]/.test(b) ? b : '#';
+  if (!gruppen.has(k)) gruppen.set(k, []);
+  gruppen.get(k)!.push(t);
+}
+---
+<Base title={`${name} von A bis Z`} description={`Alle Rezensionen zu ${name} bei Kestrel, alphabetisch sortiert.`}>
+  <header class="page-head wrap">
+    <h1>Archiv</h1>
+    <p>Alle {name} von A bis Z. {liste.length} {liste.length === 1 ? 'Text' : 'Texte'}.</p>
+  </header>
+  <ArchivTabs />
+
+  <section class="wrap" data-medium={medium}>
+    {[...gruppen].map(([b, texte]) => (
+      <div class="letter">
+        <h2 class="letter-name">{b}</h2>
+        <ol class="stubs">{texte.map((t) => <ArchivZeile text={t} />)}</ol>
+      </div>
+    ))}
+    {liste.length === 0 && <p>Noch keine {name} im Album.</p>}
+  </section>
+</Base>
+
+<style>
+  .letter { display: grid; grid-template-columns: 9rem 1fr; gap: 16px; padding: 14px 0; }
+  .letter + .letter { border-top: 1px dashed color-mix(in srgb, var(--ink) 25%, transparent); }
+  .letter-name { margin: 0; font-family: var(--display); font-weight: 900; font-size: 3rem; line-height: 0.9; }
+  .stubs { margin: 0; padding: 0; display: grid; gap: 8px; }
+  @media (max-width: 720px) {
+    .letter { grid-template-columns: 1fr; gap: 8px; }
+    .letter-name { font-size: 2.2rem; }
+  }
+</style>

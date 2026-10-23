@@ -1,7 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
-import { MEDIUM, TEXTFORM, SKALA } from '../wertung';
-import { alleTexte, jahr, monat, nummer, url, type Text } from '../lib';
+import ArchivZeile from '../components/ArchivZeile.astro';
+import ArchivTabs from '../components/ArchivTabs.astro';
+import { alleTexte, jahr, monat, type Text } from '../lib';
 
 const texte = await alleTexte();
 const jahre = new Map<number, Map<string, Text[]>>();
@@ -21,6 +22,7 @@ const plural = { spiel: ['Spiel', 'Spiele'], film: ['Film', 'Filme'], serie: ['S
     <h1>Archiv</h1>
     <p>Jahr für Jahr, Monat für Monat. Jede Karte steht dort, wo ich sie geschrieben habe.</p>
   </header>
+  <ArchivTabs />
 
   {[...jahre].map(([j, monate]) => {
     const alle = [...monate.values()].flat();
@@ -38,17 +40,7 @@ const plural = { spiel: ['Spiel', 'Spiele'], film: ['Film', 'Filme'], serie: ['S
           <div class="month">
             <h3 class="month-name">{m}</h3>
             <ol class="stubs">
-              {liste.map((t) => (
-                <li data-medium={t.data.medium}>
-                  <a href={url(t)} class="stub-row">
-                    <span class="s-nr mono">{nummer(t.nr)}</span>
-                    <span class="s-title">{t.data.titel}</span>
-                    <span class="s-kind mono">{MEDIUM[t.data.medium]} · {TEXTFORM[t.data.textform]}</span>
-                    <span class="s-say">{SKALA[t.data.wertung]}</span>
-                    <span class="s-score"><span class="display">{t.data.wertung}</span><span class="visually-hidden"> von 10</span></span>
-                  </a>
-                </li>
-              ))}
+              {liste.map((t) => <ArchivZeile text={t} />)}
             </ol>
           </div>
         ))}
@@ -69,26 +61,7 @@ const plural = { spiel: ['Spiel', 'Spiele'], film: ['Film', 'Filme'], serie: ['S
   .month-name { margin: 6px 0 0; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.3rem; letter-spacing: 0.04em; }
   .stubs { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 
-  .stub-row {
-    display: grid; grid-template-columns: 5.2rem 1fr auto minmax(8rem, 12rem) 3.2rem; align-items: center; gap: 14px;
-    background: var(--card); color: var(--card-ink); text-decoration: none; border-radius: 4px;
-    padding: 8px 12px 8px 0; box-shadow: var(--shadow);
-    transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 240ms cubic-bezier(0.16, 1, 0.3, 1);
-  }
-  .stub-row:hover { transform: translateX(4px); box-shadow: var(--shadow-lift); }
-  .s-nr { font-size: 0.72rem; font-weight: 700; padding: 0 10px; border-right: 2px dashed color-mix(in srgb, var(--card-ink) 55%, transparent); align-self: stretch; display: grid; place-items: center; }
-  .s-title { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.3rem; line-height: 1; min-width: 0; }
-  .s-kind { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
-  .s-say { font-size: 0.8rem; line-height: 1.2; font-weight: 600; text-align: right; }
-  .s-score { text-align: right; }
-  .s-score .display { font-size: 2rem; line-height: 0.9; }
-
   @media (max-width: 720px) {
     .month { grid-template-columns: 1fr; gap: 8px; }
-    .stub-row { grid-template-columns: 4.4rem 1fr 2.6rem; row-gap: 3px; }
-    .s-kind { grid-column: 2; grid-row: 2; }
-    .s-say { grid-column: 2; grid-row: 3; text-align: left; }
-    .s-score { grid-column: 3; grid-row: 1 / 4; }
-    .s-nr { grid-row: 1 / 4; }
   }
 </style>

@@ -34,3 +34,7 @@ node_modules.nosync/
 # Impeccable-Prüfbilder
 .impeccable/review/
 .impeccable/questions/
+
+# Private Listen aus Obsidian: nur in iCloud, nicht im öffentlichen Repo
+Texte/**/_Ideen.md
+Texte/**/_Topliste*.md
