@@ -15,6 +15,45 @@ datum: 2026-10-17
 entwurf: true
 ---
 
-Hier schreibst du deinen Text. Überschriften mit `##`, ein großes Zitat mit `>`.
+> [!frage] Interview
+> Beantworte die Fragen in Stichworten direkt unter jedem Kasten. Die grauen Kästen erscheinen nicht auf der Seite, nur deine Antworten. Was am Ende nicht in den Text gehört, löschst du.
 
-Bilder im Text: einfach eine Bilddatei hierher ziehen. Obsidian legt sie in den Ordner `bilder` und setzt die Zeile selbst ein.
+> [!frage] Ab wann es zündet
+> Ab welcher Folge war klar, dass du dranbleibst? Lohnt sich das Durchhalten bis dahin?
+
+
+
+> [!frage] Der Moment
+> Welche Folge oder Szene erzählst du weiter?
+
+
+
+> [!frage] Die Kurve
+> Wie verlaufen die Staffeln? Wird es besser, schwächer, bleibt es konstant?
+
+
+
+> [!frage] Wie man sie schaut
+> Am Stück oder Folge für Folge? Warum?
+
+
+
+> [!frage] Die Figuren
+> Wen magst du, wen nicht, und warum ist das wichtig?
+
+
+
+> [!frage] Das Ende
+> Ist es abgeschlossen, abgesetzt, offen? Bekommt man ein befriedigendes Ende?
+
+
+
+> [!frage] Für wen nicht
+> Wer wird nach zwei Folgen abbrechen?
+
+
+
+> [!frage] Der eine Satz
+> Wenn nur ein Satz übrig bleibt: welcher?
+
+

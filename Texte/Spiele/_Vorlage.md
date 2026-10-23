@@ -15,6 +15,45 @@ datum: 2026-10-17
 entwurf: true
 ---
 
-Hier schreibst du deinen Text. Überschriften mit `##`, ein großes Zitat mit `>`.
+> [!frage] Interview
+> Beantworte die Fragen in Stichworten direkt unter jedem Kasten. Die grauen Kästen erscheinen nicht auf der Seite, nur deine Antworten. Was am Ende nicht in den Text gehört, löschst du.
 
-Bilder im Text: einfach eine Bilddatei hierher ziehen. Obsidian legt sie in den Ordner `bilder` und setzt die Zeile selbst ein.
+> [!frage] Der Moment
+> Welche eine Szene oder Situation erzählst du Freunden zuerst? Warum gerade die?
+
+
+
+> [!frage] Was es von dir will
+> Wie viel Zeit, Geduld, Geschick verlangt das Spiel wirklich? Wo hast du geflucht, wo die Zeit vergessen?
+
+
+
+> [!frage] Nach 2 und nach 20 Stunden
+> Wie hat sich dein Bild verändert? Wird es besser, kippt es, zieht es sich?
+
+
+
+> [!frage] Was die Werbung verschweigt
+> Was überrascht Leute, die nur Trailer kennen, positiv wie negativ?
+
+
+
+> [!frage] Der Vergleich
+> Woran erinnert es dich, und was macht es anders als das Spiel, das alle kennen?
+
+
+
+> [!frage] Technik am Tag X
+> Wie lief es auf deiner Plattform, auf welchem Stand (Patch, Datum)?
+
+
+
+> [!frage] Für wen nicht
+> Wer sollte die Finger davon lassen, auch wenn es gut ist?
+
+
+
+> [!frage] Der eine Satz
+> Wenn nur ein Satz übrig bleibt: welcher?
+
+

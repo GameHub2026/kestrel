@@ -15,6 +15,45 @@ datum: 2026-10-17
 entwurf: true
 ---
 
-Hier schreibst du deinen Text. Überschriften mit `##`, ein großes Zitat mit `>`.
+> [!frage] Interview
+> Beantworte die Fragen in Stichworten direkt unter jedem Kasten. Die grauen Kästen erscheinen nicht auf der Seite, nur deine Antworten. Was am Ende nicht in den Text gehört, löschst du.
 
-Bilder im Text: einfach eine Bilddatei hierher ziehen. Obsidian legt sie in den Ordner `bilder` und setzt die Zeile selbst ein.
+> [!frage] Der Moment
+> Welche Szene hattest du am nächsten Tag noch im Kopf?
+
+
+
+> [!frage] Wie du ihn gesehen hast
+> Kino, Sofa, allein, mit wem? Hat das etwas verändert?
+
+
+
+> [!frage] Vorher wissen
+> Was sollte man vorher wissen, und was auf keinen Fall (Spoiler, Trailer)?
+
+
+
+> [!frage] Was er will
+> Will der Film unterhalten, verstören, etwas sagen? Gelingt es?
+
+
+
+> [!frage] Der Vergleich
+> Woran erinnert er dich, und was macht er besser oder schlechter?
+
+
+
+> [!frage] Nochmal schauen?
+> Würdest du ihn ein zweites Mal sehen? Was bekommt man beim zweiten Mal?
+
+
+
+> [!frage] Für wen nicht
+> Wer wird sich langweilen oder ärgern?
+
+
+
+> [!frage] Der eine Satz
+> Wenn nur ein Satz übrig bleibt: welcher?
+
+
