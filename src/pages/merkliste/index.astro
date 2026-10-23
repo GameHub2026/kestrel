@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 ---
 <Base title="Merkliste" privat description="Private Merkliste.">
+<div class="merk">
   <header class="page-head wrap">
     <h1>Merkliste</h1>
     <p>Privat. Was ich spielen und schauen will, mit Terminen. Verschiebt sich ein Start, ändert sich das hier und im Kalender von selbst.</p>
@@ -45,6 +46,7 @@ import Base from '../../layouts/Base.astro';
       </p>
     </section>
   </div>
+</div>
 </Base>
 
 <script>
@@ -178,7 +180,10 @@ import Base from '../../layouts/Base.astro';
   start();
 </script>
 
-<style>
+<style is:global>
+/* global, weil die Zeilen per Skript entstehen; alles unter .merk gekapselt */
+.merk {
+
   .zugang form, .suche { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
   input[type='password'], input[type='search'] {
     font: inherit; font-size: 1.1rem; padding: 12px 14px; border-radius: 4px; border: 2px solid var(--ink);
@@ -228,4 +233,5 @@ import Base from '../../layouts/Base.astro';
     .rechts { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; }
     .poster { width: 40px; height: 56px; }
   }
+}
 </style>
