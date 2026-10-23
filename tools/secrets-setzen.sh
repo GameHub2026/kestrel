@@ -3,7 +3,8 @@
 # Einstellungen ins Cloudflare-Pages-Projekt "kestrel". Gibt keine Werte aus.
 cd "$(dirname "$0")/.." || exit 1
 KEYS="../Claude - Spiele-Bibliothek/api-keys.txt"
-wert() { grep -m1 "^$1:" "$KEYS" | sed "s/^$1:[[:space:]]*//" | tr -d '\r'; }
+# Wie der Parser der Spiele-Bibliothek: Leerraum, <…> und Anführungszeichen um den Wert entfernen.
+wert() { grep -m1 -i "^[[:space:]]*$1[[:space:]]*[:=]" "$KEYS" | sed -E "s/^[^:=]*[:=][[:space:]]*//; s/[[:space:]]+$//; s/^[<\"'\`]+//; s/[>\"'\`]+$//" | tr -d '\r'; }
 setze() { [[ -n "$2" ]] || { echo "  $1: kein Wert in api-keys.txt, übersprungen"; return; }
   print -rn -- "$2" | npx --no-install wrangler pages secret put "$1" --project-name kestrel >/dev/null 2>&1 && echo "  $1: gesetzt" || echo "  $1: FEHLER"; }
 setze IGDB_CLIENT_ID "$(wert 'IGDB Client ID')"
