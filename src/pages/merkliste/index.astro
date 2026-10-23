@@ -1,0 +1,231 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base title="Merkliste" privat description="Private Merkliste.">
+  <header class="page-head wrap">
+    <h1>Merkliste</h1>
+    <p>Privat. Was ich spielen und schauen will, mit Terminen. Verschiebt sich ein Start, ändert sich das hier und im Kalender von selbst.</p>
+  </header>
+
+  <section class="wrap zugang" id="zugang" hidden>
+    <p>Für diese Seite brauchst du deinen Zugangsschlüssel.</p>
+    <form id="zugang-form">
+      <label class="visually-hidden" for="zugang-feld">Zugangsschlüssel</label>
+      <input id="zugang-feld" type="password" autocomplete="current-password" placeholder="Zugangsschlüssel" required />
+      <button type="submit">Öffnen</button>
+    </form>
+  </section>
+
+  <div id="app" hidden>
+    <nav class="wrap tabs" aria-label="Medium">
+      <button type="button" data-tab="spiel" data-medium="spiel" aria-pressed="true">Spiele</button>
+      <button type="button" data-tab="film" data-medium="film" aria-pressed="false">Filme</button>
+      <button type="button" data-tab="serie" data-medium="serie" aria-pressed="false">Serien</button>
+    </nav>
+
+    <section class="wrap suche" aria-label="Suchen und merken">
+      <label class="visually-hidden" for="such-feld">Suchen</label>
+      <input id="such-feld" type="search" autocomplete="off" placeholder="Spiel suchen …" />
+      <p class="hinweis mono" id="such-status" aria-live="polite"></p>
+      <ul class="treffer" id="treffer"></ul>
+    </section>
+
+    <section class="wrap" aria-labelledby="liste-h">
+      <h2 id="liste-h" class="abschnitt">Gemerkt</h2>
+      <ul class="liste" id="liste"></ul>
+      <p class="leer" id="leer" hidden>Noch nichts gemerkt. Oben suchen und auf „Merken" tippen.</p>
+    </section>
+
+    <section class="wrap abo" aria-labelledby="abo-h">
+      <h2 id="abo-h" class="abschnitt">Kalender</h2>
+      <p>Alles mit Haken bei „Im Kalender" erscheint als Termin, auch einzelne Serienfolgen. Einmal abonnieren, danach aktualisiert sich der Kalender selbst.</p>
+      <p class="abo-knoepfe">
+        <a id="abo-link" class="knopf" href="#">In Apple Kalender abonnieren</a>
+        <button type="button" id="abo-kopieren" class="knopf leise">Adresse kopieren</button>
+      </p>
+    </section>
+  </div>
+</Base>
+
+<script>
+  const SPEICHER = 'kestrel-merk-token';
+  const $ = (s: string) => document.querySelector(s) as HTMLElement;
+  const PLATZ = { spiel: 'Spiel suchen …', film: 'Film suchen …', serie: 'Serie suchen …' } as Record<string, string>;
+  type Eintrag = { id: string; medium: string; titel: string; bild?: string; termine?: { datum: string; text: string }[]; status?: string; kalender?: boolean; fehler?: string };
+
+  // Schlüssel aus #t=… übernehmen (Link einmal pro Gerät öffnen), danach aus dem Speicher.
+  let token = '';
+  try {
+    const h = new URLSearchParams(location.hash.slice(1)).get('t');
+    if (h) { localStorage.setItem(SPEICHER, h); history.replaceState(null, '', location.pathname); }
+    token = localStorage.getItem(SPEICHER) || '';
+  } catch {}
+
+  let medium = 'spiel';
+  let liste: Eintrag[] = [];
+
+  async function api(pfad: string, opt: RequestInit = {}) {
+    const r = await fetch(pfad, { ...opt, headers: { 'x-merk-token': token, 'content-type': 'application/json', ...(opt.headers || {}) } });
+    if (r.status === 401) { zeigeZugang(); throw new Error('Kein Zugang'); }
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.fehler || 'Fehler');
+    return d;
+  }
+
+  function zeigeZugang() { $('#app').hidden = true; $('#zugang').hidden = false; }
+  $('#zugang-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    token = ($('#zugang-feld') as HTMLInputElement).value.trim();
+    try { localStorage.setItem(SPEICHER, token); } catch {}
+    start();
+  });
+
+  const datumDe = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString('de-DE', { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric' });
+  const heute = new Date().toISOString().slice(0, 10);
+  const naechster = (e: Eintrag) => (e.termine || []).filter((t) => t.datum >= heute).sort((a, b) => a.datum.localeCompare(b.datum))[0];
+
+  function el(tag: string, cls?: string, text?: string) {
+    const n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function bild(src?: string) {
+    const b = el('span', 'poster');
+    if (src) { const i = document.createElement('img'); i.src = src; i.alt = ''; i.loading = 'lazy'; b.append(i); }
+    return b;
+  }
+
+  function zeigeListe() {
+    const ul = $('#liste'); ul.replaceChildren();
+    const meine = liste.filter((e) => e.medium === medium).sort((a, b) => {
+      const na = naechster(a)?.datum || '9999', nb = naechster(b)?.datum || '9999';
+      return na.localeCompare(nb) || a.titel.localeCompare(b.titel, 'de');
+    });
+    $('#leer').hidden = meine.length > 0;
+    for (const e of meine) {
+      const li = el('li', 'eintrag'); li.dataset.medium = e.medium;
+      const mitte = el('div', 'mitte');
+      mitte.append(el('span', 'titel', e.titel));
+      const n = naechster(e);
+      mitte.append(el('span', 'termin mono', n ? `${datumDe(n.datum)} · ${n.text}` : (e.status || 'Kein kommender Termin')));
+      const kommende = (e.termine || []).filter((t) => t.datum >= heute).sort((a, b) => a.datum.localeCompare(b.datum));
+      if (kommende.length > 1) {
+        const d = document.createElement('details'); d.append(el('summary', 'mono', `${kommende.length - 1} weitere Termine`));
+        const ol = el('ol', 'alle'); for (const t of kommende.slice(1)) ol.append(el('li', 'mono', `${datumDe(t.datum)} · ${t.text}`));
+        d.append(ol); mitte.append(d);
+      }
+      if (e.fehler) mitte.append(el('span', 'fehler mono', `Konnte nicht aktualisieren: ${e.fehler}`));
+      const rechts = el('div', 'rechts');
+      const lab = el('label', 'schalter'); const cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = !!e.kalender;
+      cb.addEventListener('change', async () => { liste = await api('/api/merk', { method: 'PATCH', body: JSON.stringify({ id: e.id, kalender: cb.checked }) }); });
+      lab.append(cb, el('span', '', 'Im Kalender'));
+      const weg = el('button', 'weg', 'Entfernen') as HTMLButtonElement; weg.type = 'button';
+      weg.addEventListener('click', async () => { if (!confirm(`„${e.titel}" von der Merkliste nehmen?`)) return; liste = await api(`/api/merk?id=${encodeURIComponent(e.id)}`, { method: 'DELETE' }); zeigeListe(); });
+      rechts.append(lab, weg);
+      li.append(bild(e.bild), mitte, rechts); ul.append(li);
+    }
+  }
+
+  let suchTimer = 0, suchNr = 0;
+  async function suche() {
+    const q = ($('#such-feld') as HTMLInputElement).value.trim();
+    const ul = $('#treffer'); const status = $('#such-status');
+    if (q.length < 2) { ul.replaceChildren(); status.textContent = ''; return; }
+    const nr = ++suchNr; status.textContent = 'Suche …';
+    try {
+      const treffer = await api(`/api/merk/suche?medium=${medium}&q=${encodeURIComponent(q)}`);
+      if (nr !== suchNr) return;
+      ul.replaceChildren();
+      status.textContent = treffer.length ? '' : 'Nichts gefunden.';
+      for (const t of treffer) {
+        const li = el('li', 'treffer-zeile'); li.dataset.medium = t.medium;
+        const mitte = el('div', 'mitte');
+        mitte.append(el('span', 'titel', t.titel), el('span', 'mono info', [t.jahr, t.info].filter(Boolean).join(' · ')));
+        const schon = liste.some((e) => e.id === t.id);
+        const b = el('button', 'merken', schon ? 'Gemerkt' : 'Merken') as HTMLButtonElement; b.type = 'button'; b.disabled = schon;
+        b.addEventListener('click', async () => {
+          b.disabled = true; b.textContent = 'Merke …';
+          try { liste = await api('/api/merk', { method: 'POST', body: JSON.stringify({ id: t.id, medium: t.medium }) }); b.textContent = 'Gemerkt'; zeigeListe(); }
+          catch (err) { b.disabled = false; b.textContent = 'Merken'; status.textContent = `Fehler: ${(err as Error).message}`; }
+        });
+        li.append(bild(t.bild), mitte, b); ul.append(li);
+      }
+    } catch (err) { if (nr === suchNr) status.textContent = `Suche fehlgeschlagen: ${(err as Error).message}`; }
+  }
+  $('#such-feld').addEventListener('input', () => { clearTimeout(suchTimer); suchTimer = window.setTimeout(suche, 350); });
+
+  document.querySelectorAll<HTMLButtonElement>('[data-tab]').forEach((b) => b.addEventListener('click', () => {
+    medium = b.dataset.tab!;
+    document.querySelectorAll('[data-tab]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    ($('#such-feld') as HTMLInputElement).placeholder = PLATZ[medium];
+    $('#treffer').replaceChildren(); $('#such-status').textContent = '';
+    zeigeListe(); suche();
+  }));
+
+  function kalenderAdresse() { return `${location.host}/kalender/${token}.ics`; }
+  $('#abo-kopieren').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText(`https://${kalenderAdresse()}`); $('#abo-kopieren').textContent = 'Kopiert'; } catch {}
+  });
+
+  async function start() {
+    if (!token) return zeigeZugang();
+    try { liste = await api('/api/merk'); } catch { return; }
+    $('#zugang').hidden = true; $('#app').hidden = false;
+    ($('#abo-link') as HTMLAnchorElement).href = `webcal://${kalenderAdresse()}`;
+    zeigeListe();
+  }
+  start();
+</script>
+
+<style>
+  .zugang form, .suche { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  input[type='password'], input[type='search'] {
+    font: inherit; font-size: 1.1rem; padding: 12px 14px; border-radius: 4px; border: 2px solid var(--ink);
+    background: var(--paper); color: var(--ink); flex: 1 1 280px; min-width: 0;
+  }
+  button, .knopf {
+    font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.05rem;
+    border: 0; border-radius: 4px; padding: 10px 16px 9px; cursor: pointer; background: var(--ink); color: var(--ground);
+    text-decoration: none; display: inline-block;
+  }
+  button:disabled { opacity: 0.55; cursor: default; }
+  .knopf.leise, .weg { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
+
+  .tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+  .tabs button { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
+  .tabs button[aria-pressed='true'] { background: var(--card); color: var(--card-ink); }
+
+  .hinweis { width: 100%; margin: 0; font-size: 0.8rem; color: var(--ink-2); min-height: 1.2em; }
+  .treffer, .liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; width: 100%; }
+  .treffer-zeile, .eintrag {
+    display: grid; grid-template-columns: 48px 1fr auto; gap: 14px; align-items: center;
+    background: var(--paper); border-radius: 4px; padding: 8px 12px 8px 8px; box-shadow: var(--shadow);
+  }
+  .eintrag { border-left: 0; background: var(--card); color: var(--card-ink); }
+  .poster { width: 48px; height: 68px; border-radius: 2px; background: color-mix(in srgb, currentColor 15%, transparent); overflow: hidden; display: block; }
+  .poster img { width: 100%; height: 100%; object-fit: cover; }
+  .mitte { display: grid; gap: 3px; min-width: 0; }
+  .titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.25rem; line-height: 1; }
+  .info, .termin, details, .fehler { font-size: 0.78rem; }
+  .termin { font-weight: 700; }
+  details summary { cursor: pointer; }
+  .alle { margin: 4px 0 0; padding-left: 1.1em; }
+  .fehler { opacity: 0.85; }
+  .rechts { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .schalter { display: inline-flex; gap: 6px; align-items: center; font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; cursor: pointer; }
+  .schalter input { width: 18px; height: 18px; accent-color: var(--ink); }
+  .weg { font-size: 0.8rem; padding: 6px 10px 5px; }
+
+  .abschnitt { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.8rem; margin: 40px 0 14px; }
+  .leer { color: var(--ink-2); }
+  .abo p { max-width: 60ch; }
+  .abo-knoepfe { display: flex; gap: 10px; flex-wrap: wrap; }
+  .suche { margin-bottom: 8px; }
+
+  @media (max-width: 560px) {
+    .eintrag { grid-template-columns: 40px 1fr; }
+    .rechts { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; }
+    .poster { width: 40px; height: 56px; }
+  }
+</style>

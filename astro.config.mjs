@@ -12,6 +12,6 @@ const ohneFragen = () => (tree) => {
 // https://astro.build/config
 export default defineConfig({
   site: 'https://kestrel-2tf.pages.dev',
-  integrations: [sitemap()],
+  integrations: [sitemap({ filter: (seite) => !seite.includes('/merkliste') })],
   markdown: { remarkPlugins: [ohneFragen] },
 });

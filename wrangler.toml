@@ -1,0 +1,8 @@
+# Cloudflare-Pages-Einstellungen für Kestrel (Merkliste braucht den KV-Speicher).
+name = "kestrel"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-10-01"
+
+[[kv_namespaces]]
+binding = "MERK"
+id = "1f3e8c33d7b448cbb4217af6d3994db7"

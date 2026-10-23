@@ -38,3 +38,4 @@ node_modules.nosync/
 # Private Listen aus Obsidian: nur in iCloud, nicht im öffentlichen Repo
 Texte/**/_Ideen.md
 Texte/**/_Topliste*.md
+.wrangler/
