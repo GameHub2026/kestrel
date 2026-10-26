@@ -1,125 +1,123 @@
 ---
 import Base from '../layouts/Base.astro';
+import daten from '../data/demnaechst.json';
+
+type Eintrag = { id: string; art: 'film' | 'serie'; typ: string; titel: string; datum: string; text: string; bild: string | null; anbieter: string[]; link: string };
+const heute = new Date().toISOString().slice(0, 10);
+const eintraege = (daten.eintraege as Eintrag[]).filter((e) => e.datum >= heute);
+const tagFmt = new Intl.DateTimeFormat('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const gruppen = new Map<string, Eintrag[]>();
+for (const e of eintraege) {
+  if (!gruppen.has(e.datum)) gruppen.set(e.datum, []);
+  gruppen.get(e.datum)!.push(e);
+}
+const ART = { kino: 'Kino', streaming: 'Film · Streaming', serienstart: 'Serie', staffelstart: 'Serie' } as Record<string, string>;
 ---
-<Base title="Demnächst" description="Was Kevin als Nächstes spielt und schaut: Releases, Kinostarts und neue Folgen mit Terminen.">
+<Base title="Demnächst" description="Kommende Kinostarts sowie neue Serien und Staffeln bei Netflix, Prime Video, Disney+ und Co. in Deutschland.">
   <header class="page-head wrap">
     <h1>Demnächst</h1>
-    <p>Was ich gerade schaue und worauf ich mich freue. Termine kommen von IGDB und TMDB und verschieben sich hier von selbst, wenn sich etwas ändert.</p>
+    <p>Kinostarts und neue Serien und Staffeln bei den Streaminganbietern, mit deutschem Starttermin. Die Liste aktualisiert sich jeden Tag von selbst, Verschiebungen sind dann sofort drin.</p>
   </header>
 
   <div class="dem">
-    <section class="wrap gerade" id="gerade" hidden aria-labelledby="gerade-h">
-      <h2 id="gerade-h" class="abschnitt">Gerade dabei</h2>
-      <ul class="liste" id="gerade-liste"></ul>
-      <p class="hinweis mono">Kommt automatisch von Trakt.</p>
+    <nav class="wrap tabs" aria-label="Filter">
+      <button type="button" data-f="alle" aria-pressed="true">Alles</button>
+      <button type="button" data-f="kino" data-medium="film" aria-pressed="false">Kino</button>
+      <button type="button" data-f="serie" data-medium="serie" aria-pressed="false">Serien</button>
+      <button type="button" data-f="streaming" aria-pressed="false">Streaming</button>
+    </nav>
+
+    <section class="wrap" aria-label="Termine" id="termine">
+      {[...gruppen].map(([datum, liste]) => (
+        <div class="tag" data-tag>
+          <h2 class="tag-name">{tagFmt.format(new Date(datum + 'T12:00:00Z'))}</h2>
+          <ul class="liste">
+            {liste.map((e) => (
+              <li class="eintrag" data-medium={e.art} data-f={`${e.typ === 'kino' ? 'kino' : e.art === 'serie' ? 'serie' : ''} ${e.typ === 'streaming' || e.anbieter.length ? 'streaming' : ''}`}>
+                <span class="poster">{e.bild && <img src={e.bild} alt="" loading="lazy" width="56" height="84" />}</span>
+                <div class="mitte">
+                  <span class="meta mono">{ART[e.typ]} · {e.text}</span>
+                  <a class="titel" href={e.link} target="_blank" rel="noopener">{e.titel}</a>
+                  {e.anbieter.length > 0 && <span class="anbieter mono">{e.anbieter.join(' · ')}</span>}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+      {eintraege.length === 0 && <p class="hinweis mono">Gerade sind keine Termine geladen.</p>}
+      <p class="leer mono" id="leer" hidden>Dazu steht gerade nichts an.</p>
     </section>
 
-    <h2 class="wrap abschnitt" id="kommt-h">Kommt</h2>
-    <nav class="wrap tabs" aria-label="Medium">
-      <button type="button" data-tab="alle" aria-pressed="true">Alles</button>
-      <button type="button" data-tab="spiel" data-medium="spiel" aria-pressed="false">Spiele</button>
-      <button type="button" data-tab="film" data-medium="film" aria-pressed="false">Filme</button>
-      <button type="button" data-tab="serie" data-medium="serie" aria-pressed="false">Serien</button>
-    </nav>
-    <section class="wrap" aria-live="polite">
-      <p id="dem-status" class="hinweis mono">Lädt …</p>
-      <ul class="liste" id="dem-liste"></ul>
+    <section class="wrap merk" id="merk" hidden aria-labelledby="merk-h">
+      <h2 id="merk-h" class="abschnitt">Auf meiner Merkliste</h2>
+      <ul class="liste" id="merk-liste"></ul>
     </section>
+
+    <p class="wrap quelle mono">Termine für Deutschland, Daten von TMDB. Diese Seite nutzt die TMDB-API, ist aber nicht von TMDB bestätigt oder zertifiziert. Starttermine können sich kurzfristig ändern.</p>
   </div>
 </Base>
 
 <script>
-  type Eintrag = { id: string; medium: string; titel: string; bild?: string; status?: string; termine: { datum: string; text: string }[] };
-  const MEDIUM: Record<string, string> = { spiel: 'Spiel', film: 'Film', serie: 'Serie' };
-  const ul = document.getElementById('dem-liste')!;
-  const status = document.getElementById('dem-status')!;
-  let alle: Eintrag[] = [];
-  let tab = 'alle';
-
-  const datumDe = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString('de-DE', { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric' });
-  const el = (tag: string, cls?: string, text?: string) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
-
-  function zeige() {
-    ul.replaceChildren();
-    const meine = alle.filter((e) => tab === 'alle' || e.medium === tab).sort((a, b) => (a.termine[0]?.datum || '9999').localeCompare(b.termine[0]?.datum || '9999') || a.titel.localeCompare(b.titel, 'de'));
-    status.textContent = meine.length ? '' : (alle.length ? 'Hier steht gerade nichts an.' : 'Gerade ist nichts angekündigt.');
-    for (const e of meine) {
-      const li = el('li', 'eintrag'); li.dataset.medium = e.medium;
-      const poster = el('span', 'poster');
-      if (e.bild) { const i = document.createElement('img'); i.src = e.bild; i.alt = ''; i.loading = 'lazy'; poster.append(i); }
-      const mitte = el('div', 'mitte');
-      mitte.append(el('span', 'meta mono', MEDIUM[e.medium] || ''), el('span', 'titel', e.titel));
-      const n = e.termine[0];
-      mitte.append(el('span', 'termin mono', n ? `${datumDe(n.datum)} · ${n.text}` : (e.status || 'Termin noch offen')));
-      if (e.termine.length > 1) {
-        const d = document.createElement('details'); d.append(el('summary', 'mono', `${e.termine.length - 1} weitere Termine`));
-        const ol = el('ol', 'alle'); for (const t of e.termine.slice(1)) ol.append(el('li', 'mono', `${datumDe(t.datum)} · ${t.text}`));
-        d.append(ol); mitte.append(d);
-      }
-      li.append(poster, mitte); ul.append(li);
-    }
-  }
-
-  document.querySelectorAll<HTMLButtonElement>('[data-tab]').forEach((b) => b.addEventListener('click', () => {
-    tab = b.dataset.tab!;
-    document.querySelectorAll('[data-tab]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
-    zeige();
+  // Filter
+  const knoepfe = document.querySelectorAll<HTMLButtonElement>('[data-f]');
+  const bereich = document.getElementById('termine')!;
+  knoepfe.forEach((b) => b.addEventListener('click', () => {
+    const f = b.dataset.f!;
+    knoepfe.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    let sichtbar = 0;
+    bereich.querySelectorAll<HTMLElement>('[data-tag]').forEach((tag) => {
+      let n = 0;
+      tag.querySelectorAll<HTMLElement>('.eintrag').forEach((li) => {
+        const zeigen = f === 'alle' || (li.dataset.f || '').split(' ').includes(f);
+        li.hidden = !zeigen; if (zeigen) n++;
+      });
+      tag.hidden = n === 0; sichtbar += n;
+    });
+    document.getElementById('leer')!.hidden = sichtbar > 0;
   }));
 
-  fetch('/api/oeffentlich').then((r) => r.json()).then((d) => { alle = Array.isArray(d) ? d : []; zeige(); })
-    .catch(() => { status.textContent = 'Konnte die Liste gerade nicht laden.'; });
-
-  // Gerade dabei (Trakt): läuft gerade + zuletzt gesehen. Fehlt alles, bleibt der Abschnitt versteckt.
-  type Gesehen = { medium: string; titel: string; bild?: string; folge?: { staffel: number; nr: number } | null; wann: string };
-  const zeitDe = (iso: string) => {
-    const min = Math.max(0, Math.round((Date.now() - Date.parse(iso)) / 60000));
-    if (min < 60) return `vor ${min} Min`;
-    if (min < 1440) return `vor ${Math.round(min / 60)} Std`;
-    const t = Math.round(min / 1440);
-    return t === 1 ? 'gestern' : `vor ${t} Tagen`;
-  };
-  fetch('/api/trakt').then((r) => r.json()).then((d: { laeuft: Gesehen | null; zuletzt: Gesehen[] }) => {
-    const gl = document.getElementById('gerade-liste')!;
-    const zeilen: [Gesehen, boolean][] = [];
-    if (d.laeuft) zeilen.push([d.laeuft, true]);
-    for (const z of d.zuletzt || []) if (!(d.laeuft && z.titel === d.laeuft.titel)) zeilen.push([z, false]);
-    for (const [e, live] of zeilen) {
+  // Meine Merkliste (öffentliche Einträge, nur lesen)
+  type M = { medium: string; titel: string; bild?: string; status?: string; termine: { datum: string; text: string }[] };
+  const el = (t: string, c?: string, x?: string) => { const n = document.createElement(t); if (c) n.className = c; if (x != null) n.textContent = x; return n; };
+  const datumDe = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString('de-DE', { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric' });
+  const MEDIUM: Record<string, string> = { spiel: 'Spiel', film: 'Film', serie: 'Serie' };
+  fetch('/api/oeffentlich').then((r) => r.json()).then((d: M[]) => {
+    if (!Array.isArray(d) || !d.length) return;
+    const ul = document.getElementById('merk-liste')!;
+    for (const e of d.sort((a, b) => (a.termine[0]?.datum || '9999').localeCompare(b.termine[0]?.datum || '9999'))) {
       const li = el('li', 'eintrag'); li.dataset.medium = e.medium;
-      const poster = el('span', 'poster');
-      if (e.bild) { const i = document.createElement('img'); i.src = e.bild; i.alt = ''; i.loading = 'lazy'; poster.append(i); }
-      const mitte = el('div', 'mitte');
-      mitte.append(el('span', 'meta mono', live ? `${MEDIUM[e.medium]} · läuft gerade` : MEDIUM[e.medium]), el('span', 'titel', e.titel));
-      const folge = e.folge ? `S${e.folge.staffel}E${e.folge.nr} · ` : '';
-      mitte.append(el('span', 'termin mono', live ? `${folge}seit ${zeitDe(e.wann).replace('vor ', '')}` : `${folge}${zeitDe(e.wann)}`));
-      li.append(poster, mitte); gl.append(li);
+      const poster = el('span', 'poster'); if (e.bild) { const i = document.createElement('img'); i.src = e.bild; i.alt = ''; i.loading = 'lazy'; poster.append(i); }
+      const mitte = el('div', 'mitte'); const n = e.termine[0];
+      mitte.append(el('span', 'meta mono', MEDIUM[e.medium] || ''), el('span', 'titel', e.titel), el('span', 'anbieter mono', n ? `${datumDe(n.datum)} · ${n.text}` : (e.status || 'Termin noch offen')));
+      li.append(poster, mitte); ul.append(li);
     }
-    document.getElementById('gerade')!.hidden = zeilen.length === 0;
+    document.getElementById('merk')!.hidden = false;
   }).catch(() => {});
 </script>
 
 <style is:global>
-.dem .tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.dem .tabs { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
 .dem button {
   font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.05rem;
   border: 0; border-radius: 4px; padding: 10px 16px 9px; cursor: pointer; background: var(--paper); color: var(--ink); box-shadow: var(--shadow);
 }
 .dem button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
 .dem button[data-medium][aria-pressed='true'] { background: var(--card); color: var(--card-ink); }
-.dem .abschnitt { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.8rem; margin: 8px auto 14px; }
-.dem .gerade { margin-bottom: 36px; }
-.dem .hinweis { margin: 0 0 12px; font-size: 0.85rem; color: var(--ink-2); }
-.dem .liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
-.dem .eintrag {
-  display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: center;
-  background: var(--card); color: var(--card-ink); border-radius: 4px; padding: 10px 14px 10px 10px; box-shadow: var(--shadow);
-}
-.dem .poster { width: 56px; height: 80px; border-radius: 2px; background: color-mix(in srgb, currentColor 15%, transparent); overflow: hidden; display: block; }
+.dem .tag { margin-bottom: 30px; }
+.dem .tag[hidden], .dem .eintrag[hidden] { display: none; }
+.dem .tag-name { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.5rem; letter-spacing: 0.03em; margin: 0 0 10px; display: flex; align-items: center; gap: 14px; }
+.dem .tag-name::after { content: ''; flex: 1; border-top: 2px dashed var(--rule); }
+.dem .liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
+.dem .eintrag { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; background: var(--card); color: var(--card-ink); border-radius: 4px; padding: 9px 12px 9px 9px; box-shadow: var(--shadow); }
+.dem .poster { width: 56px; height: 84px; border-radius: 2px; background: color-mix(in srgb, currentColor 15%, transparent); overflow: hidden; display: block; }
 .dem .poster img { width: 100%; height: 100%; object-fit: cover; }
 .dem .mitte { display: grid; gap: 3px; min-width: 0; }
-.dem .meta { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
-.dem .titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.5rem; line-height: 1; }
-.dem .termin { font-size: 0.85rem; font-weight: 700; }
-.dem details { font-size: 0.78rem; }
-.dem details summary { cursor: pointer; }
-.dem .alle { margin: 4px 0 0; padding-left: 1.1em; }
+.dem .meta { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
+.dem .titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.35rem; line-height: 1; text-decoration: none; color: inherit; }
+.dem a.titel:hover { text-decoration: underline; }
+.dem .anbieter { font-size: 0.74rem; font-weight: 700; opacity: 0.92; }
+.dem .abschnitt { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.8rem; margin: 40px 0 14px; }
+.dem .hinweis, .dem .leer, .dem .quelle { font-size: 0.78rem; color: var(--ink-2); }
+.dem .quelle { margin-top: 48px; max-width: 70ch; }
 </style>

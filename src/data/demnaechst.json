@@ -1,0 +1,869 @@
+{
+ "von": "2026-10-24",
+ "bis": "2027-02-23",
+ "eintraege": [
+  {
+   "id": "tv-316702-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-10-24",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/ucRsnZ6zK1lVI4j5tIYLGSORlxn.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "vorab": false,
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-321221-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Minimum Wage",
+   "datum": "2026-10-26",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/iTVhDUbzUFUJ18jrcYM4rw7qGk.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/321221"
+  },
+  {
+   "id": "tv-334887-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "The Mob",
+   "datum": "2026-10-26",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/p7Z3iK7g3ZEOm60h121fvtDmA3f.jpg",
+   "anbieter": [
+    "Hulu"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/334887"
+  },
+  {
+   "id": "movie-1384216-streaming",
+   "art": "film",
+   "typ": "streaming",
+   "titel": "Das Ende der Sterne",
+   "datum": "2026-10-27",
+   "text": "Streaming/Digital",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/6sqyKcZxdlrOUZSYnhIbVWJDxIr.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1384216"
+  },
+  {
+   "id": "tv-333533-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "The One About Matthew Perry",
+   "datum": "2026-10-27",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/zDSjGvywwyWUqnMIpYYwFDyA7Az.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/333533"
+  },
+  {
+   "id": "movie-1514026-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Buddy",
+   "datum": "2026-10-28",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1514026"
+  },
+  {
+   "id": "movie-1596275-streaming",
+   "art": "film",
+   "typ": "streaming",
+   "titel": "Drive - The Pretenders",
+   "datum": "2026-10-28",
+   "text": "Streaming/Digital",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/bLDFCD3vMxeJJ5o8F4FOksnb0Fd.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1596275"
+  },
+  {
+   "id": "tv-313699-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Balaraw: Blood Island",
+   "datum": "2026-10-29",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/s1A6UOu8IOmw0kJXohlitMRiwQb.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/313699"
+  },
+  {
+   "id": "movie-1380417-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "By Any Means",
+   "datum": "2026-10-29",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/aO4O1dqRoXVTschAwLaw1njdTwv.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1380417"
+  },
+  {
+   "id": "tv-289517-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Dead-End Job",
+   "datum": "2026-10-29",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/eCP9AIIBxikhVLQ4ot0umBsnQCR.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/289517"
+  },
+  {
+   "id": "movie-858035-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Klara und die Sonne",
+   "datum": "2026-10-29",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/xqovj2p6HRsgHxN81qYAYF4StgM.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/858035"
+  },
+  {
+   "id": "tv-292741-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Nocturne",
+   "datum": "2026-10-29",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/hnZrbenpcBFvUIaXGNKxBeVwvE6.jpg",
+   "anbieter": [],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/292741"
+  },
+  {
+   "id": "movie-1400837-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Other Mommy",
+   "datum": "2026-10-29",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/dDRtLmxorXpXHxTJqxNlMT9rJP9.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1400837"
+  },
+  {
+   "id": "tv-300755-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Rinnan",
+   "datum": "2026-10-30",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/6nQ4utgXXR1ClpG294KZTxUICzd.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/300755"
+  },
+  {
+   "id": "tv-65334-s7",
+   "art": "serie",
+   "typ": "staffelstart",
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "datum": "2026-11-01",
+   "text": "Staffel 7",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/i6ZWgB0fFX7QkMYbsWUU9Q2YAGZ.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+"
+   ],
+   "vorab": false,
+   "link": "https://www.themoviedb.org/tv/65334"
+  },
+  {
+   "id": "tv-314271-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Bass X Machina",
+   "datum": "2026-11-03",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/y9c1AwrldWRsY9edSf21cOgbI0h.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/314271"
+  },
+  {
+   "id": "tv-258989-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "The Greatest",
+   "datum": "2026-11-04",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/fPrRUZFUIm7wYSwhT3hh7hsLG5R.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/258989"
+  },
+  {
+   "id": "movie-1084409-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Ein Talent fürs Morden",
+   "datum": "2026-11-05",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1084409"
+  },
+  {
+   "id": "movie-1381071-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Godzilla Minus Zero",
+   "datum": "2026-11-05",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/hZviv9gguqHGw4GK8gS5d5bDhA4.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1381071"
+  },
+  {
+   "id": "movie-1227877-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "I Love Boosters",
+   "datum": "2026-11-05",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1227877"
+  },
+  {
+   "id": "movie-848700-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Minotaurus",
+   "datum": "2026-11-05",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/jUzJYKP0vGXj3HTEkjQiVMjE4ej.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/848700"
+  },
+  {
+   "id": "movie-656908-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Ramayana: Rise of a Legend",
+   "datum": "2026-11-05",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/f3yZZw7zIsWo6m9xJStfjDauIZX.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/656908"
+  },
+  {
+   "id": "movie-1290418-streaming",
+   "art": "film",
+   "typ": "streaming",
+   "titel": "The Cycle - Die Wiederkehr",
+   "datum": "2026-11-05",
+   "text": "Streaming/Digital",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/zqyoVD8YuryisOJOzUNp2kFzN9E.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1290418"
+  },
+  {
+   "id": "movie-791523-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Wildwood",
+   "datum": "2026-11-05",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/oYkGlrvG7QNqrLtss4Q3Bpr1Np6.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/791523"
+  },
+  {
+   "id": "tv-303044-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Campus Drivers",
+   "datum": "2026-11-06",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/303044"
+  },
+  {
+   "id": "tv-338562-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "La Ley de Alicia",
+   "datum": "2026-11-11",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/7o9nY3GO97jyeVWdtWr12nR0Qpt.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/338562"
+  },
+  {
+   "id": "tv-291507-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "The Body",
+   "datum": "2026-11-11",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/fb52R8TZz7qbk3V2rniB7c5uVa.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/291507"
+  },
+  {
+   "id": "movie-1244523-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Beware Boiúna",
+   "datum": "2026-11-12",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/uW5YMPxJUzT9bkafrCKHXjPTCoQ.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1244523"
+  },
+  {
+   "id": "movie-1567605-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Ebenezer – Eine Weihnachtsgeschichte",
+   "datum": "2026-11-12",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/3VArJnDlvOnAIjzngIwjHU7CVVD.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1567605"
+  },
+  {
+   "id": "movie-1469342-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Her Private Hell",
+   "datum": "2026-11-12",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/8chAk0TbPT69Q5eN160JYayvfQM.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1469342"
+  },
+  {
+   "id": "movie-891621-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Wild Horse Nine",
+   "datum": "2026-11-12",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/aYv3GH3mloWHMBetmrd8aRHX7QF.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/891621"
+  },
+  {
+   "id": "tv-85077-s6",
+   "art": "serie",
+   "typ": "staffelstart",
+   "titel": "The Chosen",
+   "datum": "2026-11-15",
+   "text": "Staffel 6",
+   "jahr": "2019",
+   "bild": "https://image.tmdb.org/t/p/w342/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "anbieter": [
+    "Netflix",
+    "Amazon Prime Video"
+   ],
+   "vorab": false,
+   "link": "https://www.themoviedb.org/tv/85077"
+  },
+  {
+   "id": "movie-1300968-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Die Tribute von Panem: Sunrise on the Reaping",
+   "datum": "2026-11-19",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/eyxBOW9HSTbhT7s5V17SJKVegvC.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1300968"
+  },
+  {
+   "id": "movie-1422041-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "La bola negra",
+   "datum": "2026-11-19",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/dbpyc3Zo0m4E15XcQ7tTwlLBEtE.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1422041"
+  },
+  {
+   "id": "movie-1458099-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "The Only Living Pickpocket in New York",
+   "datum": "2026-11-19",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/pNdB9va2AEPQe9UfhKAdIt8nus9.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1458099"
+  },
+  {
+   "id": "movie-1433583-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "The Weight – Im Goldrausch",
+   "datum": "2026-11-19",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/ha3AUl0Zc0xs2hWxCROHTkDId25.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1433583"
+  },
+  {
+   "id": "tv-171802-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Blade Runner 2099",
+   "datum": "2026-11-23",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/gMdQMmqKu5zee7sCGGZvbSHFVb2.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/171802"
+  },
+  {
+   "id": "movie-822653-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
+   "datum": "2026-11-24",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/822653"
+  },
+  {
+   "id": "movie-1457866-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "datum": "2026-11-25",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/mHWSlvyAJRiEkCyqT91HuENbVaZ.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1457866"
+  },
+  {
+   "id": "movie-1286656-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "I Play Rocky",
+   "datum": "2026-11-26",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/fViZxjUGsR6IQD77FP22PIMfk0R.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1286656"
+  },
+  {
+   "id": "movie-1538497-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Wie verhext",
+   "datum": "2026-11-26",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/lMYJ4ogEBiB6pTxi5sm73kBsxiE.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1538497"
+  },
+  {
+   "id": "movie-1514682-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Above & Below",
+   "datum": "2026-12-03",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/7bOuu1SRALGwsG2fLCTvRkCmQBj.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1514682"
+  },
+  {
+   "id": "tv-288672-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Pride and Prejudice",
+   "datum": "2026-12-03",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/pbY9nhHILFDmfeHlMYMRIHVqAF5.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/288672"
+  },
+  {
+   "id": "movie-1765072-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "You Can See Everything",
+   "datum": "2026-12-03",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1765072"
+  },
+  {
+   "id": "movie-1554956-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Der Festländer",
+   "datum": "2026-12-10",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/nGnI5tT7qstkld94S8m4c68noZt.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1554956"
+  },
+  {
+   "id": "movie-1117898-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Der Kater mit Hut",
+   "datum": "2026-12-10",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1117898"
+  },
+  {
+   "id": "movie-1003596-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Avengers: Doomsday",
+   "datum": "2026-12-16",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/sLYCyO58UvBuBtbHTQjPCCgJ4dG.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1003596"
+  },
+  {
+   "id": "movie-1170608-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Dune: Part Three",
+   "datum": "2026-12-17",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/7JcLIa7aK0UOahsevVwW9bGRgiE.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1170608"
+  },
+  {
+   "id": "movie-1377237-streaming",
+   "art": "film",
+   "typ": "streaming",
+   "titel": "Runner",
+   "datum": "2026-12-17",
+   "text": "Streaming/Digital",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/juEAZhc06JxLeCxfhIq6DqBlM3K.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1377237"
+  },
+  {
+   "id": "tv-289729-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Unaccustomed Earth",
+   "datum": "2026-12-17",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/woKoBzADQDl6roxcCERAnGLgYf9.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/289729"
+  },
+  {
+   "id": "movie-1300926-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Angry Birds 3 - Der Film",
+   "datum": "2026-12-23",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/oxaW6X3xohnzdFSBKCrCjRDckMe.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1300926"
+  },
+  {
+   "id": "movie-1260649-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Jumanji: Open World",
+   "datum": "2026-12-23",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/qGFuvcXqQdXS5ZNblDlVTOmK6mq.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1260649"
+  },
+  {
+   "id": "tv-224377-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Harry Potter",
+   "datum": "2026-12-25",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/qQotjS5zzzqoc7jjxMdsKXN9DGu.jpg",
+   "anbieter": [
+    "HBO",
+    "HBO Max"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/224377"
+  },
+  {
+   "id": "movie-1430077-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Hokum",
+   "datum": "2026-12-31",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/x6rHcQFiYcczLQPrmxXPAicm54E.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1430077"
+  },
+  {
+   "id": "tv-79744-s9",
+   "art": "serie",
+   "typ": "staffelstart",
+   "titel": "The Rookie",
+   "datum": "2027-01-06",
+   "text": "Staffel 9",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/70kTz0OmjjZe7zHvIDrq2iKW7PJ.jpg",
+   "anbieter": [
+    "Netflix",
+    "Amazon Prime Video",
+    "Disney+",
+    "WOW",
+    "Sky Go"
+   ],
+   "vorab": false,
+   "link": "https://www.themoviedb.org/tv/79744"
+  },
+  {
+   "id": "movie-1401459-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Fjord",
+   "datum": "2027-01-07",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/qiYm44CQBFOZ0Vs8BtmH2swYLz2.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1401459"
+  },
+  {
+   "id": "movie-1440769-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "The Beekeeper 2",
+   "datum": "2027-01-14",
+   "text": "Kinostart",
+   "jahr": "2027",
+   "bild": "https://image.tmdb.org/t/p/w342/bNlIm8bk5AHrinnUmi4Y8A8W0XM.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1440769"
+  },
+  {
+   "id": "tv-285887-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Bloodaxe",
+   "datum": "2027-01-20",
+   "text": "Neue Serie",
+   "jahr": "2027",
+   "bild": "https://image.tmdb.org/t/p/w342/rKHHxycygVMdwkqXOBAuMsOsqCx.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/285887"
+  },
+  {
+   "id": "movie-1391239-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Das Debüt - Ihr großer Auftritt",
+   "datum": "2027-01-21",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/5CZdxLiBpYMBXwo0rur6YzZTVP4.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1391239"
+  },
+  {
+   "id": "movie-1585239-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Club Kid",
+   "datum": "2027-01-28",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/o1qMU0ZB5XDX8IXJFFu3AkhOqjh.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1585239"
+  },
+  {
+   "id": "movie-1165366-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "De Gaulle - Zeit des Widerstands",
+   "datum": "2027-02-04",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/zWuZWFKyga6GF3agrhJn8UtdMSu.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1165366"
+  },
+  {
+   "id": "movie-1074074-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "El ser querido",
+   "datum": "2027-02-04",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1074074"
+  },
+  {
+   "id": "movie-1365378-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Le rêve américain",
+   "datum": "2027-02-04",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/bURZdEMPoaxOCPstwfZ2gYfhqGx.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1365378"
+  },
+  {
+   "id": "movie-1147572-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Das Wunder von Narnia",
+   "datum": "2027-02-11",
+   "text": "Kinostart",
+   "jahr": "2027",
+   "bild": "https://image.tmdb.org/t/p/w342/dKJ6ownJGWwSReCGRQWimXf700v.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1147572"
+  },
+  {
+   "id": "movie-1195803-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Wicker",
+   "datum": "2027-02-11",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1195803"
+  },
+  {
+   "id": "tv-274395-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "The Land",
+   "datum": "2027-02-15",
+   "text": "Neue Serie",
+   "jahr": "2027",
+   "bild": "https://image.tmdb.org/t/p/w342/3fpGlquLsbexh4OAVxv582dAUQ4.jpg",
+   "anbieter": [
+    "Hulu"
+   ],
+   "vorab": true,
+   "link": "https://www.themoviedb.org/tv/274395"
+  }
+ ]
+}
