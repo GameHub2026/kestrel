@@ -16,6 +16,7 @@ const nav = [
   { href: '/wie-ich-werte/', label: 'Wie ich werte' },
 ];
 const canonical = new URL(path, Astro.site);
+const stand = new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Berlin' }).format(new Date());
 ---
 <!doctype html>
 <html lang="de">
@@ -34,6 +35,10 @@ const canonical = new URL(path, Astro.site);
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {privat && <meta name="robots" content="noindex, nofollow" />}
+    <script is:inline>
+      // Hell/Dunkel vor dem ersten Zeichnen: gespeicherte Wahl, sonst Systemeinstellung.
+      try { var t = localStorage.getItem('kestrel-theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+    </script>
   </head>
   <body>
     <Fragment set:html={`<!--
@@ -57,6 +62,17 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           ))}
         </ul>
       </nav>
+      <div class="kopf-tools">
+        <span class="stempel mono" id="stempel" tabindex="0" title="Uhrzeit anzeigen">
+          <span class="st-a">Zuletzt festgehalten {stand}</span>
+          <span class="st-b" aria-hidden="true" id="uhr"></span>
+        </span>
+        <button type="button" class="theme" id="theme" role="switch" aria-label="Dunkles Design" aria-checked="false">
+          <span class="theme-knopf" aria-hidden="true"></span>
+          <svg class="t-sonne" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="t-mond" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+      </div>
     </header>
     <main id="inhalt">
       <slot />
@@ -65,12 +81,63 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <p>Kestrel ist eine private Sammlung von Kevin. Texte über Spiele, Filme und Serien, eine Skala für alles. Alte Wertungen werden nie geändert, nur durch Nachträge ergänzt.</p>
       <p class="mono"><a href="/wie-ich-werte/">Wie ich werte</a> · <a href="/archiv/">Archiv</a></p>
     </div></footer>
+    <script>
+      const root = document.documentElement;
+      const btn = document.getElementById('theme')!;
+      const dunkel = () => root.getAttribute('data-theme') ? root.getAttribute('data-theme') === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+      const zeige = () => btn.setAttribute('aria-checked', String(dunkel()));
+      zeige();
+      btn.addEventListener('click', () => {
+        const neu = dunkel() ? 'light' : 'dark';
+        root.classList.add('theme-wechsel');
+        root.setAttribute('data-theme', neu);
+        try { localStorage.setItem('kestrel-theme', neu); } catch {}
+        zeige();
+        setTimeout(() => root.classList.remove('theme-wechsel'), 450);
+      });
+      matchMedia('(prefers-color-scheme: dark)').addEventListener('change', zeige);
+
+      // Laufende Uhr, sichtbar beim Überfahren der Statuszeile
+      const uhr = document.getElementById('uhr')!;
+      const fmt = new Intl.DateTimeFormat('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Berlin' });
+      const zeit = new Intl.DateTimeFormat('de-DE', { hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Europe/Berlin', timeZoneName: 'short' });
+      const tick = () => { const d = new Date(); uhr.textContent = `${fmt.format(d)} · ${zeit.format(d)}`; };
+      tick(); setInterval(tick, 1000);
+    </script>
   </body>
 </html>
 
 <style>
   .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--ground); padding: 8px 12px; z-index: 10; }
   .skip:focus { left: 8px; }
+
+  .kopf-tools { display: flex; align-items: center; gap: 14px; margin-left: auto; }
+  nav { margin-left: auto; }
+  .kopf-tools { margin-left: 0; }
+
+  /* Statuszeile: weicher Unschärfe-Wechsel zur laufenden Uhr */
+  .stempel { display: grid; font-size: 0.78rem; color: var(--ink-2); cursor: default; white-space: nowrap; }
+  .stempel > span { grid-area: 1 / 1; text-align: right; transition: opacity 420ms cubic-bezier(0.16, 1, 0.3, 1), filter 420ms cubic-bezier(0.16, 1, 0.3, 1), transform 420ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .stempel .st-b { opacity: 0; filter: blur(6px); transform: translateY(3px); color: var(--ink); }
+  .stempel:hover .st-a, .stempel:focus-visible .st-a { opacity: 0; filter: blur(6px); transform: translateY(-3px); }
+  .stempel:hover .st-b, .stempel:focus-visible .st-b { opacity: 1; filter: blur(0); transform: none; }
+
+  /* Hell/Dunkel-Schalter: Pille mit Sonne und Mond, der helle Knopf gleitet zur aktiven Seite */
+  .theme {
+    position: relative; display: inline-grid; grid-template-columns: 1fr 1fr; align-items: center; width: 76px; height: 38px; padding: 0 4px;
+    border: 0; border-radius: 999px; background: color-mix(in srgb, var(--ink) 9%, var(--ground)); cursor: pointer;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.12);
+  }
+  .theme svg { position: relative; z-index: 1; width: 17px; height: 17px; justify-self: center; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; color: var(--ink-2); transition: color 300ms, transform 500ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .theme .t-mond { fill: none; }
+  .theme-knopf {
+    position: absolute; top: 4px; left: 4px; width: 30px; height: 30px; border-radius: 50%; background: var(--paper);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.15), 0 3px 8px rgb(0 0 0 / 0.18); transition: transform 450ms cubic-bezier(0.34, 1.4, 0.5, 1);
+  }
+  .theme[aria-checked='false'] .t-sonne, .theme[aria-checked='true'] .t-mond { color: var(--ink); }
+  .theme[aria-checked='true'] .theme-knopf { transform: translateX(38px); }
+  .theme[aria-checked='true'] .t-mond { transform: rotate(-20deg); }
+  .theme:hover .t-sonne { transform: rotate(45deg); }
 
   .site-head {
     display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;

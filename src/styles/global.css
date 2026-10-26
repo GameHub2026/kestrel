@@ -108,3 +108,10 @@ html { scrollbar-color: var(--ink-2) var(--ground); }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
+
+/* kestrel-cursor: derselbe eigene Mauszeiger wie in GameHub */
+html, body { cursor: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2720%27 height=%2720%27 viewBox=%270 0 20 20%27%3E%3Cpath d=%27M2.5 2.5 L15.5 7.4 L9.9 9 L7.9 15 Z%27 fill=%27%23161e1a%27 stroke=%27%23fff%27 stroke-width=%271.8%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E") 2 2, default; }
+a, button, label, summary, [role='switch'] { cursor: pointer; }
+
+/* Weicher Übergang beim Umschalten Hell/Dunkel */
+html.theme-wechsel, html.theme-wechsel * { transition: background-color 400ms ease, color 400ms ease, border-color 400ms ease !important; }
