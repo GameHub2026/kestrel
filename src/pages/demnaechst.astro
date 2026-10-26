@@ -11,7 +11,7 @@ for (const e of eintraege) {
   if (!gruppen.has(e.datum)) gruppen.set(e.datum, []);
   gruppen.get(e.datum)!.push(e);
 }
-const ART = { kino: 'Kino', streaming: 'Film · Streaming', serienstart: 'Serie', staffelstart: 'Serie' } as Record<string, string>;
+const ART = { kino: 'Film', streaming: 'Film', serienstart: 'Serie', staffelstart: 'Serie' } as Record<string, string>;
 ---
 <Base title="Demnächst" description="Kommende Kinostarts sowie neue Serien und Staffeln bei Netflix, Prime Video, Disney+ und Co. in Deutschland.">
   <header class="page-head wrap">
