@@ -14,8 +14,80 @@
    "anbieter": [
     "Amazon Prime Video"
    ],
-   "vorab": false,
    "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-316702-s1-2026-10-25",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-10-25",
+   "text": "S1E2",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-456-s38-2026-10-25",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Simpsons",
+   "datum": "2026-10-25",
+   "text": "S38E4",
+   "jahr": "1989",
+   "bild": "https://image.tmdb.org/t/p/w342/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/456"
+  },
+  {
+   "id": "tv-312359-s1-2026-10-25",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Dragon Ball Super: Beerus",
+   "datum": "2026-10-25",
+   "text": "S1E3 · Der Gott der Zerstörung reist zur Erde",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/312359"
+  },
+  {
+   "id": "tv-3034-s57-2026-10-25",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tatort",
+   "datum": "2026-10-25",
+   "text": "S57E22 · Gottesgarten",
+   "jahr": "1970",
+   "bild": "https://image.tmdb.org/t/p/w342/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/3034"
+  },
+  {
+   "id": "tv-80748-s9-2026-10-26",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "FBI",
+   "datum": "2026-10-26",
+   "text": "S9E4",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/80748"
   },
   {
    "id": "tv-321221-s1",
@@ -29,8 +101,21 @@
    "anbieter": [
     "Netflix"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/321221"
+  },
+  {
+   "id": "tv-12786-s20-2026-10-26",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Murdoch Mysteries",
+   "datum": "2026-10-26",
+   "text": "S20E4",
+   "jahr": "2008",
+   "bild": "https://image.tmdb.org/t/p/w342/pEyGUaG21MaWelKsDcy5LK86jqG.jpg",
+   "anbieter": [
+    "WOW"
+   ],
+   "link": "https://www.themoviedb.org/tv/12786"
   },
   {
    "id": "tv-334887-s1",
@@ -44,20 +129,38 @@
    "anbieter": [
     "Hulu"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/334887"
   },
   {
-   "id": "movie-1384216-streaming",
-   "art": "film",
-   "typ": "streaming",
-   "titel": "Das Ende der Sterne",
+   "id": "tv-30984-s2-2026-10-27",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Bleach",
    "datum": "2026-10-27",
-   "text": "Streaming/Digital",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/6sqyKcZxdlrOUZSYnhIbVWJDxIr.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1384216"
+   "text": "S2E50",
+   "jahr": "2004",
+   "bild": "https://image.tmdb.org/t/p/w342/e0kKmeM8R7Kersh5N2PPzIRNRhr.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/30984"
+  },
+  {
+   "id": "tv-4614-s24-2026-10-27",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Navy CIS",
+   "datum": "2026-10-27",
+   "text": "S24E4",
+   "jahr": "2003",
+   "bild": "https://image.tmdb.org/t/p/w342/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
+   "anbieter": [
+    "Disney+",
+    "Paramount+",
+    "WOW",
+    "Sky Go"
+   ],
+   "link": "https://www.themoviedb.org/tv/4614"
   },
   {
    "id": "tv-333533-s1",
@@ -71,8 +174,21 @@
    "anbieter": [
     "Netflix"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/333533"
+  },
+  {
+   "id": "tv-213375-s1-2026-10-27",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "VisionQuest",
+   "datum": "2026-10-27",
+   "text": "Staffel 1 · Folgen 5–6",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/213375"
   },
   {
    "id": "movie-1514026-kino",
@@ -87,16 +203,91 @@
    "link": "https://www.themoviedb.org/movie/1514026"
   },
   {
-   "id": "movie-1596275-streaming",
-   "art": "film",
-   "typ": "streaming",
-   "titel": "Drive - The Pretenders",
+   "id": "tv-44006-s15-2026-10-28",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago Fire",
    "datum": "2026-10-28",
-   "text": "Streaming/Digital",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/bLDFCD3vMxeJJ5o8F4FOksnb0Fd.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1596275"
+   "text": "S15E4",
+   "jahr": "2012",
+   "bild": "https://image.tmdb.org/t/p/w342/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
+   "anbieter": [
+    "WOW"
+   ],
+   "link": "https://www.themoviedb.org/tv/44006"
+  },
+  {
+   "id": "tv-62650-s12-2026-10-28",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago Med",
+   "datum": "2026-10-28",
+   "text": "S12E4",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "anbieter": [
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/62650"
+  },
+  {
+   "id": "tv-58841-s14-2026-10-28",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago P.D.",
+   "datum": "2026-10-28",
+   "text": "S14E4",
+   "jahr": "2014",
+   "bild": "https://image.tmdb.org/t/p/w342/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
+   "anbieter": [
+    "Netflix",
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/58841"
+  },
+  {
+   "id": "tv-2190-s29-2026-10-28",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "South Park",
+   "datum": "2026-10-28",
+   "text": "S29E4",
+   "jahr": "1997",
+   "bild": "https://image.tmdb.org/t/p/w342/4EXUM5hi5nymlmqIVwnbIJENKpe.jpg",
+   "anbieter": [
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/2190"
+  },
+  {
+   "id": "tv-75219-s10-2026-10-29",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "9-1-1 Notruf L.A.",
+   "datum": "2026-10-29",
+   "text": "S10E3",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/75219"
+  },
+  {
+   "id": "tv-1413-s13-2026-10-29",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "American Horror Story",
+   "datum": "2026-10-29",
+   "text": "S13E13",
+   "jahr": "2011",
+   "bild": "https://image.tmdb.org/t/p/w342/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/1413"
   },
   {
    "id": "tv-313699-s1",
@@ -110,7 +301,6 @@
    "anbieter": [
     "Netflix"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/313699"
   },
   {
@@ -137,8 +327,21 @@
    "anbieter": [
     "Netflix"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/289517"
+  },
+  {
+   "id": "tv-1416-s23-2026-10-29",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Grey's Anatomy",
+   "datum": "2026-10-29",
+   "text": "S23E3",
+   "jahr": "2005",
+   "bild": "https://image.tmdb.org/t/p/w342/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/1416"
   },
   {
    "id": "movie-858035-kino",
@@ -153,6 +356,38 @@
    "link": "https://www.themoviedb.org/movie/858035"
   },
   {
+   "id": "tv-549-s26-2026-10-29",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Law & Order",
+   "datum": "2026-10-29",
+   "text": "S26E4",
+   "jahr": "1990",
+   "bild": "https://image.tmdb.org/t/p/w342/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
+   "anbieter": [
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/549"
+  },
+  {
+   "id": "tv-2734-s28-2026-10-29",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Law & Order: Special Victims Unit",
+   "datum": "2026-10-29",
+   "text": "S28E4",
+   "jahr": "1999",
+   "bild": "https://image.tmdb.org/t/p/w342/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/2734"
+  },
+  {
    "id": "tv-292741-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -162,7 +397,6 @@
    "jahr": "2026",
    "bild": "https://image.tmdb.org/t/p/w342/hnZrbenpcBFvUIaXGNKxBeVwvE6.jpg",
    "anbieter": [],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/292741"
   },
   {
@@ -178,6 +412,64 @@
    "link": "https://www.themoviedb.org/movie/1400837"
   },
   {
+   "id": "tv-284833-s1-2026-10-30",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Avatar - Die sieben Häfen",
+   "datum": "2026-10-30",
+   "text": "Staffel 1 · Folgen 10–13",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/me3xp8w0RkAGLChEhuf7BVENUHO.jpg",
+   "anbieter": [
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/284833"
+  },
+  {
+   "id": "tv-220542-s1-2026-10-30",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Tagebücher der Apothekerin",
+   "datum": "2026-10-30",
+   "text": "S1E53",
+   "jahr": "2023",
+   "bild": "https://image.tmdb.org/t/p/w342/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/220542"
+  },
+  {
+   "id": "tv-45790-s6-2026-10-30",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "JoJo's Bizarre Adventure",
+   "datum": "2026-10-30",
+   "text": "S6E7",
+   "jahr": "2012",
+   "bild": "https://image.tmdb.org/t/p/w342/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/45790"
+  },
+  {
+   "id": "tv-247718-s2-2026-10-30",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "MobLand: Familie bis aufs Blut",
+   "datum": "2026-10-30",
+   "text": "S2E7",
+   "jahr": "2025",
+   "bild": "https://image.tmdb.org/t/p/w342/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
+   "anbieter": [
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/247718"
+  },
+  {
    "id": "tv-300755-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -189,8 +481,94 @@
    "anbieter": [
     "Amazon Prime Video"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/300755"
+  },
+  {
+   "id": "tv-153312-s4-2026-10-30",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tulsa King",
+   "datum": "2026-10-30",
+   "text": "S4E3",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/153312"
+  },
+  {
+   "id": "tv-316702-s1-2026-10-31",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-10-31",
+   "text": "S1E3",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-30983-s1-2026-10-31",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Detektiv Conan",
+   "datum": "2026-10-31",
+   "text": "S1E1218",
+   "jahr": "1996",
+   "bild": "https://image.tmdb.org/t/p/w342/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "anbieter": [
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/30983"
+  },
+  {
+   "id": "tv-316702-s1-2026-11-01",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-11-01",
+   "text": "S1E4",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-456-s38-2026-11-01",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Simpsons",
+   "datum": "2026-11-01",
+   "text": "S38E5",
+   "jahr": "1989",
+   "bild": "https://image.tmdb.org/t/p/w342/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/456"
+  },
+  {
+   "id": "tv-312359-s1-2026-11-01",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Dragon Ball Super: Beerus",
+   "datum": "2026-11-01",
+   "text": "S1E4",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/312359"
   },
   {
    "id": "tv-65334-s7",
@@ -205,8 +583,22 @@
     "Netflix",
     "Disney+"
    ],
-   "vorab": false,
    "link": "https://www.themoviedb.org/tv/65334"
+  },
+  {
+   "id": "tv-80748-s9-2026-11-02",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "FBI",
+   "datum": "2026-11-02",
+   "text": "S9E5",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/80748"
   },
   {
    "id": "tv-314271-s1",
@@ -220,8 +612,83 @@
    "anbieter": [
     "Netflix"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/314271"
+  },
+  {
+   "id": "tv-4614-s24-2026-11-03",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Navy CIS",
+   "datum": "2026-11-03",
+   "text": "S24E5",
+   "jahr": "2003",
+   "bild": "https://image.tmdb.org/t/p/w342/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
+   "anbieter": [
+    "Disney+",
+    "Paramount+",
+    "WOW",
+    "Sky Go"
+   ],
+   "link": "https://www.themoviedb.org/tv/4614"
+  },
+  {
+   "id": "tv-213375-s1-2026-11-03",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "VisionQuest",
+   "datum": "2026-11-03",
+   "text": "S1E7",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/213375"
+  },
+  {
+   "id": "tv-44006-s15-2026-11-04",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago Fire",
+   "datum": "2026-11-04",
+   "text": "S15E5",
+   "jahr": "2012",
+   "bild": "https://image.tmdb.org/t/p/w342/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
+   "anbieter": [
+    "WOW"
+   ],
+   "link": "https://www.themoviedb.org/tv/44006"
+  },
+  {
+   "id": "tv-62650-s12-2026-11-04",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago Med",
+   "datum": "2026-11-04",
+   "text": "S12E5",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "anbieter": [
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/62650"
+  },
+  {
+   "id": "tv-58841-s14-2026-11-04",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago P.D.",
+   "datum": "2026-11-04",
+   "text": "S14E5",
+   "jahr": "2014",
+   "bild": "https://image.tmdb.org/t/p/w342/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
+   "anbieter": [
+    "Netflix",
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/58841"
   },
   {
    "id": "tv-258989-s1",
@@ -235,8 +702,21 @@
    "anbieter": [
     "Amazon Prime Video"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/258989"
+  },
+  {
+   "id": "tv-75219-s10-2026-11-05",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "9-1-1 Notruf L.A.",
+   "datum": "2026-11-05",
+   "text": "S10E4",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/75219"
   },
   {
    "id": "movie-1084409-kino",
@@ -263,6 +743,20 @@
    "link": "https://www.themoviedb.org/movie/1381071"
   },
   {
+   "id": "tv-1416-s23-2026-11-05",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Grey's Anatomy",
+   "datum": "2026-11-05",
+   "text": "S23E4",
+   "jahr": "2005",
+   "bild": "https://image.tmdb.org/t/p/w342/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/1416"
+  },
+  {
    "id": "movie-1227877-kino",
    "art": "film",
    "typ": "kino",
@@ -273,6 +767,38 @@
    "bild": "https://image.tmdb.org/t/p/w342/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1227877"
+  },
+  {
+   "id": "tv-549-s26-2026-11-05",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Law & Order",
+   "datum": "2026-11-05",
+   "text": "S26E5",
+   "jahr": "1990",
+   "bild": "https://image.tmdb.org/t/p/w342/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
+   "anbieter": [
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/549"
+  },
+  {
+   "id": "tv-2734-s28-2026-11-05",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Law & Order: Special Victims Unit",
+   "datum": "2026-11-05",
+   "text": "S28E5",
+   "jahr": "1999",
+   "bild": "https://image.tmdb.org/t/p/w342/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/2734"
   },
   {
    "id": "movie-848700-kino",
@@ -299,18 +825,6 @@
    "link": "https://www.themoviedb.org/movie/656908"
   },
   {
-   "id": "movie-1290418-streaming",
-   "art": "film",
-   "typ": "streaming",
-   "titel": "The Cycle - Die Wiederkehr",
-   "datum": "2026-11-05",
-   "text": "Streaming/Digital",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/zqyoVD8YuryisOJOzUNp2kFzN9E.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1290418"
-  },
-  {
    "id": "movie-791523-kino",
    "art": "film",
    "typ": "kino",
@@ -334,8 +848,229 @@
    "anbieter": [
     "Amazon Prime Video"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/303044"
+  },
+  {
+   "id": "tv-220542-s1-2026-11-06",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Tagebücher der Apothekerin",
+   "datum": "2026-11-06",
+   "text": "S1E54",
+   "jahr": "2023",
+   "bild": "https://image.tmdb.org/t/p/w342/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/220542"
+  },
+  {
+   "id": "tv-45790-s6-2026-11-06",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "JoJo's Bizarre Adventure",
+   "datum": "2026-11-06",
+   "text": "S6E8",
+   "jahr": "2012",
+   "bild": "https://image.tmdb.org/t/p/w342/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/45790"
+  },
+  {
+   "id": "tv-247718-s2-2026-11-06",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "MobLand: Familie bis aufs Blut",
+   "datum": "2026-11-06",
+   "text": "S2E8",
+   "jahr": "2025",
+   "bild": "https://image.tmdb.org/t/p/w342/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
+   "anbieter": [
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/247718"
+  },
+  {
+   "id": "tv-153312-s4-2026-11-06",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tulsa King",
+   "datum": "2026-11-06",
+   "text": "S4E4",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/153312"
+  },
+  {
+   "id": "tv-316702-s1-2026-11-07",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-11-07",
+   "text": "S1E5",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-316702-s1-2026-11-08",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-11-08",
+   "text": "S1E6",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-456-s38-2026-11-08",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Simpsons",
+   "datum": "2026-11-08",
+   "text": "S38E6",
+   "jahr": "1989",
+   "bild": "https://image.tmdb.org/t/p/w342/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/456"
+  },
+  {
+   "id": "tv-312359-s1-2026-11-08",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Dragon Ball Super: Beerus",
+   "datum": "2026-11-08",
+   "text": "S1E5",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/312359"
+  },
+  {
+   "id": "tv-65334-s7-2026-11-08",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "datum": "2026-11-08",
+   "text": "S7E3",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/65334"
+  },
+  {
+   "id": "tv-3034-s57-2026-11-08",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tatort",
+   "datum": "2026-11-08",
+   "text": "S57E23 · Frei wie ein Adler",
+   "jahr": "1970",
+   "bild": "https://image.tmdb.org/t/p/w342/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/3034"
+  },
+  {
+   "id": "tv-4614-s24-2026-11-10",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Navy CIS",
+   "datum": "2026-11-10",
+   "text": "S24E6",
+   "jahr": "2003",
+   "bild": "https://image.tmdb.org/t/p/w342/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
+   "anbieter": [
+    "Disney+",
+    "Paramount+",
+    "WOW",
+    "Sky Go"
+   ],
+   "link": "https://www.themoviedb.org/tv/4614"
+  },
+  {
+   "id": "tv-213375-s1-2026-11-10",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "VisionQuest",
+   "datum": "2026-11-10",
+   "text": "S1E8",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/213375"
+  },
+  {
+   "id": "tv-44006-s15-2026-11-11",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago Fire",
+   "datum": "2026-11-11",
+   "text": "S15E6",
+   "jahr": "2012",
+   "bild": "https://image.tmdb.org/t/p/w342/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
+   "anbieter": [
+    "WOW"
+   ],
+   "link": "https://www.themoviedb.org/tv/44006"
+  },
+  {
+   "id": "tv-62650-s12-2026-11-11",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago Med",
+   "datum": "2026-11-11",
+   "text": "S12E6",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "anbieter": [
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/62650"
+  },
+  {
+   "id": "tv-58841-s14-2026-11-11",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago P.D.",
+   "datum": "2026-11-11",
+   "text": "S14E6",
+   "jahr": "2014",
+   "bild": "https://image.tmdb.org/t/p/w342/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
+   "anbieter": [
+    "Netflix",
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/58841"
   },
   {
    "id": "tv-338562-s1",
@@ -349,8 +1084,21 @@
    "anbieter": [
     "Netflix"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/338562"
+  },
+  {
+   "id": "tv-2190-s29-2026-11-11",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "South Park",
+   "datum": "2026-11-11",
+   "text": "S29E5",
+   "jahr": "1997",
+   "bild": "https://image.tmdb.org/t/p/w342/4EXUM5hi5nymlmqIVwnbIJENKpe.jpg",
+   "anbieter": [
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/2190"
   },
   {
    "id": "tv-291507-s1",
@@ -364,8 +1112,21 @@
    "anbieter": [
     "Netflix"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/291507"
+  },
+  {
+   "id": "tv-75219-s10-2026-11-12",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "9-1-1 Notruf L.A.",
+   "datum": "2026-11-12",
+   "text": "S10E5",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/75219"
   },
   {
    "id": "movie-1244523-kino",
@@ -392,6 +1153,20 @@
    "link": "https://www.themoviedb.org/movie/1567605"
   },
   {
+   "id": "tv-1416-s23-2026-11-12",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Grey's Anatomy",
+   "datum": "2026-11-12",
+   "text": "S23E5",
+   "jahr": "2005",
+   "bild": "https://image.tmdb.org/t/p/w342/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/1416"
+  },
+  {
    "id": "movie-1469342-kino",
    "art": "film",
    "typ": "kino",
@@ -402,6 +1177,23 @@
    "bild": "https://image.tmdb.org/t/p/w342/8chAk0TbPT69Q5eN160JYayvfQM.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1469342"
+  },
+  {
+   "id": "tv-2734-s28-2026-11-12",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Law & Order: Special Victims Unit",
+   "datum": "2026-11-12",
+   "text": "S28E6",
+   "jahr": "1999",
+   "bild": "https://image.tmdb.org/t/p/w342/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/2734"
   },
   {
    "id": "movie-891621-kino",
@@ -416,6 +1208,137 @@
    "link": "https://www.themoviedb.org/movie/891621"
   },
   {
+   "id": "tv-220542-s1-2026-11-13",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Tagebücher der Apothekerin",
+   "datum": "2026-11-13",
+   "text": "S1E55",
+   "jahr": "2023",
+   "bild": "https://image.tmdb.org/t/p/w342/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/220542"
+  },
+  {
+   "id": "tv-45790-s6-2026-11-13",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "JoJo's Bizarre Adventure",
+   "datum": "2026-11-13",
+   "text": "S6E9",
+   "jahr": "2012",
+   "bild": "https://image.tmdb.org/t/p/w342/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/45790"
+  },
+  {
+   "id": "tv-247718-s2-2026-11-13",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "MobLand: Familie bis aufs Blut",
+   "datum": "2026-11-13",
+   "text": "S2E9",
+   "jahr": "2025",
+   "bild": "https://image.tmdb.org/t/p/w342/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
+   "anbieter": [
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/247718"
+  },
+  {
+   "id": "tv-153312-s4-2026-11-13",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tulsa King",
+   "datum": "2026-11-13",
+   "text": "S4E5",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/153312"
+  },
+  {
+   "id": "tv-316702-s1-2026-11-14",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-11-14",
+   "text": "S1E7",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-316702-s1-2026-11-15",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-11-15",
+   "text": "S1E8",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-456-s38-2026-11-15",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Simpsons",
+   "datum": "2026-11-15",
+   "text": "S38E7",
+   "jahr": "1989",
+   "bild": "https://image.tmdb.org/t/p/w342/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/456"
+  },
+  {
+   "id": "tv-312359-s1-2026-11-15",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Dragon Ball Super: Beerus",
+   "datum": "2026-11-15",
+   "text": "S1E6",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/312359"
+  },
+  {
+   "id": "tv-3034-s57-2026-11-15",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tatort",
+   "datum": "2026-11-15",
+   "text": "S57E24 · Narrentanz",
+   "jahr": "1970",
+   "bild": "https://image.tmdb.org/t/p/w342/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/3034"
+  },
+  {
    "id": "tv-85077-s6",
    "art": "serie",
    "typ": "staffelstart",
@@ -428,8 +1351,21 @@
     "Netflix",
     "Amazon Prime Video"
    ],
-   "vorab": false,
    "link": "https://www.themoviedb.org/tv/85077"
+  },
+  {
+   "id": "tv-75219-s10-2026-11-19",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "9-1-1 Notruf L.A.",
+   "datum": "2026-11-19",
+   "text": "S10E6",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/75219"
   },
   {
    "id": "movie-1300968-kino",
@@ -442,6 +1378,20 @@
    "bild": "https://image.tmdb.org/t/p/w342/eyxBOW9HSTbhT7s5V17SJKVegvC.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1300968"
+  },
+  {
+   "id": "tv-1416-s23-2026-11-19",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Grey's Anatomy",
+   "datum": "2026-11-19",
+   "text": "S23E6",
+   "jahr": "2005",
+   "bild": "https://image.tmdb.org/t/p/w342/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/1416"
   },
   {
    "id": "movie-1422041-kino",
@@ -480,6 +1430,152 @@
    "link": "https://www.themoviedb.org/movie/1433583"
   },
   {
+   "id": "tv-220542-s1-2026-11-20",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Tagebücher der Apothekerin",
+   "datum": "2026-11-20",
+   "text": "S1E56",
+   "jahr": "2023",
+   "bild": "https://image.tmdb.org/t/p/w342/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/220542"
+  },
+  {
+   "id": "tv-45790-s6-2026-11-20",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "JoJo's Bizarre Adventure",
+   "datum": "2026-11-20",
+   "text": "S6E10",
+   "jahr": "2012",
+   "bild": "https://image.tmdb.org/t/p/w342/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/45790"
+  },
+  {
+   "id": "tv-247718-s2-2026-11-20",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "MobLand: Familie bis aufs Blut",
+   "datum": "2026-11-20",
+   "text": "S2E10",
+   "jahr": "2025",
+   "bild": "https://image.tmdb.org/t/p/w342/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
+   "anbieter": [
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/247718"
+  },
+  {
+   "id": "tv-153312-s4-2026-11-20",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tulsa King",
+   "datum": "2026-11-20",
+   "text": "S4E6",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/153312"
+  },
+  {
+   "id": "tv-316702-s1-2026-11-21",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-11-21",
+   "text": "S1E9",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-316702-s1-2026-11-22",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-11-22",
+   "text": "S1E10",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-456-s38-2026-11-22",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Simpsons",
+   "datum": "2026-11-22",
+   "text": "S38E8",
+   "jahr": "1989",
+   "bild": "https://image.tmdb.org/t/p/w342/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/456"
+  },
+  {
+   "id": "tv-312359-s1-2026-11-22",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Dragon Ball Super: Beerus",
+   "datum": "2026-11-22",
+   "text": "S1E7",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/312359"
+  },
+  {
+   "id": "tv-3034-s57-2026-11-22",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tatort",
+   "datum": "2026-11-22",
+   "text": "S57E25 · 4 Finger",
+   "jahr": "1970",
+   "bild": "https://image.tmdb.org/t/p/w342/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/3034"
+  },
+  {
+   "id": "tv-85077-s6-2026-11-22",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "The Chosen",
+   "datum": "2026-11-22",
+   "text": "S6E4",
+   "jahr": "2019",
+   "bild": "https://image.tmdb.org/t/p/w342/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "anbieter": [
+    "Netflix",
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/85077"
+  },
+  {
    "id": "tv-171802-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -491,7 +1587,6 @@
    "anbieter": [
     "Amazon Prime Video"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/171802"
   },
   {
@@ -505,6 +1600,20 @@
    "bild": "https://image.tmdb.org/t/p/w342/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/822653"
+  },
+  {
+   "id": "tv-2190-s29-2026-11-25",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "South Park",
+   "datum": "2026-11-25",
+   "text": "S29E6",
+   "jahr": "1997",
+   "bild": "https://image.tmdb.org/t/p/w342/4EXUM5hi5nymlmqIVwnbIJENKpe.jpg",
+   "anbieter": [
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/2190"
   },
   {
    "id": "movie-1457866-kino",
@@ -543,6 +1652,124 @@
    "link": "https://www.themoviedb.org/movie/1538497"
   },
   {
+   "id": "tv-220542-s1-2026-11-27",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Tagebücher der Apothekerin",
+   "datum": "2026-11-27",
+   "text": "S1E57",
+   "jahr": "2023",
+   "bild": "https://image.tmdb.org/t/p/w342/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/220542"
+  },
+  {
+   "id": "tv-45790-s6-2026-11-27",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "JoJo's Bizarre Adventure",
+   "datum": "2026-11-27",
+   "text": "S6E11",
+   "jahr": "2012",
+   "bild": "https://image.tmdb.org/t/p/w342/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/45790"
+  },
+  {
+   "id": "tv-153312-s4-2026-11-27",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tulsa King",
+   "datum": "2026-11-27",
+   "text": "S4E7",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/153312"
+  },
+  {
+   "id": "tv-316702-s1-2026-11-28",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-11-28",
+   "text": "S1E11",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-316702-s1-2026-11-29",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der letzte Tisch",
+   "datum": "2026-11-29",
+   "text": "S1E12",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/316702"
+  },
+  {
+   "id": "tv-456-s38-2026-11-29",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Simpsons",
+   "datum": "2026-11-29",
+   "text": "S38E9",
+   "jahr": "1989",
+   "bild": "https://image.tmdb.org/t/p/w342/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/456"
+  },
+  {
+   "id": "tv-312359-s1-2026-11-29",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Dragon Ball Super: Beerus",
+   "datum": "2026-11-29",
+   "text": "S1E8",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/312359"
+  },
+  {
+   "id": "tv-85077-s6-2026-11-29",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "The Chosen",
+   "datum": "2026-11-29",
+   "text": "S6E5",
+   "jahr": "2019",
+   "bild": "https://image.tmdb.org/t/p/w342/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "anbieter": [
+    "Netflix",
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/85077"
+  },
+  {
    "id": "movie-1514682-kino",
    "art": "film",
    "typ": "kino",
@@ -553,6 +1780,23 @@
    "bild": "https://image.tmdb.org/t/p/w342/7bOuu1SRALGwsG2fLCTvRkCmQBj.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1514682"
+  },
+  {
+   "id": "tv-2734-s28-2026-12-03",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Law & Order: Special Victims Unit",
+   "datum": "2026-12-03",
+   "text": "S28E7",
+   "jahr": "1999",
+   "bild": "https://image.tmdb.org/t/p/w342/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/2734"
   },
   {
    "id": "tv-288672-s1",
@@ -566,7 +1810,6 @@
    "anbieter": [
     "Netflix"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/288672"
   },
   {
@@ -580,6 +1823,96 @@
    "bild": "https://image.tmdb.org/t/p/w342/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1765072"
+  },
+  {
+   "id": "tv-220542-s1-2026-12-04",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Tagebücher der Apothekerin",
+   "datum": "2026-12-04",
+   "text": "S1E58",
+   "jahr": "2023",
+   "bild": "https://image.tmdb.org/t/p/w342/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/220542"
+  },
+  {
+   "id": "tv-45790-s6-2026-12-04",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "JoJo's Bizarre Adventure",
+   "datum": "2026-12-04",
+   "text": "S6E12",
+   "jahr": "2012",
+   "bild": "https://image.tmdb.org/t/p/w342/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/45790"
+  },
+  {
+   "id": "tv-153312-s4-2026-12-04",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tulsa King",
+   "datum": "2026-12-04",
+   "text": "S4E8",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/153312"
+  },
+  {
+   "id": "tv-456-s38-2026-12-06",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Simpsons",
+   "datum": "2026-12-06",
+   "text": "S38E10",
+   "jahr": "1989",
+   "bild": "https://image.tmdb.org/t/p/w342/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/456"
+  },
+  {
+   "id": "tv-312359-s1-2026-12-06",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Dragon Ball Super: Beerus",
+   "datum": "2026-12-06",
+   "text": "S1E9",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/312359"
+  },
+  {
+   "id": "tv-85077-s6-2026-12-06",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "The Chosen",
+   "datum": "2026-12-06",
+   "text": "S6E6",
+   "jahr": "2019",
+   "bild": "https://image.tmdb.org/t/p/w342/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "anbieter": [
+    "Netflix",
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/85077"
   },
   {
    "id": "movie-1554956-kino",
@@ -606,6 +1939,23 @@
    "link": "https://www.themoviedb.org/movie/1117898"
   },
   {
+   "id": "tv-2734-s28-2026-12-10",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Law & Order: Special Victims Unit",
+   "datum": "2026-12-10",
+   "text": "S28E8",
+   "jahr": "1999",
+   "bild": "https://image.tmdb.org/t/p/w342/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+",
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/2734"
+  },
+  {
    "id": "movie-1003596-kino",
    "art": "film",
    "typ": "kino",
@@ -630,18 +1980,6 @@
    "link": "https://www.themoviedb.org/movie/1170608"
   },
   {
-   "id": "movie-1377237-streaming",
-   "art": "film",
-   "typ": "streaming",
-   "titel": "Runner",
-   "datum": "2026-12-17",
-   "text": "Streaming/Digital",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/juEAZhc06JxLeCxfhIq6DqBlM3K.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1377237"
-  },
-  {
    "id": "tv-289729-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -653,7 +1991,6 @@
    "anbieter": [
     "Netflix"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/289729"
   },
   {
@@ -693,7 +2030,6 @@
     "HBO",
     "HBO Max"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/224377"
   },
   {
@@ -724,7 +2060,6 @@
     "WOW",
     "Sky Go"
    ],
-   "vorab": false,
    "link": "https://www.themoviedb.org/tv/79744"
   },
   {
@@ -763,7 +2098,6 @@
    "anbieter": [
     "Amazon Prime Video"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/285887"
   },
   {
@@ -862,7 +2196,6 @@
    "anbieter": [
     "Hulu"
    ],
-   "vorab": true,
    "link": "https://www.themoviedb.org/tv/274395"
   }
  ]

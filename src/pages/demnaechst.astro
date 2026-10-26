@@ -11,12 +11,12 @@ for (const e of eintraege) {
   if (!gruppen.has(e.datum)) gruppen.set(e.datum, []);
   gruppen.get(e.datum)!.push(e);
 }
-const ART = { kino: 'Film', streaming: 'Film', serienstart: 'Serie', staffelstart: 'Serie' } as Record<string, string>;
+const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 'Serie' } as Record<string, string>;
 ---
 <Base title="Demnächst" description="Kommende Kinostarts sowie neue Serien und Staffeln bei Netflix, Prime Video, Disney+ und Co. in Deutschland.">
   <header class="page-head wrap">
     <h1>Demnächst</h1>
-    <p>Kinostarts und neue Serien und Staffeln bei den Streaminganbietern, mit deutschem Starttermin. Die Liste aktualisiert sich jeden Tag von selbst, Verschiebungen sind dann sofort drin.</p>
+    <p>Kinostarts sowie Serien-, Staffel- und Folgentermine bei den Streaminganbietern, mit deutschem Termin. Die Liste aktualisiert sich jeden Tag von selbst, Verschiebungen sind dann sofort drin.</p>
   </header>
 
   <div class="dem">
@@ -24,7 +24,6 @@ const ART = { kino: 'Film', streaming: 'Film', serienstart: 'Serie', staffelstar
       <button type="button" data-f="alle" aria-pressed="true">Alles</button>
       <button type="button" data-f="kino" data-medium="film" aria-pressed="false">Kino</button>
       <button type="button" data-f="serie" data-medium="serie" aria-pressed="false">Serien</button>
-      <button type="button" data-f="streaming" aria-pressed="false">Streaming</button>
     </nav>
 
     <section class="wrap" aria-label="Termine" id="termine">
@@ -33,7 +32,7 @@ const ART = { kino: 'Film', streaming: 'Film', serienstart: 'Serie', staffelstar
           <h2 class="tag-name">{tagFmt.format(new Date(datum + 'T12:00:00Z'))}</h2>
           <ul class="liste">
             {liste.map((e) => (
-              <li class="eintrag" data-medium={e.art} data-f={`${e.typ === 'kino' ? 'kino' : e.art === 'serie' ? 'serie' : ''} ${e.typ === 'streaming' || e.anbieter.length ? 'streaming' : ''}`}>
+              <li class="eintrag" data-medium={e.art} data-f={e.typ === 'kino' ? 'kino' : 'serie'}>
                 <span class="poster">{e.bild && <img src={e.bild} alt="" loading="lazy" width="56" height="84" />}</span>
                 <div class="mitte">
                   <span class="meta mono">{ART[e.typ]} · {e.text}</span>
@@ -46,7 +45,6 @@ const ART = { kino: 'Film', streaming: 'Film', serienstart: 'Serie', staffelstar
         </div>
       ))}
       {eintraege.length === 0 && <p class="hinweis mono">Gerade sind keine Termine geladen.</p>}
-      <p class="leer mono" id="leer" hidden>Dazu steht gerade nichts an.</p>
     </section>
 
     <section class="wrap merk" id="merk" hidden aria-labelledby="merk-h">
@@ -59,23 +57,28 @@ const ART = { kino: 'Film', streaming: 'Film', serienstart: 'Serie', staffelstar
 </Base>
 
 <script>
-  // Filter
-  const knoepfe = document.querySelectorAll<HTMLButtonElement>('[data-f]');
+  // Filter: setzt den Zustand jedes Mal vollständig neu (auch beim Zurückkehren auf die Seite, pageshow).
+  const knoepfe = [...document.querySelectorAll<HTMLButtonElement>('[data-f]')].filter((b) => b.tagName === 'BUTTON');
   const bereich = document.getElementById('termine')!;
-  knoepfe.forEach((b) => b.addEventListener('click', () => {
-    const f = b.dataset.f!;
-    knoepfe.forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+  const leer = document.createElement('p');
+  leer.className = 'leer mono'; leer.textContent = 'Dazu steht gerade nichts an.';
+  function anwenden(f: string) {
+    knoepfe.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.f === f)));
     let sichtbar = 0;
     bereich.querySelectorAll<HTMLElement>('[data-tag]').forEach((tag) => {
       let n = 0;
       tag.querySelectorAll<HTMLElement>('.eintrag').forEach((li) => {
-        const zeigen = f === 'alle' || (li.dataset.f || '').split(' ').includes(f);
+        const zeigen = f === 'alle' || li.dataset.f === f;
         li.hidden = !zeigen; if (zeigen) n++;
       });
       tag.hidden = n === 0; sichtbar += n;
     });
-    document.getElementById('leer')!.hidden = sichtbar > 0;
-  }));
+    if (sichtbar === 0 && bereich.querySelector('[data-tag]')) bereich.append(leer); else leer.remove();
+  }
+  const aktuell = () => knoepfe.find((b) => b.getAttribute('aria-pressed') === 'true')?.dataset.f || 'alle';
+  knoepfe.forEach((b) => b.addEventListener('click', () => anwenden(b.dataset.f!)));
+  anwenden('alle');
+  window.addEventListener('pageshow', (e) => { if (e.persisted) anwenden(aktuell()); });
 
   // Meine Merkliste (öffentliche Einträge, nur lesen)
   type M = { medium: string; titel: string; bild?: string; status?: string; termine: { datum: string; text: string }[] };
