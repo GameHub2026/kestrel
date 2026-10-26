@@ -25,7 +25,11 @@ export async function onRequest({ request, env }) {
   }
   if (request.method === 'PATCH') {
     const e = liste.find((x) => x.id === id);
-    if (e) { e.kalender = !!body.kalender; await speichereListe(env, liste); }
+    if (e) {
+      if ('kalender' in body) e.kalender = !!body.kalender;
+      if ('oeffentlich' in body) e.oeffentlich = !!body.oeffentlich;
+      await speichereListe(env, liste);
+    }
     return json(liste);
   }
   if (request.method === 'DELETE') {

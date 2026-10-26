@@ -1,0 +1,89 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Demnächst" description="Was Kevin als Nächstes spielt und schaut: Releases, Kinostarts und neue Folgen mit Terminen.">
+  <header class="page-head wrap">
+    <h1>Demnächst</h1>
+    <p>Worauf ich mich freue und was ich als Nächstes spiele oder schaue. Termine kommen von IGDB und TMDB und verschieben sich hier von selbst, wenn sich etwas ändert.</p>
+  </header>
+
+  <div class="dem">
+    <nav class="wrap tabs" aria-label="Medium">
+      <button type="button" data-tab="alle" aria-pressed="true">Alles</button>
+      <button type="button" data-tab="spiel" data-medium="spiel" aria-pressed="false">Spiele</button>
+      <button type="button" data-tab="film" data-medium="film" aria-pressed="false">Filme</button>
+      <button type="button" data-tab="serie" data-medium="serie" aria-pressed="false">Serien</button>
+    </nav>
+    <section class="wrap" aria-live="polite">
+      <p id="dem-status" class="hinweis mono">Lädt …</p>
+      <ul class="liste" id="dem-liste"></ul>
+    </section>
+  </div>
+</Base>
+
+<script>
+  type Eintrag = { id: string; medium: string; titel: string; bild?: string; status?: string; termine: { datum: string; text: string }[] };
+  const MEDIUM: Record<string, string> = { spiel: 'Spiel', film: 'Film', serie: 'Serie' };
+  const ul = document.getElementById('dem-liste')!;
+  const status = document.getElementById('dem-status')!;
+  let alle: Eintrag[] = [];
+  let tab = 'alle';
+
+  const datumDe = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString('de-DE', { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric' });
+  const el = (tag: string, cls?: string, text?: string) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; };
+
+  function zeige() {
+    ul.replaceChildren();
+    const meine = alle.filter((e) => tab === 'alle' || e.medium === tab).sort((a, b) => (a.termine[0]?.datum || '9999').localeCompare(b.termine[0]?.datum || '9999') || a.titel.localeCompare(b.titel, 'de'));
+    status.textContent = meine.length ? '' : (alle.length ? 'Hier steht gerade nichts an.' : 'Gerade ist nichts angekündigt.');
+    for (const e of meine) {
+      const li = el('li', 'eintrag'); li.dataset.medium = e.medium;
+      const poster = el('span', 'poster');
+      if (e.bild) { const i = document.createElement('img'); i.src = e.bild; i.alt = ''; i.loading = 'lazy'; poster.append(i); }
+      const mitte = el('div', 'mitte');
+      mitte.append(el('span', 'meta mono', MEDIUM[e.medium] || ''), el('span', 'titel', e.titel));
+      const n = e.termine[0];
+      mitte.append(el('span', 'termin mono', n ? `${datumDe(n.datum)} · ${n.text}` : (e.status || 'Termin noch offen')));
+      if (e.termine.length > 1) {
+        const d = document.createElement('details'); d.append(el('summary', 'mono', `${e.termine.length - 1} weitere Termine`));
+        const ol = el('ol', 'alle'); for (const t of e.termine.slice(1)) ol.append(el('li', 'mono', `${datumDe(t.datum)} · ${t.text}`));
+        d.append(ol); mitte.append(d);
+      }
+      li.append(poster, mitte); ul.append(li);
+    }
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('[data-tab]').forEach((b) => b.addEventListener('click', () => {
+    tab = b.dataset.tab!;
+    document.querySelectorAll('[data-tab]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    zeige();
+  }));
+
+  fetch('/api/oeffentlich').then((r) => r.json()).then((d) => { alle = Array.isArray(d) ? d : []; zeige(); })
+    .catch(() => { status.textContent = 'Konnte die Liste gerade nicht laden.'; });
+</script>
+
+<style is:global>
+.dem .tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+.dem button {
+  font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.05rem;
+  border: 0; border-radius: 4px; padding: 10px 16px 9px; cursor: pointer; background: var(--paper); color: var(--ink); box-shadow: var(--shadow);
+}
+.dem button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
+.dem button[data-medium][aria-pressed='true'] { background: var(--card); color: var(--card-ink); }
+.dem .hinweis { margin: 0 0 12px; font-size: 0.85rem; color: var(--ink-2); }
+.dem .liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.dem .eintrag {
+  display: grid; grid-template-columns: 56px 1fr; gap: 16px; align-items: center;
+  background: var(--card); color: var(--card-ink); border-radius: 4px; padding: 10px 14px 10px 10px; box-shadow: var(--shadow);
+}
+.dem .poster { width: 56px; height: 80px; border-radius: 2px; background: color-mix(in srgb, currentColor 15%, transparent); overflow: hidden; display: block; }
+.dem .poster img { width: 100%; height: 100%; object-fit: cover; }
+.dem .mitte { display: grid; gap: 3px; min-width: 0; }
+.dem .meta { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
+.dem .titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.5rem; line-height: 1; }
+.dem .termin { font-size: 0.85rem; font-weight: 700; }
+.dem details { font-size: 0.78rem; }
+.dem details summary { cursor: pointer; }
+.dem .alle { margin: 4px 0 0; padding-left: 1.1em; }
+</style>

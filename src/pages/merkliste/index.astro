@@ -5,7 +5,7 @@ import Base from '../../layouts/Base.astro';
 <div class="merk">
   <header class="page-head wrap">
     <h1>Merkliste</h1>
-    <p>Privat. Was ich spielen und schauen will, mit Terminen. Verschiebt sich ein Start, ändert sich das hier und im Kalender von selbst.</p>
+    <p>Hier bearbeite ich. Was ich spielen und schauen will, mit Terminen. Mit Haken bei „Öffentlich“ steht es auf der Seite „Demnächst“. Verschiebt sich ein Start, ändert sich das hier und im Kalender von selbst.</p>
   </header>
 
   <section class="wrap zugang" id="zugang" hidden>
@@ -122,9 +122,12 @@ import Base from '../../layouts/Base.astro';
       const lab = el('label', 'schalter'); const cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = !!e.kalender;
       cb.addEventListener('change', async () => { liste = await api('/api/merk', { method: 'PATCH', body: JSON.stringify({ id: e.id, kalender: cb.checked }) }); });
       lab.append(cb, el('span', '', 'Im Kalender'));
+      const lab2 = el('label', 'schalter'); const cb2 = document.createElement('input'); cb2.type = 'checkbox'; cb2.checked = e.oeffentlich !== false;
+      cb2.addEventListener('change', async () => { liste = await api('/api/merk', { method: 'PATCH', body: JSON.stringify({ id: e.id, oeffentlich: cb2.checked }) }); });
+      lab2.append(cb2, el('span', '', 'Öffentlich'));
       const weg = el('button', 'weg', 'Entfernen') as HTMLButtonElement; weg.type = 'button';
       weg.addEventListener('click', async () => { if (!confirm(`„${e.titel}" von der Merkliste nehmen?`)) return; liste = await api(`/api/merk?id=${encodeURIComponent(e.id)}`, { method: 'DELETE' }); zeigeListe(); });
-      rechts.append(lab, weg);
+      rechts.append(lab, lab2, weg);
       li.append(bild(e.bild), mitte, rechts); ul.append(li);
     }
   }
