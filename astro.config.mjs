@@ -4,6 +4,9 @@ import sitemap from '@astrojs/sitemap';
 
 // Interview-Kästen aus Obsidian (> [!frage] …) sind nur Schreibhilfe und erscheinen nicht auf der Seite.
 const ohneFragen = () => (tree) => {
+  // Ab der Interview-Markierung ist alles privat (Fragen, Antworten, Bilder-Ablage).
+  const ab = tree.children.findIndex((n) => n.type === 'html' && /<!--\s*INTERVIEW/i.test(n.value || ''));
+  if (ab >= 0) tree.children = tree.children.slice(0, ab);
   tree.children = tree.children.filter(
     (n) => !(n.type === 'blockquote' && /^\[!frage\]/i.test(n.children?.[0]?.children?.[0]?.value ?? '')),
   );

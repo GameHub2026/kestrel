@@ -15,36 +15,60 @@ datum: 2026-10-17
 entwurf: true
 ---
 
-> [!frage] Interview
-> Beantworte die Fragen in Stichworten direkt unter jedem Kasten. Die grauen Kästen erscheinen nicht auf der Seite, nur deine Antworten. Was am Ende nicht in den Text gehört, löschst du.
+<!-- INTERVIEW: Alles ab hier ist nur für dich und die KI und erscheint nicht auf der Seite. Beantworte die Fragen direkt unter dem jeweiligen Kasten, Stichworte reichen. Bilder ziehst du in den Kasten „Bilder“. Beim Veröffentlichen schreibt die KI daraus den Text oberhalb dieser Zeile. -->
+
+> [!frage] Worum geht's
+> In deinen Worten, ohne Spoiler: Was ist das für ein Spiel, wo spielt es, was ist die Idee?
+
+
+
+> [!frage] Der erste Eindruck
+> Wie waren die ersten Stunden? Was hast du erwartet, und hat es das gehalten?
+
+
+
+> [!frage] Wie es sich spielt
+> Was macht man die meiste Zeit? Wie fühlt sich eine typische Stunde an?
+
+
 
 > [!frage] Der Moment
-> Welche eine Szene oder Situation erzählst du Freunden zuerst? Warum gerade die?
+> Welche Szene oder Situation erzählst du Freunden zuerst?
 
 
 
-> [!frage] Was es von dir will
-> Wie viel Zeit, Geduld, Geschick verlangt das Spiel wirklich? Wo hast du geflucht, wo die Zeit vergessen?
+> [!frage] Was richtig gut ist
+> Was hat dich begeistert?
 
 
 
-> [!frage] Nach 2 und nach 20 Stunden
-> Wie hat sich dein Bild verändert? Wird es besser, kippt es, zieht es sich?
+> [!frage] Was nervt
+> Was hat dich gestört, gelangweilt oder geärgert?
 
 
 
-> [!frage] Was die Werbung verschweigt
-> Was überrascht Leute, die nur Trailer kennen, positiv wie negativ?
+> [!frage] Nach vielen Stunden
+> Wie hat sich dein Bild über die Spielzeit verändert? Wird es besser, kippt es, zieht es sich?
 
 
 
-> [!frage] Der Vergleich
-> Woran erinnert es dich, und was macht es anders als das Spiel, das alle kennen?
+> [!frage] Story und Figuren
+> Trägt die Geschichte? Gibt es Figuren, die bleiben?
 
 
 
 > [!frage] Technik am Tag X
-> Wie lief es auf deiner Plattform, auf welchem Stand (Patch, Datum)?
+> Wie lief es auf deiner Plattform? Bugs, Ruckler, Patch-Stand?
+
+
+
+> [!frage] Was es von dir will
+> Zeit, Geduld, Schwierigkeit, Grind: Was verlangt das Spiel, und lohnt es sich?
+
+
+
+> [!frage] Der Vergleich
+> Woran erinnert es dich, und was macht es anders?
 
 
 
@@ -53,7 +77,17 @@ entwurf: true
 
 
 
-> [!frage] Der eine Satz
-> Wenn nur ein Satz übrig bleibt: welcher?
+> [!frage] Warum diese Wertung
+> Warum genau diese Zahl und nicht eine höher oder tiefer?
+
+
+
+> [!frage] Sonst noch was
+> Alles, was dir noch einfällt: Anekdoten, Musik, Preis, Abo, DLC …
+
+
+
+> [!frage] Bilder
+> Zieh hier alle Bilder hinein, die in den Text sollen. Schreib unter jedes Bild kurz, was es zeigt. Die KI verteilt sie im Text.
 
 

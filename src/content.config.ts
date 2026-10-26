@@ -2,6 +2,7 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 import { PFLICHT } from './wertung';
+import { slug } from 'github-slugger';
 
 // Kevin schreibt in Obsidian: jede .md-Datei im Ordner "Texte" ist ein Text.
 // Dateien, deren Name mit "_" beginnt (z. B. _Vorlage.md), werden nicht veröffentlicht.
@@ -15,18 +16,26 @@ const norm = (v: unknown) =>
 const wahl = <T extends [string, ...string[]]>(werte: T) => z.preprocess((v) => norm(leer(v)), z.enum(werte).optional());
 const optional = <T extends z.ZodType>(t: T) => z.preprocess(leer, t.optional());
 
-// Bild: Pfad wie "bilder/x.jpg", oder was Obsidian beim Hineinziehen einträgt ("![](bilder/x.jpg)", "[[x.jpg]]").
+// Bild: Dateiname im Ordner des Textes ("cover.jpg"), ein Pfad ("bilder/x.jpg") oder was Obsidian beim Hineinziehen einträgt ("![](x.jpg)", "[[x.jpg]]").
 const bildPfad = (v: unknown) => {
   v = leer(v);
   if (typeof v !== 'string') return v;
   let p = v.match(/\]\(([^)]+)\)/)?.[1] ?? v.match(/\[\[([^\]|]+)/)?.[1] ?? v;
   p = decodeURI(p.trim());
-  if (!p.includes('/')) p = 'bilder/' + p;
   return p.startsWith('.') ? p : './' + p;
 };
 
 const tests = defineCollection({
-  loader: glob({ pattern: ['**/*.md', '!**/_*.md'], base: './Texte' }),
+  // Jeder Text darf einen eigenen Ordner haben (Serien/Titel/Titel.md, Bilder daneben).
+  // Die Adresse bleibt dann /texte/serien/titel/ statt /texte/serien/titel/titel/.
+  loader: glob({
+    pattern: ['**/*.md', '!**/_*.md'], base: './Texte',
+    generateId: ({ entry }) => {
+      const teile = entry.replace(/\.md$/i, '').split('/').map((t) => slug(t));
+      if (teile.length > 1 && teile.at(-1) === teile.at(-2)) teile.pop();
+      return teile.join('/');
+    },
+  }),
   schema: ({ image }) =>
     z
       .object({

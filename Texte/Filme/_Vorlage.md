@@ -15,26 +15,50 @@ datum: 2026-10-17
 entwurf: true
 ---
 
-> [!frage] Interview
-> Beantworte die Fragen in Stichworten direkt unter jedem Kasten. Die grauen Kästen erscheinen nicht auf der Seite, nur deine Antworten. Was am Ende nicht in den Text gehört, löschst du.
+<!-- INTERVIEW: Alles ab hier ist nur für dich und die KI und erscheint nicht auf der Seite. Beantworte die Fragen direkt unter dem jeweiligen Kasten, Stichworte reichen. Bilder ziehst du in den Kasten „Bilder“. Beim Veröffentlichen schreibt die KI daraus den Text oberhalb dieser Zeile. -->
+
+> [!frage] Worum geht's
+> In deinen Worten, ohne Spoiler: Was ist das für ein Film?
+
+
+
+> [!frage] Wie du ihn gesehen hast
+> Kino, Sofa, Originalton oder Synchro, allein oder mit wem? Hat das etwas verändert?
+
+
 
 > [!frage] Der Moment
 > Welche Szene hattest du am nächsten Tag noch im Kopf?
 
 
 
-> [!frage] Wie du ihn gesehen hast
-> Kino, Sofa, allein, mit wem? Hat das etwas verändert?
+> [!frage] Was richtig gut ist
+> Was hat dich begeistert?
 
 
 
-> [!frage] Vorher wissen
-> Was sollte man vorher wissen, und was auf keinen Fall (Spoiler, Trailer)?
+> [!frage] Was nicht funktioniert
+> Was hat dich gestört oder kalt gelassen?
+
+
+
+> [!frage] Schauspiel und Figuren
+> Wer trägt den Film? Wer überzeugt nicht?
+
+
+
+> [!frage] Bild, Ton, Musik
+> Gibt es etwas, das man gesehen oder gehört haben muss?
 
 
 
 > [!frage] Was er will
-> Will der Film unterhalten, verstören, etwas sagen? Gelingt es?
+> Will er unterhalten, verstören, etwas sagen? Gelingt es?
+
+
+
+> [!frage] Vorher wissen
+> Braucht man Vorwissen? Lieber ohne Trailer schauen?
 
 
 
@@ -44,7 +68,7 @@ entwurf: true
 
 
 > [!frage] Nochmal schauen?
-> Würdest du ihn ein zweites Mal sehen? Was bekommt man beim zweiten Mal?
+> Würdest du ihn ein zweites Mal sehen? Was bekommt man dann?
 
 
 
@@ -53,7 +77,17 @@ entwurf: true
 
 
 
-> [!frage] Der eine Satz
-> Wenn nur ein Satz übrig bleibt: welcher?
+> [!frage] Warum diese Wertung
+> Warum genau diese Zahl und nicht eine höher oder tiefer?
+
+
+
+> [!frage] Sonst noch was
+> Alles, was dir noch einfällt.
+
+
+
+> [!frage] Bilder
+> Zieh hier alle Bilder hinein, die in den Text sollen. Schreib unter jedes Bild kurz, was es zeigt. Die KI verteilt sie im Text.
 
 

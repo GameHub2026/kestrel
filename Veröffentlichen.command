@@ -6,6 +6,9 @@ pause() { echo; read -k 1 "?Taste drücken zum Schließen …"; }
 echo "Bilder prüfen …"
 ./tools/bilder-verkleinern.sh Texte
 
+echo "Texte aus Interviews schreiben …"
+node tools/text-schreiben.mjs || { echo "\n✗ Beim Schreiben ging etwas schief, es wurde NICHTS veröffentlicht."; pause; exit 1; }
+
 echo "Prüfe die Seite …"
 if ! npm run build >/tmp/kestrel-build.log 2>&1; then
   echo "\n✗ Da stimmt noch etwas nicht, es wurde NICHTS veröffentlicht:\n"

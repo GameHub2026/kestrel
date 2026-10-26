@@ -5,16 +5,15 @@ Technik: Astro (statische Seite aus Markdown), Hosting: Cloudflare Pages (`kestr
 
 ## Schreiben (in Obsidian)
 
-1. In Obsidian **„Ordner als Vault öffnen"** → den Ordner `Texte` in diesem Projekt wählen.
-2. Im passenden Ordner (`Spiele`, `Filme` oder `Serien`) `_Vorlage.md` duplizieren und umbenennen (z. B. `alan-wake-2.md`). Ordner und Dateiname werden die Adresse: `kestrel-2tf.pages.dev/texte/spiele/alan-wake-2/`. Die Vorlage jedes Ordners hat das `medium` schon richtig eingetragen.
-3. Steckbrief oben ausfüllen, darunter den Text schreiben. Überschriften mit `##`, Zitat-Zeile mit `>`.
-4. Solange `entwurf: true` dasteht, erscheint der Text nur lokal, nicht online. Zum Veröffentlichen auf `entwurf: false` setzen.
+1. Doppelklick auf **`Neuer Text.command`**: Medium wählen, Titel eingeben. Es entsteht ein eigener Ordner `Texte/<Spiele|Filme|Serien>/<Titel>/` mit der Notiz, die sich in Obsidian öffnet.
+2. Steckbrief oben ausfüllen (✎-Hinweise ersetzen). Wertung immer selbst eintragen.
+3. Das **Interview** beantworten: Stichworte direkt unter den Kästen reichen. Mindestens 3 Antworten.
+4. Bilder in den Kasten **„Bilder“** ziehen und darunter kurz schreiben, was sie zeigen. Sie landen automatisch im Ordner des Textes. Titelbild: Dateiname ins Feld `bild` (z. B. `cover.jpg`).
+5. Doppelklick auf **`Veröffentlichen.command`**: Bilder werden verkleinert, Gemini schreibt aus dem Interview den Text (oberhalb der INTERVIEW-Zeile) und ergänzt leere Felder Fazit/Für wen. Mit `entwurf: false` geht er dann online, sonst nur lokal sichtbar.
 
-**Felder:** `medium` = spiel | film | serie · `textform` = test | kurzkritik | ersteindruck | rueckblick · `stand` = abspann | 100% | abgebrochen | laufend · `wertung` = ganze Zahl 1–10.
+Alles unterhalb der Zeile `<!-- INTERVIEW … -->` bleibt privat. Text neu schreiben lassen: Text oberhalb der Zeile löschen oder `neu_schreiben: true` in den Steckbrief. Eigene Änderungen am fertigen Text werden nie überschrieben.
 
 **Alte Wertung nie ändern.** Wenn du etwas später anders siehst, unter `nachtraege:` einen Eintrag mit Datum anhängen.
-
-**Bild (optional):** Bild neben die `.md`-Datei legen (z. B. `Texte/bilder/alan-wake-2.jpg`) und im Steckbrief `bild: ./bilder/alan-wake-2.jpg` sowie `bild_quelle: Remedy Entertainment` eintragen.
 
 Dateien, die mit `_` beginnen, werden nie veröffentlicht.
 
