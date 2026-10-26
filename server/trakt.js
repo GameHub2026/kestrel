@@ -6,7 +6,7 @@ const TTL = 300;
 
 async function trakt(env, pfad) {
   const r = await fetch(`https://api.trakt.tv/users/${env.TRAKT_USER}${pfad}`, {
-    headers: { 'trakt-api-key': env.TRAKT_CLIENT_ID, 'trakt-api-version': '2' },
+    headers: { 'trakt-api-key': env.TRAKT_CLIENT_ID, 'trakt-api-version': '2', 'user-agent': 'Kestrel/1.0 (kestrel-2tf.pages.dev)', accept: 'application/json' },
   });
   if (r.status === 204) return null;
   if (!r.ok) throw new Error(`Trakt ${r.status}`);
