@@ -55,6 +55,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <span class="wordmark-stub mono" aria-hidden="true">Nº</span>
         <span class="wordmark-name">Kestrel</span>
       </a>
+      <div class="kopf-rechts">
       <nav aria-label="Hauptnavigation">
         <ul>
           {nav.map((n) => (
@@ -72,6 +73,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           <svg class="t-sonne" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
           <svg class="t-mond" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
         </button>
+      </div>
       </div>
     </header>
     <main id="inhalt">
@@ -111,9 +113,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--ground); padding: 8px 12px; z-index: 10; }
   .skip:focus { left: 8px; }
 
-  .kopf-tools { display: flex; align-items: center; gap: 14px; margin-left: auto; }
-  nav { margin-left: auto; }
-  .kopf-tools { margin-left: 0; }
+  /* Rechts oben: Navigation, darunter Stand/Uhr und Hell/Dunkel */
+  .kopf-rechts { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+  .kopf-tools { display: flex; align-items: center; gap: 14px; }
+  @media (max-width: 720px) {
+    .kopf-rechts { align-items: flex-start; width: 100%; }
+    .kopf-tools { width: 100%; justify-content: space-between; }
+  }
 
   /* Statuszeile: weicher Unschärfe-Wechsel zur laufenden Uhr */
   .stempel { display: grid; font-size: 0.78rem; color: var(--ink-2); cursor: default; white-space: nowrap; }
