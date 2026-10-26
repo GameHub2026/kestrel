@@ -77,7 +77,8 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
   }
   const aktuell = () => knoepfe.find((b) => b.getAttribute('aria-pressed') === 'true')?.dataset.f || 'alle';
   knoepfe.forEach((b) => b.addEventListener('click', () => anwenden(b.dataset.f!)));
-  anwenden('alle');
+  const ausAdresse = new URLSearchParams(location.search).get('f');
+  anwenden(ausAdresse === 'kino' || ausAdresse === 'serie' ? ausAdresse : 'alle');
   window.addEventListener('pageshow', (e) => { if (e.persisted) anwenden(aktuell()); });
 
   // Meine Merkliste (öffentliche Einträge, nur lesen)

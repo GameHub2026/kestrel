@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Pille from '../components/Pille.astro';
 
 interface Props {
   title?: string;
@@ -9,12 +10,6 @@ interface Props {
 const { title, privat = false, description = 'Kevin schreibt über Spiele, Filme und Serien. Eine Skala von 1 bis 10 für alles, alte Wertungen bleiben stehen, Nachträge kommen dazu.' } = Astro.props;
 const fullTitle = title ? `${title} · Kestrel` : 'Kestrel · Spiele, Filme und Serien von Kevin';
 const path = Astro.url.pathname;
-const nav = [
-  { href: '/texte/', label: 'Alle Texte' },
-  { href: '/demnaechst/', label: 'Demnächst' },
-  { href: '/archiv/', label: 'Archiv' },
-  { href: '/wie-ich-werte/', label: 'Wie ich werte' },
-];
 const canonical = new URL(path, Astro.site);
 const stand = new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Berlin' }).format(new Date());
 ---
@@ -55,25 +50,17 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <span class="wordmark-stub mono" aria-hidden="true">Nº</span>
         <span class="wordmark-name">Kestrel</span>
       </a>
-      <div class="kopf-rechts">
-      <nav aria-label="Hauptnavigation">
-        <ul>
-          {nav.map((n) => (
-            <li><a href={n.href} aria-current={path.startsWith(n.href) ? 'page' : undefined}>{n.label}</a></li>
-          ))}
-        </ul>
-      </nav>
+      <Pille />
       <div class="kopf-tools">
         <span class="stempel mono" id="stempel" tabindex="0" title="Uhrzeit anzeigen">
-          <span class="st-a">Zuletzt festgehalten {stand}</span>
-          <span class="st-b" aria-hidden="true" id="uhr"></span>
+          <span class="st-a" data-zeichen>Zuletzt festgehalten {stand}</span>
+          <span class="st-b" aria-hidden="true" id="uhr" data-zeichen></span>
         </span>
         <button type="button" class="theme" id="theme" role="switch" aria-label="Dunkles Design" aria-checked="false">
           <span class="theme-knopf" aria-hidden="true"></span>
           <svg class="t-sonne" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
           <svg class="t-mond" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
         </button>
-      </div>
       </div>
     </header>
     <main id="inhalt">
@@ -103,7 +90,15 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       const uhr = document.getElementById('uhr')!;
       const fmt = new Intl.DateTimeFormat('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Berlin' });
       const zeit = new Intl.DateTimeFormat('de-DE', { hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Europe/Berlin', timeZoneName: 'short' });
-      const tick = () => { const d = new Date(); uhr.textContent = `${fmt.format(d)} · ${zeit.format(d)}`; };
+      // Jedes Zeichen ist ein eigenes Element mit Verzögerung (--i): der Wechsel läuft weich von links nach rechts.
+      const setze = (el: HTMLElement, text: string) => {
+        const k = el.children;
+        if (k.length === text.length) { for (let i = 0; i < text.length; i++) if (k[i].textContent !== text[i]) k[i].textContent = text[i]; return; }
+        el.replaceChildren(...[...text].map((c, i) => { const z = document.createElement('span'); z.className = 'z'; z.style.setProperty('--i', String(i)); z.textContent = c; return z; }));
+      };
+      const st = document.querySelector<HTMLElement>('.st-a')!;
+      st.setAttribute('aria-label', st.textContent || ''); setze(st, (st.textContent || '').trim());
+      const tick = () => { const d = new Date(); setze(uhr, `${fmt.format(d)} · ${zeit.format(d)}`); };
       tick(); setInterval(tick, 1000);
     </script>
   </body>
@@ -113,42 +108,48 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--ground); padding: 8px 12px; z-index: 10; }
   .skip:focus { left: 8px; }
 
-  /* Rechts oben: Navigation, darunter Stand/Uhr und Hell/Dunkel */
-  .kopf-rechts { display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
-  .kopf-tools { display: flex; align-items: center; gap: 14px; }
-  @media (max-width: 720px) {
-    .kopf-rechts { align-items: flex-start; width: 100%; }
-    .kopf-tools { width: 100%; justify-content: space-between; }
-  }
+  /* Kopf: Wortmarke links, Pille in der Mitte, Stand/Uhr und Hell/Dunkel rechts */
+  .kopf-tools { display: flex; align-items: center; justify-content: flex-end; gap: 14px; }
 
-  /* Statuszeile: weicher Unschärfe-Wechsel zur laufenden Uhr */
-  .stempel { display: grid; font-size: 0.78rem; color: var(--ink-2); cursor: default; white-space: nowrap; }
-  .stempel > span { grid-area: 1 / 1; text-align: right; transition: opacity 420ms cubic-bezier(0.16, 1, 0.3, 1), filter 420ms cubic-bezier(0.16, 1, 0.3, 1), transform 420ms cubic-bezier(0.16, 1, 0.3, 1); }
-  .stempel .st-b { opacity: 0; filter: blur(6px); transform: translateY(3px); color: var(--ink); }
-  .stempel:hover .st-a, .stempel:focus-visible .st-a { opacity: 0; filter: blur(6px); transform: translateY(-3px); }
-  .stempel:hover .st-b, .stempel:focus-visible .st-b { opacity: 1; filter: blur(0); transform: none; }
+  /* Statuszeile: Zeichen für Zeichen verschwimmt der Stand, die laufende Uhr wird scharf */
+  .stempel { display: grid; font-size: 0.78rem; color: var(--ink-2); cursor: default; white-space: pre; }
+  .stempel > span { grid-area: 1 / 1; text-align: right; }
+  .stempel :global(.z) {
+    display: inline-block; white-space: pre;
+    transition: opacity 360ms ease, filter 520ms cubic-bezier(0.16, 1, 0.3, 1), transform 520ms cubic-bezier(0.16, 1, 0.3, 1);
+    transition-delay: calc(var(--i) * 9ms);
+  }
+  .stempel .st-b { color: var(--ink); }
+  .stempel .st-b :global(.z) { opacity: 0; filter: blur(5px); transform: translateY(4px); }
+  .stempel:hover .st-a :global(.z), .stempel:focus-visible .st-a :global(.z) { opacity: 0; filter: blur(5px); transform: translateY(-4px); }
+  .stempel:hover .st-b :global(.z), .stempel:focus-visible .st-b :global(.z) { opacity: 1; filter: blur(0); transform: none; }
 
   /* Hell/Dunkel-Schalter: Pille mit Sonne und Mond, der helle Knopf gleitet zur aktiven Seite */
   .theme {
-    position: relative; display: inline-grid; grid-template-columns: 1fr 1fr; align-items: center; width: 76px; height: 38px; padding: 0 4px;
+    position: relative; display: inline-grid; grid-template-columns: 34px 34px; align-items: center; justify-items: center; width: 76px; height: 40px; padding: 0 4px;
     border: 0; border-radius: 999px; background: color-mix(in srgb, var(--ink) 9%, var(--ground)); cursor: pointer;
     box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.12);
   }
-  .theme svg { position: relative; z-index: 1; width: 17px; height: 17px; justify-self: center; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; color: var(--ink-2); transition: color 300ms, transform 500ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .theme svg { position: relative; z-index: 1; display: block; width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; color: var(--ink-2); transition: color 300ms, transform 500ms cubic-bezier(0.16, 1, 0.3, 1); }
   .theme .t-mond { fill: none; }
   .theme-knopf {
-    position: absolute; top: 4px; left: 4px; width: 30px; height: 30px; border-radius: 50%; background: var(--paper);
+    position: absolute; top: 5px; left: 6px; width: 30px; height: 30px; border-radius: 50%; background: var(--paper);
     box-shadow: 0 1px 2px rgb(0 0 0 / 0.15), 0 3px 8px rgb(0 0 0 / 0.18); transition: transform 450ms cubic-bezier(0.34, 1.4, 0.5, 1);
   }
   .theme[aria-checked='false'] .t-sonne, .theme[aria-checked='true'] .t-mond { color: var(--ink); }
-  .theme[aria-checked='true'] .theme-knopf { transform: translateX(38px); }
-  .theme[aria-checked='true'] .t-mond { transform: rotate(-20deg); }
+  .theme[aria-checked='true'] .theme-knopf { transform: translateX(34px); }
   .theme:hover .t-sonne { transform: rotate(45deg); }
 
   .site-head {
-    display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
-    padding-top: 20px; padding-bottom: 20px;
+    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px;
+    padding-top: 20px; padding-bottom: 20px; position: relative; z-index: 30;
   }
+  .wordmark { justify-self: start; }
+  @media (max-width: 900px) {
+    .site-head { grid-template-columns: auto 1fr; row-gap: 14px; }
+    .site-head > :global(.pille) { grid-column: 1 / -1; grid-row: 2; justify-self: center; }
+  }
+  @media (max-width: 560px) { .stempel { display: none; } }
   .wordmark {
     display: inline-flex; align-items: stretch; text-decoration: none; color: var(--film-ink);
     filter: drop-shadow(0 6px 10px rgb(18 20 23 / 0.25));
@@ -165,15 +166,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     letter-spacing: 0.02em;
   }
   .wordmark:hover .wordmark-name, .wordmark:hover .wordmark-stub { background: #b02c24; }
-
-  nav ul { list-style: none; display: flex; gap: 4px 20px; margin: 0; padding: 0; flex-wrap: wrap; }
-  nav a {
-    font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
-    font-size: 1.125rem; text-decoration: none; padding: 6px 0; display: inline-block;
-    border-bottom: 2px solid transparent;
-  }
-  nav a:hover { border-bottom-color: currentColor; }
-  nav a[aria-current='page'] { border-bottom: 2px dashed currentColor; }
 
   .site-foot {
     margin-top: clamp(64px, 10vw, 120px); padding-top: 28px; padding-bottom: 40px;

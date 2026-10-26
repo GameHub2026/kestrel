@@ -1,0 +1,129 @@
+---
+// Navigation als dunkle Pille (Vorbild GameHub): Symbole, ein weißer Kreis gleitet zum überfahrenen Symbol,
+// darunter klappt eine Tafel mit Überschrift und Unterpunkten auf.
+const path = Astro.url.pathname;
+const I = {
+  lesen: '<path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2z"/><path d="M22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/>',
+  kalender: '<rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 17.5h.01M12 17.5h.01"/>',
+  rueckblick: '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/><path d="M12 7.5V12l3 2"/>',
+  skala: '<path d="M12 3v18M7 21h10"/><path d="M5 7h14"/><path d="m5 7-3 7a3.5 3.5 0 0 0 6 0z"/><path d="m19 7-3 7a3.5 3.5 0 0 0 6 0z"/>',
+  neu: '<path d="M12 3l2.4 5.6L20 9l-4.3 3.9L17 19l-5-3-5 3 1.3-6.1L4 9l5.6-.4z"/>',
+  liste: '<path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>',
+  spiel: '<rect x="2" y="7" width="20" height="11" rx="5"/><path d="M7 11v3M5.5 12.5h3M15.5 12h.01M18 13.5h.01"/>',
+  film: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4"/>',
+  serie: '<rect x="2.5" y="5" width="19" height="13" rx="2"/><path d="M8 21h8M12 18v3"/>',
+  kino: '<path d="M4 8h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="m4 8 2.5-4.5M10 8l2.5-4.5M16 8l2.5-4.5M4 8l16 0"/>',
+  jahr: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+};
+const gruppen = [
+  { id: 'lesen', icon: I.lesen, label: 'Lesen', href: '/', aktiv: path === '/' || path.startsWith('/texte'),
+    punkte: [
+      { href: '/', icon: I.neu, text: 'Neueste' },
+      { href: '/texte/', icon: I.liste, text: 'Alle Texte' },
+      { href: '/texte/?medium=spiel', icon: I.spiel, text: 'Spiele' },
+      { href: '/texte/?medium=film', icon: I.film, text: 'Filme' },
+      { href: '/texte/?medium=serie', icon: I.serie, text: 'Serien' },
+    ] },
+  { id: 'demnaechst', icon: I.kalender, label: 'Demnächst', href: '/demnaechst/', aktiv: path.startsWith('/demnaechst'),
+    punkte: [
+      { href: '/demnaechst/', icon: I.kalender, text: 'Alle Termine' },
+      { href: '/demnaechst/?f=kino', icon: I.kino, text: 'Kinostarts' },
+      { href: '/demnaechst/?f=serie', icon: I.serie, text: 'Serien und Folgen' },
+    ] },
+  { id: 'rueckblick', icon: I.rueckblick, label: 'Rückblick', href: '/archiv/', aktiv: path.startsWith('/archiv'),
+    punkte: [
+      { href: '/archiv/', icon: I.jahr, text: 'Nach Jahr' },
+      { href: '/archiv/spiele/', icon: I.spiel, text: 'Spiele A–Z' },
+      { href: '/archiv/filme/', icon: I.film, text: 'Filme A–Z' },
+      { href: '/archiv/serien/', icon: I.serie, text: 'Serien A–Z' },
+    ] },
+  { id: 'ueber', icon: I.skala, label: 'Über', href: '/wie-ich-werte/', aktiv: path.startsWith('/wie-ich-werte'),
+    punkte: [{ href: '/wie-ich-werte/', icon: I.skala, text: 'Wie ich werte' }] },
+];
+const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</svg>`;
+---
+<nav class="pille" aria-label="Hauptnavigation" data-pille>
+  <span class="kreis" aria-hidden="true"></span>
+  <ul class="pille-reihe">
+    {gruppen.map((g) => (
+      <li class="pille-punkt" data-aktiv={g.aktiv ? '' : undefined}>
+        <a class="pille-knopf" href={g.href} aria-label={g.label} aria-current={g.aktiv ? 'page' : undefined} aria-haspopup="true">
+          <Fragment set:html={svg(g.icon)} />
+        </a>
+        <div class="tafel">
+          <p class="tafel-kopf">{g.label}</p>
+          <ul>
+            {g.punkte.map((p) => (
+              <li><a href={p.href} aria-current={(Astro.url.pathname + Astro.url.search) === p.href ? 'page' : undefined}><Fragment set:html={svg(p.icon)} />{p.text}</a></li>
+            ))}
+          </ul>
+        </div>
+      </li>
+    ))}
+  </ul>
+</nav>
+
+<script>
+  // Der weiße Kreis gleitet zum überfahrenen Symbol und zurück zum aktiven, wenn die Maus die Pille verlässt.
+  document.querySelectorAll<HTMLElement>('[data-pille]').forEach((pille) => {
+    const kreis = pille.querySelector<HTMLElement>('.kreis')!;
+    const punkte = [...pille.querySelectorAll<HTMLElement>('.pille-punkt')];
+    const aktiv = punkte.find((p) => p.hasAttribute('data-aktiv'));
+    const hin = (p?: HTMLElement) => {
+      if (!p) { kreis.style.opacity = '0'; return; }
+      kreis.style.opacity = '1';
+      kreis.style.transform = `translateX(${p.offsetLeft}px)`; // Abstand des Punkts innerhalb der Reihe
+      punkte.forEach((x) => x.classList.toggle('unter-kreis', x === p));
+    };
+    kreis.style.transition = 'none'; hin(aktiv); kreis.offsetWidth; kreis.style.transition = '';
+    punkte.forEach((p) => {
+      p.addEventListener('mouseenter', () => { hin(p); p.classList.add('offen'); });
+      p.addEventListener('mouseleave', () => p.classList.remove('offen'));
+      p.addEventListener('focusin', () => { hin(p); p.classList.add('offen'); });
+      p.addEventListener('focusout', (e) => { if (!p.contains(e.relatedTarget as Node)) p.classList.remove('offen'); });
+      // Touch: erster Tipp öffnet die Tafel, zweiter folgt dem Link
+      p.querySelector('.pille-knopf')!.addEventListener('click', (e) => {
+        if (matchMedia('(hover: none)').matches && !p.classList.contains('offen')) {
+          e.preventDefault(); punkte.forEach((x) => x.classList.remove('offen')); hin(p); p.classList.add('offen');
+        }
+      });
+    });
+    pille.addEventListener('mouseleave', () => hin(aktiv));
+    document.addEventListener('click', (e) => { if (!pille.contains(e.target as Node)) { punkte.forEach((x) => x.classList.remove('offen')); hin(aktiv); } });
+  });
+</script>
+
+<style>
+  /* Die Pille bleibt in Hell und Dunkel dunkel, wie in GameHub. */
+  .pille { position: relative; background: #0d0f11; border: 1px solid rgb(255 255 255 / 0.09); border-radius: 999px; padding: 5px; box-shadow: 0 2px 4px rgb(0 0 0 / 0.18), 0 12px 28px -10px rgb(0 0 0 / 0.5); }
+  .pille-reihe { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; position: relative; z-index: 1; }
+  .pille-punkt { position: relative; }
+  .kreis {
+    position: absolute; left: 5px; top: 5px; width: 42px; height: 42px; border-radius: 50%; background: #fff; opacity: 0;
+    transition: transform 420ms cubic-bezier(0.34, 1.3, 0.5, 1), opacity 200ms ease; z-index: 0; pointer-events: none;
+  }
+  .pille-knopf { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; color: #a3a9b0; transition: color 220ms ease; }
+  .pille-knopf :global(svg) { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .pille-punkt.unter-kreis .pille-knopf { color: #0d0f11; }
+  .pille-knopf:focus-visible { outline: 2px solid #8fb8ee; outline-offset: 2px; }
+
+  .tafel {
+    position: absolute; top: calc(100% + 14px); left: 50%; min-width: 220px; padding: 12px 8px 8px; border-radius: 16px;
+    background: #17191c; color: #e9ecef; box-shadow: 0 2px 4px rgb(0 0 0 / 0.2), 0 24px 48px -16px rgb(0 0 0 / 0.6);
+    opacity: 0; visibility: hidden; transform: translate(-50%, -6px) scale(0.98); transform-origin: top center;
+    transition: opacity 240ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1), visibility 0s linear 240ms; z-index: 20;
+  }
+  .tafel::before { content: ''; position: absolute; inset: -16px 0 auto; height: 16px; } /* Brücke, damit die Maus nicht abreißt */
+  .pille-punkt.offen .tafel { opacity: 1; visibility: visible; transform: translate(-50%, 0) scale(1); transition-delay: 0s; }
+  .tafel-kopf { margin: 0 10px 8px; font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase; color: #6f767e; }
+  .tafel ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
+  .tafel a {
+    display: flex; align-items: center; gap: 12px; padding: 9px 12px; border-radius: 10px; color: #c9ced3; text-decoration: none;
+    font-family: var(--text); font-size: 1rem; white-space: nowrap; transition: background-color 160ms, color 160ms;
+  }
+  .tafel a :global(svg) { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; opacity: 0.85; }
+  .tafel a:hover, .tafel a:focus-visible { background: #24272b; color: #fff; outline: none; }
+  .tafel a[aria-current='page'] { background: #24272b; color: #fff; font-weight: 600; }
+
+  @media (prefers-reduced-motion: reduce) { .kreis, .tafel { transition: none; } }
+</style>
