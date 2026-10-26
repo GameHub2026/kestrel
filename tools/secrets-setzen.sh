@@ -10,4 +10,6 @@ setze() { [[ -n "$2" ]] || { echo "  $1: kein Wert in api-keys.txt, übersprunge
 setze IGDB_CLIENT_ID "$(wert 'IGDB Client ID')"
 setze IGDB_CLIENT_SECRET "$(wert 'IGDB Client Secret')"
 setze TMDB_KEY "$(wert 'TMDB API Key')"
+setze TRAKT_CLIENT_ID "$(wert 'Trakt Client ID')"
+setze TRAKT_USER "$(wert 'Trakt Benutzername' | sed 's/^@//')"
 setze MERK_TOKEN "$(wert 'Kestrel Merkliste Schlüssel')"

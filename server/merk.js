@@ -68,7 +68,7 @@ async function termineSpiel(env, id) {
 }
 
 // ---------- TMDB (Filme, Serien) ----------
-async function tmdb(env, pfad, params = {}) {
+export async function tmdb(env, pfad, params = {}) {
   const key = env.TMDB_KEY || '';
   const u = new URL(`https://api.themoviedb.org/3${pfad}`);
   u.searchParams.set('language', 'de-DE');
@@ -80,7 +80,7 @@ async function tmdb(env, pfad, params = {}) {
   if (!r.ok) throw new Error(`TMDB ${r.status}`);
   return r.json();
 }
-const tmdbBild = (p) => (p ? `https://image.tmdb.org/t/p/w154${p}` : null);
+export const tmdbBild = (p) => (p ? `https://image.tmdb.org/t/p/w154${p}` : null);
 
 async function sucheFilmSerie(env, medium, q) {
   const film = medium === 'film';
