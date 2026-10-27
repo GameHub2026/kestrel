@@ -1,34 +1,20 @@
 {
- "von": "2026-10-24",
- "bis": "2027-02-23",
+ "von": "2026-10-25",
+ "bis": "2027-02-24",
  "eintraege": [
   {
-   "id": "tv-316702-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Der letzte Tisch",
-   "datum": "2026-10-24",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/ucRsnZ6zK1lVI4j5tIYLGSORlxn.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/316702"
-  },
-  {
-   "id": "tv-316702-s1-2026-10-25",
+   "id": "tv-60761-s4-2026-10-25",
    "art": "serie",
    "typ": "folge",
-   "titel": "Der letzte Tisch",
+   "titel": "Ace of the Diamond",
    "datum": "2026-10-25",
-   "text": "S1E2",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "text": "S4E16",
+   "jahr": "2013",
+   "bild": "https://image.tmdb.org/t/p/w342/2kqZX7OKVHkLm2XmI2AXxAd0MrA.jpg",
    "anbieter": [
-    "Amazon Prime Video"
+    "Crunchyroll"
    ],
-   "link": "https://www.themoviedb.org/tv/316702"
+   "link": "https://www.themoviedb.org/tv/60761"
   },
   {
    "id": "tv-456-s38-2026-10-25",
@@ -102,20 +88,6 @@
     "Netflix"
    ],
    "link": "https://www.themoviedb.org/tv/321221"
-  },
-  {
-   "id": "tv-12786-s20-2026-10-26",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Murdoch Mysteries",
-   "datum": "2026-10-26",
-   "text": "S20E4",
-   "jahr": "2008",
-   "bild": "https://image.tmdb.org/t/p/w342/pEyGUaG21MaWelKsDcy5LK86jqG.jpg",
-   "anbieter": [
-    "WOW"
-   ],
-   "link": "https://www.themoviedb.org/tv/12786"
   },
   {
    "id": "tv-334887-s1",
@@ -499,20 +471,6 @@
    "link": "https://www.themoviedb.org/tv/153312"
   },
   {
-   "id": "tv-316702-s1-2026-10-31",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Der letzte Tisch",
-   "datum": "2026-10-31",
-   "text": "S1E3",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/316702"
-  },
-  {
    "id": "tv-30983-s1-2026-10-31",
    "art": "serie",
    "typ": "folge",
@@ -527,18 +485,18 @@
    "link": "https://www.themoviedb.org/tv/30983"
   },
   {
-   "id": "tv-316702-s1-2026-11-01",
+   "id": "tv-60761-s4-2026-11-01",
    "art": "serie",
    "typ": "folge",
-   "titel": "Der letzte Tisch",
+   "titel": "Ace of the Diamond",
    "datum": "2026-11-01",
-   "text": "S1E4",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "text": "S4E17",
+   "jahr": "2013",
+   "bild": "https://image.tmdb.org/t/p/w342/2kqZX7OKVHkLm2XmI2AXxAd0MrA.jpg",
    "anbieter": [
-    "Amazon Prime Video"
+    "Crunchyroll"
    ],
-   "link": "https://www.themoviedb.org/tv/316702"
+   "link": "https://www.themoviedb.org/tv/60761"
   },
   {
    "id": "tv-456-s38-2026-11-01",
@@ -910,32 +868,18 @@
    "link": "https://www.themoviedb.org/tv/153312"
   },
   {
-   "id": "tv-316702-s1-2026-11-07",
+   "id": "tv-60761-s4-2026-11-08",
    "art": "serie",
    "typ": "folge",
-   "titel": "Der letzte Tisch",
-   "datum": "2026-11-07",
-   "text": "S1E5",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/316702"
-  },
-  {
-   "id": "tv-316702-s1-2026-11-08",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Der letzte Tisch",
+   "titel": "Ace of the Diamond",
    "datum": "2026-11-08",
-   "text": "S1E6",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "text": "S4E18",
+   "jahr": "2013",
+   "bild": "https://image.tmdb.org/t/p/w342/2kqZX7OKVHkLm2XmI2AXxAd0MrA.jpg",
    "anbieter": [
-    "Amazon Prime Video"
+    "Crunchyroll"
    ],
-   "link": "https://www.themoviedb.org/tv/316702"
+   "link": "https://www.themoviedb.org/tv/60761"
   },
   {
    "id": "tv-456-s38-2026-11-08",
@@ -1179,6 +1123,18 @@
    "link": "https://www.themoviedb.org/movie/1469342"
   },
   {
+   "id": "movie-1437511-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "How to Rob a Bank",
+   "datum": "2026-11-12",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1437511"
+  },
+  {
    "id": "tv-2734-s28-2026-11-12",
    "art": "serie",
    "typ": "folge",
@@ -1221,6 +1177,20 @@
     "Crunchyroll"
    ],
    "link": "https://www.themoviedb.org/tv/220542"
+  },
+  {
+   "id": "tv-303182-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "El crimen de Pazos",
+   "datum": "2026-11-13",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/t7bQuXEN4dvWtUBY2DUDxsKjZlv.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/303182"
   },
   {
    "id": "tv-45790-s6-2026-11-13",
@@ -1267,32 +1237,18 @@
    "link": "https://www.themoviedb.org/tv/153312"
   },
   {
-   "id": "tv-316702-s1-2026-11-14",
+   "id": "tv-60761-s4-2026-11-15",
    "art": "serie",
    "typ": "folge",
-   "titel": "Der letzte Tisch",
-   "datum": "2026-11-14",
-   "text": "S1E7",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/316702"
-  },
-  {
-   "id": "tv-316702-s1-2026-11-15",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Der letzte Tisch",
+   "titel": "Ace of the Diamond",
    "datum": "2026-11-15",
-   "text": "S1E8",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "text": "S4E19",
+   "jahr": "2013",
+   "bild": "https://image.tmdb.org/t/p/w342/2kqZX7OKVHkLm2XmI2AXxAd0MrA.jpg",
    "anbieter": [
-    "Amazon Prime Video"
+    "Crunchyroll"
    ],
-   "link": "https://www.themoviedb.org/tv/316702"
+   "link": "https://www.themoviedb.org/tv/60761"
   },
   {
    "id": "tv-456-s38-2026-11-15",
@@ -1401,7 +1357,7 @@
    "datum": "2026-11-19",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/dbpyc3Zo0m4E15XcQ7tTwlLBEtE.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/t1azKLExwUxKj6v6m2L535evuRa.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1422041"
   },
@@ -1489,32 +1445,18 @@
    "link": "https://www.themoviedb.org/tv/153312"
   },
   {
-   "id": "tv-316702-s1-2026-11-21",
+   "id": "tv-60761-s4-2026-11-22",
    "art": "serie",
    "typ": "folge",
-   "titel": "Der letzte Tisch",
-   "datum": "2026-11-21",
-   "text": "S1E9",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/316702"
-  },
-  {
-   "id": "tv-316702-s1-2026-11-22",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Der letzte Tisch",
+   "titel": "Ace of the Diamond",
    "datum": "2026-11-22",
-   "text": "S1E10",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "text": "S4E20",
+   "jahr": "2013",
+   "bild": "https://image.tmdb.org/t/p/w342/2kqZX7OKVHkLm2XmI2AXxAd0MrA.jpg",
    "anbieter": [
-    "Amazon Prime Video"
+    "Crunchyroll"
    ],
-   "link": "https://www.themoviedb.org/tv/316702"
+   "link": "https://www.themoviedb.org/tv/60761"
   },
   {
    "id": "tv-456-s38-2026-11-22",
@@ -1616,18 +1558,6 @@
    "link": "https://www.themoviedb.org/tv/2190"
   },
   {
-   "id": "movie-1457866-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
-   "datum": "2026-11-25",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/mHWSlvyAJRiEkCyqT91HuENbVaZ.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1457866"
-  },
-  {
    "id": "movie-1286656-kino",
    "art": "film",
    "typ": "kino",
@@ -1697,32 +1627,18 @@
    "link": "https://www.themoviedb.org/tv/153312"
   },
   {
-   "id": "tv-316702-s1-2026-11-28",
+   "id": "tv-60761-s4-2026-11-29",
    "art": "serie",
    "typ": "folge",
-   "titel": "Der letzte Tisch",
-   "datum": "2026-11-28",
-   "text": "S1E11",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/316702"
-  },
-  {
-   "id": "tv-316702-s1-2026-11-29",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Der letzte Tisch",
+   "titel": "Ace of the Diamond",
    "datum": "2026-11-29",
-   "text": "S1E12",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4iJTUrYzFdk7QPbHQQfoFHXSIWH.jpg",
+   "text": "S4E21",
+   "jahr": "2013",
+   "bild": "https://image.tmdb.org/t/p/w342/2kqZX7OKVHkLm2XmI2AXxAd0MrA.jpg",
    "anbieter": [
-    "Amazon Prime Video"
+    "Crunchyroll"
    ],
-   "link": "https://www.themoviedb.org/tv/316702"
+   "link": "https://www.themoviedb.org/tv/60761"
   },
   {
    "id": "tv-456-s38-2026-11-29",
@@ -1870,6 +1786,20 @@
    "link": "https://www.themoviedb.org/tv/153312"
   },
   {
+   "id": "tv-60761-s4-2026-12-06",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Ace of the Diamond",
+   "datum": "2026-12-06",
+   "text": "S4E22",
+   "jahr": "2013",
+   "bild": "https://image.tmdb.org/t/p/w342/2kqZX7OKVHkLm2XmI2AXxAd0MrA.jpg",
+   "anbieter": [
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/60761"
+  },
+  {
    "id": "tv-456-s38-2026-12-06",
    "art": "serie",
    "typ": "folge",
@@ -1954,6 +1884,36 @@
     "RTL+"
    ],
    "link": "https://www.themoviedb.org/tv/2734"
+  },
+  {
+   "id": "tv-220542-s1-2026-12-11",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Die Tagebücher der Apothekerin",
+   "datum": "2026-12-11",
+   "text": "S1E59",
+   "jahr": "2023",
+   "bild": "https://image.tmdb.org/t/p/w342/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
+   "anbieter": [
+    "Netflix",
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/220542"
+  },
+  {
+   "id": "tv-153312-s4-2026-12-11",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tulsa King",
+   "datum": "2026-12-11",
+   "text": "S4E9",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/153312"
   },
   {
    "id": "movie-1003596-kino",
