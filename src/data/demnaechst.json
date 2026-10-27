@@ -61,6 +61,20 @@
    "link": "https://www.themoviedb.org/tv/3034"
   },
   {
+   "id": "tv-211288-s4-2026-10-25",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tracker",
+   "datum": "2026-10-25",
+   "text": "S4E4",
+   "jahr": "2024",
+   "bild": "https://image.tmdb.org/t/p/w342/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/211288"
+  },
+  {
    "id": "tv-80748-s9-2026-10-26",
    "art": "serie",
    "typ": "folge",
@@ -442,20 +456,6 @@
    "link": "https://www.themoviedb.org/tv/247718"
   },
   {
-   "id": "tv-300755-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Rinnan",
-   "datum": "2026-10-30",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/6nQ4utgXXR1ClpG294KZTxUICzd.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/300755"
-  },
-  {
    "id": "tv-153312-s4-2026-10-30",
    "art": "serie",
    "typ": "folge",
@@ -542,6 +542,20 @@
     "Disney+"
    ],
    "link": "https://www.themoviedb.org/tv/65334"
+  },
+  {
+   "id": "tv-211288-s4-2026-11-01",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Tracker",
+   "datum": "2026-11-01",
+   "text": "S4E5",
+   "jahr": "2024",
+   "bild": "https://image.tmdb.org/t/p/w342/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
+   "anbieter": [
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/211288"
   },
   {
    "id": "tv-80748-s9-2026-11-02",
@@ -1179,20 +1193,6 @@
    "link": "https://www.themoviedb.org/tv/220542"
   },
   {
-   "id": "tv-303182-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "El crimen de Pazos",
-   "datum": "2026-11-13",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/t7bQuXEN4dvWtUBY2DUDxsKjZlv.jpg",
-   "anbieter": [
-    "Netflix"
-   ],
-   "link": "https://www.themoviedb.org/tv/303182"
-  },
-  {
    "id": "tv-45790-s6-2026-11-13",
    "art": "serie",
    "typ": "folge",
@@ -1295,19 +1295,18 @@
    "link": "https://www.themoviedb.org/tv/3034"
   },
   {
-   "id": "tv-85077-s6",
+   "id": "tv-211288-s4-2026-11-15",
    "art": "serie",
-   "typ": "staffelstart",
-   "titel": "The Chosen",
+   "typ": "folge",
+   "titel": "Tracker",
    "datum": "2026-11-15",
-   "text": "Staffel 6",
-   "jahr": "2019",
-   "bild": "https://image.tmdb.org/t/p/w342/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "text": "S4E6",
+   "jahr": "2024",
+   "bild": "https://image.tmdb.org/t/p/w342/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
    "anbieter": [
-    "Netflix",
-    "Amazon Prime Video"
+    "Disney+"
    ],
-   "link": "https://www.themoviedb.org/tv/85077"
+   "link": "https://www.themoviedb.org/tv/211288"
   },
   {
    "id": "tv-75219-s10-2026-11-19",
@@ -1503,19 +1502,18 @@
    "link": "https://www.themoviedb.org/tv/3034"
   },
   {
-   "id": "tv-85077-s6-2026-11-22",
+   "id": "tv-211288-s4-2026-11-22",
    "art": "serie",
    "typ": "folge",
-   "titel": "The Chosen",
+   "titel": "Tracker",
    "datum": "2026-11-22",
-   "text": "S6E4",
-   "jahr": "2019",
-   "bild": "https://image.tmdb.org/t/p/w342/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "text": "S4E7",
+   "jahr": "2024",
+   "bild": "https://image.tmdb.org/t/p/w342/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
    "anbieter": [
-    "Netflix",
-    "Amazon Prime Video"
+    "Disney+"
    ],
-   "link": "https://www.themoviedb.org/tv/85077"
+   "link": "https://www.themoviedb.org/tv/211288"
   },
   {
    "id": "tv-171802-s1",
@@ -1671,21 +1669,6 @@
    "link": "https://www.themoviedb.org/tv/312359"
   },
   {
-   "id": "tv-85077-s6-2026-11-29",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "The Chosen",
-   "datum": "2026-11-29",
-   "text": "S6E5",
-   "jahr": "2019",
-   "bild": "https://image.tmdb.org/t/p/w342/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
-   "anbieter": [
-    "Netflix",
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/85077"
-  },
-  {
    "id": "movie-1514682-kino",
    "art": "film",
    "typ": "kino",
@@ -1828,21 +1811,6 @@
     "Crunchyroll"
    ],
    "link": "https://www.themoviedb.org/tv/312359"
-  },
-  {
-   "id": "tv-85077-s6-2026-12-06",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "The Chosen",
-   "datum": "2026-12-06",
-   "text": "S6E6",
-   "jahr": "2019",
-   "bild": "https://image.tmdb.org/t/p/w342/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
-   "anbieter": [
-    "Netflix",
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/85077"
   },
   {
    "id": "movie-1554956-kino",
