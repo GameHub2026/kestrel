@@ -15,6 +15,7 @@ const I = {
   serie: '<rect x="2.5" y="5" width="19" height="13" rx="2"/><path d="M8 21h8M12 18v3"/>',
   kino: '<path d="M4 8h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="m4 8 2.5-4.5M10 8l2.5-4.5M16 8l2.5-4.5M4 8l16 0"/>',
   jahr: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+  merk: '<path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/>',
 };
 const gruppen = [
   { id: 'lesen', icon: I.lesen, label: 'Lesen', href: '/', aktiv: path === '/' || path.startsWith('/texte'),
@@ -38,8 +39,12 @@ const gruppen = [
       { href: '/archiv/filme/', icon: I.film, text: 'Filme A–Z' },
       { href: '/archiv/serien/', icon: I.serie, text: 'Serien A–Z' },
     ] },
-  { id: 'ueber', icon: I.skala, label: 'Über', href: '/wie-ich-werte/', aktiv: path.startsWith('/wie-ich-werte'),
-    punkte: [{ href: '/wie-ich-werte/', icon: I.skala, text: 'Wie ich werte' }] },
+  { id: 'ueber', icon: I.skala, label: 'Über', href: '/wie-ich-werte/', aktiv: path.startsWith('/wie-ich-werte') || path.startsWith('/merkliste'),
+    punkte: [
+      { href: '/wie-ich-werte/', icon: I.skala, text: 'Wie ich werte' },
+      // Nur auf Kevins Geräten sichtbar (dort liegt der Merkliste-Schlüssel im Browser)
+      { href: '/merkliste/', icon: I.merk, text: 'Meine Merkliste', privat: true },
+    ] },
 ];
 const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</svg>`;
 ---
@@ -60,7 +65,7 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
         {g.punkte.length > 1 && (
           <ul>
             {g.punkte.map((p) => (
-              <li><a href={p.href} tabindex="-1" aria-current={(Astro.url.pathname + Astro.url.search) === p.href ? 'page' : undefined}><Fragment set:html={svg(p.icon)} />{p.text}</a></li>
+              <li hidden={p.privat || undefined} data-privat={p.privat ? '' : undefined}><a href={p.href} tabindex="-1" aria-current={(Astro.url.pathname + Astro.url.search) === p.href ? 'page' : undefined}><Fragment set:html={svg(p.icon)} />{p.text}</a></li>
             ))}
           </ul>
         )}
@@ -70,6 +75,9 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
 </nav>
 
 <script>
+  // Private Punkte (Merkliste) nur zeigen, wenn auf diesem Gerät der Merkliste-Schlüssel gespeichert ist.
+  try { if (localStorage.getItem('kestrel-merk-token')) document.querySelectorAll<HTMLElement>('[data-privat]').forEach((li) => (li.hidden = false)); } catch {}
+
   document.querySelectorAll<HTMLElement>('[data-leiste]').forEach((leiste) => {
     const schild = leiste.querySelector<HTMLElement>('.schild')!;
     const inhalte = [...schild.querySelectorAll<HTMLElement>('.schild-inhalt')];
