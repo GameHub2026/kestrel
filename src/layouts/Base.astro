@@ -50,12 +50,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <span class="wordmark-stub mono" aria-hidden="true">Nº</span>
         <span class="wordmark-name">Kestrel</span>
       </a>
-      <Pille />
       <div class="kopf-tools">
-        <span class="stempel mono" id="stempel" tabindex="0" title="Uhrzeit anzeigen">
-          <span class="st-a" data-zeichen>Zuletzt festgehalten {stand}</span>
-          <span class="st-b" aria-hidden="true" id="uhr" data-zeichen></span>
-        </span>
         <button type="button" class="theme" id="theme" role="switch" aria-label="Dunkles Design" aria-checked="false">
           <span class="theme-knopf" aria-hidden="true"></span>
           <svg class="t-sonne" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
@@ -63,6 +58,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         </button>
       </div>
     </header>
+    <Pille />
+    <div class="ecke">
+      <span class="stempel mono" id="stempel" tabindex="0" title="Uhrzeit anzeigen">
+          <span class="st-a" data-zeichen>Zuletzt festgehalten {stand}</span>
+          <span class="st-b" aria-hidden="true" id="uhr" data-zeichen></span>
+        </span>
+    </div>
     <main id="inhalt">
       <slot />
     </main>
@@ -108,7 +110,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--ground); padding: 8px 12px; z-index: 10; }
   .skip:focus { left: 8px; }
 
-  /* Kopf: Wortmarke links, Pille in der Mitte, Stand/Uhr und Hell/Dunkel rechts */
+  /* Kopf: Wortmarke links, Hell/Dunkel rechts; Navigation als Leiste links, Stand/Uhr unten rechts */
+  .ecke { position: fixed; right: 22px; bottom: 16px; z-index: 35; }
+  @media (max-width: 900px) { .ecke { display: none; } }
   .kopf-tools { display: flex; align-items: center; justify-content: flex-end; gap: 14px; }
 
   /* Statuszeile: Zeichen für Zeichen verschwimmt der Stand, die laufende Uhr wird scharf */
@@ -140,16 +144,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   .theme[aria-checked='true'] .theme-knopf { transform: translateX(34px); }
   .theme:hover .t-sonne { transform: rotate(45deg); }
 
-  .site-head {
-    display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px;
-    padding-top: 20px; padding-bottom: 20px; position: relative; z-index: 30;
-  }
-  .wordmark { justify-self: start; }
-  @media (max-width: 900px) {
-    .site-head { grid-template-columns: auto 1fr; row-gap: 14px; }
-    .site-head > :global(.pille) { grid-column: 1 / -1; grid-row: 2; justify-self: center; }
-  }
-  @media (max-width: 560px) { .stempel { display: none; } }
+  .site-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 20px; padding-bottom: 20px; position: relative; z-index: 30; }
+  /* Platz für die Leiste links, sobald sie neben dem Inhalt steht */
+  @media (min-width: 901px) and (max-width: 1320px) { :global(body) { padding-left: 64px; } }
+  @media (max-width: 900px) { :global(body) { padding-bottom: 76px; } }
+
   .wordmark {
     display: inline-flex; align-items: stretch; text-decoration: none; color: var(--film-ink);
     filter: drop-shadow(0 6px 10px rgb(18 20 23 / 0.25));
@@ -168,7 +167,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   .wordmark:hover .wordmark-name, .wordmark:hover .wordmark-stub { background: #b02c24; }
 
   .site-foot {
-    margin-top: clamp(64px, 10vw, 120px); padding-top: 28px; padding-bottom: 40px;
+    margin-top: clamp(64px, 10vw, 120px); padding-top: 28px; padding-bottom: 64px; /* Platz für die Uhr unten rechts */
     border-top: 2px dashed var(--rule); color: var(--ink-2); font-size: 0.95rem;
     display: flex; justify-content: space-between; gap: 16px 40px; flex-wrap: wrap;
   }

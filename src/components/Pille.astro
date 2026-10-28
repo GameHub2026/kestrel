@@ -1,6 +1,7 @@
 ---
-// Navigation als dunkle Pille (Vorbild GameHub): Symbole, ein weißer Kreis gleitet zum überfahrenen Symbol,
-// darunter klappt eine Tafel mit Überschrift und Unterpunkten auf.
+// Navigation als schlichte Leiste links (Vorbild: Kevins Video vom 28.10.2026): nur Symbole.
+// Beim Überfahren gleitet EIN dunkles Schild senkrecht zum Symbol; sein Inhalt (Kategorie + Unterpunkte)
+// wechselt mit weicher Unschärfe, Breite und Höhe wachsen mit. Alt+1…4 springt in die Kategorien.
 const path = Astro.url.pathname;
 const I = {
   lesen: '<path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2z"/><path d="M22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/>',
@@ -42,88 +43,133 @@ const gruppen = [
 ];
 const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</svg>`;
 ---
-<nav class="pille" aria-label="Hauptnavigation" data-pille>
-  <span class="kreis" aria-hidden="true"></span>
-  <ul class="pille-reihe">
-    {gruppen.map((g) => (
-      <li class="pille-punkt" data-aktiv={g.aktiv ? '' : undefined}>
-        <a class="pille-knopf" href={g.href} aria-label={g.label} aria-current={g.aktiv ? 'page' : undefined} aria-haspopup="true">
+<nav class="leiste" aria-label="Hauptnavigation" data-leiste>
+  <ul class="leiste-reihe">
+    {gruppen.map((g, i) => (
+      <li data-id={g.id}>
+        <a class="leiste-knopf" href={g.href} aria-label={g.label} aria-current={g.aktiv ? 'page' : undefined} data-taste={i + 1}>
           <Fragment set:html={svg(g.icon)} />
         </a>
-        <div class="tafel">
-          <p class="tafel-kopf">{g.label}</p>
-          <ul>
-            {g.punkte.map((p) => (
-              <li><a href={p.href} aria-current={(Astro.url.pathname + Astro.url.search) === p.href ? 'page' : undefined}><Fragment set:html={svg(p.icon)} />{p.text}</a></li>
-            ))}
-          </ul>
-        </div>
       </li>
     ))}
   </ul>
+  <div class="schild" aria-hidden="true">
+    {gruppen.map((g, i) => (
+      <div class="schild-inhalt" data-fuer={g.id}>
+        <p class="schild-kopf"><span>{g.label}</span><kbd>⌥{i + 1}</kbd></p>
+        {g.punkte.length > 1 && (
+          <ul>
+            {g.punkte.map((p) => (
+              <li><a href={p.href} tabindex="-1" aria-current={(Astro.url.pathname + Astro.url.search) === p.href ? 'page' : undefined}><Fragment set:html={svg(p.icon)} />{p.text}</a></li>
+            ))}
+          </ul>
+        )}
+      </div>
+    ))}
+  </div>
 </nav>
 
 <script>
-  // Der weiße Kreis gleitet zum überfahrenen Symbol und zurück zum aktiven, wenn die Maus die Pille verlässt.
-  document.querySelectorAll<HTMLElement>('[data-pille]').forEach((pille) => {
-    const kreis = pille.querySelector<HTMLElement>('.kreis')!;
-    const punkte = [...pille.querySelectorAll<HTMLElement>('.pille-punkt')];
-    const aktiv = punkte.find((p) => p.hasAttribute('data-aktiv'));
-    const hin = (p?: HTMLElement) => {
-      if (!p) { kreis.style.opacity = '0'; return; }
-      kreis.style.opacity = '1';
-      kreis.style.transform = `translateX(${p.offsetLeft}px)`; // Abstand des Punkts innerhalb der Reihe
-      punkte.forEach((x) => x.classList.toggle('unter-kreis', x === p));
-    };
-    kreis.style.transition = 'none'; hin(aktiv); kreis.offsetWidth; kreis.style.transition = '';
-    punkte.forEach((p) => {
-      p.addEventListener('mouseenter', () => { hin(p); p.classList.add('offen'); });
-      p.addEventListener('mouseleave', () => p.classList.remove('offen'));
-      p.addEventListener('focusin', () => { hin(p); p.classList.add('offen'); });
-      p.addEventListener('focusout', (e) => { if (!p.contains(e.relatedTarget as Node)) p.classList.remove('offen'); });
-      // Touch: erster Tipp öffnet die Tafel, zweiter folgt dem Link
-      p.querySelector('.pille-knopf')!.addEventListener('click', (e) => {
-        if (matchMedia('(hover: none)').matches && !p.classList.contains('offen')) {
-          e.preventDefault(); punkte.forEach((x) => x.classList.remove('offen')); hin(p); p.classList.add('offen');
-        }
+  document.querySelectorAll<HTMLElement>('[data-leiste]').forEach((leiste) => {
+    const schild = leiste.querySelector<HTMLElement>('.schild')!;
+    const inhalte = [...schild.querySelectorAll<HTMLElement>('.schild-inhalt')];
+    const punkte = [...leiste.querySelectorAll<HTMLElement>('.leiste-reihe > li')];
+    let aktuell = -1; let zu = 0;
+
+    function zeige(i: number) {
+      clearTimeout(zu);
+      const li = punkte[i]; const inhalt = inhalte[i];
+      const vorher = aktuell; aktuell = i;
+      inhalte.forEach((x, k) => {
+        x.classList.toggle('an', k === i);
+        x.classList.toggle('oben', k !== i && k < i);
+        x.querySelectorAll('a').forEach((a) => a.tabIndex = k === i ? 0 : -1);
+      });
+      // Schild auf Höhe des Symbols, Größe des neuen Inhalts
+      const mitte = li.offsetTop + li.offsetHeight / 2;
+      schild.style.setProperty('--y', `${mitte - 17}px`);
+      schild.style.width = `${inhalt.offsetWidth}px`;
+      schild.style.height = `${inhalt.offsetHeight}px`;
+      if (vorher < 0) { schild.classList.add('ohne-gleiten'); requestAnimationFrame(() => schild.classList.remove('ohne-gleiten')); }
+      schild.classList.add('sichtbar');
+      schild.setAttribute('aria-hidden', 'false');
+    }
+    function verstecke(sofort = false) {
+      clearTimeout(zu);
+      zu = window.setTimeout(() => { schild.classList.remove('sichtbar'); schild.setAttribute('aria-hidden', 'true'); aktuell = -1; }, sofort ? 0 : 260);
+    }
+    punkte.forEach((li, i) => {
+      li.addEventListener('mouseenter', () => zeige(i));
+      li.querySelector('a')!.addEventListener('focus', () => zeige(i));
+      // Touch: erster Tipp zeigt das Schild, zweiter folgt dem Link
+      li.querySelector('a')!.addEventListener('click', (e) => {
+        if (matchMedia('(hover: none)').matches && aktuell !== i) { e.preventDefault(); zeige(i); }
       });
     });
-    pille.addEventListener('mouseleave', () => hin(aktiv));
-    document.addEventListener('click', (e) => { if (!pille.contains(e.target as Node)) { punkte.forEach((x) => x.classList.remove('offen')); hin(aktiv); } });
+    leiste.addEventListener('mouseleave', () => verstecke());
+    schild.addEventListener('mouseenter', () => clearTimeout(zu));
+    leiste.addEventListener('focusout', (e) => { if (!leiste.contains(e.relatedTarget as Node)) verstecke(true); });
+    document.addEventListener('click', (e) => { if (!leiste.contains(e.target as Node)) verstecke(true); });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') return verstecke(true);
+      if (!e.altKey || e.metaKey || e.ctrlKey) return;
+      const n = Number(e.code.replace('Digit', ''));
+      const a = leiste.querySelector<HTMLAnchorElement>(`[data-taste="${n}"]`);
+      if (a) { e.preventDefault(); location.href = a.href; }
+    });
   });
 </script>
 
 <style>
-  /* Die Pille bleibt in Hell und Dunkel dunkel, wie in GameHub. */
-  .pille { position: relative; background: #0d0f11; border: 1px solid rgb(255 255 255 / 0.09); border-radius: 999px; padding: 5px; box-shadow: 0 2px 4px rgb(0 0 0 / 0.18), 0 12px 28px -10px rgb(0 0 0 / 0.5); }
-  .pille-reihe { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; position: relative; z-index: 1; }
-  .pille-punkt { position: relative; }
-  .kreis {
-    position: absolute; left: 5px; top: 5px; width: 42px; height: 42px; border-radius: 50%; background: #fff; opacity: 0;
-    transition: transform 420ms cubic-bezier(0.34, 1.3, 0.5, 1), opacity 200ms ease; z-index: 0; pointer-events: none;
+  .leiste { position: fixed; left: 18px; top: 50%; transform: translateY(-50%); z-index: 40; }
+  .leiste-reihe { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .leiste-knopf {
+    display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; color: var(--ink-2);
+    transition: background-color 200ms ease, color 200ms ease;
   }
-  .pille-knopf { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; color: #a3a9b0; transition: color 220ms ease; }
-  .pille-knopf :global(svg) { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-  .pille-punkt.unter-kreis .pille-knopf { color: #0d0f11; }
-  .pille-knopf:focus-visible { outline: 2px solid #8fb8ee; outline-offset: 2px; }
+  .leiste-knopf :global(svg) { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .leiste-knopf:hover, .leiste-knopf:focus-visible { color: var(--ink); background: color-mix(in srgb, var(--ink) 9%, transparent); outline: none; }
+  .leiste-knopf[aria-current='page'] { color: var(--ink); background: color-mix(in srgb, var(--ink) 12%, transparent); }
+  .leiste-knopf[aria-current='page']::after { content: ''; position: absolute; left: -10px; top: 50%; margin-top: -8px; width: 3px; height: 16px; border-radius: 2px; background: var(--film); }
+  .leiste-reihe li { position: relative; display: grid; align-items: center; }
 
-  .tafel {
-    position: absolute; top: calc(100% + 14px); left: 50%; min-width: 220px; padding: 12px 8px 8px; border-radius: 16px;
-    background: #17191c; color: #e9ecef; box-shadow: 0 2px 4px rgb(0 0 0 / 0.2), 0 24px 48px -16px rgb(0 0 0 / 0.6);
-    opacity: 0; visibility: hidden; transform: translate(-50%, -6px) scale(0.98); transform-origin: top center;
-    transition: opacity 240ms ease, transform 320ms cubic-bezier(0.16, 1, 0.3, 1), visibility 0s linear 240ms; z-index: 20;
+  /* Das gleitende Schild */
+  .schild {
+    --y: 0px;
+    position: absolute; left: 50px; top: 0; transform: translateY(var(--y)) scale(0.96); transform-origin: left top;
+    background: #16181b; color: #eef0f2; border-radius: 12px; overflow: hidden; opacity: 0; pointer-events: none;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.25), 0 14px 32px -10px rgb(0 0 0 / 0.55), inset 0 0 0 1px rgb(255 255 255 / 0.06);
+    transition: transform 420ms cubic-bezier(0.32, 1.25, 0.5, 1), width 380ms cubic-bezier(0.16, 1, 0.3, 1),
+      height 380ms cubic-bezier(0.16, 1, 0.3, 1), opacity 200ms ease;
   }
-  .tafel::before { content: ''; position: absolute; inset: -16px 0 auto; height: 16px; } /* Brücke, damit die Maus nicht abreißt */
-  .pille-punkt.offen .tafel { opacity: 1; visibility: visible; transform: translate(-50%, 0) scale(1); transition-delay: 0s; }
-  .tafel-kopf { margin: 0 10px 8px; font-family: var(--mono); font-size: 0.66rem; letter-spacing: 0.22em; text-transform: uppercase; color: #6f767e; }
-  .tafel ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
-  .tafel a {
-    display: flex; align-items: center; gap: 12px; padding: 9px 12px; border-radius: 10px; color: #c9ced3; text-decoration: none;
-    font-family: var(--text); font-size: 1rem; white-space: nowrap; transition: background-color 160ms, color 160ms;
+  .schild.sichtbar { opacity: 1; pointer-events: auto; transform: translateY(var(--y)) scale(1); }
+  .schild.ohne-gleiten { transition: opacity 200ms ease, transform 220ms ease; }
+  .schild::before { content: ''; position: absolute; left: -14px; top: 0; bottom: 0; width: 14px; } /* Brücke zum Symbol */
+  .schild-inhalt {
+    position: absolute; left: 0; top: 0; width: max-content; min-width: 172px; padding: 8px 6px 6px; opacity: 0; filter: blur(6px); transform: translateY(8px);
+    transition: opacity 260ms ease, filter 320ms ease, transform 380ms cubic-bezier(0.16, 1, 0.3, 1); pointer-events: none;
   }
-  .tafel a :global(svg) { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; opacity: 0.85; }
-  .tafel a:hover, .tafel a:focus-visible { background: #24272b; color: #fff; outline: none; }
-  .tafel a[aria-current='page'] { background: #24272b; color: #fff; font-weight: 600; }
+  .schild-inhalt.oben { transform: translateY(-8px); }
+  .schild-inhalt.an { opacity: 1; filter: blur(0); transform: none; pointer-events: auto; }
+  .schild-kopf { margin: 0; padding: 4px 8px 6px; display: flex; align-items: center; gap: 10px; justify-content: space-between; font-family: var(--text); font-weight: 600; font-size: 0.86rem; line-height: 1.2; white-space: nowrap; }
+  .schild-kopf kbd { font-family: var(--mono); font-size: 0.7rem; color: #8b929a; }
+  .schild-inhalt:not(:has(ul)) { padding-bottom: 4px; }
+  .schild ul { list-style: none; margin: 2px 0 0; padding: 4px 0 0; border-top: 1px solid rgb(255 255 255 / 0.08); display: grid; gap: 1px; }
+  .schild a {
+    display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 8px; color: #c4c9ce; text-decoration: none;
+    font-family: var(--text); font-size: 0.92rem; white-space: nowrap; transition: background-color 150ms, color 150ms;
+  }
+  .schild a :global(svg) { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; opacity: 0.8; }
+  .schild a:hover, .schild a:focus-visible { background: #24272b; color: #fff; outline: none; }
+  .schild a[aria-current='page'] { color: #fff; background: #24272b; }
 
-  @media (prefers-reduced-motion: reduce) { .kreis, .tafel { transition: none; } }
+  /* Schmale Bildschirme: Leiste wird unten zur waagrechten Reihe, das Schild erscheint darüber */
+  @media (max-width: 900px) {
+    .leiste { left: 50%; top: auto; bottom: 14px; transform: translateX(-50%); background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: blur(10px); border-radius: 16px; padding: 5px; box-shadow: var(--shadow); }
+    .leiste-reihe { grid-auto-flow: column; }
+    .leiste-knopf[aria-current='page']::after { left: 50%; top: auto; bottom: -5px; width: 16px; height: 3px; margin: 0 0 0 -8px; }
+    .schild { left: 50%; top: auto; bottom: 56px; transform: translateX(-50%) scale(0.96); transform-origin: center bottom; }
+    .schild.sichtbar { transform: translateX(-50%) scale(1); }
+  }
+  @media (prefers-reduced-motion: reduce) { .schild, .schild-inhalt { transition: opacity 150ms ease; } }
 </style>
