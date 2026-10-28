@@ -41,7 +41,7 @@
    "jahr": "2026",
    "bild": "https://image.tmdb.org/t/p/w342/p7Z3iK7g3ZEOm60h121fvtDmA3f.jpg",
    "anbieter": [
-    "Hulu"
+    "Disney+"
    ],
    "link": "https://www.themoviedb.org/tv/334887"
   },
@@ -98,7 +98,7 @@
    "datum": "2026-10-27",
    "text": "Staffel 1 · Folgen 5–6",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/ajbVvETMM7NMq4Gc5FauOoyeEnu.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
    "anbieter": [
     "Disney+"
    ],
@@ -326,20 +326,6 @@
    "link": "https://www.themoviedb.org/movie/1400837"
   },
   {
-   "id": "tv-284833-s1-2026-10-30",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Avatar - Die sieben Häfen",
-   "datum": "2026-10-30",
-   "text": "Staffel 1 · Folgen 10–13",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/me3xp8w0RkAGLChEhuf7BVENUHO.jpg",
-   "anbieter": [
-    "Paramount+"
-   ],
-   "link": "https://www.themoviedb.org/tv/284833"
-  },
-  {
    "id": "tv-220542-s1-2026-10-30",
    "art": "serie",
    "typ": "folge",
@@ -539,7 +525,7 @@
    "datum": "2026-11-03",
    "text": "S1E7",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/ajbVvETMM7NMq4Gc5FauOoyeEnu.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
    "anbieter": [
     "Disney+"
    ],
@@ -871,6 +857,20 @@
    "link": "https://www.themoviedb.org/tv/3034"
   },
   {
+   "id": "tv-84773-s3",
+   "art": "serie",
+   "typ": "staffelstart",
+   "titel": "Der Herr der Ringe: Die Ringe der Macht",
+   "datum": "2026-11-10",
+   "text": "Staffel 3",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/84773"
+  },
+  {
    "id": "tv-4614-s24-2026-11-10",
    "art": "serie",
    "typ": "folge",
@@ -895,7 +895,7 @@
    "datum": "2026-11-10",
    "text": "S1E8",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/ajbVvETMM7NMq4Gc5FauOoyeEnu.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
    "anbieter": [
     "Disney+"
    ],
@@ -945,6 +945,20 @@
     "RTL+"
    ],
    "link": "https://www.themoviedb.org/tv/58841"
+  },
+  {
+   "id": "tv-84773-s3-2026-11-11",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der Herr der Ringe: Die Ringe der Macht",
+   "datum": "2026-11-11",
+   "text": "Staffel 3 · Folgen 1–4",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/84773"
   },
   {
    "id": "tv-338562-s1",
@@ -1109,6 +1123,20 @@
    "link": "https://www.themoviedb.org/tv/220542"
   },
   {
+   "id": "tv-303182-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "El crimen de Pazos",
+   "datum": "2026-11-13",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/t7bQuXEN4dvWtUBY2DUDxsKjZlv.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/303182"
+  },
+  {
    "id": "tv-45790-s6-2026-11-13",
    "art": "serie",
    "typ": "folge",
@@ -1238,6 +1266,20 @@
     "Disney+"
    ],
    "link": "https://www.themoviedb.org/tv/211288"
+  },
+  {
+   "id": "tv-84773-s3-2026-11-18",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der Herr der Ringe: Die Ringe der Macht",
+   "datum": "2026-11-18",
+   "text": "Staffel 3 · Folgen 5–6",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/84773"
   },
   {
    "id": "tv-75219-s10-2026-11-19",
@@ -1471,6 +1513,20 @@
    "bild": "https://image.tmdb.org/t/p/w342/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/822653"
+  },
+  {
+   "id": "tv-84773-s3-2026-11-25",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der Herr der Ringe: Die Ringe der Macht",
+   "datum": "2026-11-25",
+   "text": "Staffel 3 · Folgen 7–8",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/84773"
   },
   {
    "id": "tv-2190-s29-2026-11-25",
@@ -1889,6 +1945,20 @@
    "link": "https://www.themoviedb.org/movie/1260649"
   },
   {
+   "id": "tv-334919-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Call the Midwife: Sisters in Arms",
+   "datum": "2026-12-24",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/YCH3NPIVeJW9eK2JSnIwv5KEjY.jpg",
+   "anbieter": [
+    "BBC One"
+   ],
+   "link": "https://www.themoviedb.org/tv/334919"
+  },
+  {
    "id": "tv-224377-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -2023,11 +2093,11 @@
    "id": "movie-1365378-kino",
    "art": "film",
    "typ": "kino",
-   "titel": "Le rêve américain",
+   "titel": "Große Träume",
    "datum": "2027-02-04",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/bURZdEMPoaxOCPstwfZ2gYfhqGx.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/yObiUK0WVhx0hwTIJhocdJTmhFc.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1365378"
   },
