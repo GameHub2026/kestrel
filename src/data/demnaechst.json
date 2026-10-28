@@ -1,79 +1,7 @@
 {
- "von": "2026-10-25",
- "bis": "2027-02-24",
+ "von": "2026-10-26",
+ "bis": "2027-02-25",
  "eintraege": [
-  {
-   "id": "tv-60761-s4-2026-10-25",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Ace of the Diamond",
-   "datum": "2026-10-25",
-   "text": "S4E16",
-   "jahr": "2013",
-   "bild": "https://image.tmdb.org/t/p/w342/2kqZX7OKVHkLm2XmI2AXxAd0MrA.jpg",
-   "anbieter": [
-    "Crunchyroll"
-   ],
-   "link": "https://www.themoviedb.org/tv/60761"
-  },
-  {
-   "id": "tv-456-s38-2026-10-25",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Die Simpsons",
-   "datum": "2026-10-25",
-   "text": "S38E4",
-   "jahr": "1989",
-   "bild": "https://image.tmdb.org/t/p/w342/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
-   "anbieter": [
-    "Disney+"
-   ],
-   "link": "https://www.themoviedb.org/tv/456"
-  },
-  {
-   "id": "tv-312359-s1-2026-10-25",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Dragon Ball Super: Beerus",
-   "datum": "2026-10-25",
-   "text": "S1E3 · Der Gott der Zerstörung reist zur Erde",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
-   "anbieter": [
-    "Netflix",
-    "Disney+",
-    "Crunchyroll"
-   ],
-   "link": "https://www.themoviedb.org/tv/312359"
-  },
-  {
-   "id": "tv-3034-s57-2026-10-25",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Tatort",
-   "datum": "2026-10-25",
-   "text": "S57E22 · Gottesgarten",
-   "jahr": "1970",
-   "bild": "https://image.tmdb.org/t/p/w342/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/3034"
-  },
-  {
-   "id": "tv-211288-s4-2026-10-25",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Tracker",
-   "datum": "2026-10-25",
-   "text": "S4E4",
-   "jahr": "2024",
-   "bild": "https://image.tmdb.org/t/p/w342/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
-   "anbieter": [
-    "Disney+"
-   ],
-   "link": "https://www.themoviedb.org/tv/211288"
-  },
   {
    "id": "tv-80748-s9-2026-10-26",
    "art": "serie",
@@ -113,7 +41,7 @@
    "jahr": "2026",
    "bild": "https://image.tmdb.org/t/p/w342/p7Z3iK7g3ZEOm60h121fvtDmA3f.jpg",
    "anbieter": [
-    "Hulu"
+    "Disney+"
    ],
    "link": "https://www.themoviedb.org/tv/334887"
   },
@@ -170,7 +98,7 @@
    "datum": "2026-10-27",
    "text": "Staffel 1 · Folgen 5–6",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
    "anbieter": [
     "Disney+"
    ],
@@ -398,20 +326,6 @@
    "link": "https://www.themoviedb.org/movie/1400837"
   },
   {
-   "id": "tv-284833-s1-2026-10-30",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Avatar - Die sieben Häfen",
-   "datum": "2026-10-30",
-   "text": "Staffel 1 · Folgen 10–13",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/me3xp8w0RkAGLChEhuf7BVENUHO.jpg",
-   "anbieter": [
-    "Paramount+"
-   ],
-   "link": "https://www.themoviedb.org/tv/284833"
-  },
-  {
    "id": "tv-220542-s1-2026-10-30",
    "art": "serie",
    "typ": "folge",
@@ -611,7 +525,7 @@
    "datum": "2026-11-03",
    "text": "S1E7",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
    "anbieter": [
     "Disney+"
    ],
@@ -727,18 +641,6 @@
     "Disney+"
    ],
    "link": "https://www.themoviedb.org/tv/1416"
-  },
-  {
-   "id": "movie-1227877-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "I Love Boosters",
-   "datum": "2026-11-05",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1227877"
   },
   {
    "id": "tv-549-s26-2026-11-05",
@@ -955,6 +857,20 @@
    "link": "https://www.themoviedb.org/tv/3034"
   },
   {
+   "id": "tv-84773-s3",
+   "art": "serie",
+   "typ": "staffelstart",
+   "titel": "Der Herr der Ringe: Die Ringe der Macht",
+   "datum": "2026-11-10",
+   "text": "Staffel 3",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/84773"
+  },
+  {
    "id": "tv-4614-s24-2026-11-10",
    "art": "serie",
    "typ": "folge",
@@ -979,7 +895,7 @@
    "datum": "2026-11-10",
    "text": "S1E8",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
    "anbieter": [
     "Disney+"
    ],
@@ -1029,6 +945,20 @@
     "RTL+"
    ],
    "link": "https://www.themoviedb.org/tv/58841"
+  },
+  {
+   "id": "tv-84773-s3-2026-11-11",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der Herr der Ringe: Die Ringe der Macht",
+   "datum": "2026-11-11",
+   "text": "Staffel 3 · Folgen 1–4",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/84773"
   },
   {
    "id": "tv-338562-s1",
@@ -1193,6 +1123,20 @@
    "link": "https://www.themoviedb.org/tv/220542"
   },
   {
+   "id": "tv-303182-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "El crimen de Pazos",
+   "datum": "2026-11-13",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/t7bQuXEN4dvWtUBY2DUDxsKjZlv.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/303182"
+  },
+  {
    "id": "tv-45790-s6-2026-11-13",
    "art": "serie",
    "typ": "folge",
@@ -1281,6 +1225,21 @@
    "link": "https://www.themoviedb.org/tv/312359"
   },
   {
+   "id": "tv-65334-s7-2026-11-15",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "datum": "2026-11-15",
+   "text": "S7E4",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/65334"
+  },
+  {
    "id": "tv-3034-s57-2026-11-15",
    "art": "serie",
    "typ": "folge",
@@ -1307,6 +1266,20 @@
     "Disney+"
    ],
    "link": "https://www.themoviedb.org/tv/211288"
+  },
+  {
+   "id": "tv-84773-s3-2026-11-18",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der Herr der Ringe: Die Ringe der Macht",
+   "datum": "2026-11-18",
+   "text": "Staffel 3 · Folgen 5–6",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/84773"
   },
   {
    "id": "tv-75219-s10-2026-11-19",
@@ -1542,6 +1515,20 @@
    "link": "https://www.themoviedb.org/movie/822653"
   },
   {
+   "id": "tv-84773-s3-2026-11-25",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Der Herr der Ringe: Die Ringe der Macht",
+   "datum": "2026-11-25",
+   "text": "Staffel 3 · Folgen 7–8",
+   "jahr": "2022",
+   "bild": "https://image.tmdb.org/t/p/w342/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/84773"
+  },
+  {
    "id": "tv-2190-s29-2026-11-25",
    "art": "serie",
    "typ": "folge",
@@ -1556,6 +1543,18 @@
    "link": "https://www.themoviedb.org/tv/2190"
   },
   {
+   "id": "movie-1457866-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "datum": "2026-11-25",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/skSMOTFYcWyHZqFNPfz0f3Jsyc5.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1457866"
+  },
+  {
    "id": "movie-1286656-kino",
    "art": "film",
    "typ": "kino",
@@ -1566,6 +1565,18 @@
    "bild": "https://image.tmdb.org/t/p/w342/fViZxjUGsR6IQD77FP22PIMfk0R.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1286656"
+  },
+  {
+   "id": "movie-1400336-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Meine Frau, unsere Schwiegertochter und ich",
+   "datum": "2026-11-26",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/gPdzdeehaoaYqxH2rA6yayEDSsS.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1400336"
   },
   {
    "id": "movie-1538497-kino",
@@ -1669,18 +1680,6 @@
    "link": "https://www.themoviedb.org/tv/312359"
   },
   {
-   "id": "movie-1514682-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "Above & Below",
-   "datum": "2026-12-03",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/7bOuu1SRALGwsG2fLCTvRkCmQBj.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1514682"
-  },
-  {
    "id": "tv-2734-s28-2026-12-03",
    "art": "serie",
    "typ": "folge",
@@ -1705,7 +1704,7 @@
    "datum": "2026-12-03",
    "text": "Neue Serie",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/pbY9nhHILFDmfeHlMYMRIHVqAF5.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/48gkikPDZm2IP1zdaboOPpELRwX.jpg",
    "anbieter": [
     "Netflix"
    ],
@@ -1946,6 +1945,20 @@
    "link": "https://www.themoviedb.org/movie/1260649"
   },
   {
+   "id": "tv-334919-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Call the Midwife: Sisters in Arms",
+   "datum": "2026-12-24",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/YCH3NPIVeJW9eK2JSnIwv5KEjY.jpg",
+   "anbieter": [
+    "BBC One"
+   ],
+   "link": "https://www.themoviedb.org/tv/334919"
+  },
+  {
    "id": "tv-224377-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -2080,11 +2093,11 @@
    "id": "movie-1365378-kino",
    "art": "film",
    "typ": "kino",
-   "titel": "Le rêve américain",
+   "titel": "Große Träume",
    "datum": "2027-02-04",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/bURZdEMPoaxOCPstwfZ2gYfhqGx.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/yObiUK0WVhx0hwTIJhocdJTmhFc.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1365378"
   },
