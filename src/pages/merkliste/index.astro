@@ -111,12 +111,6 @@ import Base from '../../layouts/Base.astro';
       mitte.append(el('span', 'titel', e.titel));
       const n = naechster(e);
       mitte.append(el('span', 'termin mono', n ? `${datumDe(n.datum)} · ${n.text}` : (e.status || 'Kein kommender Termin')));
-      const kommende = (e.termine || []).filter((t) => t.datum >= heute).sort((a, b) => a.datum.localeCompare(b.datum));
-      if (kommende.length > 1) {
-        const d = document.createElement('details'); d.append(el('summary', 'mono', `${kommende.length - 1} weitere Termine`));
-        const ol = el('ol', 'alle'); for (const t of kommende.slice(1)) ol.append(el('li', 'mono', `${datumDe(t.datum)} · ${t.text}`));
-        d.append(ol); mitte.append(d);
-      }
       if (e.fehler) mitte.append(el('span', 'fehler mono', `Konnte nicht aktualisieren: ${e.fehler}`));
       const rechts = el('div', 'rechts');
       const lab = el('label', 'schalter'); const cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = !!e.kalender;
@@ -128,8 +122,49 @@ import Base from '../../layouts/Base.astro';
       const weg = el('button', 'weg', 'Entfernen') as HTMLButtonElement; weg.type = 'button';
       weg.addEventListener('click', async () => { if (!confirm(`„${e.titel}" von der Merkliste nehmen?`)) return; liste = await api(`/api/merk?id=${encodeURIComponent(e.id)}`, { method: 'DELETE' }); zeigeListe(); });
       rechts.append(lab, lab2, weg);
-      li.append(bild(e.bild), mitte, rechts); ul.append(li);
+      rechts.addEventListener('click', (ev) => ev.stopPropagation()); // Haken und Entfernen klappen nicht auf
+      const pfeil = el('span', 'pfeil'); pfeil.setAttribute('aria-hidden', 'true');
+      const klapp = el('div', 'klapp'); const innen = el('div', 'klapp-innen'); klapp.append(innen);
+      li.tabIndex = 0; li.setAttribute('role', 'button'); li.setAttribute('aria-expanded', 'false');
+      const umschalten = () => {
+        const auf = !li.classList.contains('offen');
+        li.classList.toggle('offen', auf); li.setAttribute('aria-expanded', String(auf));
+        if (auf && !innen.dataset.geladen) ladeDetails(e, innen);
+      };
+      li.addEventListener('click', umschalten);
+      li.addEventListener('keydown', (ev) => { if ((ev.key === 'Enter' || ev.key === ' ') && ev.target === li) { ev.preventDefault(); umschalten(); } });
+      li.append(bild(e.bild), mitte, rechts, pfeil, klapp); ul.append(li);
     }
+  }
+
+  // Details beim ersten Aufklappen holen (Handlung, Genre, Anbieter, Trailer, alle Termine)
+  type Det = { untertitel?: string; handlung?: string; handlungSprache?: string; genres: string[]; fakten: [string, string][]; anbieter: { abo: string[]; leihen: string[] }; trailer?: string; link?: string; linkName?: string };
+  async function ladeDetails(e: Eintrag, innen: HTMLElement) {
+    innen.dataset.geladen = '1';
+    innen.replaceChildren(el('p', 'mono laed', 'Lade Details …'));
+    let d: Det | null = null;
+    try { d = await api(`/api/merk/details?id=${encodeURIComponent(e.id)}`); } catch (err) { innen.replaceChildren(el('p', 'mono', `Details gerade nicht verfügbar: ${(err as Error).message}`)); innen.dataset.geladen = ''; return; }
+    const teile: HTMLElement[] = [];
+    if (d?.untertitel) teile.push(el('p', 'unter', d.untertitel));
+    if (d?.genres?.length) { const g = el('p', 'genres'); d.genres.forEach((x) => g.append(el('span', 'genre mono', x))); teile.push(g); }
+    teile.push(el('p', 'handlung', d?.handlung || 'Noch keine Beschreibung vorhanden.'));
+    if (d?.handlungSprache === 'en' && d?.handlung) teile.push(el('p', 'hinweis mono', 'Beschreibung nur auf Englisch verfügbar.'));
+    const dl = document.createElement('dl'); dl.className = 'fakten';
+    for (const [k, v] of d?.fakten || []) { const z = el('div'); z.append(el('dt', 'mono', k), el('dd', '', v)); dl.append(z); }
+    if (d?.anbieter?.abo?.length) { const z = el('div'); z.append(el('dt', 'mono', 'Im Abo (DE)'), el('dd', '', d.anbieter.abo.join(', '))); dl.append(z); }
+    if (d?.anbieter?.leihen?.length) { const z = el('div'); z.append(el('dt', 'mono', 'Leihen/Kaufen'), el('dd', '', d.anbieter.leihen.join(', '))); dl.append(z); }
+    if (dl.children.length) teile.push(dl);
+    const termine = (e.termine || []).filter((t) => t.datum >= heute).sort((a, b) => a.datum.localeCompare(b.datum));
+    if (termine.length) {
+      const box = el('div', 'termine'); box.append(el('p', 'klapp-kopf mono', termine.length > 1 ? `Alle ${termine.length} Termine` : 'Termin'));
+      const ol = el('ol'); termine.forEach((t) => ol.append(el('li', 'mono', `${datumDe(t.datum)} · ${t.text}`))); box.append(ol); teile.push(box);
+    }
+    const knoepfe = el('p', 'knoepfe');
+    if (d?.trailer) { const a = el('a', 'knopf', '▶ Trailer ansehen') as HTMLAnchorElement; a.href = d.trailer; a.target = '_blank'; a.rel = 'noopener'; knoepfe.append(a); }
+    if (d?.link) { const a = el('a', 'knopf leise', `Mehr bei ${d.linkName}`) as HTMLAnchorElement; a.href = d.link; a.target = '_blank'; a.rel = 'noopener'; knoepfe.append(a); }
+    if (knoepfe.children.length) teile.push(knoepfe);
+    innen.replaceChildren(...teile);
+    innen.querySelectorAll('a').forEach((a) => a.addEventListener('click', (ev) => ev.stopPropagation()));
   }
 
   let suchTimer = 0, suchNr = 0;
@@ -186,6 +221,30 @@ import Base from '../../layouts/Base.astro';
 <style is:global>
 /* global, weil die Zeilen per Skript entstehen; alles unter .merk gekapselt */
 .merk {
+  .eintrag { position: relative; cursor: pointer; grid-template-columns: 48px 1fr auto 18px; row-gap: 0; transition: box-shadow 200ms ease; }
+  .eintrag:hover { box-shadow: var(--shadow-lift); }
+  .eintrag:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+  .pfeil { width: 10px; height: 10px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: rotate(45deg); justify-self: center; margin-top: -4px; opacity: 0.7; transition: transform 320ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .eintrag.offen .pfeil { transform: rotate(225deg); margin-top: 4px; }
+  /* Aufklappen: Höhe von 0 auf Inhalt, weich */
+  .klapp { grid-column: 1 / -1; display: grid; grid-template-rows: 0fr; transition: grid-template-rows 420ms cubic-bezier(0.16, 1, 0.3, 1); cursor: default; }
+  .eintrag.offen .klapp { grid-template-rows: 1fr; }
+  .klapp-innen { overflow: hidden; min-height: 0; opacity: 0; transform: translateY(-6px); transition: opacity 300ms ease 60ms, transform 420ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .eintrag.offen .klapp-innen { opacity: 1; transform: none; padding-top: 14px; margin-top: 10px; border-top: 1px dashed color-mix(in srgb, currentColor 35%, transparent); }
+  .klapp-innen > * { margin: 0 0 12px; }
+  .unter { font-style: italic; font-size: 1rem; }
+  .genres { display: flex; flex-wrap: wrap; gap: 6px; }
+  .genre { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 999px; background: color-mix(in srgb, currentColor 14%, transparent); }
+  .handlung { font-size: 1rem; line-height: 1.55; max-width: 70ch; }
+  .fakten { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px 20px; }
+  .fakten dt { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.75; }
+  .fakten dd { margin: 2px 0 0; font-size: 0.95rem; }
+  .klapp-kopf { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.75; margin: 0 0 4px; }
+  .termine ol { margin: 0; padding-left: 1.1em; font-size: 0.82rem; display: grid; gap: 2px; }
+  .knoepfe { display: flex; gap: 10px; flex-wrap: wrap; }
+  .knoepfe .knopf { background: var(--ink); color: var(--ground); }
+  .knoepfe .knopf.leise { background: var(--paper); color: var(--ink); }
+  .laed { opacity: 0.8; font-size: 0.8rem; }
 
   .zugang form, .suche { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
   input[type='password'], input[type='search'] {
@@ -210,7 +269,7 @@ import Base from '../../layouts/Base.astro';
     display: grid; grid-template-columns: 48px 1fr auto; gap: 14px; align-items: center;
     background: var(--paper); border-radius: 4px; padding: 8px 12px 8px 8px; box-shadow: var(--shadow);
   }
-  .eintrag { border-left: 0; background: var(--card); color: var(--card-ink); }
+  .eintrag { border-left: 0; background: var(--card); color: var(--card-ink); grid-template-columns: 48px 1fr auto 18px; align-items: center; }
   .poster { width: 48px; height: 68px; border-radius: 2px; background: color-mix(in srgb, currentColor 15%, transparent); overflow: hidden; display: block; }
   .poster img { width: 100%; height: 100%; object-fit: cover; }
   .mitte { display: grid; gap: 3px; min-width: 0; }
@@ -232,7 +291,8 @@ import Base from '../../layouts/Base.astro';
   .suche { margin-bottom: 8px; }
 
   @media (max-width: 560px) {
-    .eintrag { grid-template-columns: 40px 1fr; }
+    .eintrag { grid-template-columns: 40px 1fr 18px; }
+    .pfeil { grid-column: 3; grid-row: 1; }
     .rechts { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; }
     .poster { width: 40px; height: 56px; }
   }

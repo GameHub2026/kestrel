@@ -193,3 +193,58 @@ export function kalender(liste) {
   z.push('END:VCALENDAR');
   return z.join('\r\n') + '\r\n';
 }
+
+// ---------- Details zum Aufklappen (Handlung, Genre, Anbieter, Trailer) ----------
+const TAGE3 = 3 * 86400;
+const yt = (videos) => {
+  const v = (videos?.results || []).filter((x) => x.site === 'YouTube' && /Trailer|Teaser/.test(x.type));
+  const best = v.find((x) => x.iso_639_1 === 'de' && x.type === 'Trailer') || v.find((x) => x.type === 'Trailer') || v[0];
+  return best ? `https://www.youtube.com/watch?v=${best.key}` : null;
+};
+const anbieterDE = (wp) => {
+  const de = wp?.results?.DE || {};
+  const namen = (l) => (l || []).map((p) => p.provider_name).filter((n) => !/with Ads|Channel/i.test(n));
+  return { abo: [...new Set(namen(de.flatrate))], leihen: [...new Set([...namen(de.rent), ...namen(de.buy)])].slice(0, 6) };
+};
+async function detailsTmdb(env, art, id) {
+  const d = await tmdb(env, `/${art}/${Number(id)}`, { append_to_response: 'videos,watch/providers,credits', include_video_language: 'de,en,null' });
+  const film = art === 'movie';
+  const fakten = [];
+  if (film && d.runtime) fakten.push(['Laufzeit', `${Math.floor(d.runtime / 60)} Std ${d.runtime % 60} Min`]);
+  if (!film && d.number_of_seasons) fakten.push(['Umfang', `${d.number_of_seasons} Staffel${d.number_of_seasons > 1 ? 'n' : ''}, ${d.number_of_episodes} Folgen`]);
+  if (!film && d.episode_run_time?.length) fakten.push(['Folgenlänge', `ca. ${d.episode_run_time[0]} Min`]);
+  const regie = film ? (d.credits?.crew || []).filter((c) => c.job === 'Director').map((c) => c.name) : (d.created_by || []).map((c) => c.name);
+  if (regie.length) fakten.push([film ? 'Regie' : 'Von', regie.slice(0, 2).join(', ')]);
+  const cast = (d.credits?.cast || []).slice(0, 4).map((c) => c.name);
+  if (cast.length) fakten.push(['Mit', cast.join(', ')]);
+  if (!film && d.networks?.length) fakten.push(['Sender/Dienst', d.networks.map((n) => n.name).join(', ')]);
+  if (d.vote_count > 20) fakten.push(['TMDB-Wertung', `${d.vote_average.toFixed(1)} / 10`]);
+  return {
+    untertitel: d.tagline || null, handlung: d.overview || null, genres: (d.genres || []).map((g) => g.name),
+    fakten, anbieter: anbieterDE(d['watch/providers']), trailer: yt(d.videos),
+    link: `https://www.themoviedb.org/${art}/${d.id}`, linkName: 'TMDB',
+  };
+}
+async function detailsIgdb(env, id) {
+  const [g] = await igdb(env, `fields summary,genres.name,themes.name,platforms.abbreviation,involved_companies.company.name,involved_companies.developer,videos.video_id,total_rating,total_rating_count,url; where id = ${Number(id)};`);
+  if (!g) return null;
+  const fakten = [];
+  const dev = (g.involved_companies || []).filter((c) => c.developer).map((c) => c.company?.name).filter(Boolean);
+  if (dev.length) fakten.push(['Entwickler', dev.slice(0, 2).join(', ')]);
+  if (g.platforms?.length) fakten.push(['Plattformen', g.platforms.map((p) => p.abbreviation).filter(Boolean).join(', ')]);
+  if (g.total_rating_count > 5) fakten.push(['Wertung (IGDB)', `${Math.round(g.total_rating)} / 100`]);
+  return {
+    untertitel: null, handlung: g.summary || null, genres: [...(g.genres || []), ...(g.themes || [])].map((x) => x.name).slice(0, 5),
+    fakten, anbieter: { abo: [], leihen: [] }, trailer: g.videos?.[0]?.video_id ? `https://www.youtube.com/watch?v=${g.videos[0].video_id}` : null,
+    link: g.url || null, linkName: 'IGDB', handlungSprache: 'en',
+  };
+}
+export async function details(env, id) {
+  const key = `details:${id}`;
+  const hit = await env.MERK.get(key, 'json');
+  if (hit) return hit;
+  const [quelle, nr] = id.split(':');
+  const d = quelle === 'igdb' ? await detailsIgdb(env, nr) : await detailsTmdb(env, quelle === 'tmdb-movie' ? 'movie' : 'tv', nr);
+  if (d) await env.MERK.put(key, JSON.stringify(d), { expirationTtl: TAGE3 });
+  return d;
+}
