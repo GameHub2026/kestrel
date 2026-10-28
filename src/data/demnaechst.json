@@ -1,79 +1,7 @@
 {
- "von": "2026-10-25",
- "bis": "2027-02-24",
+ "von": "2026-10-26",
+ "bis": "2027-02-25",
  "eintraege": [
-  {
-   "id": "tv-60761-s4-2026-10-25",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Ace of the Diamond",
-   "datum": "2026-10-25",
-   "text": "S4E16",
-   "jahr": "2013",
-   "bild": "https://image.tmdb.org/t/p/w342/2kqZX7OKVHkLm2XmI2AXxAd0MrA.jpg",
-   "anbieter": [
-    "Crunchyroll"
-   ],
-   "link": "https://www.themoviedb.org/tv/60761"
-  },
-  {
-   "id": "tv-456-s38-2026-10-25",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Die Simpsons",
-   "datum": "2026-10-25",
-   "text": "S38E4",
-   "jahr": "1989",
-   "bild": "https://image.tmdb.org/t/p/w342/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
-   "anbieter": [
-    "Disney+"
-   ],
-   "link": "https://www.themoviedb.org/tv/456"
-  },
-  {
-   "id": "tv-312359-s1-2026-10-25",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Dragon Ball Super: Beerus",
-   "datum": "2026-10-25",
-   "text": "S1E3 · Der Gott der Zerstörung reist zur Erde",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
-   "anbieter": [
-    "Netflix",
-    "Disney+",
-    "Crunchyroll"
-   ],
-   "link": "https://www.themoviedb.org/tv/312359"
-  },
-  {
-   "id": "tv-3034-s57-2026-10-25",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Tatort",
-   "datum": "2026-10-25",
-   "text": "S57E22 · Gottesgarten",
-   "jahr": "1970",
-   "bild": "https://image.tmdb.org/t/p/w342/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/3034"
-  },
-  {
-   "id": "tv-211288-s4-2026-10-25",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Tracker",
-   "datum": "2026-10-25",
-   "text": "S4E4",
-   "jahr": "2024",
-   "bild": "https://image.tmdb.org/t/p/w342/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
-   "anbieter": [
-    "Disney+"
-   ],
-   "link": "https://www.themoviedb.org/tv/211288"
-  },
   {
    "id": "tv-80748-s9-2026-10-26",
    "art": "serie",
@@ -170,7 +98,7 @@
    "datum": "2026-10-27",
    "text": "Staffel 1 · Folgen 5–6",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/ajbVvETMM7NMq4Gc5FauOoyeEnu.jpg",
    "anbieter": [
     "Disney+"
    ],
@@ -611,7 +539,7 @@
    "datum": "2026-11-03",
    "text": "S1E7",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/ajbVvETMM7NMq4Gc5FauOoyeEnu.jpg",
    "anbieter": [
     "Disney+"
    ],
@@ -727,18 +655,6 @@
     "Disney+"
    ],
    "link": "https://www.themoviedb.org/tv/1416"
-  },
-  {
-   "id": "movie-1227877-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "I Love Boosters",
-   "datum": "2026-11-05",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1227877"
   },
   {
    "id": "tv-549-s26-2026-11-05",
@@ -979,7 +895,7 @@
    "datum": "2026-11-10",
    "text": "S1E8",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/ajbVvETMM7NMq4Gc5FauOoyeEnu.jpg",
    "anbieter": [
     "Disney+"
    ],
@@ -1281,6 +1197,21 @@
    "link": "https://www.themoviedb.org/tv/312359"
   },
   {
+   "id": "tv-65334-s7-2026-11-15",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "datum": "2026-11-15",
+   "text": "S7E4",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/65334"
+  },
+  {
    "id": "tv-3034-s57-2026-11-15",
    "art": "serie",
    "typ": "folge",
@@ -1556,6 +1487,18 @@
    "link": "https://www.themoviedb.org/tv/2190"
   },
   {
+   "id": "movie-1457866-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "datum": "2026-11-25",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/skSMOTFYcWyHZqFNPfz0f3Jsyc5.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1457866"
+  },
+  {
    "id": "movie-1286656-kino",
    "art": "film",
    "typ": "kino",
@@ -1566,6 +1509,18 @@
    "bild": "https://image.tmdb.org/t/p/w342/fViZxjUGsR6IQD77FP22PIMfk0R.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1286656"
+  },
+  {
+   "id": "movie-1400336-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Meine Frau, unsere Schwiegertochter und ich",
+   "datum": "2026-11-26",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/gPdzdeehaoaYqxH2rA6yayEDSsS.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1400336"
   },
   {
    "id": "movie-1538497-kino",
@@ -1669,18 +1624,6 @@
    "link": "https://www.themoviedb.org/tv/312359"
   },
   {
-   "id": "movie-1514682-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "Above & Below",
-   "datum": "2026-12-03",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/7bOuu1SRALGwsG2fLCTvRkCmQBj.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1514682"
-  },
-  {
    "id": "tv-2734-s28-2026-12-03",
    "art": "serie",
    "typ": "folge",
@@ -1705,7 +1648,7 @@
    "datum": "2026-12-03",
    "text": "Neue Serie",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/pbY9nhHILFDmfeHlMYMRIHVqAF5.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/48gkikPDZm2IP1zdaboOPpELRwX.jpg",
    "anbieter": [
     "Netflix"
    ],
