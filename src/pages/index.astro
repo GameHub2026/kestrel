@@ -9,8 +9,8 @@ const weitere = rest.slice(0, 6);
 ---
 <Base>
   <section class="intro wrap">
-    <h1>Was ich spiele und schaue, ehrlich bewertet und Jahre später nachgetragen.</h1>
-    <p>Ich bin Kevin. Hier landet alles, was ich gespielt oder geschaut habe, mit einer Wertung von 1 bis 10. <a href="/wie-ich-werte/">Wie ich werte</a> gilt für alle drei Medien gleich. Alte Wertungen bleiben stehen; wenn ich etwas später anders sehe, kommt ein datierter Nachtrag dazu.</p>
+    <h1>Was ich spiele und schaue, ehrlich bewertet.</h1>
+    <p>Wertung von 1 bis 10, <a href="/wie-ich-werte/">gleich für alle drei Medien</a>. Sehe ich etwas später anders, kommt ein Nachtrag dazu.</p>
   </section>
 
   {neuester ? (
@@ -36,21 +36,21 @@ const weitere = rest.slice(0, 6);
 </Base>
 
 <style>
-  .intro { padding-top: clamp(28px, 6vw, 72px); padding-bottom: clamp(28px, 4vw, 48px); display: grid; gap: 20px; }
+  .intro { padding-top: 4px; padding-bottom: 24px; display: grid; gap: 6px; }
   .intro h1 {
     font-family: var(--display); font-weight: 900; text-transform: uppercase; margin: 0;
-    font-size: clamp(1.9rem, 3.8vw, 3rem); line-height: 0.95; letter-spacing: -0.005em; text-wrap: balance; max-width: 26ch;
+    font-size: clamp(1.6rem, 2.8vw, 2.2rem); line-height: 1; letter-spacing: -0.005em; text-wrap: balance; max-width: 40ch;
   }
-  .intro p { margin: 0; max-width: 58ch; font-size: 1.125rem; color: var(--ink-2); }
+  .intro p { margin: 0; max-width: 62ch; font-size: 0.98rem; color: var(--ink-2); }
   .intro p a { color: var(--ink); }
 
   .lead-card { transform: rotate(-1.2deg); transform-origin: 30% 50%; margin: 8px 0 0; }
   @media (max-width: 720px) { .lead-card { transform: rotate(-0.8deg); } }
 
-  .stack { margin-top: clamp(56px, 8vw, 96px); }
+  .stack { margin-top: clamp(40px, 6vw, 64px); }
   .stack-h {
     font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em;
-    font-size: 1.25rem; margin: 0 0 18px; display: flex; align-items: center; gap: 14px;
+    font-size: 1.1rem; margin: 0 0 14px; display: flex; align-items: center; gap: 14px;
   }
   .stack-h::after { content: ''; flex: 1; border-top: 2px dashed var(--rule); }
   .stack-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
@@ -58,6 +58,6 @@ const weitere = rest.slice(0, 6);
   .stack-list li:nth-child(odd) { transform: rotate(0.35deg); }
   .stack-list li:nth-child(even) { transform: rotate(-0.35deg) translateX(6px); }
 
-  .more { margin-top: 32px; font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; font-size: 1.3rem; }
+  .more { margin-top: 24px; font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; font-size: 1.05rem; }
   .empty { padding-top: 48px; padding-bottom: 48px; font-size: 1.2rem; }
 </style>

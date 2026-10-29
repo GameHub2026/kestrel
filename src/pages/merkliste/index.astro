@@ -5,7 +5,7 @@ import Base from '../../layouts/Base.astro';
 <div class="merk">
   <header class="page-head wrap">
     <h1>Merkliste</h1>
-    <p>Hier bearbeite ich. Was ich spielen und schauen will, mit Terminen. Mit der Glocke folge ich einem Titel, dann erfahre ich unter „Ich folge“ alles Neue dazu. Nur du siehst diese Liste. Setzt du bei einem Eintrag den Haken „Öffentlich“, erscheint er zusätzlich auf der Seite „Demnächst“. Verschiebt sich ein Start, ändert sich das hier und im Kalender von selbst.</p>
+    <p>Was ich spielen und schauen will. Glocke: Neues landet unter „Ich folge“. „Öffentlich“: steht auch unter Demnächst. Termine halten sich selbst aktuell.</p>
   </header>
 
   <section class="wrap zugang" id="zugang" hidden>
@@ -47,12 +47,12 @@ import Base from '../../layouts/Base.astro';
         <button type="button" class="kbox-zu" id="kbox-zu" aria-label="Schließen">×</button>
         <div id="kbox-inhalt"></div>
       </dialog>
-      <p class="leer" id="leer" hidden>Noch nichts gemerkt. Oben suchen und auf „Merken" tippen.</p>
+      <p class="leer" id="leer" hidden>Noch nichts gemerkt.</p>
     </section>
 
     <section class="wrap abo" aria-labelledby="abo-h">
       <h2 id="abo-h" class="abschnitt">Kalender</h2>
-      <p>Alles mit Haken bei „Im Kalender" erscheint als Termin, auch einzelne Serienfolgen. Einmal abonnieren, danach aktualisiert sich der Kalender selbst.</p>
+      <p>Alles mit „Im Kalender“ kommt ins Abo, auch einzelne Folgen. Einmal abonnieren, der Rest läuft von selbst.</p>
       <p class="abo-knoepfe">
         <a id="abo-link" class="knopf" href="#">In Apple Kalender abonnieren</a>
         <button type="button" id="abo-kopieren" class="knopf leise">Adresse kopieren</button>
@@ -422,7 +422,6 @@ import Base from '../../layouts/Base.astro';
   .schalter input { width: 18px; height: 18px; accent-color: var(--ink); }
   .weg { font-size: 0.8rem; padding: 6px 10px 5px; }
 
-  .abschnitt { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.8rem; margin: 40px 0 14px; }
   .leer { color: var(--ink-2); }
   .abo p { max-width: 60ch; }
   .abo-knoepfe { display: flex; gap: 10px; flex-wrap: wrap; }

@@ -97,13 +97,19 @@ html { scrollbar-color: var(--ink-2) var(--ground); }
 }
 
 /* Seitentitel im Kartenstil */
-.page-head { padding-top: clamp(32px, 6vw, 72px); padding-bottom: clamp(20px, 3vw, 32px); }
+/* Kompakt: Titel und eine Zeile Erklärung nebeneinander, kein Plakat */
+.page-head {
+  padding-top: 4px; padding-bottom: 18px;
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 20px;
+}
 .page-head h1 {
   font-family: var(--display); font-weight: 900; text-transform: uppercase;
-  font-size: clamp(3rem, 10vw, 6rem); line-height: 0.86; margin: 0; letter-spacing: -0.01em;
-  text-wrap: balance;
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem); line-height: 1; margin: 0; letter-spacing: 0.005em;
 }
-.page-head p { max-width: 52ch; margin: 16px 0 0; color: var(--ink-2); font-size: 1.125rem; }
+.page-head p { flex: 1 1 32ch; max-width: 62ch; margin: 0; color: var(--ink-2); font-size: 0.98rem; line-height: 1.45; }
+.page-head .kopf-rechts { margin-left: auto; align-self: center; }
+/* Abschnittsüberschriften auf allen Seiten gleich */
+.abschnitt { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.2rem; line-height: 1; margin: 28px 0 12px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

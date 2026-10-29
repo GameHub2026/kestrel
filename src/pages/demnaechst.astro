@@ -20,7 +20,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 <Base title="Demnächst" description="Kommende Kinostarts sowie neue Serien und Staffeln bei Netflix, Prime Video, Disney+ und Co. in Deutschland.">
   <header class="page-head wrap">
     <h1>Demnächst</h1>
-    <p>Kinostarts sowie Serien-, Staffel- und Folgentermine bei den Streaminganbietern, mit deutschem Termin. Die Liste aktualisiert sich jeden Tag von selbst, Verschiebungen sind dann sofort drin.</p>
+    <p>Kinostarts, neue Serien, Staffeln und Folgen in Deutschland. Täglich aktualisiert.</p>
   </header>
 
   <div class="dem">
@@ -103,7 +103,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
     </dialog>
     <script type="application/json" id="infos" set:html={JSON.stringify(infos)} />
 
-    <p class="wrap quelle mono">News kommen aus den öffentlichen Feeds von Moviepilot, Serienjunkies, DWDL, Spiegel Kultur, Variety, Deadline, The Hollywood Reporter, IndieWire und Collider und werden täglich neu zugeordnet. Termine für Deutschland, Daten von TMDB. Diese Seite nutzt die TMDB-API, ist aber nicht von TMDB bestätigt oder zertifiziert. Starttermine können sich kurzfristig ändern.</p>
+    <p class="wrap quelle mono">News: Moviepilot, Serienjunkies, DWDL, Spiegel, Variety, Deadline, Hollywood Reporter, IndieWire, Collider. Termine: TMDB. Diese Seite nutzt die TMDB-API, ist aber nicht von TMDB bestätigt oder zertifiziert. Termine können sich kurzfristig ändern.</p>
   </div>
 </Base>
 
@@ -368,7 +368,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 @media (max-width: 560px) { .dem .gw { margin-left: 0; } .dem .gw-tafel { right: auto; left: 0; transform-origin: left top; } .dem .gw-tafel ul.zwei { grid-template-columns: 1fr 1fr; } .dem .gw-tafel ul.zwei { min-width: 0; } }
 .dem .tag { margin-bottom: 30px; }
 .dem .tag[hidden], .dem .eintrag[hidden] { display: none !important; }
-.dem .tag-name { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.5rem; letter-spacing: 0.03em; margin: 0 0 10px; display: flex; align-items: center; gap: 14px; }
+.dem .tag-name { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.1rem; letter-spacing: 0.04em; margin: 0 0 10px; display: flex; align-items: center; gap: 14px; }
 .dem .tag-name::after { content: ''; flex: 1; border-top: 2px dashed var(--rule); }
 .dem .liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
 .dem .eintrag { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; background: var(--card); color: var(--card-ink); border-radius: 4px; padding: 9px 12px 9px 9px; box-shadow: var(--shadow); }
@@ -390,7 +390,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .box-bild { width: 120px; border-radius: 4px; box-shadow: var(--shadow); }
 .dem .box-kopf:has(.box-bild[hidden]) { grid-template-columns: 1fr; }
 .dem .box-kern > * { margin: 0 0 6px; }
-.dem .box-titel { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 0.92; margin: 4px 0 8px; padding-right: 36px; }
+.dem .box-titel { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 0.95; margin: 4px 0 8px; padding-right: 36px; }
 .dem .box-leit { font-style: italic; }
 .dem .box-termin { font-weight: 700; font-size: 0.82rem; }
 .dem .box-anbieter { font-size: 0.78rem; color: var(--ink-2); }
@@ -433,7 +433,6 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.35rem; line-height: 1; text-decoration: none; color: inherit; }
 .dem a.titel:hover { text-decoration: underline; }
 .dem .anbieter { font-size: 0.74rem; font-weight: 700; opacity: 0.92; }
-.dem .abschnitt { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.8rem; margin: 40px 0 14px; }
 .dem .hinweis, .dem .leer, .dem .quelle { font-size: 0.78rem; color: var(--ink-2); }
 .dem .quelle { margin-top: 48px; max-width: 70ch; }
 </style>

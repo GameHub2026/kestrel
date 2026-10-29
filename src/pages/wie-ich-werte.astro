@@ -6,7 +6,7 @@ const stufen = Object.entries(SKALA).map(([n, s]) => [Number(n), s] as const).so
 <Base title="Wie ich werte" description="Kevins Wertungsskala von 1 bis 10: ganze Zahlen, ein fester Satz pro Zahl, gleich für Spiele, Filme und Serien.">
   <header class="page-head wrap">
     <h1>Wie ich werte</h1>
-    <p>Eine Skala für Spiele, Filme und Serien. Ganze Zahlen von 1 bis 10, keine Kommastellen, keine Teilnoten. Jede Zahl bedeutet immer dasselbe.</p>
+    <p>Ganze Zahlen von 1 bis 10, gleich für Spiele, Filme und Serien. Jede Zahl bedeutet immer dasselbe.</p>
   </header>
 
   <ol class="roll wrap" aria-label="Wertungsskala">
@@ -19,12 +19,12 @@ const stufen = Object.entries(SKALA).map(([n, s]) => [Number(n), s] as const).so
   </ol>
 
   <section class="rules wrap" aria-labelledby="regeln">
-    <h2 id="regeln">Die Regeln dazu</h2>
+    <h2 id="regeln">Regeln</h2>
     <ul>
-      <li><strong>Eine Skala für alles.</strong> Eine 7 bei einem Film heißt dasselbe wie eine 7 bei einem Spiel oder einer Serie.</li>
-      <li><strong>Die Wertung bleibt stehen.</strong> Was ich einmal vergeben habe, ändere ich nicht. Sehe ich es später anders, schreibe ich einen datierten Nachtrag darunter.</li>
-      <li><strong>Fazit und „Für wen?“ gehören dazu.</strong> Die Zahl allein sagt wenig. Zu jeder Wertung steht ein Satz, was bleibt, und für wen sich das lohnt.</li>
-      <li><strong>Der Stand steht immer dabei.</strong> Abspann gesehen, alles abgeschlossen, abgebrochen oder läuft noch: Ein Ersteindruck wiegt anders als ein Rückblick.</li>
+      <li><strong>Eine Skala für alles.</strong> Eine 7 ist bei Film, Serie und Spiel dieselbe 7.</li>
+      <li><strong>Die Wertung bleibt stehen.</strong> Sehe ich es später anders, kommt ein datierter Nachtrag dazu.</li>
+      <li><strong>Fazit und „Für wen?“ gehören dazu.</strong> Ein Satz, was bleibt, und für wen es sich lohnt.</li>
+      <li><strong>Der Stand steht dabei.</strong> Abspann, komplett, abgebrochen oder läuft noch.</li>
     </ul>
   </section>
 </Base>
@@ -33,26 +33,26 @@ const stufen = Object.entries(SKALA).map(([n, s]) => [Number(n), s] as const).so
   /* Die Skala als Kartenrolle: von 10 bis 1, der Karton wird mit jeder Stufe blasser */
   .roll { list-style: none; margin: 0 auto; padding-top: 0; padding-bottom: 0; display: grid; gap: 6px; }
   .roll li {
-    display: grid; grid-template-columns: 7rem 1fr; align-items: center; gap: 20px;
+    display: grid; grid-template-columns: 4.5rem 1fr; align-items: center; gap: 18px;
     background: var(--paper); color: var(--ink); border-radius: 4px; padding: 4px 24px 4px 0;
     box-shadow: var(--shadow); position: relative;
   }
   /* Ohne Medienfarbe: die Skala gilt für alle. Die Ziffer wird von 10 nach 1 leichter. */
   .n {
-    font-size: clamp(3.4rem, 7vw, 5rem); text-align: center; font-variant-numeric: tabular-nums;
+    font-size: clamp(2.2rem, 4vw, 2.8rem); text-align: center; font-variant-numeric: tabular-nums;
     border-right: 2px dashed color-mix(in srgb, var(--ink) 45%, transparent); padding: 6px 0;
     font-weight: calc(900 - var(--i) * 45);
   }
-  .s { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(1.3rem, 3vw, 2.1rem); line-height: 1; text-wrap: balance; }
+  .s { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: clamp(1.05rem, 2vw, 1.35rem); line-height: 1.05; text-wrap: balance; }
 
-  .rules { margin-top: clamp(48px, 8vw, 88px); }
-  .rules h2 { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(2rem, 5vw, 3rem); line-height: 0.9; margin: 0 0 20px; }
+  .rules { margin-top: clamp(32px, 5vw, 56px); }
+  .rules h2 { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.2rem; line-height: 1; margin: 0 0 14px; }
   .rules ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; max-width: 68ch; }
-  .rules li { padding-left: 28px; position: relative; font-size: 1.1rem; }
+  .rules li { padding-left: 24px; position: relative; font-size: 1rem; }
   .rules li::before { content: ''; position: absolute; left: 0; top: 0.45em; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); }
-  .rules strong { display: block; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.25rem; letter-spacing: 0.02em; }
+  .rules strong { display: block; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.05rem; letter-spacing: 0.02em; }
 
   @media (max-width: 600px) {
-    .roll li { grid-template-columns: 4.5rem 1fr; gap: 14px; padding-right: 14px; }
+    .roll li { grid-template-columns: 3.4rem 1fr; gap: 12px; padding-right: 14px; }
   }
 </style>

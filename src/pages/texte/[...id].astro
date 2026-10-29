@@ -70,7 +70,7 @@ const beschreibung = `${MEDIUM[d.medium]}-${TEXTFORM[d.textform]}: ${d.titel}. W
       {d.nachtraege && d.nachtraege.length > 0 && (
         <section class="nachtraege" aria-labelledby="nt-h">
           <h2 id="nt-h">Nachträge</h2>
-          <p class="nt-note">Die Wertung oben bleibt, wie sie am {datumLang(d.datum)} war. Was ich später dazu denke, steht hier.</p>
+          <p class="nt-note">Die Wertung oben gilt seit {datumLang(d.datum)}. Spätere Gedanken stehen hier.</p>
           <ol>
             {d.nachtraege.map((n) => (
               <li>
@@ -93,10 +93,10 @@ const beschreibung = `${MEDIUM[d.medium]}-${TEXTFORM[d.textform]}: ${d.titel}. W
 </Base>
 
 <style>
-  .top { padding-top: clamp(16px, 4vw, 40px); }
+  .top { padding-top: 4px; }
   .layout {
     display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: clamp(28px, 5vw, 72px);
-    margin-top: clamp(36px, 6vw, 64px); align-items: start;
+    margin-top: clamp(28px, 4vw, 44px); align-items: start;
   }
   .back { grid-column: 2; grid-row: 1; position: sticky; top: 24px; display: grid; gap: 18px; }
   .read { grid-column: 1; grid-row: 1; min-width: 0; }
@@ -112,7 +112,7 @@ const beschreibung = `${MEDIUM[d.medium]}-${TEXTFORM[d.textform]}: ${d.titel}. W
   dd { margin: 0; font-size: 0.98rem; }
   .verdict { display: grid; gap: 4px; }
   .verdict-score { margin: 0; display: flex; align-items: baseline; gap: 6px; }
-  .verdict-score .display { font-size: 4rem; line-height: 0.8; }
+  .verdict-score .display { font-size: 3.2rem; line-height: 0.8; }
   .verdict-score .mono { font-size: 0.9rem; color: var(--ink-2); }
   .verdict-say { margin: 0; font-weight: 600; }
   .verdict-link { font-size: 0.8rem; color: var(--ink-2); }
@@ -127,13 +127,13 @@ const beschreibung = `${MEDIUM[d.medium]}-${TEXTFORM[d.textform]}: ${d.titel}. W
   .prose { max-width: var(--measure); font-size: 1.15rem; line-height: 1.68; }
   .prose :global(p) { margin: 0 0 1.1em; }
   .prose :global(h2) {
-    font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 2rem; line-height: 1;
-    margin: 1.8em 0 0.5em; letter-spacing: 0.01em;
+    font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.5rem; line-height: 1;
+    margin: 1.6em 0 0.5em; letter-spacing: 0.01em;
   }
   .prose :global(h3) { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
   .prose :global(blockquote) {
     margin: 1.6em 0; padding: 0; font-family: var(--display); font-weight: 800; text-transform: uppercase;
-    font-size: clamp(1.6rem, 3.4vw, 2.4rem); line-height: 1; color: var(--ink); text-wrap: balance;
+    font-size: clamp(1.35rem, 2.6vw, 1.8rem); line-height: 1.05; color: var(--ink); text-wrap: balance;
   }
   .prose :global(blockquote p) { margin: 0; }
   .prose :global(blockquote)::before { content: ''; display: block; width: 64px; border-top: 6px solid var(--card); margin-bottom: 14px; }

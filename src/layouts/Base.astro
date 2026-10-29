@@ -63,7 +63,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <slot />
     </main>
     <footer class="wrap"><div class="site-foot">
-      <p>Kestrel ist eine private Sammlung von Kevin. Texte über Spiele, Filme und Serien, eine Skala für alles. Alte Wertungen werden nie geändert, nur durch Nachträge ergänzt.</p>
+      <p>Kevins Sammlung: Spiele, Filme und Serien, eine Skala für alles. Wertungen bleiben, Nachträge kommen dazu.</p>
       <p class="mono"><a href="/wie-ich-werte/">Wie ich werte</a> · <a href="/archiv/">Archiv</a></p>
     </div></footer>
     <script>
@@ -137,7 +137,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   .stempel:hover .st-a :global(.z), .stempel:focus-visible .st-a :global(.z) { opacity: 0; filter: blur(5px); transform: translateY(-4px); }
   .stempel:hover .st-b :global(.z), .stempel:focus-visible .st-b :global(.z) { opacity: 1; filter: blur(0); transform: none; }
 
-  .site-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 20px; padding-bottom: 20px; position: relative; z-index: 30; }
+  .site-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 10px; position: relative; z-index: 30; }
   /* Platz für die Leiste links, sobald sie neben dem Inhalt steht */
   @media (min-width: 901px) and (max-width: 1320px) { :global(body) { padding-left: 64px; } }
   @media (max-width: 900px) { :global(body) { padding-bottom: 76px; } }
@@ -148,19 +148,19 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   }
   .wordmark-stub, .wordmark-name { background: var(--film); }
   .wordmark-stub {
-    display: grid; place-items: center; padding: 0 10px; font-size: 0.8rem; font-weight: 600;
+    display: grid; place-items: center; padding: 0 8px; font-size: 0.7rem; font-weight: 600;
     border-radius: 4px 0 0 4px;
     border-right: 2px dashed rgb(255 255 255 / 0.6);
   }
   .wordmark-name {
     font-family: var(--display); font-weight: 900; text-transform: uppercase;
-    font-size: 1.75rem; line-height: 1; padding: 8px 14px 6px 10px; border-radius: 0 4px 4px 0;
+    font-size: 1.3rem; line-height: 1; padding: 6px 11px 5px 8px; border-radius: 0 4px 4px 0;
     letter-spacing: 0.02em;
   }
   .wordmark:hover .wordmark-name, .wordmark:hover .wordmark-stub { background: #b02c24; }
 
   .site-foot {
-    margin-top: clamp(64px, 10vw, 120px); padding-top: 28px; padding-bottom: 64px; /* Platz für die Uhr unten rechts */
+    margin-top: clamp(48px, 7vw, 80px); padding-top: 20px; padding-bottom: 64px; /* Platz für die Uhr unten rechts */
     border-top: 2px dashed var(--rule); color: var(--ink-2); font-size: 0.95rem;
     display: flex; justify-content: space-between; gap: 16px 40px; flex-wrap: wrap;
   }
