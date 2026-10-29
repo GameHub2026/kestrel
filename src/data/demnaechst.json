@@ -194,7 +194,7 @@
    "datum": "2026-10-29",
    "text": "Neue Serie",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/s1A6UOu8IOmw0kJXohlitMRiwQb.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/xqMAWKtxorEgYQLjlljoFfMa5Jv.jpg",
    "anbieter": [
     "Netflix"
    ],
@@ -2205,1542 +2205,6 @@
   }
  ],
  "infos": {
-  "movie-1514026": {
-   "titel": "Buddy",
-   "original": "Buddy",
-   "leitsatz": null,
-   "handlung": "Alle lieben Buddy. Oder müssen es zumindest, denn wenn das orange Einhorn wütend wird, verwandelt sich seine quietschbunte Kindersendung schnell in blutiges Chaos. In der künstlich perfekten Studiowelt im Stil der 80er und 90er leben Kinder neben sprechenden Gegenständen, singen, tanzen und lernen Lektionen über Freundschaft und Zusammenhalt. Doch als Josh keine Lust auf Buddys Geburtstagsparty hat, bekommt die fröhliche Fassade schnell Risse und Josh einen tödlichen Axthieb verpasst. Folge für Folge eskaliert die Lage, denn gegen Buddys Zorn gibt es keine pädagogisch wertvolle Lösung",
-   "genres": [
-    "Horror",
-    "Komödie",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 35 Min"
-    ],
-    [
-     "Regie",
-     "Casper Kelly"
-    ],
-    [
-     "Mit",
-     "Delaney Quinn, Caleb Williams, Bennie Taylor, Eric Bauza"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=pHPx4LzCna0",
-   "link": "https://www.themoviedb.org/movie/1514026",
-   "bild": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
-   "news": []
-  },
-  "movie-791523": {
-   "titel": "Wildwood",
-   "original": "Wildwood",
-   "leitsatz": null,
-   "handlung": "Nachdem ihr kleiner Bruder von einem Schwarm Krähen entführt worden ist, begibt sich die 12-jährige Prue auf eine abenteuerliche Rettungsmission in die „Undurchdringliche Wildnis“ – einen verzauberten Wald, der sich am Rande von Portland, Oregon, verbirgt. Gemeinsam mit ihrem tollpatschigen Mitschüler Curtis betritt sie eine Welt voller sprechender Tiere, Magie und uralter Mächte. Als die beiden in einen Konflikt geraten, der das Gleichgewicht des Waldes bedroht, entdeckt Prue eine innere Stärke, von der sie niemals geahnt hätte, dass sie in ihr steckt. Wenn sie ihren Bruder retten und das Schicksal von Wildwood verändern will, muss sie alles aufs Spiel setzen.",
-   "genres": [
-    "Animation",
-    "Abenteuer",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 19 Min"
-    ],
-    [
-     "Regie",
-     "Travis Knight"
-    ],
-    [
-     "Mit",
-     "Peyton Elizabeth Lee, Carey Mulligan, Jacob Tremblay, Mahershala Ali"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=4QlEVeMP4WE",
-   "link": "https://www.themoviedb.org/movie/791523",
-   "bild": "https://image.tmdb.org/t/p/w500/oYkGlrvG7QNqrLtss4Q3Bpr1Np6.jpg",
-   "news": []
-  },
-  "movie-1765072": {
-   "titel": "You Can See Everything",
-   "original": "You Can See Everything",
-   "leitsatz": null,
-   "handlung": "34 Tage vor ihrer Inhaftierung lädt die berüchtigte Theranos-Gründerin Elizabeth Holmes ein skeptisches Filmteam ein, jeden ihrer Schritte zu dokumentieren. Was als intimes Porträt beginnt, entwickelt sich zu einer nervenaufreibenden dreijährigen Reise.",
-   "genres": [
-    "Dokumentarfilm"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 54 Min"
-    ],
-    [
-     "Regie",
-     "Nathan Fielder, Lance Oppenheim"
-    ],
-    [
-     "Mit",
-     "Elizabeth Holmes, Nathan Fielder, Billy Evans, Amanda Seyfried"
-    ],
-    [
-     "TMDB-Wertung",
-     "9.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=IEx8D1Wb__U",
-   "link": "https://www.themoviedb.org/movie/1765072",
-   "bild": "https://image.tmdb.org/t/p/w500/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
-   "news": [
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "Jimmy Fallon and Jamie Lee Curtis Transform Into Nathan Fielder and Elizabeth Holmes to Spoof ‘You Can See Everything’",
-     "link": "https://variety.com/2026/tv/news/jimmy-fallon-jamie-lee-curtis-you-can-see-everything-1236933837/",
-     "datum": "2026-10-29T04:21:47.000Z"
-    },
-    {
-     "quelle": "Spiegel Kultur",
-     "art": "film",
-     "titel": "Elizabeth Holmes: Kinodoku »You Can See Everything« über Hochstaplerin bricht Rekorde",
-     "link": "https://www.spiegel.de/kultur/kino/elizabeth-holmes-kinodoku-you-can-see-everything-ueber-hochstaplerin-bricht-rekorde-a-ebc50a17-cad0-4291-b1de-788e06da455b#ref=rss",
-     "datum": "2026-10-19T13:50:00.000Z"
-    }
-   ]
-  },
-  "movie-1400837": {
-   "titel": "Other Mommy",
-   "original": "Other Mommy",
-   "leitsatz": "Deine Mami wird dich nicht retten.",
-   "handlung": "Ein junges Mädchen, Bela, bildet eine Beziehung mit einer unheimlichen Entität in ihrem Haus, die unheimlich aussieht wie ihre eigene Mutter.",
-   "genres": [
-    "Horror"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 33 Min"
-    ],
-    [
-     "Regie",
-     "Rob Savage"
-    ],
-    [
-     "Mit",
-     "Jessica Chastain, Jay Duplass, Arabella Olivia Clark, Karen Allen"
-    ],
-    [
-     "TMDB-Wertung",
-     "5.8 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=fR5Ub975f4k",
-   "link": "https://www.themoviedb.org/movie/1400837",
-   "bild": "https://image.tmdb.org/t/p/w500/dDRtLmxorXpXHxTJqxNlMT9rJP9.jpg",
-   "news": []
-  },
-  "movie-1003596": {
-   "titel": "Avengers: Doomsday",
-   "original": "Avengers: Doomsday",
-   "leitsatz": null,
-   "handlung": "Geliebte Helden aus drei unterschiedlichen Universen befinden sich auf einem tödlichen Kollisionskurs und sehen sich einer existenziellen Bedrohung gegenüber, wie sie sie noch nie zuvor erlebt haben.",
-   "genres": [
-    "Science Fiction",
-    "Action",
-    "Abenteuer"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 45 Min"
-    ],
-    [
-     "Regie",
-     "Joe Russo, Anthony Russo"
-    ],
-    [
-     "Mit",
-     "Robert Downey Jr., Chris Evans, Chris Hemsworth, Pedro Pascal"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=JznHmU4yrV4",
-   "link": "https://www.themoviedb.org/movie/1003596",
-   "bild": "https://image.tmdb.org/t/p/w500/sLYCyO58UvBuBtbHTQjPCCgJ4dG.jpg",
-   "news": []
-  },
-  "movie-1195803": {
-   "titel": "Wicker",
-   "original": "Wicker",
-   "leitsatz": null,
-   "handlung": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
-   "genres": [
-    "Liebesfilm",
-    "Fantasy",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 45 Min"
-    ],
-    [
-     "Regie",
-     "Eleanor Wilson, Alex Huston Fischer"
-    ],
-    [
-     "Mit",
-     "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=kA9NfV4pM_Q",
-   "link": "https://www.themoviedb.org/movie/1195803",
-   "bild": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1433583": {
-   "titel": "The Weight – Im Goldrausch",
-   "original": "The Weight",
-   "leitsatz": null,
-   "handlung": "Oregon 1933: Nach dem Tod seiner Frau wird Samuel Murphy (Ethan Hawke) von seiner Tochter getrennt und landet in einem Arbeitslager. Um das Sorgerecht zurückzuerlangen, lässt Murphy sich auf einen riskanten Deal mit dem skrupellosen Lageraufseher Clancy (Russell Crowe) ein: Man stellt ihm eine vorzeitige Entlassung in Aussicht, wenn er sich im Gegenzug einer Gruppe Schmuggler bei einem Goldtransport durch die unbarmherzige Wildnis anschließt. Doch abgesehen von den Gefahren, die auf dem unwegsamen Terrain lauern, wird das Unterfangen auch durch Misstrauen und Verrat in den eigenen Reihen sabotiert. Je näher die Gruppe ihrem Ziel kommt, desto mehr zweifelt Murphy an dem Preis, den er für seine Freiheit und das Wiedersehen mit seinem Kind zahlen muss.",
-   "genres": [
-    "Drama",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 55 Min"
-    ],
-    [
-     "Regie",
-     "Padraic McKinley"
-    ],
-    [
-     "Mit",
-     "Ethan Hawke, Russell Crowe, Julia Jones, Austin Amelio"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.7 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=IexQvEpqwrE",
-   "link": "https://www.themoviedb.org/movie/1433583",
-   "bild": "https://image.tmdb.org/t/p/w500/ha3AUl0Zc0xs2hWxCROHTkDId25.jpg",
-   "news": []
-  },
-  "movie-1422041": {
-   "titel": "La bola negra",
-   "original": "La bola negra",
-   "leitsatz": null,
-   "handlung": "Drei Leben, drei miteinander verwobene Schicksale, ein gemeinsames Erbe: Die Jahre 1932, 1937 und 2017 umspannend, erzählt LA BOLA NEGRA eine Geschichte von Begehren, Schmerz und der Sehnsucht von Sebastián, Rafael und Alberto, deren Lebenswege untrennbar miteinander verbunden sind. Inspiriert von einem der letzten, unvollendeten Werke Federico García Lorcas, spannt der Film einen Bogen von der Vorkriegszeit Spaniens bis in die Gegenwart.",
-   "genres": [
-    "Drama",
-    "Kriegsfilm"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 39 Min"
-    ],
-    [
-     "Regie",
-     "Javier Ambrossi, Javier Calvo"
-    ],
-    [
-     "Mit",
-     "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.1 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=wCktgAye3NA",
-   "link": "https://www.themoviedb.org/movie/1422041",
-   "bild": "https://image.tmdb.org/t/p/w500/t1azKLExwUxKj6v6m2L535evuRa.jpg",
-   "news": []
-  },
-  "movie-858035": {
-   "titel": "Klara und die Sonne",
-   "original": "Klara and the Sun",
-   "leitsatz": "Die Zukunft der Freundschaft",
-   "handlung": "Als Klara, eine Künstliche Freundin, die sich nichts sehnlicher wünscht, als das perfekte Zuhause zu finden, auf Josie trifft, spürt jede sofort eine verwandte Seele in der anderen. Josie hat ein angespanntes Verhältnis zu ihrer Mutter, und sie haben einen großen Verlust erlitten, doch Klaras unschuldiges Staunen und ihre unerschütterliche Treue beginnen, die Familie zu heilen und Licht in Josies komplizierte Welt zu bringen.",
-   "genres": [
-    "Science Fiction",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 56 Min"
-    ],
-    [
-     "Regie",
-     "Taika Waititi"
-    ],
-    [
-     "Mit",
-     "Jenna Ortega, Mia Tharia, Amy Adams, Natasha Lyonne"
-    ],
-    [
-     "TMDB-Wertung",
-     "5.8 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=G5OySWKovzk",
-   "link": "https://www.themoviedb.org/movie/858035",
-   "bild": "https://image.tmdb.org/t/p/w500/xqovj2p6HRsgHxN81qYAYF4StgM.jpg",
-   "news": []
-  },
-  "movie-1170608": {
-   "titel": "Dune: Part Three",
-   "original": "Dune: Part Three",
-   "leitsatz": "Vergib mir, alles was ich getan habe.",
-   "handlung": "Fast zwei Jahrzehnte, nachdem Paul Atreides als skrupelloser Imperator die Macht über das Universum übernommen hat, sieht er sich nun mit den Folgen seiner Herrschaft konfrontiert: Alte Verbündete kehren zurück, schreckliche neue Bedrohungen erheben sich – und in jedem Schatten lauert Verrat. Geplagt von Visionen vom Untergang des Imperiums und von der Rückkehr seiner längst verlorenen Liebe gerät Paul immer tiefer in eine weitreichende Verschwörung, in der Chani eine entscheidende Rolle zu spielen scheint. Während sich eine Rebellion anbahnt und die Feinde immer näher rücken, muss sich Paul mit dem wahren Preis der Macht und dem Schicksal derer auseinandersetzen, die er am meisten liebt.",
-   "genres": [
-    "Science Fiction",
-    "Abenteuer"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 30 Min"
-    ],
-    [
-     "Regie",
-     "Denis Villeneuve"
-    ],
-    [
-     "Mit",
-     "Timothée Chalamet, Zendaya, Jason Momoa, Florence Pugh"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=TIKkCdEuk-Y",
-   "link": "https://www.themoviedb.org/movie/1170608",
-   "bild": "https://image.tmdb.org/t/p/w500/7JcLIa7aK0UOahsevVwW9bGRgiE.jpg",
-   "news": []
-  },
-  "movie-1244523": {
-   "titel": "Beware Boiúna",
-   "original": "Beware Boiúna",
-   "leitsatz": "Erlebe Horror in gigantischem Ausmaß.",
-   "handlung": "Tief im Amazonasgebiet verwandelt sich eine medizinische Mission in einen Kampf ums Überleben, als Boiúna, ein riesiges urzeitliches Raubtier, erwacht, um ihr Revier zurückzuerobern. Im Dschungel, wo die Natur die absolute Macht hat, entscheidet sie, wer lebt und wer stirbt.",
-   "genres": [
-    "Horror",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 44 Min"
-    ],
-    [
-     "Regie",
-     "Mike P. Nelson"
-    ],
-    [
-     "Mit",
-     "Logan Marshall-Green, Kiana Madeira, Jessica Rothe, Jackson Bews"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=X-IDVQpUHGA",
-   "link": "https://www.themoviedb.org/movie/1244523",
-   "bild": "https://image.tmdb.org/t/p/w500/uW5YMPxJUzT9bkafrCKHXjPTCoQ.jpg",
-   "news": []
-  },
-  "movie-1084409": {
-   "titel": "Ein Talent fürs Morden",
-   "original": "A Talent for Murder",
-   "leitsatz": null,
-   "handlung": "Patricia Highsmiths letzter Lebensabschnitt in der Einsamkeit in den Schweizer Alpen wird von Edward unterbrochen, einem jungen Literaturagenten, der vom unermüdlichen Verlag der Autorin geschickt wurde, um sie davon zu überzeugen, einen letzten Roman in ihrer äußerst beliebten Ripley-Reihe zu schreiben. Highsmith nutzt ihre berühmt-makabre Fantasie, um Edward abzuschrecken, doch bevor sie es merken, kommt es zu einer Zusammenarbeit, die dazu führt, dass die Welt, die sie erschaffen haben, nicht mehr von ihrer eigenen zu unterscheiden ist.",
-   "genres": [
-    "Drama",
-    "Krimi",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 46 Min"
-    ],
-    [
-     "Regie",
-     "Anton Corbijn"
-    ],
-    [
-     "Mit",
-     "Helen Mirren, Alden Ehrenreich, Olivia Cooke, Juliet Stevenson"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=bWlJKGSufZU",
-   "link": "https://www.themoviedb.org/movie/1084409",
-   "bild": "https://image.tmdb.org/t/p/w500/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
-   "news": []
-  },
-  "movie-1380417": {
-   "titel": "By Any Means",
-   "original": "By Any Means",
-   "leitsatz": "Das FBI scheiterte. Also holten sie die Mafia.",
-   "handlung": "Mississippi, 1966: Als eine brutale Mordserie an Bürgerrechtlern das FBI an seine Grenzen bringt, wird der junge Agent Strider (Yahya Abdul-Mateen II) auf den Fall angesetzt. Doch vor Ort stößt er nur auf eine Wand des Schweigens – gedeckt von Korruption und offenem Rassismus. Da die Ermittlungen über die offiziellen Wege nicht vorankommen, wird Strider schließlich ein ungewöhnlicher Partner zur Seite gestellt: der berüchtigte Mafia-Killer Greg Scarpa (Mark Wahlberg), der seine ganz eigenen Methoden hat, um für Gerechtigkeit zu sorgen.",
-   "genres": [
-    "Thriller",
-    "Historie",
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 47 Min"
-    ],
-    [
-     "Regie",
-     "Elegance Bratton"
-    ],
-    [
-     "Mit",
-     "Yahya Abdul-Mateen II, Mark Wahlberg, Nicole Beharie, Josh Lucas"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.5 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=CXCqbVtuCRY",
-   "link": "https://www.themoviedb.org/movie/1380417",
-   "bild": "https://image.tmdb.org/t/p/w500/aO4O1dqRoXVTschAwLaw1njdTwv.jpg",
-   "news": []
-  },
-  "movie-1401459": {
-   "titel": "Fjord",
-   "original": "Fjord",
-   "leitsatz": null,
-   "handlung": "After moving from Romania to a remote Norwegian village to rebuild their lives, a family finds hope in their welcoming neighbors, but their fragile new beginning is threatened when their young daughter arrives at school covered in bruises.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 26 Min"
-    ],
-    [
-     "Regie",
-     "Cristian Mungiu"
-    ],
-    [
-     "Mit",
-     "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=frg59VOungA",
-   "link": "https://www.themoviedb.org/movie/1401459",
-   "bild": "https://image.tmdb.org/t/p/w500/qiYm44CQBFOZ0Vs8BtmH2swYLz2.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1458099": {
-   "titel": "The Only Living Pickpocket in New York",
-   "original": "The Only Living Pickpocket in New York",
-   "leitsatz": null,
-   "handlung": "Harry Lehman is an aging pickpocket who plies his trade with ever-diminishing returns in a drastically changed New York. Wallets stuffed with cash have been replaced by easily cancelled credit cards, and Harry struggles to make ends meet as he cares for his disabled wife, Rosie. When he unwittingly purloins and fences a valuable USB stick, Harry finds himself in a race against time to return the loot or face the rage of a vengeful crime family.",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 28 Min"
-    ],
-    [
-     "Regie",
-     "Noah Segan"
-    ],
-    [
-     "Mit",
-     "John Turturro, Giancarlo Esposito, Will Price, Tatiana Maslany"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=iXA7BmrBBxs",
-   "link": "https://www.themoviedb.org/movie/1458099",
-   "bild": "https://image.tmdb.org/t/p/w500/pNdB9va2AEPQe9UfhKAdIt8nus9.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1554956": {
-   "titel": "Der Festländer",
-   "original": "The Incomer",
-   "leitsatz": null,
-   "handlung": "On an Orkney isle, siblings Isla and Sandy survive by hunting seabirds, retelling the stories of their ancestors, and defending the isle from dreaded \"Incomers\". Their world is upended with the arrival of an awkward council worker who has come to uproot them from their homeland.",
-   "genres": [
-    "Komödie",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 42 Min"
-    ],
-    [
-     "Regie",
-     "Louis Paxton"
-    ],
-    [
-     "Mit",
-     "Domhnall Gleeson, Gayle Rankin, Grant O'Rourke, Emun Elliott"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.1 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=TNH4i8lrDFo",
-   "link": "https://www.themoviedb.org/movie/1554956",
-   "bild": "https://image.tmdb.org/t/p/w500/nGnI5tT7qstkld94S8m4c68noZt.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1365378": {
-   "titel": "Große Träume",
-   "original": "Le rêve américain",
-   "leitsatz": "Wer nichts zu verlieren hat, kann alles gewinnen.",
-   "handlung": "Als sich Jeremy und Bouna das erste Mal auf dem Spielfeld begegnen, teilen sie nicht nur die Leidenschaft für Basketball, sondern auch die Gewissheit, nie Profispieler werden zu können. Das hält die beiden sympathischen Underdogs aber nicht davon ab, groß ins Business einzusteigen. Schließlich kennen sie jeden Basketballcourt und die vielversprechendsten Spieler. Kurzerhand gründen die beiden eine Agentur, verpflichten erste Talente und wollen diese in die berühmteste Liga der Welt bringen: die nordamerikanische NBA.  In GROSSE TRÄUME nehmen es zwei unerschütterliche Optimisten mit einer Welt auf, in der niemand auf sie gewartet hat. Ohne Beziehungen, ohne Geld, aber mit einer unverschämten Portion Selbstvertrauen kämpfen sie sich allen Widerständen zum Trotz bis in die nordamerikanische NBA. Eine ebenso turbulente wie warmherzige Underdog-Komödie nach einer wahren Geschichte, die zeigt, dass große Träume keine Frage der Herkunft sind – sondern des Mutes, niemals aufzugeben.",
-   "genres": [
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 2 Min"
-    ],
-    [
-     "Regie",
-     "Anthony Marciano"
-    ],
-    [
-     "Mit",
-     "Jean-Pascal Zadi, Raphaël Quenard, Gregory Defleur, David Clark"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.4 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1365378",
-   "bild": "https://image.tmdb.org/t/p/w500/yObiUK0WVhx0hwTIJhocdJTmhFc.jpg",
-   "news": []
-  },
-  "movie-1538497": {
-   "titel": "Wie verhext",
-   "original": "Hexed",
-   "leitsatz": null,
-   "handlung": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
-   "genres": [
-    "Abenteuer",
-    "Animation",
-    "Familie",
-    "Fantasy",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 43 Min"
-    ],
-    [
-     "Regie",
-     "Jason Hand, ฝน วีระสุนทร"
-    ],
-    [
-     "Mit",
-     "Hailee Steinfeld, Rashida Jones, Jodie Foster, Walton Goggins"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=6YYMqS8_Bp0",
-   "link": "https://www.themoviedb.org/movie/1538497",
-   "bild": "https://image.tmdb.org/t/p/w500/lMYJ4ogEBiB6pTxi5sm73kBsxiE.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-656908": {
-   "titel": "Ramayana: Rise of a Legend",
-   "original": "रामायणम",
-   "leitsatz": null,
-   "handlung": "In einem Zeitalter der Götter und Könige hängt das Schicksal der Welten am seidenen Faden. Rama, ein Prinz, dessen Leben von Pflicht, Selbstlosigkeit und unerschütterlicher Rechtschaffenheit bestimmt wird, muss sich dem unsterblichen Ravana stellen, getrieben von Stolz und Rache und mächtig genug den Kosmos zu zerstören.",
-   "genres": [
-    "Fantasy",
-    "Action",
-    "Abenteuer"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "3 Std 15 Min"
-    ],
-    [
-     "Regie",
-     "Nitesh Tiwari"
-    ],
-    [
-     "Mit",
-     "Ranbir Kapoor, Yash, Sai Pallavi, Ravi Dubey"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=jxYY7gMelFM",
-   "link": "https://www.themoviedb.org/movie/656908",
-   "bild": "https://image.tmdb.org/t/p/w500/gOWnXaBxqT6k2y40hKfYU6c0Ym.jpg",
-   "news": []
-  },
-  "movie-1300968": {
-   "titel": "Die Tribute von Panem: Sunrise on the Reaping",
-   "original": "The Hunger Games: Sunrise on the Reaping",
-   "leitsatz": "Willkommen zu den 50. Hungerspielen",
-   "handlung": "Kehren Sie in die Welt von Panem zurück – 24 Jahre vor den Ereignissen von „Die Tribute von Panem“ –, beginnend am Morgen der Ernte für die 50. Hungerspiele, auch bekannt als das zweite Jubel-Jubiläum.",
-   "genres": [
-    "Science Fiction",
-    "Action",
-    "Abenteuer"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 38 Min"
-    ],
-    [
-     "Regie",
-     "Francis Lawrence"
-    ],
-    [
-     "Mit",
-     "Joseph Zada, Ralph Fiennes, Jesse Plemons, Whitney Peak"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=3xfVyH0iwlc",
-   "link": "https://www.themoviedb.org/movie/1300968",
-   "bild": "https://image.tmdb.org/t/p/w500/eyxBOW9HSTbhT7s5V17SJKVegvC.jpg",
-   "news": [
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘The Hunger Games: Sunrise on the Reaping’ First Reactions",
-     "link": "https://www.hollywoodreporter.com/movies/movie-news/hunger-games-sunrise-on-the-reaping-first-reactions-1236742404/",
-     "datum": "2026-10-29T07:05:19.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "‘The Hunger Games: Sunrise on the Reaping’ First Reactions Call Prequel the ‘Rogue One’ of the Franchise and Praise Joseph Zada as Haymitch",
-     "link": "https://variety.com/2026/film/news/hunger-games-sunrise-on-the-reaping-first-reactions-1236933573/",
-     "datum": "2026-10-29T00:20:57.000Z"
-    }
-   ]
-  },
-  "movie-1381071": {
-   "titel": "Godzilla Minus Zero",
-   "original": "ゴジラ-0.0",
-   "leitsatz": null,
-   "handlung": "Der Krieg hat Japan auf Null reduziert, und Godzilla hat es ins Minus gestürzt. Zwei Jahre sind seitdem vergangen und das Land kämpft immer noch immer verzweifelt darum, sich wieder zu erholen und endlich in den normalen Alltag zurückzufinden. Gerade als es der Menschheit gelang, an einem hart erkämpften Frieden festzuhalten, schlägt eine neue Bedrohung zu und vernichtet die Hoffnung im Handumdrehen. Ein drittes Mal wird es nicht geben. Hier endet alles.",
-   "genres": [
-    "Science Fiction",
-    "Horror",
-    "Action"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 15 Min"
-    ],
-    [
-     "Regie",
-     "Takashi Yamazaki"
-    ],
-    [
-     "Mit",
-     "Ryunosuke Kamiki, Minami Hamabe, 山田裕貴, Kuranosuke Sasaki"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=x666Mat4ruI",
-   "link": "https://www.themoviedb.org/movie/1381071",
-   "bild": "https://image.tmdb.org/t/p/w500/hZviv9gguqHGw4GK8gS5d5bDhA4.jpg",
-   "news": []
-  },
-  "movie-891621": {
-   "titel": "Wild Horse Nine",
-   "original": "Wild Horse Nine",
-   "leitsatz": null,
-   "handlung": "Kurz vor dem Militär-Putsch in Chile im Jahr 1973 werden die CIA-Agenten Chris und Lee von ihrem Büroleiter MJ von Santiago auf die Osterinsel entsandt. Vor dem Hintergrund der ikonischen Skulpturen der Insel ringen die langjährigen Partner mit ihrer dunklen Vergangenheit und aktuellen Verschwörungen. Dabei droht Chris’ neu gefundene Freundschaft mit zwei rebellischen Studentinnen die Reise aller in dieses abgelegene Paradies völlig aus dem Ruder laufen zu lassen.",
-   "genres": [
-    "Komödie",
-    "Krimi",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 57 Min"
-    ],
-    [
-     "Regie",
-     "Martin McDonagh"
-    ],
-    [
-     "Mit",
-     "John Malkovich, Sam Rockwell, Steve Buscemi, Mariana di Girolamo"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=7JEuh1n-WpI",
-   "link": "https://www.themoviedb.org/movie/891621",
-   "bild": "https://image.tmdb.org/t/p/w500/aYv3GH3mloWHMBetmrd8aRHX7QF.jpg",
-   "news": []
-  },
-  "movie-1567605": {
-   "titel": "Ebenezer – Eine Weihnachtsgeschichte",
-   "original": "Ebenezer",
-   "leitsatz": null,
-   "handlung": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
-   "genres": [
-    "Fantasy",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 55 Min"
-    ],
-    [
-     "Regie",
-     "Ti West"
-    ],
-    [
-     "Mit",
-     "Johnny Depp, Rupert Grint, Daisy Ridley, Andrea Riseborough"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=o3aFQJgjEfw",
-   "link": "https://www.themoviedb.org/movie/1567605",
-   "bild": "https://image.tmdb.org/t/p/w500/3VArJnDlvOnAIjzngIwjHU7CVVD.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1430077": {
-   "titel": "Hokum",
-   "original": "Hokum",
-   "leitsatz": null,
-   "handlung": "Jahrhundertelang hat eine Hexe die Menschen im irischen County Cork terrorisiert, hat ihre Opfer in Ketten gelegt und durch die Unterwelt gezerrt, wo sie von verlorenen Seelen verschlungen wurden. Aber jetzt ist das grausame Wesen endlich gefangen, erzählt man Ohm (Adam Scott): und zwar in der Hochzeitssuite des kleinen Hotels, in dem sich der amerikanische Autor nichts ahnend einquartiert hat. Herablassend tut er die Legenden und Warnungen als Humbug ab. Bis sich ihm eines Nachts die Tür zur verbotenen Suite öffnet.",
-   "genres": [
-    "Horror",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 47 Min"
-    ],
-    [
-     "Regie",
-     "Damian McCarthy"
-    ],
-    [
-     "Mit",
-     "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.8 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=I1dx_clHJ-Q",
-   "link": "https://www.themoviedb.org/movie/1430077",
-   "bild": "https://image.tmdb.org/t/p/w500/x6rHcQFiYcczLQPrmxXPAicm54E.jpg",
-   "news": []
-  },
-  "movie-1117898": {
-   "titel": "Der Kater mit Hut",
-   "original": "The Cat in the Hat",
-   "leitsatz": "Die Dingse geraten außer Kontrolle.",
-   "handlung": "The Cat übernimmt seinen bisher härtesten Auftrag... er soll ein Geschwisterpaar aufmuntern, das mit dem Umzug in eine neue Stadt zu kämpfen hat.",
-   "genres": [
-    "Animation",
-    "Komödie",
-    "Abenteuer",
-    "Fantasy",
-    "Familie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 48 Min"
-    ],
-    [
-     "Regie",
-     "Erica Rivinoja, Alessandro Carloni"
-    ],
-    [
-     "Mit",
-     "Bill Hader, Xochitl Gomez, Tiago Martinez, Matt Berry"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=XBQXIBsLQsY",
-   "link": "https://www.themoviedb.org/movie/1117898",
-   "bild": "https://image.tmdb.org/t/p/w500/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
-   "news": []
-  },
-  "movie-1165366": {
-   "titel": "De Gaulle - Zeit des Widerstands",
-   "original": "La Bataille de Gaulle : L’Âge de fer",
-   "leitsatz": null,
-   "handlung": "Juni 1940. Frankreich bricht zusammen und unterzeichnet den Waffenstillstand. Inmitten des Chaos weigert sich ein Mann, aufzugeben. Ganz auf sich allein gestellt, flieht dieser bis dahin unbekannte General nach London, um zu retten, was von der Freiheit geblieben ist.",
-   "genres": [
-    "Historie",
-    "Drama",
-    "Kriegsfilm"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 40 Min"
-    ],
-    [
-     "Regie",
-     "Antonin Baudry"
-    ],
-    [
-     "Mit",
-     "Simon Abkarian, Simon Russell Beale, Florian Lesieur, Benoît Magimel"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.8 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=dKUArYoZ_0U",
-   "link": "https://www.themoviedb.org/movie/1165366",
-   "bild": "https://image.tmdb.org/t/p/w500/zWuZWFKyga6GF3agrhJn8UtdMSu.jpg",
-   "news": []
-  },
-  "movie-1300926": {
-   "titel": "Angry Birds 3 - Der Film",
-   "original": "The Angry Birds Movie 3",
-   "leitsatz": null,
-   "handlung": "Red faces his greatest challenge yet - surviving fatherhood - while saving the world.",
-   "genres": [
-    "Animation",
-    "Komödie",
-    "Familie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 36 Min"
-    ],
-    [
-     "Regie",
-     "John Rice"
-    ],
-    [
-     "Mit",
-     "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=eTAeGROy--Y",
-   "link": "https://www.themoviedb.org/movie/1300926",
-   "bild": "https://image.tmdb.org/t/p/w500/oxaW6X3xohnzdFSBKCrCjRDckMe.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1260649": {
-   "titel": "Jumanji: Open World",
-   "original": "Jumanji: Open World",
-   "leitsatz": null,
-   "handlung": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us - as Jumanji breaks free of its console, unleashing its chaos into our world.",
-   "genres": [
-    "Abenteuer",
-    "Komödie",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Jake Kasdan"
-    ],
-    [
-     "Mit",
-     "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=1y9vp9GLoYU",
-   "link": "https://www.themoviedb.org/movie/1260649",
-   "bild": "https://image.tmdb.org/t/p/w500/qGFuvcXqQdXS5ZNblDlVTOmK6mq.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Neuer Trailer zum Trilogie-Finale: „Jumanji: Open World“ startet an Weihnachten im Kino",
-     "link": "https://www.serienjunkies.de/news/serien/jumanji-open-world-trailer-und-starttermin-im-kino-94562683.html",
-     "datum": "2026-10-28T13:52:04.000Z"
-    }
-   ],
-   "sprache": "en"
-  },
-  "movie-1391239": {
-   "titel": "Das Debüt - Ihr großer Auftritt",
-   "original": "The Debut",
-   "leitsatz": null,
-   "handlung": "When Mona Friedman is cast in a bit part at a small community theater, she transforms from a shy, unassuming housewife into a zealous method actor willing to do anything to protect the artistic integrity of her marginal role—even if it means waging war against the show’s domineering director.",
-   "genres": [
-    "Musik",
-    "Komödie",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 45 Min"
-    ],
-    [
-     "Regie",
-     "Jesse Eisenberg"
-    ],
-    [
-     "Mit",
-     "Julianne Moore, Paul Giamatti, Halle Bailey, Jesse Eisenberg"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=C0IoNLkxefY",
-   "link": "https://www.themoviedb.org/movie/1391239",
-   "bild": "https://image.tmdb.org/t/p/w500/5CZdxLiBpYMBXwo0rur6YzZTVP4.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1147572": {
-   "titel": "Das Wunder von Narnia",
-   "original": "Narnia: The Magician's Nephew",
-   "leitsatz": null,
-   "handlung": "Two children discover a wood full of pools leading to other worlds. One takes them to a dead city beneath a dying sun, where they wake a queen who exterminated its population and accidentally bring her back to London.",
-   "genres": [
-    "Fantasy",
-    "Abenteuer",
-    "Familie"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Greta Gerwig"
-    ],
-    [
-     "Mit",
-     "David McKenna, Beatrice Campbell, Emma Mackey, Carey Mulligan"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=nYqwH8GC97E",
-   "link": "https://www.themoviedb.org/movie/1147572",
-   "bild": "https://image.tmdb.org/t/p/w500/dKJ6ownJGWwSReCGRQWimXf700v.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1286656": {
-   "titel": "I Play Rocky",
-   "original": "I Play Rocky",
-   "leitsatz": null,
-   "handlung": "Die Entstehung des Boxerfilms „Rocky“ (1976) ist selbst Stoff für großes Kino: Der damals unbekannte Schauspieler Sylvester Stallone (Anthony Ippolito) schreibt innerhalb von nur dreieinhalb Tagen ein Drehbuch und ist fest davon überzeugt, für die Hauptrolle bestimmt zu sein. Obwohl ihm immer wieder Steine in den Weg gelegt werden, setzt der später weltbekannte Actionstar alles auf eine Karte und beharrt trotz scheinbar unüberwindbarer Widerstände darauf, selbst als Rocky Balboa vor der Kamera zu stehen. Der Rest ist Filmgeschichte.",
-   "genres": [
-    "Drama",
-    "Historie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 8 Min"
-    ],
-    [
-     "Regie",
-     "Peter Farrelly"
-    ],
-    [
-     "Mit",
-     "Anthony Ippolito, AnnaSophia Robb, Stephan James, Matt Dillon"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=VbUZakXlcMc",
-   "link": "https://www.themoviedb.org/movie/1286656",
-   "bild": "https://image.tmdb.org/t/p/w500/fViZxjUGsR6IQD77FP22PIMfk0R.jpg",
-   "news": []
-  },
-  "movie-1469342": {
-   "titel": "Her Private Hell",
-   "original": "Her Private Hell",
-   "leitsatz": null,
-   "handlung": "Als ein mysteriöser Nebel eine futuristische Metropole verschlingt und eine tödliche, schwer fassbare Kreatur freisetzt, begibt sich eine junge Frau mit bewegter Vergangenheit auf die Suche nach ihrem Vater. Ihr Weg kreuzt sich mit dem eines amerikanischen GIs, der eine nervenaufreibende Odyssee durchlebt, um seine Tochter aus der Hölle zu retten.",
-   "genres": [
-    "Thriller",
-    "Horror"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 50 Min"
-    ],
-    [
-     "Regie",
-     "Nicolas Winding Refn"
-    ],
-    [
-     "Mit",
-     "Sophie Thatcher, Charles Melton, Havana Rose Liu, Kristine Froseth"
-    ],
-    [
-     "TMDB-Wertung",
-     "5.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=YpdqpXEw4x8",
-   "link": "https://www.themoviedb.org/movie/1469342",
-   "bild": "https://image.tmdb.org/t/p/w500/8chAk0TbPT69Q5eN160JYayvfQM.jpg",
-   "news": []
-  },
-  "movie-1437511": {
-   "titel": "How to Rob a Bank",
-   "original": "How to Rob a Bank",
-   "leitsatz": "Wer raubt hier wen aus?",
-   "handlung": "A crew of social media-savvy bank robbers broadcasts their daring heists, unaware that their growing viral fame has put them in the crosshairs of a veteran FBI agent and a brilliant software engineer. Despite the unlikely duo closing in, the crime ring pushes past their limits, putting everything on the line for their most ambitious heist yet.",
-   "genres": [
-    "Action",
-    "Krimi",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 2 Min"
-    ],
-    [
-     "Regie",
-     "David Leitch"
-    ],
-    [
-     "Mit",
-     "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=Rm4gm8BCWUg",
-   "link": "https://www.themoviedb.org/movie/1437511",
-   "bild": "https://image.tmdb.org/t/p/w500/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1585239": {
-   "titel": "Club Kid",
-   "original": "Club Kid",
-   "leitsatz": null,
-   "handlung": "Das turbulente Leben eines exzessiv feiernden Club-Promoters in New York City gerät völlig aus den Fugen, als plötzlich der zehnjährige Sohn vor der Tür steht – von dessen Existenz er bislang nichts wusste.",
-   "genres": [
-    "Komödie",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 6 Min"
-    ],
-    [
-     "Regie",
-     "Jordan Firstman"
-    ],
-    [
-     "Mit",
-     "Jordan Firstman, Reggie Absolom, Cara Delevingne, Diego Calva"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=guKEdb_iRXw",
-   "link": "https://www.themoviedb.org/movie/1585239",
-   "bild": "https://image.tmdb.org/t/p/w500/o1qMU0ZB5XDX8IXJFFu3AkhOqjh.jpg",
-   "news": []
-  },
-  "movie-1440769": {
-   "titel": "The Beekeeper 2",
-   "original": "The Beekeeper 2",
-   "leitsatz": null,
-   "handlung": "Pulled back into the fight when the Beekeeper organization goes rogue and sets its sights on controlling the government, Clay must take on the very group that made him.",
-   "genres": [
-    "Action",
-    "Krimi",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Timo Tjahjanto"
-    ],
-    [
-     "Mit",
-     "Jason Statham, Jeremy Irons, Yara Shahidi, Emmy Raver-Lampman"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=Q7MvYmUttXM",
-   "link": "https://www.themoviedb.org/movie/1440769",
-   "bild": "https://image.tmdb.org/t/p/w500/bNlIm8bk5AHrinnUmi4Y8A8W0XM.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1400336": {
-   "titel": "Meine Frau, unsere Schwiegertochter und ich",
-   "original": "Focker-in-Law",
-   "leitsatz": null,
-   "handlung": "Mehr als zwei Jahrzehnte ist es her, dass Greg Focker seinen Schwiegervater Jack um die Hand von dessen Tochter Pam bat – eine Begegnung voller peinlicher Momente. Heute sind Greg und Pams Kinder erwachsen. Als Sohn Henry verkündet, seine Freundin Olivia Jones heiraten zu wollen, steht Greg vor einer neuen Herausforderung. Denn er begegnet der Beziehung mit großem Misstrauen: Olivia ist FBI-Verhandlungsexpertin und weiß Menschen mit Worten zu überzeugen. Greg vermutet, dass sie Henry gezielt beeinflusst, um eigene Interessen durchzusetzen. Also nimmt er die künftige Schwiegertochter genauer unter die Lupe – mit Methoden, die verdächtig an Jack erinnern. Wo einst der Schwiegervater ihn durchleuchtete, ist nun Greg der Misstrauische. Doch ihm fehlt das Geschick, unauffällig zu ermitteln. Sein Versuch, Henry vor einer vermeintlich falschen Entscheidung zu bewahren, sorgt für neue Spannungen in der Familie.",
-   "genres": [
-    "Komödie",
-    "Liebesfilm"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 45 Min"
-    ],
-    [
-     "Regie",
-     "John Hamburg"
-    ],
-    [
-     "Mit",
-     "Ben Stiller, Robert De Niro, Ariana Grande, Skyler Gisondo"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=mpLu15l1DwM",
-   "link": "https://www.themoviedb.org/movie/1400336",
-   "bild": "https://image.tmdb.org/t/p/w500/gPdzdeehaoaYqxH2rA6yayEDSsS.jpg",
-   "news": []
-  },
-  "movie-822653": {
-   "titel": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
-   "original": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-   "leitsatz": null,
-   "handlung": "Nach den Ereignissen von „Rebellion“ scheint die Welt im Gleichgewicht zu sein – doch dieser Frieden ist brüchig. Als eine neue Bedrohung im Zusammenhang mit der Walpurgisnacht auftaucht, ist Homura Akemi gezwungen, sich den Konsequenzen ihrer Entscheidungen zu stellen und sich zu fragen, wie weit sie bereit ist zu gehen, um Madoka zu beschützen.",
-   "genres": [
-    "Animation",
-    "Drama",
-    "Mystery",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 0 Min"
-    ],
-    [
-     "Regie",
-     "宮本幸裕, Akiyuki Simbo"
-    ],
-    [
-     "Mit",
-     "Aoi Yuki, Chiwa Saito, Eri Kitamura, Ai Nonaka"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=lAIYKMbMMcg",
-   "link": "https://www.themoviedb.org/movie/822653",
-   "bild": "https://image.tmdb.org/t/p/w500/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
-   "news": []
-  },
-  "movie-1074074": {
-   "titel": "El ser querido",
-   "original": "El ser querido",
-   "leitsatz": null,
-   "handlung": "Acclaimed film director Esteban Martínez is a legend both for his films and for his past marked by violence and excess. For his latest project, he offers his daughter Emilia a role under the pretext of helping her with her stalled acting career. Living together on set will foster a closeness they haven’t shared for years, but it will also reopen old wounds that never healed.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 16 Min"
-    ],
-    [
-     "Regie",
-     "Rodrigo Sorogoyen"
-    ],
-    [
-     "Mit",
-     "Javier Bardem, Victoria Luengo, Melina Matthews, Malena Villa"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.9 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=2I5LLG2XBco",
-   "link": "https://www.themoviedb.org/movie/1074074",
-   "bild": "https://image.tmdb.org/t/p/w500/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-848700": {
-   "titel": "Minotaurus",
-   "original": "Minotaure",
-   "leitsatz": null,
-   "handlung": "Russland, 2022: Firmenchef Gleb führt ein Leben in Wohlstand und häuslicher Behaglichkeit. Doch bald gerät er an allen Fronten unter Druck. Zu Hause entzieht sich ihm seine Frau Galina mehr und mehr, und der Verdacht, dass sie ihn betrügt, lässt ihn nicht los. Im Betrieb verlangen die örtlichen Behörden von ihm, eine Anzahl seiner Beschäftigten für den Krieg in der Ukraine zu rekrutieren. Während er weiterhin seine Hände in Unschuld waschen will, ringt Gleb um Kontrolle. Doch der Zerfall seines sorgsam geordneten Lebens beschleunigt sich. Der Weg in die Gewalt scheint längst unausweichlich.",
-   "genres": [
-    "Drama",
-    "Krimi",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 21 Min"
-    ],
-    [
-     "Regie",
-     "Андрей Звягинцев"
-    ],
-    [
-     "Mit",
-     "Дмитрий Мазуров, Ирис Лебедева, Varvara Shmykova, Juris Žagars"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.7 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=kvs17bvubhI",
-   "link": "https://www.themoviedb.org/movie/848700",
-   "bild": "https://image.tmdb.org/t/p/w500/jUzJYKP0vGXj3HTEkjQiVMjE4ej.jpg",
-   "news": []
-  },
-  "movie-1457866": {
-   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
-   "original": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
-   "leitsatz": null,
-   "handlung": "Acht Jahre nach den Ereignissen von „Once Upon a Time in… Hollywood“ navigiert Cliff Booth in seiner neuen Rolle als Fixer durch das Studiosystem.",
-   "genres": [
-    "Drama",
-    "Komödie",
-    "Thriller",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "David Fincher"
-    ],
-    [
-     "Mit",
-     "Brad Pitt, Elizabeth Debicki, Scott Caan, Carla Gugino"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=RjEZaUBbUvU",
-   "link": "https://www.themoviedb.org/movie/1457866",
-   "bild": "https://image.tmdb.org/t/p/w500/8jSyV5i8aFYPiO3c3B9YUu14hN2.jpg",
-   "news": []
-  },
-  "movie-1421903": {
-   "titel": "Werwulf",
-   "original": "Werwulf",
-   "leitsatz": null,
-   "handlung": "A harrowing tale of devotion, damnation and the devil within.",
-   "genres": [
-    "Horror"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 0 Min"
-    ],
-    [
-     "Regie",
-     "Robert Eggers"
-    ],
-    [
-     "Mit",
-     "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=rd_s5QdHdYw",
-   "link": "https://www.themoviedb.org/movie/1421903",
-   "bild": "https://image.tmdb.org/t/p/w500/imnkSt4PSQpxIuyiRpJCiLk3SZz.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1437981": {
-   "titel": "Coward",
-   "original": "Coward",
-   "leitsatz": null,
-   "handlung": "Während sich der Erste Weltkrieg immer weiter hinzieht, brennt Pierre, ein neu an der Front eingetroffener Soldat, darauf, sich zu beweisen. Hinter den Linien begegnet er Francis, der seine Kameraden mit einer Theaterrevue aufheitern will. Während die Gewalt unvermindert anhält, suchen beide Männer nach Wegen, der Brutalität des Krieges zu entkommen – und sei es nur für einen Augenblick.",
-   "genres": [
-    "Drama",
-    "Liebesfilm",
-    "Kriegsfilm"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 0 Min"
-    ],
-    [
-     "Regie",
-     "Lukas Dhont"
-    ],
-    [
-     "Mit",
-     "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=T1SAZTIZnrQ",
-   "link": "https://www.themoviedb.org/movie/1437981",
-   "bild": "https://image.tmdb.org/t/p/w500/qy5ytiCeyR9uW5HsLDOFaOQ8yEr.jpg",
-   "news": []
-  },
-  "movie-1425859": {
-   "titel": "Remain",
-   "original": "Remain",
-   "leitsatz": null,
-   "handlung": "When reclusive architect Tate Gordon moves to small coastal town to complete his latest project, he encounters an alluring young woman who pulls him out of his shell, and into the center of a deadly mystery that hangs over the town.",
-   "genres": [
-    "Liebesfilm",
-    "Mystery",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "M. Night Shyamalan"
-    ],
-    [
-     "Mit",
-     "Jake Gyllenhaal, Phoebe Dynevor, Ashley Walters, Julie Hagerty"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=wc6TkBUuypA",
-   "link": "https://www.themoviedb.org/movie/1425859",
-   "bild": "https://image.tmdb.org/t/p/w500/5hPNq5h2y8Ux6nPBRMEwZ8npVTp.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-940009": {
-   "titel": "Ray Gunn",
-   "original": "Ray Gunn",
-   "leitsatz": null,
-   "handlung": "In Metropia, a gigantic city in an alternate future as seen from 1939, private eye Raymond Gunn is drawn into a case involving aliens, murder and a multimedia star named Venus Nova.",
-   "genres": [
-    "Animation",
-    "Science Fiction",
-    "Krimi",
-    "Mystery"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 59 Min"
-    ],
-    [
-     "Regie",
-     "Brad Bird"
-    ],
-    [
-     "Mit",
-     "Sam Rockwell, Scarlett Johansson, Tom Waits, Matt Berry"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=VL-xjzQFWsY",
-   "link": "https://www.themoviedb.org/movie/940009",
-   "bild": "https://image.tmdb.org/t/p/w500/rpP29aOKpHy1FhX8OZQdUICEs2j.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1115030": {
-   "titel": "Animal Friends",
-   "original": "Animal Friends",
-   "leitsatz": null,
-   "handlung": "Zwei Tiere werden unwahrscheinliche Freunde.",
-   "genres": [
-    "Komödie",
-    "Abenteuer",
-    "Animation"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Peter Atencio"
-    ],
-    [
-     "Mit",
-     "Ryan Reynolds, Jason Momoa, Aubrey Plaza, Dan Levy"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1115030",
-   "bild": "https://image.tmdb.org/t/p/w500/AfJldsj8a42yeg9Ued3MdgbfWnC.jpg",
-   "news": []
-  },
-  "movie-1227877": {
-   "titel": "I Love Boosters",
-   "original": "I Love Boosters",
-   "leitsatz": null,
-   "handlung": "Eine Gruppe von professionellen Ladendiebinnen – die sogenannte Velvet Gang unter der Führung von Corvette (Keke Palmer) – stiehlt Kleidung aus Boutiquen und Kaufhäusern. Als die skrupellose Modeikone Christie Smith (Demi Moore) eines von Corvettes Designs stiehlt, nimmt die Gang das gesamte Inventar der Modemogulin ins Visier. Damit lösen sie versehentlich eine weltweite Bewegung für Einzelhandels- und Fabrikarbeiter aus.",
-   "genres": [
-    "Komödie",
-    "Science Fiction",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 53 Min"
-    ],
-    [
-     "Regie",
-     "Boots Riley"
-    ],
-    [
-     "Mit",
-     "Keke Palmer, Naomi Ackie, Taylour Paige, Poppy Liu"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=I1xZegSgN8w",
-   "link": "https://www.themoviedb.org/movie/1227877",
-   "bild": "https://image.tmdb.org/t/p/w500/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
-   "news": []
-  },
-  "movie-1532610": {
-   "titel": "Ink",
-   "original": "Ink",
-   "leitsatz": null,
-   "handlung": "A group of misfits and visionaries had an idea for a new kind of news - one that would give the people what they want, and would change the face of the world we live in today.",
-   "genres": [
-    "Drama",
-    "Historie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 56 Min"
-    ],
-    [
-     "Regie",
-     "Danny Boyle"
-    ],
-    [
-     "Mit",
-     "Jack O'Connell, Guy Pearce, Claire Foy, Blake Harrison"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=eokBqEFiVHs",
-   "link": "https://www.themoviedb.org/movie/1532610",
-   "bild": "https://image.tmdb.org/t/p/w500/aZECpoGsveEXtxogaz0GMiyVB6n.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1251608": {
-   "titel": "Die Blutgräfin",
-   "original": "Die Blutgräfin",
-   "leitsatz": null,
-   "handlung": "Die Blutgräfin und ihre Zofe eröffnen einen neuen Tanz der Vampire. Wir begleiten sie auf ihrer aberwitzigen Jagd nach dem roten Lebenssaft, der verschütteten Geschichte ihrer Ahnen und einem Buch, das ihr Vampirreich zu zerstören droht. Ihnen auf den Fersen: ihr vegetarischer Neffe, sein Psychotherapeut, zwei Vampirologen und ein Polizeiinspektor mit Assistenten.",
-   "genres": [
-    "Komödie",
-    "Horror",
-    "Mystery",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 59 Min"
-    ],
-    [
-     "Regie",
-     "Ulrike Ottinger"
-    ],
-    [
-     "Mit",
-     "Isabelle Huppert, Birgit Minichmayr, Thomas Schubert, Lars Eidinger"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_QKF0D601sg",
-   "link": "https://www.themoviedb.org/movie/1251608",
-   "bild": "https://image.tmdb.org/t/p/w500/umVTLVc7sjLqEMClbkvIA2SjOLg.jpg",
-   "news": []
-  },
-  "movie-947493": {
-   "titel": "Iron Boy",
-   "original": "Le Corset",
-   "leitsatz": null,
-   "handlung": "Im ländlichen Frankreich versucht der 10-jährige Christophe, auf dem elterlichen Bauernhof den Erwartungen seines strengen und distanzierten Vaters gerecht zu werden. Doch der Junge beginnt, sich ohne Vorwarnung nach vorne zu beugen und zusammenzubrechen – auf dem Traktor, in der Schule, beim Abendessen... Ein Arzt findet die Lösung: Christophe muss ein eisernes Korsett tragen, um aufrecht stehen zu können. Gezwungen, sein Leben abseits des Bauernhofs neu zu gestalten, entdeckt Christophe eine neue Leidenschaft für Musik, lernt eine neue Freundin kennen und lässt sich von ihr zu seinem ersten Streich verleiten. Doch wird all das wirklich das wieder ins Lot bringen, was aus dem Gleichgewicht geraten ist?",
-   "genres": [
-    "Animation",
-    "Drama",
-    "Familie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 30 Min"
-    ],
-    [
-     "Regie",
-     "Louis Clichy"
-    ],
-    [
-     "Mit",
-     "Gary Clichy, Rod Paradot, Dimitri Colas, Aurélie Vassort"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.2 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/947493",
-   "bild": "https://image.tmdb.org/t/p/w500/7RN7uox5vLnMY3GAXKjjGHTkeXR.jpg",
-   "news": []
-  },
-  "movie-1440304": {
-   "titel": "Mauvaise Pioche",
-   "original": "Mauvaise Pioche",
-   "leitsatz": null,
-   "handlung": "​Arrested by mistake and mistaken for France’s most wanted man, Serge Martin, a peaceful retiree, becomes the target of the media. Caught up in a never-ending whirlwind, he’ll do everything he can to prove his innocence and get his life back… if that’s even possible!",
-   "genres": [
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Gérard Jugnot"
-    ],
-    [
-     "Mit",
-     "Gérard Jugnot, Thierry Lhermitte, Philippe Lacheau, Zabou Breitman"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.0 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1440304",
-   "bild": "https://image.tmdb.org/t/p/w500/wRPxSccJw6wckkBUOzM5CHd871w.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "tv-333533": {
    "titel": "The One About Matthew Perry",
    "original": "The One About Matthew Perry",
@@ -4425,6 +2889,115 @@
    "bild": "https://image.tmdb.org/t/p/w500/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
    "news": []
   },
+  "tv-213375": {
+   "titel": "VisionQuest",
+   "original": "VisionQuest",
+   "leitsatz": null,
+   "handlung": "Nach Visions Flucht vor jenen, die ihn als Waffe missbrauchen wollten, führt er ein Leben im Verborgenen. Auf der Suche nach einer neuen Bestimmung zieht er auch die diversen KIs zu Rate, die innerhalb seiner Programmierung ein neues Zuhause gefunden haben. Unter ihnen befinden sich nicht nur Friday, Edith und Jarvis, sondern auch der berüchtigte Ultron. Doch Visions unauffällige Existenz findet ein abruptes Ende, als ein Kopfgeld auf ihn ausgesetzt wird. Auf der Flucht schließt er sich Thomas Shepherd an, einem geheimnisvollen Jungen, bei dem es sich um Visions wiedergeborenen Sohn handeln könnte. Dabei sieht sich Vision zunehmend gezwungen, sich seiner eigenen Natur zu stellen, Ultrons Einfluss zu widerstehen und das Rätsel um seinen jungen Begleiter zu entschlüsseln.",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 8 Folgen"
+    ],
+    [
+     "Von",
+     "Terry Matalas"
+    ],
+    [
+     "Mit",
+     "Paul Bettany, James Spader, Ruaridh Mollica, Todd Stashwick"
+    ],
+    [
+     "Sender/Dienst",
+     "Disney+"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.7 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=rcw2IBSlHwE",
+   "link": "https://www.themoviedb.org/tv/213375",
+   "bild": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+   "news": []
+  },
+  "tv-456": {
+   "titel": "Die Simpsons",
+   "original": "The Simpsons",
+   "leitsatz": null,
+   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
+   "genres": [
+    "Animation",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "38 Staffeln, 816 Folgen"
+    ],
+    [
+     "Von",
+     "Matt Groening"
+    ],
+    [
+     "Mit",
+     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
+    ],
+    [
+     "Sender/Dienst",
+     "FOX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
+   "link": "https://www.themoviedb.org/tv/456",
+   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "news": []
+  },
+  "tv-2734": {
+   "titel": "Law & Order: Special Victims Unit",
+   "original": "Law & Order: Special Victims Unit",
+   "leitsatz": null,
+   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Mystery"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "28 Staffeln, 602 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf"
+    ],
+    [
+     "Mit",
+     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/2734",
+   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "news": []
+  },
   "tv-1416": {
    "titel": "Grey's Anatomy",
    "original": "Grey's Anatomy",
@@ -4460,40 +3033,40 @@
    "bild": "https://image.tmdb.org/t/p/w500/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
    "news": []
   },
-  "tv-213375": {
-   "titel": "VisionQuest",
-   "original": "VisionQuest",
+  "tv-549": {
+   "titel": "Law & Order",
+   "original": "Law & Order",
    "leitsatz": null,
-   "handlung": "Nach Visions Flucht vor jenen, die ihn als Waffe missbrauchen wollten, führt er ein Leben im Verborgenen. Auf der Suche nach einer neuen Bestimmung zieht er auch die diversen KIs zu Rate, die innerhalb seiner Programmierung ein neues Zuhause gefunden haben. Unter ihnen befinden sich nicht nur Friday, Edith und Jarvis, sondern auch der berüchtigte Ultron. Doch Visions unauffällige Existenz findet ein abruptes Ende, als ein Kopfgeld auf ihn ausgesetzt wird. Auf der Flucht schließt er sich Thomas Shepherd an, einem geheimnisvollen Jungen, bei dem es sich um Visions wiedergeborenen Sohn handeln könnte. Dabei sieht sich Vision zunehmend gezwungen, sich seiner eigenen Natur zu stellen, Ultrons Einfluss zu widerstehen und das Rätsel um seinen jungen Begleiter zu entschlüsseln.",
+   "handlung": "Vertreter der Polizei und der Staatsanwaltschaft klären Kriminalverbrechen in und um New York auf. Mit allen zur Verfügung stehenden Mitteln versuchen die Ermittler dabei, den oder die Straftäter zur Verantwortung zu ziehen.",
    "genres": [
-    "Sci-Fi & Fantasy",
+    "Krimi",
     "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 8 Folgen"
+     "26 Staffeln, 549 Folgen"
     ],
     [
      "Von",
-     "Terry Matalas"
+     "Dick Wolf"
     ],
     [
      "Mit",
-     "Paul Bettany, James Spader, Ruaridh Mollica, Todd Stashwick"
+     "Maura Tierney, David Ajala, James Badge Dale, Tony Goldwyn"
     ],
     [
      "Sender/Dienst",
-     "Disney+"
+     "NBC"
     ],
     [
      "TMDB-Wertung",
-     "8.7 / 10"
+     "7.3 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=rcw2IBSlHwE",
-   "link": "https://www.themoviedb.org/tv/213375",
-   "bild": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+   "trailer": "https://www.youtube.com/watch?v=RzN8cPlcMTU",
+   "link": "https://www.themoviedb.org/tv/549",
+   "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
    "news": []
   },
   "tv-4614": {
@@ -4531,42 +3104,6 @@
    "trailer": "https://www.youtube.com/watch?v=BhtDgn31XZo",
    "link": "https://www.themoviedb.org/tv/4614",
    "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
-   "news": []
-  },
-  "tv-549": {
-   "titel": "Law & Order",
-   "original": "Law & Order",
-   "leitsatz": null,
-   "handlung": "Vertreter der Polizei und der Staatsanwaltschaft klären Kriminalverbrechen in und um New York auf. Mit allen zur Verfügung stehenden Mitteln versuchen die Ermittler dabei, den oder die Straftäter zur Verantwortung zu ziehen.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "26 Staffeln, 549 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf"
-    ],
-    [
-     "Mit",
-     "Maura Tierney, David Ajala, James Badge Dale, Tony Goldwyn"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=RzN8cPlcMTU",
-   "link": "https://www.themoviedb.org/tv/549",
-   "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
    "news": []
   },
   "tv-153312": {
@@ -4642,79 +3179,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
    "news": []
   },
-  "tv-2734": {
-   "titel": "Law & Order: Special Victims Unit",
-   "original": "Law & Order: Special Victims Unit",
-   "leitsatz": null,
-   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Mystery"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "28 Staffeln, 602 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf"
-    ],
-    [
-     "Mit",
-     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/2734",
-   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
-   "news": []
-  },
-  "tv-456": {
-   "titel": "Die Simpsons",
-   "original": "The Simpsons",
-   "leitsatz": null,
-   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
-   "genres": [
-    "Animation",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "38 Staffeln, 816 Folgen"
-    ],
-    [
-     "Von",
-     "Matt Groening"
-    ],
-    [
-     "Mit",
-     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
-    ],
-    [
-     "Sender/Dienst",
-     "FOX"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
-   "link": "https://www.themoviedb.org/tv/456",
-   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
-   "news": []
-  },
   "tv-44006": {
    "titel": "Chicago Fire",
    "original": "Chicago Fire",
@@ -4748,34 +3212,6 @@
    "trailer": "https://www.youtube.com/watch?v=IIeSDILTE5M",
    "link": "https://www.themoviedb.org/tv/44006",
    "bild": "https://image.tmdb.org/t/p/w500/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
-   "news": []
-  },
-  "tv-3034": {
-   "titel": "Tatort",
-   "original": "Tatort",
-   "leitsatz": null,
-   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
-   "genres": [
-    "Drama",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "57 Staffeln, 1347 Folgen"
-    ],
-    [
-     "Sender/Dienst",
-     "ORF 1, Das Erste"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
-   "link": "https://www.themoviedb.org/tv/3034",
-   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
    "news": []
   },
   "tv-1413": {
@@ -4813,6 +3249,67 @@
    "trailer": "https://www.youtube.com/watch?v=GYoTOIsn5yk",
    "link": "https://www.themoviedb.org/tv/1413",
    "bild": "https://image.tmdb.org/t/p/w500/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
+   "news": []
+  },
+  "tv-3034": {
+   "titel": "Tatort",
+   "original": "Tatort",
+   "leitsatz": null,
+   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
+   "genres": [
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "57 Staffeln, 1347 Folgen"
+    ],
+    [
+     "Sender/Dienst",
+     "ORF 1, Das Erste"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
+   "link": "https://www.themoviedb.org/tv/3034",
+   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+   "news": []
+  },
+  "tv-30984": {
+   "titel": "Bleach",
+   "original": "BLEACH",
+   "leitsatz": "Bankai!",
+   "handlung": "Der 15-jährige Schüler Ichigo Kurosaki kann seit seiner Kindheit Geister sehen. Doch damit nicht genug: Als er die Shinigami Rukia trifft, wird sein Leben noch einmal gehörig auf den Kopf gestellt. Während eines Kampfes in der Menschenwelt ist Rukia gezwungen, ihre Kräfte auf Ichigo zu übertragen, um ihrer beider Leben zu retten. Dank der neu gewonnenen spirituellen Kräfte entdeckt Ichigo seine wahre Berufung: die Lebenden wie die Toten um alles in der Welt vor dem Bösen zu beschützen.",
+   "genres": [
+    "Action & Adventure",
+    "Animation",
+    "Sci-Fi & Fantasy"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "2 Staffeln, 416 Folgen"
+    ],
+    [
+     "Mit",
+     "Masakazu Morita, Fumiko Orikasa, Hiroki Yasumoto, Yuki Matsuoka"
+    ],
+    [
+     "Sender/Dienst",
+     "TV Tokyo, TV Aichi"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=0c4IoCA5fY0",
+   "link": "https://www.themoviedb.org/tv/30984",
+   "bild": "https://image.tmdb.org/t/p/w500/e0kKmeM8R7Kersh5N2PPzIRNRhr.jpg",
    "news": []
   },
   "tv-2190": {
@@ -4873,42 +3370,6 @@
     }
    ]
   },
-  "tv-58841": {
-   "titel": "Chicago P.D.",
-   "original": "Chicago P.D.",
-   "leitsatz": null,
-   "handlung": "Der District 21 des Chicago Police Departments besteht aus zwei unterschiedlichen Abteilungen: Einmal gibt es die Uniformed Cops, die ihren Einsatz auf den Straßen der Stadt haben und sich um Kleinkriminelle kümmern. Die Intelligence Unit hingegen bekämpft Straftaten im großen Stil, sei es Drogenschmuggel oder Morde aller Art.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "14 Staffeln, 270 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Jason Beghe, Marina Squerciati, Patrick John Flueger, Benjamin Levy Aguilar"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=NZcr9IFS9R0",
-   "link": "https://www.themoviedb.org/tv/58841",
-   "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
-   "news": []
-  },
   "tv-80748": {
    "titel": "FBI",
    "original": "FBI",
@@ -4946,39 +3407,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
    "news": []
   },
-  "tv-30984": {
-   "titel": "Bleach",
-   "original": "BLEACH",
-   "leitsatz": "Bankai!",
-   "handlung": "Der 15-jährige Schüler Ichigo Kurosaki kann seit seiner Kindheit Geister sehen. Doch damit nicht genug: Als er die Shinigami Rukia trifft, wird sein Leben noch einmal gehörig auf den Kopf gestellt. Während eines Kampfes in der Menschenwelt ist Rukia gezwungen, ihre Kräfte auf Ichigo zu übertragen, um ihrer beider Leben zu retten. Dank der neu gewonnenen spirituellen Kräfte entdeckt Ichigo seine wahre Berufung: die Lebenden wie die Toten um alles in der Welt vor dem Bösen zu beschützen.",
-   "genres": [
-    "Action & Adventure",
-    "Animation",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "2 Staffeln, 416 Folgen"
-    ],
-    [
-     "Mit",
-     "Masakazu Morita, Fumiko Orikasa, Hiroki Yasumoto, Yuki Matsuoka"
-    ],
-    [
-     "Sender/Dienst",
-     "TV Tokyo, TV Aichi"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=0c4IoCA5fY0",
-   "link": "https://www.themoviedb.org/tv/30984",
-   "bild": "https://image.tmdb.org/t/p/w500/e0kKmeM8R7Kersh5N2PPzIRNRhr.jpg",
-   "news": []
-  },
   "tv-312359": {
    "titel": "Dragon Ball Super: Beerus",
    "original": "ドラゴンボール超 ビルス",
@@ -5010,6 +3438,1586 @@
    "trailer": "https://www.youtube.com/watch?v=iCD3Lf7Jf9o",
    "link": "https://www.themoviedb.org/tv/312359",
    "bild": "https://image.tmdb.org/t/p/w500/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
+   "news": []
+  },
+  "movie-1514026": {
+   "titel": "Buddy",
+   "original": "Buddy",
+   "leitsatz": null,
+   "handlung": "Alle lieben Buddy. Oder müssen es zumindest, denn wenn das orange Einhorn wütend wird, verwandelt sich seine quietschbunte Kindersendung schnell in blutiges Chaos. In der künstlich perfekten Studiowelt im Stil der 80er und 90er leben Kinder neben sprechenden Gegenständen, singen, tanzen und lernen Lektionen über Freundschaft und Zusammenhalt. Doch als Josh keine Lust auf Buddys Geburtstagsparty hat, bekommt die fröhliche Fassade schnell Risse und Josh einen tödlichen Axthieb verpasst. Folge für Folge eskaliert die Lage, denn gegen Buddys Zorn gibt es keine pädagogisch wertvolle Lösung",
+   "genres": [
+    "Horror",
+    "Komödie",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 35 Min"
+    ],
+    [
+     "Regie",
+     "Casper Kelly"
+    ],
+    [
+     "Mit",
+     "Delaney Quinn, Caleb Williams, Bennie Taylor, Eric Bauza"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=pHPx4LzCna0",
+   "link": "https://www.themoviedb.org/movie/1514026",
+   "bild": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
+   "news": []
+  },
+  "movie-791523": {
+   "titel": "Wildwood",
+   "original": "Wildwood",
+   "leitsatz": null,
+   "handlung": "Nachdem ihr kleiner Bruder von einem Schwarm Krähen entführt worden ist, begibt sich die 12-jährige Prue auf eine abenteuerliche Rettungsmission in die „Undurchdringliche Wildnis“ – einen verzauberten Wald, der sich am Rande von Portland, Oregon, verbirgt. Gemeinsam mit ihrem tollpatschigen Mitschüler Curtis betritt sie eine Welt voller sprechender Tiere, Magie und uralter Mächte. Als die beiden in einen Konflikt geraten, der das Gleichgewicht des Waldes bedroht, entdeckt Prue eine innere Stärke, von der sie niemals geahnt hätte, dass sie in ihr steckt. Wenn sie ihren Bruder retten und das Schicksal von Wildwood verändern will, muss sie alles aufs Spiel setzen.",
+   "genres": [
+    "Animation",
+    "Abenteuer",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 19 Min"
+    ],
+    [
+     "Regie",
+     "Travis Knight"
+    ],
+    [
+     "Mit",
+     "Peyton Elizabeth Lee, Carey Mulligan, Jacob Tremblay, Mahershala Ali"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=4QlEVeMP4WE",
+   "link": "https://www.themoviedb.org/movie/791523",
+   "bild": "https://image.tmdb.org/t/p/w500/oYkGlrvG7QNqrLtss4Q3Bpr1Np6.jpg",
+   "news": []
+  },
+  "movie-1765072": {
+   "titel": "You Can See Everything",
+   "original": "You Can See Everything",
+   "leitsatz": null,
+   "handlung": "34 Tage vor ihrer Inhaftierung lädt die berüchtigte Theranos-Gründerin Elizabeth Holmes ein skeptisches Filmteam ein, jeden ihrer Schritte zu dokumentieren. Was als intimes Porträt beginnt, entwickelt sich zu einer nervenaufreibenden dreijährigen Reise.",
+   "genres": [
+    "Dokumentarfilm"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 54 Min"
+    ],
+    [
+     "Regie",
+     "Nathan Fielder, Lance Oppenheim"
+    ],
+    [
+     "Mit",
+     "Elizabeth Holmes, Nathan Fielder, Billy Evans, Amanda Seyfried"
+    ],
+    [
+     "TMDB-Wertung",
+     "9.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=IEx8D1Wb__U",
+   "link": "https://www.themoviedb.org/movie/1765072",
+   "bild": "https://image.tmdb.org/t/p/w500/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
+   "news": [
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Jimmy Fallon and Jamie Lee Curtis Transform Into Nathan Fielder and Elizabeth Holmes to Spoof ‘You Can See Everything’",
+     "link": "https://variety.com/2026/tv/news/jimmy-fallon-jamie-lee-curtis-you-can-see-everything-1236933837/",
+     "datum": "2026-10-29T04:21:47.000Z"
+    },
+    {
+     "quelle": "Spiegel Kultur",
+     "art": "film",
+     "titel": "Elizabeth Holmes: Kinodoku »You Can See Everything« über Hochstaplerin bricht Rekorde",
+     "link": "https://www.spiegel.de/kultur/kino/elizabeth-holmes-kinodoku-you-can-see-everything-ueber-hochstaplerin-bricht-rekorde-a-ebc50a17-cad0-4291-b1de-788e06da455b#ref=rss",
+     "datum": "2026-10-19T13:50:00.000Z"
+    }
+   ]
+  },
+  "movie-1003596": {
+   "titel": "Avengers: Doomsday",
+   "original": "Avengers: Doomsday",
+   "leitsatz": null,
+   "handlung": "Geliebte Helden aus drei unterschiedlichen Universen befinden sich auf einem tödlichen Kollisionskurs und sehen sich einer existenziellen Bedrohung gegenüber, wie sie sie noch nie zuvor erlebt haben.",
+   "genres": [
+    "Science Fiction",
+    "Action",
+    "Abenteuer"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 45 Min"
+    ],
+    [
+     "Regie",
+     "Joe Russo, Anthony Russo"
+    ],
+    [
+     "Mit",
+     "Robert Downey Jr., Chris Evans, Chris Hemsworth, Pedro Pascal"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=JznHmU4yrV4",
+   "link": "https://www.themoviedb.org/movie/1003596",
+   "bild": "https://image.tmdb.org/t/p/w500/sLYCyO58UvBuBtbHTQjPCCgJ4dG.jpg",
+   "news": []
+  },
+  "movie-1400837": {
+   "titel": "Other Mommy",
+   "original": "Other Mommy",
+   "leitsatz": "Deine Mami wird dich nicht retten.",
+   "handlung": "Ein junges Mädchen, Bela, bildet eine Beziehung mit einer unheimlichen Entität in ihrem Haus, die unheimlich aussieht wie ihre eigene Mutter.",
+   "genres": [
+    "Horror"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 33 Min"
+    ],
+    [
+     "Regie",
+     "Rob Savage"
+    ],
+    [
+     "Mit",
+     "Jessica Chastain, Jay Duplass, Arabella Olivia Clark, Karen Allen"
+    ],
+    [
+     "TMDB-Wertung",
+     "5.8 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=fR5Ub975f4k",
+   "link": "https://www.themoviedb.org/movie/1400837",
+   "bild": "https://image.tmdb.org/t/p/w500/dDRtLmxorXpXHxTJqxNlMT9rJP9.jpg",
+   "news": []
+  },
+  "movie-1195803": {
+   "titel": "Wicker",
+   "original": "Wicker",
+   "leitsatz": null,
+   "handlung": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
+   "genres": [
+    "Liebesfilm",
+    "Fantasy",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 45 Min"
+    ],
+    [
+     "Regie",
+     "Eleanor Wilson, Alex Huston Fischer"
+    ],
+    [
+     "Mit",
+     "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=kA9NfV4pM_Q",
+   "link": "https://www.themoviedb.org/movie/1195803",
+   "bild": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1433583": {
+   "titel": "The Weight – Im Goldrausch",
+   "original": "The Weight",
+   "leitsatz": null,
+   "handlung": "Oregon 1933: Nach dem Tod seiner Frau wird Samuel Murphy (Ethan Hawke) von seiner Tochter getrennt und landet in einem Arbeitslager. Um das Sorgerecht zurückzuerlangen, lässt Murphy sich auf einen riskanten Deal mit dem skrupellosen Lageraufseher Clancy (Russell Crowe) ein: Man stellt ihm eine vorzeitige Entlassung in Aussicht, wenn er sich im Gegenzug einer Gruppe Schmuggler bei einem Goldtransport durch die unbarmherzige Wildnis anschließt. Doch abgesehen von den Gefahren, die auf dem unwegsamen Terrain lauern, wird das Unterfangen auch durch Misstrauen und Verrat in den eigenen Reihen sabotiert. Je näher die Gruppe ihrem Ziel kommt, desto mehr zweifelt Murphy an dem Preis, den er für seine Freiheit und das Wiedersehen mit seinem Kind zahlen muss.",
+   "genres": [
+    "Drama",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 55 Min"
+    ],
+    [
+     "Regie",
+     "Padraic McKinley"
+    ],
+    [
+     "Mit",
+     "Ethan Hawke, Russell Crowe, Julia Jones, Austin Amelio"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.7 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=IexQvEpqwrE",
+   "link": "https://www.themoviedb.org/movie/1433583",
+   "bild": "https://image.tmdb.org/t/p/w500/ha3AUl0Zc0xs2hWxCROHTkDId25.jpg",
+   "news": []
+  },
+  "movie-1422041": {
+   "titel": "La bola negra",
+   "original": "La bola negra",
+   "leitsatz": null,
+   "handlung": "Drei Leben, drei miteinander verwobene Schicksale, ein gemeinsames Erbe: Die Jahre 1932, 1937 und 2017 umspannend, erzählt LA BOLA NEGRA eine Geschichte von Begehren, Schmerz und der Sehnsucht von Sebastián, Rafael und Alberto, deren Lebenswege untrennbar miteinander verbunden sind. Inspiriert von einem der letzten, unvollendeten Werke Federico García Lorcas, spannt der Film einen Bogen von der Vorkriegszeit Spaniens bis in die Gegenwart.",
+   "genres": [
+    "Drama",
+    "Kriegsfilm"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 39 Min"
+    ],
+    [
+     "Regie",
+     "Javier Ambrossi, Javier Calvo"
+    ],
+    [
+     "Mit",
+     "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.1 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=wCktgAye3NA",
+   "link": "https://www.themoviedb.org/movie/1422041",
+   "bild": "https://image.tmdb.org/t/p/w500/t1azKLExwUxKj6v6m2L535evuRa.jpg",
+   "news": []
+  },
+  "movie-858035": {
+   "titel": "Klara und die Sonne",
+   "original": "Klara and the Sun",
+   "leitsatz": "Die Zukunft der Freundschaft",
+   "handlung": "Als Klara, eine Künstliche Freundin, die sich nichts sehnlicher wünscht, als das perfekte Zuhause zu finden, auf Josie trifft, spürt jede sofort eine verwandte Seele in der anderen. Josie hat ein angespanntes Verhältnis zu ihrer Mutter, und sie haben einen großen Verlust erlitten, doch Klaras unschuldiges Staunen und ihre unerschütterliche Treue beginnen, die Familie zu heilen und Licht in Josies komplizierte Welt zu bringen.",
+   "genres": [
+    "Science Fiction",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 56 Min"
+    ],
+    [
+     "Regie",
+     "Taika Waititi"
+    ],
+    [
+     "Mit",
+     "Jenna Ortega, Mia Tharia, Amy Adams, Natasha Lyonne"
+    ],
+    [
+     "TMDB-Wertung",
+     "5.8 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=G5OySWKovzk",
+   "link": "https://www.themoviedb.org/movie/858035",
+   "bild": "https://image.tmdb.org/t/p/w500/xqovj2p6HRsgHxN81qYAYF4StgM.jpg",
+   "news": []
+  },
+  "movie-1170608": {
+   "titel": "Dune: Part Three",
+   "original": "Dune: Part Three",
+   "leitsatz": "Vergib mir, alles was ich getan habe.",
+   "handlung": "Fast zwei Jahrzehnte, nachdem Paul Atreides als skrupelloser Imperator die Macht über das Universum übernommen hat, sieht er sich nun mit den Folgen seiner Herrschaft konfrontiert: Alte Verbündete kehren zurück, schreckliche neue Bedrohungen erheben sich – und in jedem Schatten lauert Verrat. Geplagt von Visionen vom Untergang des Imperiums und von der Rückkehr seiner längst verlorenen Liebe gerät Paul immer tiefer in eine weitreichende Verschwörung, in der Chani eine entscheidende Rolle zu spielen scheint. Während sich eine Rebellion anbahnt und die Feinde immer näher rücken, muss sich Paul mit dem wahren Preis der Macht und dem Schicksal derer auseinandersetzen, die er am meisten liebt.",
+   "genres": [
+    "Science Fiction",
+    "Abenteuer"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 30 Min"
+    ],
+    [
+     "Regie",
+     "Denis Villeneuve"
+    ],
+    [
+     "Mit",
+     "Timothée Chalamet, Zendaya, Jason Momoa, Florence Pugh"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=TIKkCdEuk-Y",
+   "link": "https://www.themoviedb.org/movie/1170608",
+   "bild": "https://image.tmdb.org/t/p/w500/7JcLIa7aK0UOahsevVwW9bGRgiE.jpg",
+   "news": [
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "The Ultimate ‘Dune: Part Three’ Companion Officially Lands on HBO Max",
+     "link": "https://collider.com/jodorowskys-dune-documentary-streaming-hbo-max-november-2026/",
+     "datum": "2026-10-29T10:01:13.000Z"
+    }
+   ]
+  },
+  "movie-1244523": {
+   "titel": "Beware Boiúna",
+   "original": "Beware Boiúna",
+   "leitsatz": "Erlebe Horror in gigantischem Ausmaß.",
+   "handlung": "Tief im Amazonasgebiet verwandelt sich eine medizinische Mission in einen Kampf ums Überleben, als Boiúna, ein riesiges urzeitliches Raubtier, erwacht, um ihr Revier zurückzuerobern. Im Dschungel, wo die Natur die absolute Macht hat, entscheidet sie, wer lebt und wer stirbt.",
+   "genres": [
+    "Horror",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 44 Min"
+    ],
+    [
+     "Regie",
+     "Mike P. Nelson"
+    ],
+    [
+     "Mit",
+     "Logan Marshall-Green, Kiana Madeira, Jessica Rothe, Jackson Bews"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=X-IDVQpUHGA",
+   "link": "https://www.themoviedb.org/movie/1244523",
+   "bild": "https://image.tmdb.org/t/p/w500/uW5YMPxJUzT9bkafrCKHXjPTCoQ.jpg",
+   "news": []
+  },
+  "movie-1084409": {
+   "titel": "Ein Talent fürs Morden",
+   "original": "A Talent for Murder",
+   "leitsatz": null,
+   "handlung": "Patricia Highsmiths letzter Lebensabschnitt in der Einsamkeit in den Schweizer Alpen wird von Edward unterbrochen, einem jungen Literaturagenten, der vom unermüdlichen Verlag der Autorin geschickt wurde, um sie davon zu überzeugen, einen letzten Roman in ihrer äußerst beliebten Ripley-Reihe zu schreiben. Highsmith nutzt ihre berühmt-makabre Fantasie, um Edward abzuschrecken, doch bevor sie es merken, kommt es zu einer Zusammenarbeit, die dazu führt, dass die Welt, die sie erschaffen haben, nicht mehr von ihrer eigenen zu unterscheiden ist.",
+   "genres": [
+    "Drama",
+    "Krimi",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 46 Min"
+    ],
+    [
+     "Regie",
+     "Anton Corbijn"
+    ],
+    [
+     "Mit",
+     "Helen Mirren, Alden Ehrenreich, Olivia Cooke, Juliet Stevenson"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=bWlJKGSufZU",
+   "link": "https://www.themoviedb.org/movie/1084409",
+   "bild": "https://image.tmdb.org/t/p/w500/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
+   "news": []
+  },
+  "movie-1380417": {
+   "titel": "By Any Means",
+   "original": "By Any Means",
+   "leitsatz": "Das FBI scheiterte. Also holten sie die Mafia.",
+   "handlung": "Mississippi, 1966: Als eine brutale Mordserie an Bürgerrechtlern das FBI an seine Grenzen bringt, wird der junge Agent Strider (Yahya Abdul-Mateen II) auf den Fall angesetzt. Doch vor Ort stößt er nur auf eine Wand des Schweigens – gedeckt von Korruption und offenem Rassismus. Da die Ermittlungen über die offiziellen Wege nicht vorankommen, wird Strider schließlich ein ungewöhnlicher Partner zur Seite gestellt: der berüchtigte Mafia-Killer Greg Scarpa (Mark Wahlberg), der seine ganz eigenen Methoden hat, um für Gerechtigkeit zu sorgen.",
+   "genres": [
+    "Thriller",
+    "Historie",
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 47 Min"
+    ],
+    [
+     "Regie",
+     "Elegance Bratton"
+    ],
+    [
+     "Mit",
+     "Yahya Abdul-Mateen II, Mark Wahlberg, Nicole Beharie, Josh Lucas"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.5 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=CXCqbVtuCRY",
+   "link": "https://www.themoviedb.org/movie/1380417",
+   "bild": "https://image.tmdb.org/t/p/w500/aO4O1dqRoXVTschAwLaw1njdTwv.jpg",
+   "news": []
+  },
+  "movie-1401459": {
+   "titel": "Fjord",
+   "original": "Fjord",
+   "leitsatz": null,
+   "handlung": "After moving from Romania to a remote Norwegian village to rebuild their lives, a family finds hope in their welcoming neighbors, but their fragile new beginning is threatened when their young daughter arrives at school covered in bruises.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 26 Min"
+    ],
+    [
+     "Regie",
+     "Cristian Mungiu"
+    ],
+    [
+     "Mit",
+     "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=frg59VOungA",
+   "link": "https://www.themoviedb.org/movie/1401459",
+   "bild": "https://image.tmdb.org/t/p/w500/qiYm44CQBFOZ0Vs8BtmH2swYLz2.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1458099": {
+   "titel": "The Only Living Pickpocket in New York",
+   "original": "The Only Living Pickpocket in New York",
+   "leitsatz": null,
+   "handlung": "Harry Lehman is an aging pickpocket who plies his trade with ever-diminishing returns in a drastically changed New York. Wallets stuffed with cash have been replaced by easily cancelled credit cards, and Harry struggles to make ends meet as he cares for his disabled wife, Rosie. When he unwittingly purloins and fences a valuable USB stick, Harry finds himself in a race against time to return the loot or face the rage of a vengeful crime family.",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 28 Min"
+    ],
+    [
+     "Regie",
+     "Noah Segan"
+    ],
+    [
+     "Mit",
+     "John Turturro, Giancarlo Esposito, Will Price, Tatiana Maslany"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=iXA7BmrBBxs",
+   "link": "https://www.themoviedb.org/movie/1458099",
+   "bild": "https://image.tmdb.org/t/p/w500/pNdB9va2AEPQe9UfhKAdIt8nus9.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1554956": {
+   "titel": "Der Festländer",
+   "original": "The Incomer",
+   "leitsatz": null,
+   "handlung": "On an Orkney isle, siblings Isla and Sandy survive by hunting seabirds, retelling the stories of their ancestors, and defending the isle from dreaded \"Incomers\". Their world is upended with the arrival of an awkward council worker who has come to uproot them from their homeland.",
+   "genres": [
+    "Komödie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 42 Min"
+    ],
+    [
+     "Regie",
+     "Louis Paxton"
+    ],
+    [
+     "Mit",
+     "Domhnall Gleeson, Gayle Rankin, Grant O'Rourke, Emun Elliott"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.1 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=TNH4i8lrDFo",
+   "link": "https://www.themoviedb.org/movie/1554956",
+   "bild": "https://image.tmdb.org/t/p/w500/nGnI5tT7qstkld94S8m4c68noZt.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1365378": {
+   "titel": "Große Träume",
+   "original": "Le rêve américain",
+   "leitsatz": "Wer nichts zu verlieren hat, kann alles gewinnen.",
+   "handlung": "Als sich Jeremy und Bouna das erste Mal auf dem Spielfeld begegnen, teilen sie nicht nur die Leidenschaft für Basketball, sondern auch die Gewissheit, nie Profispieler werden zu können. Das hält die beiden sympathischen Underdogs aber nicht davon ab, groß ins Business einzusteigen. Schließlich kennen sie jeden Basketballcourt und die vielversprechendsten Spieler. Kurzerhand gründen die beiden eine Agentur, verpflichten erste Talente und wollen diese in die berühmteste Liga der Welt bringen: die nordamerikanische NBA.  In GROSSE TRÄUME nehmen es zwei unerschütterliche Optimisten mit einer Welt auf, in der niemand auf sie gewartet hat. Ohne Beziehungen, ohne Geld, aber mit einer unverschämten Portion Selbstvertrauen kämpfen sie sich allen Widerständen zum Trotz bis in die nordamerikanische NBA. Eine ebenso turbulente wie warmherzige Underdog-Komödie nach einer wahren Geschichte, die zeigt, dass große Träume keine Frage der Herkunft sind – sondern des Mutes, niemals aufzugeben.",
+   "genres": [
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 2 Min"
+    ],
+    [
+     "Regie",
+     "Anthony Marciano"
+    ],
+    [
+     "Mit",
+     "Jean-Pascal Zadi, Raphaël Quenard, Gregory Defleur, David Clark"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.4 / 10"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/1365378",
+   "bild": "https://image.tmdb.org/t/p/w500/yObiUK0WVhx0hwTIJhocdJTmhFc.jpg",
+   "news": []
+  },
+  "movie-1538497": {
+   "titel": "Wie verhext",
+   "original": "Hexed",
+   "leitsatz": null,
+   "handlung": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
+   "genres": [
+    "Abenteuer",
+    "Animation",
+    "Familie",
+    "Fantasy",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 43 Min"
+    ],
+    [
+     "Regie",
+     "Jason Hand, ฝน วีระสุนทร"
+    ],
+    [
+     "Mit",
+     "Hailee Steinfeld, Rashida Jones, Jodie Foster, Walton Goggins"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=6YYMqS8_Bp0",
+   "link": "https://www.themoviedb.org/movie/1538497",
+   "bild": "https://image.tmdb.org/t/p/w500/lMYJ4ogEBiB6pTxi5sm73kBsxiE.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-656908": {
+   "titel": "Ramayana: Rise of a Legend",
+   "original": "रामायणम",
+   "leitsatz": null,
+   "handlung": "In einem Zeitalter der Götter und Könige hängt das Schicksal der Welten am seidenen Faden. Rama, ein Prinz, dessen Leben von Pflicht, Selbstlosigkeit und unerschütterlicher Rechtschaffenheit bestimmt wird, muss sich dem unsterblichen Ravana stellen, getrieben von Stolz und Rache und mächtig genug den Kosmos zu zerstören.",
+   "genres": [
+    "Fantasy",
+    "Action",
+    "Abenteuer"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "3 Std 15 Min"
+    ],
+    [
+     "Regie",
+     "Nitesh Tiwari"
+    ],
+    [
+     "Mit",
+     "Ranbir Kapoor, Yash, Sai Pallavi, Ravi Dubey"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=jxYY7gMelFM",
+   "link": "https://www.themoviedb.org/movie/656908",
+   "bild": "https://image.tmdb.org/t/p/w500/gOWnXaBxqT6k2y40hKfYU6c0Ym.jpg",
+   "news": []
+  },
+  "movie-1300968": {
+   "titel": "Die Tribute von Panem: Sunrise on the Reaping",
+   "original": "The Hunger Games: Sunrise on the Reaping",
+   "leitsatz": "Willkommen zu den 50. Hungerspielen",
+   "handlung": "Kehren Sie in die Welt von Panem zurück – 24 Jahre vor den Ereignissen von „Die Tribute von Panem“ –, beginnend am Morgen der Ernte für die 50. Hungerspiele, auch bekannt als das zweite Jubel-Jubiläum.",
+   "genres": [
+    "Science Fiction",
+    "Action",
+    "Abenteuer"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 38 Min"
+    ],
+    [
+     "Regie",
+     "Francis Lawrence"
+    ],
+    [
+     "Mit",
+     "Joseph Zada, Ralph Fiennes, Jesse Plemons, Whitney Peak"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=3xfVyH0iwlc",
+   "link": "https://www.themoviedb.org/movie/1300968",
+   "bild": "https://image.tmdb.org/t/p/w500/eyxBOW9HSTbhT7s5V17SJKVegvC.jpg",
+   "news": [
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘The Hunger Games: Sunrise on the Reaping’ First Reactions",
+     "link": "https://www.hollywoodreporter.com/movies/movie-news/hunger-games-sunrise-on-the-reaping-first-reactions-1236742404/",
+     "datum": "2026-10-29T07:05:19.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "‘The Hunger Games: Sunrise on the Reaping’ First Reactions Call Prequel the ‘Rogue One’ of the Franchise and Praise Joseph Zada as Haymitch",
+     "link": "https://variety.com/2026/film/news/hunger-games-sunrise-on-the-reaping-first-reactions-1236933573/",
+     "datum": "2026-10-29T00:20:57.000Z"
+    }
+   ]
+  },
+  "movie-1381071": {
+   "titel": "Godzilla Minus Zero",
+   "original": "ゴジラ-0.0",
+   "leitsatz": null,
+   "handlung": "Der Krieg hat Japan auf Null reduziert, und Godzilla hat es ins Minus gestürzt. Zwei Jahre sind seitdem vergangen und das Land kämpft immer noch immer verzweifelt darum, sich wieder zu erholen und endlich in den normalen Alltag zurückzufinden. Gerade als es der Menschheit gelang, an einem hart erkämpften Frieden festzuhalten, schlägt eine neue Bedrohung zu und vernichtet die Hoffnung im Handumdrehen. Ein drittes Mal wird es nicht geben. Hier endet alles.",
+   "genres": [
+    "Science Fiction",
+    "Horror",
+    "Action"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 15 Min"
+    ],
+    [
+     "Regie",
+     "Takashi Yamazaki"
+    ],
+    [
+     "Mit",
+     "Ryunosuke Kamiki, Minami Hamabe, 山田裕貴, Kuranosuke Sasaki"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=x666Mat4ruI",
+   "link": "https://www.themoviedb.org/movie/1381071",
+   "bild": "https://image.tmdb.org/t/p/w500/hZviv9gguqHGw4GK8gS5d5bDhA4.jpg",
+   "news": []
+  },
+  "movie-891621": {
+   "titel": "Wild Horse Nine",
+   "original": "Wild Horse Nine",
+   "leitsatz": null,
+   "handlung": "Kurz vor dem Militär-Putsch in Chile im Jahr 1973 werden die CIA-Agenten Chris und Lee von ihrem Büroleiter MJ von Santiago auf die Osterinsel entsandt. Vor dem Hintergrund der ikonischen Skulpturen der Insel ringen die langjährigen Partner mit ihrer dunklen Vergangenheit und aktuellen Verschwörungen. Dabei droht Chris’ neu gefundene Freundschaft mit zwei rebellischen Studentinnen die Reise aller in dieses abgelegene Paradies völlig aus dem Ruder laufen zu lassen.",
+   "genres": [
+    "Komödie",
+    "Krimi",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 57 Min"
+    ],
+    [
+     "Regie",
+     "Martin McDonagh"
+    ],
+    [
+     "Mit",
+     "John Malkovich, Sam Rockwell, Steve Buscemi, Mariana di Girolamo"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=7JEuh1n-WpI",
+   "link": "https://www.themoviedb.org/movie/891621",
+   "bild": "https://image.tmdb.org/t/p/w500/aYv3GH3mloWHMBetmrd8aRHX7QF.jpg",
+   "news": []
+  },
+  "movie-1567605": {
+   "titel": "Ebenezer – Eine Weihnachtsgeschichte",
+   "original": "Ebenezer",
+   "leitsatz": null,
+   "handlung": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
+   "genres": [
+    "Fantasy",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 55 Min"
+    ],
+    [
+     "Regie",
+     "Ti West"
+    ],
+    [
+     "Mit",
+     "Johnny Depp, Rupert Grint, Daisy Ridley, Andrea Riseborough"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=o3aFQJgjEfw",
+   "link": "https://www.themoviedb.org/movie/1567605",
+   "bild": "https://image.tmdb.org/t/p/w500/3VArJnDlvOnAIjzngIwjHU7CVVD.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1430077": {
+   "titel": "Hokum",
+   "original": "Hokum",
+   "leitsatz": null,
+   "handlung": "Jahrhundertelang hat eine Hexe die Menschen im irischen County Cork terrorisiert, hat ihre Opfer in Ketten gelegt und durch die Unterwelt gezerrt, wo sie von verlorenen Seelen verschlungen wurden. Aber jetzt ist das grausame Wesen endlich gefangen, erzählt man Ohm (Adam Scott): und zwar in der Hochzeitssuite des kleinen Hotels, in dem sich der amerikanische Autor nichts ahnend einquartiert hat. Herablassend tut er die Legenden und Warnungen als Humbug ab. Bis sich ihm eines Nachts die Tür zur verbotenen Suite öffnet.",
+   "genres": [
+    "Horror",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 47 Min"
+    ],
+    [
+     "Regie",
+     "Damian McCarthy"
+    ],
+    [
+     "Mit",
+     "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.8 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=I1dx_clHJ-Q",
+   "link": "https://www.themoviedb.org/movie/1430077",
+   "bild": "https://image.tmdb.org/t/p/w500/x6rHcQFiYcczLQPrmxXPAicm54E.jpg",
+   "news": []
+  },
+  "movie-1117898": {
+   "titel": "Der Kater mit Hut",
+   "original": "The Cat in the Hat",
+   "leitsatz": "Die Dingse geraten außer Kontrolle.",
+   "handlung": "The Cat übernimmt seinen bisher härtesten Auftrag... er soll ein Geschwisterpaar aufmuntern, das mit dem Umzug in eine neue Stadt zu kämpfen hat.",
+   "genres": [
+    "Animation",
+    "Komödie",
+    "Abenteuer",
+    "Fantasy",
+    "Familie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 48 Min"
+    ],
+    [
+     "Regie",
+     "Erica Rivinoja, Alessandro Carloni"
+    ],
+    [
+     "Mit",
+     "Bill Hader, Xochitl Gomez, Tiago Martinez, Matt Berry"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=XBQXIBsLQsY",
+   "link": "https://www.themoviedb.org/movie/1117898",
+   "bild": "https://image.tmdb.org/t/p/w500/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
+   "news": []
+  },
+  "movie-1165366": {
+   "titel": "De Gaulle - Zeit des Widerstands",
+   "original": "La Bataille de Gaulle : L’Âge de fer",
+   "leitsatz": null,
+   "handlung": "Juni 1940. Frankreich bricht zusammen und unterzeichnet den Waffenstillstand. Inmitten des Chaos weigert sich ein Mann, aufzugeben. Ganz auf sich allein gestellt, flieht dieser bis dahin unbekannte General nach London, um zu retten, was von der Freiheit geblieben ist.",
+   "genres": [
+    "Historie",
+    "Drama",
+    "Kriegsfilm"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 40 Min"
+    ],
+    [
+     "Regie",
+     "Antonin Baudry"
+    ],
+    [
+     "Mit",
+     "Simon Abkarian, Simon Russell Beale, Florian Lesieur, Benoît Magimel"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.8 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=dKUArYoZ_0U",
+   "link": "https://www.themoviedb.org/movie/1165366",
+   "bild": "https://image.tmdb.org/t/p/w500/zWuZWFKyga6GF3agrhJn8UtdMSu.jpg",
+   "news": []
+  },
+  "movie-1260649": {
+   "titel": "Jumanji: Open World",
+   "original": "Jumanji: Open World",
+   "leitsatz": null,
+   "handlung": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us - as Jumanji breaks free of its console, unleashing its chaos into our world.",
+   "genres": [
+    "Abenteuer",
+    "Komödie",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Jake Kasdan"
+    ],
+    [
+     "Mit",
+     "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=1y9vp9GLoYU",
+   "link": "https://www.themoviedb.org/movie/1260649",
+   "bild": "https://image.tmdb.org/t/p/w500/qGFuvcXqQdXS5ZNblDlVTOmK6mq.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Neuer Trailer zum Trilogie-Finale: „Jumanji: Open World“ startet an Weihnachten im Kino",
+     "link": "https://www.serienjunkies.de/news/serien/jumanji-open-world-trailer-und-starttermin-im-kino-94562683.html",
+     "datum": "2026-10-28T13:52:04.000Z"
+    }
+   ],
+   "sprache": "en"
+  },
+  "movie-1300926": {
+   "titel": "Angry Birds 3 - Der Film",
+   "original": "The Angry Birds Movie 3",
+   "leitsatz": null,
+   "handlung": "Red faces his greatest challenge yet - surviving fatherhood - while saving the world.",
+   "genres": [
+    "Animation",
+    "Komödie",
+    "Familie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 36 Min"
+    ],
+    [
+     "Regie",
+     "John Rice"
+    ],
+    [
+     "Mit",
+     "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=eTAeGROy--Y",
+   "link": "https://www.themoviedb.org/movie/1300926",
+   "bild": "https://image.tmdb.org/t/p/w500/oxaW6X3xohnzdFSBKCrCjRDckMe.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1391239": {
+   "titel": "Das Debüt - Ihr großer Auftritt",
+   "original": "The Debut",
+   "leitsatz": null,
+   "handlung": "When Mona Friedman is cast in a bit part at a small community theater, she transforms from a shy, unassuming housewife into a zealous method actor willing to do anything to protect the artistic integrity of her marginal role—even if it means waging war against the show’s domineering director.",
+   "genres": [
+    "Musik",
+    "Komödie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 45 Min"
+    ],
+    [
+     "Regie",
+     "Jesse Eisenberg"
+    ],
+    [
+     "Mit",
+     "Julianne Moore, Paul Giamatti, Halle Bailey, Jesse Eisenberg"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=C0IoNLkxefY",
+   "link": "https://www.themoviedb.org/movie/1391239",
+   "bild": "https://image.tmdb.org/t/p/w500/5CZdxLiBpYMBXwo0rur6YzZTVP4.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1147572": {
+   "titel": "Das Wunder von Narnia",
+   "original": "Narnia: The Magician's Nephew",
+   "leitsatz": null,
+   "handlung": "Two children discover a wood full of pools leading to other worlds. One takes them to a dead city beneath a dying sun, where they wake a queen who exterminated its population and accidentally bring her back to London.",
+   "genres": [
+    "Fantasy",
+    "Abenteuer",
+    "Familie"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Greta Gerwig"
+    ],
+    [
+     "Mit",
+     "David McKenna, Beatrice Campbell, Emma Mackey, Carey Mulligan"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=nYqwH8GC97E",
+   "link": "https://www.themoviedb.org/movie/1147572",
+   "bild": "https://image.tmdb.org/t/p/w500/dKJ6ownJGWwSReCGRQWimXf700v.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1286656": {
+   "titel": "I Play Rocky",
+   "original": "I Play Rocky",
+   "leitsatz": null,
+   "handlung": "Die Entstehung des Boxerfilms „Rocky“ (1976) ist selbst Stoff für großes Kino: Der damals unbekannte Schauspieler Sylvester Stallone (Anthony Ippolito) schreibt innerhalb von nur dreieinhalb Tagen ein Drehbuch und ist fest davon überzeugt, für die Hauptrolle bestimmt zu sein. Obwohl ihm immer wieder Steine in den Weg gelegt werden, setzt der später weltbekannte Actionstar alles auf eine Karte und beharrt trotz scheinbar unüberwindbarer Widerstände darauf, selbst als Rocky Balboa vor der Kamera zu stehen. Der Rest ist Filmgeschichte.",
+   "genres": [
+    "Drama",
+    "Historie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 8 Min"
+    ],
+    [
+     "Regie",
+     "Peter Farrelly"
+    ],
+    [
+     "Mit",
+     "Anthony Ippolito, AnnaSophia Robb, Stephan James, Matt Dillon"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=VbUZakXlcMc",
+   "link": "https://www.themoviedb.org/movie/1286656",
+   "bild": "https://image.tmdb.org/t/p/w500/fViZxjUGsR6IQD77FP22PIMfk0R.jpg",
+   "news": []
+  },
+  "movie-1469342": {
+   "titel": "Her Private Hell",
+   "original": "Her Private Hell",
+   "leitsatz": null,
+   "handlung": "Als ein mysteriöser Nebel eine futuristische Metropole verschlingt und eine tödliche, schwer fassbare Kreatur freisetzt, begibt sich eine junge Frau mit bewegter Vergangenheit auf die Suche nach ihrem Vater. Ihr Weg kreuzt sich mit dem eines amerikanischen GIs, der eine nervenaufreibende Odyssee durchlebt, um seine Tochter aus der Hölle zu retten.",
+   "genres": [
+    "Thriller",
+    "Horror"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 50 Min"
+    ],
+    [
+     "Regie",
+     "Nicolas Winding Refn"
+    ],
+    [
+     "Mit",
+     "Sophie Thatcher, Charles Melton, Havana Rose Liu, Kristine Froseth"
+    ],
+    [
+     "TMDB-Wertung",
+     "5.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=YpdqpXEw4x8",
+   "link": "https://www.themoviedb.org/movie/1469342",
+   "bild": "https://image.tmdb.org/t/p/w500/8chAk0TbPT69Q5eN160JYayvfQM.jpg",
+   "news": []
+  },
+  "movie-1437511": {
+   "titel": "How to Rob a Bank",
+   "original": "How to Rob a Bank",
+   "leitsatz": "Wer raubt hier wen aus?",
+   "handlung": "A crew of social media-savvy bank robbers broadcasts their daring heists, unaware that their growing viral fame has put them in the crosshairs of a veteran FBI agent and a brilliant software engineer. Despite the unlikely duo closing in, the crime ring pushes past their limits, putting everything on the line for their most ambitious heist yet.",
+   "genres": [
+    "Action",
+    "Krimi",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 2 Min"
+    ],
+    [
+     "Regie",
+     "David Leitch"
+    ],
+    [
+     "Mit",
+     "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=Rm4gm8BCWUg",
+   "link": "https://www.themoviedb.org/movie/1437511",
+   "bild": "https://image.tmdb.org/t/p/w500/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1585239": {
+   "titel": "Club Kid",
+   "original": "Club Kid",
+   "leitsatz": null,
+   "handlung": "Das turbulente Leben eines exzessiv feiernden Club-Promoters in New York City gerät völlig aus den Fugen, als plötzlich der zehnjährige Sohn vor der Tür steht – von dessen Existenz er bislang nichts wusste.",
+   "genres": [
+    "Komödie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 6 Min"
+    ],
+    [
+     "Regie",
+     "Jordan Firstman"
+    ],
+    [
+     "Mit",
+     "Jordan Firstman, Reggie Absolom, Cara Delevingne, Diego Calva"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=guKEdb_iRXw",
+   "link": "https://www.themoviedb.org/movie/1585239",
+   "bild": "https://image.tmdb.org/t/p/w500/o1qMU0ZB5XDX8IXJFFu3AkhOqjh.jpg",
+   "news": []
+  },
+  "movie-1440769": {
+   "titel": "The Beekeeper 2",
+   "original": "The Beekeeper 2",
+   "leitsatz": null,
+   "handlung": "Pulled back into the fight when the Beekeeper organization goes rogue and sets its sights on controlling the government, Clay must take on the very group that made him.",
+   "genres": [
+    "Action",
+    "Krimi",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Timo Tjahjanto"
+    ],
+    [
+     "Mit",
+     "Jason Statham, Jeremy Irons, Yara Shahidi, Emmy Raver-Lampman"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=Q7MvYmUttXM",
+   "link": "https://www.themoviedb.org/movie/1440769",
+   "bild": "https://image.tmdb.org/t/p/w500/bNlIm8bk5AHrinnUmi4Y8A8W0XM.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1400336": {
+   "titel": "Meine Frau, unsere Schwiegertochter und ich",
+   "original": "Focker-in-Law",
+   "leitsatz": null,
+   "handlung": "Mehr als zwei Jahrzehnte ist es her, dass Greg Focker seinen Schwiegervater Jack um die Hand von dessen Tochter Pam bat – eine Begegnung voller peinlicher Momente. Heute sind Greg und Pams Kinder erwachsen. Als Sohn Henry verkündet, seine Freundin Olivia Jones heiraten zu wollen, steht Greg vor einer neuen Herausforderung. Denn er begegnet der Beziehung mit großem Misstrauen: Olivia ist FBI-Verhandlungsexpertin und weiß Menschen mit Worten zu überzeugen. Greg vermutet, dass sie Henry gezielt beeinflusst, um eigene Interessen durchzusetzen. Also nimmt er die künftige Schwiegertochter genauer unter die Lupe – mit Methoden, die verdächtig an Jack erinnern. Wo einst der Schwiegervater ihn durchleuchtete, ist nun Greg der Misstrauische. Doch ihm fehlt das Geschick, unauffällig zu ermitteln. Sein Versuch, Henry vor einer vermeintlich falschen Entscheidung zu bewahren, sorgt für neue Spannungen in der Familie.",
+   "genres": [
+    "Komödie",
+    "Liebesfilm"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 45 Min"
+    ],
+    [
+     "Regie",
+     "John Hamburg"
+    ],
+    [
+     "Mit",
+     "Ben Stiller, Robert De Niro, Ariana Grande, Skyler Gisondo"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=mpLu15l1DwM",
+   "link": "https://www.themoviedb.org/movie/1400336",
+   "bild": "https://image.tmdb.org/t/p/w500/gPdzdeehaoaYqxH2rA6yayEDSsS.jpg",
+   "news": []
+  },
+  "movie-822653": {
+   "titel": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
+   "original": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+   "leitsatz": null,
+   "handlung": "Nach den Ereignissen von „Rebellion“ scheint die Welt im Gleichgewicht zu sein – doch dieser Frieden ist brüchig. Als eine neue Bedrohung im Zusammenhang mit der Walpurgisnacht auftaucht, ist Homura Akemi gezwungen, sich den Konsequenzen ihrer Entscheidungen zu stellen und sich zu fragen, wie weit sie bereit ist zu gehen, um Madoka zu beschützen.",
+   "genres": [
+    "Animation",
+    "Drama",
+    "Mystery",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 0 Min"
+    ],
+    [
+     "Regie",
+     "宮本幸裕, Akiyuki Simbo"
+    ],
+    [
+     "Mit",
+     "Aoi Yuki, Chiwa Saito, Eri Kitamura, Ai Nonaka"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=lAIYKMbMMcg",
+   "link": "https://www.themoviedb.org/movie/822653",
+   "bild": "https://image.tmdb.org/t/p/w500/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
+   "news": []
+  },
+  "movie-1074074": {
+   "titel": "El ser querido",
+   "original": "El ser querido",
+   "leitsatz": null,
+   "handlung": "Acclaimed film director Esteban Martínez is a legend both for his films and for his past marked by violence and excess. For his latest project, he offers his daughter Emilia a role under the pretext of helping her with her stalled acting career. Living together on set will foster a closeness they haven’t shared for years, but it will also reopen old wounds that never healed.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 16 Min"
+    ],
+    [
+     "Regie",
+     "Rodrigo Sorogoyen"
+    ],
+    [
+     "Mit",
+     "Javier Bardem, Victoria Luengo, Melina Matthews, Malena Villa"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=2I5LLG2XBco",
+   "link": "https://www.themoviedb.org/movie/1074074",
+   "bild": "https://image.tmdb.org/t/p/w500/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-848700": {
+   "titel": "Minotaurus",
+   "original": "Minotaure",
+   "leitsatz": null,
+   "handlung": "Russland, 2022: Firmenchef Gleb führt ein Leben in Wohlstand und häuslicher Behaglichkeit. Doch bald gerät er an allen Fronten unter Druck. Zu Hause entzieht sich ihm seine Frau Galina mehr und mehr, und der Verdacht, dass sie ihn betrügt, lässt ihn nicht los. Im Betrieb verlangen die örtlichen Behörden von ihm, eine Anzahl seiner Beschäftigten für den Krieg in der Ukraine zu rekrutieren. Während er weiterhin seine Hände in Unschuld waschen will, ringt Gleb um Kontrolle. Doch der Zerfall seines sorgsam geordneten Lebens beschleunigt sich. Der Weg in die Gewalt scheint längst unausweichlich.",
+   "genres": [
+    "Drama",
+    "Krimi",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 21 Min"
+    ],
+    [
+     "Regie",
+     "Андрей Звягинцев"
+    ],
+    [
+     "Mit",
+     "Дмитрий Мазуров, Ирис Лебедева, Varvara Shmykova, Juris Žagars"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.7 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=kvs17bvubhI",
+   "link": "https://www.themoviedb.org/movie/848700",
+   "bild": "https://image.tmdb.org/t/p/w500/jUzJYKP0vGXj3HTEkjQiVMjE4ej.jpg",
+   "news": []
+  },
+  "movie-1457866": {
+   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "original": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "leitsatz": null,
+   "handlung": "Acht Jahre nach den Ereignissen von „Once Upon a Time in… Hollywood“ navigiert Cliff Booth in seiner neuen Rolle als Fixer durch das Studiosystem.",
+   "genres": [
+    "Drama",
+    "Komödie",
+    "Thriller",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "David Fincher"
+    ],
+    [
+     "Mit",
+     "Brad Pitt, Elizabeth Debicki, Scott Caan, Carla Gugino"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=RjEZaUBbUvU",
+   "link": "https://www.themoviedb.org/movie/1457866",
+   "bild": "https://image.tmdb.org/t/p/w500/8jSyV5i8aFYPiO3c3B9YUu14hN2.jpg",
+   "news": []
+  },
+  "movie-1421903": {
+   "titel": "Werwulf",
+   "original": "Werwulf",
+   "leitsatz": null,
+   "handlung": "A harrowing tale of devotion, damnation and the devil within.",
+   "genres": [
+    "Horror"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 0 Min"
+    ],
+    [
+     "Regie",
+     "Robert Eggers"
+    ],
+    [
+     "Mit",
+     "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=rd_s5QdHdYw",
+   "link": "https://www.themoviedb.org/movie/1421903",
+   "bild": "https://image.tmdb.org/t/p/w500/imnkSt4PSQpxIuyiRpJCiLk3SZz.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1437981": {
+   "titel": "Coward",
+   "original": "Coward",
+   "leitsatz": null,
+   "handlung": "Während sich der Erste Weltkrieg immer weiter hinzieht, brennt Pierre, ein neu an der Front eingetroffener Soldat, darauf, sich zu beweisen. Hinter den Linien begegnet er Francis, der seine Kameraden mit einer Theaterrevue aufheitern will. Während die Gewalt unvermindert anhält, suchen beide Männer nach Wegen, der Brutalität des Krieges zu entkommen – und sei es nur für einen Augenblick.",
+   "genres": [
+    "Drama",
+    "Liebesfilm",
+    "Kriegsfilm"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 0 Min"
+    ],
+    [
+     "Regie",
+     "Lukas Dhont"
+    ],
+    [
+     "Mit",
+     "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=T1SAZTIZnrQ",
+   "link": "https://www.themoviedb.org/movie/1437981",
+   "bild": "https://image.tmdb.org/t/p/w500/qy5ytiCeyR9uW5HsLDOFaOQ8yEr.jpg",
+   "news": []
+  },
+  "movie-1425859": {
+   "titel": "Remain",
+   "original": "Remain",
+   "leitsatz": null,
+   "handlung": "When reclusive architect Tate Gordon moves to small coastal town to complete his latest project, he encounters an alluring young woman who pulls him out of his shell, and into the center of a deadly mystery that hangs over the town.",
+   "genres": [
+    "Liebesfilm",
+    "Mystery",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "M. Night Shyamalan"
+    ],
+    [
+     "Mit",
+     "Jake Gyllenhaal, Phoebe Dynevor, Ashley Walters, Julie Hagerty"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=wc6TkBUuypA",
+   "link": "https://www.themoviedb.org/movie/1425859",
+   "bild": "https://image.tmdb.org/t/p/w500/5hPNq5h2y8Ux6nPBRMEwZ8npVTp.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-940009": {
+   "titel": "Ray Gunn",
+   "original": "Ray Gunn",
+   "leitsatz": null,
+   "handlung": "In Metropia, a gigantic city in an alternate future as seen from 1939, private eye Raymond Gunn is drawn into a case involving aliens, murder and a multimedia star named Venus Nova.",
+   "genres": [
+    "Animation",
+    "Science Fiction",
+    "Krimi",
+    "Mystery"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 59 Min"
+    ],
+    [
+     "Regie",
+     "Brad Bird"
+    ],
+    [
+     "Mit",
+     "Sam Rockwell, Scarlett Johansson, Tom Waits, Matt Berry"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=VL-xjzQFWsY",
+   "link": "https://www.themoviedb.org/movie/940009",
+   "bild": "https://image.tmdb.org/t/p/w500/rpP29aOKpHy1FhX8OZQdUICEs2j.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1115030": {
+   "titel": "Animal Friends",
+   "original": "Animal Friends",
+   "leitsatz": null,
+   "handlung": "Zwei Tiere werden unwahrscheinliche Freunde.",
+   "genres": [
+    "Komödie",
+    "Abenteuer",
+    "Animation"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Peter Atencio"
+    ],
+    [
+     "Mit",
+     "Ryan Reynolds, Jason Momoa, Aubrey Plaza, Dan Levy"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/1115030",
+   "bild": "https://image.tmdb.org/t/p/w500/AfJldsj8a42yeg9Ued3MdgbfWnC.jpg",
+   "news": []
+  },
+  "movie-1227877": {
+   "titel": "I Love Boosters",
+   "original": "I Love Boosters",
+   "leitsatz": null,
+   "handlung": "Eine Gruppe von professionellen Ladendiebinnen – die sogenannte Velvet Gang unter der Führung von Corvette (Keke Palmer) – stiehlt Kleidung aus Boutiquen und Kaufhäusern. Als die skrupellose Modeikone Christie Smith (Demi Moore) eines von Corvettes Designs stiehlt, nimmt die Gang das gesamte Inventar der Modemogulin ins Visier. Damit lösen sie versehentlich eine weltweite Bewegung für Einzelhandels- und Fabrikarbeiter aus.",
+   "genres": [
+    "Komödie",
+    "Science Fiction",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 53 Min"
+    ],
+    [
+     "Regie",
+     "Boots Riley"
+    ],
+    [
+     "Mit",
+     "Keke Palmer, Naomi Ackie, Taylour Paige, Poppy Liu"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=I1xZegSgN8w",
+   "link": "https://www.themoviedb.org/movie/1227877",
+   "bild": "https://image.tmdb.org/t/p/w500/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
+   "news": []
+  },
+  "movie-1532610": {
+   "titel": "Ink",
+   "original": "Ink",
+   "leitsatz": null,
+   "handlung": "A group of misfits and visionaries had an idea for a new kind of news - one that would give the people what they want, and would change the face of the world we live in today.",
+   "genres": [
+    "Drama",
+    "Historie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 56 Min"
+    ],
+    [
+     "Regie",
+     "Danny Boyle"
+    ],
+    [
+     "Mit",
+     "Jack O'Connell, Guy Pearce, Claire Foy, Blake Harrison"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=eokBqEFiVHs",
+   "link": "https://www.themoviedb.org/movie/1532610",
+   "bild": "https://image.tmdb.org/t/p/w500/aZECpoGsveEXtxogaz0GMiyVB6n.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1251608": {
+   "titel": "Die Blutgräfin",
+   "original": "Die Blutgräfin",
+   "leitsatz": null,
+   "handlung": "Die Blutgräfin und ihre Zofe eröffnen einen neuen Tanz der Vampire. Wir begleiten sie auf ihrer aberwitzigen Jagd nach dem roten Lebenssaft, der verschütteten Geschichte ihrer Ahnen und einem Buch, das ihr Vampirreich zu zerstören droht. Ihnen auf den Fersen: ihr vegetarischer Neffe, sein Psychotherapeut, zwei Vampirologen und ein Polizeiinspektor mit Assistenten.",
+   "genres": [
+    "Komödie",
+    "Horror",
+    "Mystery",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 59 Min"
+    ],
+    [
+     "Regie",
+     "Ulrike Ottinger"
+    ],
+    [
+     "Mit",
+     "Isabelle Huppert, Birgit Minichmayr, Thomas Schubert, Lars Eidinger"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_QKF0D601sg",
+   "link": "https://www.themoviedb.org/movie/1251608",
+   "bild": "https://image.tmdb.org/t/p/w500/umVTLVc7sjLqEMClbkvIA2SjOLg.jpg",
+   "news": []
+  },
+  "movie-947493": {
+   "titel": "Iron Boy",
+   "original": "Le Corset",
+   "leitsatz": null,
+   "handlung": "Im ländlichen Frankreich versucht der 10-jährige Christophe, auf dem elterlichen Bauernhof den Erwartungen seines strengen und distanzierten Vaters gerecht zu werden. Doch der Junge beginnt, sich ohne Vorwarnung nach vorne zu beugen und zusammenzubrechen – auf dem Traktor, in der Schule, beim Abendessen... Ein Arzt findet die Lösung: Christophe muss ein eisernes Korsett tragen, um aufrecht stehen zu können. Gezwungen, sein Leben abseits des Bauernhofs neu zu gestalten, entdeckt Christophe eine neue Leidenschaft für Musik, lernt eine neue Freundin kennen und lässt sich von ihr zu seinem ersten Streich verleiten. Doch wird all das wirklich das wieder ins Lot bringen, was aus dem Gleichgewicht geraten ist?",
+   "genres": [
+    "Animation",
+    "Drama",
+    "Familie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 30 Min"
+    ],
+    [
+     "Regie",
+     "Louis Clichy"
+    ],
+    [
+     "Mit",
+     "Gary Clichy, Rod Paradot, Dimitri Colas, Aurélie Vassort"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.2 / 10"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/947493",
+   "bild": "https://image.tmdb.org/t/p/w500/7RN7uox5vLnMY3GAXKjjGHTkeXR.jpg",
+   "news": []
+  },
+  "movie-1440304": {
+   "titel": "Mauvaise Pioche",
+   "original": "Mauvaise Pioche",
+   "leitsatz": null,
+   "handlung": "​Arrested by mistake and mistaken for France’s most wanted man, Serge Martin, a peaceful retiree, becomes the target of the media. Caught up in a never-ending whirlwind, he’ll do everything he can to prove his innocence and get his life back… if that’s even possible!",
+   "genres": [
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Gérard Jugnot"
+    ],
+    [
+     "Mit",
+     "Gérard Jugnot, Thierry Lhermitte, Philippe Lacheau, Zabou Breitman"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.0 / 10"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/1440304",
+   "bild": "https://image.tmdb.org/t/p/w500/wRPxSccJw6wckkBUOzM5CHd871w.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "tv-58841": {
+   "titel": "Chicago P.D.",
+   "original": "Chicago P.D.",
+   "leitsatz": null,
+   "handlung": "Der District 21 des Chicago Police Departments besteht aus zwei unterschiedlichen Abteilungen: Einmal gibt es die Uniformed Cops, die ihren Einsatz auf den Straßen der Stadt haben und sich um Kleinkriminelle kümmern. Die Intelligence Unit hingegen bekämpft Straftaten im großen Stil, sei es Drogenschmuggel oder Morde aller Art.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "14 Staffeln, 270 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Matt Olmstead"
+    ],
+    [
+     "Mit",
+     "Jason Beghe, Marina Squerciati, Patrick John Flueger, Benjamin Levy Aguilar"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=NZcr9IFS9R0",
+   "link": "https://www.themoviedb.org/tv/58841",
+   "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
    "news": []
   },
   "tv-45790": {
@@ -5082,37 +5090,38 @@
    "bild": "https://image.tmdb.org/t/p/w500/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
    "news": []
   },
-  "tv-220542": {
-   "titel": "Die Tagebücher der Apothekerin",
-   "original": "薬屋のひとりごと",
+  "tv-30983": {
+   "titel": "Detektiv Conan",
+   "original": "名探偵コナン",
    "leitsatz": null,
-   "handlung": "Maomao führte ein friedliches Leben, bis sie eines Tages entführt und als niedere Dienerin an den Kaiserhof verkauft wird. Die junge Apothekerin ist jedoch keine Persönlichkeit, die für ein willfähriges Leben unter Hoheiten bestimmt ist. Als ein Kronprinz nach dem anderen einer mysteriösen Krankheit zum Opfer fällt, schreitet sie unauffällig ein, um ein potentes Heilmittel für ihre Gesundung herzustellen. Trotz ihrer Vorsicht bemerkt der höhergestellte Hofdiener Jinshi ihre Affinität für Heilkräuter und verlangt fortan bei medizinischen Problemen des Hofes nach ihrer Expertise – dadurch verstrickt sie sich unweigerlich in die Intrigen am Kaiserhof.",
+   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
    "genres": [
     "Animation",
-    "Drama",
-    "Mystery"
+    "Krimi",
+    "Mystery",
+    "Komödie"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 60 Folgen"
+     "1 Staffel, 1218 Folgen"
     ],
     [
      "Mit",
-     "Aoi Yuki, Takeo Otsuka, Katsuyuki Konishi"
+     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
     ],
     [
      "Sender/Dienst",
-     "Nippon TV, RAB"
+     "YTV"
     ],
     [
      "TMDB-Wertung",
-     "8.7 / 10"
+     "8.0 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=75qbRCsq87Y",
-   "link": "https://www.themoviedb.org/tv/220542",
-   "bild": "https://image.tmdb.org/t/p/w500/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
+   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
+   "link": "https://www.themoviedb.org/tv/30983",
+   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
    "news": []
   },
   "tv-62650": {
@@ -5186,38 +5195,37 @@
    "bild": "https://image.tmdb.org/t/p/w500/otula4h1ITZ0eV84eg7Lb8u614C.jpg",
    "news": []
   },
-  "tv-30983": {
-   "titel": "Detektiv Conan",
-   "original": "名探偵コナン",
+  "tv-220542": {
+   "titel": "Die Tagebücher der Apothekerin",
+   "original": "薬屋のひとりごと",
    "leitsatz": null,
-   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
+   "handlung": "Maomao führte ein friedliches Leben, bis sie eines Tages entführt und als niedere Dienerin an den Kaiserhof verkauft wird. Die junge Apothekerin ist jedoch keine Persönlichkeit, die für ein willfähriges Leben unter Hoheiten bestimmt ist. Als ein Kronprinz nach dem anderen einer mysteriösen Krankheit zum Opfer fällt, schreitet sie unauffällig ein, um ein potentes Heilmittel für ihre Gesundung herzustellen. Trotz ihrer Vorsicht bemerkt der höhergestellte Hofdiener Jinshi ihre Affinität für Heilkräuter und verlangt fortan bei medizinischen Problemen des Hofes nach ihrer Expertise – dadurch verstrickt sie sich unweigerlich in die Intrigen am Kaiserhof.",
    "genres": [
     "Animation",
-    "Krimi",
-    "Mystery",
-    "Komödie"
+    "Drama",
+    "Mystery"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 1218 Folgen"
+     "1 Staffel, 60 Folgen"
     ],
     [
      "Mit",
-     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
+     "Aoi Yuki, Takeo Otsuka, Katsuyuki Konishi"
     ],
     [
      "Sender/Dienst",
-     "YTV"
+     "Nippon TV, RAB"
     ],
     [
      "TMDB-Wertung",
-     "8.0 / 10"
+     "8.7 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
-   "link": "https://www.themoviedb.org/tv/30983",
-   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "trailer": "https://www.youtube.com/watch?v=75qbRCsq87Y",
+   "link": "https://www.themoviedb.org/tv/220542",
+   "bild": "https://image.tmdb.org/t/p/w500/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
    "news": []
   }
  }
