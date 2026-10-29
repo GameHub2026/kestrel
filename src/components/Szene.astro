@@ -1,7 +1,7 @@
 ---
 // Animierte Themen-Szene. art="buehne": volle Fläche (Startseite, Ebenen umschließen das Fenster),
 // art="kopf": rechts im Seitenkopf, läuft nach links und unten in den Hintergrund aus.
-interface Props { thema: 'stadt' | 'wueste' | 'burg' | 'ruinen' | 'western' | 'gewitter' | 'rabenwald'; art?: 'buehne' | 'kopf' }
+interface Props { thema: 'stadt' | 'wueste' | 'flur' | 'maschinen' | 'ruinen' | 'western' | 'gewitter' | 'rabenwald'; art?: 'buehne' | 'kopf' }
 const { thema, art = 'kopf' } = Astro.props;
 ---
 <div class:list={['szene', `szene--${art}`]} data-szene={thema} aria-hidden="true">
@@ -9,6 +9,7 @@ const { thema, art = 'kopf' } = Astro.props;
   <canvas class="sz-vorne"></canvas>
   {art === 'kopf' && <div class="glas">{[0, 1, 2, 3].map(() => <i />)}</div>}
 </div>
+{art === 'kopf' && <div class="schleier" aria-hidden="true"></div>}
 
 <script>
   import { starteSzenen } from '../scripts/szene/index';
@@ -30,19 +31,29 @@ const { thema, art = 'kopf' } = Astro.props;
 
   /* Kopf: rechts bis zum Fensterrand, weicher Übergang nach links und unten */
   .szene--kopf {
-    position: absolute; z-index: 0; top: calc(-1 * var(--bar)); right: calc(50% - 50vw); width: min(70vw, 1180px); height: calc(100% + var(--bar) + 40px);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0 0 0 / 0.55) 22%, #000 48%), linear-gradient(to bottom, #000 58%, transparent 100%);
+    position: absolute; z-index: 0; top: calc(-1 * var(--bar)); right: calc(50% - 50vw); width: 100vw; height: calc(100% + var(--bar) + 40px);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0 0 0 / 0.35) 14%, rgb(0 0 0 / 0.85) 34%, #000 50%), linear-gradient(to bottom, #000 58%, transparent 100%);
     -webkit-mask-composite: source-in;
-    mask-image: linear-gradient(to right, transparent 0%, rgb(0 0 0 / 0.55) 22%, #000 48%), linear-gradient(to bottom, #000 58%, transparent 100%);
+    mask-image: linear-gradient(to right, transparent 0%, rgb(0 0 0 / 0.35) 14%, rgb(0 0 0 / 0.85) 34%, #000 50%), linear-gradient(to bottom, #000 58%, transparent 100%);
     mask-composite: intersect;
     pointer-events: none;
   }
+  /* Lese-Schleier: weiche Unschärfe und Papierton hinter dem Text links, läuft nach rechts ins Motiv aus */
+  .schleier {
+    position: absolute; z-index: 0; pointer-events: none; top: calc(-1 * var(--bar)); left: calc(50% - 50vw); width: min(72vw, 1100px); height: calc(100% + var(--bar) + 40px);
+    -webkit-backdrop-filter: blur(10px) saturate(1.05); backdrop-filter: blur(10px) saturate(1.05);
+    background: linear-gradient(to right, color-mix(in srgb, var(--ground) 72%, transparent) 30%, color-mix(in srgb, var(--ground) 35%, transparent) 62%, transparent);
+    -webkit-mask-image: linear-gradient(to right, #000 45%, transparent 100%), linear-gradient(to bottom, #000 70%, transparent);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(to right, #000 45%, transparent 100%), linear-gradient(to bottom, #000 70%, transparent); mask-composite: intersect;
+  }
   /* Senkrechte Glasstreifen über dem Motiv */
-  .glas { position: absolute; inset: 10% 8% 18% 40%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 70%, transparent); mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 70%, transparent); }
+  .glas { position: absolute; inset: 10% 6% 18% 56%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 70%, transparent); mask-image: linear-gradient(to bottom, transparent, #000 22%, #000 70%, transparent); }
   .glas i { border-left: 1px solid rgb(255 255 255 / 0.09); backdrop-filter: blur(1.2px) saturate(1.12); background: linear-gradient(180deg, rgb(255 255 255 / 0.06), rgb(255 255 255 / 0.015)); }
   .glas i:last-child { border-right: 1px solid rgb(255 255 255 / 0.09); }
   @media (max-width: 760px) {
     .szene--kopf { width: 100vw; opacity: 0.7; -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent 100%); mask-image: linear-gradient(to bottom, #000 40%, transparent 100%); }
     .glas { display: none; }
+    .schleier { width: 100vw; background: color-mix(in srgb, var(--ground) 45%, transparent); }
   }
 </style>

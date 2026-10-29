@@ -124,7 +124,7 @@ main, footer { position: relative; z-index: 1; }
   position: relative; min-height: clamp(300px, 44vh, 460px); padding-top: 40px; margin-bottom: 28px;
   display: grid; grid-template-columns: minmax(0, 34rem) 1fr auto; align-content: end; gap: 14px 40px;
 }
-.page-head > :not(.szene) { position: relative; z-index: 1; grid-column: 1; }
+.page-head > :not(.szene):not(.schleier) { position: relative; z-index: 1; grid-column: 1; }
 .page-head::after { content: ''; position: relative; z-index: 1; grid-column: 1 / -1; height: 1px; margin-top: 14px; background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px); }
 .page-head[data-kicker]::before { content: attr(data-kicker); position: relative; z-index: 1; grid-column: 1; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
 .page-head h1 {

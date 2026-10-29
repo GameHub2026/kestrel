@@ -90,7 +90,7 @@ const thema: Thema = {
     c.restore();
     // Werbeluftschiff zieht langsam durch
     const s = z.daten.schiff; s.x += 0.25; if (s.x > z.W + 200) s.x = -260;
-    const sx = s.x - z.rand, sy = h * 0.2 + Math.sin(t * 0.4) * 4, sl = Math.max(110, w * 0.12);
+    const sx = s.x - z.rand, sy = h * 0.11 + Math.sin(t * 0.4) * 4, sl = Math.max(110, w * 0.12);
     c.fillStyle = z.modus === 'dunkel' ? '#0d0b18' : '#7a4a30';
     c.beginPath(); c.ellipse(sx, sy, sl / 2, sl * 0.13, 0, 0, Math.PI * 2); c.fill();
     const farbe = pal.neon[Math.floor(t / 3) % pal.neon.length];

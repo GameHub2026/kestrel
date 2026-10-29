@@ -32,7 +32,7 @@ const beschreibung = `${MEDIUM[d.medium]}-${TEXTFORM[d.textform]}: ${d.titel}. W
 ---
 <Base title={`${d.titel} (${TEXTFORM[d.textform]})`} description={beschreibung}>
   <div class="wrap top">
-    <Szene thema={d.medium === 'film' ? 'stadt' : d.medium === 'serie' ? 'burg' : 'ruinen'} />
+    <Szene thema={d.medium === 'film' ? 'stadt' : d.medium === 'serie' ? 'gewitter' : 'ruinen'} />
     <Ticket text={text} size="hero" link={false} tear headingLevel="h1" />
   </div>
 

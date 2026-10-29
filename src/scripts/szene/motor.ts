@@ -29,6 +29,7 @@ export interface Thema {
   folger: {
     n: number; tiefen: [number, number]; tempo?: number; streuung?: number; spur?: number;
     ruhe?: (z: Welt, t: number, f: Folger, i: number) => { x: number; y: number };
+    ziel?: (z: Welt, x: number, y: number, f: Folger, t: number) => { x: number; y: number };
     zeichne(c: CanvasRenderingContext2D, f: Folger, z: Welt, t: number): void;
   };
 }
@@ -123,6 +124,8 @@ export class Szene {
         const ang = fr() * Math.PI * 2, rad = (0.3 + fr() * 0.7) * (F.streuung ?? 60);
         return { x: w * (0.5 + fr() * 0.4), y: h * (0.2 + fr() * 0.3), vx: 0, vy: 0, tiefe, ox: Math.cos(ang) * rad, oy: Math.sin(ang) * rad * 0.6, phase: fr() * 10, spur: [], groesse: 0.8 + fr() * 0.4, richtung: 1 };
       });
+      // gleich an der Ruheposition starten, nicht erst hinfliegen
+      if (F.ruhe) this.folger.forEach((f, i) => { const p = F.ruhe!(this.z, 0, f, i); f.x = p.x; f.y = p.y; });
     }
     this.zeichne(performance.now());
     this.weiter();
@@ -177,6 +180,7 @@ export class Szene {
         const p = F.ruhe ? F.ruhe(z, t, f, i) : { x: z.w * (0.66 + 0.2 * Math.sin(t * 0.13 + f.phase)) + f.ox, y: z.h * (0.3 + 0.1 * Math.sin(t * 0.21 + f.phase * 1.7)) + f.oy };
         tx = p.x; ty = p.y;
       }
+      if (F.ziel) { const p = F.ziel(z, tx, ty, f, t); tx = p.x; ty = p.y; }
       const k = 2.4 * tempo * (0.55 + f.tiefe * 0.6);
       f.vx = (f.vx + (tx - f.x) * k * dt) * Math.pow(0.16, dt);
       f.vy = (f.vy + (ty - f.y) * k * dt) * Math.pow(0.16, dt);
