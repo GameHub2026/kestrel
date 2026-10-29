@@ -20,9 +20,15 @@ export const neuAnzahl = (d) => mitNeu(d).filter((s) => !s.aus).reduce((n, s) =>
 // ---------- Trakt: gesehene Serien ----------
 async function traktSerien(env) {
   if (!env.TRAKT_CLIENT_ID || !env.TRAKT_USER) return [];
-  const r = await fetch(`https://api.trakt.tv/users/${encodeURIComponent(env.TRAKT_USER.replace(/^@/, ''))}/watched/shows?extended=noseasons`, {
+  const holen = () => fetch(`https://api.trakt.tv/users/${encodeURIComponent(env.TRAKT_USER.replace(/^@/, ''))}/watched/shows?extended=noseasons`, {
     headers: { 'trakt-api-version': '2', 'trakt-api-key': env.TRAKT_CLIENT_ID, 'content-type': 'application/json', 'user-agent': 'Kestrel/1.0 (+https://kestrel-2tf.pages.dev)' },
   });
+  let r = await holen();
+  // Trakt bremst bei zu vielen Anfragen (429): kurz warten, einmal neu versuchen
+  if (r.status === 429) {
+    await new Promise((ok) => setTimeout(ok, Math.min(8, Number(r.headers.get('retry-after')) || 3) * 1000));
+    r = await holen();
+  }
   if (!r.ok) throw new Error(`Trakt ${r.status}`);
   return (await r.json()).filter((x) => x.show?.ids?.tmdb && x.plays >= 2) // eine einzelne angeklickte Folge zählt nicht
     .map((x) => ({ id: `tmdb-tv:${x.show.ids.tmdb}`, titel: x.show.title, zuletzt: x.last_watched_at }));
