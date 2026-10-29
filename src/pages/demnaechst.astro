@@ -12,6 +12,9 @@ for (const e of eintraege) {
   if (!gruppen.has(e.datum)) gruppen.set(e.datum, []);
   gruppen.get(e.datum)!.push(e);
 }
+// TMDB liefert einige Seriengenres nur englisch
+const GENRE_DE: Record<string, string> = { 'Action & Adventure': 'Action & Abenteuer', 'Kids': 'Kinder', 'War & Politics': 'Krieg & Politik', 'News': 'Nachrichten', 'Talk': 'Talkshow', 'Soap': 'Seifenoper', 'Reality': 'Reality' };
+const genresVon = (e: Eintrag) => (((infos as Record<string, { genres?: string[] }>)[e.info || '']?.genres) || []).map((g) => GENRE_DE[g] || g);
 const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 'Serie' } as Record<string, string>;
 ---
 <Base title="Demnächst" description="Kommende Kinostarts sowie neue Serien und Staffeln bei Netflix, Prime Video, Disney+ und Co. in Deutschland.">
@@ -30,6 +33,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
         <button type="button" data-ansicht="kacheln" aria-pressed="false" aria-label="Kacheln" title="Kacheln"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg></button>
       </div>
     </nav>
+    <div class="wrap genre-filter" id="genre-filter" role="group" aria-label="Genre"></div>
 
     <section class="wrap" aria-label="Termine" id="termine">
       {[...gruppen].map(([datum, liste]) => (
@@ -37,7 +41,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
           <h2 class="tag-name">{tagFmt.format(new Date(datum + 'T12:00:00Z'))}</h2>
           <ul class="liste">
             {liste.map((e) => (
-              <li class="eintrag" data-medium={e.art} data-f={e.typ === 'kino' ? 'kino' : 'serie'}>
+              <li class="eintrag" data-medium={e.art} data-f={e.typ === 'kino' ? 'kino' : 'serie'} data-genres={genresVon(e).join('|')}>
                 <button type="button" class="karte" data-info={e.info} data-termin={`${tagFmt.format(new Date(e.datum + 'T12:00:00Z'))} · ${e.text}`} data-art={ART[e.typ]} data-anbieter={e.anbieter.join(' · ')} data-medium={e.art} aria-haspopup="dialog">
                   <span class="poster">{e.bild && <img src={e.bild} alt="" loading="lazy" width="56" height="84" />}</span>
                   <span class="mitte">
@@ -98,13 +102,31 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
   const bereich = document.getElementById('termine')!;
   const leer = document.createElement('p');
   leer.className = 'leer mono'; leer.textContent = 'Dazu steht gerade nichts an.';
+  // Genre-Leiste: zeigt die Genres, die im gewählten Bereich (Alles/Kino/Serien) vorkommen, häufigste zuerst
+  const gf = document.getElementById('genre-filter')!;
+  let genre = '';
+  const alleLi = [...bereich.querySelectorAll<HTMLElement>('.eintrag')];
+  const genresVonLi = (li: HTMLElement) => (li.dataset.genres || '').split('|').filter(Boolean);
+  function genreLeiste(f: string) {
+    const zahl = new Map<string, number>();
+    alleLi.filter((li) => f === 'alle' || li.dataset.f === f).forEach((li) => genresVonLi(li).forEach((g) => zahl.set(g, (zahl.get(g) || 0) + 1)));
+    if (genre && !zahl.has(genre)) genre = '';
+    const knopf = (wert: string, text: string) => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'g-chip';
+      b.setAttribute('aria-pressed', String(genre === wert)); b.textContent = text;
+      b.addEventListener('click', () => { genre = genre === wert ? '' : wert; anwenden(aktuell()); });
+      return b;
+    };
+    gf.replaceChildren(knopf('', 'Alle Genres'), ...[...zahl].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'de')).map(([g, n]) => knopf(g, `${g} ${n}`)));
+  }
   function anwenden(f: string) {
     knoepfe.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.f === f)));
+    genreLeiste(f);
     let sichtbar = 0;
     bereich.querySelectorAll<HTMLElement>('[data-tag]').forEach((tag) => {
       let n = 0;
       tag.querySelectorAll<HTMLElement>('.eintrag').forEach((li) => {
-        const zeigen = f === 'alle' || li.dataset.f === f;
+        const zeigen = (f === 'alle' || li.dataset.f === f) && (!genre || genresVonLi(li).includes(genre));
         li.hidden = !zeigen; if (zeigen) n++;
       });
       tag.hidden = n === 0; sichtbar += n;
@@ -243,6 +265,11 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .kacheln .mitte { padding: 10px 11px 12px; gap: 4px; align-content: start; }
 .dem .kacheln .titel { font-size: 1.1rem; }
 .dem .kacheln .karte[data-gemerkt='ja']::after, .dem .kacheln .karte[data-gemerkt='auge']::after { top: 8px; right: 8px; width: 22px; height: 22px; color: #fff; opacity: 1; filter: drop-shadow(0 1px 3px rgb(0 0 0 / 0.8)); z-index: 1; }
+.dem .tabs { margin-bottom: 12px; }
+.dem .genre-filter { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 26px; }
+.dem .genre-filter .g-chip { font-family: var(--mono); font-weight: 500; text-transform: none; letter-spacing: 0; font-size: 0.78rem; padding: 6px 11px; border-radius: 999px; box-shadow: none; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink-2); transition: background-color 160ms, color 160ms; }
+.dem .genre-filter .g-chip:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 14%, transparent); }
+.dem .genre-filter .g-chip[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
 .dem .tag { margin-bottom: 30px; }
 .dem .tag[hidden], .dem .eintrag[hidden] { display: none !important; }
 .dem .tag-name { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.5rem; letter-spacing: 0.03em; margin: 0 0 10px; display: flex; align-items: center; gap: 14px; }
