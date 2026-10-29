@@ -50,13 +50,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <span class="wordmark-stub mono" aria-hidden="true">Nº</span>
         <span class="wordmark-name">Kestrel</span>
       </a>
-      <div class="kopf-tools">
-        <button type="button" class="theme" id="theme" role="switch" aria-label="Dunkles Design" aria-checked="false">
-          <span class="theme-knopf" aria-hidden="true"></span>
-          <svg class="t-sonne" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-          <svg class="t-mond" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-        </button>
-      </div>
     </header>
     <Pille />
     <div class="ecke">
@@ -110,10 +103,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   .skip { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--ground); padding: 8px 12px; z-index: 10; }
   .skip:focus { left: 8px; }
 
-  /* Kopf: Wortmarke links, Hell/Dunkel rechts; Navigation als Leiste links, Stand/Uhr unten rechts */
+  /* Kopf: Wortmarke links; Navigation samt Hell/Dunkel als Leiste links, Stand/Uhr unten rechts */
   .ecke { position: fixed; right: 22px; bottom: 16px; z-index: 35; }
   @media (max-width: 900px) { .ecke { display: none; } }
-  .kopf-tools { display: flex; align-items: center; justify-content: flex-end; gap: 14px; }
 
   /* Statuszeile: Zeichen für Zeichen verschwimmt der Stand, die laufende Uhr wird scharf */
   .stempel { display: grid; font-size: 0.78rem; color: var(--ink-2); cursor: default; white-space: pre; }
@@ -127,22 +119,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   .stempel .st-b :global(.z) { opacity: 0; filter: blur(5px); transform: translateY(4px); }
   .stempel:hover .st-a :global(.z), .stempel:focus-visible .st-a :global(.z) { opacity: 0; filter: blur(5px); transform: translateY(-4px); }
   .stempel:hover .st-b :global(.z), .stempel:focus-visible .st-b :global(.z) { opacity: 1; filter: blur(0); transform: none; }
-
-  /* Hell/Dunkel-Schalter: Pille mit Sonne und Mond, der helle Knopf gleitet zur aktiven Seite */
-  .theme {
-    position: relative; display: inline-grid; grid-template-columns: 34px 34px; align-items: center; justify-items: center; width: 76px; height: 40px; padding: 0 4px;
-    border: 0; border-radius: 999px; background: color-mix(in srgb, var(--ink) 9%, var(--ground)); cursor: pointer;
-    box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.12);
-  }
-  .theme svg { position: relative; z-index: 1; display: block; width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; color: var(--ink-2); transition: color 300ms, transform 500ms cubic-bezier(0.16, 1, 0.3, 1); }
-  .theme .t-mond { fill: none; }
-  .theme-knopf {
-    position: absolute; top: 5px; left: 6px; width: 30px; height: 30px; border-radius: 50%; background: var(--paper);
-    box-shadow: 0 1px 2px rgb(0 0 0 / 0.15), 0 3px 8px rgb(0 0 0 / 0.18); transition: transform 450ms cubic-bezier(0.34, 1.4, 0.5, 1);
-  }
-  .theme[aria-checked='false'] .t-sonne, .theme[aria-checked='true'] .t-mond { color: var(--ink); }
-  .theme[aria-checked='true'] .theme-knopf { transform: translateX(34px); }
-  .theme:hover .t-sonne { transform: rotate(45deg); }
 
   .site-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 20px; padding-bottom: 20px; position: relative; z-index: 30; }
   /* Platz für die Leiste links, sobald sie neben dem Inhalt steht */

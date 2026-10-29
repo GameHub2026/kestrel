@@ -170,7 +170,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
 .dem button[data-medium][aria-pressed='true'] { background: var(--card); color: var(--card-ink); }
 .dem .tag { margin-bottom: 30px; }
-.dem .tag[hidden], .dem .eintrag[hidden] { display: none; }
+.dem .tag[hidden], .dem .eintrag[hidden] { display: none !important; }
 .dem .tag-name { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.5rem; letter-spacing: 0.03em; margin: 0 0 10px; display: flex; align-items: center; gap: 14px; }
 .dem .tag-name::after { content: ''; flex: 1; border-top: 2px dashed var(--rule); }
 .dem .liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
