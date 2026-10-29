@@ -33,7 +33,10 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
         <button type="button" data-ansicht="kacheln" aria-pressed="false" aria-label="Kacheln" title="Kacheln"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg></button>
       </div>
     </nav>
-    <div class="wrap genre-filter" id="genre-filter" role="group" aria-label="Genre"></div>
+    <div class="wrap genre-filter">
+      <label class="mono" for="genre-wahl">Genre</label>
+      <select id="genre-wahl"></select>
+    </div>
 
     <section class="wrap" aria-label="Termine" id="termine">
       {[...gruppen].map(([datum, liste]) => (
@@ -104,7 +107,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
   const leer = document.createElement('p');
   leer.className = 'leer mono'; leer.textContent = 'Dazu steht gerade nichts an.';
   // Genre-Leiste: zeigt die Genres, die im gewählten Bereich (Alles/Kino/Serien) vorkommen, häufigste zuerst
-  const gf = document.getElementById('genre-filter')!;
+  const gf = document.getElementById('genre-wahl') as HTMLSelectElement;
   let genre = '';
   const alleLi = [...bereich.querySelectorAll<HTMLElement>('.eintrag')];
   const genresVonLi = (li: HTMLElement) => (li.dataset.genres || '').split('|').filter(Boolean);
@@ -112,14 +115,12 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
     const zahl = new Map<string, number>();
     alleLi.filter((li) => f === 'alle' || li.dataset.f === f).forEach((li) => genresVonLi(li).forEach((g) => zahl.set(g, (zahl.get(g) || 0) + 1)));
     if (genre && !zahl.has(genre)) genre = '';
-    const knopf = (wert: string, text: string) => {
-      const b = document.createElement('button'); b.type = 'button'; b.className = 'g-chip';
-      b.setAttribute('aria-pressed', String(genre === wert)); b.textContent = text;
-      b.addEventListener('click', () => { genre = genre === wert ? '' : wert; anwenden(aktuell()); });
-      return b;
-    };
-    gf.replaceChildren(knopf('', 'Alle Genres'), ...[...zahl].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'de')).map(([g, n]) => knopf(g, `${g} ${n}`)));
+    const opt = (wert: string, text: string) => { const o = document.createElement('option'); o.value = wert; o.textContent = text; return o; };
+    gf.replaceChildren(opt('', 'Alle Genres'), ...[...zahl].sort((a, b) => a[0].localeCompare(b[0], 'de')).map(([g, n]) => opt(g, `${g} (${n})`)));
+    gf.value = genre;
+    gf.classList.toggle('aktiv', !!genre);
   }
+  gf.addEventListener('change', () => { genre = gf.value; anwenden(aktuell()); });
   function anwenden(f: string) {
     knoepfe.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.f === f)));
     genreLeiste(f);
@@ -288,10 +289,16 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .kacheln .titel { font-size: 1.1rem; }
 .dem .kacheln .karte[data-gemerkt='ja']::after, .dem .kacheln .karte[data-gemerkt='auge']::after { top: 8px; right: 8px; width: 22px; height: 22px; color: #fff; opacity: 1; filter: drop-shadow(0 1px 3px rgb(0 0 0 / 0.8)); z-index: 1; }
 .dem .tabs { margin-bottom: 12px; }
-.dem .genre-filter { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 26px; }
-.dem .genre-filter .g-chip { font-family: var(--mono); font-weight: 500; text-transform: none; letter-spacing: 0; font-size: 0.78rem; padding: 6px 11px; border-radius: 999px; box-shadow: none; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink-2); transition: background-color 160ms, color 160ms; }
-.dem .genre-filter .g-chip:hover { color: var(--ink); background: color-mix(in srgb, var(--ink) 14%, transparent); }
-.dem .genre-filter .g-chip[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
+.dem .genre-filter { display: flex; align-items: center; gap: 10px; margin-bottom: 26px; }
+.dem .genre-filter label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-2); }
+.dem .genre-filter select {
+  font-family: var(--mono); font-size: 0.85rem; color: var(--ink); background-color: var(--paper); border: 0; border-radius: 6px; box-shadow: var(--shadow);
+  padding: 8px 34px 8px 12px; cursor: pointer; appearance: none; -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 10px center; background-size: 14px;
+}
+.dem .genre-filter select.aktiv { background-color: var(--ink); color: var(--ground); }
+.dem .genre-filter select:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
 .dem .tag { margin-bottom: 30px; }
 .dem .tag[hidden], .dem .eintrag[hidden] { display: none !important; }
 .dem .tag-name { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.5rem; letter-spacing: 0.03em; margin: 0 0 10px; display: flex; align-items: center; gap: 14px; }
