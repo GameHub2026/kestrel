@@ -53,6 +53,10 @@ import Base from '../../layouts/Base.astro';
         <p class="stand mono"><span id="stand"></span> <button type="button" class="knopf leise klein" id="pruefen">Jetzt prüfen</button></p>
       </div>
       <ul class="raster" id="raster"></ul>
+      <dialog class="sbox" id="sbox" aria-label="Details">
+        <button type="button" class="sbox-zu" id="sbox-zu" aria-label="Schließen">×</button>
+        <div id="sbox-inhalt"></div>
+      </dialog>
       <details class="aus" id="aus-box" hidden>
         <summary class="mono">Nicht mehr verfolgt, auch Beendete und Abgesetzte (<span id="aus-zahl"></span>)</summary>
         <ul class="aus-liste" id="aus-liste"></ul>
@@ -114,6 +118,7 @@ import Base from '../../layouts/Base.astro';
       else mitte.append(el('span', 'h-titel', p.titel));
       mitte.append(el('span', 'quelle mono', [p.quelle, relativ(p.datum)].filter(Boolean).join(' · ')));
       li.append(poster(s.bild), mitte);
+      klickbar(li, s);
       return li;
     }));
     $('#hinweise-leer').hidden = neu.length > 0;
@@ -124,6 +129,7 @@ import Base from '../../layouts/Base.astro';
     $('#kommt').replaceChildren(...kommt.map((s) => {
       const li = el('li', 'kommt-zeile');
       const n = s.naechste!;
+      klickbar(li, s);
       li.append(poster(s.bild));
       const was = s.medium === 'film' ? (n.text === 'Kinostart' ? 'Kinostart' : `Neuer Teil: ${n.text}`) : (n.text || `Staffel ${n.staffel}`);
       li.append(el('span', 'k-datum mono', n.datum ? `${datumDe(n.datum)} · ${bis(n.datum)}` : 'Termin offen'), el('span', 'k-titel', s.titel), el('span', 'k-staffel mono', `${was}${s.anbieter?.length ? ` · ${s.anbieter.join(', ')}` : ''}`));
@@ -149,13 +155,14 @@ import Base from '../../layouts/Base.astro';
       weg.addEventListener('click', () => setzeAus(s, true));
       info.append(weg);
       li.append(c, info);
+      klickbar(li, s);
       return li;
     }));
 
     const aus = daten.serien.filter((s) => s.aus);
     $('#aus-box').hidden = aus.length === 0; $('#aus-zahl').textContent = String(aus.length);
     $('#aus-liste').replaceChildren(...aus.sort((a, b) => a.titel.localeCompare(b.titel, 'de')).map((s) => {
-      const li = el('li'); li.append(el('span', '', `${s.titel}${s.ausGrund ? ` · ${s.ausGrund}` : ''}`));
+      const li = el('li'); li.append(el('span', '', `${s.titel}${s.ausGrund ? ` · ${s.ausGrund}` : ''}`)); klickbar(li, s);
       const b = el('button', 'knopf leise klein', 'Wieder folgen') as HTMLButtonElement; b.type = 'button';
       b.addEventListener('click', () => setzeAus(s, false));
       li.append(b); return li;
@@ -164,6 +171,62 @@ import Base from '../../layouts/Base.astro';
     $('#stand').textContent = daten.stand ? `Zuletzt geprüft: ${new Date(daten.stand).toLocaleString('de-DE', { dateStyle: 'short', timeStyle: 'short' })}` : 'Noch nicht geprüft.';
     try { sessionStorage.removeItem('kestrel-neu'); } catch {}
   }
+
+  // Info-Box: Klick auf ein Poster zeigt Handlung, Fakten, Trailer und alles, was zur Serie/zum Film gefunden wurde
+  type Det = { untertitel?: string; handlung?: string; genres: string[]; fakten: [string, string][]; anbieter: { abo: string[]; leihen: string[] }; trailer?: string; link?: string; linkName?: string };
+  const sbox = $('#sbox') as HTMLDialogElement;
+  function klickbar(li: HTMLElement, s: Serie) {
+    li.classList.add('klickbar'); li.tabIndex = 0; li.setAttribute('role', 'button'); li.setAttribute('aria-haspopup', 'dialog');
+    li.addEventListener('click', (ev) => { if ((ev.target as HTMLElement).closest('a, button')) return; oeffne(s); });
+    li.addEventListener('keydown', (ev) => { if ((ev.key === 'Enter' || ev.key === ' ') && ev.target === li) { ev.preventDefault(); oeffne(s); } });
+  }
+  async function oeffne(s: Serie) {
+    const kopf = el('div', 'sbox-kopf');
+    const kern = el('div', 'mitte');
+    kern.append(el('span', 'art mono', `${s.medium === 'film' ? 'Film' : 'Serie'}${s.reihe ? ` · ${s.reihe}` : ''} · ${s.status || ''}`), el('h2', 'sbox-titel', s.titel));
+    if (s.naechste) {
+      const was = s.medium === 'film' ? (s.naechste.text === 'Kinostart' ? 'Kinostart' : `Neuer Teil: ${s.naechste.text}`) : (s.naechste.text || `Staffel ${s.naechste.staffel}`);
+      kern.append(el('span', 'sbox-termin mono', s.naechste.datum ? `${was}: ${datumDe(s.naechste.datum)} · ${bis(s.naechste.datum)}` : `${was} angekündigt, Termin offen`));
+    } else if (s.naechsteFolge) kern.append(el('span', 'sbox-termin mono', `Nächste Folge ${s.naechsteFolge.text}: ${datumDe(s.naechsteFolge.datum)}`));
+    kopf.append(poster(s.bild, 'sbox-bild'), kern);
+    const details = el('div', 'sbox-details'); details.append(el('p', 'mono laed', 'Lade Details …'));
+    const gefunden = el('div', 'sbox-gefunden');
+    if (s.punkte.length) {
+      gefunden.append(el('h3', 'mono', 'Gefunden'));
+      const ul = el('ul');
+      for (const x of s.punkte) {
+        const li = el('li', x.neu ? 'ist-neu' : '');
+        li.append(el('span', 'art mono', `${x.art === 'staffel' ? (s.medium === 'film' ? 'Film' : 'Staffel') : ART[x.art]}${x.neu ? ' · neu' : ''}`));
+        if (x.link) { const a = el('a', '', x.titel) as HTMLAnchorElement; a.href = x.link; a.target = '_blank'; a.rel = 'noopener'; li.append(a); } else li.append(el('span', 'h-titel', x.titel));
+        li.append(el('span', 'quelle mono', [x.quelle, relativ(x.datum)].filter(Boolean).join(' · ')));
+        ul.append(li);
+      }
+      gefunden.append(ul);
+    }
+    const weg = el('button', 'knopf leise klein', s.aus ? 'Wieder folgen' : 'Nicht mehr folgen') as HTMLButtonElement; weg.type = 'button';
+    weg.addEventListener('click', async () => { sbox.close(); await setzeAus(s, !s.aus); });
+    $('#sbox-inhalt').replaceChildren(kopf, details, gefunden, weg);
+    sbox.showModal();
+    try {
+      const d: Det = await api(`/api/merk/details?id=${encodeURIComponent(s.id)}`);
+      const teile: HTMLElement[] = [];
+      if (d.untertitel) teile.push(el('p', 'unter', d.untertitel));
+      if (d.genres?.length) { const g = el('p', 'genres'); d.genres.forEach((x) => g.append(el('span', 'genre mono', x))); teile.push(g); }
+      teile.push(el('p', 'handlung', d.handlung || 'Noch keine Beschreibung vorhanden.'));
+      const dl = document.createElement('dl'); dl.className = 'fakten';
+      const fakt = (k: string, v: string) => { const z = el('div'); z.append(el('dt', 'mono', k), el('dd', '', v)); dl.append(z); };
+      (d.fakten || []).forEach(([k, v]) => fakt(k, v));
+      if (d.anbieter?.abo?.length) fakt('Im Abo (DE)', d.anbieter.abo.join(', '));
+      if (dl.children.length) teile.push(dl);
+      const kn = el('p', 'knoepfe');
+      if (d.trailer) { const a = el('a', 'knopf', '▶ Trailer ansehen') as HTMLAnchorElement; a.href = d.trailer; a.target = '_blank'; a.rel = 'noopener'; kn.append(a); }
+      if (d.link) { const a = el('a', 'knopf leise', `Mehr bei ${d.linkName}`) as HTMLAnchorElement; a.href = d.link; a.target = '_blank'; a.rel = 'noopener'; kn.append(a); }
+      if (kn.children.length) teile.push(kn);
+      details.replaceChildren(...teile);
+    } catch (err) { details.replaceChildren(el('p', 'mono', `Details gerade nicht verfügbar: ${(err as Error).message}`)); }
+  }
+  $('#sbox-zu').addEventListener('click', () => sbox.close());
+  sbox.addEventListener('click', (ev) => { if (ev.target === sbox) sbox.close(); });
 
   // Ansicht: Kacheln (Standard) oder Liste, gilt für alle Bereiche
   const ser = $('#ser');
@@ -234,6 +297,7 @@ import Base from '../../layouts/Base.astro';
 </script>
 
 <style is:global>
+@keyframes sbox-auf { from { opacity: 0; transform: translateY(14px) scale(0.98); } }
 .ser {
   .abschnitt { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.8rem; margin: 40px 0 14px; }
   .kopfzeile { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
@@ -288,6 +352,38 @@ import Base from '../../layouts/Base.astro';
   .aus summary { cursor: pointer; font-size: 0.8rem; color: var(--ink-2); }
   .aus-liste { margin-top: 10px; }
   .aus-liste li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 1px dashed var(--rule); }
+
+  /* Info-Box */
+  .klickbar { cursor: pointer; transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 220ms ease; }
+  .kachel.klickbar:hover, &.kacheln .klickbar:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); }
+  .klickbar:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+  .sbox { width: min(700px, calc(100vw - 32px)); max-height: calc(100vh - 48px); overflow: auto; border: 0; border-radius: 8px; padding: 26px; background: var(--paper); color: var(--ink); box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.6); }
+  .sbox::backdrop { background: rgb(10 12 14 / 0.55); backdrop-filter: blur(4px); }
+  .sbox[open] { animation: sbox-auf 320ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .sbox-zu { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; padding: 0; border-radius: 50%; font-size: 1.5rem; line-height: 1; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
+  .sbox-kopf { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: start; margin-bottom: 16px; padding-right: 36px; }
+  .sbox-bild { display: block; width: 120px; aspect-ratio: 2 / 3; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow); background: color-mix(in srgb, var(--ink) 10%, transparent); }
+  .sbox-bild img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .sbox-titel { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(1.7rem, 4vw, 2.4rem); line-height: 0.92; margin: 4px 0 8px; }
+  .sbox-termin { font-size: 0.8rem; font-weight: 700; }
+  .sbox-details > * { margin: 0 0 12px; }
+  .unter { font-style: italic; }
+  .genres { display: flex; flex-wrap: wrap; gap: 6px; }
+  .genre { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 9px; border-radius: 999px; background: color-mix(in srgb, var(--ink) 9%, transparent); }
+  .handlung { line-height: 1.6; }
+  .fakten { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px 20px; }
+  .fakten dt { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-2); }
+  .fakten dd { margin: 2px 0 0; }
+  .knoepfe { display: flex; gap: 10px; flex-wrap: wrap; }
+  .knoepfe .knopf:not(.leise) { background: var(--serie); color: var(--serie-ink); }
+  .laed { font-size: 0.8rem; color: var(--ink-2); }
+  .sbox-gefunden { border-top: 2px dashed var(--rule); padding-top: 14px; margin: 6px 0 16px; }
+  .sbox-gefunden h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px; color: var(--ink-2); }
+  .sbox-gefunden ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+  .sbox-gefunden li { display: grid; gap: 2px; }
+  .sbox-gefunden a, .sbox-gefunden .h-titel { color: var(--ink); font-weight: 600; line-height: 1.35; }
+  .sbox-gefunden li.ist-neu .art { color: var(--serie); }
+  @media (max-width: 560px) { .sbox { padding: 18px; } .sbox-kopf { grid-template-columns: 84px 1fr; gap: 14px; } .sbox-bild { width: 84px; } }
 
   /* Ansicht-Umschalter */
   .ansicht-zeile { display: flex; justify-content: flex-end; margin-top: -10px; }
