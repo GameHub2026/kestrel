@@ -193,14 +193,18 @@ export class Szene {
   }
 }
 
-const THEMEN: Record<string, () => Promise<Thema>> = {};
-export function melde(name: string, lade: () => Promise<Thema>) { THEMEN[name] = lade; }
+type Drei = { drei: true; starte(el: HTMLElement): boolean; ersatz?: string };
+const THEMEN: Record<string, () => Promise<Thema | Drei>> = {};
+export function melde(name: string, lade: () => Promise<Thema | Drei>) { THEMEN[name] = lade; }
 
 export async function starteSzenen() {
   for (const el of document.querySelectorAll<HTMLElement>('[data-szene]:not([data-an])')) {
     el.dataset.an = '1';
     const lade = THEMEN[el.dataset.szene || '']; if (!lade) continue;
-    const s = new Szene(el, await lade());
+    let th = await lade();
+    // 3D-Szenen bringen ihren eigenen Renderer mit; ohne WebGL springt ein 2D-Ersatz ein
+    if ('drei' in th) { if (th.starte(el)) continue; if (!th.ersatz || !THEMEN[th.ersatz]) continue; th = (await THEMEN[th.ersatz]()) as Thema; }
+    const s = new Szene(el, th as Thema);
     (el as any).szene = s;
     el.dispatchEvent(new CustomEvent('szene-bereit', { detail: s }));
   }

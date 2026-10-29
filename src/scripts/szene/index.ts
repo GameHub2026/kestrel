@@ -2,7 +2,7 @@
 import { melde, starteSzenen } from './motor';
 melde('stadt', () => import('./themen/stadt').then((m) => m.default));
 melde('wueste', () => import('./themen/wueste').then((m) => m.default));
-melde('flur', () => import('./themen/flur').then((m) => m.default));
+melde('mordor', () => import('./drei/mordor').then((m) => m.default));
 melde('maschinen', () => import('./themen/maschinen').then((m) => m.default));
 melde('ruinen', () => import('./themen/ruinen').then((m) => m.default));
 melde('western', () => import('./themen/western').then((m) => m.default));

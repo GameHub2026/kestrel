@@ -1,7 +1,7 @@
 ---
 // Animierte Themen-Szene. art="buehne": volle Fläche (Startseite, Ebenen umschließen das Fenster),
 // art="kopf": rechts im Seitenkopf, läuft nach links und unten in den Hintergrund aus.
-interface Props { thema: 'stadt' | 'wueste' | 'flur' | 'maschinen' | 'ruinen' | 'western' | 'gewitter' | 'rabenwald'; art?: 'buehne' | 'kopf' }
+interface Props { thema: 'stadt' | 'wueste' | 'mordor' | 'maschinen' | 'ruinen' | 'western' | 'gewitter' | 'rabenwald'; art?: 'buehne' | 'kopf' }
 const { thema, art = 'kopf' } = Astro.props;
 ---
 <div class:list={['szene', `szene--${art}`]} data-szene={thema} aria-hidden="true">
@@ -32,9 +32,9 @@ const { thema, art = 'kopf' } = Astro.props;
   /* Kopf: rechts bis zum Fensterrand, weicher Übergang nach links und unten */
   .szene--kopf {
     position: absolute; z-index: 0; top: calc(-1 * var(--bar)); right: calc(50% - 50vw); width: 100vw; height: calc(100% + var(--bar) + 40px);
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgb(0 0 0 / 0.35) 14%, rgb(0 0 0 / 0.85) 34%, #000 50%), linear-gradient(to bottom, #000 58%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, rgb(0 0 0 / 0.55) 0%, rgb(0 0 0 / 0.9) 22%, #000 40%), linear-gradient(to bottom, #000 62%, transparent 100%);
     -webkit-mask-composite: source-in;
-    mask-image: linear-gradient(to right, transparent 0%, rgb(0 0 0 / 0.35) 14%, rgb(0 0 0 / 0.85) 34%, #000 50%), linear-gradient(to bottom, #000 58%, transparent 100%);
+    mask-image: linear-gradient(to right, rgb(0 0 0 / 0.55) 0%, rgb(0 0 0 / 0.9) 22%, #000 40%), linear-gradient(to bottom, #000 62%, transparent 100%);
     mask-composite: intersect;
     pointer-events: none;
   }
