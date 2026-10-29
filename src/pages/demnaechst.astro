@@ -28,15 +28,23 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
       <button type="button" data-f="alle" aria-pressed="true">Alles</button>
       <button type="button" data-f="kino" data-medium="film" aria-pressed="false">Kino</button>
       <button type="button" data-f="serie" data-medium="serie" aria-pressed="false">Serien</button>
+      <!-- Genre: Knopf mit dunkler Tafel, Bewegung wie die Leiste links (gleitet auf, Inhalt kommt aus der Unschärfe) -->
+      <div class="gw" id="gw">
+        <button type="button" class="gw-knopf" id="gw-knopf" aria-haspopup="menu" aria-expanded="false" aria-controls="gw-tafel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18M6 12h12M10 19h4"/></svg>
+          <span id="gw-text">Genre</span>
+          <svg class="gw-pfeil" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="gw-tafel" id="gw-tafel" role="menu" aria-label="Genre wählen">
+          <p class="gw-kopf"><span>Genre</span><span class="gw-zahl" id="gw-zahl"></span></p>
+          <ul id="gw-liste"></ul>
+        </div>
+      </div>
       <div class="ansicht" role="group" aria-label="Ansicht">
         <button type="button" data-ansicht="liste" aria-pressed="true" aria-label="Liste" title="Liste"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button>
         <button type="button" data-ansicht="kacheln" aria-pressed="false" aria-label="Kacheln" title="Kacheln"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg></button>
       </div>
     </nav>
-    <div class="wrap genre-filter">
-      <label class="mono" for="genre-wahl">Genre</label>
-      <select id="genre-wahl"></select>
-    </div>
 
     <section class="wrap" aria-label="Termine" id="termine">
       {[...gruppen].map(([datum, liste]) => (
@@ -105,21 +113,58 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
   const bereich = document.getElementById('termine')!;
   const leer = document.createElement('p');
   leer.className = 'leer mono'; leer.textContent = 'Dazu steht gerade nichts an.';
-  // Genre-Leiste: zeigt die Genres, die im gewählten Bereich (Alles/Kino/Serien) vorkommen, häufigste zuerst
-  const gf = document.getElementById('genre-wahl') as HTMLSelectElement;
+  // Genre-Tafel: zeigt die Genres, die im gewählten Bereich (Alles/Kino/Serien) vorkommen
+  const gw = document.getElementById('gw')!, gwKnopf = document.getElementById('gw-knopf')!, gwListe = document.getElementById('gw-liste')!;
   let genre = '';
   const alleLi = [...bereich.querySelectorAll<HTMLElement>('.eintrag')];
   const genresVonLi = (li: HTMLElement) => (li.dataset.genres || '').split('|').filter(Boolean);
   function genreLeiste(f: string) {
     const zahl = new Map<string, number>();
-    alleLi.filter((li) => f === 'alle' || li.dataset.f === f).forEach((li) => genresVonLi(li).forEach((g) => zahl.set(g, (zahl.get(g) || 0) + 1)));
+    const imBereich = alleLi.filter((li) => f === 'alle' || li.dataset.f === f);
+    imBereich.forEach((li) => genresVonLi(li).forEach((g) => zahl.set(g, (zahl.get(g) || 0) + 1)));
     if (genre && !zahl.has(genre)) genre = '';
-    const opt = (wert: string, text: string) => { const o = document.createElement('option'); o.value = wert; o.textContent = text; return o; };
-    gf.replaceChildren(opt('', 'Alle Genres'), ...[...zahl].sort((a, b) => a[0].localeCompare(b[0], 'de')).map(([g, n]) => opt(g, `${g} (${n})`)));
-    gf.value = genre;
-    gf.classList.toggle('aktiv', !!genre);
+    const punkt = (wert: string, text: string, n: number, i: number) => {
+      const li = document.createElement('li'); li.style.setProperty('--i', String(i));
+      const b = document.createElement('button'); b.type = 'button'; b.setAttribute('role', 'menuitemradio'); b.setAttribute('aria-checked', String(genre === wert)); b.tabIndex = -1;
+      const t = document.createElement('span'); t.textContent = text;
+      const z = document.createElement('span'); z.className = 'n'; z.textContent = String(n);
+      b.append(t, z);
+      b.addEventListener('click', () => { genre = wert; schliessen(true); anwenden(aktuell()); });
+      li.append(b); return li;
+    };
+    const sortiert = [...zahl].sort((a, b) => a[0].localeCompare(b[0], 'de'));
+    gwListe.replaceChildren(punkt('', 'Alle Genres', imBereich.length, 0), ...sortiert.map(([g, n], i) => punkt(g, g, n, i + 1)));
+    gwListe.classList.toggle('zwei', sortiert.length > 7);
+    document.getElementById('gw-text')!.textContent = genre || 'Genre';
+    document.getElementById('gw-zahl')!.textContent = `${sortiert.length}`;
+    gw.classList.toggle('aktiv', !!genre);
   }
-  gf.addEventListener('change', () => { genre = gf.value; anwenden(aktuell()); });
+  let zu = 0;
+  function oeffnen() {
+    clearTimeout(zu); if (gw.classList.contains('offen')) return;
+    gw.classList.add('offen'); gwKnopf.setAttribute('aria-expanded', 'true');
+    gwListe.querySelectorAll<HTMLButtonElement>('button').forEach((b) => (b.tabIndex = 0));
+  }
+  function schliessen(sofort = false) {
+    clearTimeout(zu);
+    zu = window.setTimeout(() => {
+      gw.classList.remove('offen'); gwKnopf.setAttribute('aria-expanded', 'false');
+      gwListe.querySelectorAll<HTMLButtonElement>('button').forEach((b) => (b.tabIndex = -1));
+    }, sofort ? 0 : 260);
+  }
+  gwKnopf.addEventListener('click', () => (gw.classList.contains('offen') ? schliessen(true) : (oeffnen(), gwListe.querySelector<HTMLButtonElement>('[aria-checked="true"]')?.focus({ preventScroll: true }))));
+  if (matchMedia('(hover: hover)').matches) { gw.addEventListener('mouseenter', oeffnen); gw.addEventListener('mouseleave', () => schliessen()); }
+  document.addEventListener('click', (e) => { if (!gw.contains(e.target as Node)) schliessen(true); });
+  gw.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { schliessen(true); gwKnopf.focus(); }
+    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      e.preventDefault(); if (!gw.classList.contains('offen')) oeffnen();
+      const alle = [...gwListe.querySelectorAll<HTMLButtonElement>('button')];
+      const i = alle.indexOf(document.activeElement as HTMLButtonElement);
+      alle[(i + (e.key === 'ArrowDown' ? 1 : -1) + alle.length) % alle.length]?.focus();
+    }
+  });
+  gw.addEventListener('focusout', (e) => { if (!gw.contains(e.relatedTarget as Node)) schliessen(true); });
   function anwenden(f: string) {
     knoepfe.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.f === f)));
     genreLeiste(f);
@@ -270,7 +315,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 }
 .dem button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
 .dem button[data-medium][aria-pressed='true'] { background: var(--card); color: var(--card-ink); }
-.dem .tabs .ansicht { margin-left: auto; display: inline-flex; gap: 2px; padding: 3px; border-radius: 8px; background: color-mix(in srgb, var(--ink) 8%, transparent); align-self: center; }
+.dem .tabs .ansicht { margin-left: 0; display: inline-flex; gap: 2px; padding: 3px; border-radius: 8px; background: color-mix(in srgb, var(--ink) 8%, transparent); align-self: center; }
 .dem .tabs .ansicht button { padding: 7px 9px; background: transparent; color: var(--ink-2); box-shadow: none; border-radius: 6px; display: grid; place-items: center; }
 .dem .tabs .ansicht button[aria-pressed='true'] { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
 .dem .ansicht svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -282,17 +327,44 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .kacheln .mitte { padding: 10px 11px 12px; gap: 4px; align-content: start; }
 .dem .kacheln .titel { font-size: 1.1rem; }
 .dem .kacheln .karte[data-gemerkt='ja']::after, .dem .kacheln .karte[data-gemerkt='auge']::after { top: 8px; right: 8px; width: 22px; height: 22px; color: #fff; opacity: 1; filter: drop-shadow(0 1px 3px rgb(0 0 0 / 0.8)); z-index: 1; }
-.dem .tabs { margin-bottom: 12px; }
-.dem .genre-filter { display: flex; align-items: center; gap: 10px; margin-bottom: 26px; }
-.dem .genre-filter label { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-2); }
-.dem .genre-filter select {
-  font-family: var(--mono); font-size: 0.85rem; color: var(--ink); background-color: var(--paper); border: 0; border-radius: 6px; box-shadow: var(--shadow);
-  padding: 8px 34px 8px 12px; cursor: pointer; appearance: none; -webkit-appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat; background-position: right 10px center; background-size: 14px;
+.dem .tabs { margin-bottom: 28px; align-items: center; }
+/* Genre-Tafel: gleiche Bewegung wie das Schild der Leiste links */
+.dem .gw { position: relative; margin-left: auto; align-self: center; z-index: 20; }
+.dem .tabs .gw-knopf {
+  display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-weight: 500; text-transform: none; letter-spacing: 0; font-size: 0.82rem;
+  padding: 9px 12px; border-radius: 8px; box-shadow: none; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); transition: background-color 200ms ease, color 200ms ease;
 }
-.dem .genre-filter select.aktiv { background-color: var(--ink); color: var(--ground); }
-.dem .genre-filter select:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.dem .tabs .gw-knopf:hover, .dem .gw.offen .gw-knopf { background: color-mix(in srgb, var(--ink) 14%, transparent); }
+.dem .gw.aktiv .gw-knopf { background: var(--ink); color: var(--ground); }
+.dem .gw-knopf svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.dem .gw-pfeil { opacity: 0.7; transition: transform 380ms cubic-bezier(0.32, 1.25, 0.5, 1); }
+.dem .gw.offen .gw-pfeil { transform: rotate(180deg); }
+.dem .gw-tafel {
+  position: absolute; right: 0; top: calc(100% + 10px); width: max-content; max-width: min(440px, calc(100vw - 32px)); max-height: 62vh; overflow: auto;
+  padding: 8px 6px 6px; background: #16181b; color: #eef0f2; border-radius: 12px; transform-origin: right top;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 0.25), 0 14px 32px -10px rgb(0 0 0 / 0.55), inset 0 0 0 1px rgb(255 255 255 / 0.06);
+  opacity: 0; transform: translateY(-6px) scale(0.96); pointer-events: none; visibility: hidden;
+  transition: transform 420ms cubic-bezier(0.32, 1.25, 0.5, 1), opacity 200ms ease, visibility 0s linear 420ms;
+}
+.dem .gw-tafel::before { content: ''; position: absolute; left: 0; right: 0; top: -12px; height: 12px; } /* Brücke zum Knopf */
+.dem .gw.offen .gw-tafel { opacity: 1; transform: none; pointer-events: auto; visibility: visible; transition: transform 420ms cubic-bezier(0.32, 1.25, 0.5, 1), opacity 200ms ease, visibility 0s; }
+.dem .gw-kopf { margin: 0; padding: 4px 10px 8px; display: flex; justify-content: space-between; gap: 16px; font-family: var(--text); font-weight: 600; font-size: 0.86rem; }
+.dem .gw-zahl { font-family: var(--mono); font-size: 0.7rem; color: #8b929a; font-weight: 400; }
+.dem .gw-tafel ul { list-style: none; margin: 0; padding: 4px 0 0; border-top: 1px solid rgb(255 255 255 / 0.08); display: grid; gap: 1px; min-width: 200px; }
+.dem .gw-tafel ul.zwei { grid-template-columns: repeat(2, minmax(180px, 1fr)); column-gap: 4px; }
+.dem .gw-tafel ul.zwei li:first-child { grid-column: 1 / -1; }
+.dem .gw-tafel li { opacity: 0; filter: blur(6px); transform: translateY(6px); transition: opacity 260ms ease, filter 320ms ease, transform 380ms cubic-bezier(0.16, 1, 0.3, 1); transition-delay: calc(var(--i) * 14ms); }
+.dem .gw.offen .gw-tafel li { opacity: 1; filter: blur(0); transform: none; }
+.dem .gw-tafel button {
+  all: unset; box-sizing: border-box; width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 7px 10px; border-radius: 8px;
+  color: #c4c9ce; font-family: var(--text); font-size: 0.92rem; white-space: nowrap; cursor: pointer; transition: background-color 150ms, color 150ms;
+}
+.dem .gw-tafel button:hover, .dem .gw-tafel button:focus-visible { background: #24272b; color: #fff; }
+.dem .gw-tafel button[aria-checked='true'] { background: #24272b; color: #fff; }
+.dem .gw-tafel button[aria-checked='true']::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--film); margin-right: -6px; flex: none; order: -1; }
+.dem .gw-tafel .n { font-family: var(--mono); font-size: 0.72rem; color: #8b929a; }
+@media (prefers-reduced-motion: reduce) { .dem .gw-tafel, .dem .gw-tafel li { transition: opacity 150ms ease; transform: none; filter: none; } }
+@media (max-width: 560px) { .dem .gw { margin-left: 0; } .dem .gw-tafel { right: auto; left: 0; transform-origin: left top; } .dem .gw-tafel ul.zwei { grid-template-columns: 1fr 1fr; } .dem .gw-tafel ul.zwei { min-width: 0; } }
 .dem .tag { margin-bottom: 30px; }
 .dem .tag[hidden], .dem .eintrag[hidden] { display: none !important; }
 .dem .tag-name { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.5rem; letter-spacing: 0.03em; margin: 0 0 10px; display: flex; align-items: center; gap: 14px; }
