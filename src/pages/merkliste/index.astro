@@ -18,22 +18,42 @@ import Base from '../../layouts/Base.astro';
   </section>
 
   <div id="app" hidden>
+    <section class="wrap neues" id="neues" hidden aria-labelledby="neues-h">
+      <div class="neues-kopf">
+        <h2 id="neues-h" class="abschnitt">Neues</h2>
+        <button type="button" class="knopf leise" id="alles-gesehen">Alles gesehen</button>
+      </div>
+      <p class="hinweis mono">News und Trailer zu Titeln, die du mit dem Auge beobachtest, seit du zuletzt hier warst.</p>
+      <ul class="neues-liste" id="neues-liste"></ul>
+    </section>
+
     <nav class="wrap tabs" aria-label="Medium">
-      <button type="button" data-tab="spiel" data-medium="spiel" aria-pressed="true">Spiele</button>
+      <button type="button" data-tab="alle" aria-pressed="true">Alle</button>
+      <button type="button" data-tab="spiel" data-medium="spiel" aria-pressed="false">Spiele</button>
       <button type="button" data-tab="film" data-medium="film" aria-pressed="false">Filme</button>
       <button type="button" data-tab="serie" data-medium="serie" aria-pressed="false">Serien</button>
     </nav>
 
     <section class="wrap suche" aria-label="Suchen und merken">
       <label class="visually-hidden" for="such-feld">Suchen</label>
-      <input id="such-feld" type="search" autocomplete="off" placeholder="Spiel suchen …" />
+      <input id="such-feld" type="search" autocomplete="off" placeholder="Spiel, Film oder Serie suchen …" />
       <p class="hinweis mono" id="such-status" aria-live="polite"></p>
       <ul class="treffer" id="treffer"></ul>
     </section>
 
     <section class="wrap" aria-labelledby="liste-h">
-      <h2 id="liste-h" class="abschnitt">Gemerkt</h2>
+      <div class="liste-kopf">
+        <h2 id="liste-h" class="abschnitt">Gemerkt</h2>
+        <div class="ansicht" role="group" aria-label="Ansicht">
+          <button type="button" data-ansicht="liste" aria-pressed="true" aria-label="Liste"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button>
+          <button type="button" data-ansicht="kacheln" aria-pressed="false" aria-label="Kacheln"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg></button>
+        </div>
+      </div>
       <ul class="liste" id="liste"></ul>
+      <dialog class="kbox" id="kbox" aria-label="Eintrag">
+        <button type="button" class="kbox-zu" id="kbox-zu" aria-label="Schließen">×</button>
+        <div id="kbox-inhalt"></div>
+      </dialog>
       <p class="leer" id="leer" hidden>Noch nichts gemerkt. Oben suchen und auf „Merken" tippen.</p>
     </section>
 
@@ -52,8 +72,13 @@ import Base from '../../layouts/Base.astro';
 <script>
   const SPEICHER = 'kestrel-merk-token';
   const $ = (s: string) => document.querySelector(s) as HTMLElement;
-  const PLATZ = { spiel: 'Spiel suchen …', film: 'Film suchen …', serie: 'Serie suchen …' } as Record<string, string>;
-  type Eintrag = { id: string; medium: string; titel: string; bild?: string; termine?: { datum: string; text: string }[]; status?: string; kalender?: boolean; fehler?: string };
+  const PLATZ = { alle: 'Spiel, Film oder Serie suchen …', spiel: 'Spiel suchen …', film: 'Film suchen …', serie: 'Serie suchen …' } as Record<string, string>;
+  const MEDIUM: Record<string, string> = { spiel: 'Spiel', film: 'Film', serie: 'Serie' };
+  type Eintrag = { id: string; medium: string; titel: string; bild?: string; termine?: { datum: string; text: string }[]; status?: string; kalender?: boolean; oeffentlich?: boolean; beobachten?: boolean; fehler?: string };
+  type Punkt = { art: 'news' | 'trailer'; titel: string; link: string; quelle: string; datum: string; neu: boolean };
+  type Beob = { id: string; titel: string; medium: string; punkte: Punkt[] };
+  const AUGE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>';
+  const gross = (u?: string) => u?.replace('/w154/', '/w342/').replace('t_cover_small', 't_cover_big');
 
   // Schlüssel aus #t=… übernehmen (Link einmal pro Gerät öffnen), danach aus dem Speicher.
   let token = '';
@@ -63,8 +88,11 @@ import Base from '../../layouts/Base.astro';
     token = localStorage.getItem(SPEICHER) || '';
   } catch {}
 
-  let medium = 'spiel';
+  let medium = 'alle';
   let liste: Eintrag[] = [];
+  let beob = new Map<string, Beob>();
+  let ansicht = 'liste';
+  try { ansicht = localStorage.getItem('kestrel-merk-ansicht') === 'kacheln' ? 'kacheln' : 'liste'; } catch {}
 
   async function api(pfad: string, opt: RequestInit = {}) {
     const r = await fetch(pfad, { ...opt, headers: { 'x-merk-token': token, 'content-type': 'application/json', ...(opt.headers || {}) } });
@@ -98,44 +126,146 @@ import Base from '../../layouts/Base.astro';
     return b;
   }
 
+  const neuAnzahl = (e: Eintrag) => beob.get(e.id)?.punkte.filter((p) => p.neu).length || 0;
+
+  // Schalter eines Eintrags: Auge (beobachten), Kalender, Öffentlich, Entfernen
+  function steuerung(e: Eintrag, nachher: () => void) {
+    const rechts = el('div', 'rechts');
+    const auge = el('button', 'auge') as HTMLButtonElement; auge.type = 'button';
+    const setzeAuge = () => {
+      auge.setAttribute('aria-pressed', String(!!e.beobachten));
+      auge.innerHTML = `${AUGE}<span>${e.beobachten ? 'Beobachtet' : 'Beobachten'}</span>`;
+      auge.title = e.beobachten ? 'Nicht mehr beobachten' : 'Bei neuen News oder Trailern Bescheid geben';
+    };
+    setzeAuge();
+    auge.addEventListener('click', async () => {
+      auge.disabled = true;
+      try { liste = await api('/api/merk', { method: 'PATCH', body: JSON.stringify({ id: e.id, beobachten: !e.beobachten }) }); e.beobachten = !e.beobachten; setzeAuge(); ladeNeues(); }
+      finally { auge.disabled = false; }
+    });
+    const lab = el('label', 'schalter'); const cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = !!e.kalender;
+    cb.addEventListener('change', async () => { liste = await api('/api/merk', { method: 'PATCH', body: JSON.stringify({ id: e.id, kalender: cb.checked }) }); });
+    lab.append(cb, el('span', '', 'Im Kalender'));
+    const lab2 = el('label', 'schalter'); const cb2 = document.createElement('input'); cb2.type = 'checkbox'; cb2.checked = e.oeffentlich === true;
+    cb2.addEventListener('change', async () => { liste = await api('/api/merk', { method: 'PATCH', body: JSON.stringify({ id: e.id, oeffentlich: cb2.checked }) }); });
+    lab2.append(cb2, el('span', '', 'Öffentlich'));
+    const weg = el('button', 'weg', 'Entfernen') as HTMLButtonElement; weg.type = 'button';
+    weg.addEventListener('click', async () => { if (!confirm(`„${e.titel}" von der Merkliste nehmen?`)) return; liste = await api(`/api/merk?id=${encodeURIComponent(e.id)}`, { method: 'DELETE' }); nachher(); zeigeListe(); });
+    rechts.append(auge, lab, lab2, weg);
+    rechts.addEventListener('click', (ev) => ev.stopPropagation()); // Schalter klappen nicht auf
+    return rechts;
+  }
+  function terminZeile(e: Eintrag) {
+    const n = naechster(e);
+    return n ? `${datumDe(n.datum)} · ${n.text}` : (e.status || 'Kein kommender Termin');
+  }
+  function plakette(e: Eintrag) {
+    const n = neuAnzahl(e);
+    if (!e.beobachten) return null;
+    const p = el('span', `plakette mono${n ? ' hat-neues' : ''}`); p.innerHTML = AUGE;
+    p.append(n ? `${n} neu` : 'beobachtet');
+    return p;
+  }
+
   function zeigeListe() {
     const ul = $('#liste'); ul.replaceChildren();
-    const meine = liste.filter((e) => e.medium === medium).sort((a, b) => {
+    ul.classList.toggle('kacheln', ansicht === 'kacheln');
+    const meine = liste.filter((e) => medium === 'alle' || e.medium === medium).sort((a, b) => {
       const na = naechster(a)?.datum || '9999', nb = naechster(b)?.datum || '9999';
       return na.localeCompare(nb) || a.titel.localeCompare(b.titel, 'de');
     });
     $('#leer').hidden = meine.length > 0;
-    for (const e of meine) {
-      const li = el('li', 'eintrag'); li.dataset.medium = e.medium;
-      const mitte = el('div', 'mitte');
-      mitte.append(el('span', 'titel', e.titel));
-      const n = naechster(e);
-      mitte.append(el('span', 'termin mono', n ? `${datumDe(n.datum)} · ${n.text}` : (e.status || 'Kein kommender Termin')));
-      if (e.fehler) mitte.append(el('span', 'fehler mono', `Konnte nicht aktualisieren: ${e.fehler}`));
-      const rechts = el('div', 'rechts');
-      const lab = el('label', 'schalter'); const cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = !!e.kalender;
-      cb.addEventListener('change', async () => { liste = await api('/api/merk', { method: 'PATCH', body: JSON.stringify({ id: e.id, kalender: cb.checked }) }); });
-      lab.append(cb, el('span', '', 'Im Kalender'));
-      const lab2 = el('label', 'schalter'); const cb2 = document.createElement('input'); cb2.type = 'checkbox'; cb2.checked = e.oeffentlich === true;
-      cb2.addEventListener('change', async () => { liste = await api('/api/merk', { method: 'PATCH', body: JSON.stringify({ id: e.id, oeffentlich: cb2.checked }) }); });
-      lab2.append(cb2, el('span', '', 'Öffentlich'));
-      const weg = el('button', 'weg', 'Entfernen') as HTMLButtonElement; weg.type = 'button';
-      weg.addEventListener('click', async () => { if (!confirm(`„${e.titel}" von der Merkliste nehmen?`)) return; liste = await api(`/api/merk?id=${encodeURIComponent(e.id)}`, { method: 'DELETE' }); zeigeListe(); });
-      rechts.append(lab, lab2, weg);
-      rechts.addEventListener('click', (ev) => ev.stopPropagation()); // Haken und Entfernen klappen nicht auf
-      const pfeil = el('span', 'pfeil'); pfeil.setAttribute('aria-hidden', 'true');
-      const klapp = el('div', 'klapp'); const innen = el('div', 'klapp-innen'); klapp.append(innen);
-      li.tabIndex = 0; li.setAttribute('role', 'button'); li.setAttribute('aria-expanded', 'false');
-      const umschalten = () => {
-        const auf = !li.classList.contains('offen');
-        li.classList.toggle('offen', auf); li.setAttribute('aria-expanded', String(auf));
-        if (auf && !innen.dataset.geladen) ladeDetails(e, innen);
-      };
-      li.addEventListener('click', umschalten);
-      li.addEventListener('keydown', (ev) => { if ((ev.key === 'Enter' || ev.key === ' ') && ev.target === li) { ev.preventDefault(); umschalten(); } });
-      li.append(bild(e.bild), mitte, rechts, pfeil, klapp); ul.append(li);
-    }
+    for (const e of meine) ul.append(ansicht === 'kacheln' ? kachel(e) : zeile(e));
   }
+
+  function zeile(e: Eintrag) {
+    const li = el('li', 'eintrag'); li.dataset.medium = e.medium;
+    const mitte = el('div', 'mitte');
+    if (medium === 'alle') mitte.append(el('span', 'art mono', MEDIUM[e.medium]));
+    mitte.append(el('span', 'titel', e.titel));
+    mitte.append(el('span', 'termin mono', terminZeile(e)));
+    const p = plakette(e); if (p) mitte.append(p);
+    if (e.fehler) mitte.append(el('span', 'fehler mono', `Konnte nicht aktualisieren: ${e.fehler}`));
+    const rechts = steuerung(e, () => {});
+    const pfeil = el('span', 'pfeil'); pfeil.setAttribute('aria-hidden', 'true');
+    const klapp = el('div', 'klapp'); const innen = el('div', 'klapp-innen'); klapp.append(innen);
+    li.tabIndex = 0; li.setAttribute('role', 'button'); li.setAttribute('aria-expanded', 'false');
+    const umschalten = () => {
+      const auf = !li.classList.contains('offen');
+      li.classList.toggle('offen', auf); li.setAttribute('aria-expanded', String(auf));
+      if (auf && !innen.dataset.geladen) ladeDetails(e, innen);
+    };
+    li.addEventListener('click', umschalten);
+    li.addEventListener('keydown', (ev) => { if ((ev.key === 'Enter' || ev.key === ' ') && ev.target === li) { ev.preventDefault(); umschalten(); } });
+    li.append(bild(e.bild), mitte, rechts, pfeil, klapp);
+    return li;
+  }
+
+  // Kachel: großes Cover, Titel und Termin; Klick öffnet alles in einer Box
+  function kachel(e: Eintrag) {
+    const li = el('li', 'kachel'); li.dataset.medium = e.medium;
+    const b = el('button', 'kachel-knopf') as HTMLButtonElement; b.type = 'button'; b.setAttribute('aria-haspopup', 'dialog');
+    const cover = el('span', 'cover');
+    const src = gross(e.bild);
+    if (src) { const i = document.createElement('img'); i.src = src; i.alt = ''; i.loading = 'lazy'; cover.append(i); }
+    else cover.append(el('span', 'cover-leer', e.titel));
+    const p = plakette(e); if (p) cover.append(p);
+    const unten = el('span', 'kachel-unten');
+    unten.append(el('span', 'art mono', MEDIUM[e.medium]), el('span', 'titel', e.titel), el('span', 'termin mono', terminZeile(e)));
+    b.append(cover, unten);
+    b.addEventListener('click', () => oeffneKachel(e));
+    li.append(b);
+    return li;
+  }
+  const kbox = $('#kbox') as HTMLDialogElement;
+  function oeffneKachel(e: Eintrag) {
+    kbox.dataset.medium = e.medium;
+    const kopf = el('div', 'kbox-kopf');
+    const mitte = el('div', 'mitte');
+    mitte.append(el('span', 'art mono', MEDIUM[e.medium]), el('span', 'titel', e.titel), el('span', 'termin mono', terminZeile(e)));
+    kopf.append(bild(e.bild), mitte);
+    const innen = el('div', 'klapp-innen');
+    $('#kbox-inhalt').replaceChildren(kopf, steuerung(e, () => kbox.close()), innen);
+    ladeDetails(e, innen);
+    kbox.showModal();
+  }
+  $('#kbox-zu').addEventListener('click', () => kbox.close());
+  kbox.addEventListener('click', (ev) => { if (ev.target === kbox) kbox.close(); });
+
+  document.querySelectorAll<HTMLButtonElement>('[data-ansicht]').forEach((b) => b.addEventListener('click', () => {
+    ansicht = b.dataset.ansicht!;
+    try { localStorage.setItem('kestrel-merk-ansicht', ansicht); } catch {}
+    document.querySelectorAll('[data-ansicht]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    zeigeListe();
+  }));
+  document.querySelectorAll('[data-ansicht]').forEach((x) => x.setAttribute('aria-pressed', String((x as HTMLElement).dataset.ansicht === ansicht)));
+
+  // Neues zu beobachteten Einträgen
+  const relativ = (iso: string) => { const t = Math.floor((Date.now() - Date.parse(iso)) / 864e5); return t <= 0 ? 'heute' : t === 1 ? 'gestern' : `vor ${t} Tagen`; };
+  function punktLi(p: Punkt, titel?: string) {
+    const li = el('li', `punkt${p.neu ? ' ist-neu' : ''}`);
+    const a = el('a', '', p.titel) as HTMLAnchorElement; a.href = p.link; a.target = '_blank'; a.rel = 'noopener';
+    a.addEventListener('click', (ev) => ev.stopPropagation());
+    li.append(el('span', 'punkt-art mono', p.art === 'trailer' ? '▶ Trailer' : 'News'), a,
+      el('span', 'punkt-quelle mono', [titel, p.quelle, relativ(p.datum)].filter(Boolean).join(' · ')));
+    return li;
+  }
+  async function ladeNeues() {
+    try {
+      const d: Beob[] = await api('/api/merk/neues');
+      beob = new Map(d.map((x) => [x.id, x]));
+    } catch { return; }
+    const alleNeu = [...beob.values()].flatMap((b) => b.punkte.filter((p) => p.neu).map((p) => ({ p, b })))
+      .sort((x, y) => y.p.datum.localeCompare(x.p.datum));
+    const ul = $('#neues-liste'); ul.replaceChildren(...alleNeu.slice(0, 30).map(({ p, b }) => { const li = punktLi(p, b.titel); li.dataset.medium = b.medium; return li; }));
+    $('#neues').hidden = alleNeu.length === 0;
+    try { sessionStorage.setItem('kestrel-neu', JSON.stringify({ t: Date.now(), n: alleNeu.length })); } catch {}
+    zeigeListe();
+  }
+  $('#alles-gesehen').addEventListener('click', async () => {
+    await api('/api/merk/neues', { method: 'POST', body: '{}' });
+    ladeNeues();
+  });
 
   // Details beim ersten Aufklappen holen (Handlung, Genre, Anbieter, Trailer, alle Termine)
   type Det = { untertitel?: string; handlung?: string; handlungSprache?: string; genres: string[]; fakten: [string, string][]; anbieter: { abo: string[]; leihen: string[] }; trailer?: string; link?: string; linkName?: string };
@@ -159,6 +289,14 @@ import Base from '../../layouts/Base.astro';
       const box = el('div', 'termine'); box.append(el('p', 'klapp-kopf mono', termine.length > 1 ? `Alle ${termine.length} Termine` : 'Termin'));
       const ol = el('ol'); termine.forEach((t) => ol.append(el('li', 'mono', `${datumDe(t.datum)} · ${t.text}`))); box.append(ol); teile.push(box);
     }
+    const b = beob.get(e.id);
+    if (e.beobachten && b) {
+      const box = el('div', 'termine'); box.append(el('p', 'klapp-kopf mono', 'Zuletzt erschienen'));
+      const ul = el('ul', 'punkte');
+      b.punkte.slice(0, 8).forEach((p) => ul.append(punktLi(p)));
+      if (!b.punkte.length) ul.append(el('li', 'mono leer', 'Noch nichts gefunden. Sobald News oder Trailer erscheinen, stehen sie hier und oben unter „Neues“.'));
+      box.append(ul); teile.push(box);
+    }
     const knoepfe = el('p', 'knoepfe');
     if (d?.trailer) { const a = el('a', 'knopf', '▶ Trailer ansehen') as HTMLAnchorElement; a.href = d.trailer; a.target = '_blank'; a.rel = 'noopener'; knoepfe.append(a); }
     if (d?.link) { const a = el('a', 'knopf leise', `Mehr bei ${d.linkName}`) as HTMLAnchorElement; a.href = d.link; a.target = '_blank'; a.rel = 'noopener'; knoepfe.append(a); }
@@ -174,14 +312,18 @@ import Base from '../../layouts/Base.astro';
     if (q.length < 2) { ul.replaceChildren(); status.textContent = ''; return; }
     const nr = ++suchNr; status.textContent = 'Suche …';
     try {
-      const treffer = await api(`/api/merk/suche?medium=${medium}&q=${encodeURIComponent(q)}`);
+      const arten = medium === 'alle' ? ['spiel', 'film', 'serie'] : [medium];
+      const teile = await Promise.all(arten.map((m) => api(`/api/merk/suche?medium=${m}&q=${encodeURIComponent(q)}`).catch(() => [])));
+      // abwechselnd mischen, damit oben von jedem Medium etwas steht
+      const treffer: any[] = [];
+      for (let i = 0; i < 8; i++) for (const t of teile) if (t[i]) treffer.push(t[i]);
       if (nr !== suchNr) return;
       ul.replaceChildren();
       status.textContent = treffer.length ? '' : 'Nichts gefunden.';
       for (const t of treffer) {
         const li = el('li', 'treffer-zeile'); li.dataset.medium = t.medium;
         const mitte = el('div', 'mitte');
-        mitte.append(el('span', 'titel', t.titel), el('span', 'mono info', [t.jahr, t.info].filter(Boolean).join(' · ')));
+        mitte.append(el('span', 'titel', t.titel), el('span', 'mono info', [medium === 'alle' ? MEDIUM[t.medium] : '', t.jahr, t.info].filter(Boolean).join(' · ')));
         const schon = liste.some((e) => e.id === t.id);
         const b = el('button', 'merken', schon ? 'Gemerkt' : 'Merken') as HTMLButtonElement; b.type = 'button'; b.disabled = schon;
         b.addEventListener('click', async () => {
@@ -214,11 +356,13 @@ import Base from '../../layouts/Base.astro';
     $('#zugang').hidden = true; $('#app').hidden = false;
     ($('#abo-link') as HTMLAnchorElement).href = `webcal://${kalenderAdresse()}`;
     zeigeListe();
+    ladeNeues();
   }
   start();
 </script>
 
 <style is:global>
+@keyframes kbox-auf { from { opacity: 0; transform: translateY(14px) scale(0.98); } }
 /* global, weil die Zeilen per Skript entstehen; alles unter .merk gekapselt */
 .merk {
   .eintrag { position: relative; cursor: pointer; grid-template-columns: 48px 1fr auto 18px; row-gap: 0; transition: box-shadow 200ms ease; }
@@ -289,6 +433,58 @@ import Base from '../../layouts/Base.astro';
   .abo p { max-width: 60ch; }
   .abo-knoepfe { display: flex; gap: 10px; flex-wrap: wrap; }
   .suche { margin-bottom: 8px; }
+
+
+  /* Kopfzeile der Liste mit Ansicht-Umschalter */
+  .liste-kopf, .neues-kopf { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .liste-kopf .abschnitt, .neues-kopf .abschnitt { margin-bottom: 14px; }
+  .ansicht { display: inline-flex; gap: 2px; padding: 3px; border-radius: 8px; background: color-mix(in srgb, var(--ink) 8%, transparent); }
+  .ansicht button { padding: 7px 9px; background: transparent; color: var(--ink-2); box-shadow: none; border-radius: 6px; display: grid; place-items: center; }
+  .ansicht button[aria-pressed='true'] { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
+  .ansicht svg, .auge svg, .plakette svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .art { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; opacity: 0.85; }
+
+  /* Auge */
+  .auge { display: inline-flex; align-items: center; gap: 6px; font-size: 0.8rem; padding: 6px 10px 5px; background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
+  .auge[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
+  .auge[aria-pressed='true'] svg circle { fill: currentColor; }
+  .auge svg { width: 16px; height: 16px; }
+  .plakette { display: inline-flex; align-items: center; gap: 5px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; opacity: 0.85; }
+  .plakette svg { width: 14px; height: 14px; }
+  .plakette.hat-neues { opacity: 1; background: var(--ink); color: var(--ground); padding: 2px 8px 2px 6px; border-radius: 999px; width: max-content; }
+
+  /* Neues */
+  .neues { margin-bottom: 10px; }
+  .neues-liste, .punkte { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; }
+  .neues-liste .punkt { background: var(--paper); border-radius: 4px; box-shadow: var(--shadow); padding: 10px 14px; border-left: 4px solid var(--card); }
+  .punkt { display: grid; gap: 2px; }
+  .punkt a { color: inherit; font-weight: 600; line-height: 1.35; }
+  .punkt-art { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; opacity: 0.8; }
+  .punkt-quelle { font-size: 0.72rem; opacity: 0.8; }
+  .punkte .punkt.ist-neu .punkt-art::after { content: ' · neu'; }
+
+  /* Kachelansicht */
+  .liste.kacheln { grid-template-columns: repeat(auto-fill, minmax(158px, 1fr)); gap: 16px; }
+  .kachel-knopf { all: unset; box-sizing: border-box; display: grid; width: 100%; cursor: pointer; border-radius: 4px; overflow: hidden; background: var(--card); color: var(--card-ink); box-shadow: var(--shadow); transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 240ms ease; }
+  .kachel-knopf:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); }
+  .kachel-knopf:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+  .cover { position: relative; display: block; aspect-ratio: 2 / 3; background: color-mix(in srgb, currentColor 14%, transparent); }
+  .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .cover-leer { position: absolute; inset: 0; display: grid; place-items: center; padding: 12px; text-align: center; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.2rem; }
+  .cover .plakette { position: absolute; top: 8px; right: 8px; background: rgb(10 12 14 / 0.72); color: #fff; padding: 4px 8px 4px 6px; border-radius: 999px; opacity: 1; backdrop-filter: blur(4px); }
+  .cover .plakette.hat-neues { background: var(--card); color: var(--card-ink); box-shadow: 0 2px 8px rgb(0 0 0 / 0.35); }
+  .kachel-unten { display: grid; gap: 3px; padding: 10px 11px 11px; }
+  .kachel-unten .titel { font-size: 1.05rem; }
+  .kachel-unten .termin { font-size: 0.7rem; }
+
+  /* Box der Kachelansicht */
+  .kbox { width: min(680px, calc(100vw - 32px)); max-height: calc(100vh - 48px); overflow: auto; border: 0; border-radius: 8px; padding: 26px; background: var(--paper); color: var(--ink); box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.6); }
+  .kbox::backdrop { background: rgb(10 12 14 / 0.55); backdrop-filter: blur(4px); }
+  .kbox[open] { animation: kbox-auf 320ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .kbox-zu { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; padding: 0; border-radius: 50%; font-size: 1.5rem; line-height: 1; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
+  .kbox-kopf { display: grid; grid-template-columns: 48px 1fr; gap: 14px; align-items: center; margin-bottom: 14px; padding-right: 36px; }
+  .kbox .rechts { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 10px 16px; padding-bottom: 14px; border-bottom: 1px dashed var(--rule); }
+  .kbox .klapp-innen { opacity: 1; transform: none; padding-top: 14px; }
 
   @media (max-width: 560px) {
     .eintrag { grid-template-columns: 40px 1fr 18px; }

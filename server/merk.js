@@ -1,3 +1,4 @@
+import { passt, KONTEXT } from './news-match.js';
 // Merkliste: Suche und Termine aus IGDB (Spiele) und TMDB (Filme, Serien), gespeichert im KV-Speicher MERK.
 // Termine werden beim Abruf erneuert, wenn sie älter als 12 Stunden sind. So wandern Verschiebungen
 // automatisch in die Liste und in den Kalender, ohne Zeitplan-Job.
@@ -247,4 +248,56 @@ export async function details(env, id) {
   const d = quelle === 'igdb' ? await detailsIgdb(env, nr) : await detailsTmdb(env, quelle === 'tmdb-movie' ? 'movie' : 'tv', nr);
   if (d) await env.MERK.put(key, JSON.stringify(d), { expirationTtl: TAGE3 });
   return d;
+}
+
+// ---------- Beobachten: Neues (Trailer, News) seit dem letzten Blick ----------
+// Pro beobachtetem Eintrag liegt im KV ein Zwischenstand (Namen + Trailer), alle 6 Stunden erneuert.
+// News kommen aus dem News-Archiv der Seite (/news-archiv.json, zweimal täglich von der GitHub-Aktion gefüllt).
+const BEOB_MS = 6 * 3600 * 1000;
+const MAX_BEOB = 8;
+
+async function frischBeob(env, e, alt) {
+  const [quelle, nr] = e.id.split(':');
+  const jetzt = new Date().toISOString();
+  if (quelle === 'igdb') {
+    const [g] = await igdb(env, `fields name,alternative_names.name,videos.video_id,videos.name; where id = ${Number(nr)};`);
+    const bekannt = alt?.bekannt || {};
+    const trailer = (g?.videos || []).map((v) => {
+      // IGDB nennt kein Datum: Zeitpunkt, an dem das Video zum ersten Mal auftaucht (beim ersten Abruf: alt, also nicht neu)
+      if (!bekannt[v.video_id]) bekannt[v.video_id] = alt ? jetzt : '2000-01-01T00:00:00.000Z';
+      return { art: 'trailer', titel: v.name || 'Video', link: `https://www.youtube.com/watch?v=${v.video_id}`, quelle: 'YouTube', datum: bekannt[v.video_id] };
+    });
+    const namen = [g?.name, ...(g?.alternative_names || []).map((a) => a.name)].filter((n) => n && /^[\p{Script=Latin}\p{N}\p{P}\s]+$/u.test(n));
+    return { stand: Date.now(), namen: [...new Set(namen)].slice(0, 4), trailer, bekannt };
+  }
+  const art = quelle === 'tmdb-movie' ? 'movie' : 'tv';
+  const d = await tmdb(env, `/${art}/${Number(nr)}`, { append_to_response: 'videos', include_video_language: 'de,en,null' });
+  const trailer = (d.videos?.results || []).filter((v) => v.site === 'YouTube' && /Trailer|Teaser/.test(v.type)).map((v) => ({
+    art: 'trailer', titel: v.name || v.type, link: `https://www.youtube.com/watch?v=${v.key}`, quelle: v.iso_639_1 === 'de' ? 'YouTube (deutsch)' : 'YouTube', datum: v.published_at,
+  }));
+  const namen = [d.title || d.name, d.original_title || d.original_name].filter(Boolean);
+  return { stand: Date.now(), namen: [...new Set(namen)], trailer };
+}
+
+export async function neues(env, liste, archiv) {
+  const beob = liste.filter((e) => e.beobachten);
+  let n = 0;
+  const raus = [];
+  for (const e of beob) {
+    const key = `beob:${e.id}`;
+    let c = await env.MERK.get(key, 'json');
+    if ((!c || Date.now() - c.stand > BEOB_MS) && n < MAX_BEOB) {
+      n++;
+      try { c = await frischBeob(env, e, c); await env.MERK.put(key, JSON.stringify(c)); } catch { /* nächstes Mal */ }
+    }
+    const kontext = e.medium === 'spiel' ? KONTEXT.spiel : KONTEXT.film;
+    const namen = c?.namen?.length ? c.namen : [e.titel];
+    const news = archiv.filter((x) => (x.art || 'film') === (e.medium === 'spiel' ? 'spiel' : 'film') && passt(namen, x.titel, kontext))
+      .slice(0, 12).map((x) => ({ art: 'news', titel: x.titel, link: x.link, quelle: x.quelle, datum: x.datum }));
+    const gesehen = e.gesehen || 0;
+    const punkte = [...news, ...(c?.trailer || [])].sort((a, b) => String(b.datum).localeCompare(String(a.datum))).slice(0, 15)
+      .map((p) => ({ ...p, neu: Date.parse(p.datum) > gesehen }));
+    raus.push({ id: e.id, titel: e.titel, medium: e.medium, bild: e.bild, punkte });
+  }
+  return raus;
 }

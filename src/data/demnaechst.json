@@ -2303,12 +2303,14 @@
    "news": [
     {
      "quelle": "Variety",
+     "art": "film",
      "titel": "Jimmy Fallon and Jamie Lee Curtis Transform Into Nathan Fielder and Elizabeth Holmes to Spoof ‘You Can See Everything’",
      "link": "https://variety.com/2026/tv/news/jimmy-fallon-jamie-lee-curtis-you-can-see-everything-1236933837/",
      "datum": "2026-10-29T04:21:47.000Z"
     },
     {
      "quelle": "Spiegel Kultur",
+     "art": "film",
      "titel": "Elizabeth Holmes: Kinodoku »You Can See Everything« über Hochstaplerin bricht Rekorde",
      "link": "https://www.spiegel.de/kultur/kino/elizabeth-holmes-kinodoku-you-can-see-everything-ueber-hochstaplerin-bricht-rekorde-a-ebc50a17-cad0-4291-b1de-788e06da455b#ref=rss",
      "datum": "2026-10-19T13:50:00.000Z"
@@ -2837,12 +2839,14 @@
    "news": [
     {
      "quelle": "The Hollywood Reporter",
+     "art": "film",
      "titel": "‘The Hunger Games: Sunrise on the Reaping’ First Reactions",
      "link": "https://www.hollywoodreporter.com/movies/movie-news/hunger-games-sunrise-on-the-reaping-first-reactions-1236742404/",
      "datum": "2026-10-29T07:05:19.000Z"
     },
     {
      "quelle": "Variety",
+     "art": "film",
      "titel": "‘The Hunger Games: Sunrise on the Reaping’ First Reactions Call Prequel the ‘Rogue One’ of the Franchise and Praise Joseph Zada as Haymitch",
      "link": "https://variety.com/2026/film/news/hunger-games-sunrise-on-the-reaping-first-reactions-1236933573/",
      "datum": "2026-10-29T00:20:57.000Z"
@@ -3088,6 +3092,7 @@
    "news": [
     {
      "quelle": "Serienjunkies",
+     "art": "film",
      "titel": "Neuer Trailer zum Trilogie-Finale: „Jumanji: Open World“ startet an Weihnachten im Kino",
      "link": "https://www.serienjunkies.de/news/serien/jumanji-open-world-trailer-und-starttermin-im-kino-94562683.html",
      "datum": "2026-10-28T13:52:04.000Z"
@@ -3857,6 +3862,7 @@
    "news": [
     {
      "quelle": "Serienjunkies",
+     "art": "film",
      "titel": "Weitere „Harry Potter“-Darsteller für Staffel 1 bestätigt – eine Figur gab es in den Filmen gar nicht",
      "link": "https://www.serienjunkies.de/news/serien/harry-potter-seriencast-fuer-charlie-weasley-james-und-lily-potter-94561050.html",
      "datum": "2026-10-27T14:53:44.000Z"
@@ -4490,77 +4496,41 @@
    "bild": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
    "news": []
   },
-  "tv-2734": {
-   "titel": "Law & Order: Special Victims Unit",
-   "original": "Law & Order: Special Victims Unit",
+  "tv-4614": {
+   "titel": "Navy CIS",
+   "original": "NCIS",
    "leitsatz": null,
-   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
+   "handlung": "Der Naval Crime Investigative Service wird dann gerufen, wenn Verbrechen begangen werden, die gegen den Uniform Code of Military Justice verstoßen und innerhalb der Navy stattfinden. Das Hauptquartier befindet sich in Washington D.C. und steht unter der Leitung von Special Agent Leroy Jethro Gibbs. Er selbst ist ein Veteran aus dem Irak-Krieg und hat mit moderner Technik wenig zu tun. Aus diesem Grund ermittelt er gemeinsam mit einem Elite-Team, bestehend aus dem Ballistik-Experten Tony DiNozzo, dem Technikspezialisten Tim McGee, der Forensikspezialistin Abby Sciuto sowie dem Gerichtsmediziner Ducky Mallard.",
    "genres": [
     "Krimi",
     "Drama",
-    "Mystery"
+    "Action & Adventure"
    ],
    "fakten": [
     [
      "Umfang",
-     "28 Staffeln, 602 Folgen"
+     "24 Staffeln, 513 Folgen"
     ],
     [
      "Von",
-     "Dick Wolf"
+     "Don McGill, Donald P. Bellisario"
     ],
     [
      "Mit",
-     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
+     "Sean Murray, Wilmer Valderrama, Katrina Law, Brian Dietzen"
     ],
     [
      "Sender/Dienst",
-     "NBC"
+     "CBS"
     ],
     [
      "TMDB-Wertung",
-     "8.0 / 10"
+     "7.6 / 10"
     ]
    ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/2734",
-   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
-   "news": []
-  },
-  "tv-456": {
-   "titel": "Die Simpsons",
-   "original": "The Simpsons",
-   "leitsatz": null,
-   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
-   "genres": [
-    "Animation",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "38 Staffeln, 816 Folgen"
-    ],
-    [
-     "Von",
-     "Matt Groening"
-    ],
-    [
-     "Mit",
-     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
-    ],
-    [
-     "Sender/Dienst",
-     "FOX"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
-   "link": "https://www.themoviedb.org/tv/456",
-   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "trailer": "https://www.youtube.com/watch?v=BhtDgn31XZo",
+   "link": "https://www.themoviedb.org/tv/4614",
+   "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
    "news": []
   },
   "tv-549": {
@@ -4597,43 +4567,6 @@
    "trailer": "https://www.youtube.com/watch?v=RzN8cPlcMTU",
    "link": "https://www.themoviedb.org/tv/549",
    "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
-   "news": []
-  },
-  "tv-4614": {
-   "titel": "Navy CIS",
-   "original": "NCIS",
-   "leitsatz": null,
-   "handlung": "Der Naval Crime Investigative Service wird dann gerufen, wenn Verbrechen begangen werden, die gegen den Uniform Code of Military Justice verstoßen und innerhalb der Navy stattfinden. Das Hauptquartier befindet sich in Washington D.C. und steht unter der Leitung von Special Agent Leroy Jethro Gibbs. Er selbst ist ein Veteran aus dem Irak-Krieg und hat mit moderner Technik wenig zu tun. Aus diesem Grund ermittelt er gemeinsam mit einem Elite-Team, bestehend aus dem Ballistik-Experten Tony DiNozzo, dem Technikspezialisten Tim McGee, der Forensikspezialistin Abby Sciuto sowie dem Gerichtsmediziner Ducky Mallard.",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Action & Adventure"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "24 Staffeln, 513 Folgen"
-    ],
-    [
-     "Von",
-     "Don McGill, Donald P. Bellisario"
-    ],
-    [
-     "Mit",
-     "Sean Murray, Wilmer Valderrama, Katrina Law, Brian Dietzen"
-    ],
-    [
-     "Sender/Dienst",
-     "CBS"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=BhtDgn31XZo",
-   "link": "https://www.themoviedb.org/tv/4614",
-   "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
    "news": []
   },
   "tv-153312": {
@@ -4709,32 +4642,77 @@
    "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
    "news": []
   },
-  "tv-3034": {
-   "titel": "Tatort",
-   "original": "Tatort",
+  "tv-2734": {
+   "titel": "Law & Order: Special Victims Unit",
+   "original": "Law & Order: Special Victims Unit",
    "leitsatz": null,
-   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
+   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
    "genres": [
+    "Krimi",
     "Drama",
-    "Krimi"
+    "Mystery"
    ],
    "fakten": [
     [
      "Umfang",
-     "57 Staffeln, 1347 Folgen"
+     "28 Staffeln, 602 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf"
+    ],
+    [
+     "Mit",
+     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
     ],
     [
      "Sender/Dienst",
-     "ORF 1, Das Erste"
+     "NBC"
     ],
     [
      "TMDB-Wertung",
-     "6.2 / 10"
+     "8.0 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
-   "link": "https://www.themoviedb.org/tv/3034",
-   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/2734",
+   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "news": []
+  },
+  "tv-456": {
+   "titel": "Die Simpsons",
+   "original": "The Simpsons",
+   "leitsatz": null,
+   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
+   "genres": [
+    "Animation",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "38 Staffeln, 816 Folgen"
+    ],
+    [
+     "Von",
+     "Matt Groening"
+    ],
+    [
+     "Mit",
+     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
+    ],
+    [
+     "Sender/Dienst",
+     "FOX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
+   "link": "https://www.themoviedb.org/tv/456",
+   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
    "news": []
   },
   "tv-44006": {
@@ -4770,6 +4748,34 @@
    "trailer": "https://www.youtube.com/watch?v=IIeSDILTE5M",
    "link": "https://www.themoviedb.org/tv/44006",
    "bild": "https://image.tmdb.org/t/p/w500/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
+   "news": []
+  },
+  "tv-3034": {
+   "titel": "Tatort",
+   "original": "Tatort",
+   "leitsatz": null,
+   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
+   "genres": [
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "57 Staffeln, 1347 Folgen"
+    ],
+    [
+     "Sender/Dienst",
+     "ORF 1, Das Erste"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
+   "link": "https://www.themoviedb.org/tv/3034",
+   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
    "news": []
   },
   "tv-1413": {
@@ -4809,39 +4815,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
    "news": []
   },
-  "tv-30984": {
-   "titel": "Bleach",
-   "original": "BLEACH",
-   "leitsatz": "Bankai!",
-   "handlung": "Der 15-jährige Schüler Ichigo Kurosaki kann seit seiner Kindheit Geister sehen. Doch damit nicht genug: Als er die Shinigami Rukia trifft, wird sein Leben noch einmal gehörig auf den Kopf gestellt. Während eines Kampfes in der Menschenwelt ist Rukia gezwungen, ihre Kräfte auf Ichigo zu übertragen, um ihrer beider Leben zu retten. Dank der neu gewonnenen spirituellen Kräfte entdeckt Ichigo seine wahre Berufung: die Lebenden wie die Toten um alles in der Welt vor dem Bösen zu beschützen.",
-   "genres": [
-    "Action & Adventure",
-    "Animation",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "2 Staffeln, 416 Folgen"
-    ],
-    [
-     "Mit",
-     "Masakazu Morita, Fumiko Orikasa, Hiroki Yasumoto, Yuki Matsuoka"
-    ],
-    [
-     "Sender/Dienst",
-     "TV Tokyo, TV Aichi"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=0c4IoCA5fY0",
-   "link": "https://www.themoviedb.org/tv/30984",
-   "bild": "https://image.tmdb.org/t/p/w500/e0kKmeM8R7Kersh5N2PPzIRNRhr.jpg",
-   "news": []
-  },
   "tv-2190": {
    "titel": "South Park",
    "original": "South Park",
@@ -4879,23 +4852,62 @@
    "news": [
     {
      "quelle": "The Hollywood Reporter",
+     "art": "film",
      "titel": "‘South Park’ Serves Up a Steaming Pile of Beef Satire — and a ‘GTA VI’ Sneak Peek",
      "link": "https://www.hollywoodreporter.com/tv/tv-features/south-park-recap-beef-gta-vi-sneak-peek-1236742371/",
      "datum": "2026-10-29T06:40:29.000Z"
     },
     {
      "quelle": "Deadline",
+     "art": "film",
      "titel": "‘South Park’ Parodies ‘GTA VI’ Hype With Dog Poop Gameplay",
      "link": "https://deadline.com/2026/10/south-park-parodies-gta-vi-dog-poop-gameplay-1237207932/",
      "datum": "2026-10-29T04:16:47.000Z"
     },
     {
      "quelle": "Variety",
+     "art": "film",
      "titel": "‘South Park’: Cartman, Stan and Kyle Must Solve South America’s Beef Crisis in Halloween Week Episode",
      "link": "https://variety.com/2026/tv/news/south-park-season-29-episode-4-1236933789/",
      "datum": "2026-10-29T03:05:04.000Z"
     }
    ]
+  },
+  "tv-58841": {
+   "titel": "Chicago P.D.",
+   "original": "Chicago P.D.",
+   "leitsatz": null,
+   "handlung": "Der District 21 des Chicago Police Departments besteht aus zwei unterschiedlichen Abteilungen: Einmal gibt es die Uniformed Cops, die ihren Einsatz auf den Straßen der Stadt haben und sich um Kleinkriminelle kümmern. Die Intelligence Unit hingegen bekämpft Straftaten im großen Stil, sei es Drogenschmuggel oder Morde aller Art.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "14 Staffeln, 270 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Matt Olmstead"
+    ],
+    [
+     "Mit",
+     "Jason Beghe, Marina Squerciati, Patrick John Flueger, Benjamin Levy Aguilar"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=NZcr9IFS9R0",
+   "link": "https://www.themoviedb.org/tv/58841",
+   "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
+   "news": []
   },
   "tv-80748": {
    "titel": "FBI",
@@ -4934,6 +4946,39 @@
    "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
    "news": []
   },
+  "tv-30984": {
+   "titel": "Bleach",
+   "original": "BLEACH",
+   "leitsatz": "Bankai!",
+   "handlung": "Der 15-jährige Schüler Ichigo Kurosaki kann seit seiner Kindheit Geister sehen. Doch damit nicht genug: Als er die Shinigami Rukia trifft, wird sein Leben noch einmal gehörig auf den Kopf gestellt. Während eines Kampfes in der Menschenwelt ist Rukia gezwungen, ihre Kräfte auf Ichigo zu übertragen, um ihrer beider Leben zu retten. Dank der neu gewonnenen spirituellen Kräfte entdeckt Ichigo seine wahre Berufung: die Lebenden wie die Toten um alles in der Welt vor dem Bösen zu beschützen.",
+   "genres": [
+    "Action & Adventure",
+    "Animation",
+    "Sci-Fi & Fantasy"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "2 Staffeln, 416 Folgen"
+    ],
+    [
+     "Mit",
+     "Masakazu Morita, Fumiko Orikasa, Hiroki Yasumoto, Yuki Matsuoka"
+    ],
+    [
+     "Sender/Dienst",
+     "TV Tokyo, TV Aichi"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=0c4IoCA5fY0",
+   "link": "https://www.themoviedb.org/tv/30984",
+   "bild": "https://image.tmdb.org/t/p/w500/e0kKmeM8R7Kersh5N2PPzIRNRhr.jpg",
+   "news": []
+  },
   "tv-312359": {
    "titel": "Dragon Ball Super: Beerus",
    "original": "ドラゴンボール超 ビルス",
@@ -4965,42 +5010,6 @@
    "trailer": "https://www.youtube.com/watch?v=iCD3Lf7Jf9o",
    "link": "https://www.themoviedb.org/tv/312359",
    "bild": "https://image.tmdb.org/t/p/w500/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
-   "news": []
-  },
-  "tv-58841": {
-   "titel": "Chicago P.D.",
-   "original": "Chicago P.D.",
-   "leitsatz": null,
-   "handlung": "Der District 21 des Chicago Police Departments besteht aus zwei unterschiedlichen Abteilungen: Einmal gibt es die Uniformed Cops, die ihren Einsatz auf den Straßen der Stadt haben und sich um Kleinkriminelle kümmern. Die Intelligence Unit hingegen bekämpft Straftaten im großen Stil, sei es Drogenschmuggel oder Morde aller Art.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "14 Staffeln, 270 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Jason Beghe, Marina Squerciati, Patrick John Flueger, Benjamin Levy Aguilar"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=NZcr9IFS9R0",
-   "link": "https://www.themoviedb.org/tv/58841",
-   "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
    "news": []
   },
   "tv-45790": {
@@ -5106,6 +5115,41 @@
    "bild": "https://image.tmdb.org/t/p/w500/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
    "news": []
   },
+  "tv-62650": {
+   "titel": "Chicago Med",
+   "original": "Chicago Med",
+   "leitsatz": null,
+   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "12 Staffeln, 225 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Matt Olmstead"
+    ],
+    [
+     "Mit",
+     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=U2NZ7G02e40",
+   "link": "https://www.themoviedb.org/tv/62650",
+   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "news": []
+  },
   "tv-211288": {
    "titel": "Tracker",
    "original": "Tracker",
@@ -5174,41 +5218,6 @@
    "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
    "link": "https://www.themoviedb.org/tv/30983",
    "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
-   "news": []
-  },
-  "tv-62650": {
-   "titel": "Chicago Med",
-   "original": "Chicago Med",
-   "leitsatz": null,
-   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "12 Staffeln, 225 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=U2NZ7G02e40",
-   "link": "https://www.themoviedb.org/tv/62650",
-   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
    "news": []
   }
  }

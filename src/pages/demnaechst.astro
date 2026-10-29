@@ -71,6 +71,12 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
       <p class="box-handlung" id="box-handlung"></p>
       <dl class="box-fakten" id="box-fakten"></dl>
       <p class="box-knoepfe" id="box-knoepfe"></p>
+      <!-- Nur auf Kevins Geräten (Merkliste-Schlüssel im Browser): direkt merken und beobachten -->
+      <div class="box-merk" id="box-merk" hidden>
+        <button type="button" class="mk" id="b-merk" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>Auf die Merkliste</span></button>
+        <button type="button" class="mk" id="b-auge" aria-pressed="false" title="Bei neuen News oder Trailern Bescheid geben"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>Beobachten</span></button>
+        <p class="mk-hinweis mono" id="mk-hinweis" aria-live="polite"></p>
+      </div>
       <section class="box-news" id="box-news" aria-labelledby="box-news-h">
         <h3 id="box-news-h" class="mono">Aktuelle News</h3>
         <ul id="box-news-liste"></ul>
@@ -137,10 +143,51 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
       li.append(a, neu('span', 'mono', `${n.quelle} · ${relativ(n.datum)}`)); nl.append(li);
     }
     if (!i.news.length) nl.append(neu('li', 'leer mono', 'Gerade keine aktuellen Meldungen.'));
+    zeigeMerk(k.dataset.info || '', k.dataset.medium || '');
     box.showModal();
   }));
   $('box-zu').addEventListener('click', () => box.close());
   box.addEventListener('click', (e) => { if (e.target === box) box.close(); }); // Klick neben die Box schließt
+
+  // Direkt merken / beobachten (nur mit Merkliste-Schlüssel auf diesem Gerät)
+  type ME = { id: string; beobachten?: boolean };
+  let token = ''; try { token = localStorage.getItem('kestrel-merk-token') || ''; } catch {}
+  let meine = new Map<string, ME>();
+  const idAus = (info: string) => info.replace(/^movie-/, 'tmdb-movie:').replace(/^tv-/, 'tmdb-tv:');
+  async function merkApi(opt: RequestInit = {}) {
+    const r = await fetch('/api/merk', { ...opt, headers: { 'x-merk-token': token, 'content-type': 'application/json' } });
+    if (!r.ok) throw new Error(r.status === 401 ? 'Kein Zugang' : 'Fehler');
+    const l: ME[] = await r.json(); meine = new Map(l.map((e) => [e.id, e])); markiereKarten(); return l;
+  }
+  function markiereKarten() {
+    document.querySelectorAll<HTMLButtonElement>('.karte').forEach((k) => {
+      const e = meine.get(idAus(k.dataset.info || ''));
+      k.dataset.gemerkt = e ? (e.beobachten ? 'auge' : 'ja') : '';
+    });
+  }
+  let aktiv = { id: '', medium: '' };
+  function zeigeMerk(info: string, medium: string) {
+    const bereich = $('box-merk'); bereich.hidden = !token || !info; if (bereich.hidden) return;
+    aktiv = { id: idAus(info), medium };
+    const e = meine.get(aktiv.id);
+    const bm = $('b-merk'), ba = $('b-auge');
+    bm.setAttribute('aria-pressed', String(!!e)); bm.querySelector('span')!.textContent = e ? 'Auf der Merkliste' : 'Auf die Merkliste';
+    ba.setAttribute('aria-pressed', String(!!e?.beobachten)); ba.querySelector('span')!.textContent = e?.beobachten ? 'Wird beobachtet' : 'Beobachten';
+    $('mk-hinweis').textContent = '';
+  }
+  async function setze(beobachten: boolean | null) {
+    const hinweis = $('mk-hinweis'); hinweis.textContent = 'Speichere …';
+    try {
+      const da = meine.has(aktiv.id);
+      if (!da) await merkApi({ method: 'POST', body: JSON.stringify({ id: aktiv.id, medium: aktiv.medium, beobachten: !!beobachten }) });
+      else if (beobachten !== null) await merkApi({ method: 'PATCH', body: JSON.stringify({ id: aktiv.id, beobachten }) });
+      zeigeMerk(aktiv.id.replace('tmdb-movie:', 'movie-').replace('tmdb-tv:', 'tv-'), aktiv.medium);
+      hinweis.textContent = beobachten ? 'Du siehst auf der Merkliste, sobald News oder Trailer dazukommen.' : da && beobachten === false ? 'Nicht mehr beobachtet.' : 'Gemerkt.';
+    } catch (err) { hinweis.textContent = `Ging nicht: ${(err as Error).message}`; }
+  }
+  $('b-merk').addEventListener('click', () => { if (!meine.has(aktiv.id)) setze(null); else location.href = '/merkliste/'; });
+  $('b-auge').addEventListener('click', () => setze(!meine.get(aktiv.id)?.beobachten));
+  if (token) merkApi().catch(() => {});
 
   // Meine Merkliste (öffentliche Einträge, nur lesen)
   type M = { medium: string; titel: string; bild?: string; status?: string; termine: { datum: string; text: string }[] };
@@ -208,6 +255,21 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .knopf.leise { background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
 .dem .box[data-medium='film'] .knopf:not(.leise) { background: var(--film); color: var(--film-ink); }
 .dem .box[data-medium='serie'] .knopf:not(.leise) { background: var(--serie); color: var(--serie-ink); }
+.dem .box-merk { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: -6px 0 20px; }
+.dem .mk { display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem; padding: 9px 14px 8px; box-shadow: none; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
+.dem .mk svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.dem .mk[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
+.dem .mk[aria-pressed='true'] svg { fill: currentColor; }
+.dem #b-auge[aria-pressed='true'] svg { fill: none; }
+.dem #b-auge[aria-pressed='true'] svg circle { fill: currentColor; }
+.dem .mk-hinweis { flex-basis: 100%; margin: 0; font-size: 0.74rem; color: var(--ink-2); min-height: 1em; }
+.dem .karte { position: relative; }
+.dem .karte[data-gemerkt='ja']::after, .dem .karte[data-gemerkt='auge']::after {
+  content: ''; position: absolute; top: 9px; right: 10px; width: 16px; height: 16px; background: currentColor; opacity: 0.9;
+  -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat;
+}
+.dem .karte[data-gemerkt='ja'] { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z'/%3E%3C/svg%3E"); }
+.dem .karte[data-gemerkt='auge'] { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4'%3E%3Cpath d='M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z'/%3E%3Ccircle cx='12' cy='12' r='3' fill='black'/%3E%3C/svg%3E"); }
 .dem .box-news { border-top: 2px dashed var(--rule); padding-top: 14px; }
 .dem .box-news h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px; color: var(--ink-2); }
 .dem .box-news ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }

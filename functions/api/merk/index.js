@@ -18,7 +18,8 @@ export async function onRequest({ request, env }) {
     if (!['spiel', 'film', 'serie'].includes(body.medium)) return json({ fehler: 'Ungültiges Medium' }, 400);
     if (!liste.some((e) => e.id === id)) {
       const daten = await holeTermine(env, id);
-      liste.push({ id, medium: body.medium, kalender: true, hinzugefuegt: Date.now(), aktualisiert: Date.now(), ...daten });
+      liste.push({ id, medium: body.medium, kalender: true, hinzugefuegt: Date.now(), aktualisiert: Date.now(), ...daten,
+        ...(body.beobachten ? { beobachten: true, gesehen: Date.now() } : {}) });
       await speichereListe(env, liste);
     }
     return json(liste);
@@ -28,6 +29,8 @@ export async function onRequest({ request, env }) {
     if (e) {
       if ('kalender' in body) e.kalender = !!body.kalender;
       if ('oeffentlich' in body) e.oeffentlich = !!body.oeffentlich;
+      // Beobachten einschalten: ab jetzt zählt alles Neue (vorher Erschienenes bleibt sichtbar, aber nicht als neu)
+      if ('beobachten' in body) { e.beobachten = !!body.beobachten; if (e.beobachten) e.gesehen = Date.now(); }
       await speichereListe(env, liste);
     }
     return json(liste);

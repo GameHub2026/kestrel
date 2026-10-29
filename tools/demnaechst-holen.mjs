@@ -2,6 +2,7 @@
 // Läuft täglich per GitHub-Aktion; lokal: node tools/demnaechst-holen.mjs (liest den Schlüssel aus ../Claude - Spiele-Bibliothek/api-keys.txt).
 import fs from 'node:fs';
 import path from 'node:path';
+import { passt } from '../server/news-match.js';
 
 const OUT = path.resolve(import.meta.dirname, '../src/data/demnaechst.json');
 let KEY = process.env.TMDB_KEY || '';
@@ -190,17 +191,22 @@ const FEEDS = [
   ['DWDL', 'https://www.dwdl.de/rss/allethemen.xml'], ['Spiegel Kultur', 'https://www.spiegel.de/kultur/kino/index.rss'],
   ['Variety', 'https://variety.com/feed/'], ['Deadline', 'https://deadline.com/feed/'], ['The Hollywood Reporter', 'https://www.hollywoodreporter.com/feed/'],
   ['IndieWire', 'https://www.indiewire.com/feed/'], ['Collider', 'https://collider.com/feed/'],
+  // Spiele: nur für beobachtete Spiele auf der Merkliste, nicht für die Demnächst-Zuordnung
+  ['GameStar', 'https://www.gamestar.de/news/rss/news.rss', 'spiel'], ['GamePro', 'https://www.gamepro.de/rss/gamepro.rss', 'spiel'],
+  ['PC Games', 'https://www.pcgames.de/feed.cfm?menu_alias=home', 'spiel'], ['Eurogamer.de', 'https://www.eurogamer.de/feed', 'spiel'],
+  ['Play3', 'https://www.play3.de/feed/', 'spiel'], ['IGN', 'https://www.ign.com/rss/articles/feed', 'spiel'],
+  ['VGC', 'https://www.videogameschronicle.com/feed/', 'spiel'],
 ];
 const ARCHIV = path.resolve(import.meta.dirname, '../src/data/news-archiv.json');
 const ent = (t) => t.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#0?39;|&apos;|&#8217;/g, '’').replace(/&#8216;/g, '‘').replace(/&#8220;|&#8221;/g, '"').replace(/&#8211;/g, '–').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#\d+;/g, '').trim();
-async function feed([quelle, url]) {
+async function feed([quelle, url, art = 'film']) {
   const r = await fetch(url, { headers: { 'user-agent': 'Mozilla/5.0 (Kestrel; +https://kestrel-2tf.pages.dev)' } });
   if (!r.ok) throw new Error(`${quelle} ${r.status}`);
   const x = await r.text();
   return [...x.matchAll(/<item[\s>][\s\S]*?<\/item>/g)].map(([it]) => {
     const g = (t) => it.match(new RegExp(`<${t}[^>]*>([\\s\\S]*?)<\/${t}>`))?.[1] || '';
     const datum = new Date(g('pubDate') || g('dc:date') || Date.now());
-    return { quelle, titel: ent(g('title')), link: ent(g('link')), datum: isNaN(datum) ? new Date().toISOString() : datum.toISOString() };
+    return { quelle, art, titel: ent(g('title')), link: ent(g('link')), datum: isNaN(datum) ? new Date().toISOString() : datum.toISOString() };
   }).filter((n) => n.titel && /^https?:/.test(n.link));
 }
 const altArchiv = fs.existsSync(ARCHIV) ? JSON.parse(fs.readFileSync(ARCHIV, 'utf8')) : [];
@@ -209,17 +215,11 @@ const grenze = new Date(Date.now() - 30 * 864e5).toISOString();
 const archiv = [...new Map([...altArchiv, ...frisch].map((n) => [n.link, n])).values()].filter((n) => n.datum >= grenze).sort((a, b) => b.datum.localeCompare(a.datum));
 fs.writeFileSync(ARCHIV, JSON.stringify(archiv, null, 1) + '\n');
 
-// Zuordnung: Titel (deutsch oder Original) muss als ganzes Wort in der Überschrift stehen.
-// Kurze Ein-Wort-Titel ("Buddy", "Wicker") brauchen zusätzlich ein Film-/Serien-Wort, sonst zu viele Fehltreffer.
-const KONTEXT = /\b(film|serie|staffel|trailer|kino|movie|series|season|episode|teaser|netflix|disney|prime|hbo|apple tv|paramount)/i;
-const esc = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+// Zuordnung (server/news-match.js): nur Film-/Serien-Redaktionen
+const filmNews = archiv.filter((n) => (n.art || 'film') === 'film');
 for (const info of Object.values(INFOS)) {
-  const namen = [...new Set([info.titel, info.original].filter((n) => n && n.length >= 3))];
-  info.news = archiv.filter((n) => namen.some((name) => {
-    if (!new RegExp(`(^|[^\\p{L}\\p{N}])${esc(name)}($|[^\\p{L}\\p{N}])`, 'iu').test(n.titel)) return false;
-    const kern = name.replace(/^(the|a|an|der|die|das|ein|eine)\s+/i, '');
-    return (kern.includes(' ') || kern.length >= 9) || KONTEXT.test(n.titel);
-  })).slice(0, 5);
+  const namen = [...new Set([info.titel, info.original].filter(Boolean))];
+  info.news = filmNews.filter((n) => passt(namen, n.titel)).slice(0, 5);
 }
 
 const neu = JSON.stringify({ von, bis, eintraege, infos: INFOS }, null, 1);

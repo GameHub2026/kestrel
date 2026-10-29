@@ -82,7 +82,25 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
 
 <script>
   // Private Punkte (Merkliste) nur zeigen, wenn auf diesem Gerät der Merkliste-Schlüssel gespeichert ist.
-  try { if (localStorage.getItem('kestrel-merk-token')) document.querySelectorAll<HTMLElement>('[data-privat]').forEach((li) => (li.hidden = false)); } catch {}
+  // Dort auch die Zahl neuer News/Trailer zu beobachteten Titeln (10 Minuten zwischengespeichert).
+  (async () => {
+    let token = ''; try { token = localStorage.getItem('kestrel-merk-token') || ''; } catch {}
+    if (!token) return;
+    document.querySelectorAll<HTMLElement>('[data-privat]').forEach((li) => (li.hidden = false));
+    let n = -1;
+    try { const c = JSON.parse(sessionStorage.getItem('kestrel-neu') || 'null'); if (c && Date.now() - c.t < 600000) n = c.n; } catch {}
+    if (n < 0) {
+      try {
+        const r = await fetch('/api/merk/neues?anzahl=1', { headers: { 'x-merk-token': token } });
+        if (r.ok) { n = (await r.json()).anzahl || 0; sessionStorage.setItem('kestrel-neu', JSON.stringify({ t: Date.now(), n })); }
+      } catch {}
+    }
+    if (n > 0) {
+      document.querySelectorAll<HTMLElement>('[data-privat] a').forEach((a) => { const z = document.createElement('span'); z.className = 'zahl'; z.textContent = String(n); a.append(z); });
+      document.querySelector('[data-id="ueber"] .leiste-knopf')?.classList.add('hat-neues');
+      document.querySelector('[data-id="ueber"] .leiste-knopf')?.setAttribute('aria-label', `Über, ${n} Neuigkeiten auf der Merkliste`);
+    }
+  })();
 
   document.querySelectorAll<HTMLElement>('[data-leiste]').forEach((leiste) => {
     const schild = leiste.querySelector<HTMLElement>('.schild')!;
@@ -147,6 +165,9 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
   .leiste-knopf[aria-current='page'] { color: var(--ink); background: color-mix(in srgb, var(--ink) 12%, transparent); }
   .leiste-knopf[aria-current='page']::after { content: ''; position: absolute; left: -10px; top: 50%; margin-top: -8px; width: 3px; height: 16px; border-radius: 2px; background: var(--film); }
   .leiste-reihe li { position: relative; display: grid; align-items: center; }
+  .leiste-knopf.hat-neues { position: relative; }
+  .leiste-knopf.hat-neues::before { content: ''; position: absolute; top: 6px; right: 6px; width: 8px; height: 8px; border-radius: 50%; background: var(--film); box-shadow: 0 0 0 2px var(--ground); }
+  .schild :global(.zahl) { margin-left: auto; min-width: 20px; padding: 1px 6px; border-radius: 999px; background: var(--film); color: #fff; font-family: var(--mono); font-size: 0.7rem; text-align: center; }
 
   /* Hell/Dunkel-Schalter unten in der Leiste: senkrechte Pille, der helle Knopf gleitet zur aktiven Seite */
   .leiste-trenner { display: block; width: 22px; height: 1px; margin: 12px auto 10px; background: color-mix(in srgb, var(--ink) 16%, transparent); }
