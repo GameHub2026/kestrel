@@ -37,21 +37,20 @@ const stand = new Intl.DateTimeFormat('de-DE', { day: 'numeric', month: 'long', 
   </head>
   <body>
     <Fragment set:html={`<!--
-THESIS: Jeder Text ist eine Eintrittskarte, die Kevin behalten hat. Abgelehnt: Poster-Raster mit Wertungsabzeichen (Letterboxd-Standard) und Gaming-Score-Kästen.
-OWN-WORLD: Rollen-Kartenkarton in Medienfarben (Film #c8342b, Serie #1f5fa8, Spiel #e8b21d) auf kühlem Tresengrau; Perforation, Abriss-Abschnitt mit Seriennummer, Lochung als Stand-Marke, violette Entwertungsstempel für Nachträge. Big Shoulders Display, Source Serif 4, Red Hat Mono für Nummern.
-STORY: Ein Suchender sieht in einer Sekunde Titel, Wertung mit festem Satz, Fazit und Für wen; liest weiter; findet über Archiv und Skala zurück. Kevin blättert Jahre wie ein Kartenalbum.
-FIRST VIEWPORT: Startseite: Wortmarke-Abriss links oben, Nav rechts; neueste Karte groß, leicht schräg, Wertungsziffer ~9rem rechts im Karteninnern, Abriss links mit Nº; darunter Stapel der nächsten Karten. Einzeltext: Karte volle Breite oben, Abriss reißt einmalig ab, Steckbrief auf der Rückseite, dann Text.
-FORM: Abrisskarte, Platz 6 meiner geordneten Liste, Seed aaafd604.
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+THESIS: Kestrel als ruhiges Redaktionsblatt (Schema: Kevins Vorlage, Landingpage mit Satzspiegel vom 29.10.2026).
+WORLD: warmes Papierweiß, gestrichelte Rasterlinien, schmale Kopfleiste oben, schwarzer Knopf rechts; Inter in leichten Schnitten,
+Red Hat Mono für kleine Kennzeilen; Wertungen als große, leichte Kennzahlen; Medienfarben nur als Farbpunkt.
 -->`} />
     <a class="skip" href="#inhalt">Zum Inhalt springen</a>
-    <header class="site-head wrap">
-      <a class="wordmark" href="/" aria-label="Kestrel, Startseite">
-        <span class="wordmark-stub mono" aria-hidden="true">Nº</span>
-        <span class="wordmark-name">Kestrel</span>
-      </a>
+    <header class="site-head">
+      <div class="wrap kopf-innen">
+        <a class="wordmark" href="/" aria-label="Kestrel, Startseite">
+          <span class="wordmark-zeichen" aria-hidden="true"></span>
+          <span class="wordmark-name">Kestrel</span>
+        </a>
+        <Pille />
+      </div>
     </header>
-    <Pille />
     <div class="ecke">
       <button type="button" class="hoch" id="hoch" aria-label="Nach oben" title="Nach oben" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
       <span class="stempel mono" id="stempel" tabindex="0" title="Uhrzeit anzeigen">
@@ -63,8 +62,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <slot />
     </main>
     <footer class="wrap"><div class="site-foot">
-      <p>Kevins Sammlung: Spiele, Filme und Serien, eine Skala für alles. Wertungen bleiben, Nachträge kommen dazu.</p>
-      <p class="mono"><a href="/wie-ich-werte/">Wie ich werte</a> · <a href="/archiv/">Archiv</a></p>
+      <div class="foot-marke">
+        <a class="wordmark" href="/" aria-label="Kestrel, Startseite"><span class="wordmark-zeichen" aria-hidden="true"></span><span class="wordmark-name">Kestrel</span></a>
+        <p>Spiele, Filme und Serien von Kevin. Eine Skala für alles, Wertungen bleiben stehen.</p>
+        <p class="mono klein">© {new Date().getFullYear()} Kestrel</p>
+      </div>
+      <nav class="foot-spalte" aria-label="Lesen"><p>Lesen</p><a href="/">Neueste</a><a href="/texte/">Alle Texte</a></nav>
+      <nav class="foot-spalte" aria-label="Termine"><p>Termine</p><a href="/demnaechst/">Demnächst</a><a href="/demnaechst/?f=kino">Kinostarts</a></nav>
+      <nav class="foot-spalte" aria-label="Rückblick"><p>Rückblick</p><a href="/archiv/">Archiv</a><a href="/wie-ich-werte/">Wie ich werte</a></nav>
     </div></footer>
     <script>
       const root = document.documentElement;
@@ -137,33 +142,33 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   .stempel:hover .st-a :global(.z), .stempel:focus-visible .st-a :global(.z) { opacity: 0; filter: blur(5px); transform: translateY(-4px); }
   .stempel:hover .st-b :global(.z), .stempel:focus-visible .st-b :global(.z) { opacity: 1; filter: blur(0); transform: none; }
 
-  .site-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 10px; position: relative; z-index: 30; }
-  /* Platz für die Leiste links, sobald sie neben dem Inhalt steht */
-  @media (min-width: 901px) and (max-width: 1320px) { :global(body) { padding-left: 64px; } }
+  /* Kopfleiste oben: klebt beim Scrollen, Papier mit leichter Unschärfe, gestrichelte Unterkante */
+  .site-head { position: sticky; top: 0; z-index: 40; }
+  .site-head::before {
+    content: ''; position: absolute; inset: 0; z-index: -1;
+    background: color-mix(in srgb, var(--ground) 86%, transparent); backdrop-filter: blur(12px) saturate(1.2);
+  }
+  .site-head::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px); }
+  .kopf-innen { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: var(--bar); }
   @media (max-width: 900px) { :global(body) { padding-bottom: 76px; } }
 
-  .wordmark {
-    display: inline-flex; align-items: stretch; text-decoration: none; color: var(--film-ink);
-    filter: drop-shadow(0 6px 10px rgb(18 20 23 / 0.25));
-  }
-  .wordmark-stub, .wordmark-name { background: var(--film); }
-  .wordmark-stub {
-    display: grid; place-items: center; padding: 0 8px; font-size: 0.7rem; font-weight: 600;
-    border-radius: 4px 0 0 4px;
-    border-right: 2px dashed rgb(255 255 255 / 0.6);
-  }
-  .wordmark-name {
-    font-family: var(--display); font-weight: 900; text-transform: uppercase;
-    font-size: 1.3rem; line-height: 1; padding: 6px 11px 5px 8px; border-radius: 0 4px 4px 0;
-    letter-spacing: 0.02em;
-  }
-  .wordmark:hover .wordmark-name, .wordmark:hover .wordmark-stub { background: #b02c24; }
+  .wordmark { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; color: var(--ink); }
+  .wordmark-zeichen { width: 18px; height: 18px; border-radius: 2px; background: var(--ink); position: relative; flex: none; }
+  .wordmark-zeichen::after { content: ''; position: absolute; right: 3px; bottom: 3px; width: 6px; height: 6px; background: var(--ground); border-radius: 1px; }
+  .wordmark-name { font-family: var(--display); font-weight: 600; font-size: 1.05rem; letter-spacing: -0.02em; line-height: 1; }
+  .wordmark:hover .wordmark-zeichen::after { background: var(--film); }
 
   .site-foot {
-    margin-top: clamp(48px, 7vw, 80px); padding-top: 20px; padding-bottom: 64px; /* Platz für die Uhr unten rechts */
-    border-top: 2px dashed var(--rule); color: var(--ink-2); font-size: 0.95rem;
-    display: flex; justify-content: space-between; gap: 16px 40px; flex-wrap: wrap;
+    margin-top: clamp(56px, 8vw, 96px); padding-top: 40px; padding-bottom: 72px; /* Platz für die Uhr unten rechts */
+    display: grid; grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr)); gap: 32px;
+    background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px) top / 100% 1px no-repeat;
+    color: var(--ink-2); font-size: 0.88rem;
   }
-  .site-foot p { margin: 0; max-width: 60ch; }
-  .site-foot .mono { font-size: 0.85rem; }
+  .foot-marke p { margin: 14px 0 0; max-width: 34ch; line-height: 1.5; }
+  .foot-marke .klein { font-size: 0.72rem; }
+  .foot-spalte { display: grid; align-content: start; gap: 8px; }
+  .foot-spalte p { margin: 0 0 4px; color: var(--ink); font-weight: 500; }
+  .foot-spalte a { text-decoration: none; }
+  .foot-spalte a:hover { color: var(--ink); }
+  @media (max-width: 720px) { .site-foot { grid-template-columns: 1fr 1fr; } .foot-marke { grid-column: 1 / -1; } }
 </style>

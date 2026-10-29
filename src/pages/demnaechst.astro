@@ -18,7 +18,7 @@ const genresVon = (e: Eintrag) => (((infos as Record<string, { genres?: string[]
 const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 'Serie' } as Record<string, string>;
 ---
 <Base title="Demnächst" description="Kommende Kinostarts sowie neue Serien und Staffeln bei Netflix, Prime Video, Disney+ und Co. in Deutschland.">
-  <header class="page-head wrap">
+  <header class="page-head wrap" data-kicker="Termine · Deutschland">
     <h1>Demnächst</h1>
     <p>Kinostarts, neue Serien, Staffeln und Folgen in Deutschland. Täglich aktualisiert.</p>
   </header>
@@ -310,11 +310,11 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 <style is:global>
 .dem .tabs { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
 .dem button {
-  font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.05rem;
+  font-family: var(--display); font-weight: 500; letter-spacing: -0.015em; font-size: 1.05rem;
   border: 0; border-radius: 4px; padding: 10px 16px 9px; cursor: pointer; background: var(--paper); color: var(--ink); box-shadow: var(--shadow);
 }
 .dem button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
-.dem button[data-medium][aria-pressed='true'] { background: var(--card); color: var(--card-ink); }
+.dem button[data-medium][aria-pressed='true'] { background: var(--ink); color: var(--ground); }
 .dem .tabs .ansicht { margin-left: 0; display: inline-flex; gap: 2px; padding: 3px; border-radius: 8px; background: color-mix(in srgb, var(--ink) 8%, transparent); align-self: center; }
 .dem .tabs .ansicht button { padding: 7px 9px; background: transparent; color: var(--ink-2); box-shadow: none; border-radius: 6px; display: grid; place-items: center; }
 .dem .tabs .ansicht button[aria-pressed='true'] { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
@@ -368,10 +368,10 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 @media (max-width: 560px) { .dem .gw { margin-left: 0; } .dem .gw-tafel { right: auto; left: 0; transform-origin: left top; } .dem .gw-tafel ul.zwei { grid-template-columns: 1fr 1fr; } .dem .gw-tafel ul.zwei { min-width: 0; } }
 .dem .tag { margin-bottom: 30px; }
 .dem .tag[hidden], .dem .eintrag[hidden] { display: none !important; }
-.dem .tag-name { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.1rem; letter-spacing: 0.04em; margin: 0 0 10px; display: flex; align-items: center; gap: 14px; }
+.dem .tag-name { font-family: var(--display); font-weight: 500; font-size: 1.1rem; letter-spacing: -0.015em; margin: 0 0 10px; display: flex; align-items: center; gap: 14px; }
 .dem .tag-name::after { content: ''; flex: 1; border-top: 2px dashed var(--rule); }
 .dem .liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
-.dem .eintrag { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; background: var(--card); color: var(--card-ink); border-radius: 4px; padding: 9px 12px 9px 9px; box-shadow: var(--shadow); }
+.dem .eintrag { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; background: var(--card); color: var(--card-ink); box-shadow: inset 3px 0 0 var(--akzent), var(--shadow); border-radius: 4px; padding: 9px 12px 9px 9px; }
 .dem .eintrag:has(.karte) { padding: 0; display: block; }
 .dem .karte { all: unset; box-sizing: border-box; width: 100%; display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; padding: 9px 12px 9px 9px; border-radius: 4px; cursor: pointer; transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1); }
 .dem .karte:hover { transform: translateY(-2px); }
@@ -390,7 +390,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .box-bild { width: 120px; border-radius: 4px; box-shadow: var(--shadow); }
 .dem .box-kopf:has(.box-bild[hidden]) { grid-template-columns: 1fr; }
 .dem .box-kern > * { margin: 0 0 6px; }
-.dem .box-titel { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 0.95; margin: 4px 0 8px; padding-right: 36px; }
+.dem .box-titel { font-family: var(--display); font-weight: 500; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.05; margin: 4px 0 8px; padding-right: 36px; }
 .dem .box-leit { font-style: italic; }
 .dem .box-termin { font-weight: 700; font-size: 0.82rem; }
 .dem .box-anbieter { font-size: 0.78rem; color: var(--ink-2); }
@@ -401,10 +401,9 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .box-fakten dt { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-2); }
 .dem .box-fakten dd { margin: 2px 0 0; font-size: 0.95rem; }
 .dem .box-knoepfe { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 20px; }
-.dem .knopf { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1rem; text-decoration: none; padding: 10px 16px 9px; border-radius: 4px; background: var(--ink); color: var(--ground); }
+.dem .knopf { font-family: var(--display); font-weight: 500; letter-spacing: -0.015em; font-size: 1rem; text-decoration: none; padding: 10px 16px 9px; border-radius: 4px; background: var(--ink); color: var(--ground); }
 .dem .knopf.leise { background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
-.dem .box[data-medium='film'] .knopf:not(.leise) { background: var(--film); color: var(--film-ink); }
-.dem .box[data-medium='serie'] .knopf:not(.leise) { background: var(--serie); color: var(--serie-ink); }
+.dem .box .knopf:not(.leise) { background: var(--ink); color: var(--ground); }
 .dem .box-merk { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: -6px 0 20px; }
 .dem .mk { display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem; padding: 9px 14px 8px; box-shadow: none; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
 .dem .mk svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
@@ -430,7 +429,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .poster img { width: 100%; height: 100%; object-fit: cover; }
 .dem .mitte { display: grid; gap: 3px; min-width: 0; }
 .dem .meta { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; }
-.dem .titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.35rem; line-height: 1; text-decoration: none; color: inherit; }
+.dem .titel { font-family: var(--display); font-weight: 500; font-size: 1.35rem; line-height: 1; text-decoration: none; color: inherit; }
 .dem a.titel:hover { text-decoration: underline; }
 .dem .anbieter { font-size: 0.74rem; font-weight: 700; opacity: 0.92; }
 .dem .hinweis, .dem .leer, .dem .quelle { font-size: 0.78rem; color: var(--ink-2); }

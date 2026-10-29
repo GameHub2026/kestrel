@@ -17,11 +17,11 @@ const path = Astro.url.pathname;
 <style>
   .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: clamp(28px, 5vw, 48px); }
   a {
-    font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.05rem;
+    font-family: var(--display); font-weight: 500; letter-spacing: -0.015em; font-size: 1.05rem;
     text-decoration: none; padding: 8px 14px 7px; border-radius: 4px; background: var(--paper); color: var(--ink); box-shadow: var(--shadow);
     transition: transform 200ms cubic-bezier(0.16, 1, 0.3, 1);
   }
   a:hover { transform: translateY(-2px); }
   a[aria-current='page'] { background: var(--ink); color: var(--ground); }
-  a[data-medium][aria-current='page'] { background: var(--card); color: var(--card-ink); }
+  a[data-medium][aria-current='page'] { background: var(--ink); color: var(--ground); }
 </style>

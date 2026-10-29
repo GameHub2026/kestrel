@@ -18,7 +18,7 @@ const zaehle = (liste: Text[], medium: string) => liste.filter((t) => t.data.med
 const plural = { spiel: ['Spiel', 'Spiele'], film: ['Film', 'Filme'], serie: ['Serie', 'Serien'] } as const;
 ---
 <Base title="Archiv" description="Alle Texte nach Jahr und Monat, als Rückblick: was Kevin wann gespielt und geschaut hat.">
-  <header class="page-head wrap">
+  <header class="page-head wrap" data-kicker="Rückblick">
     <h1>Archiv</h1>
     <p>Nach Jahr und Monat, in der Reihenfolge, in der ich geschrieben habe.</p>
   </header>
@@ -53,12 +53,12 @@ const plural = { spiel: ['Spiel', 'Spiele'], film: ['Film', 'Filme'], serie: ['S
 <style>
   .year { margin-bottom: clamp(32px, 5vw, 56px); }
   .year-head { display: flex; align-items: baseline; gap: 12px 28px; flex-wrap: wrap; border-bottom: 2px dashed var(--rule); padding-bottom: 12px; margin-bottom: 20px; }
-  .year-num { font-family: var(--display); font-weight: 900; font-size: clamp(2.2rem, 5vw, 3rem); line-height: 0.9; margin: 0; font-variant-numeric: tabular-nums; }
+  .year-num { font-family: var(--display); font-weight: 500; font-size: clamp(2.2rem, 5vw, 3rem); line-height: 1.05; margin: 0; font-variant-numeric: tabular-nums; }
   .year-sum { margin: 0; color: var(--ink-2); font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; }
 
   .month { display: grid; grid-template-columns: 9rem 1fr; gap: 16px; padding: 14px 0; }
   .month + .month { border-top: 1px dashed color-mix(in srgb, var(--ink) 25%, transparent); }
-  .month-name { margin: 6px 0 0; font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.05rem; letter-spacing: 0.04em; }
+  .month-name { margin: 6px 0 0; font-family: var(--display); font-weight: 500; font-size: 1.05rem; letter-spacing: -0.015em; }
   .stubs { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
 
   @media (max-width: 720px) {

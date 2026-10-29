@@ -23,7 +23,7 @@ for (const t of liste) {
 }
 ---
 <Base title={`${name} von A bis Z`} description={`Alle Rezensionen zu ${name} bei Kestrel, alphabetisch sortiert.`}>
-  <header class="page-head wrap">
+  <header class="page-head wrap" data-kicker="Rückblick · A–Z">
     <h1>Archiv</h1>
     <p>Alle {name} von A bis Z. {liste.length} {liste.length === 1 ? 'Text' : 'Texte'}.</p>
   </header>
@@ -43,7 +43,7 @@ for (const t of liste) {
 <style>
   .letter { display: grid; grid-template-columns: 9rem 1fr; gap: 16px; padding: 14px 0; }
   .letter + .letter { border-top: 1px dashed color-mix(in srgb, var(--ink) 25%, transparent); }
-  .letter-name { margin: 0; font-family: var(--display); font-weight: 900; font-size: 1.8rem; line-height: 0.9; }
+  .letter-name { margin: 0; font-family: var(--display); font-weight: 500; font-size: 1.8rem; line-height: 1.05; }
   .stubs { margin: 0; padding: 0; display: grid; gap: 8px; }
   @media (max-width: 720px) {
     .letter { grid-template-columns: 1fr; gap: 8px; }

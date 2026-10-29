@@ -1,63 +1,69 @@
-@import '@fontsource-variable/big-shoulders-display';
-@import '@fontsource-variable/source-serif-4';
-@import '@fontsource-variable/source-serif-4/wght-italic.css';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/inter/wght-italic.css';
 @import '@fontsource-variable/red-hat-mono';
 
-/* Die Abrisskarte: jeder Text ist eine Eintrittskarte. Medienfarben = Kartenkarton. */
+/* Redaktionelles Papier: warmes Weiß, feine gestrichelte Raster, schlichte Schrift.
+   Medienfarben (Film rot, Serie blau, Spiel gelb) nur noch als kleine Akzente. */
 :root {
   --film: #c8342b;
   --serie: #1f5fa8;
-  --spiel: #e8b21d;
+  --spiel: #d9a514;
   --film-ink: #ffffff;
   --serie-ink: #ffffff;
   --spiel-ink: #17140c;
 
-  --ground: #dcdfe3;        /* Kassentresen, kühles Grau */
-  --ground-2: #cdd1d6;
-  --ink: #121417;
-  --ink-2: #3f454d;
-  --paper: #f7f8f9;         /* Rückseite / Lesefläche */
-  --rule: #121417;
-  --stamp: #7a1f8f;         /* Entwertungsstempel-Violett */
+  --ground: #f4f2ed;        /* Papier */
+  --ground-2: #ebe8e1;
+  --paper: #fbfaf7;         /* Flächen, Karten */
+  --ink: #161616;
+  --ink-2: #6d6962;
+  --line: rgb(22 22 22 / 0.13);
+  --raster: rgb(22 22 22 / 0.16);
+  --rule: rgb(22 22 22 / 0.22);
+  --stamp: #7a1f8f;
   --focus: #1f5fa8;
-  --shadow: 0 1px 1px rgb(18 20 23 / 0.10), 0 10px 24px -10px rgb(18 20 23 / 0.35);
-  --shadow-lift: 0 2px 2px rgb(18 20 23 / 0.10), 0 22px 40px -14px rgb(18 20 23 / 0.45);
+  --shadow: 0 0 0 1px var(--line);
+  --shadow-lift: 0 0 0 1px rgb(22 22 22 / 0.28), 0 10px 28px -16px rgb(22 22 22 / 0.35);
 
-  --display: 'Big Shoulders Display Variable', 'Arial Narrow', sans-serif;
-  --text: 'Source Serif 4 Variable', Georgia, serif;
+  --sans: 'Inter Variable', 'Helvetica Neue', Arial, sans-serif;
+  --display: var(--sans);
+  --text: var(--sans);
   --mono: 'Red Hat Mono Variable', ui-monospace, monospace;
 
   --gutter: clamp(16px, 4vw, 48px);
-  --measure: 68ch;
+  --measure: 66ch;
+  --bar: 60px;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --ground: #141619;
-    --ground-2: #1d2024;
-    --ink: #eceef0;
-    --ink-2: #a9b0b8;
-    --paper: #1b1e22;
-    --rule: #eceef0;
+    --ground: #121211;
+    --ground-2: #1a1a18;
+    --paper: #191917;
+    --ink: #ecebe6;
+    --ink-2: #9b978f;
+    --line: rgb(236 235 230 / 0.12);
+    --raster: rgb(236 235 230 / 0.13);
+    --rule: rgb(236 235 230 / 0.24);
     --stamp: #c98ad8;
     --focus: #8fb8ee;
-    --shadow: 0 1px 1px rgb(0 0 0 / 0.4), 0 12px 28px -10px rgb(0 0 0 / 0.7);
-    --shadow-lift: 0 2px 2px rgb(0 0 0 / 0.4), 0 24px 44px -12px rgb(0 0 0 / 0.8);
+    --shadow-lift: 0 0 0 1px rgb(236 235 230 / 0.3), 0 12px 30px -16px rgb(0 0 0 / 0.8);
     color-scheme: dark;
   }
 }
 :root[data-theme='dark'] {
-  --ground: #141619;
-  --ground-2: #1d2024;
-  --ink: #eceef0;
-  --ink-2: #a9b0b8;
-  --paper: #1b1e22;
-  --rule: #eceef0;
+  --ground: #121211;
+  --ground-2: #1a1a18;
+  --paper: #191917;
+  --ink: #ecebe6;
+  --ink-2: #9b978f;
+  --line: rgb(236 235 230 / 0.12);
+  --raster: rgb(236 235 230 / 0.13);
+  --rule: rgb(236 235 230 / 0.24);
   --stamp: #c98ad8;
   --focus: #8fb8ee;
-  --shadow: 0 1px 1px rgb(0 0 0 / 0.4), 0 12px 28px -10px rgb(0 0 0 / 0.7);
-  --shadow-lift: 0 2px 2px rgb(0 0 0 / 0.4), 0 24px 44px -12px rgb(0 0 0 / 0.8);
+  --shadow-lift: 0 0 0 1px rgb(236 235 230 / 0.3), 0 12px 30px -16px rgb(0 0 0 / 0.8);
   color-scheme: dark;
 }
 
@@ -67,29 +73,43 @@ body {
   margin: 0;
   background: var(--ground);
   color: var(--ink);
-  font: 400 1.0625rem/1.6 var(--text);
+  font: 400 1rem/1.6 var(--text);
   font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'cv11', 'ss01';
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 main { flex: 1; }
-::selection { background: var(--spiel); color: var(--spiel-ink); }
-:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
-a { color: inherit; text-decoration-thickness: 1.5px; text-underline-offset: 0.2em; }
-a:hover { text-decoration-thickness: 3px; }
+::selection { background: var(--ink); color: var(--ground); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22em; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); }
+a:hover { text-decoration-color: currentColor; }
 img { max-width: 100%; height: auto; display: block; }
 html { scrollbar-color: var(--ink-2) var(--ground); }
 
 .wrap { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 var(--gutter); }
 
-/* Medium setzt die Kartenfarbe */
-[data-medium='film']  { --card: var(--film);  --card-ink: var(--film-ink); }
-[data-medium='serie'] { --card: var(--serie); --card-ink: var(--serie-ink); }
-[data-medium='spiel'] { --card: var(--spiel); --card-ink: var(--spiel-ink); }
+/* Medium: Karten bleiben Papier, die Medienfarbe wird zum Akzent (--akzent) */
+[data-medium] { --card: var(--paper); --card-ink: var(--ink); }
+[data-medium='film']  { --akzent: var(--film); }
+[data-medium='serie'] { --akzent: var(--serie); }
+[data-medium='spiel'] { --akzent: var(--spiel); }
+
+/* Raster: gestrichelte Senkrechte an den Rändern der Inhaltsspalte, wie auf einem Satzspiegel */
+body::before {
+  content: ''; position: fixed; inset: 0 0 0 0; margin: 0 auto; width: min(100%, 1180px); pointer-events: none; z-index: 0;
+  background:
+    repeating-linear-gradient(to bottom, var(--raster) 0 4px, transparent 4px 9px) left / 1px 100% no-repeat,
+    repeating-linear-gradient(to bottom, var(--raster) 0 4px, transparent 4px 9px) right / 1px 100% no-repeat;
+}
+main, footer { position: relative; z-index: 1; }
+.linie { border: 0; height: 1px; margin: 0; background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px); }
+.kicker { display: block; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 10px; }
 
 .mono { font-family: var(--mono); font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
-.display { font-family: var(--display); font-weight: 800; text-transform: uppercase; line-height: 0.9; letter-spacing: -0.01em; }
+.display { font-family: var(--display); font-weight: 500; line-height: 1.05; letter-spacing: -0.015em; }
 
 .visually-hidden {
   position: absolute; width: 1px; height: 1px; overflow: hidden;
@@ -99,17 +119,20 @@ html { scrollbar-color: var(--ink-2) var(--ground); }
 /* Seitentitel im Kartenstil */
 /* Kompakt: Titel und eine Zeile Erklärung nebeneinander, kein Plakat */
 .page-head {
-  padding-top: 4px; padding-bottom: 18px;
-  display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 20px;
+  padding-top: clamp(28px, 4vw, 48px); margin-bottom: 28px;
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; align-items: end; gap: 12px 40px;
 }
+.page-head::after { content: ''; grid-column: 1 / -1; height: 1px; margin-top: 12px; background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px); }
+.page-head[data-kicker]::before { content: attr(data-kicker); grid-column: 1 / -1; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
 .page-head h1 {
-  font-family: var(--display); font-weight: 900; text-transform: uppercase;
-  font-size: clamp(1.8rem, 3.2vw, 2.4rem); line-height: 1; margin: 0; letter-spacing: 0.005em;
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem); line-height: 1.08; margin: 0; letter-spacing: -0.025em; text-wrap: balance;
 }
-.page-head p { flex: 1 1 32ch; max-width: 62ch; margin: 0; color: var(--ink-2); font-size: 0.98rem; line-height: 1.45; }
-.page-head .kopf-rechts { margin-left: auto; align-self: center; }
+.page-head p { max-width: 46ch; margin: 0; color: var(--ink-2); font-size: 0.92rem; line-height: 1.5; }
+.page-head .kopf-rechts { justify-self: end; }
+@media (max-width: 760px) { .page-head { grid-template-columns: 1fr auto; } .page-head p { grid-column: 1 / -1; grid-row: 3; } }
 /* Abschnittsüberschriften auf allen Seiten gleich */
-.abschnitt { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.2rem; line-height: 1; margin: 28px 0 12px; }
+.abschnitt { font-family: var(--display); font-weight: 500; letter-spacing: -0.02em; font-size: 1.35rem; line-height: 1.15; margin: 40px 0 14px; }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }

@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 ---
 <Base title="Ich folge" privat description="Private Liste der Serien, Filme und Spiele, denen ich folge.">
 <div class="ser kacheln" id="ser">
-  <header class="page-head wrap">
+  <header class="page-head wrap" data-kicker="Privat · Automatisch geprüft">
     <h1>Ich folge</h1>
     <p>Alles aus Plex (über Trakt) und alles mit Glocke. Täglich geprüft: neue Staffeln und Teile, Termine, Ableger, Trailer, News.</p>
     <div class="ansicht kopf-rechts" id="ansicht" role="group" aria-label="Ansicht" hidden>
@@ -328,7 +328,7 @@ import Base from '../../layouts/Base.astro';
   .hinweis { font-size: 0.8rem; min-height: 1.2em; margin: 6px 0; }
   .stand { font-size: 0.76rem; display: flex; align-items: center; gap: 10px; margin: 0; }
   button, .knopf {
-    font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1rem;
+    font-family: var(--display); font-weight: 500; letter-spacing: -0.015em; font-size: 1rem;
     border: 0; border-radius: 4px; padding: 9px 14px 8px; cursor: pointer; background: var(--ink); color: var(--ground); text-decoration: none;
   }
   button:disabled { opacity: 0.55; cursor: default; }
@@ -346,19 +346,19 @@ import Base from '../../layouts/Base.astro';
   /* Neu für dich: Staffel-Hinweise in Serienblau, der Rest auf Papier */
   .hinweise, .kommt, .treffer, .aus-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
   .hinweis-zeile { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: center; padding: 8px 14px 8px 8px; border-radius: 4px; background: var(--paper); box-shadow: var(--shadow); }
-  .hinweis-zeile.art-staffel, .hinweis-zeile.art-status { background: var(--serie); color: var(--serie-ink); }
+  .hinweis-zeile.art-staffel, .hinweis-zeile.art-status { background: var(--paper); color: var(--ink); box-shadow: inset 3px 0 0 var(--serie), var(--shadow); }
   .h-titel { font-weight: 700; line-height: 1.3; color: inherit; }
-  .art-staffel .h-titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.2rem; line-height: 1.05; }
+  .art-staffel .h-titel { font-family: var(--display); font-weight: 500; font-size: 1.2rem; line-height: 1.05; }
 
   /* Kommende Staffeln als Fahrplan */
   .kommt-zeile { display: grid; grid-template-columns: minmax(170px, 220px) 1fr auto; gap: 14px; align-items: baseline; padding: 10px 0; border-bottom: 1px dashed var(--rule); }
   .k-datum { font-size: 0.78rem; font-weight: 700; }
-  .k-titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.2rem; line-height: 1; }
+  .k-titel { font-family: var(--display); font-weight: 500; font-size: 1.2rem; line-height: 1; }
   .k-staffel { font-size: 0.74rem; color: var(--ink-2); text-align: right; }
 
   .treffer-zeile { display: grid; grid-template-columns: 44px 1fr auto; gap: 14px; align-items: center; background: var(--paper); border-radius: 4px; padding: 8px 12px 8px 8px; box-shadow: var(--shadow); }
-  .titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.2rem; line-height: 1; }
-  .glocke { background: var(--serie); color: var(--serie-ink); }
+  .titel { font-family: var(--display); font-weight: 500; font-size: 1.2rem; line-height: 1; }
+  .glocke { background: var(--ink); color: var(--ground); }
 
   /* Raster der verfolgten Serien */
   .raster { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
@@ -366,7 +366,7 @@ import Base from '../../layouts/Base.astro';
   .cover { position: relative; display: block; aspect-ratio: 2 / 3; background: color-mix(in srgb, var(--ink) 10%, transparent); }
   .neu-plakette { position: absolute; top: 8px; right: 8px; padding: 3px 8px; border-radius: 999px; background: var(--serie); color: var(--serie-ink); font-size: 0.7rem; font-weight: 700; box-shadow: 0 2px 8px rgb(0 0 0 / 0.35); }
   .k-info { display: grid; gap: 4px; padding: 10px 11px 11px; align-content: start; }
-  .k-name { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.05rem; line-height: 1; }
+  .k-name { font-family: var(--display); font-weight: 500; font-size: 1.05rem; line-height: 1; }
   .k-zeile { font-size: 0.7rem; font-weight: 700; }
   .k-quelle { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-2); }
   .k-weg { justify-self: start; margin-top: 4px; font-family: var(--mono); font-weight: 500; text-transform: none; letter-spacing: 0; font-size: 0.7rem; padding: 4px 8px; background: transparent; color: var(--ink-2); box-shadow: inset 0 0 0 1px var(--rule); }
@@ -387,7 +387,7 @@ import Base from '../../layouts/Base.astro';
   .sbox-kopf { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: start; margin-bottom: 16px; padding-right: 36px; }
   .sbox-bild { display: block; width: 120px; aspect-ratio: 2 / 3; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow); background: color-mix(in srgb, var(--ink) 10%, transparent); }
   .sbox-bild img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .sbox-titel { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 0.95; margin: 4px 0 8px; }
+  .sbox-titel { font-family: var(--display); font-weight: 500; font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.05; margin: 4px 0 8px; }
   .sbox-termin { font-size: 0.8rem; font-weight: 700; }
   .sbox-details > * { margin: 0 0 12px; }
   .unter { font-style: italic; }
@@ -398,7 +398,7 @@ import Base from '../../layouts/Base.astro';
   .fakten dt { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-2); }
   .fakten dd { margin: 2px 0 0; }
   .knoepfe { display: flex; gap: 10px; flex-wrap: wrap; }
-  .knoepfe .knopf:not(.leise) { background: var(--serie); color: var(--serie-ink); }
+  .knoepfe .knopf:not(.leise) { background: var(--ink); color: var(--ground); }
   .laed { font-size: 0.8rem; color: var(--ink-2); }
   .sbox-gefunden { border-top: 2px dashed var(--rule); padding-top: 14px; margin: 6px 0 16px; }
   .sbox-gefunden h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px; color: var(--ink-2); }
@@ -412,8 +412,8 @@ import Base from '../../layouts/Base.astro';
   .filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
   .filter button { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); font-size: 0.9rem; }
   .filter button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
-  .filter button[data-medium][aria-pressed='true'] { background: var(--card); color: var(--card-ink); }
-  .hinweis-zeile.art-ableger { background: var(--film); color: var(--film-ink); }
+  .filter button[data-medium][aria-pressed='true'] { background: var(--ink); color: var(--ground); }
+  .hinweis-zeile.art-ableger { background: var(--paper); color: var(--ink); box-shadow: inset 3px 0 0 var(--film), var(--shadow); }
   .ansicht[hidden] { display: none; }
   .ansicht { display: inline-flex; gap: 2px; padding: 3px; border-radius: 8px; background: color-mix(in srgb, var(--ink) 8%, transparent); }
   .ansicht button { padding: 7px 9px; background: transparent; color: var(--ink-2); box-shadow: none; border-radius: 6px; display: grid; place-items: center; }

@@ -8,7 +8,7 @@ const [neuester, ...rest] = texte;
 const weitere = rest.slice(0, 6);
 ---
 <Base>
-  <section class="intro wrap">
+  <section class="intro page-head wrap" data-kicker="Kritiken von Kevin · Spiele, Filme, Serien">
     <h1>Was ich spiele und schaue, ehrlich bewertet.</h1>
     <p>Wertung von 1 bis 10, <a href="/wie-ich-werte/">gleich für alle drei Medien</a>. Sehe ich etwas später anders, kommt ein Nachtrag dazu.</p>
   </section>
@@ -22,13 +22,13 @@ const weitere = rest.slice(0, 6);
       </section>
       {weitere.length > 0 && (
         <section class="stack wrap" aria-labelledby="stack-h">
-          <h2 id="stack-h" class="stack-h">Davor</h2>
+          <h2 id="stack-h" class="stack-h">Davor geschrieben</h2>
           <ol class="stack-list">
             {weitere.map((t) => <li><Ticket text={t} headingLevel="h3" /></li>)}
           </ol>
         </section>
       )}
-      <p class="more wrap"><a href="/texte/">Alle {texte.length} Texte ansehen</a></p>
+      <p class="more wrap"><a href="/texte/">{texte.length > 1 ? `Alle ${texte.length} Texte` : 'Alle Texte'}</a></p>
     </>
   ) : (
     <p class="empty wrap">Noch keine Karten im Album. Der erste Text kommt bald.</p>
@@ -36,28 +36,19 @@ const weitere = rest.slice(0, 6);
 </Base>
 
 <style>
-  .intro { padding-top: 4px; padding-bottom: 24px; display: grid; gap: 6px; }
-  .intro h1 {
-    font-family: var(--display); font-weight: 900; text-transform: uppercase; margin: 0;
-    font-size: clamp(1.6rem, 2.8vw, 2.2rem); line-height: 1; letter-spacing: -0.005em; text-wrap: balance; max-width: 40ch;
-  }
-  .intro p { margin: 0; max-width: 62ch; font-size: 0.98rem; color: var(--ink-2); }
+  .intro h1 { max-width: 22ch; }
   .intro p a { color: var(--ink); }
 
-  .lead-card { transform: rotate(-1.2deg); transform-origin: 30% 50%; margin: 8px 0 0; }
-  @media (max-width: 720px) { .lead-card { transform: rotate(-0.8deg); } }
+  .lead-card { margin: 8px 0 0; }
 
-  .stack { margin-top: clamp(40px, 6vw, 64px); }
-  .stack-h {
-    font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em;
-    font-size: 1.1rem; margin: 0 0 14px; display: flex; align-items: center; gap: 14px;
-  }
-  .stack-h::after { content: ''; flex: 1; border-top: 2px dashed var(--rule); }
-  .stack-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
-  /* Stapel: jede Karte minimal versetzt, wie aus der Rolle gerissen */
-  .stack-list li:nth-child(odd) { transform: rotate(0.35deg); }
-  .stack-list li:nth-child(even) { transform: rotate(-0.35deg) translateX(6px); }
+  .stack { margin-top: clamp(48px, 7vw, 80px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr); gap: 24px 48px; }
+  .stack-h { font-family: var(--display); font-weight: 400; font-size: clamp(1.5rem, 2.4vw, 2rem); line-height: 1.1; letter-spacing: -0.025em; margin: 0; }
+  .stack-h::before { content: 'Archiv'; display: block; margin-bottom: 10px; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+  .stack-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  @media (max-width: 760px) { .stack { grid-template-columns: 1fr; } }
 
-  .more { margin-top: 24px; font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; font-size: 1.05rem; }
-  .empty { padding-top: 48px; padding-bottom: 48px; font-size: 1.2rem; }
+  .more { margin-top: 28px; font-size: 0.9rem; font-weight: 500; }
+  .more a { text-decoration: none; }
+  .more a::after { content: ' →'; }
+  .empty { padding-top: 48px; padding-bottom: 48px; font-size: 1.1rem; }
 </style>

@@ -13,7 +13,7 @@ const gruppen = [
 ];
 ---
 <Base title="Alle Texte" description="Alle Tests, Kurzkritiken, Ersteindrücke und Rückblicke zu Spielen, Filmen und Serien, filterbar nach Medium, Textform und Jahr.">
-  <header class="page-head wrap">
+  <header class="page-head wrap" data-kicker="Lesen">
     <h1>Alle Texte</h1>
     <p>Filtern nach Medium, Textform oder Jahr.</p>
   </header>
@@ -86,8 +86,8 @@ const gruppen = [
   label input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
   /* Jede Option ist ein kleiner Abriss; gewählt = gelocht */
   label span {
-    display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 800; text-transform: uppercase;
-    letter-spacing: 0.04em; font-size: 1.05rem; padding: 7px 14px 6px 10px; background: var(--paper); color: var(--ink);
+    display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 500;
+    letter-spacing: -0.015em; font-size: 1.05rem; padding: 7px 14px 6px 10px; background: var(--paper); color: var(--ink);
     border-radius: 4px; box-shadow: var(--shadow);
     transition: background-color 160ms, color 160ms, transform 200ms cubic-bezier(0.16, 1, 0.3, 1);
   }
@@ -98,14 +98,14 @@ const gruppen = [
   label:hover span { transform: translateY(-2px); }
   label input:checked + span { background: var(--ink); color: var(--ground); }
   label input:checked + span::before { border: 0; background: var(--ground); opacity: 1; box-shadow: inset 0 2px 2px rgb(0 0 0 / 0.35); }
-  label[data-medium] input:checked + span { background: var(--card); color: var(--card-ink); }
+  label[data-medium] input:checked + span { background: var(--ink); color: var(--ground); }
   label input:focus-visible + span { outline: 3px solid var(--focus); outline-offset: 3px; }
   .count { margin: 0 0 6px auto; font-size: 0.8rem; color: var(--ink-2); }
 
   .list { list-style: none; margin: 0 auto; padding-top: 0; padding-bottom: 0; display: grid; gap: 14px; }
   .none { padding-top: 32px; padding-bottom: 32px; font-size: 1.1rem; }
   .none button {
-    font: inherit; font-family: var(--display); font-weight: 800; text-transform: uppercase; background: var(--ink); color: var(--ground);
+    font: inherit; font-family: var(--display); font-weight: 500; background: var(--ink); color: var(--ground);
     border: 0; border-radius: 4px; padding: 6px 12px; cursor: pointer; margin-left: 8px;
   }
   @media (max-width: 720px) { .count { margin-left: 0; width: 100%; } }
