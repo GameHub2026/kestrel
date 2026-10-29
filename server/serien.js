@@ -1,10 +1,12 @@
-// Meine Serien & Filme: Serien und Filme(-reihen), die Kevin verfolgt, getrennt von der Merkliste.
-// Quellen: automatisch aus dem Trakt-Verlauf (alles, was Plex dort gemeldet hat) und von Hand (Glocke).
-// Einmal täglich (GitHub-Aktion → POST /api/serien/pruefen) wird jede Serie bei TMDB geprüft:
-// neue Staffel angekündigt, Starttermin bekannt oder verschoben, abgesetzt/beendet, neue Trailer, News.
+// "Ich folge": Serien, Filme und Spiele, denen Kevin folgt (Glocke), getrennt von der Merkliste.
+// Quellen: automatisch aus dem Trakt-Verlauf (alles, was Plex dort gemeldet hat) und von Hand (Folgen-Knopf).
+// Einmal täglich (GitHub-Aktion → POST /api/serien/pruefen) und beim Öffnen der Seite, wenn der Stand alt ist:
+// neue Staffel/neuer Teil, Starttermin bekannt oder verschoben, Ableger aus demselben Universum (Wikidata),
+// neue Trailer, News. Doppelte Meldungen zum selben Ereignis werden gebündelt.
+// Beendete/abgesetzte Serien fliegen aus der Liste, werden aber weiter auf Ableger geprüft (z. B. Vorgeschichte).
 // Gespeichert als ein KV-Eintrag "serien": { stand, gesehen, serien: [...] }.
-import { tmdb, tmdbBild } from './merk.js';
-import { passt } from './news-match.js';
+import { tmdb, tmdbBild, igdb, igdbBild } from './merk.js';
+import { passt, buendeln, KONTEXT } from './news-match.js';
 
 const TAG = 864e5;
 export const ladeSerien = async (env) => (await env.MERK.get('serien', 'json')) || { stand: 0, gesehen: Date.now() - 7 * TAG, serien: [] };
@@ -15,7 +17,8 @@ export function mitNeu(d) {
   const g = d.gesehen || 0;
   return d.serien.map((s) => ({ ...s, punkte: (s.punkte || []).map((p) => ({ ...p, neu: Date.parse(p.datum) > g })) }));
 }
-export const neuAnzahl = (d) => mitNeu(d).filter((s) => !s.aus).reduce((n, s) => n + s.punkte.filter((p) => p.neu).length, 0);
+export const pruefbar = (s) => !s.aus || !!s.ausGrund; // von Hand entfolgt = gar nicht mehr
+export const neuAnzahl = (d) => mitNeu(d).filter(pruefbar).reduce((n, s) => n + s.punkte.filter((p) => p.neu).length, 0);
 
 // ---------- Trakt: gesehene Serien ----------
 async function traktSerien(env) {
@@ -104,13 +107,108 @@ async function pruefeFilm(env, s, archiv) {
     }
   }
   s.status = s.naechste ? (s.reihe ? 'Reihe geht weiter' : 'Kommt bald') : s.reihe ? `Reihe: ${s.reihe}` : 'Erschienen';
+  // Ableger aus demselben Universum (Serien, Spin-off-Filme), ohne die Teile, die die Reihe oben schon liefert
+  punkte.push(...ablegerPunkte(s, erstmals, heute, new Set(kommend.map((t) => `tmdb-movie:${t.id}`))));
   const nm = [...new Set(namen.filter(Boolean))];
-  for (const n of archiv.filter((x) => (x.art || 'film') === 'film' && passt(nm, x.titel)).slice(0, 6)) punkte.push({ art: 'news', titel: n.titel, link: n.link, quelle: n.quelle, datum: n.datum });
-  s.punkte = punkte.sort((a, z) => String(z.datum).localeCompare(String(a.datum))).slice(0, 14);
+  for (const n of archiv.filter((x) => (x.art || 'film') === 'film' && passt(nm, x.titel)).slice(0, 8)) punkte.push({ art: 'news', titel: n.titel, link: n.link, quelle: n.quelle, datum: n.datum });
+  s.punkte = buendeln(punkte).sort((a, z) => String(z.datum).localeCompare(String(a.datum))).slice(0, 14);
+  s.geprueft = Date.now();
+}
+
+// ---------- Ableger aus demselben Universum (Wikidata) ----------
+// Verknüpfungen: Medien-Franchise, fiktives Universum, Teil der Reihe, Spin-off, Vorgänger/Nachfolger,
+// und Werke nach Büchern derselben Buchreihe (z. B. The Handmaid's Tale → The Testaments).
+const WIE = { spinoff: 'Ableger', folge: 'Neuer Teil', vorlage: 'Aus derselben Buchreihe', universum: 'Aus demselben Universum', franchise: 'Aus demselben Universum', reihe: 'Aus derselben Reihe' };
+const WOCHE = 7 * TAG;
+export async function wikidataVerwandte(liste) {
+  const werte = liste.map((s) => { const [q, n] = s.id.split(':'); return `("${s.id}" wdt:${q === 'tmdb-tv' ? 'P4983' : 'P4947'} "${n}")`; }).join(' ');
+  const q = `SELECT ?quelle ?wie ?rTv ?rFilm ?rLabel ?datum WHERE {
+    VALUES (?quelle ?p ?id) { ${werte} }
+    ?item ?p ?id .
+    { ?item wdt:P8345 ?x . ?r wdt:P8345 ?x . BIND("franchise" AS ?wie) }
+    UNION { ?item wdt:P1434 ?x . ?r wdt:P1434 ?x . BIND("universum" AS ?wie) }
+    UNION { ?item wdt:P179 ?x . ?r wdt:P179 ?x . BIND("reihe" AS ?wie) }
+    UNION { { ?item wdt:P2512 ?r } UNION { ?r wdt:P2512 ?item } BIND("spinoff" AS ?wie) }
+    UNION { { ?item wdt:P155|wdt:P156 ?r } UNION { ?r wdt:P155|wdt:P156 ?item } BIND("folge" AS ?wie) }
+    UNION { ?item wdt:P144 ?x . ?x wdt:P155|wdt:P156|^wdt:P155|^wdt:P156 ?y . ?r wdt:P144 ?y . BIND("vorlage" AS ?wie) }
+    FILTER(?r != ?item)
+    OPTIONAL { ?r wdt:P4983 ?rTv } OPTIONAL { ?r wdt:P4947 ?rFilm }
+    FILTER(BOUND(?rTv) || BOUND(?rFilm))
+    OPTIONAL { ?r wdt:P580|wdt:P577 ?datum }
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "de,en". }
+  } LIMIT 1500`;
+  const r = await fetch(`https://query.wikidata.org/sparql?format=json&query=${encodeURIComponent(q)}`, { headers: { accept: 'application/sparql-results+json', 'user-agent': 'Kestrel/1.0 (https://kestrel-2tf.pages.dev)' } });
+  if (!r.ok) throw new Error(`Wikidata ${r.status}`);
+  const proQuelle = new Map();
+  const RANG = ['spinoff', 'folge', 'vorlage', 'universum', 'franchise', 'reihe'];
+  for (const b of (await r.json()).results.bindings) {
+    const id = b.rTv ? `tmdb-tv:${b.rTv.value}` : `tmdb-movie:${b.rFilm.value}`;
+    const m = proQuelle.get(b.quelle.value) || new Map(); proQuelle.set(b.quelle.value, m);
+    const alt = m.get(id);
+    const datum = b.datum?.value?.slice(0, 10) || null;
+    if (!alt) m.set(id, { id, titel: b.rLabel.value.replace(/\s*\((Film|Fernsehserie|Serie|TV-Serie|Miniserie|film|TV series)( \d{4})?\)$/, ''), wie: b.wie.value, datum });
+    else {
+      if (datum && (!alt.datum || datum < alt.datum)) alt.datum = datum; // frühestes Datum (Erstausstrahlung)
+      if (RANG.indexOf(b.wie.value) < RANG.indexOf(alt.wie)) alt.wie = b.wie.value;
+    }
+  }
+  for (const s of liste) s.verwandt = { stand: Date.now(), liste: [...(proQuelle.get(s.id)?.values() || [])] };
+}
+function ablegerPunkte(s, erstmals, heute, schonDa = new Set()) {
+  const grenze = new Date(Date.parse(heute) - 365 * TAG).toISOString().slice(0, 10);
+  return (s.verwandt?.liste || [])
+    .filter((v) => v.id !== s.id && !schonDa.has(v.id) && (v.datum ? v.datum >= grenze : ['spinoff', 'folge', 'vorlage'].includes(v.wie)))
+    .sort((a, z) => (a.datum || '9999').localeCompare(z.datum || '9999'))
+    .slice(0, 6)
+    .map((v) => {
+      const art = v.id.startsWith('tmdb-tv:') ? 'Serie' : 'Film';
+      const wann = !v.datum ? ', Termin noch offen' : v.datum >= heute ? ` · ab ${datumDe(v.datum)}` : ` · erschienen am ${datumDe(v.datum)}`;
+      return { art: 'ableger', titel: `${WIE[v.wie] || 'Verwandt'}: ${v.titel} (${art})${wann}`, datum: erstmals(`w${v.id}:${v.datum || ''}`), termin: v.datum && v.datum >= heute ? v.datum : undefined, ref: v.id };
+    });
+}
+
+// ---------- Spiele (IGDB): Release, neue Teile der Reihe, Trailer, Spiele-News ----------
+async function pruefeSpiel(env, s, archiv) {
+  const [g] = await igdb(env, `fields name,cover.image_id,first_release_date,release_dates.date,release_dates.region,status,videos.video_id,videos.name,collections.name,collections.games.name,collections.games.first_release_date,franchises.games.name,franchises.games.first_release_date; where id = ${Number(s.id.split(':')[1])};`);
+  if (!g) throw new Error('Spiel nicht gefunden');
+  const jetzt = new Date().toISOString();
+  const heute = jetzt.slice(0, 10);
+  const b = s.bekannt || (s.bekannt = {});
+  const erstmals = (key) => (b[key] ||= jetzt);
+  const tag = (sek) => new Date(sek * 1000).toISOString().slice(0, 10);
+  s.medium = 'spiel';
+  s.titel = g.name || s.titel;
+  s.bild = igdbBild(g);
+  s.reihe = g.collections?.[0]?.name || null;
+  const punkte = [];
+  // Eigener Release (Europa oder weltweit), frühester kommender Termin
+  const termine = (g.release_dates || []).filter((r) => r.date && [1, 8].includes(r.region)).map((r) => tag(r.date)).sort();
+  const start = termine.find((d) => d >= heute) || (!termine.length && g.first_release_date ? tag(g.first_release_date) : null);
+  s.naechste = null;
+  if (start && start >= heute) { punkte.push({ art: 'staffel', titel: `Release am ${datumDe(start)}`, datum: erstmals(`r:${start}`), termin: start }); s.naechste = { text: 'Release', datum: start }; }
+  // Neue Teile der Reihe/des Franchise (nur mit Termin ab heute, damit alte Einträge ohne Datum nicht stören)
+  const teile = new Map();
+  for (const x of [...(g.collections || []), ...(g.franchises || [])]) for (const t of x.games || []) if (t.id !== g.id && t.first_release_date && tag(t.first_release_date) >= heute) teile.set(t.id, t);
+  for (const t of [...teile.values()].sort((a, z) => a.first_release_date - z.first_release_date).slice(0, 4)) {
+    const d = tag(t.first_release_date);
+    punkte.push({ art: 'ableger', titel: `Neuer Teil der Reihe: ${t.name} · ab ${datumDe(d)}`, datum: erstmals(`g${t.id}:${d}`), termin: d, ref: `igdb:${t.id}` });
+    if (!s.naechste) s.naechste = { text: t.name, datum: d };
+  }
+  // Trailer: IGDB nennt kein Datum, also der Zeitpunkt, an dem ein Video zum ersten Mal auftaucht
+  const ersterLauf = !b.gesehenVideos; b.gesehenVideos = true;
+  for (const v of (g.videos || []).slice(-6)) {
+    const k = `v${v.video_id}`;
+    if (!b[k]) b[k] = ersterLauf ? '2000-01-01T00:00:00.000Z' : jetzt;
+    punkte.push({ art: 'trailer', titel: v.name || 'Video', link: `https://www.youtube.com/watch?v=${v.video_id}`, quelle: 'YouTube', datum: b[k] });
+  }
+  for (const n of archiv.filter((x) => x.art === 'spiel' && passt([g.name], x.titel, KONTEXT.spiel)).slice(0, 8)) punkte.push({ art: 'news', titel: n.titel, link: n.link, quelle: n.quelle, datum: n.datum });
+  s.status = s.naechste ? 'Kommt bald' : s.reihe ? `Reihe: ${s.reihe}` : 'Erschienen';
+  s.punkte = buendeln(punkte).sort((a, z) => String(z.datum).localeCompare(String(a.datum))).slice(0, 14);
   s.geprueft = Date.now();
 }
 
 export async function pruefeSerie(env, s, archiv) {
+  if (s.id.startsWith('igdb:')) return pruefeSpiel(env, s, archiv);
   if (s.id.startsWith('tmdb-movie:')) return pruefeFilm(env, s, archiv);
   const d = await tmdb(env, `/tv/${Number(s.id.split(':')[1])}`, { append_to_response: 'videos', include_video_language: 'de,en,null' });
   const jetzt = new Date().toISOString();
@@ -140,8 +238,10 @@ export async function pruefeSerie(env, s, archiv) {
   // Läuft gerade eine Staffel, steht die nächste Folge als Info dabei (nicht als Hinweis, sonst jede Woche)
   s.naechsteFolge = d.next_episode_to_air?.air_date ? { datum: d.next_episode_to_air.air_date, text: `S${d.next_episode_to_air.season_number}E${d.next_episode_to_air.episode_number}` } : null;
 
-  // Beendet oder abgesetzt: automatisch nicht mehr verfolgen (außer Kevin hat sie ausdrücklich wieder aufgenommen)
-  if (['Ended', 'Canceled'].includes(d.status) && !s.behalten && !s.naechste) { s.aus = true; s.ausGrund = STATUS[d.status]; }
+  // Beendet oder abgesetzt: raus aus der Liste (außer Kevin hat sie ausdrücklich wieder aufgenommen),
+  // aber weiter auf Ableger prüfen: Vorgeschichte, Fortsetzung, Spin-off aus demselben Universum
+  const beendet = ['Ended', 'Canceled'].includes(d.status) && !s.behalten && !s.naechste;
+  if (beendet) { s.aus = true; s.ausGrund = STATUS[d.status]; }
   // Status gewechselt (z. B. abgesetzt)
   if (b.status && b.status !== d.status && ['Ended', 'Canceled'].includes(d.status)) b[`status:${d.status}`] = jetzt;
   b.status = d.status;
@@ -153,18 +253,22 @@ export async function pruefeSerie(env, s, archiv) {
   }
   // News der Film-/Serien-Redaktionen
   const namen = [...new Set([d.name, d.original_name].filter(Boolean))];
-  for (const n of archiv.filter((x) => (x.art || 'film') === 'film' && passt(namen, x.titel)).slice(0, 6)) {
+  for (const n of archiv.filter((x) => (x.art || 'film') === 'film' && passt(namen, x.titel)).slice(0, 8)) {
     punkte.push({ art: 'news', titel: n.titel, link: n.link, quelle: n.quelle, datum: n.datum });
   }
-  s.punkte = punkte.sort((a, z) => String(z.datum).localeCompare(String(a.datum))).slice(0, 14);
+  const ableger = ablegerPunkte(s, erstmals, heute);
+  s.punkte = beendet ? ableger : buendeln([...punkte, ...ableger]).sort((a, z) => String(z.datum).localeCompare(String(a.datum))).slice(0, 14);
   s.geprueft = Date.now();
 }
 
 // Einen Teil der Serien prüfen (je Aufruf höchstens `anzahl`, wegen der Anfrage-Grenzen von Cloudflare).
-export async function pruefeTeil(env, d, archiv, ab, anzahl = 25) {
-  const aktiv = d.serien.filter((s) => !s.aus);
+export async function pruefeTeil(env, d, archiv, ab, anzahl = 10) {
+  const aktiv = d.serien.filter(pruefbar);
   const teil = aktiv.slice(ab, ab + anzahl);
   const fehler = [];
+  // Wikidata-Verwandte einmal pro Woche, für den ganzen Teil in einer Abfrage
+  const alt = teil.filter((s) => !s.id.startsWith('igdb:') && (!s.verwandt || Date.now() - s.verwandt.stand > WOCHE));
+  if (alt.length) { try { await wikidataVerwandte(alt); } catch (e) { fehler.push(e.message); } }
   for (const s of teil) { try { await pruefeSerie(env, s, archiv); } catch (e) { fehler.push(`${s.titel}: ${e.message}`); } }
   return { weiter: ab + anzahl < aktiv.length ? ab + anzahl : null, geprueft: teil.length, gesamt: aktiv.length, fehler };
 }
@@ -172,4 +276,5 @@ export async function pruefeTeil(env, d, archiv, ab, anzahl = 25) {
 // Für den Kalender: Staffelstarts aller verfolgten Serien
 export const serienTermine = (d) => d.serien.filter((s) => !s.aus && s.naechste?.datum)
   .map((s) => ({ id: s.id, medium: s.medium || 'serie', titel: s.titel, kalender: true,
-    termine: [{ datum: s.naechste.datum, text: s.medium === 'film' ? (s.naechste.text === 'Kinostart' ? 'Kinostart (DE)' : `Neuer Teil: ${s.naechste.text}`) : `${s.naechste.text || `Staffel ${s.naechste.staffel}`} startet` }] }));
+    termine: [{ datum: s.naechste.datum, text: s.medium === 'film' ? (s.naechste.text === 'Kinostart' ? 'Kinostart (DE)' : `Neuer Teil: ${s.naechste.text}`)
+      : s.medium === 'spiel' ? (s.naechste.text === 'Release' ? 'Release' : `Neuer Teil: ${s.naechste.text}`) : `${s.naechste.text || `Staffel ${s.naechste.staffel}`} startet` }] }));

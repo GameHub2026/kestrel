@@ -53,6 +53,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </header>
     <Pille />
     <div class="ecke">
+      <button type="button" class="hoch" id="hoch" aria-label="Nach oben" title="Nach oben" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
       <span class="stempel mono" id="stempel" tabindex="0" title="Uhrzeit anzeigen">
           <span class="st-a" data-zeichen>Zuletzt festgehalten {stand}</span>
           <span class="st-b" aria-hidden="true" id="uhr" data-zeichen></span>
@@ -81,6 +82,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       });
       matchMedia('(prefers-color-scheme: dark)').addEventListener('change', zeige);
 
+      // Nach oben: erscheint, sobald man eine Bildschirmhöhe gescrollt hat
+      const hoch = document.getElementById('hoch')!;
+      const hochZeigen = () => { const an = scrollY > innerHeight * 0.8; if (an) hoch.hidden = false; hoch.classList.toggle('an', an); };
+      addEventListener('scroll', hochZeigen, { passive: true }); hochZeigen();
+      hoch.addEventListener('click', () => scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }));
+
       // Laufende Uhr, sichtbar beim Überfahren der Statuszeile
       const uhr = document.getElementById('uhr')!;
       const fmt = new Intl.DateTimeFormat('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'Europe/Berlin' });
@@ -104,8 +111,18 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   .skip:focus { left: 8px; }
 
   /* Kopf: Wortmarke links; Navigation samt Hell/Dunkel als Leiste links, Stand/Uhr unten rechts */
-  .ecke { position: fixed; right: 22px; bottom: 16px; z-index: 35; }
-  @media (max-width: 900px) { .ecke { display: none; } }
+  .ecke { position: fixed; right: 22px; bottom: 16px; z-index: 35; display: grid; justify-items: end; gap: 12px; }
+  .hoch {
+    width: 44px; height: 44px; border: 0; border-radius: 50%; cursor: pointer; display: grid; place-items: center;
+    background: var(--ink); color: var(--ground); box-shadow: 0 6px 18px -6px rgb(0 0 0 / 0.45);
+    opacity: 0; transform: translateY(10px) scale(0.9); pointer-events: none;
+    transition: opacity 260ms ease, transform 360ms cubic-bezier(0.34, 1.4, 0.5, 1);
+  }
+  .hoch.an { opacity: 1; transform: none; pointer-events: auto; }
+  .hoch:hover { transform: translateY(-2px); }
+  .hoch:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+  .hoch svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  @media (max-width: 900px) { .ecke { bottom: 84px; right: 16px; } .ecke .stempel { display: none; } }
 
   /* Statuszeile: Zeichen für Zeichen verschwimmt der Stand, die laufende Uhr wird scharf */
   .stempel { display: grid; font-size: 0.78rem; color: var(--ink-2); cursor: default; white-space: pre; }

@@ -1,11 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
 ---
-<Base title="Serien & Filme" privat description="Private Liste verfolgter Serien und Filme.">
+<Base title="Ich folge" privat description="Private Liste der Serien, Filme und Spiele, denen ich folge.">
 <div class="ser kacheln" id="ser">
   <header class="page-head wrap">
-    <h1>Serien &amp; Filme</h1>
-    <p>Alles, was ich bei Plex geschaut habe, kommt über Trakt von selbst hierher. Dazu kommen Serien und Filme, denen ich mit der Glocke folge. Bei Filmen zählt die ganze Reihe: neue Teile, Kinostart, Trailer, News. Jeden Tag wird geprüft, ob eine neue Staffel oder ein neuer Teil angekündigt ist, ein Starttermin feststeht oder sich verschiebt. Staffelstarts und Kinostarts landen auch im Kalender-Abo der Merkliste. Nur du siehst diese Seite.</p>
+    <h1>Ich folge</h1>
+    <p>Alles, was ich bei Plex geschaut habe, kommt über Trakt von selbst hierher. Dazu kommen Serien, Filme und Spiele, denen ich mit der Glocke folge. Geprüft wird automatisch, jeden Morgen und beim Öffnen der Seite: neue Staffel oder neuer Teil, Starttermin fest oder verschoben, Ableger aus demselben Universum (Vorgeschichte, Spin-off, Fortsetzung), Trailer und News. Beendete und abgesetzte Serien fliegen aus der Liste, ihre Ableger melde ich trotzdem. Termine landen auch im Kalender-Abo der Merkliste. Nur du siehst diese Seite.</p>
   </header>
 
   <section class="wrap zugang" id="zugang" hidden>
@@ -40,8 +40,8 @@ import Base from '../../layouts/Base.astro';
     <section class="wrap" aria-labelledby="folgen-h">
       <h2 id="folgen-h" class="abschnitt">Folgen</h2>
       <div class="suche">
-        <label class="visually-hidden" for="such-feld">Serie oder Film suchen</label>
-        <input id="such-feld" type="search" autocomplete="off" placeholder="Serie oder Film suchen …" />
+        <label class="visually-hidden" for="such-feld">Serie, Film oder Spiel suchen</label>
+        <input id="such-feld" type="search" autocomplete="off" placeholder="Serie, Film oder Spiel suchen …" />
       </div>
       <p class="hinweis mono" id="such-status" aria-live="polite"></p>
       <ul class="treffer" id="treffer"></ul>
@@ -50,8 +50,14 @@ import Base from '../../layouts/Base.astro';
     <section class="wrap" aria-labelledby="alle-h">
       <div class="kopfzeile">
         <h2 id="alle-h" class="abschnitt">Ich folge <span id="anzahl"></span></h2>
-        <p class="stand mono"><span id="stand"></span> <button type="button" class="knopf leise klein" id="pruefen">Jetzt prüfen</button></p>
+        <p class="stand mono"><span id="stand"></span></p>
       </div>
+      <nav class="filter" aria-label="Medium">
+        <button type="button" data-m="" aria-pressed="true">Alle</button>
+        <button type="button" data-m="serie" data-medium="serie" aria-pressed="false">Serien</button>
+        <button type="button" data-m="film" data-medium="film" aria-pressed="false">Filme</button>
+        <button type="button" data-m="spiel" data-medium="spiel" aria-pressed="false">Spiele</button>
+      </nav>
       <ul class="raster" id="raster"></ul>
       <dialog class="sbox" id="sbox" aria-label="Details">
         <button type="button" class="sbox-zu" id="sbox-zu" aria-label="Schließen">×</button>
@@ -69,7 +75,7 @@ import Base from '../../layouts/Base.astro';
 <script>
   const SPEICHER = 'kestrel-merk-token';
   const $ = (s: string) => document.querySelector(s) as HTMLElement;
-  type Punkt = { art: 'staffel' | 'status' | 'trailer' | 'news'; titel: string; link?: string; quelle?: string; datum: string; termin?: string; neu: boolean };
+  type Punkt = { art: 'staffel' | 'status' | 'trailer' | 'news' | 'ableger'; titel: string; link?: string; quelle?: string; auch?: string[]; datum: string; termin?: string; neu: boolean };
   type Serie = { id: string; medium?: string; reihe?: string; titel: string; bild?: string; status?: string; quelle: 'trakt' | 'hand'; aus?: boolean; ausGrund?: string | null; anbieter?: string[]; naechste?: { staffel?: number; text?: string; datum: string | null } | null; naechsteFolge?: { datum: string; text: string } | null; punkte: Punkt[]; geprueft?: number };
   type Daten = { stand: number; gesehen: number; serien: Serie[] };
 
@@ -96,7 +102,7 @@ import Base from '../../layouts/Base.astro';
   const datumDe = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString('de-DE', { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric' });
   const relativ = (iso: string) => { const t = Math.floor((Date.now() - Date.parse(iso)) / 864e5); return t <= 0 ? 'heute' : t === 1 ? 'gestern' : `vor ${t} Tagen`; };
   const bis = (d: string) => { const t = Math.round((Date.parse(d + 'T12:00:00') - Date.now()) / 864e5); return t <= 0 ? 'heute' : t === 1 ? 'morgen' : `in ${t} Tagen`; };
-  const ART: Record<string, string> = { staffel: 'Neu',  status: 'Status', trailer: '▶ Trailer', news: 'News' };
+  const ART: Record<string, string> = { ableger: 'Ableger', staffel: 'Neu',  status: 'Status', trailer: '▶ Trailer', news: 'News' };
   const gross = (u?: string) => u?.replace('/w154/', '/w342/');
   function poster(src?: string, klasse = 'poster') {
     const b = el('span', klasse);
@@ -105,18 +111,27 @@ import Base from '../../layouts/Base.astro';
     return b;
   }
 
+  const MED: Record<string, string> = { serie: 'Serie', film: 'Film', spiel: 'Spiel' };
+  const artName = (p: Punkt, s: Serie) => p.art === 'staffel' ? (s.medium === 'film' ? 'Film' : s.medium === 'spiel' ? 'Spiel' : 'Staffel') : p.art === 'ableger' ? 'Universum' : ART[p.art];
+  // Quelle, "auch bei …" und bei Terminen die verbleibenden Tage
+  const quelleZeile = (p: Punkt) => [p.quelle, p.auch?.length ? `auch bei ${p.auch.join(', ')}` : '', p.termin ? `noch ${tage(p.termin)}` : '', relativ(p.datum)].filter(Boolean).join(' · ');
+  const tage = (d: string) => { const t = Math.round((Date.parse(d + 'T12:00:00') - Date.now()) / 864e5); return t <= 0 ? 'heute' : t === 1 ? '1 Tag' : `${t} Tage`; };
+  let filterM = '';
+
   function zeige() {
     const aktiv = daten.serien.filter((s) => !s.aus);
-    // Neu für dich: alle neuen Hinweise, Staffeln zuerst, dann nach Datum
-    const neu = aktiv.flatMap((s) => s.punkte.filter((p) => p.neu).map((p) => ({ p, s })))
-      .sort((a, b) => (a.p.art === 'staffel' ? 0 : 1) - (b.p.art === 'staffel' ? 0 : 1) || b.p.datum.localeCompare(a.p.datum));
+    // Neu für dich: auch Ableger beendeter Serien; gleiche Meldung (gleicher Link) nur einmal; Termine zuerst
+    const gesehen = new Set<string>();
+    const neu = daten.serien.filter((s) => !s.aus || s.ausGrund).flatMap((s) => s.punkte.filter((p) => p.neu).map((p) => ({ p, s })))
+      .filter(({ p }) => { const k = p.link || p.titel; if (gesehen.has(k)) return false; gesehen.add(k); return true; })
+      .sort((a, b) => (['staffel', 'ableger'].includes(a.p.art) ? 0 : 1) - (['staffel', 'ableger'].includes(b.p.art) ? 0 : 1) || b.p.datum.localeCompare(a.p.datum));
     $('#hinweise').replaceChildren(...neu.map(({ p, s }) => {
       const li = el('li', `hinweis-zeile art-${p.art}`);
       const mitte = el('div', 'mitte');
-      mitte.append(el('span', 'art mono', `${p.art === 'staffel' ? (s.medium === 'film' ? 'Film' : 'Staffel') : ART[p.art]} · ${s.titel}`));
+      mitte.append(el('span', 'art mono', `${artName(p, s)} · ${s.titel}`));
       if (p.link) { const a = el('a', 'h-titel', p.titel) as HTMLAnchorElement; a.href = p.link; a.target = '_blank'; a.rel = 'noopener'; mitte.append(a); }
       else mitte.append(el('span', 'h-titel', p.titel));
-      mitte.append(el('span', 'quelle mono', [p.quelle, relativ(p.datum)].filter(Boolean).join(' · ')));
+      mitte.append(el('span', 'quelle mono', quelleZeile(p)));
       li.append(poster(s.bild), mitte);
       klickbar(li, s);
       return li;
@@ -131,8 +146,8 @@ import Base from '../../layouts/Base.astro';
       const n = s.naechste!;
       klickbar(li, s);
       li.append(poster(s.bild));
-      const was = s.medium === 'film' ? (n.text === 'Kinostart' ? 'Kinostart' : `Neuer Teil: ${n.text}`) : (n.text || `Staffel ${n.staffel}`);
-      li.append(el('span', 'k-datum mono', n.datum ? `${datumDe(n.datum)} · ${bis(n.datum)}` : 'Termin offen'), el('span', 'k-titel', s.titel), el('span', 'k-staffel mono', `${was}${s.anbieter?.length ? ` · ${s.anbieter.join(', ')}` : ''}`));
+      const was = s.medium === 'film' || s.medium === 'spiel' ? (['Kinostart', 'Release'].includes(n.text || '') ? n.text! : `Neuer Teil: ${n.text}`) : (n.text || `Staffel ${n.staffel}`);
+      li.append(el('span', 'k-datum mono', n.datum ? `${datumDe(n.datum)} · noch ${tage(n.datum)}` : 'Termin offen'), el('span', 'k-titel', s.titel), el('span', 'k-staffel mono', `${was}${s.anbieter?.length ? ` · ${s.anbieter.join(', ')}` : ''}`));
       return li;
     }));
     $('#kommt-leer').hidden = kommt.length > 0;
@@ -140,17 +155,17 @@ import Base from '../../layouts/Base.astro';
     // Raster aller verfolgten Serien: zuerst die mit Neuem, dann laufende, beendete zuletzt
     const rang = (s: Serie) => (s.punkte.some((p) => p.neu) ? 0 : s.naechste ? 1 : /Beendet|Abgesetzt/.test(s.status || '') ? 3 : 2);
     $('#anzahl').textContent = `(${aktiv.length})`;
-    $('#raster').replaceChildren(...aktiv.sort((a, b) => rang(a) - rang(b) || a.titel.localeCompare(b.titel, 'de')).map((s) => {
+    $('#raster').replaceChildren(...aktiv.filter((s) => !filterM || (s.medium || 'serie') === filterM).sort((a, b) => rang(a) - rang(b) || a.titel.localeCompare(b.titel, 'de')).map((s) => {
       const li = el('li', 'kachel');
       const n = s.punkte.filter((p) => p.neu).length;
       const c = poster(s.bild, 'cover');
       if (n) c.append(el('span', 'neu-plakette mono', `${n} neu`));
       const info = el('div', 'k-info');
       info.append(el('span', 'k-name', s.titel));
-      const was = s.naechste ? (s.medium === 'film' ? (s.naechste.text === 'Kinostart' ? 'Kinostart' : s.naechste.text!) : (s.naechste.text || `Staffel ${s.naechste.staffel}`)) : '';
-      const zeile = s.naechste ? (s.naechste.datum ? `${was}: ${datumDe(s.naechste.datum)}` : `${was} angekündigt`)
+      const was = s.naechste ? (s.medium === 'film' || s.medium === 'spiel' ? s.naechste.text! : (s.naechste.text || `Staffel ${s.naechste.staffel}`)) : '';
+      const zeile = s.naechste ? (s.naechste.datum ? `${was}: ${datumDe(s.naechste.datum)} · noch ${tage(s.naechste.datum)}` : `${was} angekündigt`)
         : s.naechsteFolge ? `Nächste Folge ${s.naechsteFolge.text}: ${datumDe(s.naechsteFolge.datum)}` : (s.status || '');
-      info.append(el('span', 'k-zeile mono', zeile), el('span', 'k-quelle mono', `${s.medium === 'film' ? 'Film' : 'Serie'} · ${s.quelle === 'trakt' ? 'aus Trakt' : 'von Hand'}`));
+      info.append(el('span', 'k-zeile mono', zeile), el('span', 'k-quelle mono', `${MED[s.medium || 'serie']} · ${s.quelle === 'trakt' ? 'aus Trakt' : 'von Hand'}`));
       const weg = el('button', 'k-weg', 'Nicht mehr folgen') as HTMLButtonElement; weg.type = 'button';
       weg.addEventListener('click', () => setzeAus(s, true));
       info.append(weg);
@@ -168,7 +183,7 @@ import Base from '../../layouts/Base.astro';
       li.append(b); return li;
     }));
 
-    $('#stand').textContent = daten.stand ? `Zuletzt geprüft: ${new Date(daten.stand).toLocaleString('de-DE', { dateStyle: 'short', timeStyle: 'short' })}` : 'Noch nicht geprüft.';
+    if (!prueftGerade) $('#stand').textContent = daten.stand ? `Automatisch geprüft: ${new Date(daten.stand).toLocaleString('de-DE', { dateStyle: 'short', timeStyle: 'short' })}` : 'Wird gleich geprüft …';
     try { sessionStorage.removeItem('kestrel-neu'); } catch {}
   }
 
@@ -183,10 +198,10 @@ import Base from '../../layouts/Base.astro';
   async function oeffne(s: Serie) {
     const kopf = el('div', 'sbox-kopf');
     const kern = el('div', 'mitte');
-    kern.append(el('span', 'art mono', `${s.medium === 'film' ? 'Film' : 'Serie'}${s.reihe ? ` · ${s.reihe}` : ''} · ${s.status || ''}`), el('h2', 'sbox-titel', s.titel));
+    kern.append(el('span', 'art mono', `${MED[s.medium || 'serie']}${s.reihe ? ` · ${s.reihe}` : ''} · ${s.status || ''}`), el('h2', 'sbox-titel', s.titel));
     if (s.naechste) {
-      const was = s.medium === 'film' ? (s.naechste.text === 'Kinostart' ? 'Kinostart' : `Neuer Teil: ${s.naechste.text}`) : (s.naechste.text || `Staffel ${s.naechste.staffel}`);
-      kern.append(el('span', 'sbox-termin mono', s.naechste.datum ? `${was}: ${datumDe(s.naechste.datum)} · ${bis(s.naechste.datum)}` : `${was} angekündigt, Termin offen`));
+      const was = s.medium === 'film' || s.medium === 'spiel' ? (['Kinostart', 'Release'].includes(s.naechste.text || '') ? s.naechste.text! : `Neuer Teil: ${s.naechste.text}`) : (s.naechste.text || `Staffel ${s.naechste.staffel}`);
+      kern.append(el('span', 'sbox-termin mono', s.naechste.datum ? `${was}: ${datumDe(s.naechste.datum)} · noch ${tage(s.naechste.datum)}` : `${was} angekündigt, Termin offen`));
     } else if (s.naechsteFolge) kern.append(el('span', 'sbox-termin mono', `Nächste Folge ${s.naechsteFolge.text}: ${datumDe(s.naechsteFolge.datum)}`));
     kopf.append(poster(s.bild, 'sbox-bild'), kern);
     const details = el('div', 'sbox-details'); details.append(el('p', 'mono laed', 'Lade Details …'));
@@ -196,9 +211,9 @@ import Base from '../../layouts/Base.astro';
       const ul = el('ul');
       for (const x of s.punkte) {
         const li = el('li', x.neu ? 'ist-neu' : '');
-        li.append(el('span', 'art mono', `${x.art === 'staffel' ? (s.medium === 'film' ? 'Film' : 'Staffel') : ART[x.art]}${x.neu ? ' · neu' : ''}`));
+        li.append(el('span', 'art mono', `${artName(x, s)}${x.neu ? ' · neu' : ''}`));
         if (x.link) { const a = el('a', '', x.titel) as HTMLAnchorElement; a.href = x.link; a.target = '_blank'; a.rel = 'noopener'; li.append(a); } else li.append(el('span', 'h-titel', x.titel));
-        li.append(el('span', 'quelle mono', [x.quelle, relativ(x.datum)].filter(Boolean).join(' · ')));
+        li.append(el('span', 'quelle mono', quelleZeile(x)));
         ul.append(li);
       }
       gefunden.append(ul);
@@ -244,22 +259,30 @@ import Base from '../../layouts/Base.astro';
   }
   $('#gesehen').addEventListener('click', async () => { await api('/api/serien', { method: 'POST', body: JSON.stringify({ gesehen: true }) }); laden(); });
 
-  // Jetzt prüfen: Trakt abgleichen und alle Serien in Teilen prüfen
-  $('#pruefen').addEventListener('click', async () => {
-    const b = $('#pruefen') as HTMLButtonElement; b.disabled = true;
+  // Automatisch prüfen: beim Öffnen, wenn der letzte Stand älter als 6 Stunden ist (sonst macht es der Morgenlauf)
+  let prueftGerade = false;
+  async function pruefeAutomatisch() {
+    if (prueftGerade || (daten.stand && Date.now() - daten.stand < 6 * 3600e3)) return;
+    prueftGerade = true;
     let ab: number | null = 0;
     try {
       while (ab !== null) {
         const r = await api(`/api/serien/pruefen?ab=${ab}`, { method: 'POST' });
-        $('#stand').textContent = `Prüfe … ${Math.min((ab || 0) + r.geprueft, r.gesamt)} von ${r.gesamt}`;
+        $('#stand').textContent = `Prüfe automatisch … ${Math.min((ab || 0) + r.geprueft, r.gesamt)} von ${r.gesamt}`;
         ab = r.weiter;
       }
       await laden();
-    } catch (err) { $('#stand').textContent = `Prüfen fehlgeschlagen: ${(err as Error).message}`; }
-    b.disabled = false;
-  });
+    } catch { /* der Morgenlauf holt es nach */ }
+    prueftGerade = false;
+  }
 
-  // Suche (nur Serien) und Folgen mit der Glocke
+  document.querySelectorAll<HTMLButtonElement>('[data-m]').forEach((b) => b.addEventListener('click', () => {
+    filterM = b.dataset.m || '';
+    document.querySelectorAll('[data-m]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    zeige();
+  }));
+
+  // Suche (Serien, Filme, Spiele) und Folgen mit der Glocke
   let suchTimer = 0, suchNr = 0;
   async function suche() {
     const q = ($('#such-feld') as HTMLInputElement).value.trim();
@@ -267,13 +290,13 @@ import Base from '../../layouts/Base.astro';
     if (q.length < 2) { ul.replaceChildren(); status.textContent = ''; return; }
     const nr = ++suchNr; status.textContent = 'Suche …';
     try {
-      const [se, fi] = await Promise.all(['serie', 'film'].map((m) => api(`/api/merk/suche?medium=${m}&q=${encodeURIComponent(q)}`).catch(() => [])));
-      const treffer: any[] = []; for (let i = 0; i < 8; i++) { if (se[i]) treffer.push(se[i]); if (fi[i]) treffer.push(fi[i]); }
+      const teile = await Promise.all(['serie', 'film', 'spiel'].map((m) => api(`/api/merk/suche?medium=${m}&q=${encodeURIComponent(q)}`).catch(() => [])));
+      const treffer: any[] = []; for (let i = 0; i < 8; i++) for (const t of teile) if (t[i]) treffer.push(t[i]);
       if (nr !== suchNr) return;
       status.textContent = treffer.length ? '' : 'Nichts gefunden.';
       ul.replaceChildren(...treffer.map((t: { id: string; medium: string; titel: string; jahr?: number; info?: string; bild?: string }) => {
         const li = el('li', 'treffer-zeile');
-        const mitte = el('div', 'mitte'); mitte.append(el('span', 'titel', t.titel), el('span', 'mono info', [t.medium === 'film' ? 'Film' : 'Serie', t.jahr, t.info].filter(Boolean).join(' · ')));
+        const mitte = el('div', 'mitte'); mitte.append(el('span', 'titel', t.titel), el('span', 'mono info', [MED[t.medium], t.jahr, t.info].filter(Boolean).join(' · ')));
         const schon = daten.serien.some((s) => s.id === t.id && !s.aus);
         const b = el('button', 'glocke', schon ? '🔔 Folge ich' : '🔔 Folgen') as HTMLButtonElement; b.type = 'button'; b.disabled = schon;
         b.addEventListener('click', async () => {
@@ -292,6 +315,7 @@ import Base from '../../layouts/Base.astro';
     if (!token) return zeigeZugang();
     try { await laden(); } catch { return; }
     $('#zugang').hidden = true; $('#app').hidden = false;
+    pruefeAutomatisch();
   }
   start();
 </script>
@@ -386,6 +410,11 @@ import Base from '../../layouts/Base.astro';
   @media (max-width: 560px) { .sbox { padding: 18px; } .sbox-kopf { grid-template-columns: 84px 1fr; gap: 14px; } .sbox-bild { width: 84px; } }
 
   /* Ansicht-Umschalter */
+  .filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+  .filter button { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); font-size: 0.9rem; }
+  .filter button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
+  .filter button[data-medium][aria-pressed='true'] { background: var(--card); color: var(--card-ink); }
+  .hinweis-zeile.art-ableger { background: var(--film); color: var(--film-ink); }
   .ansicht-zeile { display: flex; justify-content: flex-end; margin-top: -10px; }
   .ansicht { display: inline-flex; gap: 2px; padding: 3px; border-radius: 8px; background: color-mix(in srgb, var(--ink) 8%, transparent); }
   .ansicht button { padding: 7px 9px; background: transparent; color: var(--ink-2); box-shadow: none; border-radius: 6px; display: grid; place-items: center; }

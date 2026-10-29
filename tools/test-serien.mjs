@@ -30,4 +30,12 @@ const { pruefeSerie } = await import('../server/serien.js');
 await pruefeSerie(env, film, archiv);
 console.log('Film:', film.titel, '|', film.reihe, '|', film.status, '|', JSON.stringify(film.naechste), film.punkte.filter((p) => p.art === 'staffel').map((p) => p.titel));
 if (!film.titel) { console.error('FEHLER: Film ohne Titel'); process.exit(1); }
+
+// Ableger: The Handmaid's Tale (69478, beendet) → The Testaments; Spiel: Resident Evil Requiem über IGDB-Suche entfällt hier (kein IGDB-Schlüssel nötig)
+const { wikidataVerwandte } = await import('../server/serien.js');
+const ht = { id: 'tmdb-tv:69478', titel: '', quelle: 'trakt', bekannt: {}, punkte: [] };
+await wikidataVerwandte([ht]);
+await pruefeSerie(env, ht, archiv);
+console.log('Handmaid:', ht.titel, ht.status, ht.aus, ht.ausGrund, ht.punkte.map((p) => p.titel));
+if (!ht.punkte.some((p) => /Testaments/.test(p.titel))) { console.error('FEHLER: Ableger nicht gefunden'); process.exit(1); }
 console.log('ok');

@@ -30,7 +30,7 @@ async function igdbToken(env) {
   await env.MERK.put('igdb-token', access_token, { expirationTtl: Math.max(60, expires_in - 3600) });
   return access_token;
 }
-async function igdb(env, body) {
+export async function igdb(env, body) {
   const r = await fetch('https://api.igdb.com/v4/games', {
     method: 'POST',
     headers: { 'Client-ID': env.IGDB_CLIENT_ID, Authorization: `Bearer ${await igdbToken(env)}` },
@@ -39,7 +39,7 @@ async function igdb(env, body) {
   if (!r.ok) throw new Error(`IGDB ${r.status}`);
   return r.json();
 }
-const igdbBild = (g) => (g.cover?.image_id ? `https://images.igdb.com/igdb/image/upload/t_cover_small/${g.cover.image_id}.jpg` : null);
+export const igdbBild = (g) => (g.cover?.image_id ? `https://images.igdb.com/igdb/image/upload/t_cover_small/${g.cover.image_id}.jpg` : null);
 const tag = (sek) => new Date(sek * 1000).toISOString().slice(0, 10);
 
 async function sucheSpiel(env, q) {

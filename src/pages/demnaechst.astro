@@ -82,11 +82,10 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
       <p class="box-handlung" id="box-handlung"></p>
       <dl class="box-fakten" id="box-fakten"></dl>
       <p class="box-knoepfe" id="box-knoepfe"></p>
-      <!-- Nur auf Kevins Geräten (Merkliste-Schlüssel im Browser): direkt merken und beobachten -->
+      <!-- Nur auf Kevins Geräten (Merkliste-Schlüssel im Browser): direkt merken und folgen -->
       <div class="box-merk" id="box-merk" hidden>
         <button type="button" class="mk" id="b-merk" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>Auf die Merkliste</span></button>
-        <button type="button" class="mk" id="b-auge" aria-pressed="false" title="Bei neuen News oder Trailern Bescheid geben"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>Beobachten</span></button>
-        <button type="button" class="mk" id="b-glocke" aria-pressed="false" title="Neue Staffeln oder Teile, Termine, Trailer und News unter „Serien & Filme“"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span>Serie folgen</span></button>
+        <button type="button" class="mk" id="b-glocke" aria-pressed="false" title="Neue Staffeln oder Teile, Ableger, Termine, Trailer und News unter „Ich folge“"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span>Serie folgen</span></button>
         <p class="mk-hinweis mono" id="mk-hinweis" aria-live="polite"></p>
       </div>
       <section class="box-news" id="box-news" aria-labelledby="box-news-h">
@@ -188,67 +187,60 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
   $('box-zu').addEventListener('click', () => box.close());
   box.addEventListener('click', (e) => { if (e.target === box) box.close(); }); // Klick neben die Box schließt
 
-  // Direkt merken / beobachten (nur mit Merkliste-Schlüssel auf diesem Gerät)
-  type ME = { id: string; beobachten?: boolean };
+  // Direkt merken und folgen (nur mit Merkliste-Schlüssel auf diesem Gerät)
+  type ME = { id: string };
   let token = ''; try { token = localStorage.getItem('kestrel-merk-token') || ''; } catch {}
   let meine = new Map<string, ME>();
+  let folgeIch = new Set<string>();
   const idAus = (info: string) => info.replace(/^movie-/, 'tmdb-movie:').replace(/^tv-/, 'tmdb-tv:');
+  const infoAus = (id: string) => id.replace('tmdb-movie:', 'movie-').replace('tmdb-tv:', 'tv-');
+  const kopf = () => ({ 'x-merk-token': token, 'content-type': 'application/json' });
   async function merkApi(opt: RequestInit = {}) {
-    const r = await fetch('/api/merk', { ...opt, headers: { 'x-merk-token': token, 'content-type': 'application/json' } });
+    const r = await fetch('/api/merk', { ...opt, headers: kopf() });
     if (!r.ok) throw new Error(r.status === 401 ? 'Kein Zugang' : 'Fehler');
-    const l: ME[] = await r.json(); meine = new Map(l.map((e) => [e.id, e])); markiereKarten(); return l;
+    const l: ME[] = await r.json(); meine = new Map(l.map((e) => [e.id, e])); markiereKarten();
   }
+  async function serienLaden(opt: RequestInit = {}) {
+    const r = await fetch('/api/serien', { ...opt, headers: kopf() });
+    if (!r.ok) throw new Error(r.status === 401 ? 'Kein Zugang' : 'Fehler');
+    const d: { serien: { id: string; aus?: boolean }[] } = await r.json();
+    folgeIch = new Set(d.serien.filter((x) => !x.aus).map((x) => x.id)); markiereKarten();
+  }
+  // Karten-Zeichen: Glocke, wenn ich folge, sonst Lesezeichen, wenn gemerkt
   function markiereKarten() {
     document.querySelectorAll<HTMLButtonElement>('.karte').forEach((k) => {
-      const e = meine.get(idAus(k.dataset.info || ''));
-      k.dataset.gemerkt = e ? (e.beobachten ? 'auge' : 'ja') : '';
+      const id = idAus(k.dataset.info || '');
+      k.dataset.gemerkt = folgeIch.has(id) ? 'auge' : meine.has(id) ? 'ja' : '';
     });
   }
   let aktiv = { id: '', medium: '' };
   function zeigeMerk(info: string, medium: string) {
     const bereich = $('box-merk'); bereich.hidden = !token || !info; if (bereich.hidden) return;
     aktiv = { id: idAus(info), medium };
-    const e = meine.get(aktiv.id);
-    const bm = $('b-merk'), ba = $('b-auge');
-    bm.setAttribute('aria-pressed', String(!!e)); bm.querySelector('span')!.textContent = e ? 'Auf der Merkliste' : 'Auf die Merkliste';
-    ba.setAttribute('aria-pressed', String(!!e?.beobachten)); ba.querySelector('span')!.textContent = e?.beobachten ? 'Wird beobachtet' : 'Beobachten';
-    $('mk-hinweis').textContent = '';
-    const bg = $('b-glocke');
-    const folge = folgeIch.has(aktiv.id);
+    const bm = $('b-merk'), bg = $('b-glocke');
+    const gemerkt = meine.has(aktiv.id), folge = folgeIch.has(aktiv.id);
+    bm.setAttribute('aria-pressed', String(gemerkt)); bm.querySelector('span')!.textContent = gemerkt ? 'Auf der Merkliste' : 'Auf die Merkliste';
     bg.setAttribute('aria-pressed', String(folge)); bg.querySelector('span')!.textContent = folge ? 'Folge ich' : medium === 'film' ? 'Film folgen' : 'Serie folgen';
+    $('mk-hinweis').textContent = '';
   }
-  // Meine Serien (Glocke): ohne Merkliste, nur Staffeln, Termine, Trailer und News
-  let folgeIch = new Set<string>();
-  async function serienLaden(opt: RequestInit = {}) {
-    const r = await fetch('/api/serien', { ...opt, headers: { 'x-merk-token': token, 'content-type': 'application/json' } });
-    if (!r.ok) throw new Error(r.status === 401 ? 'Kein Zugang' : 'Fehler');
-    const d: { serien: { id: string; aus?: boolean }[] } = await r.json();
-    folgeIch = new Set(d.serien.filter((x) => !x.aus).map((x) => x.id));
-  }
+  $('b-merk').addEventListener('click', async () => {
+    if (meine.has(aktiv.id)) { location.href = '/merkliste/'; return; }
+    const hinweis = $('mk-hinweis'); hinweis.textContent = 'Speichere …';
+    try { await merkApi({ method: 'POST', body: JSON.stringify({ id: aktiv.id, medium: aktiv.medium }) }); zeigeMerk(infoAus(aktiv.id), aktiv.medium); $('mk-hinweis').textContent = 'Gemerkt.'; }
+    catch (err) { hinweis.textContent = `Ging nicht: ${(err as Error).message}`; }
+  });
   $('b-glocke').addEventListener('click', async () => {
     const hinweis = $('mk-hinweis'); hinweis.textContent = 'Speichere …';
     const folge = folgeIch.has(aktiv.id);
     try {
       await serienLaden({ method: folge ? 'PATCH' : 'POST', body: JSON.stringify(folge ? { id: aktiv.id, aus: true } : { id: aktiv.id, titel: $('box-titel').textContent }) });
-      zeigeMerk(aktiv.id.replace('tmdb-tv:', 'tv-').replace('tmdb-movie:', 'movie-'), aktiv.medium);
+      zeigeMerk(infoAus(aktiv.id), aktiv.medium);
       const film = aktiv.medium === 'film';
-      hinweis.textContent = folge ? `Du folgst ${film ? 'dem Film' : 'der Serie'} nicht mehr.`
-        : film ? 'Neue Teile der Reihe, Kinostart, Trailer und News stehen ab jetzt unter „Serien & Filme“.' : 'Neue Staffeln, Termine, Trailer und News stehen ab jetzt unter „Serien & Filme“.';
+      $('mk-hinweis').textContent = folge ? `Du folgst ${film ? 'dem Film' : 'der Serie'} nicht mehr.`
+        : film ? 'Neue Teile, Ableger, Kinostart, Trailer und News stehen ab jetzt unter „Ich folge“.' : 'Neue Staffeln, Ableger, Termine, Trailer und News stehen ab jetzt unter „Ich folge“.';
       try { sessionStorage.removeItem('kestrel-neu'); } catch {}
     } catch (err) { hinweis.textContent = `Ging nicht: ${(err as Error).message}`; }
   });
-  async function setze(beobachten: boolean | null) {
-    const hinweis = $('mk-hinweis'); hinweis.textContent = 'Speichere …';
-    try {
-      const da = meine.has(aktiv.id);
-      if (!da) await merkApi({ method: 'POST', body: JSON.stringify({ id: aktiv.id, medium: aktiv.medium, beobachten: !!beobachten }) });
-      else if (beobachten !== null) await merkApi({ method: 'PATCH', body: JSON.stringify({ id: aktiv.id, beobachten }) });
-      zeigeMerk(aktiv.id.replace('tmdb-movie:', 'movie-').replace('tmdb-tv:', 'tv-'), aktiv.medium);
-      hinweis.textContent = beobachten ? 'Du siehst auf der Merkliste, sobald News oder Trailer dazukommen.' : da && beobachten === false ? 'Nicht mehr beobachtet.' : 'Gemerkt.';
-    } catch (err) { hinweis.textContent = `Ging nicht: ${(err as Error).message}`; }
-  }
-  $('b-merk').addEventListener('click', () => { if (!meine.has(aktiv.id)) setze(null); else location.href = '/merkliste/'; });
-  $('b-auge').addEventListener('click', () => setze(!meine.get(aktiv.id)?.beobachten));
   if (token) { merkApi().catch(() => {}); serienLaden().catch(() => {}); }
 
   // Meine Merkliste (öffentliche Einträge, nur lesen)
@@ -345,8 +337,6 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .mk svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .dem .mk[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
 .dem .mk[aria-pressed='true'] svg { fill: currentColor; }
-.dem #b-auge[aria-pressed='true'] svg { fill: none; }
-.dem #b-auge[aria-pressed='true'] svg circle { fill: currentColor; }
 .dem .mk[hidden] { display: none; }
 .dem .mk-hinweis { flex-basis: 100%; margin: 0; font-size: 0.74rem; color: var(--ink-2); min-height: 1em; }
 .dem .karte { position: relative; }
@@ -355,7 +345,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
   -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat;
 }
 .dem .karte[data-gemerkt='ja'] { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z'/%3E%3C/svg%3E"); }
-.dem .karte[data-gemerkt='auge'] { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4'%3E%3Cpath d='M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z'/%3E%3Ccircle cx='12' cy='12' r='3' fill='black'/%3E%3C/svg%3E"); }
+.dem .karte[data-gemerkt='auge'] { --m: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9z'/%3E%3Cpath d='M10 20.5a2.2 2.2 0 0 0 4 0z'/%3E%3C/svg%3E"); }
 .dem .box-news { border-top: 2px dashed var(--rule); padding-top: 14px; }
 .dem .box-news h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px; color: var(--ink-2); }
 .dem .box-news ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }

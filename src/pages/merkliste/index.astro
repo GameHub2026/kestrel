@@ -5,7 +5,7 @@ import Base from '../../layouts/Base.astro';
 <div class="merk">
   <header class="page-head wrap">
     <h1>Merkliste</h1>
-    <p>Hier bearbeite ich. Was ich spielen und schauen will, mit Terminen. Nur du siehst diese Liste. Setzt du bei einem Eintrag den Haken „Öffentlich“, erscheint er zusätzlich auf der Seite „Demnächst“. Verschiebt sich ein Start, ändert sich das hier und im Kalender von selbst.</p>
+    <p>Hier bearbeite ich. Was ich spielen und schauen will, mit Terminen. Mit der Glocke folge ich einem Titel, dann erfahre ich unter „Ich folge“ alles Neue dazu. Nur du siehst diese Liste. Setzt du bei einem Eintrag den Haken „Öffentlich“, erscheint er zusätzlich auf der Seite „Demnächst“. Verschiebt sich ein Start, ändert sich das hier und im Kalender von selbst.</p>
   </header>
 
   <section class="wrap zugang" id="zugang" hidden>
@@ -18,14 +18,7 @@ import Base from '../../layouts/Base.astro';
   </section>
 
   <div id="app" hidden>
-    <section class="wrap neues" id="neues" hidden aria-labelledby="neues-h">
-      <div class="neues-kopf">
-        <h2 id="neues-h" class="abschnitt">Neues</h2>
-        <button type="button" class="knopf leise" id="alles-gesehen">Alles gesehen</button>
-      </div>
-      <p class="hinweis mono">News und Trailer zu Titeln, die du mit dem Auge beobachtest, seit du zuletzt hier warst.</p>
-      <ul class="neues-liste" id="neues-liste"></ul>
-    </section>
+    <p class="wrap neues-link" id="neues" hidden><a href="/serien/"><span id="neues-zahl"></span> zu Titeln, denen du folgst · <strong>Ich folge →</strong></a></p>
 
     <nav class="wrap tabs" aria-label="Medium">
       <button type="button" data-tab="alle" aria-pressed="true">Alle</button>
@@ -75,9 +68,9 @@ import Base from '../../layouts/Base.astro';
   const PLATZ = { alle: 'Spiel, Film oder Serie suchen …', spiel: 'Spiel suchen …', film: 'Film suchen …', serie: 'Serie suchen …' } as Record<string, string>;
   const MEDIUM: Record<string, string> = { spiel: 'Spiel', film: 'Film', serie: 'Serie' };
   type Eintrag = { id: string; medium: string; titel: string; bild?: string; termine?: { datum: string; text: string }[]; status?: string; kalender?: boolean; oeffentlich?: boolean; beobachten?: boolean; fehler?: string };
-  type Punkt = { art: 'news' | 'trailer'; titel: string; link: string; quelle: string; datum: string; neu: boolean };
+  type Punkt = { art: string; titel: string; link?: string; quelle: string; datum: string; neu: boolean };
   type Beob = { id: string; titel: string; medium: string; punkte: Punkt[] };
-  const AUGE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>';
+  const GLOCKE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>';
   const gross = (u?: string) => u?.replace('/w154/', '/w342/').replace('t_cover_small', 't_cover_big');
 
   // Schlüssel aus #t=… übernehmen (Link einmal pro Gerät öffnen), danach aus dem Speicher.
@@ -90,7 +83,7 @@ import Base from '../../layouts/Base.astro';
 
   let medium = 'alle';
   let liste: Eintrag[] = [];
-  let beob = new Map<string, Beob>();
+  let beob = new Map<string, Beob>(); // Titel, denen ich folge (aus „Ich folge“), mit ihren Hinweisen
   let ansicht = 'liste';
   try { ansicht = localStorage.getItem('kestrel-merk-ansicht') === 'kacheln' ? 'kacheln' : 'liste'; } catch {}
 
@@ -128,20 +121,24 @@ import Base from '../../layouts/Base.astro';
 
   const neuAnzahl = (e: Eintrag) => beob.get(e.id)?.punkte.filter((p) => p.neu).length || 0;
 
-  // Schalter eines Eintrags: Auge (beobachten), Kalender, Öffentlich, Entfernen
+  // Schalter eines Eintrags: Folgen (Glocke), Kalender, Öffentlich, Entfernen
   function steuerung(e: Eintrag, nachher: () => void) {
     const rechts = el('div', 'rechts');
     const auge = el('button', 'auge') as HTMLButtonElement; auge.type = 'button';
     const setzeAuge = () => {
-      auge.setAttribute('aria-pressed', String(!!e.beobachten));
-      auge.innerHTML = `${AUGE}<span>${e.beobachten ? 'Beobachtet' : 'Beobachten'}</span>`;
-      auge.title = e.beobachten ? 'Nicht mehr beobachten' : 'Bei neuen News oder Trailern Bescheid geben';
+      const folge = beob.has(e.id);
+      auge.setAttribute('aria-pressed', String(folge));
+      auge.innerHTML = `${GLOCKE}<span>${folge ? 'Folge ich' : 'Folgen'}</span>`;
+      auge.title = folge ? 'Nicht mehr folgen' : 'Bei neuen Teilen, Terminen, Trailern und News Bescheid geben (unter „Ich folge“)';
     };
     setzeAuge();
     auge.addEventListener('click', async () => {
       auge.disabled = true;
-      try { liste = await api('/api/merk', { method: 'PATCH', body: JSON.stringify({ id: e.id, beobachten: !e.beobachten }) }); e.beobachten = !e.beobachten; setzeAuge(); ladeNeues(); }
-      finally { auge.disabled = false; }
+      try {
+        const folge = beob.has(e.id);
+        await api('/api/serien', { method: folge ? 'PATCH' : 'POST', body: JSON.stringify(folge ? { id: e.id, aus: true } : { id: e.id, titel: e.titel }) });
+        await ladeNeues(); setzeAuge();
+      } finally { auge.disabled = false; }
     });
     const lab = el('label', 'schalter'); const cb = document.createElement('input'); cb.type = 'checkbox'; cb.checked = !!e.kalender;
     cb.addEventListener('change', async () => { liste = await api('/api/merk', { method: 'PATCH', body: JSON.stringify({ id: e.id, kalender: cb.checked }) }); });
@@ -161,9 +158,9 @@ import Base from '../../layouts/Base.astro';
   }
   function plakette(e: Eintrag) {
     const n = neuAnzahl(e);
-    if (!e.beobachten) return null;
-    const p = el('span', `plakette mono${n ? ' hat-neues' : ''}`); p.innerHTML = AUGE;
-    p.append(n ? `${n} neu` : 'beobachtet');
+    if (!beob.has(e.id)) return null;
+    const p = el('span', `plakette mono${n ? ' hat-neues' : ''}`); p.innerHTML = GLOCKE;
+    p.append(n ? `${n} neu` : 'folge ich');
     return p;
   }
 
@@ -240,32 +237,29 @@ import Base from '../../layouts/Base.astro';
   }));
   document.querySelectorAll('[data-ansicht]').forEach((x) => x.setAttribute('aria-pressed', String((x as HTMLElement).dataset.ansicht === ansicht)));
 
-  // Neues zu beobachteten Einträgen
+  // Titel, denen ich folge (Glocke), und ihre Hinweise kommen aus „Ich folge“
   const relativ = (iso: string) => { const t = Math.floor((Date.now() - Date.parse(iso)) / 864e5); return t <= 0 ? 'heute' : t === 1 ? 'gestern' : `vor ${t} Tagen`; };
   function punktLi(p: Punkt, titel?: string) {
     const li = el('li', `punkt${p.neu ? ' ist-neu' : ''}`);
-    const a = el('a', '', p.titel) as HTMLAnchorElement; a.href = p.link; a.target = '_blank'; a.rel = 'noopener';
-    a.addEventListener('click', (ev) => ev.stopPropagation());
-    li.append(el('span', 'punkt-art mono', p.art === 'trailer' ? '▶ Trailer' : 'News'), a,
-      el('span', 'punkt-quelle mono', [titel, p.quelle, relativ(p.datum)].filter(Boolean).join(' · ')));
+    let a: HTMLElement;
+    if (p.link) { const x = el('a', '', p.titel) as HTMLAnchorElement; x.href = p.link; x.target = '_blank'; x.rel = 'noopener'; x.addEventListener('click', (ev) => ev.stopPropagation()); a = x; }
+    else a = el('span', 'punkt-text', p.titel);
+    const ART: Record<string, string> = { trailer: '▶ Trailer', news: 'News', staffel: 'Neu', ableger: 'Ableger', status: 'Status' };
+    li.append(el('span', 'punkt-art mono', ART[p.art] || 'News'), a,
+      el('span', 'punkt-quelle mono', [titel, p.quelle, (p as Punkt & { auch?: string[] }).auch?.length ? `auch bei ${(p as Punkt & { auch?: string[] }).auch!.join(', ')}` : '', relativ(p.datum)].filter(Boolean).join(' · ')));
     return li;
   }
   async function ladeNeues() {
     try {
-      const d: Beob[] = await api('/api/merk/neues');
-      beob = new Map(d.map((x) => [x.id, x]));
+      const d: { serien: (Beob & { aus?: boolean })[] } = await api('/api/serien');
+      beob = new Map(d.serien.filter((x) => !x.aus).map((x) => [x.id, x]));
     } catch { return; }
-    const alleNeu = [...beob.values()].flatMap((b) => b.punkte.filter((p) => p.neu).map((p) => ({ p, b })))
-      .sort((x, y) => y.p.datum.localeCompare(x.p.datum));
-    const ul = $('#neues-liste'); ul.replaceChildren(...alleNeu.slice(0, 30).map(({ p, b }) => { const li = punktLi(p, b.titel); li.dataset.medium = b.medium; return li; }));
-    $('#neues').hidden = alleNeu.length === 0;
+    const n = [...beob.values()].reduce((z, b) => z + b.punkte.filter((p) => p.neu).length, 0);
+    $('#neues-zahl').textContent = n === 1 ? '1 Neuigkeit' : `${n} Neuigkeiten`;
+    $('#neues').hidden = n === 0;
     try { sessionStorage.removeItem('kestrel-neu'); } catch {}
     zeigeListe();
   }
-  $('#alles-gesehen').addEventListener('click', async () => {
-    await api('/api/merk/neues', { method: 'POST', body: '{}' });
-    ladeNeues();
-  });
 
   // Details beim ersten Aufklappen holen (Handlung, Genre, Anbieter, Trailer, alle Termine)
   type Det = { untertitel?: string; handlung?: string; handlungSprache?: string; genres: string[]; fakten: [string, string][]; anbieter: { abo: string[]; leihen: string[] }; trailer?: string; link?: string; linkName?: string };
@@ -290,11 +284,11 @@ import Base from '../../layouts/Base.astro';
       const ol = el('ol'); termine.forEach((t) => ol.append(el('li', 'mono', `${datumDe(t.datum)} · ${t.text}`))); box.append(ol); teile.push(box);
     }
     const b = beob.get(e.id);
-    if (e.beobachten && b) {
-      const box = el('div', 'termine'); box.append(el('p', 'klapp-kopf mono', 'Zuletzt erschienen'));
+    if (b) {
+      const box = el('div', 'termine'); box.append(el('p', 'klapp-kopf mono', 'Zuletzt gefunden'));
       const ul = el('ul', 'punkte');
       b.punkte.slice(0, 8).forEach((p) => ul.append(punktLi(p)));
-      if (!b.punkte.length) ul.append(el('li', 'mono leer', 'Noch nichts gefunden. Sobald News oder Trailer erscheinen, stehen sie hier und oben unter „Neues“.'));
+      if (!b.punkte.length) ul.append(el('li', 'mono leer', 'Noch nichts gefunden. Sobald etwas erscheint, steht es hier und unter „Ich folge“.'));
       box.append(ul); teile.push(box);
     }
     const knoepfe = el('p', 'knoepfe');
@@ -455,6 +449,8 @@ import Base from '../../layouts/Base.astro';
 
   /* Neues */
   .neues { margin-bottom: 10px; }
+  .neues-link a { display: inline-block; padding: 10px 14px; border-radius: 4px; background: var(--serie); color: var(--serie-ink); text-decoration: none; font-family: var(--mono); font-size: 0.82rem; box-shadow: var(--shadow); }
+  .punkt-text { font-weight: 600; line-height: 1.35; }
   .neues-liste, .punkte { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; }
   .neues-liste .punkt { background: var(--paper); border-radius: 4px; box-shadow: var(--shadow); padding: 10px 14px; border-left: 4px solid var(--card); }
   .punkt { display: grid; gap: 2px; }
