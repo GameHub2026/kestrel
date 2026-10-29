@@ -361,7 +361,8 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 }
 .dem .gw-tafel button:hover, .dem .gw-tafel button:focus-visible { background: #24272b; color: #fff; }
 .dem .gw-tafel button[aria-checked='true'] { background: #24272b; color: #fff; }
-.dem .gw-tafel button[aria-checked='true']::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--film); margin-right: -6px; flex: none; order: -1; }
+.dem .gw-tafel button[aria-checked='true']::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--film); margin-right: -4px; flex: none; order: -1; }
+.dem .gw-tafel button span:not(.n) { flex: 1; }
 .dem .gw-tafel .n { font-family: var(--mono); font-size: 0.72rem; color: #8b929a; }
 @media (prefers-reduced-motion: reduce) { .dem .gw-tafel, .dem .gw-tafel li { transition: opacity 150ms ease; transform: none; filter: none; } }
 @media (max-width: 560px) { .dem .gw { margin-left: 0; } .dem .gw-tafel { right: auto; left: 0; transform-origin: left top; } .dem .gw-tafel ul.zwei { grid-template-columns: 1fr 1fr; } .dem .gw-tafel ul.zwei { min-width: 0; } }
