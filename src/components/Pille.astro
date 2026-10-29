@@ -41,9 +41,9 @@ const gruppen = [
     ] },
   { id: 'ueber', icon: I.skala, label: 'Über', href: '/wie-ich-werte/', aktiv: path.startsWith('/wie-ich-werte') || path.startsWith('/merkliste'),
     punkte: [
-      { href: '/wie-ich-werte/', icon: I.skala, text: 'Wie ich werte' },
       // Nur auf Kevins Geräten sichtbar (dort liegt der Merkliste-Schlüssel im Browser)
       { href: '/merkliste/', icon: I.merk, text: 'Meine Merkliste', privat: true },
+      { href: '/wie-ich-werte/', icon: I.skala, text: 'Wie ich werte' },
     ] },
 ];
 const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</svg>`;
