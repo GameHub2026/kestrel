@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Szene from '../../components/Szene.astro';
 import Ticket from '../../components/Ticket.astro';
 import { MEDIUM, TEXTFORM } from '../../wertung';
 import { alleTexte, jahr } from '../../lib';
@@ -14,6 +15,7 @@ const gruppen = [
 ---
 <Base title="Alle Texte" description="Alle Tests, Kurzkritiken, Ersteindrücke und Rückblicke zu Spielen, Filmen und Serien, filterbar nach Medium, Textform und Jahr.">
   <header class="page-head wrap" data-kicker="Lesen">
+    <Szene thema="burg" />
     <h1>Alle Texte</h1>
     <p>Filtern nach Medium, Textform oder Jahr.</p>
   </header>

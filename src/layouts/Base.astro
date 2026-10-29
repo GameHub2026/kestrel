@@ -87,6 +87,11 @@ Red Hat Mono für kleine Kennzeilen; Wertungen als große, leichte Kennzahlen; M
       });
       matchMedia('(prefers-color-scheme: dark)').addEventListener('change', zeige);
 
+      // Kopfleiste durchsichtig, solange sie über der Szene liegt (Startseite: über die ganze Bühne)
+      const buehneEl = document.querySelector<HTMLElement>('.buehne');
+      const obenPruefen = () => { const grenze = buehneEl ? buehneEl.offsetHeight - innerHeight * 1.05 : 12; root.classList.toggle('oben', scrollY < grenze); };
+      addEventListener('scroll', obenPruefen, { passive: true }); addEventListener('resize', obenPruefen); obenPruefen();
+
       // Nach oben: erscheint, sobald man eine Bildschirmhöhe gescrollt hat
       const hoch = document.getElementById('hoch')!;
       const hochZeigen = () => { const an = scrollY > innerHeight * 0.8; if (an) hoch.hidden = false; hoch.classList.toggle('an', an); };
@@ -146,9 +151,12 @@ Red Hat Mono für kleine Kennzeilen; Wertungen als große, leichte Kennzahlen; M
   .site-head { position: sticky; top: 0; z-index: 40; }
   .site-head::before {
     content: ''; position: absolute; inset: 0; z-index: -1;
-    background: color-mix(in srgb, var(--ground) 86%, transparent); backdrop-filter: blur(12px) saturate(1.2);
+    background: color-mix(in srgb, var(--ground) 82%, transparent); backdrop-filter: blur(14px) saturate(1.2);
+    transition: opacity 400ms ease;
   }
-  .site-head::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px); }
+  .site-head::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px); transition: opacity 400ms ease; }
+  /* Über der Szene: Leiste durchsichtig, damit Motiv und Kopf eins sind */
+  :global(html.oben) .site-head::before, :global(html.oben) .site-head::after { opacity: 0; }
   .kopf-innen { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: var(--bar); }
   @media (max-width: 900px) { :global(body) { padding-bottom: 76px; } }
 

@@ -1,9 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Szene from '../../components/Szene.astro';
 ---
 <Base title="Ich folge" privat description="Private Liste der Serien, Filme und Spiele, denen ich folge.">
 <div class="ser kacheln" id="ser">
   <header class="page-head wrap" data-kicker="Privat · Automatisch geprüft">
+    <Szene thema="rabenwald" />
     <h1>Ich folge</h1>
     <p>Alles aus Plex (über Trakt) und alles mit Glocke. Täglich geprüft: neue Staffeln und Teile, Termine, Ableger, Trailer, News.</p>
     <div class="ansicht kopf-rechts" id="ansicht" role="group" aria-label="Ansicht" hidden>

@@ -3,6 +3,7 @@ import { render } from 'astro:content';
 import { Image } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import Ticket from '../../components/Ticket.astro';
+import Szene from '../../components/Szene.astro';
 import { SKALA, MEDIUM, TEXTFORM, STAND } from '../../wertung';
 import { alleTexte, datumLang, url, nummer, type Text } from '../../lib';
 
@@ -31,6 +32,7 @@ const beschreibung = `${MEDIUM[d.medium]}-${TEXTFORM[d.textform]}: ${d.titel}. W
 ---
 <Base title={`${d.titel} (${TEXTFORM[d.textform]})`} description={beschreibung}>
   <div class="wrap top">
+    <Szene thema={d.medium === 'film' ? 'stadt' : d.medium === 'serie' ? 'burg' : 'ruinen'} />
     <Ticket text={text} size="hero" link={false} tear headingLevel="h1" />
   </div>
 
@@ -93,7 +95,8 @@ const beschreibung = `${MEDIUM[d.medium]}-${TEXTFORM[d.textform]}: ${d.titel}. W
 </Base>
 
 <style>
-  .top { padding-top: 4px; }
+  .top { position: relative; padding-top: clamp(120px, 22vh, 220px); }
+  .top > :global(.ticket) { position: relative; z-index: 1; }
   .layout {
     display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: clamp(28px, 5vw, 72px);
     margin-top: clamp(28px, 4vw, 44px); align-items: start;

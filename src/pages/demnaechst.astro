@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Szene from '../components/Szene.astro';
 import daten from '../data/demnaechst.json';
 
 type Eintrag = { id: string; art: 'film' | 'serie'; typ: string; titel: string; datum: string; text: string; bild: string | null; anbieter: string[]; link: string; info?: string };
@@ -19,6 +20,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 ---
 <Base title="Demnächst" description="Kommende Kinostarts sowie neue Serien und Staffeln bei Netflix, Prime Video, Disney+ und Co. in Deutschland.">
   <header class="page-head wrap" data-kicker="Termine · Deutschland">
+    <Szene thema="wueste" />
     <h1>Demnächst</h1>
     <p>Kinostarts, neue Serien, Staffeln und Folgen in Deutschland. Täglich aktualisiert.</p>
   </header>

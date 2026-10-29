@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Szene from '../components/Szene.astro';
 import ArchivZeile from '../components/ArchivZeile.astro';
 import ArchivTabs from '../components/ArchivTabs.astro';
 import { alleTexte, jahr, monat, type Text } from '../lib';
@@ -19,6 +20,7 @@ const plural = { spiel: ['Spiel', 'Spiele'], film: ['Film', 'Filme'], serie: ['S
 ---
 <Base title="Archiv" description="Alle Texte nach Jahr und Monat, als Rückblick: was Kevin wann gespielt und geschaut hat.">
   <header class="page-head wrap" data-kicker="Rückblick">
+    <Szene thema="ruinen" />
     <h1>Archiv</h1>
     <p>Nach Jahr und Monat, in der Reihenfolge, in der ich geschrieben habe.</p>
   </header>

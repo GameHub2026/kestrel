@@ -68,7 +68,8 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scrollbar-gutter: stable; } /* kein Verrutschen zwischen kurzen und langen Seiten */
+html { -webkit-text-size-adjust: 100%; scrollbar-gutter: stable; overflow-x: clip; }
+body { overflow-x: clip; } /* kein Verrutschen zwischen kurzen und langen Seiten */
 body {
   margin: 0;
   background: var(--ground);
@@ -118,19 +119,25 @@ main, footer { position: relative; z-index: 1; }
 
 /* Seitentitel im Kartenstil */
 /* Kompakt: Titel und eine Zeile Erklärung nebeneinander, kein Plakat */
+/* Seitenkopf: Text links, rechts die Themen-Szene, die nach links in den Hintergrund ausläuft */
 .page-head {
-  padding-top: clamp(28px, 4vw, 48px); margin-bottom: 28px;
-  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; align-items: end; gap: 12px 40px;
+  position: relative; min-height: clamp(300px, 44vh, 460px); padding-top: 40px; margin-bottom: 28px;
+  display: grid; grid-template-columns: minmax(0, 34rem) 1fr auto; align-content: end; gap: 14px 40px;
 }
-.page-head::after { content: ''; grid-column: 1 / -1; height: 1px; margin-top: 12px; background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px); }
-.page-head[data-kicker]::before { content: attr(data-kicker); grid-column: 1 / -1; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+.page-head > :not(.szene) { position: relative; z-index: 1; grid-column: 1; }
+.page-head::after { content: ''; position: relative; z-index: 1; grid-column: 1 / -1; height: 1px; margin-top: 14px; background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px); }
+.page-head[data-kicker]::before { content: attr(data-kicker); position: relative; z-index: 1; grid-column: 1; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
 .page-head h1 {
   font-family: var(--display); font-weight: 400;
-  font-size: clamp(1.9rem, 3.4vw, 2.6rem); line-height: 1.08; margin: 0; letter-spacing: -0.025em; text-wrap: balance;
+  font-size: clamp(2.3rem, 4.6vw, 3.8rem); line-height: 1.02; margin: 0; letter-spacing: -0.04em; text-wrap: balance;
 }
-.page-head p { max-width: 46ch; margin: 0; color: var(--ink-2); font-size: 0.92rem; line-height: 1.5; }
-.page-head .kopf-rechts { justify-self: end; }
-@media (max-width: 760px) { .page-head { grid-template-columns: 1fr auto; } .page-head p { grid-column: 1 / -1; grid-row: 3; } }
+.page-head p { max-width: 40ch; margin: 0; color: var(--ink-2); font-size: 0.95rem; line-height: 1.55; }
+.page-head > .kopf-rechts { grid-column: 3; grid-row: 3; justify-self: end; align-self: end; }
+@media (max-width: 760px) {
+  .page-head { min-height: 300px; grid-template-columns: 1fr auto; }
+  .page-head > .kopf-rechts { grid-column: 2; }
+  .page-head h1, .page-head p { text-shadow: 0 1px 18px var(--ground); }
+}
 /* Abschnittsüberschriften auf allen Seiten gleich */
 .abschnitt { font-family: var(--display); font-weight: 500; letter-spacing: -0.02em; font-size: 1.35rem; line-height: 1.15; margin: 40px 0 14px; }
 

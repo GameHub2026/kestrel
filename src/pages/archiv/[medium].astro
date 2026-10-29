@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';
+import Szene from '../../components/Szene.astro';
 import ArchivZeile from '../../components/ArchivZeile.astro';
 import ArchivTabs from '../../components/ArchivTabs.astro';
 import { alleTexte, type Text } from '../../lib';
@@ -24,6 +25,7 @@ for (const t of liste) {
 ---
 <Base title={`${name} von A bis Z`} description={`Alle Rezensionen zu ${name} bei Kestrel, alphabetisch sortiert.`}>
   <header class="page-head wrap" data-kicker="Rückblick · A–Z">
+    <Szene thema="ruinen" />
     <h1>Archiv</h1>
     <p>Alle {name} von A bis Z. {liste.length} {liste.length === 1 ? 'Text' : 'Texte'}.</p>
   </header>
