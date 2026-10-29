@@ -108,7 +108,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
   window.addEventListener('pageshow', (e) => { if (e.persisted) anwenden(aktuell()); });
 
   // Info-Box: Klick auf einen Titel öffnet Details, Trailer, TMDB-Link und aktuelle News
-  type Info = { titel: string; original?: string; leitsatz?: string; handlung?: string; genres: string[]; fakten: [string, string][]; trailer?: string; link: string; bild?: string; news: { quelle: string; titel: string; link: string; datum: string }[] };
+  type Info = { sprache?: string; titel: string; original?: string; leitsatz?: string; handlung?: string; genres: string[]; fakten: [string, string][]; trailer?: string; link: string; bild?: string; news: { quelle: string; titel: string; link: string; datum: string }[] };
   const INFOS: Record<string, Info> = JSON.parse(document.getElementById('infos')!.textContent || '{}');
   const box = document.getElementById('box') as HTMLDialogElement;
   const $ = (id: string) => document.getElementById(id)!;
@@ -125,7 +125,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
     $('box-termin').textContent = k.dataset.termin || '';
     $('box-anbieter').textContent = k.dataset.anbieter ? `Bei ${k.dataset.anbieter}` : ''; $('box-anbieter').hidden = !k.dataset.anbieter;
     $('box-genres').replaceChildren(...i.genres.map((g) => neu('span', 'genre mono', g)));
-    $('box-handlung').textContent = i.handlung || 'Noch keine Beschreibung vorhanden.';
+    $('box-handlung').textContent = i.handlung ? `${i.handlung}${i.sprache === 'en' ? ' (Beschreibung bisher nur auf Englisch)' : ''}` : 'Noch keine Beschreibung vorhanden.';
     $('box-fakten').replaceChildren(...i.fakten.map(([a, b]) => { const d = neu('div'); d.append(neu('dt', 'mono', a), neu('dd', '', b)); return d; }));
     const kn = $('box-knoepfe'); kn.replaceChildren();
     const link = (txt: string, href: string, cls: string) => { const a = neu('a', cls, txt) as HTMLAnchorElement; a.href = href; a.target = '_blank'; a.rel = 'noopener'; kn.append(a); };

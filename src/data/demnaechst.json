@@ -2379,7 +2379,7 @@
    "titel": "Wicker",
    "original": "Wicker",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
    "genres": [
     "Liebesfilm",
     "Fantasy",
@@ -2402,7 +2402,8 @@
    "trailer": "https://www.youtube.com/watch?v=kA9NfV4pM_Q",
    "link": "https://www.themoviedb.org/movie/1195803",
    "bild": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1433583": {
    "titel": "The Weight – Im Goldrausch",
@@ -2623,7 +2624,7 @@
    "titel": "Fjord",
    "original": "Fjord",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "After moving from Romania to a remote Norwegian village to rebuild their lives, a family finds hope in their welcoming neighbors, but their fragile new beginning is threatened when their young daughter arrives at school covered in bruises.",
    "genres": [
     "Drama"
    ],
@@ -2648,13 +2649,14 @@
    "trailer": "https://www.youtube.com/watch?v=frg59VOungA",
    "link": "https://www.themoviedb.org/movie/1401459",
    "bild": "https://image.tmdb.org/t/p/w500/qiYm44CQBFOZ0Vs8BtmH2swYLz2.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1458099": {
    "titel": "The Only Living Pickpocket in New York",
    "original": "The Only Living Pickpocket in New York",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "Harry Lehman is an aging pickpocket who plies his trade with ever-diminishing returns in a drastically changed New York. Wallets stuffed with cash have been replaced by easily cancelled credit cards, and Harry struggles to make ends meet as he cares for his disabled wife, Rosie. When he unwittingly purloins and fences a valuable USB stick, Harry finds himself in a race against time to return the loot or face the rage of a vengeful crime family.",
    "genres": [
     "Krimi",
     "Drama",
@@ -2677,13 +2679,14 @@
    "trailer": "https://www.youtube.com/watch?v=iXA7BmrBBxs",
    "link": "https://www.themoviedb.org/movie/1458099",
    "bild": "https://image.tmdb.org/t/p/w500/pNdB9va2AEPQe9UfhKAdIt8nus9.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1554956": {
    "titel": "Der Festländer",
    "original": "The Incomer",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "On an Orkney isle, siblings Isla and Sandy survive by hunting seabirds, retelling the stories of their ancestors, and defending the isle from dreaded \"Incomers\". Their world is upended with the arrival of an awkward council worker who has come to uproot them from their homeland.",
    "genres": [
     "Komödie",
     "Drama"
@@ -2709,7 +2712,8 @@
    "trailer": "https://www.youtube.com/watch?v=TNH4i8lrDFo",
    "link": "https://www.themoviedb.org/movie/1554956",
    "bild": "https://image.tmdb.org/t/p/w500/nGnI5tT7qstkld94S8m4c68noZt.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1365378": {
    "titel": "Große Träume",
@@ -2746,7 +2750,7 @@
    "titel": "Wie verhext",
    "original": "Hexed",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
    "genres": [
     "Abenteuer",
     "Animation",
@@ -2771,7 +2775,8 @@
    "trailer": "https://www.youtube.com/watch?v=6YYMqS8_Bp0",
    "link": "https://www.themoviedb.org/movie/1538497",
    "bild": "https://image.tmdb.org/t/p/w500/lMYJ4ogEBiB6pTxi5sm73kBsxiE.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-656908": {
    "titel": "Ramayana: Rise of a Legend",
@@ -2906,7 +2911,7 @@
    "titel": "Ebenezer – Eine Weihnachtsgeschichte",
    "original": "Ebenezer",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
    "genres": [
     "Fantasy",
     "Komödie"
@@ -2928,7 +2933,8 @@
    "trailer": "https://www.youtube.com/watch?v=o3aFQJgjEfw",
    "link": "https://www.themoviedb.org/movie/1567605",
    "bild": "https://image.tmdb.org/t/p/w500/3VArJnDlvOnAIjzngIwjHU7CVVD.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1430077": {
    "titel": "Hokum",
@@ -3030,7 +3036,7 @@
    "titel": "Angry Birds 3 - Der Film",
    "original": "The Angry Birds Movie 3",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "Red faces his greatest challenge yet - surviving fatherhood - while saving the world.",
    "genres": [
     "Animation",
     "Komödie",
@@ -3053,13 +3059,14 @@
    "trailer": "https://www.youtube.com/watch?v=eTAeGROy--Y",
    "link": "https://www.themoviedb.org/movie/1300926",
    "bild": "https://image.tmdb.org/t/p/w500/oxaW6X3xohnzdFSBKCrCjRDckMe.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1260649": {
    "titel": "Jumanji: Open World",
    "original": "Jumanji: Open World",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us - as Jumanji breaks free of its console, unleashing its chaos into our world.",
    "genres": [
     "Abenteuer",
     "Komödie",
@@ -3085,13 +3092,14 @@
      "link": "https://www.serienjunkies.de/news/serien/jumanji-open-world-trailer-und-starttermin-im-kino-94562683.html",
      "datum": "2026-10-28T13:52:04.000Z"
     }
-   ]
+   ],
+   "sprache": "en"
   },
   "movie-1391239": {
    "titel": "Das Debüt - Ihr großer Auftritt",
    "original": "The Debut",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "When Mona Friedman is cast in a bit part at a small community theater, she transforms from a shy, unassuming housewife into a zealous method actor willing to do anything to protect the artistic integrity of her marginal role—even if it means waging war against the show’s domineering director.",
    "genres": [
     "Musik",
     "Komödie",
@@ -3114,13 +3122,14 @@
    "trailer": "https://www.youtube.com/watch?v=C0IoNLkxefY",
    "link": "https://www.themoviedb.org/movie/1391239",
    "bild": "https://image.tmdb.org/t/p/w500/5CZdxLiBpYMBXwo0rur6YzZTVP4.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1147572": {
    "titel": "Das Wunder von Narnia",
    "original": "Narnia: The Magician's Nephew",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "Two children discover a wood full of pools leading to other worlds. One takes them to a dead city beneath a dying sun, where they wake a queen who exterminated its population and accidentally bring her back to London.",
    "genres": [
     "Fantasy",
     "Abenteuer",
@@ -3139,7 +3148,8 @@
    "trailer": "https://www.youtube.com/watch?v=nYqwH8GC97E",
    "link": "https://www.themoviedb.org/movie/1147572",
    "bild": "https://image.tmdb.org/t/p/w500/dKJ6ownJGWwSReCGRQWimXf700v.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1286656": {
    "titel": "I Play Rocky",
@@ -3205,7 +3215,7 @@
    "titel": "How to Rob a Bank",
    "original": "How to Rob a Bank",
    "leitsatz": "Wer raubt hier wen aus?",
-   "handlung": null,
+   "handlung": "A crew of social media-savvy bank robbers broadcasts their daring heists, unaware that their growing viral fame has put them in the crosshairs of a veteran FBI agent and a brilliant software engineer. Despite the unlikely duo closing in, the crime ring pushes past their limits, putting everything on the line for their most ambitious heist yet.",
    "genres": [
     "Action",
     "Krimi",
@@ -3228,7 +3238,8 @@
    "trailer": "https://www.youtube.com/watch?v=Rm4gm8BCWUg",
    "link": "https://www.themoviedb.org/movie/1437511",
    "bild": "https://image.tmdb.org/t/p/w500/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1585239": {
    "titel": "Club Kid",
@@ -3262,7 +3273,7 @@
    "titel": "The Beekeeper 2",
    "original": "The Beekeeper 2",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "Pulled back into the fight when the Beekeeper organization goes rogue and sets its sights on controlling the government, Clay must take on the very group that made him.",
    "genres": [
     "Action",
     "Krimi",
@@ -3281,7 +3292,8 @@
    "trailer": "https://www.youtube.com/watch?v=Q7MvYmUttXM",
    "link": "https://www.themoviedb.org/movie/1440769",
    "bild": "https://image.tmdb.org/t/p/w500/bNlIm8bk5AHrinnUmi4Y8A8W0XM.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1400336": {
    "titel": "Meine Frau, unsere Schwiegertochter und ich",
@@ -3345,7 +3357,7 @@
    "titel": "El ser querido",
    "original": "El ser querido",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "Acclaimed film director Esteban Martínez is a legend both for his films and for his past marked by violence and excess. For his latest project, he offers his daughter Emilia a role under the pretext of helping her with her stalled acting career. Living together on set will foster a closeness they haven’t shared for years, but it will also reopen old wounds that never healed.",
    "genres": [
     "Drama"
    ],
@@ -3370,7 +3382,8 @@
    "trailer": "https://www.youtube.com/watch?v=2I5LLG2XBco",
    "link": "https://www.themoviedb.org/movie/1074074",
    "bild": "https://image.tmdb.org/t/p/w500/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-848700": {
    "titel": "Minotaurus",
@@ -3435,7 +3448,7 @@
    "titel": "Werwulf",
    "original": "Werwulf",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "A harrowing tale of devotion, damnation and the devil within.",
    "genres": [
     "Horror"
    ],
@@ -3456,7 +3469,8 @@
    "trailer": "https://www.youtube.com/watch?v=rd_s5QdHdYw",
    "link": "https://www.themoviedb.org/movie/1421903",
    "bild": "https://image.tmdb.org/t/p/w500/imnkSt4PSQpxIuyiRpJCiLk3SZz.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1437981": {
    "titel": "Coward",
@@ -3491,7 +3505,7 @@
    "titel": "Remain",
    "original": "Remain",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "When reclusive architect Tate Gordon moves to small coastal town to complete his latest project, he encounters an alluring young woman who pulls him out of his shell, and into the center of a deadly mystery that hangs over the town.",
    "genres": [
     "Liebesfilm",
     "Mystery",
@@ -3510,13 +3524,14 @@
    "trailer": "https://www.youtube.com/watch?v=wc6TkBUuypA",
    "link": "https://www.themoviedb.org/movie/1425859",
    "bild": "https://image.tmdb.org/t/p/w500/5hPNq5h2y8Ux6nPBRMEwZ8npVTp.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-940009": {
    "titel": "Ray Gunn",
    "original": "Ray Gunn",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "In Metropia, a gigantic city in an alternate future as seen from 1939, private eye Raymond Gunn is drawn into a case involving aliens, murder and a multimedia star named Venus Nova.",
    "genres": [
     "Animation",
     "Science Fiction",
@@ -3540,7 +3555,8 @@
    "trailer": "https://www.youtube.com/watch?v=VL-xjzQFWsY",
    "link": "https://www.themoviedb.org/movie/940009",
    "bild": "https://image.tmdb.org/t/p/w500/rpP29aOKpHy1FhX8OZQdUICEs2j.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1115030": {
    "titel": "Animal Friends",
@@ -3604,7 +3620,7 @@
    "titel": "Ink",
    "original": "Ink",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "A group of misfits and visionaries had an idea for a new kind of news - one that would give the people what they want, and would change the face of the world we live in today.",
    "genres": [
     "Drama",
     "Historie"
@@ -3626,7 +3642,8 @@
    "trailer": "https://www.youtube.com/watch?v=eokBqEFiVHs",
    "link": "https://www.themoviedb.org/movie/1532610",
    "bild": "https://image.tmdb.org/t/p/w500/aZECpoGsveEXtxogaz0GMiyVB6n.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "movie-1251608": {
    "titel": "Die Blutgräfin",
@@ -3695,7 +3712,7 @@
    "titel": "Mauvaise Pioche",
    "original": "Mauvaise Pioche",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "​Arrested by mistake and mistaken for France’s most wanted man, Serge Martin, a peaceful retiree, becomes the target of the media. Caught up in a never-ending whirlwind, he’ll do everything he can to prove his innocence and get his life back… if that’s even possible!",
    "genres": [
     "Komödie"
    ],
@@ -3716,7 +3733,8 @@
    "trailer": null,
    "link": "https://www.themoviedb.org/movie/1440304",
    "bild": "https://image.tmdb.org/t/p/w500/wRPxSccJw6wckkBUOzM5CHd871w.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-333533": {
    "titel": "The One About Matthew Perry",
@@ -3849,7 +3867,7 @@
    "titel": "Blade Runner 2099",
    "original": "Blade Runner 2099",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "Fifty years after the events of Blade Runner 2049, Los Angeles has been reborn, just not by humanity. Cora, a fugitive in a final bid to stop running, takes on one last identity: a Blade Runner. Forced to partner with Olwen, a Replicant days from dying, she hunts down a runaway hiding a truth that could collapse their fragile city.",
    "genres": [
     "Sci-Fi & Fantasy"
    ],
@@ -3874,7 +3892,8 @@
    "trailer": "https://www.youtube.com/watch?v=POu4zDIxIus",
    "link": "https://www.themoviedb.org/tv/171802",
    "bild": "https://image.tmdb.org/t/p/w500/gMdQMmqKu5zee7sCGGZvbSHFVb2.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-289517": {
    "titel": "Dead-End Job",
@@ -3912,7 +3931,7 @@
    "titel": "Campus Drivers",
    "original": "Campus Drivers",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "Lois has everything going for her: she's been accepted into the prestigious Belrose University alongside her lifelong love, Max. Lane, on the other hand, lives by his own rules. Creator of Campus Drivers, the hottest app on campus, he is as famous for his devastating smile as for his inability to commit. Their paths were never supposed to cross. Until the night when Lois, heartbroken, shows up on his doorstep. An unexpected cohabitation. Two worlds colliding. And an attraction impossible to ignore. But some encounters change everything… even awakening buried wounds. And when love arrives uninvited, nothing is certain anymore.",
    "genres": [
     "Drama"
    ],
@@ -3937,13 +3956,14 @@
    "trailer": "https://www.youtube.com/watch?v=xybsbjGt1KA",
    "link": "https://www.themoviedb.org/tv/303044",
    "bild": "https://image.tmdb.org/t/p/w500/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-288672": {
    "titel": "Pride and Prejudice",
    "original": "Pride and Prejudice",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "Elizabeth Bennet is an unmarried woman and the second of five daughters of Mr. and Mrs. Bennet from Hertfordshire, near London. The Bennet home can only be inherited by males in the family, so the pressure is on for the daughters to marry well or risk losing everything. While out in society, Elizabeth interacts with single men like Mr. Darcy, an outwardly curmudgeon who is misunderstood.",
    "genres": [
     "Drama"
    ],
@@ -3968,13 +3988,14 @@
    "trailer": "https://www.youtube.com/watch?v=4bSKM9WWT08",
    "link": "https://www.themoviedb.org/tv/288672",
    "bild": "https://image.tmdb.org/t/p/w500/48gkikPDZm2IP1zdaboOPpELRwX.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-291507": {
    "titel": "The Body",
    "original": "The Body",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "After a dance-team initiation gone wrong, a group of badly behaved Catholic school girls begin having prophetic visions that set off mass hysteria in their town.",
    "genres": [
     "Drama",
     "Sci-Fi & Fantasy"
@@ -4000,13 +4021,14 @@
    "trailer": "https://www.youtube.com/watch?v=wl7uj7n7DoY",
    "link": "https://www.themoviedb.org/tv/291507",
    "bild": "https://image.tmdb.org/t/p/w500/zksg8e0GZAmg1nLhVP5tKso3QRs.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-285887": {
    "titel": "Bloodaxe",
    "original": "Bloodaxe",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "Follow Erik Bloodaxe, and his formidable wife, Gunnhild, Mother of Kings as they fight for the throne of Norway, the land is torn apart by fierce rivals, shifting loyalties, and bloody betrayals. With war looming and chaos consuming the kingdom, drawing in the ruthless Kings of other Scandinavian countries, and even a powerful English ruler, the stage is set for a thundering, cataclysmic, compelling and utterly magical new Viking Saga.",
    "genres": [
     "Drama"
    ],
@@ -4031,13 +4053,14 @@
    "trailer": "https://www.youtube.com/watch?v=nT8Mdw5nKd0",
    "link": "https://www.themoviedb.org/tv/285887",
    "bild": "https://image.tmdb.org/t/p/w500/3dWNyzYFQfuL7pj3OdlSjyOr6yN.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-303182": {
    "titel": "El crimen de Pazos",
    "original": "El crimen de Pazos",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "In Pazos, Irene is brutally attacked, and Civil Guard sergeant Elías suspects her husband Aniceto, racing against time to uncover the truth before it’s too late.",
    "genres": [
     "Krimi",
     "Mystery",
@@ -4064,13 +4087,14 @@
    "trailer": null,
    "link": "https://www.themoviedb.org/tv/303182",
    "bild": "https://image.tmdb.org/t/p/w500/t7bQuXEN4dvWtUBY2DUDxsKjZlv.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-338562": {
    "titel": "La Ley de Alicia",
    "original": "La Ley de Alicia",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "After her husband, a Supreme Court Justice Minister, is imprisoned for corruption, Alicia must restart her law career to support her children and pay bills as her world crumbles.",
    "genres": [
     "Drama"
    ],
@@ -4091,13 +4115,14 @@
    "trailer": null,
    "link": "https://www.themoviedb.org/tv/338562",
    "bild": "https://image.tmdb.org/t/p/w500/7o9nY3GO97jyeVWdtWr12nR0Qpt.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-314271": {
    "titel": "Bass X Machina",
    "original": "Bass X Machina",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "In a lawless Steampunk West overrun by brutal outlaws, machines, and supernatural terrors, a father is forced to become judge, jury, and executioner—knowing that every act of justice meant to protect his family may ultimately cost him the very people he's fighting to save.",
    "genres": [
     "Animation",
     "Western",
@@ -4124,7 +4149,8 @@
    "trailer": "https://www.youtube.com/watch?v=jjr5mf9i42Q",
    "link": "https://www.themoviedb.org/tv/314271",
    "bild": "https://image.tmdb.org/t/p/w500/y9c1AwrldWRsY9edSf21cOgbI0h.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-313699": {
    "titel": "Balaraw: Blood Island",
@@ -4158,7 +4184,7 @@
    "titel": "The Greatest",
    "original": "The Greatest",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "An intimate exploration of the incomparable life of Muhammad Ali. The amazing victories and defeats that made Ali a legend, both in and out of the ring, have been well documented and while those landmark events will live in The Greatest, the heartbeat of the story is fueled by all the moments that took place outside of the spotlight. The world remembers an icon, but The Greatest is about a man, a husband, a father, a brother, and a son.",
    "genres": [
     "Drama"
    ],
@@ -4183,13 +4209,14 @@
    "trailer": "https://www.youtube.com/watch?v=p0ktK7TYD88",
    "link": "https://www.themoviedb.org/tv/258989",
    "bild": "https://image.tmdb.org/t/p/w500/hu4jco5AOs8NSIctuc9KsRyuSg8.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-274395": {
    "titel": "The Land",
    "original": "The Land",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "The story of two families, in which the high-stakes drama plays out not only on the field but also in the front offices of this NFL franchise, as a loyal fanbase wants a winning season now ... or face big changes if they don't.",
    "genres": [
     "Drama"
    ],
@@ -4214,13 +4241,14 @@
    "trailer": "https://www.youtube.com/watch?v=_xnU6YVrCpA",
    "link": "https://www.themoviedb.org/tv/274395",
    "bild": "https://image.tmdb.org/t/p/w500/klcJ21KUgkDFQBQuECYr2FJYR5z.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-289729": {
    "titel": "Unaccustomed Earth",
    "original": "Unaccustomed Earth",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "When a health crisis forces a devoted mother and her family to return to the US, she confronts buried desires that upend her Indian American community.",
    "genres": [
     "Drama"
    ],
@@ -4245,13 +4273,14 @@
    "trailer": null,
    "link": "https://www.themoviedb.org/tv/289729",
    "bild": "https://image.tmdb.org/t/p/w500/woKoBzADQDl6roxcCERAnGLgYf9.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-334919": {
    "titel": "Call the Midwife: Sisters in Arms",
    "original": "Call the Midwife: Sisters in Arms",
    "leitsatz": null,
-   "handlung": null,
+   "handlung": "In September 1939, Nonnatus House is the beating heart of the East End community of Poplar. The nurses and nuns dedicate their lives to mothers, babies and the poor. But there is no gas and air, no penicillin, no cure for TB, and no welfare state. Then war is declared — and life gets even harder. While bombs rain from the sky, women give birth underground, families are shattered and whole streets are reduced to ruins. But courage and resilience triumphs as the community unites to survive.",
    "genres": [
     "Drama",
     "War & Politics"
@@ -4277,7 +4306,8 @@
    "trailer": null,
    "link": "https://www.themoviedb.org/tv/334919",
    "bild": "https://image.tmdb.org/t/p/w500/YCH3NPIVeJW9eK2JSnIwv5KEjY.jpg",
-   "news": []
+   "news": [],
+   "sprache": "en"
   },
   "tv-79744": {
    "titel": "The Rookie",
@@ -4533,42 +4563,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
    "news": []
   },
-  "tv-247718": {
-   "titel": "MobLand: Familie bis aufs Blut",
-   "original": "MobLand",
-   "leitsatz": "Jetzt regiert das Chaos.",
-   "handlung": "Die Karten werden neu gemischt, als zwei verfeindete Verbrecherfamilien in einer Schlacht aneinandergeraten, die Imperien zu stürzen droht. Harry Da Souza, ein gewiefter Mann fürs Grobe, gerät ins Kreuzfeuer und stellt seine Loyalität unter Beweis.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "2 Staffeln, 20 Folgen"
-    ],
-    [
-     "Von",
-     "Ronan Bennett"
-    ],
-    [
-     "Mit",
-     "Tom Hardy, Pierce Brosnan, Paddy Considine, Joanne Froggatt"
-    ],
-    [
-     "Sender/Dienst",
-     "Paramount+, Paramount+"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=cyYZAc0TZ7U",
-   "link": "https://www.themoviedb.org/tv/247718",
-   "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
-   "news": []
-  },
   "tv-153312": {
    "titel": "Tulsa King",
    "original": "Tulsa King",
@@ -4604,6 +4598,42 @@
    "trailer": "https://www.youtube.com/watch?v=Mh417ri7rgk",
    "link": "https://www.themoviedb.org/tv/153312",
    "bild": "https://image.tmdb.org/t/p/w500/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+   "news": []
+  },
+  "tv-247718": {
+   "titel": "MobLand: Familie bis aufs Blut",
+   "original": "MobLand",
+   "leitsatz": "Jetzt regiert das Chaos.",
+   "handlung": "Die Karten werden neu gemischt, als zwei verfeindete Verbrecherfamilien in einer Schlacht aneinandergeraten, die Imperien zu stürzen droht. Harry Da Souza, ein gewiefter Mann fürs Grobe, gerät ins Kreuzfeuer und stellt seine Loyalität unter Beweis.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "2 Staffeln, 20 Folgen"
+    ],
+    [
+     "Von",
+     "Ronan Bennett"
+    ],
+    [
+     "Mit",
+     "Tom Hardy, Pierce Brosnan, Paddy Considine, Joanne Froggatt"
+    ],
+    [
+     "Sender/Dienst",
+     "Paramount+, Paramount+"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=cyYZAc0TZ7U",
+   "link": "https://www.themoviedb.org/tv/247718",
+   "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
    "news": []
   },
   "tv-456": {
@@ -4870,39 +4900,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
    "news": []
   },
-  "tv-30984": {
-   "titel": "Bleach",
-   "original": "BLEACH",
-   "leitsatz": "Bankai!",
-   "handlung": "Der 15-jährige Schüler Ichigo Kurosaki kann seit seiner Kindheit Geister sehen. Doch damit nicht genug: Als er die Shinigami Rukia trifft, wird sein Leben noch einmal gehörig auf den Kopf gestellt. Während eines Kampfes in der Menschenwelt ist Rukia gezwungen, ihre Kräfte auf Ichigo zu übertragen, um ihrer beider Leben zu retten. Dank der neu gewonnenen spirituellen Kräfte entdeckt Ichigo seine wahre Berufung: die Lebenden wie die Toten um alles in der Welt vor dem Bösen zu beschützen.",
-   "genres": [
-    "Action & Adventure",
-    "Animation",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "2 Staffeln, 416 Folgen"
-    ],
-    [
-     "Mit",
-     "Masakazu Morita, Fumiko Orikasa, Hiroki Yasumoto, Yuki Matsuoka"
-    ],
-    [
-     "Sender/Dienst",
-     "TV Tokyo, TV Aichi"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=0c4IoCA5fY0",
-   "link": "https://www.themoviedb.org/tv/30984",
-   "bild": "https://image.tmdb.org/t/p/w500/e0kKmeM8R7Kersh5N2PPzIRNRhr.jpg",
-   "news": []
-  },
   "tv-80748": {
    "titel": "FBI",
    "original": "FBI",
@@ -4938,6 +4935,39 @@
    "trailer": "https://www.youtube.com/watch?v=r-btgaBL6-4",
    "link": "https://www.themoviedb.org/tv/80748",
    "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "news": []
+  },
+  "tv-30984": {
+   "titel": "Bleach",
+   "original": "BLEACH",
+   "leitsatz": "Bankai!",
+   "handlung": "Der 15-jährige Schüler Ichigo Kurosaki kann seit seiner Kindheit Geister sehen. Doch damit nicht genug: Als er die Shinigami Rukia trifft, wird sein Leben noch einmal gehörig auf den Kopf gestellt. Während eines Kampfes in der Menschenwelt ist Rukia gezwungen, ihre Kräfte auf Ichigo zu übertragen, um ihrer beider Leben zu retten. Dank der neu gewonnenen spirituellen Kräfte entdeckt Ichigo seine wahre Berufung: die Lebenden wie die Toten um alles in der Welt vor dem Bösen zu beschützen.",
+   "genres": [
+    "Action & Adventure",
+    "Animation",
+    "Sci-Fi & Fantasy"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "2 Staffeln, 416 Folgen"
+    ],
+    [
+     "Mit",
+     "Masakazu Morita, Fumiko Orikasa, Hiroki Yasumoto, Yuki Matsuoka"
+    ],
+    [
+     "Sender/Dienst",
+     "TV Tokyo, TV Aichi"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=0c4IoCA5fY0",
+   "link": "https://www.themoviedb.org/tv/30984",
+   "bild": "https://image.tmdb.org/t/p/w500/e0kKmeM8R7Kersh5N2PPzIRNRhr.jpg",
    "news": []
   },
   "tv-312359": {

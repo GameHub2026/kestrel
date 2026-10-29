@@ -174,6 +174,16 @@ const eintraege = [...sortiere(kino).slice(0, MAX_KINO), ...serien, ...folgen]
   .map(({ pop, ...rest }) => ({ ...rest, anbieter: eindeutig(rest.anbieter) }))
   .sort((a, b) => a.datum.localeCompare(b.datum) || a.titel.localeCompare(b.titel, 'de'));
 
+// Fehlt die deutsche Handlung, die englische holen (gekennzeichnet)
+await parallel(Object.entries(INFOS).filter(([, i]) => !i.handlung), async ([key, i]) => {
+  const [art, id] = key.split('-');
+  const u = new URL(`https://api.themoviedb.org/3/${art}/${id}`); u.searchParams.set('language', 'en-US');
+  const headers = {}; if (KEY.length > 60) headers.Authorization = `Bearer ${KEY}`; else u.searchParams.set('api_key', KEY);
+  const d = await (await fetch(u, { headers })).json();
+  if (d.overview) { i.handlung = d.overview; i.sprache = 'en'; }
+  return true;
+});
+
 // ---------- News: offizielle Feeds seriöser Film-/Serien-Redaktionen, 30 Tage gesammelt ----------
 const FEEDS = [
   ['Moviepilot', 'https://www.moviepilot.de/rss/news'], ['Serienjunkies', 'https://www.serienjunkies.de/rss/news.xml'],
