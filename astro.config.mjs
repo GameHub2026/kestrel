@@ -15,7 +15,7 @@ const ohneFragen = () => (tree) => {
 // https://astro.build/config
 export default defineConfig({
   site: 'https://kestrel-2tf.pages.dev',
-  integrations: [sitemap({ filter: (seite) => !seite.includes('/merkliste') })],
+  integrations: [sitemap({ filter: (seite) => !seite.includes('/merkliste') && !seite.includes('/serien/') })],
   markdown: { remarkPlugins: [ohneFragen] },
   // node_modules ist eine Verknüpfung auf node_modules.nosync (iCloud synchronisiert den Ordner nicht).
   vite: { resolve: { preserveSymlinks: true } },

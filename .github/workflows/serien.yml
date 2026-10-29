@@ -1,0 +1,23 @@
+# Meine Serien: einmal täglich alle verfolgten Serien prüfen (Trakt-Abgleich, neue Staffeln, Termine, Trailer, News).
+# Die Arbeit macht die Seite selbst (/api/serien/pruefen), hier wird sie nur in Teilen angestoßen.
+# Braucht das GitHub-Geheimnis MERK_TOKEN (einmalig von Hand: Repo → Settings → Secrets → Actions).
+name: Meine Serien prüfen
+on:
+  schedule:
+    - cron: '15 5 * * *'   # 06:15 / 07:15 deutsche Zeit, nach dem Morgenlauf der News
+  workflow_dispatch:
+jobs:
+  pruefen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Serien prüfen
+        env:
+          MERK_TOKEN: ${{ secrets.MERK_TOKEN }}
+        run: |
+          if [ -z "$MERK_TOKEN" ]; then echo "GitHub-Geheimnis MERK_TOKEN fehlt (Repo → Settings → Secrets → Actions)"; exit 1; fi
+          ab=0
+          while [ "$ab" != "null" ]; do
+            antwort=$(curl -sf -X POST -H "x-merk-token: $MERK_TOKEN" "https://kestrel-2tf.pages.dev/api/serien/pruefen?ab=$ab")
+            echo "$antwort" | jq -c '{geprueft, gesamt, weiter, trakt, fehler: (.fehler | length)}'
+            ab=$(echo "$antwort" | jq -r '.weiter')
+          done

@@ -15,6 +15,7 @@ const I = {
   serie: '<rect x="2.5" y="5" width="19" height="13" rx="2"/><path d="M8 21h8M12 18v3"/>',
   kino: '<path d="M4 8h16v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="m4 8 2.5-4.5M10 8l2.5-4.5M16 8l2.5-4.5M4 8l16 0"/>',
   jahr: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+  glocke: '<path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>',
   merk: '<path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/>',
 };
 const gruppen = [
@@ -39,10 +40,11 @@ const gruppen = [
       { href: '/archiv/filme/', icon: I.film, text: 'Filme A–Z' },
       { href: '/archiv/serien/', icon: I.serie, text: 'Serien A–Z' },
     ] },
-  { id: 'ueber', icon: I.skala, label: 'Über', href: '/wie-ich-werte/', aktiv: path.startsWith('/wie-ich-werte') || path.startsWith('/merkliste'),
+  { id: 'ueber', icon: I.skala, label: 'Über', href: '/wie-ich-werte/', aktiv: path.startsWith('/wie-ich-werte') || path.startsWith('/merkliste') || path.startsWith('/serien'),
     punkte: [
       // Nur auf Kevins Geräten sichtbar (dort liegt der Merkliste-Schlüssel im Browser)
-      { href: '/merkliste/', icon: I.merk, text: 'Meine Merkliste', privat: true },
+      { href: '/merkliste/', icon: I.merk, text: 'Meine Merkliste', privat: true, zaehler: 'merk' },
+      { href: '/serien/', icon: I.glocke, text: 'Meine Serien', privat: true, zaehler: 'serien' },
       { href: '/wie-ich-werte/', icon: I.skala, text: 'Wie ich werte' },
     ] },
 ];
@@ -71,7 +73,7 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
         {g.punkte.length > 1 && (
           <ul>
             {g.punkte.map((p) => (
-              <li hidden={p.privat || undefined} data-privat={p.privat ? '' : undefined}><a href={p.href} tabindex="-1" aria-current={(Astro.url.pathname + Astro.url.search) === p.href ? 'page' : undefined}><Fragment set:html={svg(p.icon)} />{p.text}</a></li>
+              <li hidden={p.privat || undefined} data-privat={p.privat ? '' : undefined} data-zaehler={p.zaehler}><a href={p.href} tabindex="-1" aria-current={(Astro.url.pathname + Astro.url.search) === p.href ? 'page' : undefined}><Fragment set:html={svg(p.icon)} />{p.text}</a></li>
             ))}
           </ul>
         )}
@@ -87,16 +89,21 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
     let token = ''; try { token = localStorage.getItem('kestrel-merk-token') || ''; } catch {}
     if (!token) return;
     document.querySelectorAll<HTMLElement>('[data-privat]').forEach((li) => (li.hidden = false));
-    let n = -1;
-    try { const c = JSON.parse(sessionStorage.getItem('kestrel-neu') || 'null'); if (c && Date.now() - c.t < 600000) n = c.n; } catch {}
-    if (n < 0) {
+    let c: { t: number; n: number; merk?: number; serien?: number } | null = null;
+    try { c = JSON.parse(sessionStorage.getItem('kestrel-neu') || 'null'); if (!c || Date.now() - c.t > 600000 || c.merk == null) c = null; } catch {}
+    if (!c) {
       try {
         const r = await fetch('/api/merk/neues?anzahl=1', { headers: { 'x-merk-token': token } });
-        if (r.ok) { n = (await r.json()).anzahl || 0; sessionStorage.setItem('kestrel-neu', JSON.stringify({ t: Date.now(), n })); }
+        if (r.ok) { const d = await r.json(); c = { t: Date.now(), n: d.anzahl || 0, merk: d.merk || 0, serien: d.serien || 0 }; sessionStorage.setItem('kestrel-neu', JSON.stringify(c)); }
       } catch {}
     }
+    const n = c?.n || 0;
     if (n > 0) {
-      document.querySelectorAll<HTMLElement>('[data-privat] a').forEach((a) => { const z = document.createElement('span'); z.className = 'zahl'; z.textContent = String(n); a.append(z); });
+      document.querySelectorAll<HTMLElement>('[data-zaehler]').forEach((li) => {
+        const k = (c as Record<string, number>)[li.dataset.zaehler || ''] || 0;
+        if (!k) return;
+        const z = document.createElement('span'); z.className = 'zahl'; z.textContent = String(k); li.querySelector('a')!.append(z);
+      });
       document.querySelector('[data-id="ueber"] .leiste-knopf')?.classList.add('hat-neues');
       document.querySelector('[data-id="ueber"] .leiste-knopf')?.setAttribute('aria-label', `Über, ${n} Neuigkeiten auf der Merkliste`);
     }

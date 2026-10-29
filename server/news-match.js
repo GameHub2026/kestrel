@@ -1,8 +1,8 @@
 // Gemeinsame Zuordnung von Schlagzeilen zu Titeln (Demnächst-Holer und beobachtete Merkliste-Einträge).
 // Der Titel (deutsch oder Original) muss als ganzes Wort in der Überschrift stehen.
-// Kurze Ein-Wort-Titel ("Buddy", "Wicker") brauchen zusätzlich ein passendes Kontextwort, sonst zu viele Fehltreffer.
+// Kurze Ein-Wort-Titel ("Buddy", "From") müssen zitiert sein oder vor Staffel/Season/Trailer stehen, plus Kontextwort.
 export const KONTEXT = {
-  film: /\b(film|serie|staffel|trailer|kino|movie|series|season|episode|teaser|netflix|disney|prime|hbo|apple tv|paramount)/i,
+  film: /\b(film|serie|staffel|trailer|kino|movie|series|season|episode|teaser|part|teil|netflix|disney|prime|hbo|apple tv|paramount)/i,
   spiel: /\b(spiel|game|games|gameplay|trailer|teaser|patch|update|dlc|release|demo|ps5|playstation|xbox|switch|steam|pc|remake|remaster)/i,
 };
 const esc = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -12,6 +12,11 @@ export function passt(namen, schlagzeile, kontext = KONTEXT.film) {
     if (!name || name.length < 3) return false;
     if (!new RegExp(`(^|[^\\p{L}\\p{N}])${esc(name)}($|[^\\p{L}\\p{N}])`, 'iu').test(schlagzeile)) return false;
     const kern = name.replace(/^(the|a|an|der|die|das|ein|eine)\s+/i, '');
-    return kern.includes(' ') || kern.length >= 9 || kontext.test(schlagzeile);
+    if (kern.includes(' ') || kern.length >= 9) return true;
+    // Kurze Ein-Wort-Titel ("From", "Dune"): nur in Anführungszeichen oder direkt vor Staffel/Season/Trailer/Teil
+    const n = esc(name);
+    const zitiert = new RegExp(`["'‘’“”„«»]${n}["'‘’“”„«»]`, 'iu').test(schlagzeile);
+    const davor = new RegExp(`(^|[^\\p{L}])${n}:?\\s+(staffel|season|trailer|teaser|teil|part|folge|episode|film|movie|series|serie)\\b`, 'iu').test(schlagzeile);
+    return (zitiert || davor) && kontext.test(schlagzeile);
   });
 }

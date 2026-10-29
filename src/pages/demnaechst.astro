@@ -83,6 +83,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
       <div class="box-merk" id="box-merk" hidden>
         <button type="button" class="mk" id="b-merk" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>Auf die Merkliste</span></button>
         <button type="button" class="mk" id="b-auge" aria-pressed="false" title="Bei neuen News oder Trailern Bescheid geben"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>Beobachten</span></button>
+        <button type="button" class="mk" id="b-glocke" aria-pressed="false" hidden title="Neue Staffeln, Termine, Trailer und News unter „Meine Serien“"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span>Serie folgen</span></button>
         <p class="mk-hinweis mono" id="mk-hinweis" aria-live="polite"></p>
       </div>
       <section class="box-news" id="box-news" aria-labelledby="box-news-h">
@@ -211,7 +212,28 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
     bm.setAttribute('aria-pressed', String(!!e)); bm.querySelector('span')!.textContent = e ? 'Auf der Merkliste' : 'Auf die Merkliste';
     ba.setAttribute('aria-pressed', String(!!e?.beobachten)); ba.querySelector('span')!.textContent = e?.beobachten ? 'Wird beobachtet' : 'Beobachten';
     $('mk-hinweis').textContent = '';
+    const bg = $('b-glocke'); bg.hidden = medium !== 'serie';
+    const folge = folgeIch.has(aktiv.id);
+    bg.setAttribute('aria-pressed', String(folge)); bg.querySelector('span')!.textContent = folge ? 'Folge ich' : 'Serie folgen';
   }
+  // Meine Serien (Glocke): ohne Merkliste, nur Staffeln, Termine, Trailer und News
+  let folgeIch = new Set<string>();
+  async function serienLaden(opt: RequestInit = {}) {
+    const r = await fetch('/api/serien', { ...opt, headers: { 'x-merk-token': token, 'content-type': 'application/json' } });
+    if (!r.ok) throw new Error(r.status === 401 ? 'Kein Zugang' : 'Fehler');
+    const d: { serien: { id: string; aus?: boolean }[] } = await r.json();
+    folgeIch = new Set(d.serien.filter((x) => !x.aus).map((x) => x.id));
+  }
+  $('b-glocke').addEventListener('click', async () => {
+    const hinweis = $('mk-hinweis'); hinweis.textContent = 'Speichere …';
+    const folge = folgeIch.has(aktiv.id);
+    try {
+      await serienLaden({ method: folge ? 'PATCH' : 'POST', body: JSON.stringify(folge ? { id: aktiv.id, aus: true } : { id: aktiv.id, titel: $('box-titel').textContent }) });
+      zeigeMerk(aktiv.id.replace('tmdb-tv:', 'tv-'), aktiv.medium);
+      hinweis.textContent = folge ? 'Du folgst der Serie nicht mehr.' : 'Neue Staffeln, Termine, Trailer und News stehen ab jetzt unter „Meine Serien“.';
+      try { sessionStorage.removeItem('kestrel-neu'); } catch {}
+    } catch (err) { hinweis.textContent = `Ging nicht: ${(err as Error).message}`; }
+  });
   async function setze(beobachten: boolean | null) {
     const hinweis = $('mk-hinweis'); hinweis.textContent = 'Speichere …';
     try {
@@ -224,7 +246,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
   }
   $('b-merk').addEventListener('click', () => { if (!meine.has(aktiv.id)) setze(null); else location.href = '/merkliste/'; });
   $('b-auge').addEventListener('click', () => setze(!meine.get(aktiv.id)?.beobachten));
-  if (token) merkApi().catch(() => {});
+  if (token) { merkApi().catch(() => {}); serienLaden().catch(() => {}); }
 
   // Meine Merkliste (öffentliche Einträge, nur lesen)
   type M = { medium: string; titel: string; bild?: string; status?: string; termine: { datum: string; text: string }[] };

@@ -259,7 +259,7 @@ import Base from '../../layouts/Base.astro';
       .sort((x, y) => y.p.datum.localeCompare(x.p.datum));
     const ul = $('#neues-liste'); ul.replaceChildren(...alleNeu.slice(0, 30).map(({ p, b }) => { const li = punktLi(p, b.titel); li.dataset.medium = b.medium; return li; }));
     $('#neues').hidden = alleNeu.length === 0;
-    try { sessionStorage.setItem('kestrel-neu', JSON.stringify({ t: Date.now(), n: alleNeu.length })); } catch {}
+    try { sessionStorage.removeItem('kestrel-neu'); } catch {}
     zeigeListe();
   }
   $('#alles-gesehen').addEventListener('click', async () => {

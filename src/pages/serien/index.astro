@@ -1,0 +1,277 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+<Base title="Meine Serien" privat description="Private Liste verfolgter Serien.">
+<div class="ser">
+  <header class="page-head wrap">
+    <h1>Meine Serien</h1>
+    <p>Alles, was ich bei Plex geschaut habe, kommt über Trakt von selbst hierher. Dazu kommen Serien, denen ich mit der Glocke folge. Jeden Tag wird geprüft, ob eine neue Staffel angekündigt ist, ein Starttermin feststeht oder sich verschiebt, ob es Trailer oder News gibt. Staffelstarts landen auch im Kalender-Abo der Merkliste. Nur du siehst diese Seite.</p>
+  </header>
+
+  <section class="wrap zugang" id="zugang" hidden>
+    <p>Für diese Seite brauchst du deinen Zugangsschlüssel.</p>
+    <form id="zugang-form">
+      <label class="visually-hidden" for="zugang-feld">Zugangsschlüssel</label>
+      <input id="zugang-feld" type="password" autocomplete="current-password" placeholder="Zugangsschlüssel" required />
+      <button type="submit">Öffnen</button>
+    </form>
+  </section>
+
+  <div id="app" hidden>
+    <section class="wrap" aria-labelledby="neu-h">
+      <div class="kopfzeile">
+        <h2 id="neu-h" class="abschnitt">Neu für dich</h2>
+        <button type="button" class="knopf leise" id="gesehen" hidden>Alles gesehen</button>
+      </div>
+      <ul class="hinweise" id="hinweise"></ul>
+      <p class="leer" id="hinweise-leer" hidden>Gerade nichts Neues. Sobald sich bei einer deiner Serien etwas tut, steht es hier, und in der Leiste links leuchtet ein Punkt.</p>
+    </section>
+
+    <section class="wrap" aria-labelledby="kommt-h">
+      <h2 id="kommt-h" class="abschnitt">Kommende Staffeln</h2>
+      <ul class="kommt" id="kommt"></ul>
+      <p class="leer" id="kommt-leer" hidden>Für keine deiner Serien ist gerade eine neue Staffel angekündigt.</p>
+    </section>
+
+    <section class="wrap" aria-labelledby="folgen-h">
+      <h2 id="folgen-h" class="abschnitt">Einer Serie folgen</h2>
+      <div class="suche">
+        <label class="visually-hidden" for="such-feld">Serie suchen</label>
+        <input id="such-feld" type="search" autocomplete="off" placeholder="Serie suchen …" />
+      </div>
+      <p class="hinweis mono" id="such-status" aria-live="polite"></p>
+      <ul class="treffer" id="treffer"></ul>
+    </section>
+
+    <section class="wrap" aria-labelledby="alle-h">
+      <div class="kopfzeile">
+        <h2 id="alle-h" class="abschnitt">Ich folge <span id="anzahl"></span></h2>
+        <p class="stand mono"><span id="stand"></span> <button type="button" class="knopf leise klein" id="pruefen">Jetzt prüfen</button></p>
+      </div>
+      <ul class="raster" id="raster"></ul>
+      <details class="aus" id="aus-box" hidden>
+        <summary class="mono">Nicht mehr verfolgt (<span id="aus-zahl"></span>)</summary>
+        <ul class="aus-liste" id="aus-liste"></ul>
+      </details>
+    </section>
+  </div>
+</div>
+</Base>
+
+<script>
+  const SPEICHER = 'kestrel-merk-token';
+  const $ = (s: string) => document.querySelector(s) as HTMLElement;
+  type Punkt = { art: 'staffel' | 'status' | 'trailer' | 'news'; titel: string; link?: string; quelle?: string; datum: string; termin?: string; neu: boolean };
+  type Serie = { id: string; titel: string; bild?: string; status?: string; quelle: 'trakt' | 'hand'; aus?: boolean; anbieter?: string[]; naechste?: { staffel: number; datum: string | null } | null; naechsteFolge?: { datum: string; text: string } | null; punkte: Punkt[]; geprueft?: number };
+  type Daten = { stand: number; gesehen: number; serien: Serie[] };
+
+  let token = '';
+  try { token = localStorage.getItem(SPEICHER) || ''; } catch {}
+  let daten: Daten = { stand: 0, gesehen: 0, serien: [] };
+
+  async function api(pfad: string, opt: RequestInit = {}) {
+    const r = await fetch(pfad, { ...opt, headers: { 'x-merk-token': token, 'content-type': 'application/json' } });
+    if (r.status === 401) { zeigeZugang(); throw new Error('Kein Zugang'); }
+    const d = await r.json();
+    if (!r.ok) throw new Error(d.fehler || 'Fehler');
+    return d;
+  }
+  function zeigeZugang() { $('#app').hidden = true; $('#zugang').hidden = false; }
+  $('#zugang-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    token = ($('#zugang-feld') as HTMLInputElement).value.trim();
+    try { localStorage.setItem(SPEICHER, token); } catch {}
+    start();
+  });
+
+  const el = (t: string, c?: string, x?: string) => { const n = document.createElement(t); if (c) n.className = c; if (x != null) n.textContent = x; return n; };
+  const datumDe = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString('de-DE', { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric' });
+  const relativ = (iso: string) => { const t = Math.floor((Date.now() - Date.parse(iso)) / 864e5); return t <= 0 ? 'heute' : t === 1 ? 'gestern' : `vor ${t} Tagen`; };
+  const bis = (d: string) => { const t = Math.round((Date.parse(d + 'T12:00:00') - Date.now()) / 864e5); return t <= 0 ? 'heute' : t === 1 ? 'morgen' : `in ${t} Tagen`; };
+  const ART: Record<string, string> = { staffel: 'Staffel', status: 'Status', trailer: '▶ Trailer', news: 'News' };
+  function poster(src?: string, klasse = 'poster') {
+    const b = el('span', klasse);
+    if (src) { const i = document.createElement('img'); i.src = src; i.alt = ''; i.loading = 'lazy'; b.append(i); }
+    return b;
+  }
+
+  function zeige() {
+    const aktiv = daten.serien.filter((s) => !s.aus);
+    // Neu für dich: alle neuen Hinweise, Staffeln zuerst, dann nach Datum
+    const neu = aktiv.flatMap((s) => s.punkte.filter((p) => p.neu).map((p) => ({ p, s })))
+      .sort((a, b) => (a.p.art === 'staffel' ? 0 : 1) - (b.p.art === 'staffel' ? 0 : 1) || b.p.datum.localeCompare(a.p.datum));
+    $('#hinweise').replaceChildren(...neu.map(({ p, s }) => {
+      const li = el('li', `hinweis-zeile art-${p.art}`);
+      const mitte = el('div', 'mitte');
+      mitte.append(el('span', 'art mono', `${ART[p.art]} · ${s.titel}`));
+      if (p.link) { const a = el('a', 'h-titel', p.titel) as HTMLAnchorElement; a.href = p.link; a.target = '_blank'; a.rel = 'noopener'; mitte.append(a); }
+      else mitte.append(el('span', 'h-titel', p.titel));
+      mitte.append(el('span', 'quelle mono', [p.quelle, relativ(p.datum)].filter(Boolean).join(' · ')));
+      li.append(poster(s.bild), mitte);
+      return li;
+    }));
+    $('#hinweise-leer').hidden = neu.length > 0;
+    $('#gesehen').hidden = neu.length === 0;
+
+    // Kommende Staffeln: mit Termin nach Datum, danach angekündigte ohne Termin
+    const kommt = aktiv.filter((s) => s.naechste).sort((a, b) => (a.naechste!.datum || '9999').localeCompare(b.naechste!.datum || '9999') || a.titel.localeCompare(b.titel, 'de'));
+    $('#kommt').replaceChildren(...kommt.map((s) => {
+      const li = el('li', 'kommt-zeile');
+      const n = s.naechste!;
+      li.append(el('span', 'k-datum mono', n.datum ? `${datumDe(n.datum)} · ${bis(n.datum)}` : 'Termin offen'), el('span', 'k-titel', s.titel), el('span', 'k-staffel mono', `Staffel ${n.staffel}${s.anbieter?.length ? ` · ${s.anbieter.join(', ')}` : ''}`));
+      return li;
+    }));
+    $('#kommt-leer').hidden = kommt.length > 0;
+
+    // Raster aller verfolgten Serien: zuerst die mit Neuem, dann laufende, beendete zuletzt
+    const rang = (s: Serie) => (s.punkte.some((p) => p.neu) ? 0 : s.naechste ? 1 : /Beendet|Abgesetzt/.test(s.status || '') ? 3 : 2);
+    $('#anzahl').textContent = `(${aktiv.length})`;
+    $('#raster').replaceChildren(...aktiv.sort((a, b) => rang(a) - rang(b) || a.titel.localeCompare(b.titel, 'de')).map((s) => {
+      const li = el('li', 'kachel');
+      const n = s.punkte.filter((p) => p.neu).length;
+      const c = poster(s.bild, 'cover');
+      if (n) c.append(el('span', 'neu-plakette mono', `${n} neu`));
+      const info = el('div', 'k-info');
+      info.append(el('span', 'k-name', s.titel));
+      const zeile = s.naechste ? (s.naechste.datum ? `Staffel ${s.naechste.staffel}: ${datumDe(s.naechste.datum)}` : `Staffel ${s.naechste.staffel} angekündigt`)
+        : s.naechsteFolge ? `Nächste Folge ${s.naechsteFolge.text}: ${datumDe(s.naechsteFolge.datum)}` : (s.status || '');
+      info.append(el('span', 'k-zeile mono', zeile), el('span', 'k-quelle mono', s.quelle === 'trakt' ? 'aus Trakt' : 'von Hand'));
+      const weg = el('button', 'k-weg', 'Nicht mehr folgen') as HTMLButtonElement; weg.type = 'button';
+      weg.addEventListener('click', () => setzeAus(s, true));
+      info.append(weg);
+      li.append(c, info);
+      return li;
+    }));
+
+    const aus = daten.serien.filter((s) => s.aus);
+    $('#aus-box').hidden = aus.length === 0; $('#aus-zahl').textContent = String(aus.length);
+    $('#aus-liste').replaceChildren(...aus.sort((a, b) => a.titel.localeCompare(b.titel, 'de')).map((s) => {
+      const li = el('li'); li.append(el('span', '', s.titel));
+      const b = el('button', 'knopf leise klein', 'Wieder folgen') as HTMLButtonElement; b.type = 'button';
+      b.addEventListener('click', () => setzeAus(s, false));
+      li.append(b); return li;
+    }));
+
+    $('#stand').textContent = daten.stand ? `Zuletzt geprüft: ${new Date(daten.stand).toLocaleString('de-DE', { dateStyle: 'short', timeStyle: 'short' })}` : 'Noch nicht geprüft.';
+    try { sessionStorage.removeItem('kestrel-neu'); } catch {}
+  }
+
+  async function setzeAus(s: Serie, aus: boolean) {
+    daten = await api('/api/serien', { method: 'PATCH', body: JSON.stringify({ id: s.id, aus }) });
+    zeige();
+  }
+  $('#gesehen').addEventListener('click', async () => { await api('/api/serien', { method: 'POST', body: JSON.stringify({ gesehen: true }) }); laden(); });
+
+  // Jetzt prüfen: Trakt abgleichen und alle Serien in Teilen prüfen
+  $('#pruefen').addEventListener('click', async () => {
+    const b = $('#pruefen') as HTMLButtonElement; b.disabled = true;
+    let ab: number | null = 0;
+    try {
+      while (ab !== null) {
+        const r = await api(`/api/serien/pruefen?ab=${ab}`, { method: 'POST' });
+        $('#stand').textContent = `Prüfe … ${Math.min((ab || 0) + r.geprueft, r.gesamt)} von ${r.gesamt}`;
+        ab = r.weiter;
+      }
+      await laden();
+    } catch (err) { $('#stand').textContent = `Prüfen fehlgeschlagen: ${(err as Error).message}`; }
+    b.disabled = false;
+  });
+
+  // Suche (nur Serien) und Folgen mit der Glocke
+  let suchTimer = 0, suchNr = 0;
+  async function suche() {
+    const q = ($('#such-feld') as HTMLInputElement).value.trim();
+    const ul = $('#treffer'); const status = $('#such-status');
+    if (q.length < 2) { ul.replaceChildren(); status.textContent = ''; return; }
+    const nr = ++suchNr; status.textContent = 'Suche …';
+    try {
+      const treffer = await api(`/api/merk/suche?medium=serie&q=${encodeURIComponent(q)}`);
+      if (nr !== suchNr) return;
+      status.textContent = treffer.length ? '' : 'Nichts gefunden.';
+      ul.replaceChildren(...treffer.map((t: { id: string; titel: string; jahr?: number; info?: string; bild?: string }) => {
+        const li = el('li', 'treffer-zeile');
+        const mitte = el('div', 'mitte'); mitte.append(el('span', 'titel', t.titel), el('span', 'mono info', [t.jahr, t.info].filter(Boolean).join(' · ')));
+        const schon = daten.serien.some((s) => s.id === t.id && !s.aus);
+        const b = el('button', 'glocke', schon ? '🔔 Folge ich' : '🔔 Folgen') as HTMLButtonElement; b.type = 'button'; b.disabled = schon;
+        b.addEventListener('click', async () => {
+          b.disabled = true; b.textContent = 'Prüfe …';
+          try { daten = await api('/api/serien', { method: 'POST', body: JSON.stringify({ id: t.id, titel: t.titel }) }); b.textContent = '🔔 Folge ich'; zeige(); }
+          catch (err) { b.disabled = false; b.textContent = '🔔 Folgen'; status.textContent = `Fehler: ${(err as Error).message}`; }
+        });
+        li.append(poster(t.bild), mitte, b); return li;
+      }));
+    } catch (err) { if (nr === suchNr) status.textContent = `Suche fehlgeschlagen: ${(err as Error).message}`; }
+  }
+  $('#such-feld').addEventListener('input', () => { clearTimeout(suchTimer); suchTimer = window.setTimeout(suche, 350); });
+
+  async function laden() { daten = await api('/api/serien'); zeige(); }
+  async function start() {
+    if (!token) return zeigeZugang();
+    try { await laden(); } catch { return; }
+    $('#zugang').hidden = true; $('#app').hidden = false;
+  }
+  start();
+</script>
+
+<style is:global>
+.ser {
+  .abschnitt { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.8rem; margin: 40px 0 14px; }
+  .kopfzeile { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+  .leer, .hinweis, .stand { color: var(--ink-2); }
+  .hinweis { font-size: 0.8rem; min-height: 1.2em; margin: 6px 0; }
+  .stand { font-size: 0.76rem; display: flex; align-items: center; gap: 10px; margin: 0; }
+  button, .knopf {
+    font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1rem;
+    border: 0; border-radius: 4px; padding: 9px 14px 8px; cursor: pointer; background: var(--ink); color: var(--ground); text-decoration: none;
+  }
+  button:disabled { opacity: 0.55; cursor: default; }
+  .knopf.leise { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
+  .klein { font-size: 0.8rem; padding: 6px 10px 5px; }
+  .zugang form, .suche { display: flex; flex-wrap: wrap; gap: 10px; }
+  input[type='password'], input[type='search'] { font: inherit; font-size: 1.1rem; padding: 12px 14px; border-radius: 4px; border: 2px solid var(--ink); background: var(--paper); color: var(--ink); flex: 1 1 280px; min-width: 0; }
+
+  .poster { width: 44px; height: 66px; border-radius: 2px; overflow: hidden; display: block; flex: none; background: color-mix(in srgb, currentColor 14%, transparent); }
+  .poster img, .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .mitte { display: grid; gap: 3px; min-width: 0; }
+  .art { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; }
+  .quelle, .info { font-size: 0.72rem; opacity: 0.85; }
+
+  /* Neu für dich: Staffel-Hinweise in Serienblau, der Rest auf Papier */
+  .hinweise, .kommt, .treffer, .aus-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .hinweis-zeile { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: center; padding: 8px 14px 8px 8px; border-radius: 4px; background: var(--paper); box-shadow: var(--shadow); }
+  .hinweis-zeile.art-staffel, .hinweis-zeile.art-status { background: var(--serie); color: var(--serie-ink); }
+  .h-titel { font-weight: 700; line-height: 1.3; color: inherit; }
+  .art-staffel .h-titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.2rem; line-height: 1.05; }
+
+  /* Kommende Staffeln als Fahrplan */
+  .kommt-zeile { display: grid; grid-template-columns: minmax(170px, 220px) 1fr auto; gap: 14px; align-items: baseline; padding: 10px 0; border-bottom: 1px dashed var(--rule); }
+  .k-datum { font-size: 0.78rem; font-weight: 700; }
+  .k-titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.2rem; line-height: 1; }
+  .k-staffel { font-size: 0.74rem; color: var(--ink-2); text-align: right; }
+
+  .treffer-zeile { display: grid; grid-template-columns: 44px 1fr auto; gap: 14px; align-items: center; background: var(--paper); border-radius: 4px; padding: 8px 12px 8px 8px; box-shadow: var(--shadow); }
+  .titel { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.2rem; line-height: 1; }
+  .glocke { background: var(--serie); color: var(--serie-ink); }
+
+  /* Raster der verfolgten Serien */
+  .raster { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
+  .kachel { display: grid; grid-template-rows: auto 1fr; border-radius: 4px; overflow: hidden; background: var(--paper); box-shadow: var(--shadow); }
+  .cover { position: relative; display: block; aspect-ratio: 2 / 3; background: color-mix(in srgb, var(--ink) 10%, transparent); }
+  .neu-plakette { position: absolute; top: 8px; right: 8px; padding: 3px 8px; border-radius: 999px; background: var(--serie); color: var(--serie-ink); font-size: 0.7rem; font-weight: 700; box-shadow: 0 2px 8px rgb(0 0 0 / 0.35); }
+  .k-info { display: grid; gap: 4px; padding: 10px 11px 11px; align-content: start; }
+  .k-name { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.05rem; line-height: 1; }
+  .k-zeile { font-size: 0.7rem; font-weight: 700; }
+  .k-quelle { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-2); }
+  .k-weg { justify-self: start; margin-top: 4px; font-family: var(--mono); font-weight: 500; text-transform: none; letter-spacing: 0; font-size: 0.7rem; padding: 4px 8px; background: transparent; color: var(--ink-2); box-shadow: inset 0 0 0 1px var(--rule); }
+  .k-weg:hover { color: var(--ink); }
+  .aus { margin-top: 22px; }
+  .aus summary { cursor: pointer; font-size: 0.8rem; color: var(--ink-2); }
+  .aus-liste { margin-top: 10px; }
+  .aus-liste li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 1px dashed var(--rule); }
+
+  @media (max-width: 560px) {
+    .kommt-zeile { grid-template-columns: 1fr; gap: 2px; }
+    .k-staffel { text-align: left; }
+  }
+}
+</style>

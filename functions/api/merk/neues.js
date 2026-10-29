@@ -1,4 +1,5 @@
 import { json, erlaubt, ladeListe, speichereListe, neues } from '../../../server/merk.js';
+import { ladeSerien, neuAnzahl } from '../../../server/serien.js';
 
 // GET: Neues zu beobachteten Einträgen (?anzahl=1 liefert nur die Zahl). POST: alles als gesehen markieren.
 export async function onRequest({ request, env }) {
@@ -17,6 +18,10 @@ export async function onRequest({ request, env }) {
     if (r.ok) archiv = await r.json();
   } catch { /* ohne News, nur Trailer */ }
   const daten = await neues(env, liste, archiv);
-  if (new URL(request.url).searchParams.get('anzahl')) return json({ anzahl: daten.reduce((s, e) => s + e.punkte.filter((p) => p.neu).length, 0) });
+  if (new URL(request.url).searchParams.get('anzahl')) {
+    const merk = daten.reduce((s, e) => s + e.punkte.filter((p) => p.neu).length, 0);
+    const serien = neuAnzahl(await ladeSerien(env));
+    return json({ anzahl: merk + serien, merk, serien });
+  }
   return json(daten);
 }
