@@ -1,6 +1,7 @@
 # Meine Serien: einmal täglich alle verfolgten Serien prüfen (Trakt-Abgleich, neue Staffeln, Termine, Trailer, News).
 # Die Arbeit macht die Seite selbst (/api/serien/pruefen), hier wird sie nur in Teilen angestoßen.
-# Braucht das GitHub-Geheimnis MERK_TOKEN (einmalig von Hand: Repo → Settings → Secrets → Actions).
+# Braucht die GitHub-Geheimnisse MERK_TOKEN, TRAKT_CLIENT_ID und TRAKT_USER (Repo → Settings → Secrets → Actions).
+# Trakt wird hier geholt, nicht auf der Seite: Trakt bremst Anfragen aus Cloudflare oft aus.
 name: Meine Serien prüfen
 on:
   schedule:
@@ -10,6 +11,22 @@ jobs:
   pruefen:
     runs-on: ubuntu-latest
     steps:
+      - name: Trakt-Verlauf holen und einpflegen
+        env:
+          MERK_TOKEN: ${{ secrets.MERK_TOKEN }}
+          TRAKT_CLIENT_ID: ${{ secrets.TRAKT_CLIENT_ID }}
+          TRAKT_USER: ${{ secrets.TRAKT_USER }}
+        run: |
+          if [ -z "$TRAKT_CLIENT_ID" ] || [ -z "$TRAKT_USER" ]; then echo "TRAKT_CLIENT_ID/TRAKT_USER fehlen, übersprungen"; exit 0; fi
+          user="${TRAKT_USER#@}"
+          for versuch in 1 2 3; do
+            code=$(curl -s -o trakt.json -w '%{http_code}' -H "trakt-api-version: 2" -H "trakt-api-key: $TRAKT_CLIENT_ID" -H "content-type: application/json" -H "user-agent: Kestrel/1.0 (+https://kestrel-2tf.pages.dev)" "https://api.trakt.tv/users/$user/watched/shows?extended=noseasons")
+            [ "$code" = "200" ] && break
+            echo "Trakt $code, neuer Versuch"; sleep 20
+          done
+          [ "$code" = "200" ] || { echo "Trakt nicht erreichbar ($code)"; exit 0; }
+          echo "Trakt: $(jq length trakt.json) Serien im Verlauf"
+          curl -sf -X POST -H "x-merk-token: $MERK_TOKEN" -H "content-type: application/json" --data @trakt.json "https://kestrel-2tf.pages.dev/api/serien/trakt" | jq -c .
       - name: Serien prüfen
         env:
           MERK_TOKEN: ${{ secrets.MERK_TOKEN }}

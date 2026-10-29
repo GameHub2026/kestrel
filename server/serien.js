@@ -21,32 +21,29 @@ export const pruefbar = (s) => !s.aus || !!s.ausGrund; // von Hand entfolgt = ga
 export const neuAnzahl = (d) => mitNeu(d).filter(pruefbar).reduce((n, s) => n + s.punkte.filter((p) => p.neu).length, 0);
 
 // ---------- Trakt: gesehene Serien ----------
-async function traktSerien(env) {
-  if (!env.TRAKT_CLIENT_ID || !env.TRAKT_USER) return [];
-  const holen = () => fetch(`https://api.trakt.tv/users/${encodeURIComponent(env.TRAKT_USER.replace(/^@/, ''))}/watched/shows?extended=noseasons`, {
-    headers: { 'trakt-api-version': '2', 'trakt-api-key': env.TRAKT_CLIENT_ID, 'content-type': 'application/json', 'user-agent': 'Kestrel/1.0 (+https://kestrel-2tf.pages.dev)' },
-  });
-  let r = await holen();
-  // Trakt bremst bei zu vielen Anfragen (429): kurz warten, einmal neu versuchen
-  if (r.status === 429) {
-    await new Promise((ok) => setTimeout(ok, Math.min(8, Number(r.headers.get('retry-after')) || 3) * 1000));
-    r = await holen();
-  }
-  if (!r.ok) throw new Error(`Trakt ${r.status}`);
-  return (await r.json()).filter((x) => x.show?.ids?.tmdb && x.plays >= 2) // eine einzelne angeklickte Folge zählt nicht
-    .map((x) => ({ id: `tmdb-tv:${x.show.ids.tmdb}`, titel: x.show.title, zuletzt: x.last_watched_at }));
-}
-
-export async function traktAbgleich(env, d) {
-  const neu = await traktSerien(env);
+// Trakt bremst Anfragen aus Cloudflare oft aus (429). Deshalb holt der tägliche GitHub-Lauf die Liste selbst
+// (users/<name>/watched/shows) und schickt sie an POST /api/serien/trakt; hier wird sie nur eingepflegt.
+export function traktEinpflegen(d, roh) {
   let dazu = 0;
-  for (const t of neu) {
-    const s = d.serien.find((x) => x.id === t.id);
-    if (s) { s.zuletzt = t.zuletzt; continue; }
-    d.serien.push({ id: t.id, titel: t.titel, quelle: 'trakt', seit: Date.now(), zuletzt: t.zuletzt, bekannt: {}, punkte: [] });
+  for (const x of roh || []) {
+    if (!x?.show?.ids?.tmdb || !(x.plays >= 2)) continue; // eine einzelne angeklickte Folge zählt nicht
+    const id = `tmdb-tv:${x.show.ids.tmdb}`;
+    const s = d.serien.find((y) => y.id === id);
+    if (s) { s.zuletzt = x.last_watched_at; continue; }
+    d.serien.push({ id, medium: 'serie', titel: x.show.title, quelle: 'trakt', seit: Date.now(), zuletzt: x.last_watched_at, bekannt: {}, punkte: [] });
     dazu++;
   }
+  d.traktStand = Date.now();
   return dazu;
+}
+// Ausweg, falls der GitHub-Lauf keine Trakt-Daten hat: selbst versuchen (klappt nur manchmal)
+export async function traktAbgleich(env, d) {
+  if (!env.TRAKT_CLIENT_ID || !env.TRAKT_USER) return 0;
+  const r = await fetch(`https://api.trakt.tv/users/${encodeURIComponent(env.TRAKT_USER.replace(/^@/, ''))}/watched/shows?extended=noseasons`, {
+    headers: { 'trakt-api-version': '2', 'trakt-api-key': env.TRAKT_CLIENT_ID, 'content-type': 'application/json', 'user-agent': 'Kestrel/1.0 (+https://kestrel-2tf.pages.dev)' },
+  });
+  if (!r.ok) throw new Error(`Trakt ${r.status}`);
+  return traktEinpflegen(d, await r.json());
 }
 
 // ---------- Prüfung einer Serie ----------
