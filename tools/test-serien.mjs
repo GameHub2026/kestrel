@@ -23,4 +23,11 @@ const m = mitNeu(d);
 console.log(`${m.length} Serien, ${neuAnzahl(d)} Hinweise neu, ${serienTermine(d).length} Staffelstarts im Kalender`);
 for (const s of m.filter((x) => x.punkte.some((p) => p.neu)).slice(0, 8)) console.log(`- ${s.titel} (${s.quelle}, ${s.status}):`, s.punkte.filter((p) => p.neu).slice(0, 3).map((p) => `${p.art}: ${p.titel.slice(0, 60)}`));
 if (!m.find((s) => s.id === 'tmdb-tv:95396')?.titel) { console.error('FEHLER: Testserie ohne Titel'); process.exit(1); }
+
+// Film mit Reihe: Avatar: The Way of Water (76600) → weitere Avatar-Teile
+const film = { id: 'tmdb-movie:76600', medium: 'film', titel: '', quelle: 'hand', bekannt: {}, punkte: [] };
+const { pruefeSerie } = await import('../server/serien.js');
+await pruefeSerie(env, film, archiv);
+console.log('Film:', film.titel, '|', film.reihe, '|', film.status, '|', JSON.stringify(film.naechste), film.punkte.filter((p) => p.art === 'staffel').map((p) => p.titel));
+if (!film.titel) { console.error('FEHLER: Film ohne Titel'); process.exit(1); }
 console.log('ok');

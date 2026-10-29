@@ -1,11 +1,11 @@
 ---
 import Base from '../../layouts/Base.astro';
 ---
-<Base title="Meine Serien" privat description="Private Liste verfolgter Serien.">
+<Base title="Serien & Filme" privat description="Private Liste verfolgter Serien und Filme.">
 <div class="ser kacheln" id="ser">
   <header class="page-head wrap">
-    <h1>Meine Serien</h1>
-    <p>Alles, was ich bei Plex geschaut habe, kommt über Trakt von selbst hierher. Dazu kommen Serien, denen ich mit der Glocke folge. Jeden Tag wird geprüft, ob eine neue Staffel angekündigt ist, ein Starttermin feststeht oder sich verschiebt, ob es Trailer oder News gibt. Staffelstarts landen auch im Kalender-Abo der Merkliste. Nur du siehst diese Seite.</p>
+    <h1>Serien &amp; Filme</h1>
+    <p>Alles, was ich bei Plex geschaut habe, kommt über Trakt von selbst hierher. Dazu kommen Serien und Filme, denen ich mit der Glocke folge. Bei Filmen zählt die ganze Reihe: neue Teile, Kinostart, Trailer, News. Jeden Tag wird geprüft, ob eine neue Staffel oder ein neuer Teil angekündigt ist, ein Starttermin feststeht oder sich verschiebt. Staffelstarts und Kinostarts landen auch im Kalender-Abo der Merkliste. Nur du siehst diese Seite.</p>
   </header>
 
   <section class="wrap zugang" id="zugang" hidden>
@@ -32,16 +32,16 @@ import Base from '../../layouts/Base.astro';
     </section>
 
     <section class="wrap" aria-labelledby="kommt-h">
-      <h2 id="kommt-h" class="abschnitt">Kommende Staffeln</h2>
+      <h2 id="kommt-h" class="abschnitt">Kommt als Nächstes</h2>
       <ul class="kommt" id="kommt"></ul>
-      <p class="leer" id="kommt-leer" hidden>Für keine deiner Serien ist gerade eine neue Staffel angekündigt.</p>
+      <p class="leer" id="kommt-leer" hidden>Für keine deiner Serien und Filme ist gerade etwas Neues angekündigt.</p>
     </section>
 
     <section class="wrap" aria-labelledby="folgen-h">
-      <h2 id="folgen-h" class="abschnitt">Einer Serie folgen</h2>
+      <h2 id="folgen-h" class="abschnitt">Folgen</h2>
       <div class="suche">
-        <label class="visually-hidden" for="such-feld">Serie suchen</label>
-        <input id="such-feld" type="search" autocomplete="off" placeholder="Serie suchen …" />
+        <label class="visually-hidden" for="such-feld">Serie oder Film suchen</label>
+        <input id="such-feld" type="search" autocomplete="off" placeholder="Serie oder Film suchen …" />
       </div>
       <p class="hinweis mono" id="such-status" aria-live="polite"></p>
       <ul class="treffer" id="treffer"></ul>
@@ -66,7 +66,7 @@ import Base from '../../layouts/Base.astro';
   const SPEICHER = 'kestrel-merk-token';
   const $ = (s: string) => document.querySelector(s) as HTMLElement;
   type Punkt = { art: 'staffel' | 'status' | 'trailer' | 'news'; titel: string; link?: string; quelle?: string; datum: string; termin?: string; neu: boolean };
-  type Serie = { id: string; titel: string; bild?: string; status?: string; quelle: 'trakt' | 'hand'; aus?: boolean; anbieter?: string[]; naechste?: { staffel: number; datum: string | null } | null; naechsteFolge?: { datum: string; text: string } | null; punkte: Punkt[]; geprueft?: number };
+  type Serie = { id: string; medium?: string; reihe?: string; titel: string; bild?: string; status?: string; quelle: 'trakt' | 'hand'; aus?: boolean; anbieter?: string[]; naechste?: { staffel?: number; text?: string; datum: string | null } | null; naechsteFolge?: { datum: string; text: string } | null; punkte: Punkt[]; geprueft?: number };
   type Daten = { stand: number; gesehen: number; serien: Serie[] };
 
   let token = '';
@@ -92,7 +92,7 @@ import Base from '../../layouts/Base.astro';
   const datumDe = (d: string) => new Date(d + 'T12:00:00').toLocaleDateString('de-DE', { weekday: 'short', day: '2-digit', month: '2-digit', year: 'numeric' });
   const relativ = (iso: string) => { const t = Math.floor((Date.now() - Date.parse(iso)) / 864e5); return t <= 0 ? 'heute' : t === 1 ? 'gestern' : `vor ${t} Tagen`; };
   const bis = (d: string) => { const t = Math.round((Date.parse(d + 'T12:00:00') - Date.now()) / 864e5); return t <= 0 ? 'heute' : t === 1 ? 'morgen' : `in ${t} Tagen`; };
-  const ART: Record<string, string> = { staffel: 'Staffel', status: 'Status', trailer: '▶ Trailer', news: 'News' };
+  const ART: Record<string, string> = { staffel: 'Neu',  status: 'Status', trailer: '▶ Trailer', news: 'News' };
   const gross = (u?: string) => u?.replace('/w154/', '/w342/');
   function poster(src?: string, klasse = 'poster') {
     const b = el('span', klasse);
@@ -109,7 +109,7 @@ import Base from '../../layouts/Base.astro';
     $('#hinweise').replaceChildren(...neu.map(({ p, s }) => {
       const li = el('li', `hinweis-zeile art-${p.art}`);
       const mitte = el('div', 'mitte');
-      mitte.append(el('span', 'art mono', `${ART[p.art]} · ${s.titel}`));
+      mitte.append(el('span', 'art mono', `${p.art === 'staffel' ? (s.medium === 'film' ? 'Film' : 'Staffel') : ART[p.art]} · ${s.titel}`));
       if (p.link) { const a = el('a', 'h-titel', p.titel) as HTMLAnchorElement; a.href = p.link; a.target = '_blank'; a.rel = 'noopener'; mitte.append(a); }
       else mitte.append(el('span', 'h-titel', p.titel));
       mitte.append(el('span', 'quelle mono', [p.quelle, relativ(p.datum)].filter(Boolean).join(' · ')));
@@ -125,7 +125,8 @@ import Base from '../../layouts/Base.astro';
       const li = el('li', 'kommt-zeile');
       const n = s.naechste!;
       li.append(poster(s.bild));
-      li.append(el('span', 'k-datum mono', n.datum ? `${datumDe(n.datum)} · ${bis(n.datum)}` : 'Termin offen'), el('span', 'k-titel', s.titel), el('span', 'k-staffel mono', `Staffel ${n.staffel}${s.anbieter?.length ? ` · ${s.anbieter.join(', ')}` : ''}`));
+      const was = s.medium === 'film' ? (n.text === 'Kinostart' ? 'Kinostart' : `Neuer Teil: ${n.text}`) : (n.text || `Staffel ${n.staffel}`);
+      li.append(el('span', 'k-datum mono', n.datum ? `${datumDe(n.datum)} · ${bis(n.datum)}` : 'Termin offen'), el('span', 'k-titel', s.titel), el('span', 'k-staffel mono', `${was}${s.anbieter?.length ? ` · ${s.anbieter.join(', ')}` : ''}`));
       return li;
     }));
     $('#kommt-leer').hidden = kommt.length > 0;
@@ -140,9 +141,10 @@ import Base from '../../layouts/Base.astro';
       if (n) c.append(el('span', 'neu-plakette mono', `${n} neu`));
       const info = el('div', 'k-info');
       info.append(el('span', 'k-name', s.titel));
-      const zeile = s.naechste ? (s.naechste.datum ? `Staffel ${s.naechste.staffel}: ${datumDe(s.naechste.datum)}` : `Staffel ${s.naechste.staffel} angekündigt`)
+      const was = s.naechste ? (s.medium === 'film' ? (s.naechste.text === 'Kinostart' ? 'Kinostart' : s.naechste.text!) : (s.naechste.text || `Staffel ${s.naechste.staffel}`)) : '';
+      const zeile = s.naechste ? (s.naechste.datum ? `${was}: ${datumDe(s.naechste.datum)}` : `${was} angekündigt`)
         : s.naechsteFolge ? `Nächste Folge ${s.naechsteFolge.text}: ${datumDe(s.naechsteFolge.datum)}` : (s.status || '');
-      info.append(el('span', 'k-zeile mono', zeile), el('span', 'k-quelle mono', s.quelle === 'trakt' ? 'aus Trakt' : 'von Hand'));
+      info.append(el('span', 'k-zeile mono', zeile), el('span', 'k-quelle mono', `${s.medium === 'film' ? 'Film' : 'Serie'} · ${s.quelle === 'trakt' ? 'aus Trakt' : 'von Hand'}`));
       const weg = el('button', 'k-weg', 'Nicht mehr folgen') as HTMLButtonElement; weg.type = 'button';
       weg.addEventListener('click', () => setzeAus(s, true));
       info.append(weg);
@@ -202,12 +204,13 @@ import Base from '../../layouts/Base.astro';
     if (q.length < 2) { ul.replaceChildren(); status.textContent = ''; return; }
     const nr = ++suchNr; status.textContent = 'Suche …';
     try {
-      const treffer = await api(`/api/merk/suche?medium=serie&q=${encodeURIComponent(q)}`);
+      const [se, fi] = await Promise.all(['serie', 'film'].map((m) => api(`/api/merk/suche?medium=${m}&q=${encodeURIComponent(q)}`).catch(() => [])));
+      const treffer: any[] = []; for (let i = 0; i < 8; i++) { if (se[i]) treffer.push(se[i]); if (fi[i]) treffer.push(fi[i]); }
       if (nr !== suchNr) return;
       status.textContent = treffer.length ? '' : 'Nichts gefunden.';
-      ul.replaceChildren(...treffer.map((t: { id: string; titel: string; jahr?: number; info?: string; bild?: string }) => {
+      ul.replaceChildren(...treffer.map((t: { id: string; medium: string; titel: string; jahr?: number; info?: string; bild?: string }) => {
         const li = el('li', 'treffer-zeile');
-        const mitte = el('div', 'mitte'); mitte.append(el('span', 'titel', t.titel), el('span', 'mono info', [t.jahr, t.info].filter(Boolean).join(' · ')));
+        const mitte = el('div', 'mitte'); mitte.append(el('span', 'titel', t.titel), el('span', 'mono info', [t.medium === 'film' ? 'Film' : 'Serie', t.jahr, t.info].filter(Boolean).join(' · ')));
         const schon = daten.serien.some((s) => s.id === t.id && !s.aus);
         const b = el('button', 'glocke', schon ? '🔔 Folge ich' : '🔔 Folgen') as HTMLButtonElement; b.type = 'button'; b.disabled = schon;
         b.addEventListener('click', async () => {

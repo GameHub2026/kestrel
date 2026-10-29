@@ -9,10 +9,10 @@ export async function onRequest({ request, env }) {
   if (request.method === 'GET') return json({ stand: d.stand, gesehen: d.gesehen, serien: mitNeu(d) });
   const body = await request.json().catch(() => ({}));
   if (request.method === 'POST' && body.gesehen) { d.gesehen = Date.now(); await speichereSerien(env, d); return json({ ok: true }); }
-  if (!/^tmdb-tv:\d+$/.test(body.id || '')) return json({ fehler: 'Ungültige ID' }, 400);
+  if (!/^tmdb-(tv|movie):\d+$/.test(body.id || '')) return json({ fehler: 'Ungültige ID' }, 400);
   let s = d.serien.find((x) => x.id === body.id);
   if (request.method === 'POST') {
-    if (!s) { s = { id: body.id, titel: body.titel || '', quelle: 'hand', seit: Date.now(), bekannt: {}, punkte: [] }; d.serien.push(s); }
+    if (!s) { s = { id: body.id, medium: body.id.startsWith('tmdb-movie:') ? 'film' : 'serie', titel: body.titel || '', quelle: 'hand', seit: Date.now(), bekannt: {}, punkte: [] }; d.serien.push(s); }
     s.aus = false;
     if (!s.geprueft) {
       let archiv = [];

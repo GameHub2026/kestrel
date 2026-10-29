@@ -86,7 +86,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
       <div class="box-merk" id="box-merk" hidden>
         <button type="button" class="mk" id="b-merk" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"/></svg><span>Auf die Merkliste</span></button>
         <button type="button" class="mk" id="b-auge" aria-pressed="false" title="Bei neuen News oder Trailern Bescheid geben"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>Beobachten</span></button>
-        <button type="button" class="mk" id="b-glocke" aria-pressed="false" hidden title="Neue Staffeln, Termine, Trailer und News unter „Meine Serien“"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span>Serie folgen</span></button>
+        <button type="button" class="mk" id="b-glocke" aria-pressed="false" hidden title="Neue Staffeln oder Teile, Termine, Trailer und News unter „Serien & Filme“"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg><span>Serie folgen</span></button>
         <p class="mk-hinweis mono" id="mk-hinweis" aria-live="polite"></p>
       </div>
       <section class="box-news" id="box-news" aria-labelledby="box-news-h">
@@ -213,9 +213,9 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
     bm.setAttribute('aria-pressed', String(!!e)); bm.querySelector('span')!.textContent = e ? 'Auf der Merkliste' : 'Auf die Merkliste';
     ba.setAttribute('aria-pressed', String(!!e?.beobachten)); ba.querySelector('span')!.textContent = e?.beobachten ? 'Wird beobachtet' : 'Beobachten';
     $('mk-hinweis').textContent = '';
-    const bg = $('b-glocke'); bg.hidden = medium !== 'serie';
+    const bg = $('b-glocke');
     const folge = folgeIch.has(aktiv.id);
-    bg.setAttribute('aria-pressed', String(folge)); bg.querySelector('span')!.textContent = folge ? 'Folge ich' : 'Serie folgen';
+    bg.setAttribute('aria-pressed', String(folge)); bg.querySelector('span')!.textContent = folge ? 'Folge ich' : medium === 'film' ? 'Film folgen' : 'Serie folgen';
   }
   // Meine Serien (Glocke): ohne Merkliste, nur Staffeln, Termine, Trailer und News
   let folgeIch = new Set<string>();
@@ -230,8 +230,10 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
     const folge = folgeIch.has(aktiv.id);
     try {
       await serienLaden({ method: folge ? 'PATCH' : 'POST', body: JSON.stringify(folge ? { id: aktiv.id, aus: true } : { id: aktiv.id, titel: $('box-titel').textContent }) });
-      zeigeMerk(aktiv.id.replace('tmdb-tv:', 'tv-'), aktiv.medium);
-      hinweis.textContent = folge ? 'Du folgst der Serie nicht mehr.' : 'Neue Staffeln, Termine, Trailer und News stehen ab jetzt unter „Meine Serien“.';
+      zeigeMerk(aktiv.id.replace('tmdb-tv:', 'tv-').replace('tmdb-movie:', 'movie-'), aktiv.medium);
+      const film = aktiv.medium === 'film';
+      hinweis.textContent = folge ? `Du folgst ${film ? 'dem Film' : 'der Serie'} nicht mehr.`
+        : film ? 'Neue Teile der Reihe, Kinostart, Trailer und News stehen ab jetzt unter „Serien & Filme“.' : 'Neue Staffeln, Termine, Trailer und News stehen ab jetzt unter „Serien & Filme“.';
       try { sessionStorage.removeItem('kestrel-neu'); } catch {}
     } catch (err) { hinweis.textContent = `Ging nicht: ${(err as Error).message}`; }
   });
@@ -345,6 +347,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .mk[aria-pressed='true'] svg { fill: currentColor; }
 .dem #b-auge[aria-pressed='true'] svg { fill: none; }
 .dem #b-auge[aria-pressed='true'] svg circle { fill: currentColor; }
+.dem .mk[hidden] { display: none; }
 .dem .mk-hinweis { flex-basis: 100%; margin: 0; font-size: 0.74rem; color: var(--ink-2); min-height: 1em; }
 .dem .karte { position: relative; }
 .dem .karte[data-gemerkt='ja']::after, .dem .karte[data-gemerkt='auge']::after {
