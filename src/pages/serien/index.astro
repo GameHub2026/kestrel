@@ -54,7 +54,7 @@ import Base from '../../layouts/Base.astro';
       </div>
       <ul class="raster" id="raster"></ul>
       <details class="aus" id="aus-box" hidden>
-        <summary class="mono">Nicht mehr verfolgt (<span id="aus-zahl"></span>)</summary>
+        <summary class="mono">Nicht mehr verfolgt, auch Beendete und Abgesetzte (<span id="aus-zahl"></span>)</summary>
         <ul class="aus-liste" id="aus-liste"></ul>
       </details>
     </section>
@@ -66,7 +66,7 @@ import Base from '../../layouts/Base.astro';
   const SPEICHER = 'kestrel-merk-token';
   const $ = (s: string) => document.querySelector(s) as HTMLElement;
   type Punkt = { art: 'staffel' | 'status' | 'trailer' | 'news'; titel: string; link?: string; quelle?: string; datum: string; termin?: string; neu: boolean };
-  type Serie = { id: string; medium?: string; reihe?: string; titel: string; bild?: string; status?: string; quelle: 'trakt' | 'hand'; aus?: boolean; anbieter?: string[]; naechste?: { staffel?: number; text?: string; datum: string | null } | null; naechsteFolge?: { datum: string; text: string } | null; punkte: Punkt[]; geprueft?: number };
+  type Serie = { id: string; medium?: string; reihe?: string; titel: string; bild?: string; status?: string; quelle: 'trakt' | 'hand'; aus?: boolean; ausGrund?: string | null; anbieter?: string[]; naechste?: { staffel?: number; text?: string; datum: string | null } | null; naechsteFolge?: { datum: string; text: string } | null; punkte: Punkt[]; geprueft?: number };
   type Daten = { stand: number; gesehen: number; serien: Serie[] };
 
   let token = '';
@@ -155,7 +155,7 @@ import Base from '../../layouts/Base.astro';
     const aus = daten.serien.filter((s) => s.aus);
     $('#aus-box').hidden = aus.length === 0; $('#aus-zahl').textContent = String(aus.length);
     $('#aus-liste').replaceChildren(...aus.sort((a, b) => a.titel.localeCompare(b.titel, 'de')).map((s) => {
-      const li = el('li'); li.append(el('span', '', s.titel));
+      const li = el('li'); li.append(el('span', '', `${s.titel}${s.ausGrund ? ` · ${s.ausGrund}` : ''}`));
       const b = el('button', 'knopf leise klein', 'Wieder folgen') as HTMLButtonElement; b.type = 'button';
       b.addEventListener('click', () => setzeAus(s, false));
       li.append(b); return li;

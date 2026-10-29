@@ -140,6 +140,8 @@ export async function pruefeSerie(env, s, archiv) {
   // Läuft gerade eine Staffel, steht die nächste Folge als Info dabei (nicht als Hinweis, sonst jede Woche)
   s.naechsteFolge = d.next_episode_to_air?.air_date ? { datum: d.next_episode_to_air.air_date, text: `S${d.next_episode_to_air.season_number}E${d.next_episode_to_air.episode_number}` } : null;
 
+  // Beendet oder abgesetzt: automatisch nicht mehr verfolgen (außer Kevin hat sie ausdrücklich wieder aufgenommen)
+  if (['Ended', 'Canceled'].includes(d.status) && !s.behalten && !s.naechste) { s.aus = true; s.ausGrund = STATUS[d.status]; }
   // Status gewechselt (z. B. abgesetzt)
   if (b.status && b.status !== d.status && ['Ended', 'Canceled'].includes(d.status)) b[`status:${d.status}`] = jetzt;
   b.status = d.status;
