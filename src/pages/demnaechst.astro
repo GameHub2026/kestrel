@@ -25,6 +25,10 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
       <button type="button" data-f="alle" aria-pressed="true">Alles</button>
       <button type="button" data-f="kino" data-medium="film" aria-pressed="false">Kino</button>
       <button type="button" data-f="serie" data-medium="serie" aria-pressed="false">Serien</button>
+      <div class="ansicht" role="group" aria-label="Ansicht">
+        <button type="button" data-ansicht="liste" aria-pressed="true" aria-label="Liste" title="Liste"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg></button>
+        <button type="button" data-ansicht="kacheln" aria-pressed="false" aria-label="Kacheln" title="Kacheln"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></svg></button>
+      </div>
     </nav>
 
     <section class="wrap" aria-label="Termine" id="termine">
@@ -112,6 +116,17 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
   const ausAdresse = new URLSearchParams(location.search).get('f');
   anwenden(ausAdresse === 'kino' || ausAdresse === 'serie' ? ausAdresse : 'alle');
   window.addEventListener('pageshow', (e) => { if (e.persisted) anwenden(aktuell()); });
+
+  // Ansicht: Liste oder Kacheln (gemerkt pro Gerät)
+  const termine = document.getElementById('termine')!;
+  const ansichtKnoepfe = [...document.querySelectorAll<HTMLButtonElement>('[data-ansicht]')];
+  function setzeAnsicht(a: string) {
+    termine.classList.toggle('kacheln', a === 'kacheln');
+    ansichtKnoepfe.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.ansicht === a)));
+    try { localStorage.setItem('kestrel-dem-ansicht', a); } catch {}
+  }
+  ansichtKnoepfe.forEach((b) => b.addEventListener('click', () => setzeAnsicht(b.dataset.ansicht!)));
+  try { if (localStorage.getItem('kestrel-dem-ansicht') === 'kacheln') setzeAnsicht('kacheln'); } catch {}
 
   // Info-Box: Klick auf einen Titel öffnet Details, Trailer, TMDB-Link und aktuelle News
   type Info = { sprache?: string; titel: string; original?: string; leitsatz?: string; handlung?: string; genres: string[]; fakten: [string, string][]; trailer?: string; link: string; bild?: string; news: { quelle: string; titel: string; link: string; datum: string }[] };
@@ -216,6 +231,18 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 }
 .dem button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
 .dem button[data-medium][aria-pressed='true'] { background: var(--card); color: var(--card-ink); }
+.dem .tabs .ansicht { margin-left: auto; display: inline-flex; gap: 2px; padding: 3px; border-radius: 8px; background: color-mix(in srgb, var(--ink) 8%, transparent); align-self: center; }
+.dem .tabs .ansicht button { padding: 7px 9px; background: transparent; color: var(--ink-2); box-shadow: none; border-radius: 6px; display: grid; place-items: center; }
+.dem .tabs .ansicht button[aria-pressed='true'] { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
+.dem .ansicht svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+/* Kacheln: großes Poster, darunter Medium, Titel, Anbieter */
+.dem .kacheln .liste { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
+.dem .kacheln .eintrag { display: grid; }
+.dem .kacheln .karte { display: grid; grid-template-columns: 1fr; grid-template-rows: auto 1fr; align-content: start; align-items: start; gap: 0; padding: 0; height: 100%; overflow: hidden; }
+.dem .kacheln .poster { width: 100%; height: auto; aspect-ratio: 2 / 3; border-radius: 4px 4px 0 0; }
+.dem .kacheln .mitte { padding: 10px 11px 12px; gap: 4px; align-content: start; }
+.dem .kacheln .titel { font-size: 1.1rem; }
+.dem .kacheln .karte[data-gemerkt='ja']::after, .dem .kacheln .karte[data-gemerkt='auge']::after { top: 8px; right: 8px; width: 22px; height: 22px; color: #fff; opacity: 1; filter: drop-shadow(0 1px 3px rgb(0 0 0 / 0.8)); z-index: 1; }
 .dem .tag { margin-bottom: 30px; }
 .dem .tag[hidden], .dem .eintrag[hidden] { display: none !important; }
 .dem .tag-name { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: 1.5rem; letter-spacing: 0.03em; margin: 0 0 10px; display: flex; align-items: center; gap: 14px; }
