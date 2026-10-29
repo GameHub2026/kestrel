@@ -50,6 +50,33 @@ const netze = (s) => eindeutig((s.networks || []).map((n) => NETZ[n.name] || n.n
 // Titel in Fremdschrift (Koreanisch, Japanisch, …) bleiben draußen, auf Deutsch lesbare Titel nicht.
 const lesbar = (t) => !/[^\p{Script=Latin}\p{N}\p{P}\p{S}\p{Z}]/u.test(t || '');
 
+// ---------- Infos für die Info-Box (je Titel einmal, Einträge verweisen per "info") ----------
+const INFOS = {};
+const trailer = (v) => {
+  const l = (v?.results || []).filter((x) => x.site === 'YouTube' && /Trailer|Teaser/.test(x.type));
+  const b = l.find((x) => x.iso_639_1 === 'de' && x.type === 'Trailer') || l.find((x) => x.type === 'Trailer') || l[0];
+  return b ? `https://www.youtube.com/watch?v=${b.key}` : null;
+};
+function merkeInfo(key, d, film) {
+  if (INFOS[key]) return key;
+  const fakten = [];
+  if (film && d.runtime) fakten.push(['Laufzeit', `${Math.floor(d.runtime / 60)} Std ${d.runtime % 60} Min`]);
+  if (!film && d.number_of_seasons) fakten.push(['Umfang', `${d.number_of_seasons} Staffel${d.number_of_seasons > 1 ? 'n' : ''}${d.number_of_episodes ? `, ${d.number_of_episodes} Folgen` : ''}`]);
+  const macher = film ? (d.credits?.crew || []).filter((c) => c.job === 'Director').map((c) => c.name) : (d.created_by || []).map((c) => c.name);
+  if (macher.length) fakten.push([film ? 'Regie' : 'Von', macher.slice(0, 2).join(', ')]);
+  const cast = (d.credits?.cast || []).slice(0, 4).map((c) => c.name);
+  if (cast.length) fakten.push(['Mit', cast.join(', ')]);
+  if (!film && d.networks?.length) fakten.push(['Sender/Dienst', d.networks.map((n) => n.name).slice(0, 2).join(', ')]);
+  if (d.vote_count > 20) fakten.push(['TMDB-Wertung', `${d.vote_average.toFixed(1)} / 10`]);
+  INFOS[key] = {
+    titel: film ? d.title : d.name, original: film ? d.original_title : d.original_name,
+    leitsatz: d.tagline || null, handlung: d.overview || null, genres: (d.genres || []).map((g) => g.name),
+    fakten, trailer: trailer(d.videos), link: `https://www.themoviedb.org/${film ? 'movie' : 'tv'}/${d.id}`,
+    bild: d.poster_path ? `https://image.tmdb.org/t/p/w500${d.poster_path}` : null, news: [],
+  };
+  return key;
+}
+
 // ---------- Filme ----------
 async function filmIds(typen, max) {
   const ids = new Map();
@@ -60,7 +87,7 @@ async function filmIds(typen, max) {
   return [...ids.keys()];
 }
 async function filmEintraege(ids, typ, nachTyp) {
-  const filme = await parallel(ids, (id) => tmdb(`/movie/${id}`, { append_to_response: 'release_dates,watch/providers' }));
+  const filme = await parallel(ids, (id) => tmdb(`/movie/${id}`, { append_to_response: 'release_dates,watch/providers,videos,credits', include_video_language: 'de,en,null' }));
   const out = [];
   for (const m of filme) {
     const de = (m.release_dates?.results || []).find((r) => r.iso_3166_1 === REGION)?.release_dates || [];
@@ -70,7 +97,7 @@ async function filmEintraege(ids, typ, nachTyp) {
     out.push({
       id: `movie-${m.id}-${typ}`, art: 'film', typ, titel: m.title, datum: termine[0],
       text: typ === 'kino' ? 'Kinostart' : 'Streaming/Digital', jahr: (m.release_date || '').slice(0, 4),
-      bild: bild(m.poster_path), anbieter: anbieter(m), link: `https://www.themoviedb.org/movie/${m.id}`, pop: m.popularity,
+      bild: bild(m.poster_path), anbieter: anbieter(m), link: `https://www.themoviedb.org/movie/${m.id}`, pop: m.popularity, info: merkeInfo(`movie-${m.id}`, m, true),
     });
   }
   return out;
@@ -88,7 +115,7 @@ async function serieIds() {
   return [...ids.keys()];
 }
 async function serienEintraege(ids) {
-  const serien = await parallel(ids, (id) => tmdb(`/tv/${id}`, { append_to_response: 'watch/providers' }));
+  const serien = await parallel(ids, (id) => tmdb(`/tv/${id}`, { append_to_response: 'watch/providers,videos,credits', include_video_language: 'de,en,null' }));
   const starts = [];
   const kandidaten = [];
   const folgenBis = tag(new Date(heute.getTime() + TAGE_FOLGEN * 864e5));
@@ -104,7 +131,7 @@ async function serienEintraege(ids) {
       starts.push({
         id: `tv-${s.id}-s${st.season_number}`, art: 'serie', typ: neu ? 'serienstart' : 'staffelstart', titel: s.name, datum: st.air_date,
         text: neu ? 'Neue Serie' : `Staffel ${st.season_number}`, jahr: (s.first_air_date || '').slice(0, 4),
-        bild: bild(st.poster_path || s.poster_path), anbieter: wo, link: `https://www.themoviedb.org/tv/${s.id}`, pop: s.popularity,
+        bild: bild(st.poster_path || s.poster_path), anbieter: wo, link: `https://www.themoviedb.org/tv/${s.id}`, pop: s.popularity, info: merkeInfo(`tv-${s.id}`, s, false),
       });
     }
     // Staffeln, aus denen in den nächsten Wochen Folgen laufen
@@ -130,7 +157,7 @@ async function serienEintraege(ids) {
         const text = eps.length > 1 ? `Staffel ${n} · Folgen ${eps[0].episode_number}–${eps.at(-1).episode_number}` : `S${n}E${eps[0].episode_number}${eps[0].name && !/^(Folge|Episode) \d+$/i.test(eps[0].name) ? ` · ${eps[0].name}` : ''}`;
         folgen.push({
           id: `tv-${s.id}-s${n}-${datum}`, art: 'serie', typ: 'folge', titel: s.name, datum, text, jahr: (s.first_air_date || '').slice(0, 4),
-          bild: bild(s.poster_path), anbieter: wo, link: `https://www.themoviedb.org/tv/${s.id}`, pop: s.popularity,
+          bild: bild(s.poster_path), anbieter: wo, link: `https://www.themoviedb.org/tv/${s.id}`, pop: s.popularity, info: merkeInfo(`tv-${s.id}`, s, false),
         });
       }
     }
@@ -147,10 +174,48 @@ const eintraege = [...sortiere(kino).slice(0, MAX_KINO), ...serien, ...folgen]
   .map(({ pop, ...rest }) => ({ ...rest, anbieter: eindeutig(rest.anbieter) }))
   .sort((a, b) => a.datum.localeCompare(b.datum) || a.titel.localeCompare(b.titel, 'de'));
 
-const neu = JSON.stringify({ von, bis, eintraege }, null, 1);
+// ---------- News: offizielle Feeds seriöser Film-/Serien-Redaktionen, 30 Tage gesammelt ----------
+const FEEDS = [
+  ['Moviepilot', 'https://www.moviepilot.de/rss/news'], ['Serienjunkies', 'https://www.serienjunkies.de/rss/news.xml'],
+  ['DWDL', 'https://www.dwdl.de/rss/allethemen.xml'], ['Spiegel Kultur', 'https://www.spiegel.de/kultur/kino/index.rss'],
+  ['Variety', 'https://variety.com/feed/'], ['Deadline', 'https://deadline.com/feed/'], ['The Hollywood Reporter', 'https://www.hollywoodreporter.com/feed/'],
+  ['IndieWire', 'https://www.indiewire.com/feed/'], ['Collider', 'https://collider.com/feed/'],
+];
+const ARCHIV = path.resolve(import.meta.dirname, '../src/data/news-archiv.json');
+const ent = (t) => t.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/<[^>]+>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#0?39;|&apos;|&#8217;/g, '’').replace(/&#8216;/g, '‘').replace(/&#8220;|&#8221;/g, '"').replace(/&#8211;/g, '–').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&#\d+;/g, '').trim();
+async function feed([quelle, url]) {
+  const r = await fetch(url, { headers: { 'user-agent': 'Mozilla/5.0 (Kestrel; +https://kestrel-2tf.pages.dev)' } });
+  if (!r.ok) throw new Error(`${quelle} ${r.status}`);
+  const x = await r.text();
+  return [...x.matchAll(/<item[\s>][\s\S]*?<\/item>/g)].map(([it]) => {
+    const g = (t) => it.match(new RegExp(`<${t}[^>]*>([\\s\\S]*?)<\/${t}>`))?.[1] || '';
+    const datum = new Date(g('pubDate') || g('dc:date') || Date.now());
+    return { quelle, titel: ent(g('title')), link: ent(g('link')), datum: isNaN(datum) ? new Date().toISOString() : datum.toISOString() };
+  }).filter((n) => n.titel && /^https?:/.test(n.link));
+}
+const altArchiv = fs.existsSync(ARCHIV) ? JSON.parse(fs.readFileSync(ARCHIV, 'utf8')) : [];
+const frisch = (await Promise.all(FEEDS.map((f) => feed(f).catch((e) => { console.warn('Feed:', e.message); return []; })))).flat();
+const grenze = new Date(Date.now() - 30 * 864e5).toISOString();
+const archiv = [...new Map([...altArchiv, ...frisch].map((n) => [n.link, n])).values()].filter((n) => n.datum >= grenze).sort((a, b) => b.datum.localeCompare(a.datum));
+fs.writeFileSync(ARCHIV, JSON.stringify(archiv, null, 1) + '\n');
+
+// Zuordnung: Titel (deutsch oder Original) muss als ganzes Wort in der Überschrift stehen.
+// Kurze Ein-Wort-Titel ("Buddy", "Wicker") brauchen zusätzlich ein Film-/Serien-Wort, sonst zu viele Fehltreffer.
+const KONTEXT = /\b(film|serie|staffel|trailer|kino|movie|series|season|episode|teaser|netflix|disney|prime|hbo|apple tv|paramount)/i;
+const esc = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+for (const info of Object.values(INFOS)) {
+  const namen = [...new Set([info.titel, info.original].filter((n) => n && n.length >= 3))];
+  info.news = archiv.filter((n) => namen.some((name) => {
+    if (!new RegExp(`(^|[^\\p{L}\\p{N}])${esc(name)}($|[^\\p{L}\\p{N}])`, 'iu').test(n.titel)) return false;
+    const kern = name.replace(/^(the|a|an|der|die|das|ein|eine)\s+/i, '');
+    return (kern.includes(' ') || kern.length >= 9) || KONTEXT.test(n.titel);
+  })).slice(0, 5);
+}
+
+const neu = JSON.stringify({ von, bis, eintraege, infos: INFOS }, null, 1);
 // Nur schreiben, wenn sich etwas geändert hat (sonst ein Commit pro Tag nur wegen des Datums).
 const alt = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, 'utf8')) : null;
-if (!alt || JSON.stringify(alt.eintraege) !== JSON.stringify(eintraege)) {
+if (!alt || JSON.stringify([alt.eintraege, alt.infos]) !== JSON.stringify([eintraege, INFOS])) {
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, neu + '\n');
   console.log(`geschrieben: ${eintraege.length} Einträge (Kino ${kino.length}, Serien- und Staffelstarts ${serien.length}, Folgen ${folgen.length})`);

@@ -22,5 +22,5 @@ jobs:
         run: |
           git config user.name "Kestrel Termine"
           git config user.email "actions@users.noreply.github.com"
-          git add src/data/demnaechst.json
+          git add src/data/demnaechst.json src/data/news-archiv.json
           git diff --cached --quiet || (git commit -m "Termine aktualisiert ($(date -u +%d.%m.%Y))" && git pull --rebase -q && git push)

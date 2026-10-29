@@ -2,7 +2,8 @@
 import Base from '../layouts/Base.astro';
 import daten from '../data/demnaechst.json';
 
-type Eintrag = { id: string; art: 'film' | 'serie'; typ: string; titel: string; datum: string; text: string; bild: string | null; anbieter: string[]; link: string };
+type Eintrag = { id: string; art: 'film' | 'serie'; typ: string; titel: string; datum: string; text: string; bild: string | null; anbieter: string[]; link: string; info?: string };
+const infos = (daten as { infos?: Record<string, unknown> }).infos || {};
 const heute = new Date().toISOString().slice(0, 10);
 const eintraege = (daten.eintraege as Eintrag[]).filter((e) => e.datum >= heute);
 const tagFmt = new Intl.DateTimeFormat('de-DE', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
@@ -33,12 +34,14 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
           <ul class="liste">
             {liste.map((e) => (
               <li class="eintrag" data-medium={e.art} data-f={e.typ === 'kino' ? 'kino' : 'serie'}>
-                <span class="poster">{e.bild && <img src={e.bild} alt="" loading="lazy" width="56" height="84" />}</span>
-                <div class="mitte">
-                  <span class="meta mono">{ART[e.typ]} · {e.text}</span>
-                  <a class="titel" href={e.link} target="_blank" rel="noopener">{e.titel}</a>
-                  {e.anbieter.length > 0 && <span class="anbieter mono">{e.anbieter.join(' · ')}</span>}
-                </div>
+                <button type="button" class="karte" data-info={e.info} data-termin={`${tagFmt.format(new Date(e.datum + 'T12:00:00Z'))} · ${e.text}`} data-art={ART[e.typ]} data-anbieter={e.anbieter.join(' · ')} data-medium={e.art} aria-haspopup="dialog">
+                  <span class="poster">{e.bild && <img src={e.bild} alt="" loading="lazy" width="56" height="84" />}</span>
+                  <span class="mitte">
+                    <span class="meta mono">{ART[e.typ]} · {e.text}</span>
+                    <span class="titel">{e.titel}</span>
+                    {e.anbieter.length > 0 && <span class="anbieter mono">{e.anbieter.join(' · ')}</span>}
+                  </span>
+                </button>
               </li>
             ))}
           </ul>
@@ -52,7 +55,30 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
       <ul class="liste" id="merk-liste"></ul>
     </section>
 
-    <p class="wrap quelle mono">Termine für Deutschland, Daten von TMDB. Diese Seite nutzt die TMDB-API, ist aber nicht von TMDB bestätigt oder zertifiziert. Starttermine können sich kurzfristig ändern.</p>
+    <dialog class="box" id="box" aria-labelledby="box-titel">
+      <button type="button" class="box-zu" id="box-zu" aria-label="Schließen">×</button>
+      <div class="box-kopf">
+        <img class="box-bild" id="box-bild" alt="" />
+        <div class="box-kern">
+          <p class="meta mono" id="box-meta"></p>
+          <h2 class="box-titel" id="box-titel"></h2>
+          <p class="box-leit" id="box-leit"></p>
+          <p class="box-termin mono" id="box-termin"></p>
+          <p class="box-anbieter mono" id="box-anbieter"></p>
+        </div>
+      </div>
+      <p class="box-genres" id="box-genres"></p>
+      <p class="box-handlung" id="box-handlung"></p>
+      <dl class="box-fakten" id="box-fakten"></dl>
+      <p class="box-knoepfe" id="box-knoepfe"></p>
+      <section class="box-news" id="box-news" aria-labelledby="box-news-h">
+        <h3 id="box-news-h" class="mono">Aktuelle News</h3>
+        <ul id="box-news-liste"></ul>
+      </section>
+    </dialog>
+    <script type="application/json" id="infos" set:html={JSON.stringify(infos)} />
+
+    <p class="wrap quelle mono">News kommen aus den öffentlichen Feeds von Moviepilot, Serienjunkies, DWDL, Spiegel Kultur, Variety, Deadline, The Hollywood Reporter, IndieWire und Collider und werden täglich neu zugeordnet. Termine für Deutschland, Daten von TMDB. Diese Seite nutzt die TMDB-API, ist aber nicht von TMDB bestätigt oder zertifiziert. Starttermine können sich kurzfristig ändern.</p>
   </div>
 </Base>
 
@@ -80,6 +106,41 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
   const ausAdresse = new URLSearchParams(location.search).get('f');
   anwenden(ausAdresse === 'kino' || ausAdresse === 'serie' ? ausAdresse : 'alle');
   window.addEventListener('pageshow', (e) => { if (e.persisted) anwenden(aktuell()); });
+
+  // Info-Box: Klick auf einen Titel öffnet Details, Trailer, TMDB-Link und aktuelle News
+  type Info = { titel: string; original?: string; leitsatz?: string; handlung?: string; genres: string[]; fakten: [string, string][]; trailer?: string; link: string; bild?: string; news: { quelle: string; titel: string; link: string; datum: string }[] };
+  const INFOS: Record<string, Info> = JSON.parse(document.getElementById('infos')!.textContent || '{}');
+  const box = document.getElementById('box') as HTMLDialogElement;
+  const $ = (id: string) => document.getElementById(id)!;
+  const neu = (t: string, c?: string, x?: string) => { const n = document.createElement(t); if (c) n.className = c; if (x != null) n.textContent = x; return n; };
+  const relativ = (iso: string) => { const t = Math.floor((Date.now() - Date.parse(iso)) / 864e5); return t <= 0 ? 'heute' : t === 1 ? 'gestern' : `vor ${t} Tagen`; };
+  document.querySelectorAll<HTMLButtonElement>('.karte').forEach((k) => k.addEventListener('click', () => {
+    const i = INFOS[k.dataset.info || ''];
+    if (!i) return;
+    box.dataset.medium = k.dataset.medium || '';
+    const img = $('box-bild') as HTMLImageElement; img.hidden = !i.bild; if (i.bild) img.src = i.bild;
+    $('box-meta').textContent = `${k.dataset.art}${i.original && i.original !== i.titel ? ` · ${i.original}` : ''}`;
+    $('box-titel').textContent = i.titel;
+    $('box-leit').textContent = i.leitsatz || ''; $('box-leit').hidden = !i.leitsatz;
+    $('box-termin').textContent = k.dataset.termin || '';
+    $('box-anbieter').textContent = k.dataset.anbieter ? `Bei ${k.dataset.anbieter}` : ''; $('box-anbieter').hidden = !k.dataset.anbieter;
+    $('box-genres').replaceChildren(...i.genres.map((g) => neu('span', 'genre mono', g)));
+    $('box-handlung').textContent = i.handlung || 'Noch keine Beschreibung vorhanden.';
+    $('box-fakten').replaceChildren(...i.fakten.map(([a, b]) => { const d = neu('div'); d.append(neu('dt', 'mono', a), neu('dd', '', b)); return d; }));
+    const kn = $('box-knoepfe'); kn.replaceChildren();
+    const link = (txt: string, href: string, cls: string) => { const a = neu('a', cls, txt) as HTMLAnchorElement; a.href = href; a.target = '_blank'; a.rel = 'noopener'; kn.append(a); };
+    if (i.trailer) link('▶ Trailer ansehen', i.trailer, 'knopf');
+    link('Mehr bei TMDB', i.link, 'knopf leise');
+    const nl = $('box-news-liste'); nl.replaceChildren();
+    for (const n of i.news) {
+      const li = neu('li'); const a = neu('a', '', n.titel) as HTMLAnchorElement; a.href = n.link; a.target = '_blank'; a.rel = 'noopener';
+      li.append(a, neu('span', 'mono', `${n.quelle} · ${relativ(n.datum)}`)); nl.append(li);
+    }
+    if (!i.news.length) nl.append(neu('li', 'leer mono', 'Gerade keine aktuellen Meldungen.'));
+    box.showModal();
+  }));
+  $('box-zu').addEventListener('click', () => box.close());
+  box.addEventListener('click', (e) => { if (e.target === box) box.close(); }); // Klick neben die Box schließt
 
   // Meine Merkliste (öffentliche Einträge, nur lesen)
   type M = { medium: string; titel: string; bild?: string; status?: string; termine: { datum: string; text: string }[] };
@@ -114,6 +175,46 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .tag-name::after { content: ''; flex: 1; border-top: 2px dashed var(--rule); }
 .dem .liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
 .dem .eintrag { display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; background: var(--card); color: var(--card-ink); border-radius: 4px; padding: 9px 12px 9px 9px; box-shadow: var(--shadow); }
+.dem .eintrag:has(.karte) { padding: 0; display: block; }
+.dem .karte { all: unset; box-sizing: border-box; width: 100%; display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: center; padding: 9px 12px 9px 9px; border-radius: 4px; cursor: pointer; transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1); }
+.dem .karte:hover { transform: translateY(-2px); }
+.dem .eintrag:has(.karte:hover) { box-shadow: var(--shadow-lift); }
+.dem .karte:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+/* Info-Box */
+.dem .box { width: min(720px, calc(100vw - 32px)); max-height: calc(100vh - 48px); padding: 24px; border: 0; border-radius: 10px; background: var(--paper); color: var(--ink); box-shadow: 0 30px 80px -20px rgb(0 0 0 / 0.6); overflow: auto; }
+.dem .box::backdrop { background: rgb(10 12 14 / 0.55); backdrop-filter: blur(4px); }
+.dem .box[open] { animation: box-auf 320ms cubic-bezier(0.16, 1, 0.3, 1); }
+.dem .box[open]::backdrop { animation: box-hinter 240ms ease; }
+@keyframes box-auf { from { opacity: 0; transform: translateY(14px) scale(0.98); } }
+@keyframes box-hinter { from { opacity: 0; } }
+.dem .box-zu { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; padding: 0; border-radius: 50%; font-size: 1.5rem; line-height: 1; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); box-shadow: none; }
+.dem .box-kopf { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: start; margin-bottom: 16px; }
+.dem .box-bild { width: 120px; border-radius: 4px; box-shadow: var(--shadow); }
+.dem .box-kopf:has(.box-bild[hidden]) { grid-template-columns: 1fr; }
+.dem .box-kern > * { margin: 0 0 6px; }
+.dem .box-titel { font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 0.92; margin: 4px 0 8px; padding-right: 36px; }
+.dem .box-leit { font-style: italic; }
+.dem .box-termin { font-weight: 700; font-size: 0.82rem; }
+.dem .box-anbieter { font-size: 0.78rem; color: var(--ink-2); }
+.dem .box-genres { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+.dem .genre { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 9px; border-radius: 999px; background: color-mix(in srgb, var(--ink) 9%, transparent); }
+.dem .box-handlung { line-height: 1.6; margin: 0 0 16px; }
+.dem .box-fakten { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px 20px; margin: 0 0 18px; }
+.dem .box-fakten dt { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-2); }
+.dem .box-fakten dd { margin: 2px 0 0; font-size: 0.95rem; }
+.dem .box-knoepfe { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 20px; }
+.dem .knopf { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1rem; text-decoration: none; padding: 10px 16px 9px; border-radius: 4px; background: var(--ink); color: var(--ground); }
+.dem .knopf.leise { background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
+.dem .box[data-medium='film'] .knopf:not(.leise) { background: var(--film); color: var(--film-ink); }
+.dem .box[data-medium='serie'] .knopf:not(.leise) { background: var(--serie); color: var(--serie-ink); }
+.dem .box-news { border-top: 2px dashed var(--rule); padding-top: 14px; }
+.dem .box-news h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px; color: var(--ink-2); }
+.dem .box-news ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.dem .box-news li { display: grid; gap: 2px; }
+.dem .box-news a { color: var(--ink); font-weight: 600; line-height: 1.35; }
+.dem .box-news span { font-size: 0.72rem; color: var(--ink-2); }
+@media (max-width: 560px) { .dem .box { padding: 18px; } .dem .box-kopf { grid-template-columns: 84px 1fr; gap: 14px; } .dem .box-bild { width: 84px; } }
 .dem .poster { width: 56px; height: 84px; border-radius: 2px; background: color-mix(in srgb, currentColor 15%, transparent); overflow: hidden; display: block; }
 .dem .poster img { width: 100%; height: 100%; object-fit: cover; }
 .dem .mitte { display: grid; gap: 3px; min-width: 0; }
