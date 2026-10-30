@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Pille from '../components/Pille.astro';
 import Meldungen from '../components/Meldungen.astro';
+import Fuss from '../components/Fuss.astro';
 
 interface Props {
   title?: string;
@@ -61,16 +62,7 @@ Red Hat Mono für kleine Kennzeilen; Wertungen als große, leichte Kennzahlen; M
     <main id="inhalt">
       <slot />
     </main>
-    <footer class="wrap"><div class="site-foot">
-      <div class="foot-marke">
-        <a class="wordmark" href="/" aria-label="Kestrel, Startseite"><span class="wordmark-stub mono" aria-hidden="true">Nº</span><span class="wordmark-name">Kestrel</span></a>
-        <p>Spiele, Filme und Serien von Kevin. Eine Skala für alles, Wertungen bleiben stehen.</p>
-        <p class="mono klein">© {new Date().getFullYear()} Kestrel</p>
-      </div>
-      <nav class="foot-spalte" aria-label="Lesen"><p>Lesen</p><a href="/">Neueste</a><a href="/texte/">Alle Texte</a></nav>
-      <nav class="foot-spalte" aria-label="Termine"><p>Termine</p><a href="/demnaechst/">Demnächst</a><a href="/demnaechst/?f=kino">Kinostarts</a></nav>
-      <nav class="foot-spalte" aria-label="Rückblick"><p>Rückblick</p><a href="/archiv/">Archiv</a><a href="/wie-ich-werte/">Wie ich werte</a></nav>
-    </div></footer>
+    <Fuss />
     <script>
       const root = document.documentElement;
       const btn = document.getElementById('theme')!;
@@ -169,17 +161,4 @@ Red Hat Mono für kleine Kennzeilen; Wertungen als große, leichte Kennzahlen; M
   }
   .wordmark:hover .wordmark-name, .wordmark:hover .wordmark-stub { background: #b02c24; }
 
-  .site-foot {
-    margin-top: clamp(56px, 8vw, 96px); padding-top: 40px; padding-bottom: 72px; /* Platz für die Uhr unten rechts */
-    display: grid; grid-template-columns: minmax(0, 2fr) repeat(3, minmax(0, 1fr)); gap: 32px;
-    background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px) top / 100% 1px no-repeat;
-    color: var(--ink-2); font-size: 0.88rem;
-  }
-  .foot-marke p { margin: 14px 0 0; max-width: 34ch; line-height: 1.5; }
-  .foot-marke .klein { font-size: 0.72rem; }
-  .foot-spalte { display: grid; align-content: start; gap: 8px; }
-  .foot-spalte p { margin: 0 0 4px; color: var(--ink); font-weight: 500; }
-  .foot-spalte a { text-decoration: none; }
-  .foot-spalte a:hover { color: var(--ink); }
-  @media (max-width: 720px) { .site-foot { grid-template-columns: 1fr 1fr; } .foot-marke { grid-column: 1 / -1; } }
 </style>

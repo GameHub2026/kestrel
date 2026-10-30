@@ -32,7 +32,7 @@ const gruppen = [
         ))}
       </fieldset>
     ))}
-    <p class="count mono" aria-live="polite"><span id="anzahl">{texte.length}</span> von {texte.length} Karten</p>
+    <p class="count mono" aria-live="polite"><button type="button" class="suche-chip" id="suche-chip" hidden></button><span id="anzahl">{texte.length}</span> von {texte.length} Karten</p>
   </form>
 
   <ol class="list wrap" id="liste">
@@ -51,20 +51,27 @@ const gruppen = [
   const anzahl = document.getElementById('anzahl')!;
   const leer = document.getElementById('leer')!;
   const namen = ['medium', 'textform', 'jahr'];
+  // Suche aus dem Footer (/texte/?q=…): filtert nach Titel und Kurztext
+  let such = (new URLSearchParams(location.search).get('q') || '').trim();
+  const chip = document.getElementById('suche-chip')!;
+  const zeigeChip = () => { chip.hidden = !such; chip.textContent = such ? `„${such}“ ×` : ''; chip.setAttribute('aria-label', `Suche nach ${such} entfernen`); };
+  chip.addEventListener('click', () => { such = ''; apply(); });
 
   function apply(push = true) {
     const fd = new FormData(form);
     let n = 0;
     for (const li of items) {
-      const ok = namen.every((k) => !fd.get(k) || li.dataset[k] === fd.get(k));
+      const ok = namen.every((k) => !fd.get(k) || li.dataset[k] === fd.get(k)) && (!such || (li.textContent || '').toLocaleLowerCase('de').includes(such.toLocaleLowerCase('de')));
       li.hidden = !ok;
       if (ok) n++;
     }
     anzahl.textContent = String(n);
     leer.hidden = n > 0 || items.length === 0;
+    zeigeChip();
     if (push) {
       const q = new URLSearchParams();
       for (const k of namen) if (fd.get(k)) q.set(k, String(fd.get(k)));
+      if (such) q.set('q', such);
       history.replaceState(null, '', q.size ? `?${q}` : location.pathname);
     }
   }
@@ -76,7 +83,7 @@ const gruppen = [
     if (input) input.checked = true;
   }
   form.addEventListener('change', () => apply());
-  document.getElementById('reset')!.addEventListener('click', () => { form.reset(); apply(); });
+  document.getElementById('reset')!.addEventListener('click', () => { form.reset(); such = ''; apply(); });
   apply(false);
 </script>
 
@@ -101,7 +108,9 @@ const gruppen = [
   label:hover input:not(:checked) + span { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
   label[data-medium] input:checked + span { background: var(--ink); color: var(--ground); }
   label input:focus-visible + span { outline: 3px solid var(--focus); outline-offset: 3px; }
-  .count { margin: 0 0 6px auto; font-size: 0.8rem; color: var(--ink-2); }
+  .count { margin: 0 0 6px auto; font-size: 0.8rem; color: var(--ink-2); display: flex; align-items: center; gap: 10px; }
+  .suche-chip { font: inherit; font-size: 0.8rem; border: 0; cursor: pointer; padding: 5px 11px; border-radius: 999px; background: var(--ink); color: var(--ground); }
+  .suche-chip[hidden] { display: none; }
 
   .list { list-style: none; margin: 0 auto; padding-top: 0; padding-bottom: 0; display: grid; gap: 14px; }
   .none { padding-top: 32px; padding-bottom: 32px; font-size: 1.1rem; }

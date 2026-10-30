@@ -28,9 +28,8 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 
   <div class="dem">
     <nav class="wrap tabs" aria-label="Filter">
-      <button type="button" data-f="alle" aria-pressed="true"><Fragment set:html={ic('alle')} /><span>Alles</span></button>
-      <button type="button" data-f="kino" data-medium="film" aria-pressed="false"><Fragment set:html={ic('kino')} /><span>Kino</span></button>
-      <button type="button" data-f="serie" data-medium="serie" aria-pressed="false"><Fragment set:html={ic('serie')} /><span>Serien</span></button>
+      <button type="button" data-f="kino" data-medium="film" aria-pressed="true"><Fragment set:html={ic('kino')} /><span>Kino</span></button>
+      <button type="button" data-f="serie" data-medium="serie" aria-pressed="true"><Fragment set:html={ic('serie')} /><span>Serien</span></button>
       <!-- Genre: Knopf mit dunkler Tafel, Bewegung wie die Leiste links (gleitet auf, Inhalt kommt aus der Unschärfe) -->
       <div class="gw" id="gw">
         <button type="button" class="gw-knopf" id="gw-knopf" aria-haspopup="menu" aria-expanded="false" aria-controls="gw-tafel">
@@ -117,7 +116,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
   const bereich = document.getElementById('termine')!;
   const leer = document.createElement('p');
   leer.className = 'leer mono'; leer.textContent = 'Dazu steht gerade nichts an.';
-  // Genre-Tafel: zeigt die Genres, die im gewählten Bereich (Alles/Kino/Serien) vorkommen
+  // Genre-Tafel: zeigt die Genres, die im gewählten Bereich (Kino und/oder Serien) vorkommen
   const gw = document.getElementById('gw')!, gwKnopf = document.getElementById('gw-knopf')!, gwListe = document.getElementById('gw-liste')!;
   let genre = '';
   const alleLi = [...bereich.querySelectorAll<HTMLElement>('.eintrag')];
@@ -169,8 +168,9 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
     }
   });
   gw.addEventListener('focusout', (e) => { if (!gw.contains(e.relatedTarget as Node)) schliessen(true); });
+  // Kino und Serien sind zwei Schalter; beide an = alles. Der letzte aktive lässt sich nicht abschalten.
   function anwenden(f: string) {
-    knoepfe.forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.f === f)));
+    knoepfe.forEach((x) => x.setAttribute('aria-pressed', String(f === 'alle' || x.dataset.f === f)));
     genreLeiste(f);
     let sichtbar = 0;
     bereich.querySelectorAll<HTMLElement>('[data-tag]').forEach((tag) => {
@@ -183,8 +183,13 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
     });
     if (sichtbar === 0 && bereich.querySelector('[data-tag]')) bereich.append(leer); else leer.remove();
   }
-  const aktuell = () => knoepfe.find((b) => b.getAttribute('aria-pressed') === 'true')?.dataset.f || 'alle';
-  knoepfe.forEach((b) => b.addEventListener('click', () => anwenden(b.dataset.f!)));
+  const aktuell = () => { const an = knoepfe.filter((b) => b.getAttribute('aria-pressed') === 'true'); return an.length === 1 ? an[0].dataset.f! : 'alle'; };
+  knoepfe.forEach((b) => b.addEventListener('click', () => {
+    const an = new Set(knoepfe.filter((x) => x.getAttribute('aria-pressed') === 'true').map((x) => x.dataset.f!));
+    const f = b.dataset.f!;
+    if (an.has(f)) { if (an.size === 1) return; an.delete(f); } else an.add(f);
+    anwenden(an.size === 1 ? [...an][0] : 'alle');
+  }));
   const ausAdresse = new URLSearchParams(location.search).get('f');
   anwenden(ausAdresse === 'kino' || ausAdresse === 'serie' ? ausAdresse : 'alle');
   window.addEventListener('pageshow', (e) => { if (e.persisted) anwenden(aktuell()); });

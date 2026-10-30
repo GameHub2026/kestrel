@@ -1,0 +1,239 @@
+---
+// Footer nach Vorlage: kobaltblaue Fläche mit Papierkorn, cremefarbene Schrift, Spalten mit kurzem Strich unter der
+// Überschrift, Suchfeld mit Pfeilknopf, rechts unten kursive Links. Darunter eine Landschaft im Kupferstich-Stil
+// (eigene Zeichnung: Hügelkette in Schraffur, Grasebene, ein Reiter), gezeichnet auf Canvas.
+import { ic } from '../icons';
+const jahr = new Date().getFullYear();
+---
+<footer class="fuss" aria-labelledby="fuss-marke">
+  <div class="fuss-innen wrap">
+    <div class="fuss-marke">
+      <a class="fuss-logo" href="/" id="fuss-marke" aria-label="Kestrel, Startseite">
+        <svg class="fuss-stern" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 1.5c.9 8.8 3.4 14.2 7.4 16.2 2.4 1.2 6.1 1.9 11.1 2.3-5 .4-8.7 1.1-11.1 2.3-4 2-6.5 7.4-7.4 16.2-.9-8.8-3.4-14.2-7.4-16.2C10.2 21.1 6.5 20.4 1.5 20c5-.4 8.7-1.1 11.1-2.3 4-2 6.5-7.4 7.4-16.2Z"/></svg>
+        <span>kestrel</span>
+      </a>
+      <p class="fuss-leit">Spiele, Filme und Serien, ehrlich bewertet. Eine Skala für alles, und alte Wertungen bleiben stehen.</p>
+      <ul class="fuss-fakten">
+        <li><Fragment set:html={ic('stern')} />Wertung von 1 bis 10</li>
+        <li><Fragment set:html={ic('kalender')} />Termine täglich aktuell</li>
+        <li><Fragment set:html={ic('ort')} />Deutschland</li>
+      </ul>
+      <p class="fuss-symbole">
+        <a href="/texte/" aria-label="Alle Texte" title="Alle Texte"><Fragment set:html={ic('text')} /></a>
+        <a href="/demnaechst/" aria-label="Demnächst" title="Demnächst"><Fragment set:html={ic('kalender')} /></a>
+        <a href="/archiv/" aria-label="Archiv" title="Archiv"><Fragment set:html={ic('rueckblick')} /></a>
+        <a href="/wie-ich-werte/" aria-label="Wie ich werte" title="Wie ich werte"><Fragment set:html={ic('waage')} /></a>
+      </p>
+    </div>
+
+    <nav class="fuss-spalte" aria-label="Lesen"><h2>Lesen</h2><a href="/">Neueste</a><a href="/texte/">Alle Texte</a><a href="/texte/?textform=test">Tests</a><a href="/texte/?textform=kurzkritik">Kurzkritiken</a></nav>
+    <nav class="fuss-spalte" aria-label="Termine"><h2>Termine</h2><a href="/demnaechst/">Demnächst</a><a href="/demnaechst/?f=kino">Kinostarts</a><a href="/demnaechst/?f=serie">Serienstarts</a></nav>
+    <nav class="fuss-spalte" aria-label="Rückblick"><h2>Rückblick</h2><a href="/archiv/">Archiv</a><a href="/archiv/spiele/">Spiele A–Z</a><a href="/archiv/filme/">Filme A–Z</a><a href="/archiv/serien/">Serien A–Z</a></nav>
+
+    <form class="fuss-suche" action="/texte/" method="get" role="search">
+      <h2>Suchen</h2>
+      <p>Einen Titel unter allen Texten finden, ob Spiel, Film oder Serie.</p>
+      <div class="fuss-feld">
+        <label class="visually-hidden" for="fuss-q">Titel suchen</label>
+        <input id="fuss-q" name="q" type="search" placeholder="Titel eingeben" autocomplete="off" required />
+        <button type="submit" aria-label="Suchen"><Fragment set:html={ic('pfeil')} /></button>
+      </div>
+    </form>
+
+    <p class="fuss-recht"><a href="/wie-ich-werte/">Wie ich werte</a><span aria-hidden="true">|</span><a href="/archiv/">Archiv</a><span aria-hidden="true">|</span><span>© {jahr} Kestrel</span></p>
+  </div>
+  <canvas class="fuss-land" aria-hidden="true"></canvas>
+</footer>
+
+<script>
+  import { rng, rauschen } from '../scripts/szene/motor';
+  const BLAU = '#1d3d9c', CREME = '#efe6cf';
+
+  function zeichne(cv: HTMLCanvasElement) {
+    const W = cv.clientWidth, H = cv.clientHeight;
+    if (!W || !H) return;
+    const dpr = Math.min(2, devicePixelRatio || 1);
+    cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+    const c = cv.getContext('2d')!;
+    c.setTransform(dpr, 0, 0, dpr, 0, 0);
+    c.clearRect(0, 0, W, H);
+    const r = rng(1877);
+    const n1 = rauschen(rng(7), 4), n2 = rauschen(rng(31), 3);
+
+    // Zwei Bergreihen, hinten höher, vorn flache Kuppen; Schraffur folgt der Form, auf der Schattenseite dichter
+    const horizont = H * 0.5;
+    const kuppe = (u: number, m: number, b: number, h: number) => Math.exp(-((u - m) ** 2) / b) * h;
+    const hinten = (x: number) => { const u = x / W; return horizont - H * 0.07 - (kuppe(u, 0.08, 0.006, 0.12) + kuppe(u, 0.27, 0.01, 0.17) + kuppe(u, 0.47, 0.004, 0.09) + kuppe(u, 0.67, 0.014, 0.3) + kuppe(u, 0.9, 0.008, 0.16)) * H - n1(u * 11) * H * 0.045; };
+    const vorn = (x: number) => { const u = x / W; return horizont - H * 0.015 - (kuppe(u, 0.18, 0.02, 0.06) + kuppe(u, 0.52, 0.03, 0.05) + kuppe(u, 0.84, 0.02, 0.07)) * H - n2(u * 7) * H * 0.025; };
+    const reihe = (profil: (x: number) => number, unten: number, abstand: number, staerke: number) => {
+      c.fillStyle = CREME;
+      c.beginPath(); c.moveTo(0, H);
+      for (let x = 0; x <= W; x += 2) c.lineTo(x, profil(x));
+      c.lineTo(W, H); c.closePath(); c.fill();
+      c.strokeStyle = BLAU; c.lineCap = 'round';
+      let hoch = unten; for (let x = 0; x <= W; x += 8) hoch = Math.min(hoch, profil(x));
+      for (let k = 1; k * abstand < unten - hoch; k++) {
+        c.beginPath(); let zieht = false;
+        for (let x = 0; x <= W; x += 2) {
+          const top = profil(x);
+          const y = top + k * abstand * (1 + n2(x * 0.02 + k * 0.7) * 0.25);
+          const steig = (profil(x + 3) - profil(x - 3)) / 6; // >0: Hang fällt nach rechts ab = Schattenseite
+          const tief = Math.min(1, (y - top) / Math.max(8, unten - top));
+          const schatten = 0.5 + steig * 2.6 - tief * 0.2;
+          const an = y < unten && schatten > r() * 0.75;
+          if (an) { if (!zieht) { c.moveTo(x, y); zieht = true; } else c.lineTo(x, y); }
+          else if (zieht) { c.stroke(); c.beginPath(); zieht = false; }
+        }
+        if (zieht) c.stroke();
+      }
+      c.lineWidth = staerke;
+    };
+    c.lineWidth = 0.75; reihe(hinten, horizont, 2.4, 0.75);
+    c.lineWidth = 1.2; c.beginPath(); for (let x = 0; x <= W; x += 2) { const y = hinten(x); x ? c.lineTo(x, y) : c.moveTo(x, y); } c.stroke();
+    c.lineWidth = 0.7; reihe(vorn, horizont + 4, 3, 0.7);
+    c.lineWidth = 1; c.beginPath(); for (let x = 0; x <= W; x += 2) { const y = vorn(x); x ? c.lineTo(x, y) : c.moveTo(x, y); } c.stroke();
+    c.globalAlpha = 1;
+
+    // Ebene: waagrechte Strichel, nach vorn weiter auseinander (Perspektive)
+    for (let y = horizont; y < H; ) {
+      const tiefe = (y - horizont) / (H - horizont);
+      for (let x = -10; x < W; ) {
+        const len = 6 + r() * 30 * (0.3 + tiefe);
+        if (r() < 0.55) { c.globalAlpha = 0.35 + r() * 0.45; c.lineWidth = 0.6 + tiefe * 0.6; c.beginPath(); c.moveTo(x, y + r() * 1.5); c.lineTo(x + len, y + r() * 1.5); c.stroke(); }
+        x += len + 4 + r() * 14;
+      }
+      y += 2.2 + tiefe * tiefe * 9;
+    }
+    // Punkte (Stippling) für Körnung
+    for (let i = 0; i < W * 0.9; i++) {
+      const y = horizont + r() ** 1.4 * (H - horizont); const x = r() * W;
+      c.globalAlpha = 0.4 + r() * 0.5; c.fillStyle = BLAU; c.fillRect(x, y, 1, 1);
+    }
+    // Grasbüschel, vorn größer
+    for (let i = 0; i < 70; i++) {
+      const tiefe = r() ** 0.8; const y = horizont + 8 + tiefe * (H - horizont - 8);
+      const x = r() * W; const h = 3 + tiefe * tiefe * 22; const halme = 5 + Math.floor(tiefe * 7);
+      c.globalAlpha = 0.9; c.lineWidth = 0.7 + tiefe * 0.6;
+      for (let j = 0; j < halme; j++) {
+        const a = -Math.PI / 2 + (j / (halme - 1) - 0.5) * 1.5 + (r() - 0.5) * 0.3;
+        const l = h * (0.6 + r() * 0.5);
+        c.beginPath(); c.moveTo(x + (j - halme / 2) * 0.8, y);
+        c.quadraticCurveTo(x + Math.cos(a) * l * 0.5, y + Math.sin(a) * l * 0.6, x + Math.cos(a) * l, y + Math.sin(a) * l);
+        c.stroke();
+      }
+    }
+    c.globalAlpha = 1;
+
+    // Reiter: Pferd im Schritt, Reiter mit Hut, kurzer Schatten
+    const s = Math.max(0.6, Math.min(1.5, H / 210, W / 480));
+    const rx = W * 0.44, ry = horizont + (H - horizont) * (W < 900 ? 0.32 : 0.5);
+    c.save(); c.translate(rx, ry); c.scale(s, s);
+    c.fillStyle = BLAU; c.strokeStyle = BLAU; c.lineJoin = 'round'; c.lineCap = 'round';
+    c.globalAlpha = 0.5; c.lineWidth = 1; c.beginPath(); c.moveTo(-34, 2); c.lineTo(30, 2); c.stroke(); c.globalAlpha = 1;
+    c.beginPath(); // Pferd: Kruppe, Rücken, Hals, Kopf nach vorn unten, Brust, Bauch
+    c.moveTo(-21, -31);
+    c.bezierCurveTo(-12, -35, 2, -33, 11, -33);
+    c.bezierCurveTo(16, -36, 20, -42, 23, -47);
+    c.lineTo(24.5, -51); c.lineTo(26.5, -47.5);
+    c.bezierCurveTo(29, -45, 33, -40, 35.5, -36.5);
+    c.quadraticCurveTo(36, -33.5, 33, -33.5);
+    c.bezierCurveTo(30, -34, 27, -36, 25, -36);
+    c.bezierCurveTo(23, -31, 21, -25, 17, -21);
+    c.bezierCurveTo(8, -18, -6, -18, -14, -19.5);
+    c.bezierCurveTo(-21, -20, -25, -25, -21, -31);
+    c.closePath(); c.fill();
+    c.lineWidth = 2.4; // Beine im Schritt, mit Fesseln
+    for (const [x0, x1, x2] of [[-17, -20, -23], [-12, -9, -6], [13, 16, 20], [9, 7, 4]]) { c.beginPath(); c.moveTo(x0, -21); c.lineTo(x1, -10); c.lineTo(x2, -0.5); c.stroke(); }
+    c.lineWidth = 2.2; c.beginPath(); c.moveTo(-21, -29); c.bezierCurveTo(-27, -27, -29, -20, -28, -11); c.stroke(); // Schweif
+    c.lineWidth = 1.5; c.beginPath(); c.moveTo(22, -46); c.lineTo(15, -38); c.stroke(); // Mähne
+    c.beginPath(); // Reiter: Rumpf leicht nach vorn
+    c.moveTo(-5, -33); c.lineTo(-4, -47); c.bezierCurveTo(-3.5, -51, 3, -51, 3.5, -47); c.lineTo(4, -33); c.closePath(); c.fill();
+    c.beginPath(); c.arc(0.5, -54.5, 3.6, 0, Math.PI * 2); c.fill(); // Kopf
+    c.beginPath(); c.ellipse(0.5, -57.5, 7.5, 1.5, 0, 0, Math.PI * 2); c.fill(); c.fillRect(-2.6, -62, 6.2, 4.6); // Hut
+    c.lineWidth = 2.2; c.beginPath(); c.moveTo(0, -34); c.lineTo(3, -27); c.lineTo(1.5, -21); c.stroke(); // Bein mit Steigbügel
+    c.lineWidth = 1.6; c.beginPath(); c.moveTo(2, -45); c.lineTo(10, -39); c.stroke(); // Arm
+    c.lineWidth = 0.7; c.beginPath(); c.moveTo(10, -39); c.quadraticCurveTo(22, -41, 31, -37); c.stroke(); // Zügel
+    // ein paar helle Kerben am Bauch, wie gestochen
+    c.strokeStyle = CREME; c.lineWidth = 0.6; c.globalAlpha = 0.55;
+    for (let i = -12; i < 12; i += 3.5) { c.beginPath(); c.moveTo(i, -21.5); c.lineTo(i + 3, -24.5); c.stroke(); }
+    c.restore();
+  }
+
+  document.querySelectorAll<HTMLCanvasElement>('.fuss-land').forEach((cv) => {
+    let w = 0;
+    const neu = () => { if (cv.clientWidth !== w) { w = cv.clientWidth; zeichne(cv); } };
+    new ResizeObserver(neu).observe(cv);
+  });
+</script>
+
+<style>
+  .fuss {
+    --blau: #1d3d9c; --creme: #efe6cf;
+    position: relative; z-index: 1; margin-top: clamp(64px, 10vw, 120px); overflow: hidden;
+    background-color: var(--blau); color: var(--creme);
+    /* Papierkorn */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+  }
+  .fuss-innen {
+    display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr 1.7fr; gap: 40px 36px; align-items: start;
+    padding-top: clamp(48px, 7vw, 76px); padding-bottom: 28px;
+  }
+  .fuss a { color: inherit; text-decoration: none; }
+  .fuss-logo { display: inline-flex; align-items: center; gap: 12px; font-family: var(--text); font-size: 2rem; font-weight: 500; letter-spacing: -0.01em; line-height: 1; }
+  .fuss-stern { width: 34px; height: 34px; fill: var(--creme); }
+  .fuss-leit { margin: 18px 0 0; max-width: 30ch; font-style: italic; font-size: 0.98rem; line-height: 1.5; color: color-mix(in srgb, var(--creme) 88%, transparent); }
+  .fuss-fakten { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 8px; font-size: 0.92rem; }
+  .fuss-fakten li { display: flex; align-items: center; gap: 12px; }
+  .fuss-fakten :global(.ic) { width: 17px; height: 17px; }
+  .fuss-symbole { margin: 26px 0 0; display: flex; gap: 18px; }
+  .fuss-symbole a { display: grid; place-items: center; opacity: 0.85; transition: opacity 150ms, transform 200ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .fuss-symbole a:hover { opacity: 1; transform: translateY(-2px); }
+  .fuss-symbole :global(.ic) { width: 20px; height: 20px; }
+
+  .fuss h2 {
+    margin: 0 0 22px; position: relative; font-family: var(--text); font-weight: 500; text-transform: uppercase;
+    letter-spacing: 0.16em; font-size: 0.8rem; line-height: 1.2;
+  }
+  .fuss h2::after { content: ''; position: absolute; left: 0; bottom: -10px; width: 24px; height: 1px; background: var(--creme); }
+  .fuss-spalte { display: grid; align-content: start; gap: 9px; padding-top: 6px; }
+  .fuss-spalte a { font-size: 0.95rem; color: color-mix(in srgb, var(--creme) 88%, transparent); width: fit-content; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size 260ms cubic-bezier(0.16, 1, 0.3, 1), color 150ms; }
+  .fuss-spalte a:hover { color: var(--creme); background-size: 100% 1px; }
+
+  .fuss-suche { padding-top: 6px; }
+  .fuss-suche p { margin: 0 0 16px; font-style: italic; font-size: 0.95rem; line-height: 1.5; color: color-mix(in srgb, var(--creme) 88%, transparent); }
+  .fuss-feld { display: flex; border: 1px solid color-mix(in srgb, var(--creme) 70%, transparent); }
+  .fuss-feld input {
+    flex: 1; min-width: 0; height: 40px; padding: 0 12px; border: 0; border-radius: 0; background: transparent; color: var(--creme);
+    font: italic 0.92rem/1 var(--text);
+  }
+  .fuss-feld input::placeholder { color: color-mix(in srgb, var(--creme) 70%, transparent); }
+  .fuss-feld input:focus { outline: none; }
+  .fuss-feld:focus-within { border-color: var(--creme); }
+  .fuss-feld button { width: 40px; height: 40px; border: 0; border-radius: 0; display: grid; place-items: center; cursor: pointer; background: var(--creme); color: var(--blau); }
+  .fuss-feld button :global(.ic) { margin: 0; transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .fuss-feld button:hover :global(.ic) { transform: translateX(2px); }
+
+  .fuss-recht { grid-column: 1 / -1; justify-self: end; margin: 6px 0 0; display: flex; flex-wrap: wrap; gap: 14px; font-style: italic; font-size: 0.88rem; color: color-mix(in srgb, var(--creme) 88%, transparent); }
+  .fuss-recht span[aria-hidden] { opacity: 0.6; }
+  .fuss-recht a:hover { color: var(--creme); text-decoration: underline; text-underline-offset: 3px; }
+
+  .fuss-land { display: block; width: 100%; height: clamp(190px, 24vw, 340px); }
+  .fuss :focus-visible { outline: 2px solid var(--creme); outline-offset: 3px; }
+
+  /* Bei mittleren Breiten rückt die Seite für die Leiste links ein (body padding-left 64px); der Footer reicht trotzdem bis an den Rand */
+  @media (min-width: 901px) and (max-width: 1320px) {
+    .fuss { margin-left: -64px; padding-left: 64px; }
+    .fuss-land { margin-left: -64px; width: calc(100% + 64px); }
+  }
+  @media (max-width: 980px) {
+    .fuss-innen { grid-template-columns: 1fr 1fr 1fr; }
+    .fuss-marke { grid-column: 1 / -1; }
+    .fuss-suche { grid-column: 1 / -1; max-width: 420px; }
+    .fuss-recht { justify-self: start; }
+  }
+  /* Handy: die Leiste liegt unten auf der Landschaft, also die Ebene um ihre Höhe verlängern */
+  @media (max-width: 900px) { .fuss-land { height: calc(clamp(190px, 24vw, 340px) + 80px); } }
+  @media (max-width: 560px) {
+    .fuss-innen { grid-template-columns: 1fr 1fr; gap: 34px 24px; }
+  }
+</style>
