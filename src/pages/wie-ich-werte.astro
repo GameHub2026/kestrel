@@ -5,7 +5,7 @@ import { SKALA } from '../wertung';
 const stufen = Object.entries(SKALA).map(([n, s]) => [Number(n), s] as const).sort((a, b) => b[0] - a[0]);
 ---
 <Base title="Wie ich werte" description="Kevins Wertungsskala von 1 bis 10: ganze Zahlen, ein fester Satz pro Zahl, gleich für Spiele, Filme und Serien.">
-  <header class="page-head wrap" data-kicker="Über · Die Skala">
+  <header class="page-head wrap">
     <Szene thema="maschinen" />
     <h1>Wie ich werte</h1>
     <p>Ganze Zahlen von 1 bis 10, gleich für Spiele, Filme und Serien. Jede Zahl bedeutet immer dasselbe.</p>
@@ -43,14 +43,14 @@ const stufen = Object.entries(SKALA).map(([n, s]) => [Number(n), s] as const).so
     font-size: clamp(2rem, 3.6vw, 2.6rem); font-weight: 300; letter-spacing: -0.04em; text-align: left; font-variant-numeric: tabular-nums; line-height: 1;
     opacity: calc(1 - var(--i) * 0.055);
   }
-  .s { font-family: var(--display); font-weight: 400; font-size: clamp(1rem, 1.8vw, 1.2rem); line-height: 1.3; letter-spacing: -0.01em; text-wrap: balance; }
+  .s { font-family: var(--display); font-weight: 800; font-size: clamp(1rem, 1.8vw, 1.2rem); line-height: 1.3; letter-spacing: 0.01em; text-transform: uppercase; text-wrap: balance; }
 
   .rules { margin-top: clamp(32px, 5vw, 56px); }
-  .rules h2 { font-family: var(--display); font-weight: 500; letter-spacing: -0.015em; font-size: 1.2rem; line-height: 1; margin: 0 0 14px; }
+  .rules h2 { font-family: var(--display); font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase; font-size: 1.2rem; line-height: 1; margin: 0 0 14px; }
   .rules ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; max-width: 68ch; }
   .rules li { padding-left: 24px; position: relative; font-size: 1rem; }
   .rules li::before { content: ''; position: absolute; left: 0; top: 0.45em; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); }
-  .rules strong { display: block; font-family: var(--display); font-weight: 500; font-size: 1.05rem; letter-spacing: -0.015em; }
+  .rules strong { display: block; font-family: var(--display); font-weight: 800; font-size: 1.05rem; letter-spacing: 0.01em; text-transform: uppercase; }
 
   @media (max-width: 600px) {
     .roll li { grid-template-columns: 3.2rem 1fr; gap: 14px; }

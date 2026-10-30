@@ -1,8 +1,7 @@
 ---
-// Navigation in der Kopfleiste oben: Textlinks, Hell/Dunkel, schwarzer Knopf rechts (Schema: redaktionelle Landingpage).
-// Beim Überfahren gleitet EIN dunkles Schild waagrecht unter den Link; sein Inhalt (Kategorie + Unterpunkte)
+// Navigation als schlichte Leiste links (Vorbild: Kevins Video vom 28.10.2026): nur Symbole.
+// Beim Überfahren gleitet EIN dunkles Schild senkrecht zum Symbol; sein Inhalt (Kategorie + Unterpunkte)
 // wechselt mit weicher Unschärfe, Breite und Höhe wachsen mit. Alt+1…4 springt in die Kategorien.
-// Auf dem Handy wird daraus die Symbolleiste unten.
 const path = Astro.url.pathname;
 const I = {
   lesen: '<path d="M2 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H2z"/><path d="M22 5h-7a3 3 0 0 0-3 3v12a2 2 0 0 1 2-2h8z"/>',
@@ -56,7 +55,7 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
     {gruppen.map((g, i) => (
       <li data-id={g.id}>
         <a class="leiste-knopf" href={g.href} aria-label={g.label} aria-current={g.aktiv ? 'page' : undefined} data-taste={i + 1}>
-          <Fragment set:html={svg(g.icon)} /><span class="l-text">{g.label}</span>
+          <Fragment set:html={svg(g.icon)} />
         </a>
       </li>
     ))}
@@ -67,7 +66,6 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
     <svg class="t-sonne" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
     <svg class="t-mond" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
   </button>
-  <a class="cta" id="cta" href="/texte/">Alle Texte</a>
   <div class="schild" aria-hidden="true">
     {gruppen.map((g, i) => (
       <div class="schild-inhalt" data-fuer={g.id}>
@@ -91,8 +89,6 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
     let token = ''; try { token = localStorage.getItem('kestrel-merk-token') || ''; } catch {}
     if (!token) return;
     document.querySelectorAll<HTMLElement>('[data-privat]').forEach((li) => (li.hidden = false));
-    const cta = document.getElementById('cta') as HTMLAnchorElement | null;
-    if (cta) { cta.href = '/serien/'; cta.textContent = 'Ich folge'; }
     let c: { t: number; n: number; merk?: number; serien?: number } | null = null;
     try { c = JSON.parse(sessionStorage.getItem('kestrel-neu') || 'null'); if (!c || Date.now() - c.t > 600000 || c.merk == null) c = null; } catch {}
     if (!c) {
@@ -110,7 +106,6 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
       });
       document.querySelector('[data-id="ueber"] .leiste-knopf')?.classList.add('hat-neues');
       document.querySelector('[data-id="ueber"] .leiste-knopf')?.setAttribute('aria-label', `Über, ${n} Neuigkeiten auf der Merkliste`);
-      if (cta && c?.serien) { const z = document.createElement('span'); z.className = 'cta-zahl'; z.textContent = String(c.serien); cta.append(z); }
     }
   })();
 
@@ -132,7 +127,6 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
       // Schild auf Höhe des Symbols, Größe des neuen Inhalts
       const mitte = li.offsetTop + li.offsetHeight / 2;
       schild.style.setProperty('--y', `${mitte - 17}px`);
-      schild.style.setProperty('--x', `${li.offsetLeft - 6}px`);
       schild.style.width = `${inhalt.offsetWidth}px`;
       schild.style.height = `${inhalt.offsetHeight}px`;
       if (vorher < 0) { schild.classList.add('ohne-gleiten'); requestAnimationFrame(() => schild.classList.remove('ohne-gleiten')); }
@@ -167,60 +161,50 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
 </script>
 
 <style>
-  /* Kopfleiste: Textlinks in einer Reihe */
-  .leiste { position: relative; display: flex; align-items: center; gap: 2px; }
-  .leiste-reihe { list-style: none; margin: 0; padding: 0; display: flex; gap: 2px; }
-  .leiste-reihe li { position: relative; display: grid; align-items: center; }
+  .leiste { position: fixed; left: 18px; top: 50%; transform: translateY(-50%); z-index: 40; }
+  .leiste-reihe { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
   .leiste-knopf {
-    display: flex; align-items: center; gap: 8px; height: 34px; padding: 0 12px; border-radius: 6px; color: var(--ink-2);
-    text-decoration: none; font-size: 0.86rem; font-weight: 450; letter-spacing: -0.005em;
+    display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; color: var(--ink-2);
     transition: background-color 200ms ease, color 200ms ease;
   }
-  .leiste-knopf :global(svg) { display: none; width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
-  .leiste-knopf:hover, .leiste-knopf:focus-visible { color: var(--ink); background: color-mix(in srgb, var(--ink) 6%, transparent); outline: none; }
-  .leiste-knopf[aria-current='page'] { color: var(--ink); }
-  .leiste-knopf[aria-current='page']::after { content: ''; position: absolute; left: 12px; right: 12px; bottom: -13px; height: 1px; background: var(--ink); }
+  .leiste-knopf :global(svg) { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .leiste-knopf:hover, .leiste-knopf:focus-visible { color: var(--ink); background: color-mix(in srgb, var(--ink) 9%, transparent); outline: none; }
+  .leiste-knopf[aria-current='page'] { color: var(--ink); background: color-mix(in srgb, var(--ink) 12%, transparent); }
+  .leiste-knopf[aria-current='page']::after { content: ''; position: absolute; left: -10px; top: 50%; margin-top: -8px; width: 3px; height: 16px; border-radius: 2px; background: var(--film); }
+  .leiste-reihe li { position: relative; display: grid; align-items: center; }
   .leiste-knopf.hat-neues { position: relative; }
-  .leiste-knopf.hat-neues::before { content: ''; position: absolute; top: 6px; right: 4px; width: 6px; height: 6px; border-radius: 50%; background: var(--film); }
+  .leiste-knopf.hat-neues::before { content: ''; position: absolute; top: 6px; right: 6px; width: 8px; height: 8px; border-radius: 50%; background: var(--film); box-shadow: 0 0 0 2px var(--ground); }
   .schild :global(.zahl) { margin-left: auto; min-width: 20px; padding: 1px 6px; border-radius: 999px; background: var(--film); color: #fff; font-family: var(--mono); font-size: 0.7rem; text-align: center; }
 
-  /* Hell/Dunkel: kleine waagrechte Pille, der helle Knopf gleitet zur aktiven Seite */
-  .leiste-trenner { display: block; width: 1px; height: 20px; margin: 0 10px; background: var(--line); }
+  /* Hell/Dunkel-Schalter unten in der Leiste: senkrechte Pille, der helle Knopf gleitet zur aktiven Seite */
+  .leiste-trenner { display: block; width: 22px; height: 1px; margin: 12px auto 10px; background: color-mix(in srgb, var(--ink) 16%, transparent); }
   .theme {
-    position: relative; display: grid; grid-template-columns: 26px 26px; align-items: center; justify-items: center; width: 60px; height: 32px; padding: 0 4px;
-    border: 0; border-radius: 999px; background: color-mix(in srgb, var(--ink) 7%, transparent); cursor: pointer;
+    position: relative; display: grid; grid-template-rows: 32px 32px; align-items: center; justify-items: center; width: 38px; height: 72px; padding: 4px 0;
+    border: 0; border-radius: 999px; background: color-mix(in srgb, var(--ink) 9%, var(--ground)); cursor: pointer;
+    box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.12);
   }
-  .theme svg { position: relative; z-index: 1; display: block; width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; color: var(--ink-2); transition: color 300ms, transform 500ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .theme svg { position: relative; z-index: 1; display: block; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; color: var(--ink-2); transition: color 300ms, transform 500ms cubic-bezier(0.16, 1, 0.3, 1); }
   .theme-knopf {
-    position: absolute; left: 4px; top: 4px; width: 24px; height: 24px; border-radius: 50%; background: var(--paper);
-    box-shadow: 0 0 0 1px var(--line), 0 2px 6px rgb(0 0 0 / 0.12); transition: transform 450ms cubic-bezier(0.34, 1.4, 0.5, 1);
+    position: absolute; left: 5px; top: 5px; width: 28px; height: 28px; border-radius: 50%; background: var(--paper);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 0.15), 0 3px 8px rgb(0 0 0 / 0.18); transition: transform 450ms cubic-bezier(0.34, 1.4, 0.5, 1);
   }
   .theme[aria-checked='false'] .t-sonne, .theme[aria-checked='true'] .t-mond { color: var(--ink); }
-  .theme[aria-checked='true'] .theme-knopf { transform: translateX(28px); }
+  .theme[aria-checked='true'] .theme-knopf { transform: translateY(34px); }
   .theme:hover .t-sonne { transform: rotate(45deg); }
   .theme:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
 
-  /* Schwarzer Knopf rechts */
-  .cta {
-    margin-left: 12px; display: inline-flex; align-items: center; gap: 8px; height: 32px; padding: 0 14px; border-radius: 5px;
-    background: var(--ink); color: var(--ground); text-decoration: none; font-size: 0.84rem; font-weight: 500; white-space: nowrap;
-    transition: opacity 200ms ease;
-  }
-  .cta:hover { opacity: 0.85; }
-  .cta :global(.cta-zahl) { min-width: 18px; padding: 0 5px; border-radius: 999px; background: var(--film); color: #fff; font-family: var(--mono); font-size: 0.68rem; line-height: 18px; text-align: center; }
-
-  /* Das gleitende Schild unter den Links */
+  /* Das gleitende Schild */
   .schild {
-    --x: 0px;
-    position: absolute; left: 0; top: calc(100% + 12px); transform: translateX(var(--x)) translateY(-4px) scale(0.97); transform-origin: left top;
+    --y: 0px;
+    position: absolute; left: 50px; top: 0; transform: translateY(var(--y)) scale(0.96); transform-origin: left top;
     background: #16181b; color: #eef0f2; border-radius: 12px; overflow: hidden; opacity: 0; pointer-events: none;
     box-shadow: 0 1px 2px rgb(0 0 0 / 0.25), 0 14px 32px -10px rgb(0 0 0 / 0.55), inset 0 0 0 1px rgb(255 255 255 / 0.06);
     transition: transform 420ms cubic-bezier(0.32, 1.25, 0.5, 1), width 380ms cubic-bezier(0.16, 1, 0.3, 1),
       height 380ms cubic-bezier(0.16, 1, 0.3, 1), opacity 200ms ease;
   }
-  .schild.sichtbar { opacity: 1; pointer-events: auto; transform: translateX(var(--x)) translateY(0) scale(1); }
+  .schild.sichtbar { opacity: 1; pointer-events: auto; transform: translateY(var(--y)) scale(1); }
   .schild.ohne-gleiten { transition: opacity 200ms ease, transform 220ms ease; }
-  .schild::before { content: ''; position: absolute; left: 0; right: 0; top: -14px; height: 14px; } /* Brücke zum Link */
+  .schild::before { content: ''; position: absolute; left: -14px; top: 0; bottom: 0; width: 14px; } /* Brücke zum Symbol */
   .schild-inhalt {
     position: absolute; left: 0; top: 0; width: max-content; min-width: 172px; padding: 8px 6px 6px; opacity: 0; filter: blur(6px); transform: translateY(8px);
     transition: opacity 260ms ease, filter 320ms ease, transform 380ms cubic-bezier(0.16, 1, 0.3, 1); pointer-events: none;
@@ -233,25 +217,23 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
   .schild ul { list-style: none; margin: 2px 0 0; padding: 4px 0 0; border-top: 1px solid rgb(255 255 255 / 0.08); display: grid; gap: 1px; }
   .schild a {
     display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 8px; color: #c4c9ce; text-decoration: none;
-    font-family: var(--text); font-size: 0.9rem; white-space: nowrap; transition: background-color 150ms, color 150ms;
+    font-family: var(--text); font-size: 0.92rem; white-space: nowrap; transition: background-color 150ms, color 150ms;
   }
   .schild a :global(svg) { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; opacity: 0.8; }
   .schild a:hover, .schild a:focus-visible { background: #24272b; color: #fff; outline: none; }
   .schild a[aria-current='page'] { color: #fff; background: #24272b; }
 
-  /* Schmale Bildschirme: Symbolleiste unten, Schild erscheint darüber */
+  /* Schmale Bildschirme: Leiste wird unten zur waagrechten Reihe, das Schild erscheint darüber */
   @media (max-width: 900px) {
-    .leiste { position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%); z-index: 40; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: blur(10px); border-radius: 16px; padding: 5px; box-shadow: var(--shadow), 0 10px 30px -12px rgb(0 0 0 / 0.3); }
-    .leiste-knopf { width: 38px; height: 38px; padding: 0; justify-content: center; border-radius: 10px; }
-    .leiste-knopf :global(svg) { display: block; }
-    .leiste-knopf .l-text { display: none; }
-    .leiste-knopf[aria-current='page'] { background: color-mix(in srgb, var(--ink) 10%, transparent); }
-    .leiste-knopf[aria-current='page']::after { left: 50%; right: auto; bottom: -5px; width: 16px; height: 2px; margin-left: -8px; background: var(--film); }
-    .leiste-trenner { height: 22px; margin: 0 6px; }
-    .cta { display: none; }
+    .leiste { left: 50%; top: auto; bottom: 14px; transform: translateX(-50%); background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: blur(10px); border-radius: 16px; padding: 5px; box-shadow: var(--shadow); }
+    .leiste { display: flex; align-items: center; }
+    .leiste-reihe { grid-auto-flow: column; }
+    .leiste-trenner { width: 1px; height: 22px; margin: 0 8px; }
+    .theme { grid-template-rows: none; grid-template-columns: 32px 32px; width: 72px; height: 38px; padding: 0 4px; }
+    .theme[aria-checked='true'] .theme-knopf { transform: translateX(34px); }
+    .leiste-knopf[aria-current='page']::after { left: 50%; top: auto; bottom: -5px; width: 16px; height: 3px; margin: 0 0 0 -8px; }
     .schild { left: 50%; top: auto; bottom: 56px; transform: translateX(-50%) scale(0.96); transform-origin: center bottom; }
     .schild.sichtbar { transform: translateX(-50%) scale(1); }
-    .schild::before { top: auto; bottom: -14px; }
   }
   @media (prefers-reduced-motion: reduce) { .schild, .schild-inhalt { transition: opacity 150ms ease; } }
 </style>

@@ -20,92 +20,168 @@ const letzterNachtrag = d.nachtraege?.at(-1);
   data-medium={d.medium}
   data-stand={d.stand}
 >
-  <p class="kopf mono">
-    <span class="punkt" aria-hidden="true"></span>
-    <span>{MEDIUM[d.medium]}</span>
-    <span>{TEXTFORM[d.textform]}</span>
-    {d.plattform && <span>{d.plattform}</span>}
-    <span><span class="visually-hidden">Stand: </span>{STAND[d.stand]}</span>
-    {size === 'hero' && <span class="nr">{nummer(text.nr)} · {datum(d.datum)}</span>}
-  </p>
-  <div class="main">
-    <H class="title">
-      {link ? <a href={url(text)}>{d.titel}</a> : d.titel}
-    </H>
-    <p class="fazit">{d.fazit}</p>
+  <div class="ticket-body">
+    <div class="stub" aria-hidden="true">
+      <span class="stub-brand">Kestrel</span>
+      <span class="stub-nr mono">{nummer(text.nr)}</span>
+      <span class="holes">{Array.from({ length: holes }).map(() => <i class="hole" />)}</span>
+      <span class="stub-date mono">{datum(d.datum)}</span>
+    </div>
+    <div class="rest">
+    <div class="main">
+      <H class="title">
+        {link ? <a href={url(text)}>{d.titel}</a> : d.titel}
+      </H>
+      <p class="meta mono">
+        <span>{MEDIUM[d.medium]}</span>
+        <span>{TEXTFORM[d.textform]}</span>
+        {d.plattform && <span>{d.plattform}</span>}
+        <span><span class="visually-hidden">Stand: </span>{STAND[d.stand]}</span>
+      </p>
+      <p class="fazit">{d.fazit}</p>
+    </div>
+    <div class="score" role="img" aria-label={`Wertung ${d.wertung} von 10: ${SKALA[d.wertung]}`}>
+      <span class="score-num display" aria-hidden="true">{d.wertung}</span>
+      <span class="score-of mono" aria-hidden="true">von 10</span>
+      <span class="score-say" aria-hidden="true">{SKALA[d.wertung]}</span>
+    </div>
     {size === 'hero' && letzterNachtrag && (
-      <p class="nachtrag mono">Nachtrag vom {datum(letzterNachtrag.datum)}</p>
+      <span class="overprint mono" aria-hidden="true">Nachtrag<br /><strong>{datum(letzterNachtrag.datum)}</strong></span>
     )}
+    </div>
   </div>
-  <div class="score" role="img" aria-label={`Wertung ${d.wertung} von 10: ${SKALA[d.wertung]}`}>
-    <span class="score-num" aria-hidden="true">{d.wertung}<span class="score-of">/10</span></span>
-    <span class="score-say" aria-hidden="true">{SKALA[d.wertung]}</span>
-  </div>
-  {link && <span class="pfeil" aria-hidden="true">→</span>}
 </article>
 
 <style>
-  /* Zeile: wie eine Tabellenzeile im Satzspiegel, Medium als kleiner Farbpunkt */
+  /* Kartenkarton in der Medienfarbe (die Seite selbst nutzt --card sonst als Papier) */
+  .ticket[data-medium='film'] { --card: var(--film); --card-ink: var(--film-ink); }
+  .ticket[data-medium='serie'] { --card: var(--serie); --card-ink: var(--serie-ink); }
+  .ticket[data-medium='spiel'] { --card: var(--spiel); --card-ink: var(--spiel-ink); }
   .ticket {
-    position: relative; display: grid; align-items: center; color: var(--ink);
-    grid-template-columns: 11rem minmax(0, 1fr) 11rem 1.5rem; gap: 6px 28px;
-    padding: 18px 4px; border-bottom: 1px solid var(--line);
-    transition: background-color 200ms ease;
+    --stub-w: 64px;
+    --notch: 9px;
+    position: relative;
+    filter: drop-shadow(0 1px 1px rgb(18 20 23 / 0.12)) drop-shadow(0 10px 14px rgb(18 20 23 / 0.22));
+    transition: transform 280ms cubic-bezier(0.16, 1, 0.3, 1), filter 280ms cubic-bezier(0.16, 1, 0.3, 1);
   }
-  .kopf { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 8px; margin: 0; font-size: 0.7rem; color: var(--ink-2); text-transform: uppercase; letter-spacing: 0.05em; }
-  .kopf > span:not(.punkt):not(:nth-child(2))::before { content: '·'; margin-right: 8px; opacity: 0.6; }
-  .punkt { width: 7px; height: 7px; border-radius: 50%; background: var(--akzent); flex: none; margin-right: 2px; }
-  .ticket--row .kopf > span:nth-child(n+4) { display: none; }
-  .ticket--row .kopf { flex-direction: column; align-items: flex-start; gap: 2px; }
-  .ticket--row .kopf > span::before { content: none !important; }
-  .ticket--row .kopf { display: grid; grid-template-columns: 7px auto; column-gap: 10px; }
-  .ticket--row .punkt { grid-row: 1 / 3; align-self: center; }
-  .main { min-width: 0; }
-  .title { font-family: var(--display); font-weight: 500; font-size: 1.2rem; line-height: 1.2; margin: 0; letter-spacing: -0.015em; text-wrap: balance; }
-  .title a { text-decoration: none; }
-  .title a::after { content: ''; position: absolute; inset: 0; }
-  .title a:focus-visible { outline: none; }
-  .ticket--link:has(.title a:focus-visible) { outline: 2px solid var(--focus); outline-offset: 2px; }
-  .fazit { margin: 4px 0 0; color: var(--ink-2); font-size: 0.9rem; line-height: 1.45; max-width: 64ch; }
-  .score { display: grid; justify-items: end; text-align: right; gap: 2px; }
-  .score-num { font-size: 1.9rem; font-weight: 300; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
-  .score-of { font-size: 0.75rem; color: var(--ink-2); font-weight: 400; margin-left: 2px; letter-spacing: 0; }
-  .score-say { font-size: 0.72rem; line-height: 1.3; color: var(--ink-2); }
-  .pfeil { color: var(--ink-2); transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1), color 200ms; justify-self: end; }
-  .ticket--link:hover { background: color-mix(in srgb, var(--ink) 3.5%, transparent); }
-  .ticket--link:hover .pfeil { transform: translateX(4px); color: var(--ink); }
+  .ticket-body {
+    display: grid;
+    grid-template-columns: var(--stub-w) 1fr;
+    color: var(--card-ink);
+  }
+  /* Abriss und Karte sind zwei Teile; die halbrunden Kerben sitzen an der Perforation */
+  .stub, .rest { background: var(--card); }
+  .stub {
+    border-radius: 6px 0 0 6px;
+    -webkit-mask:
+      radial-gradient(circle var(--notch) at 100% 0, #0000 97%, #000) top / 100% 51% no-repeat,
+      radial-gradient(circle var(--notch) at 100% 100%, #0000 97%, #000) bottom / 100% 51% no-repeat;
+            mask:
+      radial-gradient(circle var(--notch) at 100% 0, #0000 97%, #000) top / 100% 51% no-repeat,
+      radial-gradient(circle var(--notch) at 100% 100%, #0000 97%, #000) bottom / 100% 51% no-repeat;
+  }
+  .rest {
+    position: relative;
+    display: grid; grid-template-columns: 1fr auto;
+    border-radius: 0 6px 6px 0;
+    -webkit-mask:
+      radial-gradient(circle var(--notch) at 0 0, #0000 97%, #000) top / 100% 51% no-repeat,
+      radial-gradient(circle var(--notch) at 0 100%, #0000 97%, #000) bottom / 100% 51% no-repeat;
+            mask:
+      radial-gradient(circle var(--notch) at 0 0, #0000 97%, #000) top / 100% 51% no-repeat,
+      radial-gradient(circle var(--notch) at 0 100%, #0000 97%, #000) bottom / 100% 51% no-repeat;
+  }
 
-  /* Groß: gerahmtes Feld, links Text, rechts die Ziffer wie eine Kennzahl */
-  .ticket--hero {
-    grid-template-columns: minmax(0, 1fr) minmax(12rem, 16rem); grid-template-rows: auto 1fr;
-    align-items: start; gap: 18px 48px; padding: clamp(22px, 3vw, 40px);
-    background: var(--paper); border: 1px solid var(--line); border-radius: 4px;
+  /* Abriss */
+  .stub {
+    position: relative;
+    display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 8px;
+    padding: 14px 0;
+    border-right: 2px dashed color-mix(in srgb, var(--card-ink) 55%, transparent);
+    font-size: 0.68rem;
   }
-  .ticket--hero .kopf { grid-column: 1 / -1; }
-  .ticket--hero .nr { margin-left: auto; }
-  .ticket--hero .nr::before { content: none !important; }
-  .ticket--hero .title { font-weight: 400; font-size: clamp(1.9rem, 3.6vw, 3rem); line-height: 1.06; letter-spacing: -0.03em; }
-  .ticket--hero .fazit { font-size: clamp(1rem, 1.3vw, 1.12rem); margin-top: 14px; }
-  .ticket--hero .score { align-self: stretch; justify-items: start; text-align: left; align-content: end; padding-left: 32px; border-left: 1px dashed var(--rule); }
-  .ticket--hero .score-num { font-size: clamp(4rem, 7vw, 5.5rem); font-weight: 300; letter-spacing: -0.05em; }
-  .ticket--hero .score-of { font-size: 1rem; }
-  .ticket--hero .score-say { font-size: 0.9rem; color: var(--ink); }
-  .ticket--hero .pfeil { position: absolute; right: clamp(22px, 3vw, 40px); bottom: clamp(18px, 2.5vw, 30px); font-size: 1.2rem; }
-  .ticket--hero.ticket--link:hover { background: var(--paper); border-color: var(--rule); }
-  .nachtrag { margin: 16px 0 0; display: inline-block; font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--stamp); border: 1px solid currentColor; border-radius: 3px; padding: 3px 7px; }
+  .stub-brand, .stub-nr, .stub-date {
+    writing-mode: vertical-rl; transform: rotate(180deg); white-space: nowrap;
+  }
+  .stub-brand { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.18em; font-size: 0.8rem; }
+  .stub-nr { font-weight: 700; letter-spacing: 0.08em; }
+  .stub-date { opacity: 0.85; }
+  .holes { display: flex; flex-direction: column; gap: 6px; }
+  .hole { display: block; width: 14px; height: 14px; border-radius: 50%; background: var(--ground); box-shadow: inset 0 2px 2px rgb(0 0 0 / 0.35); }
+
+  /* Abgebrochen: Abriss eingerissen */
+  [data-stand='abgebrochen'] .stub {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 78%, 14% 74%, 4% 69%, 18% 64%, 6% 58%, 0 55%);
+  }
+
+  .main { padding: 16px 18px 16px 20px; min-width: 0; }
+  .meta { display: flex; flex-wrap: wrap; gap: 2px 14px; margin: 8px 0 0; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; }
+  .meta > span + span::before { content: '/'; margin-right: 14px; opacity: 0.6; }
+  .title {
+    font-family: var(--display); font-weight: 900; text-transform: uppercase;
+    font-size: 1.9rem; line-height: 0.92; margin: 0; letter-spacing: 0; text-wrap: balance;
+  }
+  .title a { text-decoration: none; }
+  .title a::after { content: ''; position: absolute; inset: 0; } /* ganze Karte klickbar */
+  .title a:focus-visible { outline: none; }
+  .ticket--link:has(.title a:focus-visible) { outline: 3px solid var(--focus); outline-offset: 4px; border-radius: 8px; }
+  .fazit { margin: 10px 0 0; font-style: italic; font-size: 1rem; line-height: 1.4; max-width: 60ch; }
+  .overprint {
+    position: absolute; right: clamp(16px, 3vw, 36px); bottom: 14px; transform: rotate(-9deg);
+    border: 2.5px solid currentColor; border-radius: 4px; padding: 4px 9px; text-align: center;
+    font-size: 0.68rem; line-height: 1.3; text-transform: uppercase; letter-spacing: 0.14em; opacity: 0.8;
+    pointer-events: none;
+  }
+  .overprint strong { font-size: 0.8rem; letter-spacing: 0.04em; }
+
+  .score {
+    display: grid; grid-template-columns: auto auto; grid-template-rows: auto 1fr; align-content: center;
+    column-gap: 8px; padding: 14px 20px 14px 8px; max-width: 15rem;
+  }
+  .score-num { grid-row: 1 / 3; font-size: 4.5rem; line-height: 0.8; font-weight: 900; font-variant-numeric: tabular-nums; }
+  .score-of { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em; align-self: end; font-weight: 600; }
+  .score-say { font-size: 0.85rem; line-height: 1.25; max-width: 11rem; font-weight: 600; }
+
+  /* Liste: kompakter Abriss, nur Nummer und Lochung */
+  .ticket--row .stub-brand, .ticket--row .stub-date { display: none; }
+  .ticket--row .stub { justify-content: center; gap: 10px; }
+
+  .ticket--link:hover { transform: translateY(-3px) rotate(-0.4deg); filter: drop-shadow(0 2px 2px rgb(18 20 23 / 0.12)) drop-shadow(0 20px 22px rgb(18 20 23 / 0.3)); }
+
+  /* Groß: Startseite und Einzeltext */
+  .ticket--hero { --stub-w: 88px; --notch: 14px; }
+  .ticket--hero .stub { font-size: 0.8rem; padding: 22px 0; }
+  .ticket--hero .stub-brand { font-size: 1.05rem; }
+  .ticket--hero .hole { width: 20px; height: 20px; }
+  .ticket--hero .main { padding: clamp(20px, 3vw, 36px) clamp(20px, 3vw, 40px); }
+  .ticket--hero .meta { font-size: 0.8rem; margin-top: 16px; }
+  .ticket--hero .title { font-size: clamp(2rem, 4.2vw, 3.4rem); }
+  .ticket--hero .fazit { font-size: clamp(1.1rem, 1.6vw, 1.3rem); margin-top: 18px; }
+  .ticket--hero .score { padding: 28px clamp(20px, 3vw, 40px) 28px 12px; max-width: 19rem; border-left: 2px solid color-mix(in srgb, var(--card-ink) 25%, transparent); padding-left: clamp(16px, 2.5vw, 32px); }
+  .ticket--hero .score-num { font-size: clamp(4.5rem, 8vw, 6.5rem); }
+  .ticket--hero .score-say { font-size: 1rem; max-width: 12rem; }
 
   @media (max-width: 720px) {
-    .ticket { grid-template-columns: minmax(0, 1fr) auto; gap: 6px 16px; padding: 16px 2px; }
-    .ticket--row .kopf { grid-column: 1 / -1; display: flex; flex-direction: row; gap: 8px; }
-    .ticket--row .kopf > span:nth-child(3)::before { content: '·' !important; margin-right: 8px; }
-    .main { grid-column: 1; }
-    .score { grid-column: 2; grid-row: 2; }
-    .score-say { display: none; }
-    .pfeil { display: none; }
-    .ticket--hero { grid-template-columns: 1fr; padding: 20px; }
-    .ticket--hero .score { grid-column: 1; grid-row: auto; border-left: 0; padding-left: 0; padding-top: 16px; border-top: 1px dashed var(--rule); }
-    .ticket--hero .score-say { display: block; }
-    .ticket--hero .nr { display: none; }
+    .rest { grid-template-columns: 1fr; }
+    .score { padding: 0 18px 16px 20px; max-width: none; grid-template-columns: auto 1fr; }
+    .score-num { font-size: 3.2rem; }
+    .score-say { max-width: none; }
+    .ticket { --stub-w: 48px; --notch: 7px; }
+    .stub { font-size: 0.6rem; }
+    .stub-brand { font-size: 0.7rem; }
+    .title { font-size: 1.6rem; }
+    .ticket--hero { --stub-w: 56px; --notch: 9px; }
+    .ticket--hero .main { padding: 20px 18px 14px 18px; }
+    .ticket--hero .title { font-size: clamp(1.9rem, 9vw, 2.6rem); }
+    .overprint { position: static; justify-self: start; margin: 0 18px 18px; transform: rotate(-4deg); }
+    .ticket--hero .score { border-left: 0; border-top: 2px solid color-mix(in srgb, var(--card-ink) 25%, transparent); margin: 0 18px 0 18px; padding: 14px 0 20px; }
+    .ticket--hero .score-num { font-size: 4rem; }
   }
 
+  /* Der eine Moment: Abriss reißt beim Öffnen eines Textes ab */
+  .ticket--tear .stub { transform-origin: 100% 0; animation: tear 1100ms cubic-bezier(0.16, 1, 0.3, 1) 300ms both; }
+  @keyframes tear {
+    from { transform: none; }
+    to { transform: translate(-10px, 8px) rotate(-4deg); }
+  }
 </style>

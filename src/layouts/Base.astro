@@ -42,15 +42,13 @@ WORLD: warmes Papierweiß, gestrichelte Rasterlinien, schmale Kopfleiste oben, s
 Red Hat Mono für kleine Kennzeilen; Wertungen als große, leichte Kennzahlen; Medienfarben nur als Farbpunkt.
 -->`} />
     <a class="skip" href="#inhalt">Zum Inhalt springen</a>
-    <header class="site-head">
-      <div class="wrap kopf-innen">
-        <a class="wordmark" href="/" aria-label="Kestrel, Startseite">
-          <span class="wordmark-zeichen" aria-hidden="true"></span>
-          <span class="wordmark-name">Kestrel</span>
-        </a>
-        <Pille />
-      </div>
+    <header class="site-head wrap">
+      <a class="wordmark" href="/" aria-label="Kestrel, Startseite">
+        <span class="wordmark-stub mono" aria-hidden="true">Nº</span>
+        <span class="wordmark-name">Kestrel</span>
+      </a>
     </header>
+    <Pille />
     <div class="ecke">
       <button type="button" class="hoch" id="hoch" aria-label="Nach oben" title="Nach oben" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
       <span class="stempel mono" id="stempel" tabindex="0" title="Uhrzeit anzeigen">
@@ -63,7 +61,7 @@ Red Hat Mono für kleine Kennzeilen; Wertungen als große, leichte Kennzahlen; M
     </main>
     <footer class="wrap"><div class="site-foot">
       <div class="foot-marke">
-        <a class="wordmark" href="/" aria-label="Kestrel, Startseite"><span class="wordmark-zeichen" aria-hidden="true"></span><span class="wordmark-name">Kestrel</span></a>
+        <a class="wordmark" href="/" aria-label="Kestrel, Startseite"><span class="wordmark-stub mono" aria-hidden="true">Nº</span><span class="wordmark-name">Kestrel</span></a>
         <p>Spiele, Filme und Serien von Kevin. Eine Skala für alles, Wertungen bleiben stehen.</p>
         <p class="mono klein">© {new Date().getFullYear()} Kestrel</p>
       </div>
@@ -147,24 +145,27 @@ Red Hat Mono für kleine Kennzeilen; Wertungen als große, leichte Kennzahlen; M
   .stempel:hover .st-a :global(.z), .stempel:focus-visible .st-a :global(.z) { opacity: 0; filter: blur(5px); transform: translateY(-4px); }
   .stempel:hover .st-b :global(.z), .stempel:focus-visible .st-b :global(.z) { opacity: 1; filter: blur(0); transform: none; }
 
-  /* Kopfleiste oben: klebt beim Scrollen, Papier mit leichter Unschärfe, gestrichelte Unterkante */
-  .site-head { position: sticky; top: 0; z-index: 40; }
-  .site-head::before {
-    content: ''; position: absolute; inset: 0; z-index: -1;
-    background: color-mix(in srgb, var(--ground) 82%, transparent); backdrop-filter: blur(14px) saturate(1.2);
-    transition: opacity 400ms ease;
-  }
-  .site-head::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px); transition: opacity 400ms ease; }
-  /* Über der Szene: Leiste durchsichtig, damit Motiv und Kopf eins sind */
-  :global(html.oben) .site-head::before, :global(html.oben) .site-head::after { opacity: 0; }
-  .kopf-innen { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: var(--bar); }
+  .site-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 10px; position: relative; z-index: 30; }
+  /* Platz für die Leiste links, sobald sie neben dem Inhalt steht */
+  @media (min-width: 901px) and (max-width: 1320px) { :global(body) { padding-left: 64px; } }
   @media (max-width: 900px) { :global(body) { padding-bottom: 76px; } }
 
-  .wordmark { display: inline-flex; align-items: center; gap: 9px; text-decoration: none; color: var(--ink); }
-  .wordmark-zeichen { width: 18px; height: 18px; border-radius: 2px; background: var(--ink); position: relative; flex: none; }
-  .wordmark-zeichen::after { content: ''; position: absolute; right: 3px; bottom: 3px; width: 6px; height: 6px; background: var(--ground); border-radius: 1px; }
-  .wordmark-name { font-family: var(--display); font-weight: 600; font-size: 1.05rem; letter-spacing: -0.02em; line-height: 1; }
-  .wordmark:hover .wordmark-zeichen::after { background: var(--film); }
+  .wordmark {
+    display: inline-flex; align-items: stretch; text-decoration: none; color: var(--film-ink);
+    filter: drop-shadow(0 6px 10px rgb(18 20 23 / 0.25));
+  }
+  .wordmark-stub, .wordmark-name { background: var(--film); }
+  .wordmark-stub {
+    display: grid; place-items: center; padding: 0 8px; font-size: 0.7rem; font-weight: 600;
+    border-radius: 4px 0 0 4px;
+    border-right: 2px dashed rgb(255 255 255 / 0.6);
+  }
+  .wordmark-name {
+    font-family: var(--display); font-weight: 900; text-transform: uppercase;
+    font-size: 1.3rem; line-height: 1; padding: 6px 11px 5px 8px; border-radius: 0 4px 4px 0;
+    letter-spacing: 0.02em;
+  }
+  .wordmark:hover .wordmark-name, .wordmark:hover .wordmark-stub { background: #b02c24; }
 
   .site-foot {
     margin-top: clamp(56px, 8vw, 96px); padding-top: 40px; padding-bottom: 72px; /* Platz für die Uhr unten rechts */
