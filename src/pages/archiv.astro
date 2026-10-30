@@ -21,8 +21,11 @@ const plural = { spiel: ['Spiel', 'Spiele'], film: ['Film', 'Filme'], serie: ['S
 <Base title="Archiv" description="Alle Texte nach Jahr und Monat, als Rückblick: was Kevin wann gespielt und geschaut hat.">
   <header class="page-head wrap">
     <Szene thema="ruinen" />
-    <h1>Archiv</h1>
-    <p>Nach Jahr und Monat, in der Reihenfolge, in der ich geschrieben habe.</p>
+    <div class="kopf-schild">
+      <h1>Archiv</h1>
+      <p>Nach Jahr und Monat, in der Reihenfolge, in der ich geschrieben habe.</p>
+      <p class="kopf-fakt mono">{texte.length} {texte.length === 1 ? 'Text' : 'Texte'}{texte.length ? ` · seit ${Math.min(...texte.map((t) => jahr(t.data.datum)))}` : ''}</p>
+    </div>
   </header>
   <ArchivTabs />
 

@@ -53,8 +53,8 @@ const path = Astro.url.pathname;
       const teile: Node[] = [];
       while (x) { teile.push(document.importNode(x, true)); x = x.nextSibling; }
       altNav.after(...teile);
-      const unter = doc.querySelector('.page-head > p'); const hier = document.querySelector('.page-head > p');
-      if (unter && hier) hier.textContent = unter.textContent;
+      const schild = doc.querySelector('.kopf-schild'); const hier = document.querySelector('.kopf-schild');
+      if (schild && hier) hier.innerHTML = schild.innerHTML;
       document.title = doc.title;
       const ziel = new URL(url, location.href).pathname;
       nav!.querySelectorAll('a').forEach((a) => { if (pfad(a) === ziel) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });

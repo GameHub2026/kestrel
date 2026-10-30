@@ -26,8 +26,11 @@ for (const t of liste) {
 <Base title={`${name} von A bis Z`} description={`Alle Rezensionen zu ${name} bei Kestrel, alphabetisch sortiert.`}>
   <header class="page-head wrap">
     <Szene thema="ruinen" />
-    <h1>Archiv</h1>
-    <p>Alle {name} von A bis Z. {liste.length} {liste.length === 1 ? 'Text' : 'Texte'}.</p>
+    <div class="kopf-schild">
+      <h1>Archiv</h1>
+      <p>Alle {name} von A bis Z.</p>
+      <p class="kopf-fakt mono">{liste.length} {liste.length === 1 ? 'Text' : 'Texte'}</p>
+    </div>
   </header>
   <ArchivTabs />
 

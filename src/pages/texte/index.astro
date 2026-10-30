@@ -17,8 +17,11 @@ const gruppen = [
 <Base title="Alle Texte" description="Alle Tests, Kurzkritiken, Ersteindrücke und Rückblicke zu Spielen, Filmen und Serien, filterbar nach Medium, Textform und Jahr.">
   <header class="page-head wrap">
     <Szene thema="mordor" />
-    <h1>Alle Texte</h1>
-    <p>Filtern nach Medium, Textform oder Jahr.</p>
+    <div class="kopf-schild">
+      <h1>Alle Texte</h1>
+      <p>Filtern nach Medium, Textform oder Jahr.</p>
+      <p class="kopf-fakt mono">{texte.length} {texte.length === 1 ? 'Text' : 'Texte'} · {jahre.length} {jahre.length === 1 ? 'Jahr' : 'Jahre'}</p>
+    </div>
   </header>
 
   {texte.length === 0 && <p class="none wrap">Noch keine Karten im Album. Der erste Text kommt bald.</p>}

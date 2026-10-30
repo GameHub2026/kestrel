@@ -7,8 +7,11 @@ const stufen = Object.entries(SKALA).map(([n, s]) => [Number(n), s] as const).so
 <Base title="Wie ich werte" description="Kevins Wertungsskala von 1 bis 10: ganze Zahlen, ein fester Satz pro Zahl, gleich für Spiele, Filme und Serien.">
   <header class="page-head wrap">
     <Szene thema="maschinen" />
-    <h1>Wie ich werte</h1>
-    <p>Ganze Zahlen von 1 bis 10, gleich für Spiele, Filme und Serien. Jede Zahl bedeutet immer dasselbe.</p>
+    <div class="kopf-schild">
+      <h1>Wie ich werte</h1>
+      <p>Ganze Zahlen von 1 bis 10, für Spiele, Filme und Serien gleich.</p>
+      <p class="kopf-fakt mono">Skala 1–10 · jede Zahl heißt immer dasselbe</p>
+    </div>
   </header>
 
   <ol class="roll wrap" aria-label="Wertungsskala">

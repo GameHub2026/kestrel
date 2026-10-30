@@ -22,8 +22,11 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 <Base title="Demnächst" description="Kommende Kinostarts sowie neue Serien und Staffeln bei Netflix, Prime Video, Disney+ und Co. in Deutschland.">
   <header class="page-head wrap">
     <Szene thema="wueste" />
-    <h1>Demnächst</h1>
-    <p>Kinostarts, neue Serien, Staffeln und Folgen in Deutschland. Täglich aktualisiert.</p>
+    <div class="kopf-schild">
+      <h1>Demnächst</h1>
+      <p>Kinostarts und Serien in Deutschland, täglich aktualisiert.</p>
+      <p class="kopf-fakt mono">{eintraege.length} Termine · {eintraege.filter((e) => e.datum === heute).length} heute</p>
+    </div>
   </header>
 
   <div class="dem">

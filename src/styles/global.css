@@ -118,27 +118,34 @@ main, footer { position: relative; z-index: 1; }
   clip: rect(0 0 0 0); white-space: nowrap;
 }
 
-/* Seitentitel im Kartenstil */
-/* Kompakt: Titel und eine Zeile Erklärung nebeneinander, kein Plakat */
-/* Seitenkopf: Text links, rechts die Themen-Szene, die nach links in den Hintergrund ausläuft */
+/* Seitenkopf „Leinwand und Titelschild“: oben läuft die Szene als Band über die ganze Breite, ohne Text darauf.
+   Titel, Untertitel und eine Faktenzeile stehen auf einem festen Papierschild im Kinokarten-Stil, das von unten
+   in die Leinwand ragt. Dadurch ist der Text auf jeder Szene lesbar und sitzt weit oben. */
+:root { --band: clamp(190px, 27vh, 290px); }
 .page-head {
-  position: relative; min-height: clamp(230px, 32vh, 340px); padding-top: 32px; margin-bottom: 28px;
-  display: grid; grid-template-columns: minmax(0, 34rem) 1fr auto; align-content: end; gap: 14px 40px;
+  position: relative; display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px 24px;
+  padding-top: max(16px, calc(var(--band) * 0.5 - var(--bar))); margin-bottom: 34px;
 }
-.page-head > :not(.szene):not(.schleier) { position: relative; z-index: 1; grid-column: 1; }
-.page-head::after { content: ''; position: relative; z-index: 1; grid-column: 1 / -1; height: 1px; margin-top: 14px; background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px); }
-.page-head[data-kicker]::before { content: attr(data-kicker); position: relative; z-index: 1; grid-column: 1; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
-.page-head h1 {
-  font-family: var(--display); font-weight: 900;
-  font-size: clamp(2.6rem, 5vw, 4.2rem); line-height: 0.9; margin: 0; letter-spacing: 0; text-transform: uppercase; text-wrap: balance;
+.page-head > :not(.szene):not(.schleier) { position: relative; z-index: 1; }
+.kopf-schild {
+  position: relative; max-width: min(100%, 46rem); padding: 20px 28px 18px 38px; border-radius: 6px;
+  background: var(--paper); box-shadow: 0 0 0 1px var(--line), 0 22px 44px -24px rgb(0 0 0 / 0.5);
 }
-.page-head p { max-width: 44ch; margin: 0; color: var(--ink-2); font-size: 1.02rem; line-height: 1.5; }
-.page-head > .kopf-rechts { grid-column: 3; grid-row: 3; justify-self: end; align-self: end; }
+/* Perforation links wie bei den Kinokarten */
+.kopf-schild::before { content: ''; position: absolute; left: 16px; top: 12px; bottom: 12px; border-left: 2px dashed color-mix(in srgb, var(--ink) 20%, transparent); }
+.kopf-schild h1 {
+  font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0; text-wrap: balance;
+  font-size: clamp(2.3rem, 4.4vw, 3.5rem); line-height: 0.9; margin: 0;
+}
+.kopf-schild p { margin: 10px 0 0; max-width: 62ch; color: var(--ink-2); font-size: 1rem; line-height: 1.45; }
+.kopf-schild .kopf-fakt { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--rule); font-size: 0.74rem; letter-spacing: 0.03em; line-height: 1.4; }
+.page-head > .kopf-rechts { margin-bottom: 4px; }
 @media (max-width: 760px) {
-  .page-head { min-height: 240px; grid-template-columns: 1fr auto; }
-  .page-head > .kopf-rechts { grid-column: 2; }
-  .page-head h1, .page-head p { text-shadow: 0 1px 18px var(--ground); }
+  :root { --band: 150px; }
+  .kopf-schild { padding: 16px 18px 14px 30px; }
+  .kopf-schild::before { left: 12px; }
 }
+
 /* Abschnittsüberschriften auf allen Seiten gleich */
 .abschnitt { font-family: var(--display); font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; font-size: 1.5rem; line-height: 1; margin: 40px 0 14px; }
 

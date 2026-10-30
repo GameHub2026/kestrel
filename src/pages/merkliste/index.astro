@@ -7,8 +7,11 @@ import { ic } from '../../icons';
 <div class="merk">
   <header class="page-head wrap">
     <Szene thema="gewitter" />
-    <h1>Merkliste</h1>
-    <p>Was ich spielen und schauen will. Glocke: Neues landet unter „Ich folge“. „Öffentlich“: steht auch unter Demnächst. Termine halten sich selbst aktuell.</p>
+    <div class="kopf-schild">
+      <h1>Merkliste</h1>
+      <p>Was ich spielen und schauen will. Termine halten sich selbst aktuell.</p>
+      <p class="kopf-fakt mono">Glocke: Neues unter „Ich folge“ · Öffentlich: auch unter Demnächst</p>
+    </div>
   </header>
 
   <section class="wrap zugang" id="zugang" hidden>
@@ -494,7 +497,7 @@ import { ic } from '../../icons';
   @media (max-width: 560px) {
     .eintrag { grid-template-columns: 40px 1fr 18px; }
     .pfeil { grid-column: 3; grid-row: 1; }
-    .rechts { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; align-items: center; }
+    .rechts { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; justify-content: flex-start; align-items: center; gap: 8px 12px; min-width: 0; }
     .poster { width: 40px; height: 56px; }
   }
 }
