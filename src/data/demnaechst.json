@@ -159,7 +159,7 @@
    "datum": "2026-10-29",
    "text": "Neue Serie",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/zp5lT15wR0cfCYcR12DXcVNsrnh.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/Ak7I8VYoe1dxKMtH6nXbdmSOVka.jpg",
    "anbieter": [
     "Netflix"
    ],
@@ -275,7 +275,7 @@
    "typ": "folge",
    "titel": "Die Tagebücher der Apothekerin",
    "datum": "2026-10-30",
-   "text": "S1E53",
+   "text": "S1E53 · Die schlangenweiße Unsterbliche",
    "jahr": "2023",
    "bild": "https://image.tmdb.org/t/p/w342/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
    "anbieter": [
@@ -317,27 +317,12 @@
    "info": "tv-247718"
   },
   {
-   "id": "tv-300755-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Rinnan",
-   "datum": "2026-10-30",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/6nQ4utgXXR1ClpG294KZTxUICzd.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/300755",
-   "info": "tv-300755"
-  },
-  {
    "id": "tv-153312-s4-2026-10-30",
    "art": "serie",
    "typ": "folge",
    "titel": "Tulsa King",
    "datum": "2026-10-30",
-   "text": "S4E3",
+   "text": "S4E3 · Unterlassung",
    "jahr": "2022",
    "bild": "https://image.tmdb.org/t/p/w342/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
    "anbieter": [
@@ -816,8 +801,7 @@
    "anbieter": [
     "Disney+",
     "Paramount+",
-    "WOW",
-    "Sky Go"
+    "WOW"
    ],
    "link": "https://www.themoviedb.org/tv/4614",
    "info": "tv-4614"
@@ -1046,6 +1030,21 @@
    "info": "tv-2734"
   },
   {
+   "id": "tv-320507-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "The Secret Lives of Mormon Wives: Orange County",
+   "datum": "2026-11-12",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/rEcJkRhfs663zsjWCJhtsbRWv7g.jpg",
+   "anbieter": [
+    "Hulu"
+   ],
+   "link": "https://www.themoviedb.org/tv/320507",
+   "info": "tv-320507"
+  },
+  {
    "id": "movie-891621-kino",
    "art": "film",
    "typ": "kino",
@@ -1211,8 +1210,7 @@
    "anbieter": [
     "Disney+",
     "Paramount+",
-    "WOW",
-    "Sky Go"
+    "WOW"
    ],
    "link": "https://www.themoviedb.org/tv/4614",
    "info": "tv-4614"
@@ -1376,6 +1374,22 @@
    ],
    "link": "https://www.themoviedb.org/tv/153312",
    "info": "tv-153312"
+  },
+  {
+   "id": "tv-65334-s7-2026-11-21",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "datum": "2026-11-21",
+   "text": "Staffel 7 · Folgen 5–6",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/65334",
+   "info": "tv-65334"
   },
   {
    "id": "tv-456-s38-2026-11-22",
@@ -1901,21 +1915,6 @@
    "info": "movie-1260649"
   },
   {
-   "id": "tv-334919-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Call the Midwife: Sisters in Arms",
-   "datum": "2026-12-24",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/YCH3NPIVeJW9eK2JSnIwv5KEjY.jpg",
-   "anbieter": [
-    "BBC One"
-   ],
-   "link": "https://www.themoviedb.org/tv/334919",
-   "info": "tv-334919"
-  },
-  {
    "id": "tv-224377-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -1952,7 +1951,7 @@
    "datum": "2026-12-31",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/x6rHcQFiYcczLQPrmxXPAicm54E.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/mNGfdRoZFmyzagpxg22fsNZ3d3A.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1430077",
    "info": "movie-1430077"
@@ -2166,7 +2165,7 @@
     ],
     [
      "Mit",
-     "Delaney Quinn, Caleb Williams, Bennie Taylor, Eric Bauza"
+     "Keegan-Michael Key, Delaney Quinn, Tristan Borders, Madison Skyy Polan"
     ],
     [
      "TMDB-Wertung",
@@ -2176,6 +2175,35 @@
    "trailer": "https://www.youtube.com/watch?v=Pc9MbCNYn3k",
    "link": "https://www.themoviedb.org/movie/1514026",
    "bild": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
+   "news": []
+  },
+  "movie-1003596": {
+   "titel": "Avengers: Doomsday",
+   "original": "Avengers: Doomsday",
+   "leitsatz": null,
+   "handlung": "Geliebte Helden aus drei unterschiedlichen Universen befinden sich auf einem tödlichen Kollisionskurs und sehen sich einer existenziellen Bedrohung gegenüber, wie sie sie noch nie zuvor erlebt haben.",
+   "genres": [
+    "Science Fiction",
+    "Action",
+    "Abenteuer"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 45 Min"
+    ],
+    [
+     "Regie",
+     "Joe Russo, Anthony Russo"
+    ],
+    [
+     "Mit",
+     "Robert Downey Jr., Chris Evans, Chris Hemsworth, Pedro Pascal"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=JznHmU4yrV4",
+   "link": "https://www.themoviedb.org/movie/1003596",
+   "bild": "https://image.tmdb.org/t/p/w500/7UN7WiNgXnKNneFx7V4nDm92luk.jpg",
    "news": []
   },
   "movie-1765072": {
@@ -2209,6 +2237,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
    "news": [
     {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘You Can See Everything’ Will Be A Treat Over Slow Halloween Frame; Documentary’s U.S. Cume At $52M+  Rising – Box Office",
+     "link": "https://deadline.com/2026/10/box-office-you-can-see-everything-clayface-halloween-1237209579/",
+     "datum": "2026-10-30T18:18:17.000Z"
+    },
+    {
      "quelle": "The Hollywood Reporter",
      "art": "film",
      "titel": "Nathan Fielder Addresses Unconventional Doc Techniques in ‘You Can See Everything’ as Academy Doc Branch Members Weigh In (Exclusive)",
@@ -2237,35 +2272,6 @@
      "datum": "2026-10-19T13:50:00.000Z"
     }
    ]
-  },
-  "movie-1003596": {
-   "titel": "Avengers: Doomsday",
-   "original": "Avengers: Doomsday",
-   "leitsatz": null,
-   "handlung": "Geliebte Helden aus drei unterschiedlichen Universen befinden sich auf einem tödlichen Kollisionskurs und sehen sich einer existenziellen Bedrohung gegenüber, wie sie sie noch nie zuvor erlebt haben.",
-   "genres": [
-    "Science Fiction",
-    "Action",
-    "Abenteuer"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 45 Min"
-    ],
-    [
-     "Regie",
-     "Joe Russo, Anthony Russo"
-    ],
-    [
-     "Mit",
-     "Robert Downey Jr., Chris Evans, Chris Hemsworth, Pedro Pascal"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=JznHmU4yrV4",
-   "link": "https://www.themoviedb.org/movie/1003596",
-   "bild": "https://image.tmdb.org/t/p/w500/7UN7WiNgXnKNneFx7V4nDm92luk.jpg",
-   "news": []
   },
   "movie-1400837": {
    "titel": "Other Mommy",
@@ -2315,7 +2321,7 @@
     ],
     [
      "Regie",
-     "Alex Huston Fischer, Eleanor Wilson"
+     "Eleanor Wilson, Alex Huston Fischer"
     ],
     [
      "Mit",
@@ -2541,55 +2547,13 @@
     ],
     [
      "TMDB-Wertung",
-     "6.8 / 10"
+     "6.7 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=IexQvEpqwrE",
    "link": "https://www.themoviedb.org/movie/1433583",
    "bild": "https://image.tmdb.org/t/p/w500/ha3AUl0Zc0xs2hWxCROHTkDId25.jpg",
    "news": []
-  },
-  "movie-1380417": {
-   "titel": "By Any Means",
-   "original": "By Any Means",
-   "leitsatz": "Das FBI scheiterte. Also holten sie die Mafia.",
-   "handlung": "Mississippi, 1966: Als eine brutale Mordserie an Bürgerrechtlern das FBI an seine Grenzen bringt, wird der junge Agent Strider (Yahya Abdul-Mateen II) auf den Fall angesetzt. Doch vor Ort stößt er nur auf eine Wand des Schweigens – gedeckt von Korruption und offenem Rassismus. Da die Ermittlungen über die offiziellen Wege nicht vorankommen, wird Strider schließlich ein ungewöhnlicher Partner zur Seite gestellt: der berüchtigte Mafia-Killer Greg Scarpa (Mark Wahlberg), der seine ganz eigenen Methoden hat, um für Gerechtigkeit zu sorgen.",
-   "genres": [
-    "Thriller",
-    "Historie",
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 47 Min"
-    ],
-    [
-     "Regie",
-     "Elegance Bratton"
-    ],
-    [
-     "Mit",
-     "Yahya Abdul-Mateen II, Mark Wahlberg, Nicole Beharie, Josh Lucas"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.5 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=CXCqbVtuCRY",
-   "link": "https://www.themoviedb.org/movie/1380417",
-   "bild": "https://image.tmdb.org/t/p/w500/aO4O1dqRoXVTschAwLaw1njdTwv.jpg",
-   "news": [
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "Perfekter Tarantino-Ersatz ab heute im Kino: By Any Means erzählt eine Geschichte, die eigentlich nicht wahr sein kann (aber sie stimmt)",
-     "link": "https://www.moviepilot.de/news/tarantino-by-any-means-1165270",
-     "datum": "2026-10-29T11:18:00.000Z"
-    }
-   ]
   },
   "movie-1458099": {
    "titel": "The Only Living Pickpocket in New York",
@@ -2618,7 +2582,15 @@
    "trailer": "https://www.youtube.com/watch?v=iXA7BmrBBxs",
    "link": "https://www.themoviedb.org/movie/1458099",
    "bild": "https://image.tmdb.org/t/p/w500/pNdB9va2AEPQe9UfhKAdIt8nus9.jpg",
-   "news": [],
+   "news": [
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "Noah Segan Explains How ‘Knives Out’ Helped Make ‘The Only Living Pickpocket in New York’ Possible",
+     "link": "https://www.hollywoodreporter.com/movies/movie-features/the-only-living-pickpocket-in-new-york-knives-out-1236743781/",
+     "datum": "2026-10-30T19:53:37.000Z"
+    }
+   ],
    "sprache": "en"
   },
   "movie-1554956": {
@@ -2683,6 +2655,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/eyxBOW9HSTbhT7s5V17SJKVegvC.jpg",
    "news": [
     {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "The Smashing Pumpkins Release Latest ‘The Hunger Games: Sunrise On The Reaping’ Album Track, ‘Black Stars’",
+     "link": "https://deadline.com/feature/hunger-games-sunrise-on-the-reaping-songs-soundtrack-album-1237165820/",
+     "datum": "2026-10-30T18:29:57.000Z"
+    },
+    {
      "quelle": "The Hollywood Reporter",
      "art": "film",
      "titel": "‘The Hunger Games: Sunrise on the Reaping’ First Reactions",
@@ -2695,6 +2674,48 @@
      "titel": "‘The Hunger Games: Sunrise on the Reaping’ First Reactions Call Prequel the ‘Rogue One’ of the Franchise and Praise Joseph Zada as Haymitch",
      "link": "https://variety.com/2026/film/news/hunger-games-sunrise-on-the-reaping-first-reactions-1236933573/",
      "datum": "2026-10-29T00:20:57.000Z"
+    }
+   ]
+  },
+  "movie-1380417": {
+   "titel": "By Any Means",
+   "original": "By Any Means",
+   "leitsatz": "Das FBI scheiterte. Also holten sie die Mafia.",
+   "handlung": "Mississippi, 1966: Als eine brutale Mordserie an Bürgerrechtlern das FBI an seine Grenzen bringt, wird der junge Agent Strider (Yahya Abdul-Mateen II) auf den Fall angesetzt. Doch vor Ort stößt er nur auf eine Wand des Schweigens – gedeckt von Korruption und offenem Rassismus. Da die Ermittlungen über die offiziellen Wege nicht vorankommen, wird Strider schließlich ein ungewöhnlicher Partner zur Seite gestellt: der berüchtigte Mafia-Killer Greg Scarpa (Mark Wahlberg), der seine ganz eigenen Methoden hat, um für Gerechtigkeit zu sorgen.",
+   "genres": [
+    "Thriller",
+    "Historie",
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 47 Min"
+    ],
+    [
+     "Regie",
+     "Elegance Bratton"
+    ],
+    [
+     "Mit",
+     "Yahya Abdul-Mateen II, Mark Wahlberg, Nicole Beharie, Josh Lucas"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=CXCqbVtuCRY",
+   "link": "https://www.themoviedb.org/movie/1380417",
+   "bild": "https://image.tmdb.org/t/p/w500/aO4O1dqRoXVTschAwLaw1njdTwv.jpg",
+   "news": [
+    {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "Perfekter Tarantino-Ersatz ab heute im Kino: By Any Means erzählt eine Geschichte, die eigentlich nicht wahr sein kann (aber sie stimmt)",
+     "link": "https://www.moviepilot.de/news/tarantino-by-any-means-1165270",
+     "datum": "2026-10-29T11:18:00.000Z"
     }
    ]
   },
@@ -2730,6 +2751,43 @@
    "news": [],
    "sprache": "en"
   },
+  "movie-656908": {
+   "titel": "Ramayana: Rise of a Legend",
+   "original": "रामायणम",
+   "leitsatz": null,
+   "handlung": "In einem Zeitalter der Götter und Könige hängt das Schicksal der Welten am seidenen Faden. Rama, ein Prinz, dessen Leben von Pflicht, Selbstlosigkeit und unerschütterlicher Rechtschaffenheit bestimmt wird, muss sich dem unsterblichen Ravana stellen, getrieben von Stolz und Rache und mächtig genug den Kosmos zu zerstören.",
+   "genres": [
+    "Fantasy",
+    "Action",
+    "Abenteuer"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "3 Std 13 Min"
+    ],
+    [
+     "Regie",
+     "Nitesh Tiwari"
+    ],
+    [
+     "Mit",
+     "Ranbir Kapoor, Yash, Sai Pallavi, Ravi Dubey"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=jxYY7gMelFM",
+   "link": "https://www.themoviedb.org/movie/656908",
+   "bild": "https://image.tmdb.org/t/p/w500/gOWnXaBxqT6k2y40hKfYU6c0Ym.jpg",
+   "news": [
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "‘Ramayana: Rise of a Legend’ Review: India’s National Epic Gets a Fittingly Massive Cinematic Treatment",
+     "link": "https://www.indiewire.com/criticism/movies/ramayana-rise-of-a-legend-review-1235224631/",
+     "datum": "2026-10-30T16:00:00.000Z"
+    }
+   ]
+  },
   "movie-1365378": {
    "titel": "Große Träume",
    "original": "Le rêve américain",
@@ -2759,35 +2817,6 @@
    "trailer": null,
    "link": "https://www.themoviedb.org/movie/1365378",
    "bild": "https://image.tmdb.org/t/p/w500/yObiUK0WVhx0hwTIJhocdJTmhFc.jpg",
-   "news": []
-  },
-  "movie-656908": {
-   "titel": "Ramayana: Rise of a Legend",
-   "original": "रामायणम",
-   "leitsatz": null,
-   "handlung": "In einem Zeitalter der Götter und Könige hängt das Schicksal der Welten am seidenen Faden. Rama, ein Prinz, dessen Leben von Pflicht, Selbstlosigkeit und unerschütterlicher Rechtschaffenheit bestimmt wird, muss sich dem unsterblichen Ravana stellen, getrieben von Stolz und Rache und mächtig genug den Kosmos zu zerstören.",
-   "genres": [
-    "Fantasy",
-    "Action",
-    "Abenteuer"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "3 Std 13 Min"
-    ],
-    [
-     "Regie",
-     "Nitesh Tiwari"
-    ],
-    [
-     "Mit",
-     "Ranbir Kapoor, Yash, Sai Pallavi, Ravi Dubey"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=jxYY7gMelFM",
-   "link": "https://www.themoviedb.org/movie/656908",
-   "bild": "https://image.tmdb.org/t/p/w500/gOWnXaBxqT6k2y40hKfYU6c0Ym.jpg",
    "news": []
   },
   "movie-1381071": {
@@ -2856,35 +2885,6 @@
    "news": [],
    "sprache": "en"
   },
-  "movie-891621": {
-   "titel": "Wild Horse Nine",
-   "original": "Wild Horse Nine",
-   "leitsatz": null,
-   "handlung": "Kurz vor dem Militär-Putsch in Chile im Jahr 1973 werden die CIA-Agenten Chris und Lee von ihrem Büroleiter MJ von Santiago auf die Osterinsel entsandt. Vor dem Hintergrund der ikonischen Skulpturen der Insel ringen die langjährigen Partner mit ihrer dunklen Vergangenheit und aktuellen Verschwörungen. Dabei droht Chris’ neu gefundene Freundschaft mit zwei rebellischen Studentinnen die Reise aller in dieses abgelegene Paradies völlig aus dem Ruder laufen zu lassen.",
-   "genres": [
-    "Komödie",
-    "Krimi",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 57 Min"
-    ],
-    [
-     "Regie",
-     "Martin McDonagh"
-    ],
-    [
-     "Mit",
-     "John Malkovich, Sam Rockwell, Steve Buscemi, Mariana di Girolamo"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=7JEuh1n-WpI",
-   "link": "https://www.themoviedb.org/movie/891621",
-   "bild": "https://image.tmdb.org/t/p/w500/aYv3GH3mloWHMBetmrd8aRHX7QF.jpg",
-   "news": []
-  },
   "movie-1117898": {
    "titel": "Der Kater mit Hut",
    "original": "The Cat in the Hat",
@@ -2918,11 +2918,47 @@
     {
      "quelle": "The Hollywood Reporter",
      "art": "film",
+     "titel": "Hollywood Celebrates Halloween, ‘The Cat in the Hat’ Premieres and This Week’s Best Events",
+     "link": "https://www.hollywoodreporter.com/gallery/halloween-cat-in-the-hat-red-carpet-events-1236739585/",
+     "datum": "2026-10-30T18:26:41.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
      "titel": "‘The Cat in the Hat’ Is Back: How the Seuss Icon’s First Animated Feature Will Kick Off a New Era",
      "link": "https://www.hollywoodreporter.com/movies/movie-features/cat-in-the-hat-directors-dr-seuss-enterprises-bill-hader-1236734078/",
      "datum": "2026-10-29T18:19:05.000Z"
     }
    ]
+  },
+  "movie-891621": {
+   "titel": "Wild Horse Nine",
+   "original": "Wild Horse Nine",
+   "leitsatz": null,
+   "handlung": "Kurz vor dem Militär-Putsch in Chile im Jahr 1973 werden die CIA-Agenten Chris und Lee von ihrem Büroleiter MJ von Santiago auf die Osterinsel entsandt. Vor dem Hintergrund der ikonischen Skulpturen der Insel ringen die langjährigen Partner mit ihrer dunklen Vergangenheit und aktuellen Verschwörungen. Dabei droht Chris’ neu gefundene Freundschaft mit zwei rebellischen Studentinnen die Reise aller in dieses abgelegene Paradies völlig aus dem Ruder laufen zu lassen.",
+   "genres": [
+    "Komödie",
+    "Krimi",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 57 Min"
+    ],
+    [
+     "Regie",
+     "Martin McDonagh"
+    ],
+    [
+     "Mit",
+     "John Malkovich, Sam Rockwell, Steve Buscemi, Mariana di Girolamo"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=7JEuh1n-WpI",
+   "link": "https://www.themoviedb.org/movie/891621",
+   "bild": "https://image.tmdb.org/t/p/w500/aYv3GH3mloWHMBetmrd8aRHX7QF.jpg",
+   "news": []
   },
   "movie-1430077": {
    "titel": "Hokum",
@@ -2953,7 +2989,7 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=I1dx_clHJ-Q",
    "link": "https://www.themoviedb.org/movie/1430077",
-   "bild": "https://image.tmdb.org/t/p/w500/x6rHcQFiYcczLQPrmxXPAicm54E.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/mNGfdRoZFmyzagpxg22fsNZ3d3A.jpg",
    "news": []
   },
   "movie-1165366": {
@@ -3023,36 +3059,6 @@
    ],
    "sprache": "en"
   },
-  "movie-1391239": {
-   "titel": "Das Debüt - Ihr großer Auftritt",
-   "original": "The Debut",
-   "leitsatz": null,
-   "handlung": "When Mona Friedman is cast in a bit part at a small community theater, she transforms from a shy, unassuming housewife into a zealous method actor willing to do anything to protect the artistic integrity of her marginal role—even if it means waging war against the show’s domineering director.",
-   "genres": [
-    "Musik",
-    "Komödie",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 45 Min"
-    ],
-    [
-     "Regie",
-     "Jesse Eisenberg"
-    ],
-    [
-     "Mit",
-     "Julianne Moore, Paul Giamatti, Halle Bailey, Jesse Eisenberg"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=C0IoNLkxefY",
-   "link": "https://www.themoviedb.org/movie/1391239",
-   "bild": "https://image.tmdb.org/t/p/w500/5CZdxLiBpYMBXwo0rur6YzZTVP4.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "movie-1300926": {
    "titel": "Angry Birds 3 - Der Film",
    "original": "The Angry Birds Movie 3",
@@ -3080,6 +3086,36 @@
    "trailer": "https://www.youtube.com/watch?v=eTAeGROy--Y",
    "link": "https://www.themoviedb.org/movie/1300926",
    "bild": "https://image.tmdb.org/t/p/w500/oxaW6X3xohnzdFSBKCrCjRDckMe.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1391239": {
+   "titel": "Das Debüt - Ihr großer Auftritt",
+   "original": "The Debut",
+   "leitsatz": null,
+   "handlung": "When Mona Friedman is cast in a bit part at a small community theater, she transforms from a shy, unassuming housewife into a zealous method actor willing to do anything to protect the artistic integrity of her marginal role—even if it means waging war against the show’s domineering director.",
+   "genres": [
+    "Musik",
+    "Komödie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 45 Min"
+    ],
+    [
+     "Regie",
+     "Jesse Eisenberg"
+    ],
+    [
+     "Mit",
+     "Julianne Moore, Paul Giamatti, Halle Bailey, Colton Ryan"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=C0IoNLkxefY",
+   "link": "https://www.themoviedb.org/movie/1391239",
+   "bild": "https://image.tmdb.org/t/p/w500/5CZdxLiBpYMBXwo0rur6YzZTVP4.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -3165,36 +3201,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/gPdzdeehaoaYqxH2rA6yayEDSsS.jpg",
    "news": []
   },
-  "movie-1437511": {
-   "titel": "How to Rob a Bank",
-   "original": "How to Rob a Bank",
-   "leitsatz": "Wer raubt hier wen aus?",
-   "handlung": "A crew of social media-savvy bank robbers broadcasts their daring heists, unaware that their growing viral fame has put them in the crosshairs of a veteran FBI agent and a brilliant software engineer. Despite the unlikely duo closing in, the crime ring pushes past their limits, putting everything on the line for their most ambitious heist yet.",
-   "genres": [
-    "Action",
-    "Krimi",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 2 Min"
-    ],
-    [
-     "Regie",
-     "David Leitch"
-    ],
-    [
-     "Mit",
-     "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=Rm4gm8BCWUg",
-   "link": "https://www.themoviedb.org/movie/1437511",
-   "bild": "https://image.tmdb.org/t/p/w500/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "movie-1469342": {
    "titel": "Her Private Hell",
    "original": "Her Private Hell",
@@ -3227,34 +3233,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/8chAk0TbPT69Q5eN160JYayvfQM.jpg",
    "news": []
   },
-  "movie-1585239": {
-   "titel": "Club Kid",
-   "original": "Club Kid",
-   "leitsatz": null,
-   "handlung": "Das turbulente Leben eines exzessiv feiernden Club-Promoters in New York City gerät völlig aus den Fugen, als plötzlich der zehnjährige Sohn vor der Tür steht – von dessen Existenz er bislang nichts wusste.",
-   "genres": [
-    "Komödie",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 6 Min"
-    ],
-    [
-     "Regie",
-     "Jordan Firstman"
-    ],
-    [
-     "Mit",
-     "Jordan Firstman, Reggie Absolom, Cara Delevingne, Diego Calva"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=guKEdb_iRXw",
-   "link": "https://www.themoviedb.org/movie/1585239",
-   "bild": "https://image.tmdb.org/t/p/w500/o1qMU0ZB5XDX8IXJFFu3AkhOqjh.jpg",
-   "news": []
-  },
   "movie-1440769": {
    "titel": "The Beekeeper 2",
    "original": "The Beekeeper 2",
@@ -3281,34 +3259,35 @@
    "news": [],
    "sprache": "en"
   },
-  "movie-1437981": {
-   "titel": "Coward",
-   "original": "Coward",
-   "leitsatz": null,
-   "handlung": "Während sich der Erste Weltkrieg immer weiter hinzieht, brennt Pierre, ein neu an der Front eingetroffener Soldat, darauf, sich zu beweisen. Hinter den Linien begegnet er Francis, der seine Kameraden mit einer Theaterrevue aufheitern will. Während die Gewalt unvermindert anhält, suchen beide Männer nach Wegen, der Brutalität des Krieges zu entkommen – und sei es nur für einen Augenblick.",
+  "movie-1437511": {
+   "titel": "How to Rob a Bank",
+   "original": "How to Rob a Bank",
+   "leitsatz": "Wer raubt hier wen aus?",
+   "handlung": "A crew of social media-savvy bank robbers broadcasts their daring heists, unaware that their growing viral fame has put them in the crosshairs of a veteran FBI agent and a brilliant software engineer. Despite the unlikely duo closing in, the crime ring pushes past their limits, putting everything on the line for their most ambitious heist yet.",
    "genres": [
-    "Drama",
-    "Liebesfilm",
-    "Kriegsfilm"
+    "Action",
+    "Krimi",
+    "Thriller"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 0 Min"
+     "2 Std 2 Min"
     ],
     [
      "Regie",
-     "Lukas Dhont"
+     "David Leitch"
     ],
     [
      "Mit",
-     "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver"
+     "Nicholas Hoult, Zoë Kravitz, Anna Sawai, Rhenzy Feliz"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=T1SAZTIZnrQ",
-   "link": "https://www.themoviedb.org/movie/1437981",
-   "bild": "https://image.tmdb.org/t/p/w500/qy5ytiCeyR9uW5HsLDOFaOQ8yEr.jpg",
-   "news": []
+   "trailer": "https://www.youtube.com/watch?v=Rm4gm8BCWUg",
+   "link": "https://www.themoviedb.org/movie/1437511",
+   "bild": "https://image.tmdb.org/t/p/w500/ifYDZkr2qkHFz87TNVvlxajOxl5.jpg",
+   "news": [],
+   "sprache": "en"
   },
   "movie-822653": {
    "titel": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
@@ -3338,6 +3317,89 @@
    "trailer": "https://www.youtube.com/watch?v=lAIYKMbMMcg",
    "link": "https://www.themoviedb.org/movie/822653",
    "bild": "https://image.tmdb.org/t/p/w500/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
+   "news": []
+  },
+  "movie-1457866": {
+   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "original": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "leitsatz": null,
+   "handlung": "Acht Jahre nach den Ereignissen von „Once Upon a Time in… Hollywood“ navigiert Cliff Booth in seiner neuen Rolle als Fixer durch das Studiosystem.",
+   "genres": [
+    "Drama",
+    "Komödie",
+    "Thriller",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "David Fincher"
+    ],
+    [
+     "Mit",
+     "Brad Pitt, Elizabeth Debicki, Scott Caan, Carla Gugino"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=RjEZaUBbUvU",
+   "link": "https://www.themoviedb.org/movie/1457866",
+   "bild": "https://image.tmdb.org/t/p/w500/8jSyV5i8aFYPiO3c3B9YUu14hN2.jpg",
+   "news": []
+  },
+  "movie-1585239": {
+   "titel": "Club Kid",
+   "original": "Club Kid",
+   "leitsatz": null,
+   "handlung": "Das turbulente Leben eines exzessiv feiernden Club-Promoters in New York City gerät völlig aus den Fugen, als plötzlich der zehnjährige Sohn vor der Tür steht – von dessen Existenz er bislang nichts wusste.",
+   "genres": [
+    "Komödie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 6 Min"
+    ],
+    [
+     "Regie",
+     "Jordan Firstman"
+    ],
+    [
+     "Mit",
+     "Jordan Firstman, Reggie Absolom, Cara Delevingne, Diego Calva"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=guKEdb_iRXw",
+   "link": "https://www.themoviedb.org/movie/1585239",
+   "bild": "https://image.tmdb.org/t/p/w500/o1qMU0ZB5XDX8IXJFFu3AkhOqjh.jpg",
+   "news": []
+  },
+  "movie-1437981": {
+   "titel": "Coward",
+   "original": "Coward",
+   "leitsatz": null,
+   "handlung": "Während sich der Erste Weltkrieg immer weiter hinzieht, brennt Pierre, ein neu an der Front eingetroffener Soldat, darauf, sich zu beweisen. Hinter den Linien begegnet er Francis, der seine Kameraden mit einer Theaterrevue aufheitern will. Während die Gewalt unvermindert anhält, suchen beide Männer nach Wegen, der Brutalität des Krieges zu entkommen – und sei es nur für einen Augenblick.",
+   "genres": [
+    "Drama",
+    "Liebesfilm",
+    "Kriegsfilm"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 0 Min"
+    ],
+    [
+     "Regie",
+     "Lukas Dhont"
+    ],
+    [
+     "Mit",
+     "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=T1SAZTIZnrQ",
+   "link": "https://www.themoviedb.org/movie/1437981",
+   "bild": "https://image.tmdb.org/t/p/w500/qy5ytiCeyR9uW5HsLDOFaOQ8yEr.jpg",
    "news": []
   },
   "movie-848700": {
@@ -3373,32 +3435,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/jUzJYKP0vGXj3HTEkjQiVMjE4ej.jpg",
    "news": []
   },
-  "movie-1457866": {
-   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
-   "original": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
-   "leitsatz": null,
-   "handlung": "Acht Jahre nach den Ereignissen von „Once Upon a Time in… Hollywood“ navigiert Cliff Booth in seiner neuen Rolle als Fixer durch das Studiosystem.",
-   "genres": [
-    "Drama",
-    "Komödie",
-    "Thriller",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "David Fincher"
-    ],
-    [
-     "Mit",
-     "Brad Pitt, Elizabeth Debicki, Scott Caan, Carla Gugino"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=RjEZaUBbUvU",
-   "link": "https://www.themoviedb.org/movie/1457866",
-   "bild": "https://image.tmdb.org/t/p/w500/8jSyV5i8aFYPiO3c3B9YUu14hN2.jpg",
-   "news": []
-  },
   "movie-1074074": {
    "titel": "El ser querido",
    "original": "El ser querido",
@@ -3428,6 +3464,34 @@
    "trailer": "https://www.youtube.com/watch?v=2I5LLG2XBco",
    "link": "https://www.themoviedb.org/movie/1074074",
    "bild": "https://image.tmdb.org/t/p/w500/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1440304": {
+   "titel": "Mauvaise Pioche",
+   "original": "Mauvaise Pioche",
+   "leitsatz": null,
+   "handlung": "​Arrested by mistake and mistaken for France’s most wanted man, Serge Martin, a peaceful retiree, becomes the target of the media. Caught up in a never-ending whirlwind, he’ll do everything he can to prove his innocence and get his life back… if that’s even possible!",
+   "genres": [
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Gérard Jugnot"
+    ],
+    [
+     "Mit",
+     "Gérard Jugnot, Thierry Lhermitte, Philippe Lacheau, Zabou Breitman"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.0 / 10"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/1440304",
+   "bild": "https://image.tmdb.org/t/p/w500/wRPxSccJw6wckkBUOzM5CHd871w.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -3485,34 +3549,6 @@
    "news": [],
    "sprache": "en"
   },
-  "movie-1440304": {
-   "titel": "Mauvaise Pioche",
-   "original": "Mauvaise Pioche",
-   "leitsatz": null,
-   "handlung": "​Arrested by mistake and mistaken for France’s most wanted man, Serge Martin, a peaceful retiree, becomes the target of the media. Caught up in a never-ending whirlwind, he’ll do everything he can to prove his innocence and get his life back… if that’s even possible!",
-   "genres": [
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Gérard Jugnot"
-    ],
-    [
-     "Mit",
-     "Gérard Jugnot, Thierry Lhermitte, Philippe Lacheau, Zabou Breitman"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.0 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1440304",
-   "bild": "https://image.tmdb.org/t/p/w500/wRPxSccJw6wckkBUOzM5CHd871w.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "movie-947493": {
    "titel": "Iron Boy",
    "original": "Le Corset",
@@ -3543,7 +3579,7 @@
    ],
    "trailer": null,
    "link": "https://www.themoviedb.org/movie/947493",
-   "bild": "https://image.tmdb.org/t/p/w500/7RN7uox5vLnMY3GAXKjjGHTkeXR.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/h4YDklaLjbgdu9yUr6vNybnrnzX.jpg",
    "news": []
   },
   "movie-1251608": {
@@ -3576,57 +3612,35 @@
    "bild": "https://image.tmdb.org/t/p/w500/umVTLVc7sjLqEMClbkvIA2SjOLg.jpg",
    "news": []
   },
-  "movie-1452168": {
-   "titel": "Behemoth! - Stück meines Lebens",
-   "original": "Behemoth!",
+  "movie-1084728": {
+   "titel": "Asterix und das Königreich Nubien",
+   "original": "Astérix - Le Royaume de Nubie",
    "leitsatz": null,
-   "handlung": "Der begnadete Cellist Alex Serian kehrt nach 20 Jahren auf Tournee in seine Heimatstadt Los Angeles zurück. Die Musik, die stets der beständige, alles verzehrende Strom seines Lebens war, trägt Alex nun in ein Abenteuer, das ihn für immer verändern wird.",
+   "handlung": "Die unbesiegbaren Gallier werden in harmlose Kinder verwandelt, nachdem ein seltenes Jugendelixier versehentlich in den Zaubertrank geraten ist.",
    "genres": [
-    "Musik",
-    "Drama"
+    "Animation",
+    "Abenteuer",
+    "Komödie",
+    "Familie",
+    "Fantasy"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 7 Min"
+     "1 Std 26 Min"
     ],
     [
      "Regie",
-     "Tony Gilroy"
+     "Alexandre Heboyan"
     ],
     [
      "Mit",
-     "Pedro Pascal, Olivia Wilde, Eva Victor, Will Arnett"
+     "Christian Clavier, François-Xavier Demaison, Bernard Alane, Issa Doumbia"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=476sg1G_PC8",
-   "link": "https://www.themoviedb.org/movie/1452168",
-   "bild": "https://image.tmdb.org/t/p/w500/bcyGYWfcXr0GnXewaE5gkvYy1iQ.jpg",
-   "news": []
-  },
-  "movie-1115030": {
-   "titel": "Animal Friends",
-   "original": "Animal Friends",
-   "leitsatz": null,
-   "handlung": "Zwei Tiere werden unwahrscheinliche Freunde.",
-   "genres": [
-    "Komödie",
-    "Abenteuer",
-    "Animation"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Peter Atencio"
-    ],
-    [
-     "Mit",
-     "Ryan Reynolds, Jason Momoa, Aubrey Plaza, Dan Levy"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1115030",
-   "bild": "https://image.tmdb.org/t/p/w500/AfJldsj8a42yeg9Ued3MdgbfWnC.jpg",
+   "trailer": "https://www.youtube.com/watch?v=JZZz8m0N3t8",
+   "link": "https://www.themoviedb.org/movie/1084728",
+   "bild": "https://image.tmdb.org/t/p/w500/eu1OPnvIVhLmYwmxNiM5UAW0hM0.jpg",
    "news": []
   },
   "movie-940009": {
@@ -3659,6 +3673,39 @@
    "bild": "https://image.tmdb.org/t/p/w500/rpP29aOKpHy1FhX8OZQdUICEs2j.jpg",
    "news": [],
    "sprache": "en"
+  },
+  "movie-1227877": {
+   "titel": "I Love Boosters",
+   "original": "I Love Boosters",
+   "leitsatz": null,
+   "handlung": "Eine Gruppe von professionellen Ladendiebinnen – die sogenannte Velvet Gang unter der Führung von Corvette (Keke Palmer) – stiehlt Kleidung aus Boutiquen und Kaufhäusern. Als die skrupellose Modeikone Christie Smith (Demi Moore) eines von Corvettes Designs stiehlt, nimmt die Gang das gesamte Inventar der Modemogulin ins Visier. Damit lösen sie versehentlich eine weltweite Bewegung für Einzelhandels- und Fabrikarbeiter aus.",
+   "genres": [
+    "Komödie",
+    "Science Fiction",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 53 Min"
+    ],
+    [
+     "Regie",
+     "Boots Riley"
+    ],
+    [
+     "Mit",
+     "Keke Palmer, Naomi Ackie, Taylour Paige, Poppy Liu"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=I1xZegSgN8w",
+   "link": "https://www.themoviedb.org/movie/1227877",
+   "bild": "https://image.tmdb.org/t/p/w500/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
+   "news": []
   },
   "tv-313699": {
    "titel": "Balaraw: Blood Island",
@@ -3783,6 +3830,20 @@
     {
      "quelle": "Moviepilot",
      "art": "film",
+     "titel": "Harry Potter-Serie: Jetzt stehen die Stars für den Sprechenden Hut, die Fette Dame und die Hogwarts-Hausgeister fest",
+     "link": "https://www.moviepilot.de/news/harry-potter-serie-jetzt-stehen-die-stars-fur-den-sprechenden-hut-und-die-hogwarts-hausgeister-fest-1165302",
+     "datum": "2026-10-30T15:49:00.000Z"
+    },
+    {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "Die Besetzung der Harry Potter-Serie: Daher kennt ihr die neuen Stars",
+     "link": "https://www.moviepilot.de/news/die-besetzung-der-harry-potter-serie-daher-kennt-ihr-die-neuen-stars-1151543",
+     "datum": "2026-10-30T11:30:00.000Z"
+    },
+    {
+     "quelle": "Moviepilot",
+     "art": "film",
      "titel": "Die Harry Potter-Serie kommt: Was über Start, Besetzung und Handlung bekannt ist",
      "link": "https://www.moviepilot.de/news/die-harry-potter-serie-kommt-was-ueber-start-besetzung-und-handlung-bekannt-ist-1141403",
      "datum": "2026-10-30T09:15:00.000Z"
@@ -3875,6 +3936,38 @@
     }
    ]
   },
+  "tv-285887": {
+   "titel": "Bloodaxe",
+   "original": "Bloodaxe",
+   "leitsatz": null,
+   "handlung": "Follow Erik Bloodaxe, and his formidable wife, Gunnhild, Mother of Kings as they fight for the throne of Norway, the land is torn apart by fierce rivals, shifting loyalties, and bloody betrayals. With war looming and chaos consuming the kingdom, drawing in the ruthless Kings of other Scandinavian countries, and even a powerful English ruler, the stage is set for a thundering, cataclysmic, compelling and utterly magical new Viking Saga.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 8 Folgen"
+    ],
+    [
+     "Von",
+     "Michael Hirst, Horatio Hirst"
+    ],
+    [
+     "Mit",
+     "Xavier Molyneux, Jessica Madsen, Karlis Arnolds Avots, Rod Hallett"
+    ],
+    [
+     "Sender/Dienst",
+     "Prime Video"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=nT8Mdw5nKd0",
+   "link": "https://www.themoviedb.org/tv/285887",
+   "bild": "https://image.tmdb.org/t/p/w500/3dWNyzYFQfuL7pj3OdlSjyOr6yN.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "tv-338689": {
    "titel": "Der Fall von El Mayo",
    "original": "The Fall of El Mayo",
@@ -3901,38 +3994,6 @@
    "link": "https://www.themoviedb.org/tv/338689",
    "bild": "https://image.tmdb.org/t/p/w500/zp5lT15wR0cfCYcR12DXcVNsrnh.jpg",
    "news": []
-  },
-  "tv-288672": {
-   "titel": "Pride and Prejudice",
-   "original": "Pride and Prejudice",
-   "leitsatz": null,
-   "handlung": "Elizabeth Bennet is an unmarried woman and the second of five daughters of Mr. and Mrs. Bennet from Hertfordshire, near London. The Bennet home can only be inherited by males in the family, so the pressure is on for the daughters to marry well or risk losing everything. While out in society, Elizabeth interacts with single men like Mr. Darcy, an outwardly curmudgeon who is misunderstood.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 6 Folgen"
-    ],
-    [
-     "Von",
-     "Dolly Alderton"
-    ],
-    [
-     "Mit",
-     "Emma Corrin, Jack Lowden, Olivia Colman, Rufus Sewell"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=4bSKM9WWT08",
-   "link": "https://www.themoviedb.org/tv/288672",
-   "bild": "https://image.tmdb.org/t/p/w500/48gkikPDZm2IP1zdaboOPpELRwX.jpg",
-   "news": [],
-   "sprache": "en"
   },
   "tv-303044": {
    "titel": "Campus Drivers",
@@ -3966,6 +4027,38 @@
    "news": [],
    "sprache": "en"
   },
+  "tv-288672": {
+   "titel": "Pride and Prejudice",
+   "original": "Pride and Prejudice",
+   "leitsatz": null,
+   "handlung": "Elizabeth Bennet is an unmarried woman and the second of five daughters of Mr. and Mrs. Bennet from Hertfordshire, near London. The Bennet home can only be inherited by males in the family, so the pressure is on for the daughters to marry well or risk losing everything. While out in society, Elizabeth interacts with single men like Mr. Darcy, an outwardly curmudgeon who is misunderstood.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 6 Folgen"
+    ],
+    [
+     "Von",
+     "Dolly Alderton"
+    ],
+    [
+     "Mit",
+     "Emma Corrin, Jack Lowden, Olivia Colman, Rufus Sewell"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=KuRYRhP6kag",
+   "link": "https://www.themoviedb.org/tv/288672",
+   "bild": "https://image.tmdb.org/t/p/w500/48gkikPDZm2IP1zdaboOPpELRwX.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "tv-291507": {
    "titel": "The Body",
    "original": "The Body",
@@ -3996,72 +4089,6 @@
    "trailer": "https://www.youtube.com/watch?v=wl7uj7n7DoY",
    "link": "https://www.themoviedb.org/tv/291507",
    "bild": "https://image.tmdb.org/t/p/w500/zksg8e0GZAmg1nLhVP5tKso3QRs.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "tv-285887": {
-   "titel": "Bloodaxe",
-   "original": "Bloodaxe",
-   "leitsatz": null,
-   "handlung": "Follow Erik Bloodaxe, and his formidable wife, Gunnhild, Mother of Kings as they fight for the throne of Norway, the land is torn apart by fierce rivals, shifting loyalties, and bloody betrayals. With war looming and chaos consuming the kingdom, drawing in the ruthless Kings of other Scandinavian countries, and even a powerful English ruler, the stage is set for a thundering, cataclysmic, compelling and utterly magical new Viking Saga.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 8 Folgen"
-    ],
-    [
-     "Von",
-     "Michael Hirst, Horatio Hirst"
-    ],
-    [
-     "Mit",
-     "Xavier Molyneux, Jessica Madsen, Karlis Arnolds Avots, Rod Hallett"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=nT8Mdw5nKd0",
-   "link": "https://www.themoviedb.org/tv/285887",
-   "bild": "https://image.tmdb.org/t/p/w500/3dWNyzYFQfuL7pj3OdlSjyOr6yN.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "tv-314271": {
-   "titel": "Bass X Machina",
-   "original": "Bass X Machina",
-   "leitsatz": null,
-   "handlung": "In a lawless Steampunk West overrun by brutal outlaws, machines, and supernatural terrors, a father is forced to become judge, jury, and executioner—knowing that every act of justice meant to protect his family may ultimately cost him the very people he's fighting to save.",
-   "genres": [
-    "Animation",
-    "Western",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 6 Folgen"
-    ],
-    [
-     "Von",
-     "LeSean Thomas"
-    ],
-    [
-     "Mit",
-     "Brian Tyree Henry, Janelle Monáe, Tati Gabrielle, Cree Summer"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=jjr5mf9i42Q",
-   "link": "https://www.themoviedb.org/tv/314271",
-   "bild": "https://image.tmdb.org/t/p/w500/y9c1AwrldWRsY9edSf21cOgbI0h.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4099,31 +4126,37 @@
    "news": [],
    "sprache": "en"
   },
-  "tv-338562": {
-   "titel": "La Ley de Alicia",
-   "original": "La Ley de Alicia",
+  "tv-314271": {
+   "titel": "Bass X Machina",
+   "original": "Bass X Machina",
    "leitsatz": null,
-   "handlung": "After her husband, a Supreme Court Justice Minister, is imprisoned for corruption, Alicia must restart her law career to support her children and pay bills as her world crumbles.",
+   "handlung": "In a lawless Steampunk West overrun by brutal outlaws, machines, and supernatural terrors, a father is forced to become judge, jury, and executioner—knowing that every act of justice meant to protect his family may ultimately cost him the very people he's fighting to save.",
    "genres": [
-    "Drama"
+    "Animation",
+    "Western",
+    "Sci-Fi & Fantasy"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 1 Folgen"
+     "1 Staffel, 6 Folgen"
+    ],
+    [
+     "Von",
+     "LeSean Thomas"
     ],
     [
      "Mit",
-     "Fernanda Castillo, Michel Brown, Claudio Roca, Alaide"
+     "Brian Tyree Henry, Janelle Monáe, Tati Gabrielle, Cree Summer"
     ],
     [
      "Sender/Dienst",
      "Netflix"
     ]
    ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/338562",
-   "bild": "https://image.tmdb.org/t/p/w500/7o9nY3GO97jyeVWdtWr12nR0Qpt.jpg",
+   "trailer": "https://www.youtube.com/watch?v=jjr5mf9i42Q",
+   "link": "https://www.themoviedb.org/tv/314271",
+   "bild": "https://image.tmdb.org/t/p/w500/y9c1AwrldWRsY9edSf21cOgbI0h.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4159,68 +4192,31 @@
    "news": [],
    "sprache": "en"
   },
-  "tv-300755": {
-   "titel": "Rinnan",
-   "original": "Rinnan",
+  "tv-338562": {
+   "titel": "La Ley de Alicia",
+   "original": "La Ley de Alicia",
    "leitsatz": null,
-   "handlung": "The series follows the young and ambitious Henry Rinnan, and how his personal demons and narcissistic need for recognition drove him from a failed salesman to Norway’s most notorious traitor.",
+   "handlung": "After her husband, a Supreme Court Justice Minister, is imprisoned for corruption, Alicia must restart her law career to support her children and pay bills as her world crumbles.",
    "genres": [
     "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 4 Folgen"
-    ],
-    [
-     "Von",
-     "Øyvind Holtmon"
+     "1 Staffel, 1 Folgen"
     ],
     [
      "Mit",
-     "Axel Bøyum, Odin Waage, Andrea Berntzen, Håkon Stene"
+     "Fernanda Castillo, Michel Brown, Claudio Roca, Alaide"
     ],
     [
      "Sender/Dienst",
-     "Prime Video"
+     "Netflix"
     ]
    ],
    "trailer": null,
-   "link": "https://www.themoviedb.org/tv/300755",
-   "bild": "https://image.tmdb.org/t/p/w500/6uFaEHVmoP88w0RxIOYAjWq2A7W.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "tv-334919": {
-   "titel": "Call the Midwife: Sisters in Arms",
-   "original": "Call the Midwife: Sisters in Arms",
-   "leitsatz": null,
-   "handlung": "In September 1939, Nonnatus House is the beating heart of the East End community of Poplar. The nurses and nuns dedicate their lives to mothers, babies and the poor. But there is no gas and air, no penicillin, no cure for TB, and no welfare state. Then war is declared — and life gets even harder. While bombs rain from the sky, women give birth underground, families are shattered and whole streets are reduced to ruins. But courage and resilience triumphs as the community unites to survive.",
-   "genres": [
-    "Drama",
-    "War & Politics"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 3 Folgen"
-    ],
-    [
-     "Von",
-     "Heidi Thomas"
-    ],
-    [
-     "Mit",
-     "Julie Hesmondhalgh, Amy Booth-Steel, Helen Schlesinger, Helena Wilson"
-    ],
-    [
-     "Sender/Dienst",
-     "BBC One"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/334919",
-   "bild": "https://image.tmdb.org/t/p/w500/YCH3NPIVeJW9eK2JSnIwv5KEjY.jpg",
+   "link": "https://www.themoviedb.org/tv/338562",
+   "bild": "https://image.tmdb.org/t/p/w500/7o9nY3GO97jyeVWdtWr12nR0Qpt.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4253,6 +4249,34 @@
    "trailer": "https://www.youtube.com/watch?v=_xnU6YVrCpA",
    "link": "https://www.themoviedb.org/tv/274395",
    "bild": "https://image.tmdb.org/t/p/w500/klcJ21KUgkDFQBQuECYr2FJYR5z.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "tv-320507": {
+   "titel": "The Secret Lives of Mormon Wives: Orange County",
+   "original": "The Secret Lives of Mormon Wives: Orange County",
+   "leitsatz": null,
+   "handlung": "A new group of dynamic young mothers in Orange County collide in a community where beliefs are not just their religion; they are their identity. While some defend their way of life, fighting against modernity, others embrace change, becoming a platform to disrupt the status quo. Scandals and secrets will be revealed, facades will crumble, and families and friendships will change forever on both sides of the battlefield as this group of strong, game-changing influencers comes together to build their answer to #MomTok.",
+   "genres": [
+    "Reality"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 10 Folgen"
+    ],
+    [
+     "Mit",
+     "Ashleigh Pease, Aspyn Ovard, Avery Woods, Bobbi Althoff"
+    ],
+    [
+     "Sender/Dienst",
+     "Hulu"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=0JLdH0cPdnc",
+   "link": "https://www.themoviedb.org/tv/320507",
+   "bild": "https://image.tmdb.org/t/p/w500/rEcJkRhfs663zsjWCJhtsbRWv7g.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4374,6 +4398,42 @@
    "bild": "https://image.tmdb.org/t/p/w500/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
    "news": []
   },
+  "tv-456": {
+   "titel": "Die Simpsons",
+   "original": "The Simpsons",
+   "leitsatz": null,
+   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
+   "genres": [
+    "Animation",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "38 Staffeln, 816 Folgen"
+    ],
+    [
+     "Von",
+     "Matt Groening"
+    ],
+    [
+     "Mit",
+     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
+    ],
+    [
+     "Sender/Dienst",
+     "FOX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
+   "link": "https://www.themoviedb.org/tv/456",
+   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "news": []
+  },
   "tv-2734": {
    "titel": "Law & Order: Special Victims Unit",
    "original": "Law & Order: Special Victims Unit",
@@ -4474,13 +4534,57 @@
     ],
     [
      "TMDB-Wertung",
-     "8.6 / 10"
+     "8.7 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=rcw2IBSlHwE",
    "link": "https://www.themoviedb.org/tv/213375",
    "bild": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
    "news": []
+  },
+  "tv-549": {
+   "titel": "Law & Order",
+   "original": "Law & Order",
+   "leitsatz": null,
+   "handlung": "Vertreter der Polizei und der Staatsanwaltschaft klären Kriminalverbrechen in und um New York auf. Mit allen zur Verfügung stehenden Mitteln versuchen die Ermittler dabei, den oder die Straftäter zur Verantwortung zu ziehen.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "26 Staffeln, 549 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf"
+    ],
+    [
+     "Mit",
+     "Maura Tierney, David Ajala, James Badge Dale, Tony Goldwyn"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=RzN8cPlcMTU",
+   "link": "https://www.themoviedb.org/tv/549",
+   "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
+   "news": [
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "NBC Officially Announces New 'Law & Order' Replacement",
+     "link": "https://collider.com/nbc-law-and-order-replacement-great-gatsby-reboot-detective-series/",
+     "datum": "2026-10-30T18:18:47.000Z"
+    }
+   ]
   },
   "tv-4614": {
    "titel": "Navy CIS",
@@ -4592,34 +4696,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
    "news": []
   },
-  "tv-3034": {
-   "titel": "Tatort",
-   "original": "Tatort",
-   "leitsatz": null,
-   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
-   "genres": [
-    "Drama",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "57 Staffeln, 1347 Folgen"
-    ],
-    [
-     "Sender/Dienst",
-     "ORF 1, Das Erste"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
-   "link": "https://www.themoviedb.org/tv/3034",
-   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
-   "news": []
-  },
   "tv-58841": {
    "titel": "Chicago P.D.",
    "original": "Chicago P.D.",
@@ -4656,6 +4732,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
    "news": [
     {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Neue Ära bei „Chicago P.D.“: Nach dem Abschied eines Publikumslieblings übernimmt dieser neue Officer",
+     "link": "https://www.serienjunkies.de/news/serien/neue-aera-bei-chicago-nach-dem-abschied-eines-publikumslieblings-uebernimmt-dieser-neue-officer-94566196.html",
+     "datum": "2026-10-30T11:00:00.000Z"
+    },
+    {
      "quelle": "Deadline",
      "art": "film",
      "titel": "Naiqui Macabroad Joins ‘Chicago P.D.’ Following LaRoyce Hawkins Exit",
@@ -4664,38 +4747,32 @@
     }
    ]
   },
-  "tv-30983": {
-   "titel": "Detektiv Conan",
-   "original": "名探偵コナン",
+  "tv-3034": {
+   "titel": "Tatort",
+   "original": "Tatort",
    "leitsatz": null,
-   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
+   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
    "genres": [
-    "Animation",
-    "Krimi",
-    "Mystery",
-    "Komödie"
+    "Drama",
+    "Krimi"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 1218 Folgen"
-    ],
-    [
-     "Mit",
-     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
+     "57 Staffeln, 1347 Folgen"
     ],
     [
      "Sender/Dienst",
-     "YTV"
+     "ORF 1, Das Erste"
     ],
     [
      "TMDB-Wertung",
-     "8.0 / 10"
+     "6.2 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
-   "link": "https://www.themoviedb.org/tv/30983",
-   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
+   "link": "https://www.themoviedb.org/tv/3034",
+   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
    "news": []
   },
   "tv-44006": {
@@ -4731,6 +4808,129 @@
    "trailer": "https://www.youtube.com/watch?v=IIeSDILTE5M",
    "link": "https://www.themoviedb.org/tv/44006",
    "bild": "https://image.tmdb.org/t/p/w500/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
+   "news": []
+  },
+  "tv-30983": {
+   "titel": "Detektiv Conan",
+   "original": "名探偵コナン",
+   "leitsatz": null,
+   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
+   "genres": [
+    "Animation",
+    "Krimi",
+    "Mystery",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 1218 Folgen"
+    ],
+    [
+     "Mit",
+     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
+    ],
+    [
+     "Sender/Dienst",
+     "YTV"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
+   "link": "https://www.themoviedb.org/tv/30983",
+   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "news": []
+  },
+  "tv-1413": {
+   "titel": "American Horror Story",
+   "original": "American Horror Story",
+   "leitsatz": "Was verschweigen sie uns noch?",
+   "handlung": "Die Serienanthologie American Horror Story erzählt von Staffel zu Staffel verschiedene, in sich abgeschlossene Geschichten, die sich mit unterschiedlichen Arten von Horror beschäftigen. Während jedes Jahr die Thematik sowie das Setting und viele Darsteller gewechselt werden, kehren einige Schauspieler mehrmals in unterschiedlichen Rollen zur Serie zurück.",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Sci-Fi & Fantasy"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "13 Staffeln, 145 Folgen"
+    ],
+    [
+     "Von",
+     "Ryan Murphy, Brad Falchuk"
+    ],
+    [
+     "Mit",
+     "Sarah Paulson, Evan Peters, Angela Bassett, Kathy Bates"
+    ],
+    [
+     "Sender/Dienst",
+     "FX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.1 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=GYoTOIsn5yk",
+   "link": "https://www.themoviedb.org/tv/1413",
+   "bild": "https://image.tmdb.org/t/p/w500/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Disney+ im November 2026: mit „Scrubs“, „American Horror Story“, „Vienna Game“ und „RJ Decker“",
+     "link": "https://www.serienjunkies.de/news/serien/disney-im-november-2026-mit-scrubs-american-horror-story-vienna-game-und-rj-decker-94566649.html",
+     "datum": "2026-10-30T14:00:00.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘American Horror Story’ Finale: Paul Anthony Kelly on the Season 13 Ending and Whether He’ll Return",
+     "link": "https://www.hollywoodreporter.com/tv/tv-features/american-horror-story-finale-paul-anthony-kelly-explained-1236741324/",
+     "datum": "2026-10-30T04:52:00.000Z"
+    }
+   ]
+  },
+  "tv-80748": {
+   "titel": "FBI",
+   "original": "FBI",
+   "leitsatz": null,
+   "handlung": "Die Agenten des New Yorker Büro des FBI arbeiten rund um die Uhr daran, die Stadt und ihr Land vor Terror, organisiertem Verbrechen und fremden Spionen zu beschützen. Unter der Leitung von Special Agent in Charge Dana Mosier setzt sich ihr Team aus verschiedenen Spezialisten mit einzigartigen Fähigkeiten zusammen.",
+   "genres": [
+    "Krimi",
+    "Action & Adventure",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "9 Staffeln, 162 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Craig Turk"
+    ],
+    [
+     "Mit",
+     "Missy Peregrym, Zeeko Zaki, John Boyd, Jeremy Sisto"
+    ],
+    [
+     "Sender/Dienst",
+     "CBS"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=r-btgaBL6-4",
+   "link": "https://www.themoviedb.org/tv/80748",
+   "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
    "news": []
   },
   "tv-2190": {
@@ -4791,51 +4991,6 @@
     }
    ]
   },
-  "tv-1413": {
-   "titel": "American Horror Story",
-   "original": "American Horror Story",
-   "leitsatz": "Was verschweigen sie uns noch?",
-   "handlung": "Die Serienanthologie American Horror Story erzählt von Staffel zu Staffel verschiedene, in sich abgeschlossene Geschichten, die sich mit unterschiedlichen Arten von Horror beschäftigen. Während jedes Jahr die Thematik sowie das Setting und viele Darsteller gewechselt werden, kehren einige Schauspieler mehrmals in unterschiedlichen Rollen zur Serie zurück.",
-   "genres": [
-    "Drama",
-    "Mystery",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "13 Staffeln, 145 Folgen"
-    ],
-    [
-     "Von",
-     "Ryan Murphy, Brad Falchuk"
-    ],
-    [
-     "Mit",
-     "Sarah Paulson, Evan Peters, Angela Bassett, Kathy Bates"
-    ],
-    [
-     "Sender/Dienst",
-     "FX"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.1 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=GYoTOIsn5yk",
-   "link": "https://www.themoviedb.org/tv/1413",
-   "bild": "https://image.tmdb.org/t/p/w500/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
-   "news": [
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘American Horror Story’ Finale: Paul Anthony Kelly on the Season 13 Ending and Whether He’ll Return",
-     "link": "https://www.hollywoodreporter.com/tv/tv-features/american-horror-story-finale-paul-anthony-kelly-explained-1236741324/",
-     "datum": "2026-10-30T04:52:00.000Z"
-    }
-   ]
-  },
   "tv-312359": {
    "titel": "Dragon Ball Super: Beerus",
    "original": "ドラゴンボール超 ビルス",
@@ -4867,43 +5022,6 @@
    "trailer": "https://www.youtube.com/watch?v=iCD3Lf7Jf9o",
    "link": "https://www.themoviedb.org/tv/312359",
    "bild": "https://image.tmdb.org/t/p/w500/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
-   "news": []
-  },
-  "tv-80748": {
-   "titel": "FBI",
-   "original": "FBI",
-   "leitsatz": null,
-   "handlung": "Die Agenten des New Yorker Büro des FBI arbeiten rund um die Uhr daran, die Stadt und ihr Land vor Terror, organisiertem Verbrechen und fremden Spionen zu beschützen. Unter der Leitung von Special Agent in Charge Dana Mosier setzt sich ihr Team aus verschiedenen Spezialisten mit einzigartigen Fähigkeiten zusammen.",
-   "genres": [
-    "Krimi",
-    "Action & Adventure",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "9 Staffeln, 162 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Craig Turk"
-    ],
-    [
-     "Mit",
-     "Missy Peregrym, Zeeko Zaki, John Boyd, Jeremy Sisto"
-    ],
-    [
-     "Sender/Dienst",
-     "CBS"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.9 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=r-btgaBL6-4",
-   "link": "https://www.themoviedb.org/tv/80748",
-   "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
    "news": []
   },
   "tv-75219": {
@@ -5011,42 +5129,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
    "news": []
   },
-  "tv-456": {
-   "titel": "Die Simpsons",
-   "original": "The Simpsons",
-   "leitsatz": null,
-   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
-   "genres": [
-    "Animation",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "38 Staffeln, 816 Folgen"
-    ],
-    [
-     "Von",
-     "Matt Groening"
-    ],
-    [
-     "Mit",
-     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
-    ],
-    [
-     "Sender/Dienst",
-     "FOX"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
-   "link": "https://www.themoviedb.org/tv/456",
-   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
-   "news": []
-  },
   "tv-220542": {
    "titel": "Die Tagebücher der Apothekerin",
    "original": "薬屋のひとりごと",
@@ -5078,42 +5160,6 @@
    "trailer": "https://www.youtube.com/watch?v=75qbRCsq87Y",
    "link": "https://www.themoviedb.org/tv/220542",
    "bild": "https://image.tmdb.org/t/p/w500/6Ph6TDAUYPTYMXp7PhpIrcWxstn.jpg",
-   "news": []
-  },
-  "tv-549": {
-   "titel": "Law & Order",
-   "original": "Law & Order",
-   "leitsatz": null,
-   "handlung": "Vertreter der Polizei und der Staatsanwaltschaft klären Kriminalverbrechen in und um New York auf. Mit allen zur Verfügung stehenden Mitteln versuchen die Ermittler dabei, den oder die Straftäter zur Verantwortung zu ziehen.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "26 Staffeln, 549 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf"
-    ],
-    [
-     "Mit",
-     "Maura Tierney, David Ajala, James Badge Dale, Tony Goldwyn"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=RzN8cPlcMTU",
-   "link": "https://www.themoviedb.org/tv/549",
-   "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
    "news": []
   }
  }
