@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Szene from '../../components/Szene.astro';
+import { ic } from '../../icons';
 ---
 <Base title="Ich folge" privat description="Private Liste der Serien, Filme und Spiele, denen ich folge.">
 <div class="ser kacheln" id="ser">
@@ -19,7 +20,7 @@ import Szene from '../../components/Szene.astro';
     <form id="zugang-form">
       <label class="visually-hidden" for="zugang-feld">Zugangsschlüssel</label>
       <input id="zugang-feld" type="password" autocomplete="current-password" placeholder="Zugangsschlüssel" required />
-      <button type="submit">Öffnen</button>
+      <button type="submit"><Fragment set:html={ic('schluessel')} /><span>Öffnen</span></button>
     </form>
   </section>
 
@@ -27,7 +28,7 @@ import Szene from '../../components/Szene.astro';
     <section class="wrap" aria-labelledby="neu-h">
       <div class="kopfzeile">
         <h2 id="neu-h" class="abschnitt">Neu für dich</h2>
-        <button type="button" class="knopf leise" id="gesehen" hidden>Alles gesehen</button>
+        <button type="button" class="knopf leise" id="gesehen" hidden><Fragment set:html={ic('gesehen')} /><span>Alles gesehen</span></button>
       </div>
       <ul class="hinweise" id="hinweise"></ul>
       <p class="leer" id="hinweise-leer" hidden>Gerade nichts Neues.</p>
@@ -55,14 +56,14 @@ import Szene from '../../components/Szene.astro';
         <p class="stand mono"><span id="stand"></span></p>
       </div>
       <nav class="filter" aria-label="Medium">
-        <button type="button" data-m="" aria-pressed="true">Alle</button>
-        <button type="button" data-m="serie" data-medium="serie" aria-pressed="false">Serien</button>
-        <button type="button" data-m="film" data-medium="film" aria-pressed="false">Filme</button>
-        <button type="button" data-m="spiel" data-medium="spiel" aria-pressed="false">Spiele</button>
+        <button type="button" data-m="" aria-pressed="true"><Fragment set:html={ic('alle')} /><span>Alle</span></button>
+        <button type="button" data-m="serie" data-medium="serie" aria-pressed="false"><Fragment set:html={ic('serie')} /><span>Serien</span></button>
+        <button type="button" data-m="film" data-medium="film" aria-pressed="false"><Fragment set:html={ic('film')} /><span>Filme</span></button>
+        <button type="button" data-m="spiel" data-medium="spiel" aria-pressed="false"><Fragment set:html={ic('spiel')} /><span>Spiele</span></button>
       </nav>
       <ul class="raster" id="raster"></ul>
       <dialog class="sbox" id="sbox" aria-label="Details">
-        <button type="button" class="sbox-zu" id="sbox-zu" aria-label="Schließen">×</button>
+        <button type="button" class="sbox-zu" id="sbox-zu" aria-label="Schließen"><Fragment set:html={ic('zu')} /></button>
         <div id="sbox-inhalt"></div>
       </dialog>
       <details class="aus" id="aus-box" hidden>
@@ -75,6 +76,7 @@ import Szene from '../../components/Szene.astro';
 </Base>
 
 <script>
+  import { ic, mitIcon } from '../../icons';
   const SPEICHER = 'kestrel-merk-token';
   const $ = (s: string) => document.querySelector(s) as HTMLElement;
   type Punkt = { art: 'staffel' | 'status' | 'trailer' | 'news' | 'ableger'; titel: string; link?: string; quelle?: string; auch?: string[]; datum: string; termin?: string; neu: boolean };
@@ -180,7 +182,7 @@ import Szene from '../../components/Szene.astro';
     $('#aus-box').hidden = aus.length === 0; $('#aus-zahl').textContent = String(aus.length);
     $('#aus-liste').replaceChildren(...aus.sort((a, b) => a.titel.localeCompare(b.titel, 'de')).map((s) => {
       const li = el('li'); li.append(el('span', '', `${s.titel}${s.ausGrund ? ` · ${s.ausGrund}` : ''}`)); klickbar(li, s);
-      const b = el('button', 'knopf leise klein', 'Wieder folgen') as HTMLButtonElement; b.type = 'button';
+      const b = mitIcon(el('button', 'knopf leise klein') as HTMLButtonElement, 'plus', 'Wieder folgen'); b.type = 'button';
       b.addEventListener('click', () => setzeAus(s, false));
       li.append(b); return li;
     }));
@@ -220,7 +222,7 @@ import Szene from '../../components/Szene.astro';
       }
       gefunden.append(ul);
     }
-    const weg = el('button', 'knopf leise klein', s.aus ? 'Wieder folgen' : 'Nicht mehr folgen') as HTMLButtonElement; weg.type = 'button';
+    const weg = mitIcon(el('button', 'knopf leise klein') as HTMLButtonElement, s.aus ? 'plus' : 'minus', s.aus ? 'Wieder folgen' : 'Nicht mehr folgen'); weg.type = 'button';
     weg.addEventListener('click', async () => { sbox.close(); await setzeAus(s, !s.aus); });
     $('#sbox-inhalt').replaceChildren(kopf, details, gefunden, weg);
     sbox.showModal();
@@ -236,8 +238,8 @@ import Szene from '../../components/Szene.astro';
       if (d.anbieter?.abo?.length) fakt('Im Abo (DE)', d.anbieter.abo.join(', '));
       if (dl.children.length) teile.push(dl);
       const kn = el('p', 'knoepfe');
-      if (d.trailer) { const a = el('a', 'knopf', '▶ Trailer ansehen') as HTMLAnchorElement; a.href = d.trailer; a.target = '_blank'; a.rel = 'noopener'; kn.append(a); }
-      if (d.link) { const a = el('a', 'knopf leise', `Mehr bei ${d.linkName}`) as HTMLAnchorElement; a.href = d.link; a.target = '_blank'; a.rel = 'noopener'; kn.append(a); }
+      if (d.trailer) { const a = mitIcon(el('a', 'knopf') as HTMLAnchorElement, 'trailer', 'Trailer ansehen'); a.href = d.trailer; a.target = '_blank'; a.rel = 'noopener'; kn.append(a); }
+      if (d.link) { const a = mitIcon(el('a', 'knopf leise') as HTMLAnchorElement, 'extern', `Mehr bei ${d.linkName}`); a.href = d.link; a.target = '_blank'; a.rel = 'noopener'; kn.append(a); }
       if (kn.children.length) teile.push(kn);
       details.replaceChildren(...teile);
     } catch (err) { details.replaceChildren(el('p', 'mono', `Details gerade nicht verfügbar: ${(err as Error).message}`)); }
@@ -300,11 +302,11 @@ import Szene from '../../components/Szene.astro';
         const li = el('li', 'treffer-zeile');
         const mitte = el('div', 'mitte'); mitte.append(el('span', 'titel', t.titel), el('span', 'mono info', [MED[t.medium], t.jahr, t.info].filter(Boolean).join(' · ')));
         const schon = daten.serien.some((s) => s.id === t.id && !s.aus);
-        const b = el('button', 'glocke', schon ? '🔔 Folge ich' : '🔔 Folgen') as HTMLButtonElement; b.type = 'button'; b.disabled = schon;
+        const b = mitIcon(el('button', 'glocke') as HTMLButtonElement, schon ? 'ok' : 'glocke', schon ? 'Folge ich' : 'Folgen'); b.type = 'button'; b.disabled = schon;
         b.addEventListener('click', async () => {
-          b.disabled = true; b.textContent = 'Prüfe …';
-          try { daten = await api('/api/serien', { method: 'POST', body: JSON.stringify({ id: t.id, titel: t.titel }) }); b.textContent = '🔔 Folge ich'; zeige(); }
-          catch (err) { b.disabled = false; b.textContent = '🔔 Folgen'; status.textContent = `Fehler: ${(err as Error).message}`; }
+          b.disabled = true; mitIcon(b, 'glocke', 'Prüfe …');
+          try { daten = await api('/api/serien', { method: 'POST', body: JSON.stringify({ id: t.id, titel: t.titel }) }); mitIcon(b, 'ok', 'Folge ich'); zeige(); }
+          catch (err) { b.disabled = false; mitIcon(b, 'glocke', 'Folgen'); status.textContent = `Fehler: ${(err as Error).message}`; }
         });
         li.append(poster(t.bild), mitte, b); return li;
       }));
@@ -331,11 +333,14 @@ import Szene from '../../components/Szene.astro';
   .stand { font-size: 0.76rem; display: flex; align-items: center; gap: 10px; margin: 0; }
   button, .knopf {
     font-family: var(--display); font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase; font-size: 1rem;
-    border: 0; border-radius: 4px; padding: 9px 14px 8px; cursor: pointer; background: var(--ink); color: var(--ground); text-decoration: none;
+    border: 0; border-radius: 999px; height: 40px; padding: 2px 18px 0 14px; cursor: pointer; background: var(--ink); color: var(--ground); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 8px;
   }
   button:disabled { opacity: 0.55; cursor: default; }
-  .knopf.leise { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
-  .klein { font-size: 0.8rem; padding: 6px 10px 5px; }
+  .knopf.leise { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent); }
+  .knopf.leise:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
+  .klein { font-size: 0.85rem; height: 32px; padding: 2px 13px 0 10px; gap: 6px; }
+  .klein .ic { width: 15px; height: 15px; }
   .zugang form, .suche { display: flex; flex-wrap: wrap; gap: 10px; }
   input[type='password'], input[type='search'] { font: inherit; font-size: 1.1rem; padding: 12px 14px; border-radius: 4px; border: 2px solid var(--ink); background: var(--paper); color: var(--ink); flex: 1 1 280px; min-width: 0; }
 
@@ -385,7 +390,8 @@ import Szene from '../../components/Szene.astro';
   .sbox { width: min(700px, calc(100vw - 32px)); max-height: calc(100vh - 48px); overflow: auto; border: 0; border-radius: 8px; padding: 26px; background: var(--paper); color: var(--ink); box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.6); }
   .sbox::backdrop { background: rgb(10 12 14 / 0.55); backdrop-filter: blur(4px); }
   .sbox[open] { animation: sbox-auf 320ms cubic-bezier(0.16, 1, 0.3, 1); }
-  .sbox-zu { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; padding: 0; border-radius: 50%; font-size: 1.5rem; line-height: 1; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
+  .sbox-zu { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; padding: 0; border-radius: 50%; justify-content: center; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
+  .sbox-zu .ic { margin: 0; }
   .sbox-kopf { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: start; margin-bottom: 16px; padding-right: 36px; }
   .sbox-bild { display: block; width: 120px; aspect-ratio: 2 / 3; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow); background: color-mix(in srgb, var(--ink) 10%, transparent); }
   .sbox-bild img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -412,23 +418,22 @@ import Szene from '../../components/Szene.astro';
 
   /* Ansicht-Umschalter */
   .filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
-  .filter button { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); font-size: 0.9rem; }
+  .filter button { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent); font-size: 0.95rem; height: 38px; }
+  .filter button[aria-pressed='false']:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
+  .filter button[aria-pressed='true'] { box-shadow: none; }
   .filter button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
   .filter button[data-medium][aria-pressed='true'] { background: var(--ink); color: var(--ground); }
   .hinweis-zeile.art-ableger { background: var(--paper); color: var(--ink); box-shadow: inset 3px 0 0 var(--film), var(--shadow); }
   .ansicht[hidden] { display: none; }
-  .ansicht { display: inline-flex; gap: 2px; padding: 3px; border-radius: 8px; background: color-mix(in srgb, var(--ink) 8%, transparent); }
-  .ansicht button { padding: 7px 9px; background: transparent; color: var(--ink-2); box-shadow: none; border-radius: 6px; display: grid; place-items: center; }
+  .ansicht { display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; background: color-mix(in srgb, var(--ink) 8%, transparent); }
+  .ansicht button { height: auto; gap: 0; padding: 7px 9px; background: transparent; color: var(--ink-2); box-shadow: none; border-radius: 999px; display: grid; place-items: center; }
   .ansicht button[aria-pressed='true'] { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
-  .ansicht svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .ansicht svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
   .kommt-zeile .poster { display: none; }
 
-  /* Kacheln: Neu für dich und Kommende Staffeln als Poster-Raster */
-  &.kacheln .hinweise, &.kacheln .kommt { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
-  &.kacheln .hinweis-zeile { grid-template-columns: 1fr; grid-template-rows: auto 1fr; gap: 0; padding: 0; overflow: hidden; align-items: start; }
-  &.kacheln .hinweis-zeile .poster, &.kacheln .kommt-zeile .poster { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; border-radius: 0; }
-  &.kacheln .hinweis-zeile .mitte { padding: 10px 11px 12px; gap: 4px; }
-  &.kacheln .art-staffel .h-titel { font-size: 1rem; }
+  /* Kacheln: Kommende Staffeln als Poster-Raster; Neu für dich bleibt immer Liste */
+  &.kacheln .kommt { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
+  &.kacheln .kommt-zeile .poster { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; border-radius: 0; }
   &.kacheln .kommt-zeile { grid-template-columns: 1fr; grid-template-rows: auto; gap: 4px; padding: 0 0 12px; border: 0; border-radius: 4px; overflow: hidden; background: var(--paper); box-shadow: var(--shadow); align-content: start; }
   &.kacheln .kommt-zeile > span:not(.poster) { padding: 0 11px; }
   &.kacheln .kommt-zeile .k-datum { order: 3; }

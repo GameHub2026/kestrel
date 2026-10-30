@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Pille from '../components/Pille.astro';
+import Meldungen from '../components/Meldungen.astro';
 
 interface Props {
   title?: string;
@@ -49,6 +50,7 @@ Red Hat Mono für kleine Kennzeilen; Wertungen als große, leichte Kennzahlen; M
       </a>
     </header>
     <Pille />
+    <Meldungen />
     <div class="ecke">
       <button type="button" class="hoch" id="hoch" aria-label="Nach oben" title="Nach oben" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
       <span class="stempel mono" id="stempel" tabindex="0" title="Uhrzeit anzeigen">
@@ -129,7 +131,7 @@ Red Hat Mono für kleine Kennzeilen; Wertungen als große, leichte Kennzahlen; M
   .hoch.an { opacity: 1; transform: none; pointer-events: auto; }
   .hoch:hover { transform: translateY(-2px); }
   .hoch:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
-  .hoch svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+  .hoch svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
   @media (max-width: 900px) { .ecke { bottom: 84px; right: 16px; } .ecke .stempel { display: none; } }
 
   /* Statuszeile: Zeichen für Zeichen verschwimmt der Stand, die laufende Uhr wird scharf */

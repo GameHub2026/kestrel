@@ -152,3 +152,8 @@ a, button, label, summary, [role='switch'] { cursor: pointer; }
 
 /* Weicher Übergang beim Umschalten Hell/Dunkel */
 html.theme-wechsel, html.theme-wechsel * { transition: background-color 400ms ease, color 400ms ease, border-color 400ms ease !important; }
+
+/* Icons und Knöpfe (Vorlage: dünne Linien-Icons im 24er-Raster, Knöpfe als Pille mit Icon vorne).
+   Ein Strich, eine Größe: jedes Knopf-Icon nutzt .ic. Die Seiten setzen Farbe und Füllung ihrer Knöpfe selbst. */
+.ic { width: 18px; height: 18px; flex: none; display: block; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
+.knopf .ic, button .ic { margin-top: -2px; }

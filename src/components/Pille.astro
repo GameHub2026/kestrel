@@ -167,7 +167,7 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
     display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; color: var(--ink-2);
     transition: background-color 200ms ease, color 200ms ease;
   }
-  .leiste-knopf :global(svg) { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+  .leiste-knopf :global(svg) { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
   .leiste-knopf:hover, .leiste-knopf:focus-visible { color: var(--ink); background: color-mix(in srgb, var(--ink) 9%, transparent); outline: none; }
   .leiste-knopf[aria-current='page'] { color: var(--ink); background: color-mix(in srgb, var(--ink) 12%, transparent); }
   .leiste-knopf[aria-current='page']::after { content: ''; position: absolute; left: -10px; top: 50%; margin-top: -8px; width: 3px; height: 16px; border-radius: 2px; background: var(--film); }
@@ -183,7 +183,7 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
     border: 0; border-radius: 999px; background: color-mix(in srgb, var(--ink) 9%, var(--ground)); cursor: pointer;
     box-shadow: inset 0 1px 2px rgb(0 0 0 / 0.12);
   }
-  .theme svg { position: relative; z-index: 1; display: block; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; color: var(--ink-2); transition: color 300ms, transform 500ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .theme svg { position: relative; z-index: 1; display: block; width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; color: var(--ink-2); transition: color 300ms, transform 500ms cubic-bezier(0.16, 1, 0.3, 1); }
   .theme-knopf {
     position: absolute; left: 5px; top: 5px; width: 28px; height: 28px; border-radius: 50%; background: var(--paper);
     box-shadow: 0 1px 2px rgb(0 0 0 / 0.15), 0 3px 8px rgb(0 0 0 / 0.18); transition: transform 450ms cubic-bezier(0.34, 1.4, 0.5, 1);
@@ -219,7 +219,7 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
     display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 8px; color: #c4c9ce; text-decoration: none;
     font-family: var(--text); font-size: 0.92rem; white-space: nowrap; transition: background-color 150ms, color 150ms;
   }
-  .schild a :global(svg) { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; opacity: 0.8; }
+  .schild a :global(svg) { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; opacity: 0.8; }
   .schild a:hover, .schild a:focus-visible { background: #24272b; color: #fff; outline: none; }
   .schild a[aria-current='page'] { color: #fff; background: #24272b; }
 
@@ -241,6 +241,8 @@ const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</sv
     background: #0f1011; border-radius: 16px; padding: 8px 6px;
     box-shadow: 0 1px 2px rgb(0 0 0 / 0.3), 0 14px 34px -12px rgb(0 0 0 / 0.55), inset 0 0 0 1px rgb(255 255 255 / 0.06);
   }
+  :global(:root[data-theme='dark']) .leiste { background: #050505; box-shadow: 0 14px 34px -12px rgb(0 0 0 / 0.8), inset 0 0 0 1px rgb(255 255 255 / 0.13); }
+  @media (prefers-color-scheme: dark) { :global(:root:not([data-theme='light'])) .leiste { background: #050505; box-shadow: 0 14px 34px -12px rgb(0 0 0 / 0.8), inset 0 0 0 1px rgb(255 255 255 / 0.13); } }
   .leiste-knopf { color: #9aa0a6; }
   .leiste-knopf:hover, .leiste-knopf:focus-visible { color: #fff; background: rgb(255 255 255 / 0.1); }
   .leiste-knopf[aria-current='page'] { color: #fff; background: rgb(255 255 255 / 0.14); }

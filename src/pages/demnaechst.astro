@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Szene from '../components/Szene.astro';
+import { ic } from '../icons';
 import daten from '../data/demnaechst.json';
 
 type Eintrag = { id: string; art: 'film' | 'serie'; typ: string; titel: string; datum: string; text: string; bild: string | null; anbieter: string[]; link: string; info?: string };
@@ -27,9 +28,9 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 
   <div class="dem">
     <nav class="wrap tabs" aria-label="Filter">
-      <button type="button" data-f="alle" aria-pressed="true">Alles</button>
-      <button type="button" data-f="kino" data-medium="film" aria-pressed="false">Kino</button>
-      <button type="button" data-f="serie" data-medium="serie" aria-pressed="false">Serien</button>
+      <button type="button" data-f="alle" aria-pressed="true"><Fragment set:html={ic('alle')} /><span>Alles</span></button>
+      <button type="button" data-f="kino" data-medium="film" aria-pressed="false"><Fragment set:html={ic('kino')} /><span>Kino</span></button>
+      <button type="button" data-f="serie" data-medium="serie" aria-pressed="false"><Fragment set:html={ic('serie')} /><span>Serien</span></button>
       <!-- Genre: Knopf mit dunkler Tafel, Bewegung wie die Leiste links (gleitet auf, Inhalt kommt aus der Unschärfe) -->
       <div class="gw" id="gw">
         <button type="button" class="gw-knopf" id="gw-knopf" aria-haspopup="menu" aria-expanded="false" aria-controls="gw-tafel">
@@ -77,7 +78,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
     </section>
 
     <dialog class="box" id="box" aria-labelledby="box-titel">
-      <button type="button" class="box-zu" id="box-zu" aria-label="Schließen">×</button>
+      <button type="button" class="box-zu" id="box-zu" aria-label="Schließen"><Fragment set:html={ic('zu')} /></button>
       <div class="box-kopf">
         <img class="box-bild" id="box-bild" alt="" />
         <div class="box-kern">
@@ -110,6 +111,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 </Base>
 
 <script>
+  import { mitIcon } from '../icons';
   // Filter: setzt den Zustand jedes Mal vollständig neu (auch beim Zurückkehren auf die Seite, pageshow).
   const knoepfe = [...document.querySelectorAll<HTMLButtonElement>('[data-f]')].filter((b) => b.tagName === 'BUTTON');
   const bereich = document.getElementById('termine')!;
@@ -219,9 +221,9 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
     $('box-handlung').textContent = i.handlung ? `${i.handlung}${i.sprache === 'en' ? ' (Beschreibung bisher nur auf Englisch)' : ''}` : 'Noch keine Beschreibung vorhanden.';
     $('box-fakten').replaceChildren(...i.fakten.map(([a, b]) => { const d = neu('div'); d.append(neu('dt', 'mono', a), neu('dd', '', b)); return d; }));
     const kn = $('box-knoepfe'); kn.replaceChildren();
-    const link = (txt: string, href: string, cls: string) => { const a = neu('a', cls, txt) as HTMLAnchorElement; a.href = href; a.target = '_blank'; a.rel = 'noopener'; kn.append(a); };
-    if (i.trailer) link('▶ Trailer ansehen', i.trailer, 'knopf');
-    link('Mehr bei TMDB', i.link, 'knopf leise');
+    const link = (txt: string, href: string, cls: string, icon: string) => { const a = mitIcon(neu('a', cls) as HTMLAnchorElement, icon, txt); a.href = href; a.target = '_blank'; a.rel = 'noopener'; kn.append(a); };
+    if (i.trailer) link('Trailer ansehen', i.trailer, 'knopf', 'trailer');
+    link('Mehr bei TMDB', i.link, 'knopf leise', 'extern');
     const nl = $('box-news-liste'); nl.replaceChildren();
     for (const n of i.news) {
       const li = neu('li'); const a = neu('a', '', n.titel) as HTMLAnchorElement; a.href = n.link; a.target = '_blank'; a.rel = 'noopener';
@@ -313,14 +315,16 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .tabs { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
 .dem button {
   font-family: var(--display); font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase; font-size: 1.05rem;
-  border: 0; border-radius: 4px; padding: 10px 16px 9px; cursor: pointer; background: var(--paper); color: var(--ink); box-shadow: var(--shadow);
+  border: 0; border-radius: 999px; height: 38px; padding: 2px 18px 0 14px; cursor: pointer; background: transparent; color: var(--ink);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent); display: inline-flex; align-items: center; gap: 8px;
 }
-.dem button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
+.dem button[aria-pressed='false']:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
+.dem button[aria-pressed='true'] { background: var(--ink); color: var(--ground); box-shadow: none; }
 .dem button[data-medium][aria-pressed='true'] { background: var(--ink); color: var(--ground); }
-.dem .tabs .ansicht { margin-left: 0; display: inline-flex; gap: 2px; padding: 3px; border-radius: 8px; background: color-mix(in srgb, var(--ink) 8%, transparent); align-self: center; }
-.dem .tabs .ansicht button { padding: 7px 9px; background: transparent; color: var(--ink-2); box-shadow: none; border-radius: 6px; display: grid; place-items: center; }
+.dem .tabs .ansicht { margin-left: 0; display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; background: color-mix(in srgb, var(--ink) 8%, transparent); align-self: center; }
+.dem .tabs .ansicht button { height: auto; gap: 0; padding: 7px 9px; background: transparent; color: var(--ink-2); box-shadow: none; border-radius: 999px; display: grid; place-items: center; }
 .dem .tabs .ansicht button[aria-pressed='true'] { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
-.dem .ansicht svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.dem .ansicht svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
 /* Kacheln: großes Poster, darunter Medium, Titel, Anbieter */
 .dem .kacheln .liste { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
 .dem .kacheln .eintrag { display: grid; }
@@ -334,11 +338,11 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .gw { position: relative; margin-left: auto; align-self: center; z-index: 20; }
 .dem .tabs .gw-knopf {
   display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-weight: 500; text-transform: none; letter-spacing: 0; font-size: 0.82rem;
-  padding: 9px 12px; border-radius: 8px; box-shadow: none; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); transition: background-color 200ms ease, color 200ms ease;
+  height: 38px; padding: 0 14px; border-radius: 999px; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent); background: transparent; color: var(--ink); transition: background-color 200ms ease, color 200ms ease;
 }
 .dem .tabs .gw-knopf:hover, .dem .gw.offen .gw-knopf { background: color-mix(in srgb, var(--ink) 14%, transparent); }
 .dem .gw.aktiv .gw-knopf { background: var(--ink); color: var(--ground); }
-.dem .gw-knopf svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.dem .gw-knopf svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
 .dem .gw-pfeil { opacity: 0.7; transition: transform 380ms cubic-bezier(0.32, 1.25, 0.5, 1); }
 .dem .gw.offen .gw-pfeil { transform: rotate(180deg); }
 .dem .gw-tafel {
@@ -387,7 +391,7 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .box[open]::backdrop { animation: box-hinter 240ms ease; }
 @keyframes box-auf { from { opacity: 0; transform: translateY(14px) scale(0.98); } }
 @keyframes box-hinter { from { opacity: 0; } }
-.dem .box-zu { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; padding: 0; border-radius: 50%; font-size: 1.5rem; line-height: 1; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); box-shadow: none; }
+.dem .box-zu { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; padding: 0; border-radius: 50%; justify-content: center; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); box-shadow: none; }
 .dem .box-kopf { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: start; margin-bottom: 16px; }
 .dem .box-bild { width: 120px; border-radius: 4px; box-shadow: var(--shadow); }
 .dem .box-kopf:has(.box-bild[hidden]) { grid-template-columns: 1fr; }
@@ -403,12 +407,12 @@ const ART = { kino: 'Film', serienstart: 'Serie', staffelstart: 'Serie', folge: 
 .dem .box-fakten dt { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-2); }
 .dem .box-fakten dd { margin: 2px 0 0; font-size: 0.95rem; }
 .dem .box-knoepfe { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 20px; }
-.dem .knopf { font-family: var(--display); font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase; font-size: 1rem; text-decoration: none; padding: 10px 16px 9px; border-radius: 4px; background: var(--ink); color: var(--ground); }
-.dem .knopf.leise { background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
+.dem .knopf { display: inline-flex; align-items: center; gap: 8px; height: 40px; font-family: var(--display); font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase; font-size: 1rem; text-decoration: none; padding: 2px 18px 0 14px; border-radius: 999px; background: var(--ink); color: var(--ground); }
+.dem .knopf.leise { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent); }
 .dem .box .knopf:not(.leise) { background: var(--ink); color: var(--ground); }
 .dem .box-merk { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: -6px 0 20px; }
-.dem .mk { display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem; padding: 9px 14px 8px; box-shadow: none; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
-.dem .mk svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.dem .mk { display: inline-flex; align-items: center; gap: 8px; font-size: 0.95rem; height: 38px; padding: 2px 16px 0 13px; background: transparent; color: var(--ink); }
+.dem .mk svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
 .dem .mk[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
 .dem .mk[aria-pressed='true'] svg { fill: currentColor; }
 .dem .mk[hidden] { display: none; }

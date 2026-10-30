@@ -1,0 +1,198 @@
+---
+// Benachrichtigungen beim Seitenstart: neue Meldungen aus „Ich folge“ als gestapelte Toasts unten in der Mitte.
+// Gestapelt liegen sie hintereinander, beim Überfahren fächern sie sich zur Liste auf (Vorlage: Toasts, die
+// sich stapeln statt sich zu türmen). Nur auf Kevins Geräten (Merkliste-Schlüssel), einmal pro Sitzung,
+// und jede Meldung nur einmal. Auf „Ich folge“ selbst nicht, dort steht alles unter „Neu für dich“.
+---
+<section class="meldungen" id="meldungen" aria-label="Benachrichtigungen" aria-live="polite" hidden>
+  <ol class="m-stapel" id="m-stapel"></ol>
+</section>
+
+<script>
+  import { ic, ICON_MELDUNG } from '../icons';
+  type Meldung = { art: string; titel: string; link: string; quelle: string; datum: string; serie: string; medium: string };
+  const SITZUNG = 'kestrel-meldungen-sitzung';
+  const GEZEIGT = 'kestrel-meldungen-gezeigt';
+  const MAX = 3;
+  const ART: Record<string, string> = { staffel: 'Neuer Termin', ableger: 'Aus dem Universum', trailer: 'Neuer Trailer', news: 'News', status: 'Status' };
+
+  (async () => {
+    let token = '';
+    try { token = localStorage.getItem('kestrel-merk-token') || ''; } catch {}
+    if (!token || location.pathname.startsWith('/serien')) return;
+    try { if (sessionStorage.getItem(SITZUNG)) return; sessionStorage.setItem(SITZUNG, '1'); } catch {}
+
+    let liste: Meldung[] = [];
+    try {
+      const r = await fetch('/api/merk/neues?liste=1', { headers: { 'x-merk-token': token } });
+      if (!r.ok) return;
+      liste = (await r.json()).liste || [];
+    } catch { return; }
+
+    let gezeigt: string[] = [];
+    try { gezeigt = JSON.parse(localStorage.getItem(GEZEIGT) || '[]'); } catch {}
+    const schluessel = (m: Meldung) => `${m.serie}|${m.link || m.titel}`;
+    const neu = liste.filter((m) => !gezeigt.includes(schluessel(m)));
+    if (!neu.length) return;
+    try { localStorage.setItem(GEZEIGT, JSON.stringify([...neu.map(schluessel), ...gezeigt].slice(0, 300))); } catch {}
+
+    const zeigen = neu.slice(0, MAX);
+    const rest = neu.length - zeigen.length;
+    starte(zeigen, rest);
+  })();
+
+  function starte(liste: Meldung[], rest: number) {
+    const box = document.getElementById('meldungen')!;
+    const stapel = document.getElementById('m-stapel')!;
+    const ruhig = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const toasts: HTMLLIElement[] = [];
+
+    const baue = (icon: string, farbe: string, titel: string, text: string, aktion: { text: string; href: string; extern?: boolean } | null) => {
+      const li = document.createElement('li');
+      li.className = 'm-toast';
+      li.style.setProperty('--m-farbe', farbe);
+      li.innerHTML = `${ic(icon, 'ic m-icon')}<div class="m-text"><p class="m-titel"></p><p class="m-unter"></p></div><div class="m-rechts"></div>`;
+      li.querySelector('.m-titel')!.textContent = titel;
+      li.querySelector('.m-unter')!.textContent = text;
+      const rechts = li.querySelector('.m-rechts')!;
+      if (aktion) {
+        const a = document.createElement('a');
+        a.className = 'm-aktion'; a.href = aktion.href; a.textContent = aktion.text;
+        if (aktion.extern) { a.target = '_blank'; a.rel = 'noopener'; }
+        a.addEventListener('click', () => schliesse(li));
+        rechts.append(a);
+      }
+      const zu = document.createElement('button');
+      zu.type = 'button'; zu.className = 'm-zu'; zu.setAttribute('aria-label', 'Meldung schließen'); zu.innerHTML = ic('zu');
+      zu.addEventListener('click', () => schliesse(li));
+      rechts.append(zu);
+      return li;
+    };
+
+    const FARBE: Record<string, string> = { staffel: '#3ecf8e', ableger: '#a78bfa', trailer: '#ff7a66', news: '#6ab0ff', status: '#f5b14c' };
+    for (const m of liste) {
+      const titel = m.serie;
+      const text = m.titel;
+      const aktion = m.link ? { text: m.art === 'trailer' ? 'Ansehen' : 'Lesen', href: m.link, extern: true } : { text: 'Öffnen', href: '/serien/' };
+      const li = baue(ICON_MELDUNG[m.art] || 'info', FARBE[m.art] || '#6ab0ff', titel, text, aktion);
+      li.dataset.art = ART[m.art] || '';
+      toasts.push(li);
+    }
+    if (rest > 0) toasts.push(baue('glocke', '#f2f1ec', `${rest} weitere ${rest === 1 ? 'Neuigkeit' : 'Neuigkeiten'}`, 'Alles Neue steht unter „Ich folge“.', { text: 'Alle', href: '/serien/' }));
+
+    // Die zuerst gemeldete liegt vorn (unten), die anderen dahinter
+    stapel.replaceChildren(...toasts.slice().reverse());
+    box.hidden = false;
+
+    let offen = false;
+    const ordne = () => {
+      const aktiv = toasts.filter((t) => !t.classList.contains('weg'));
+      let y = 0;
+      aktiv.forEach((t, i) => {
+        t.style.setProperty('--i', String(i));
+        t.style.setProperty('--y-offen', `${-y}px`);
+        t.style.zIndex = String(100 - i);
+        t.classList.toggle('verdeckt', i >= 3);
+        t.classList.toggle('vorn', i === 0);
+        y += t.offsetHeight + 10;
+      });
+      // Höhe des Bereichs: gestapelt nur die vordere Karte, aufgefächert alle
+      const vorn = aktiv[0]?.offsetHeight || 0;
+      stapel.style.height = `${offen ? Math.max(vorn, y - 10) : vorn + Math.min(aktiv.length - 1, 2) * 10}px`;
+      if (!aktiv.length) { box.hidden = true; clearTimeout(timer); }
+    };
+
+    function schliesse(li: HTMLLIElement) {
+      li.classList.add('weg');
+      ordne();
+      setTimeout(() => li.remove(), ruhig ? 0 : 420);
+    }
+
+    // Auffächern beim Überfahren oder per Tastatur
+    const auf = (an: boolean) => { offen = an; box.classList.toggle('offen', an); ordne(); an ? halte() : weiter(); };
+    box.addEventListener('mouseenter', () => auf(true));
+    box.addEventListener('mouseleave', () => auf(false));
+    box.addEventListener('focusin', () => auf(true));
+    box.addEventListener('focusout', (e) => { if (!box.contains(e.relatedTarget as Node)) auf(false); });
+    addEventListener('keydown', (e) => { if (e.key === 'Escape' && !box.hidden) toasts.forEach((t) => !t.classList.contains('weg') && schliesse(t)); });
+
+    // Nach 12 Sekunden gehen sie von allein, eine nach der anderen; beim Überfahren hält die Uhr an
+    let timer = 0; let rest_ms = 12000; let start = 0;
+    const tick = () => {
+      const vorn = toasts.find((t) => !t.classList.contains('weg'));
+      if (!vorn) return;
+      schliesse(vorn);
+      rest_ms = 2600; weiter();
+    };
+    function weiter() { clearTimeout(timer); start = Date.now(); timer = window.setTimeout(tick, rest_ms); }
+    function halte() { clearTimeout(timer); rest_ms = Math.max(2600, rest_ms - (Date.now() - start)); }
+
+    requestAnimationFrame(() => {
+      ordne();
+      toasts.forEach((t, i) => setTimeout(() => t.classList.add('da'), ruhig ? 0 : 220 + i * 110));
+      weiter();
+    });
+    addEventListener('resize', ordne);
+  }
+</script>
+
+<style>
+  .meldungen {
+    position: fixed; z-index: 60; left: 50%; bottom: 24px; transform: translateX(-50%);
+    width: min(400px, calc(100vw - 32px));
+  }
+  .meldungen[hidden] { display: none; }
+  .m-stapel { position: relative; list-style: none; margin: 0; padding: 0; transition: height 360ms cubic-bezier(0.16, 1, 0.3, 1); }
+
+  .m-stapel :global(.m-toast) {
+    --i: 0; --y-offen: 0px;
+    position: absolute; left: 0; right: 0; bottom: 0;
+    display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: start;
+    padding: 14px 12px 14px 16px; border-radius: 18px;
+    background: #161718; color: #f2f1ec;
+    box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.08), 0 1px 2px rgb(0 0 0 / 0.3), 0 18px 40px -18px rgb(0 0 0 / 0.7);
+    /* gestapelt: jede weitere Karte schaut 10 px oben heraus und wird etwas kleiner */
+    transform: translateY(calc(var(--i) * -10px + 24px)) scale(calc(1 - var(--i) * 0.05));
+    transform-origin: 50% 0;
+    opacity: 0;
+    transition: transform 420ms cubic-bezier(0.32, 1.2, 0.5, 1), opacity 300ms ease;
+  }
+  .m-stapel :global(.m-toast.da) { opacity: 1; transform: translateY(calc(var(--i) * -10px)) scale(calc(1 - var(--i) * 0.05)); }
+  /* hintere Karten: Inhalt nur angedeutet, damit die vordere klar führt */
+  .m-stapel :global(.m-toast.da) > :global(*) { transition: opacity 260ms ease; }
+  .meldungen:not(.offen) .m-stapel :global(.m-toast.da:not(.vorn)) > :global(*) { opacity: 0; }
+  .meldungen:not(.offen) .m-stapel :global(.m-toast.verdeckt) { opacity: 0 !important; pointer-events: none; }
+  .meldungen.offen .m-stapel :global(.m-toast.da) { transform: translateY(var(--y-offen)) scale(1); }
+  .m-stapel :global(.m-toast.weg) { opacity: 0 !important; transform: translateY(calc(var(--y-offen) + 30px)) scale(0.96) !important; pointer-events: none; }
+
+  .m-stapel :global(.m-icon) { width: 20px; height: 20px; margin-top: 1px; color: var(--m-farbe); stroke-width: 1.75; }
+  .m-stapel :global(.m-text) { min-width: 0; display: grid; gap: 3px; }
+  .m-stapel :global(.m-titel) {
+    margin: 0; font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.02em;
+    font-size: 1.05rem; line-height: 1.1; padding-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .m-stapel :global(.m-unter) {
+    margin: 0; font-size: 0.86rem; line-height: 1.4; color: #a9aaa6;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  }
+  .m-stapel :global(.m-rechts) { display: flex; align-items: center; gap: 4px; }
+  .m-stapel :global(.m-aktion) {
+    display: inline-flex; align-items: center; height: 28px; padding: 1px 12px 0; border-radius: 999px;
+    background: rgb(255 255 255 / 0.1); color: #f2f1ec; text-decoration: none;
+    font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.85rem;
+    transition: background-color 150ms;
+  }
+  .m-stapel :global(.m-aktion:hover) { background: rgb(255 255 255 / 0.18); }
+  .m-stapel :global(.m-zu) {
+    display: grid; place-items: center; width: 28px; height: 28px; padding: 0; border: 0; border-radius: 50%;
+    background: transparent; color: #8b8c88; cursor: pointer; transition: color 150ms, background-color 150ms;
+  }
+  .m-stapel :global(.m-zu .ic) { width: 15px; height: 15px; margin: 0; }
+  .m-stapel :global(.m-zu:hover) { color: #fff; background: rgb(255 255 255 / 0.08); }
+  .m-stapel :global(.m-aktion:focus-visible), .m-stapel :global(.m-zu:focus-visible) { outline: 2px solid #f2f1ec; outline-offset: 2px; }
+
+  @media (max-width: 900px) { .meldungen { bottom: 84px; } }
+  @media (prefers-reduced-motion: reduce) {
+    .m-stapel, .m-stapel :global(.m-toast) { transition: opacity 150ms ease; }
+  }
+</style>

@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import Ticket from '../components/Ticket.astro';
 import Szene from '../components/Szene.astro';
 import { alleTexte, url } from '../lib';
+import { ic } from '../icons';
 
 const texte = await alleTexte();
 const [neuester, ...rest] = texte;
@@ -22,8 +23,8 @@ const saetze = [
         <h1>Was ich spiele und schaue,<br />ehrlich bewertet.</h1>
         <p class="lead">Wertung von 1 bis 10, gleich für alle drei Medien. Sehe ich etwas später anders, kommt ein Nachtrag dazu.</p>
         <p class="knoepfe">
-          {neuester && <a class="knopf" href={url(neuester)}>Neuester Text</a>}
-          <a class="link" href="/texte/">Alle Texte <span aria-hidden="true">→</span></a>
+          {neuester && <a class="knopf" href={url(neuester)}><Fragment set:html={ic('text')} /><span>Neuester Text</span></a>}
+          <a class="link" href="/texte/"><span>Alle Texte</span><Fragment set:html={ic('pfeil', 'ic pf')} /></a>
         </p>
       </div>
       {neuester && (
@@ -50,7 +51,7 @@ const saetze = [
     </section>
   )}
   {!neuester && <p class="empty wrap">Noch keine Texte. Der erste kommt bald.</p>}
-  {neuester && <p class="more wrap"><a href="/texte/">{texte.length > 1 ? `Alle ${texte.length} Texte` : 'Alle Texte'}</a></p>}
+  {neuester && <p class="more wrap"><a href="/texte/"><span>{texte.length > 1 ? `Alle ${texte.length} Texte` : 'Alle Texte'}</span><Fragment set:html={ic('pfeil')} /></a></p>}
 </Base>
 
 <script>
@@ -100,12 +101,13 @@ const saetze = [
   .buehne-text .kicker { margin-bottom: 18px; }
   .buehne-text h1 { margin: 0; font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(2.8rem, 6.2vw, 5.4rem); line-height: 0.9; letter-spacing: 0; text-wrap: balance; }
   .lead { margin: 18px auto 0; max-width: 46ch; color: var(--ink-2); font-size: clamp(0.95rem, 1.2vw, 1.05rem); line-height: 1.55; }
-  .knoepfe { margin: 26px 0 0; display: flex; justify-content: center; align-items: center; gap: 18px; }
-  .knopf { display: inline-flex; align-items: center; height: 42px; padding: 2px 20px 0; border-radius: 4px; background: var(--ink); color: var(--ground); text-decoration: none; font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.1rem; text-shadow: none; }
+  .knoepfe { margin: 26px 0 0; display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .knopf { display: inline-flex; align-items: center; gap: 9px; height: 44px; padding: 2px 22px 0 18px; border-radius: 999px; background: var(--ink); color: var(--ground); text-decoration: none; font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.1rem; text-shadow: none; }
   .knopf:hover { opacity: 0.86; }
-  .link { font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.1rem; text-decoration: none; }
-  .link span { display: inline-block; transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1); }
-  .link:hover span { transform: translateX(4px); }
+  .link { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 2px 20px 0; border-radius: 999px; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 22%, transparent); background: color-mix(in srgb, var(--paper) 55%, transparent); color: var(--ink); font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.1rem; text-decoration: none; }
+  .link :global(.pf) { transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1); }
+  .link:hover :global(.pf) { transform: translateX(3px); }
+  .link:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
 
   /* Das Fenster: startet tief zwischen den Dächern und steigt beim Scrollen auf */
   /* startet ganz unter dem Bildrand, steigt erst beim Scrollen auf */
@@ -137,8 +139,8 @@ const saetze = [
     .buehne-fenster { top: 50vh; }
   }
   .more { margin-top: 28px; font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.15rem; }
-  .more a { text-decoration: none; }
-  .more a::after { content: ' →'; }
+  .more a { text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+  .more a :global(.ic) { margin-top: -2px; }
   .empty { padding-top: 48px; padding-bottom: 48px; font-size: 1.1rem; }
   @media (prefers-reduced-motion: reduce) { .buehne { height: auto; } .buehne-innen { position: relative; } .buehne-fenster { position: relative; top: auto; transform: none; padding-bottom: 40px; } .manifest :global(.wort) { color: #f2f1ec; } }
 </style>
