@@ -1,98 +1,7 @@
 {
- "von": "2026-10-28",
- "bis": "2027-02-27",
+ "von": "2026-10-29",
+ "bis": "2027-02-28",
  "eintraege": [
-  {
-   "id": "movie-1514026-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "Buddy",
-   "datum": "2026-10-28",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1514026",
-   "info": "movie-1514026"
-  },
-  {
-   "id": "tv-44006-s15-2026-10-28",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Chicago Fire",
-   "datum": "2026-10-28",
-   "text": "S15E4",
-   "jahr": "2012",
-   "bild": "https://image.tmdb.org/t/p/w342/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
-   "anbieter": [
-    "WOW"
-   ],
-   "link": "https://www.themoviedb.org/tv/44006",
-   "info": "tv-44006"
-  },
-  {
-   "id": "tv-62650-s12-2026-10-28",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Chicago Med",
-   "datum": "2026-10-28",
-   "text": "S12E4",
-   "jahr": "2015",
-   "bild": "https://image.tmdb.org/t/p/w342/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
-   "anbieter": [
-    "WOW",
-    "RTL+"
-   ],
-   "link": "https://www.themoviedb.org/tv/62650",
-   "info": "tv-62650"
-  },
-  {
-   "id": "tv-58841-s14-2026-10-28",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Chicago P.D.",
-   "datum": "2026-10-28",
-   "text": "S14E4",
-   "jahr": "2014",
-   "bild": "https://image.tmdb.org/t/p/w342/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
-   "anbieter": [
-    "Netflix",
-    "WOW",
-    "RTL+"
-   ],
-   "link": "https://www.themoviedb.org/tv/58841",
-   "info": "tv-58841"
-  },
-  {
-   "id": "tv-334700-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Das Talent zur Täuschung",
-   "datum": "2026-10-28",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/1I5dbap6wWrpwcP7K7S0GZmQKnC.jpg",
-   "anbieter": [
-    "Netflix"
-   ],
-   "link": "https://www.themoviedb.org/tv/334700",
-   "info": "tv-334700"
-  },
-  {
-   "id": "tv-2190-s29-2026-10-28",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "South Park",
-   "datum": "2026-10-28",
-   "text": "S29E4",
-   "jahr": "1997",
-   "bild": "https://image.tmdb.org/t/p/w342/4EXUM5hi5nymlmqIVwnbIJENKpe.jpg",
-   "anbieter": [
-    "Paramount+"
-   ],
-   "link": "https://www.themoviedb.org/tv/2190",
-   "info": "tv-2190"
-  },
   {
    "id": "tv-75219-s10-2026-10-29",
    "art": "serie",
@@ -255,6 +164,21 @@
    "info": "movie-1400837"
   },
   {
+   "id": "tv-284833-s1-2026-10-30",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Avatar - Die sieben Häfen",
+   "datum": "2026-10-30",
+   "text": "Staffel 1 · Folgen 10–13",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/me3xp8w0RkAGLChEhuf7BVENUHO.jpg",
+   "anbieter": [
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/284833",
+   "info": "tv-284833"
+  },
+  {
    "id": "tv-289517-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -286,6 +210,36 @@
    "info": "tv-220542"
   },
   {
+   "id": "tv-336240-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Haustausch",
+   "datum": "2026-10-30",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/3Me9myCwFQ5GPpSdkzmlyYpyq21.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/336240",
+   "info": "tv-336240"
+  },
+  {
+   "id": "tv-336241-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "How to Ruin Diwali: Meet the Parents",
+   "datum": "2026-10-30",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/8HhaOOJGqXCpU0RgzJvLZInD4Go.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/336241",
+   "info": "tv-336241"
+  },
+  {
    "id": "tv-45790-s6-2026-10-30",
    "art": "serie",
    "typ": "folge",
@@ -315,6 +269,36 @@
    ],
    "link": "https://www.themoviedb.org/tv/247718",
    "info": "tv-247718"
+  },
+  {
+   "id": "tv-311853-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Obsess",
+   "datum": "2026-10-30",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/fAisi5BZq10jh6Ad4OF3HzFkjSm.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/311853",
+   "info": "tv-311853"
+  },
+  {
+   "id": "tv-300755-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Rinnan",
+   "datum": "2026-10-30",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/6nQ4utgXXR1ClpG294KZTxUICzd.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/300755",
+   "info": "tv-300755"
   },
   {
    "id": "tv-153312-s4-2026-10-30",
@@ -681,6 +665,22 @@
    "info": "tv-45790"
   },
   {
+   "id": "tv-65334-s7-2026-11-06",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "datum": "2026-11-06",
+   "text": "S7E3",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/65334",
+   "info": "tv-65334"
+  },
+  {
    "id": "tv-247718-s2-2026-11-06",
    "art": "serie",
    "typ": "folge",
@@ -742,22 +742,6 @@
    ],
    "link": "https://www.themoviedb.org/tv/312359",
    "info": "tv-312359"
-  },
-  {
-   "id": "tv-65334-s7-2026-11-08",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
-   "datum": "2026-11-08",
-   "text": "S7E3",
-   "jahr": "2015",
-   "bild": "https://image.tmdb.org/t/p/w342/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
-   "anbieter": [
-    "Netflix",
-    "Disney+"
-   ],
-   "link": "https://www.themoviedb.org/tv/65334",
-   "info": "tv-65334"
   },
   {
    "id": "tv-3034-s57-2026-11-08",
@@ -1345,6 +1329,22 @@
    "info": "tv-45790"
   },
   {
+   "id": "tv-65334-s7-2026-11-20",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "datum": "2026-11-20",
+   "text": "Staffel 7 · Folgen 5–6",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
+   "anbieter": [
+    "Netflix",
+    "Disney+"
+   ],
+   "link": "https://www.themoviedb.org/tv/65334",
+   "info": "tv-65334"
+  },
+  {
    "id": "tv-247718-s2-2026-11-20",
    "art": "serie",
    "typ": "folge",
@@ -1374,22 +1374,6 @@
    ],
    "link": "https://www.themoviedb.org/tv/153312",
    "info": "tv-153312"
-  },
-  {
-   "id": "tv-65334-s7-2026-11-21",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
-   "datum": "2026-11-21",
-   "text": "Staffel 7 · Folgen 5–6",
-   "jahr": "2015",
-   "bild": "https://image.tmdb.org/t/p/w342/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
-   "anbieter": [
-    "Netflix",
-    "Disney+"
-   ],
-   "link": "https://www.themoviedb.org/tv/65334",
-   "info": "tv-65334"
   },
   {
    "id": "tv-456-s38-2026-11-22",
@@ -1870,7 +1854,7 @@
    "datum": "2026-12-16",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/7UN7WiNgXnKNneFx7V4nDm92luk.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/zHTxblqPcqRpA93ex2Hj0RdpVBs.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1003596",
    "info": "movie-1003596"
@@ -1987,6 +1971,19 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1401459",
    "info": "movie-1401459"
+  },
+  {
+   "id": "movie-1421903-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Werwulf",
+   "datum": "2027-01-07",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/imnkSt4PSQpxIuyiRpJCiLk3SZz.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1421903",
+   "info": "movie-1421903"
   },
   {
    "id": "movie-1440769-kino",
@@ -2132,7 +2129,7 @@
     ],
     [
      "Mit",
-     "Peyton Elizabeth Lee, Carey Mulligan, Jacob Tremblay, Mahershala Ali"
+     "Peyton Elizabeth Lee, Jacob Tremblay, Carey Mulligan, Mahershala Ali"
     ],
     [
      "TMDB-Wertung",
@@ -2142,39 +2139,6 @@
    "trailer": "https://www.youtube.com/watch?v=4QlEVeMP4WE",
    "link": "https://www.themoviedb.org/movie/791523",
    "bild": "https://image.tmdb.org/t/p/w500/oYkGlrvG7QNqrLtss4Q3Bpr1Np6.jpg",
-   "news": []
-  },
-  "movie-1514026": {
-   "titel": "Buddy",
-   "original": "Buddy",
-   "leitsatz": null,
-   "handlung": "Alle lieben Buddy. Oder müssen es zumindest, denn wenn das orange Einhorn wütend wird, verwandelt sich seine quietschbunte Kindersendung schnell in blutiges Chaos. In der künstlich perfekten Studiowelt im Stil der 80er und 90er leben Kinder neben sprechenden Gegenständen, singen, tanzen und lernen Lektionen über Freundschaft und Zusammenhalt. Doch als Josh keine Lust auf Buddys Geburtstagsparty hat, bekommt die fröhliche Fassade schnell Risse und Josh einen tödlichen Axthieb verpasst. Folge für Folge eskaliert die Lage, denn gegen Buddys Zorn gibt es keine pädagogisch wertvolle Lösung",
-   "genres": [
-    "Horror",
-    "Komödie",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 35 Min"
-    ],
-    [
-     "Regie",
-     "Casper Kelly"
-    ],
-    [
-     "Mit",
-     "Keegan-Michael Key, Delaney Quinn, Tristan Borders, Madison Skyy Polan"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=Pc9MbCNYn3k",
-   "link": "https://www.themoviedb.org/movie/1514026",
-   "bild": "https://image.tmdb.org/t/p/w500/1BdZbNvl1SfrrX8J9X5tQzN6Ivu.jpg",
    "news": []
   },
   "movie-1003596": {
@@ -2203,7 +2167,7 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=JznHmU4yrV4",
    "link": "https://www.themoviedb.org/movie/1003596",
-   "bild": "https://image.tmdb.org/t/p/w500/7UN7WiNgXnKNneFx7V4nDm92luk.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/zHTxblqPcqRpA93ex2Hj0RdpVBs.jpg",
    "news": []
   },
   "movie-1765072": {
@@ -2232,17 +2196,10 @@
      "9.1 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=IEx8D1Wb__U",
+   "trailer": "https://www.youtube.com/watch?v=rD0gIlrClP8",
    "link": "https://www.themoviedb.org/movie/1765072",
    "bild": "https://image.tmdb.org/t/p/w500/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
    "news": [
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "‘You Can See Everything’ Will Be A Treat Over Slow Halloween Frame; Documentary’s U.S. Cume At $52M+  Rising – Box Office",
-     "link": "https://deadline.com/2026/10/box-office-you-can-see-everything-clayface-halloween-1237209579/",
-     "datum": "2026-10-30T18:18:17.000Z"
-    },
     {
      "quelle": "The Hollywood Reporter",
      "art": "film",
@@ -2296,12 +2253,44 @@
     ],
     [
      "TMDB-Wertung",
-     "5.9 / 10"
+     "5.8 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=fR5Ub975f4k",
    "link": "https://www.themoviedb.org/movie/1400837",
    "bild": "https://image.tmdb.org/t/p/w500/dDRtLmxorXpXHxTJqxNlMT9rJP9.jpg",
+   "news": []
+  },
+  "movie-1422041": {
+   "titel": "La bola negra",
+   "original": "La bola negra",
+   "leitsatz": null,
+   "handlung": "Drei Leben, drei miteinander verwobene Schicksale, ein gemeinsames Erbe: Die Jahre 1932, 1937 und 2017 umspannend, erzählt LA BOLA NEGRA eine Geschichte von Begehren, Schmerz und der Sehnsucht von Sebastián, Rafael und Alberto, deren Lebenswege untrennbar miteinander verbunden sind. Inspiriert von einem der letzten, unvollendeten Werke Federico García Lorcas, spannt der Film einen Bogen von der Vorkriegszeit Spaniens bis in die Gegenwart.",
+   "genres": [
+    "Drama",
+    "Kriegsfilm"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 39 Min"
+    ],
+    [
+     "Regie",
+     "Javier Ambrossi, Javier Calvo"
+    ],
+    [
+     "Mit",
+     "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.1 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=wCktgAye3NA",
+   "link": "https://www.themoviedb.org/movie/1422041",
+   "bild": "https://image.tmdb.org/t/p/w500/t1azKLExwUxKj6v6m2L535evuRa.jpg",
    "news": []
   },
   "movie-1195803": {
@@ -2333,38 +2322,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
    "news": [],
    "sprache": "en"
-  },
-  "movie-1422041": {
-   "titel": "La bola negra",
-   "original": "La bola negra",
-   "leitsatz": null,
-   "handlung": "Drei Leben, drei miteinander verwobene Schicksale, ein gemeinsames Erbe: Die Jahre 1932, 1937 und 2017 umspannend, erzählt LA BOLA NEGRA eine Geschichte von Begehren, Schmerz und der Sehnsucht von Sebastián, Rafael und Alberto, deren Lebenswege untrennbar miteinander verbunden sind. Inspiriert von einem der letzten, unvollendeten Werke Federico García Lorcas, spannt der Film einen Bogen von der Vorkriegszeit Spaniens bis in die Gegenwart.",
-   "genres": [
-    "Drama",
-    "Kriegsfilm"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 39 Min"
-    ],
-    [
-     "Regie",
-     "Javier Ambrossi, Javier Calvo"
-    ],
-    [
-     "Mit",
-     "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=wCktgAye3NA",
-   "link": "https://www.themoviedb.org/movie/1422041",
-   "bild": "https://image.tmdb.org/t/p/w500/t1azKLExwUxKj6v6m2L535evuRa.jpg",
-   "news": []
   },
   "movie-858035": {
    "titel": "Klara und die Sonne",
@@ -2491,38 +2448,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
    "news": []
   },
-  "movie-1401459": {
-   "titel": "Fjord",
-   "original": "Fjord",
-   "leitsatz": null,
-   "handlung": "After moving from Romania to a remote Norwegian village to rebuild their lives, a family finds hope in their welcoming neighbors, but their fragile new beginning is threatened when their young daughter arrives at school covered in bruises.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 26 Min"
-    ],
-    [
-     "Regie",
-     "Cristian Mungiu"
-    ],
-    [
-     "Mit",
-     "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=frg59VOungA",
-   "link": "https://www.themoviedb.org/movie/1401459",
-   "bild": "https://image.tmdb.org/t/p/w500/qiYm44CQBFOZ0Vs8BtmH2swYLz2.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "movie-1433583": {
    "titel": "The Weight – Im Goldrausch",
    "original": "The Weight",
@@ -2554,6 +2479,38 @@
    "link": "https://www.themoviedb.org/movie/1433583",
    "bild": "https://image.tmdb.org/t/p/w500/ha3AUl0Zc0xs2hWxCROHTkDId25.jpg",
    "news": []
+  },
+  "movie-1401459": {
+   "titel": "Fjord",
+   "original": "Fjord",
+   "leitsatz": null,
+   "handlung": "After moving from Romania to a remote Norwegian village to rebuild their lives, a family finds hope in their welcoming neighbors, but their fragile new beginning is threatened when their young daughter arrives at school covered in bruises.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 26 Min"
+    ],
+    [
+     "Regie",
+     "Cristian Mungiu"
+    ],
+    [
+     "Mit",
+     "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=frg59VOungA",
+   "link": "https://www.themoviedb.org/movie/1401459",
+   "bild": "https://image.tmdb.org/t/p/w500/qiYm44CQBFOZ0Vs8BtmH2swYLz2.jpg",
+   "news": [],
+   "sprache": "en"
   },
   "movie-1458099": {
    "titel": "The Only Living Pickpocket in New York",
@@ -2647,7 +2604,7 @@
     ],
     [
      "Mit",
-     "Joseph Zada, Ralph Fiennes, Jesse Plemons, Whitney Peak"
+     "Joseph Zada, Mckenna Grace, Maya Hawke, Ralph Fiennes"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=3xfVyH0iwlc",
@@ -2703,7 +2660,7 @@
     ],
     [
      "TMDB-Wertung",
-     "6.6 / 10"
+     "6.7 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=CXCqbVtuCRY",
@@ -2718,38 +2675,6 @@
      "datum": "2026-10-29T11:18:00.000Z"
     }
    ]
-  },
-  "movie-1538497": {
-   "titel": "Wie verhext",
-   "original": "Hexed",
-   "leitsatz": null,
-   "handlung": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
-   "genres": [
-    "Abenteuer",
-    "Animation",
-    "Familie",
-    "Fantasy",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 43 Min"
-    ],
-    [
-     "Regie",
-     "Jason Hand, ฝน วีระสุนทร"
-    ],
-    [
-     "Mit",
-     "Hailee Steinfeld, Rashida Jones, Jodie Foster, Walton Goggins"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=6YYMqS8_Bp0",
-   "link": "https://www.themoviedb.org/movie/1538497",
-   "bild": "https://image.tmdb.org/t/p/w500/lMYJ4ogEBiB6pTxi5sm73kBsxiE.jpg",
-   "news": [],
-   "sprache": "en"
   },
   "movie-656908": {
    "titel": "Ramayana: Rise of a Legend",
@@ -2787,6 +2712,38 @@
      "datum": "2026-10-30T16:00:00.000Z"
     }
    ]
+  },
+  "movie-1538497": {
+   "titel": "Wie verhext",
+   "original": "Hexed",
+   "leitsatz": null,
+   "handlung": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
+   "genres": [
+    "Abenteuer",
+    "Animation",
+    "Familie",
+    "Fantasy",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 43 Min"
+    ],
+    [
+     "Regie",
+     "Jason Hand, ฝน วีระสุนทร"
+    ],
+    [
+     "Mit",
+     "Hailee Steinfeld, Rashida Jones, Jodie Foster, Walton Goggins"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=6YYMqS8_Bp0",
+   "link": "https://www.themoviedb.org/movie/1538497",
+   "bild": "https://image.tmdb.org/t/p/w500/lMYJ4ogEBiB6pTxi5sm73kBsxiE.jpg",
+   "news": [],
+   "sprache": "en"
   },
   "movie-1365378": {
    "titel": "Große Träume",
@@ -2856,35 +2813,6 @@
     }
    ]
   },
-  "movie-1567605": {
-   "titel": "Ebenezer – Eine Weihnachtsgeschichte",
-   "original": "Ebenezer",
-   "leitsatz": null,
-   "handlung": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
-   "genres": [
-    "Fantasy",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 55 Min"
-    ],
-    [
-     "Regie",
-     "Ti West"
-    ],
-    [
-     "Mit",
-     "Johnny Depp, Rupert Grint, Daisy Ridley, Andrea Riseborough"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=o3aFQJgjEfw",
-   "link": "https://www.themoviedb.org/movie/1567605",
-   "bild": "https://image.tmdb.org/t/p/w500/3VArJnDlvOnAIjzngIwjHU7CVVD.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "movie-1117898": {
    "titel": "Der Kater mit Hut",
    "original": "The Cat in the Hat",
@@ -2930,6 +2858,35 @@
      "datum": "2026-10-29T18:19:05.000Z"
     }
    ]
+  },
+  "movie-1567605": {
+   "titel": "Ebenezer – Eine Weihnachtsgeschichte",
+   "original": "Ebenezer",
+   "leitsatz": null,
+   "handlung": "An elderly miser embarks on a supernatural journey after visits from the ghost of his former business partner and the Spirits of Christmas Past, Present, and Yet to Come force him to confront his past and fight for a second chance at happiness.",
+   "genres": [
+    "Fantasy",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 55 Min"
+    ],
+    [
+     "Regie",
+     "Ti West"
+    ],
+    [
+     "Mit",
+     "Johnny Depp, Rupert Grint, Daisy Ridley, Andrea Riseborough"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=o3aFQJgjEfw",
+   "link": "https://www.themoviedb.org/movie/1567605",
+   "bild": "https://image.tmdb.org/t/p/w500/3VArJnDlvOnAIjzngIwjHU7CVVD.jpg",
+   "news": [],
+   "sprache": "en"
   },
   "movie-891621": {
    "titel": "Wild Horse Nine",
@@ -3139,7 +3096,7 @@
     ],
     [
      "Mit",
-     "Anthony Ippolito, AnnaSophia Robb, Stephan James, Matt Dillon"
+     "Anthony Ippolito, AnnaSophia Robb, P.J. Byrne, Toby Kebbell"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=VbUZakXlcMc",
@@ -3164,7 +3121,7 @@
     ],
     [
      "Mit",
-     "David McKenna, Beatrice Campbell, Emma Mackey, Carey Mulligan"
+     "Beatrice Campbell, David McKenna, Daniel Craig, Carey Mulligan"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=nYqwH8GC97E",
@@ -3373,6 +3330,67 @@
    "bild": "https://image.tmdb.org/t/p/w500/o1qMU0ZB5XDX8IXJFFu3AkhOqjh.jpg",
    "news": []
   },
+  "movie-848700": {
+   "titel": "Minotaurus",
+   "original": "Minotaure",
+   "leitsatz": null,
+   "handlung": "Russland, 2022: Firmenchef Gleb führt ein Leben in Wohlstand und häuslicher Behaglichkeit. Doch bald gerät er an allen Fronten unter Druck. Zu Hause entzieht sich ihm seine Frau Galina mehr und mehr, und der Verdacht, dass sie ihn betrügt, lässt ihn nicht los. Im Betrieb verlangen die örtlichen Behörden von ihm, eine Anzahl seiner Beschäftigten für den Krieg in der Ukraine zu rekrutieren. Während er weiterhin seine Hände in Unschuld waschen will, ringt Gleb um Kontrolle. Doch der Zerfall seines sorgsam geordneten Lebens beschleunigt sich. Der Weg in die Gewalt scheint längst unausweichlich.",
+   "genres": [
+    "Drama",
+    "Krimi",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 21 Min"
+    ],
+    [
+     "Regie",
+     "Андрей Звягинцев"
+    ],
+    [
+     "Mit",
+     "Дмитрий Мазуров, Ирис Лебедева, Varvara Shmykova, Juris Žagars"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=kvs17bvubhI",
+   "link": "https://www.themoviedb.org/movie/848700",
+   "bild": "https://image.tmdb.org/t/p/w500/jUzJYKP0vGXj3HTEkjQiVMjE4ej.jpg",
+   "news": []
+  },
+  "movie-1440304": {
+   "titel": "Mauvaise Pioche",
+   "original": "Mauvaise Pioche",
+   "leitsatz": null,
+   "handlung": "​Arrested by mistake and mistaken for France’s most wanted man, Serge Martin, a peaceful retiree, becomes the target of the media. Caught up in a never-ending whirlwind, he’ll do everything he can to prove his innocence and get his life back… if that’s even possible!",
+   "genres": [
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Gérard Jugnot"
+    ],
+    [
+     "Mit",
+     "Gérard Jugnot, Thierry Lhermitte, Philippe Lacheau, Zabou Breitman"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.0 / 10"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/1440304",
+   "bild": "https://image.tmdb.org/t/p/w500/wRPxSccJw6wckkBUOzM5CHd871w.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "movie-1437981": {
    "titel": "Coward",
    "original": "Coward",
@@ -3400,39 +3418,6 @@
    "trailer": "https://www.youtube.com/watch?v=T1SAZTIZnrQ",
    "link": "https://www.themoviedb.org/movie/1437981",
    "bild": "https://image.tmdb.org/t/p/w500/qy5ytiCeyR9uW5HsLDOFaOQ8yEr.jpg",
-   "news": []
-  },
-  "movie-848700": {
-   "titel": "Minotaurus",
-   "original": "Minotaure",
-   "leitsatz": null,
-   "handlung": "Russland, 2022: Firmenchef Gleb führt ein Leben in Wohlstand und häuslicher Behaglichkeit. Doch bald gerät er an allen Fronten unter Druck. Zu Hause entzieht sich ihm seine Frau Galina mehr und mehr, und der Verdacht, dass sie ihn betrügt, lässt ihn nicht los. Im Betrieb verlangen die örtlichen Behörden von ihm, eine Anzahl seiner Beschäftigten für den Krieg in der Ukraine zu rekrutieren. Während er weiterhin seine Hände in Unschuld waschen will, ringt Gleb um Kontrolle. Doch der Zerfall seines sorgsam geordneten Lebens beschleunigt sich. Der Weg in die Gewalt scheint längst unausweichlich.",
-   "genres": [
-    "Drama",
-    "Krimi",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 21 Min"
-    ],
-    [
-     "Regie",
-     "Андрей Звягинцев"
-    ],
-    [
-     "Mit",
-     "Дмитрий Мазуров, Ирис Лебедева, Varvara Shmykova, Juris Žagars"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.7 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=kvs17bvubhI",
-   "link": "https://www.themoviedb.org/movie/848700",
-   "bild": "https://image.tmdb.org/t/p/w500/jUzJYKP0vGXj3HTEkjQiVMjE4ej.jpg",
    "news": []
   },
   "movie-1074074": {
@@ -3464,34 +3449,6 @@
    "trailer": "https://www.youtube.com/watch?v=2I5LLG2XBco",
    "link": "https://www.themoviedb.org/movie/1074074",
    "bild": "https://image.tmdb.org/t/p/w500/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1440304": {
-   "titel": "Mauvaise Pioche",
-   "original": "Mauvaise Pioche",
-   "leitsatz": null,
-   "handlung": "​Arrested by mistake and mistaken for France’s most wanted man, Serge Martin, a peaceful retiree, becomes the target of the media. Caught up in a never-ending whirlwind, he’ll do everything he can to prove his innocence and get his life back… if that’s even possible!",
-   "genres": [
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Gérard Jugnot"
-    ],
-    [
-     "Mit",
-     "Gérard Jugnot, Thierry Lhermitte, Philippe Lacheau, Zabou Breitman"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.0 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1440304",
-   "bild": "https://image.tmdb.org/t/p/w500/wRPxSccJw6wckkBUOzM5CHd871w.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -3574,7 +3531,7 @@
     ],
     [
      "TMDB-Wertung",
-     "8.2 / 10"
+     "7.9 / 10"
     ]
    ],
    "trailer": null,
@@ -3707,63 +3664,32 @@
    "bild": "https://image.tmdb.org/t/p/w500/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
    "news": []
   },
-  "tv-313699": {
-   "titel": "Balaraw: Blood Island",
-   "original": "Balaraw",
+  "movie-1452168": {
+   "titel": "Behemoth! - Stück meines Lebens",
+   "original": "Behemoth!",
    "leitsatz": null,
-   "handlung": "Jahre nach dem Verschwinden ihrer Mutter folgt Sabina einem mysteriösen Hinweis auf eine abgelegene Insel, wo sie auf die düsteren Geheimnisse ihrer Familie stößt.",
+   "handlung": "Der begnadete Cellist Alex Serian kehrt nach 20 Jahren auf Tournee in seine Heimatstadt Los Angeles zurück. Die Musik, die stets der beständige, alles verzehrende Strom seines Lebens war, trägt Alex nun in ein Abenteuer, das ihn für immer verändern wird.",
    "genres": [
-    "Mystery",
+    "Musik",
     "Drama"
    ],
    "fakten": [
     [
-     "Umfang",
-     "1 Staffel, 8 Folgen"
+     "Laufzeit",
+     "2 Std 7 Min"
+    ],
+    [
+     "Regie",
+     "Tony Gilroy"
     ],
     [
      "Mit",
-     "Janine Gutierrez, Charlie Dizon, Agot Isidro, Ronnie Lazaro"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
+     "Pedro Pascal, Olivia Wilde, Eva Victor, Will Arnett"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=InDO8Vbr02M",
-   "link": "https://www.themoviedb.org/tv/313699",
-   "bild": "https://image.tmdb.org/t/p/w500/s1A6UOu8IOmw0kJXohlitMRiwQb.jpg",
-   "news": []
-  },
-  "tv-334700": {
-   "titel": "Das Talent zur Täuschung",
-   "original": "Dom de Iludir",
-   "leitsatz": null,
-   "handlung": "Ein millionenschwerer Kunstraub enthüllt gefährliche Geheimnisse und bringt eine bestimmende Mutter, ihre Tochter und eine Betrügerin gegeneinander auf.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 10 Folgen"
-    ],
-    [
-     "Von",
-     "Diane Maia, Mirna Nogueira"
-    ],
-    [
-     "Mit",
-     "Marieta Severo, Alice Wegmann, Nanda Costa, José de Abreu"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/334700",
-   "bild": "https://image.tmdb.org/t/p/w500/odOJLtScJ7Wj4zFpZwAeThcUocR.jpg",
+   "trailer": "https://www.youtube.com/watch?v=476sg1G_PC8",
+   "link": "https://www.themoviedb.org/movie/1452168",
+   "bild": "https://image.tmdb.org/t/p/w500/bcyGYWfcXr0GnXewaE5gkvYy1iQ.jpg",
    "news": []
   },
   "tv-292741": {
@@ -3799,6 +3725,93 @@
    "bild": "https://image.tmdb.org/t/p/w500/hnZrbenpcBFvUIaXGNKxBeVwvE6.jpg",
    "news": []
   },
+  "tv-313699": {
+   "titel": "Balaraw: Blood Island",
+   "original": "Balaraw",
+   "leitsatz": null,
+   "handlung": "Jahre nach dem Verschwinden ihrer Mutter folgt Sabina einem mysteriösen Hinweis auf eine abgelegene Insel, wo sie auf die düsteren Geheimnisse ihrer Familie stößt.",
+   "genres": [
+    "Mystery",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 8 Folgen"
+    ],
+    [
+     "Mit",
+     "Janine Gutierrez, Charlie Dizon, Agot Isidro, Ronnie Lazaro"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=InDO8Vbr02M",
+   "link": "https://www.themoviedb.org/tv/313699",
+   "bild": "https://image.tmdb.org/t/p/w500/s1A6UOu8IOmw0kJXohlitMRiwQb.jpg",
+   "news": []
+  },
+  "tv-336240": {
+   "titel": "Haustausch",
+   "original": "Bytet",
+   "leitsatz": null,
+   "handlung": "Das Paar Helene (Frida Gustavsson) und Carl (Fares Fares) tauscht sein Zuhause im Stockholmer Schärengarten gegen eine sonnendurchflutete Villa auf Sizilien und damit sein Leben für einige Wochen mit Scarlett (Emma Appleton) und Adam (Jakob Oftebro), die sie noch nie zuvor getroffen haben. Doch schon bald kommen beunruhigende Details ans Licht und der ursprünglich bilderbuchartige Urlaub verwandelt sich langsam in ein perfides Spiel aus Überwachung, Manipulation und Misstrauen.",
+   "genres": [
+    "Drama",
+    "Mystery"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 4 Folgen"
+    ],
+    [
+     "Von",
+     "Amanda Högberg, Axel Stjärne"
+    ],
+    [
+     "Mit",
+     "Frida Gustavsson, Fares Fares, Emma Appleton, Jakob Oftebro"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=ARYGWtBnQEA",
+   "link": "https://www.themoviedb.org/tv/336240",
+   "bild": "https://image.tmdb.org/t/p/w500/84A7STa2W0mqZACWEeLMHfLugb6.jpg",
+   "news": []
+  },
+  "tv-338689": {
+   "titel": "Der Fall von El Mayo",
+   "original": "The Fall of El Mayo",
+   "leitsatz": null,
+   "handlung": "Der Fall von El Mayo, einem mysteriösen Drogenboss und Partner von El Chapo, dessen geheimnisvolle Verhaftung die Frage offenlässt: Wer hat ihn verraten?",
+   "genres": [
+    "Dokumentarfilm"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 3 Folgen"
+    ],
+    [
+     "Von",
+     "Darren Foster, Miguel Fernández Flores"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=e5ExUsk6-OE",
+   "link": "https://www.themoviedb.org/tv/338689",
+   "bild": "https://image.tmdb.org/t/p/w500/zp5lT15wR0cfCYcR12DXcVNsrnh.jpg",
+   "news": []
+  },
   "tv-224377": {
    "titel": "Harry Potter",
    "original": "Harry Potter",
@@ -3832,7 +3845,7 @@
      "art": "film",
      "titel": "Harry Potter-Serie: Jetzt stehen die Stars für den Sprechenden Hut, die Fette Dame und die Hogwarts-Hausgeister fest",
      "link": "https://www.moviepilot.de/news/harry-potter-serie-jetzt-stehen-die-stars-fur-den-sprechenden-hut-und-die-hogwarts-hausgeister-fest-1165302",
-     "datum": "2026-10-30T15:49:00.000Z"
+     "datum": "2026-10-30T22:55:00.000Z"
     },
     {
      "quelle": "Moviepilot",
@@ -3968,31 +3981,35 @@
    "news": [],
    "sprache": "en"
   },
-  "tv-338689": {
-   "titel": "Der Fall von El Mayo",
-   "original": "The Fall of El Mayo",
+  "tv-311853": {
+   "titel": "Obsess",
+   "original": "النفس المطمئنة",
    "leitsatz": null,
-   "handlung": "Der Fall von El Mayo, einem mysteriösen Drogenboss und Partner von El Chapo, dessen geheimnisvolle Verhaftung die Frage offenlässt: Wer hat ihn verraten?",
+   "handlung": "Kuwait 1970er: Als sein Vater beerdigt wird, kehrt Talal nach Kuwait zurück, um an der Beerdigung teilzunehmen. Doch nach seiner Rückkehr holen ihn die schmerzvollen Erinnerungen und lang versteckten Geheimnisse ein. Die Grenzen zwischen Erinnerungen und Realität verschwimmen immer mehr, wodurch er nach und nach an seiner eigenen Wahrnehmung zweifelt. Gleichzeitig muss er sich erneut mit seiner obsessiven Beziehung zu Hessa auseinandersetzen. Er gerät in einen Strudel aus Schuldgefühlen und den Schatten seiner Vergangenheit, während er versucht, die Geheimnisse zu lüften.",
    "genres": [
-    "Dokumentarfilm"
+    "Mystery"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 3 Folgen"
+     "1 Staffel, 4 Folgen"
     ],
     [
      "Von",
-     "Darren Foster, Miguel Fernández Flores"
+     "سعيد الماروق"
+    ],
+    [
+     "Mit",
+     "هيا عبدالسلام, يعقوب الفرحان, ليلى عبد الله, حسين المنصور"
     ],
     [
      "Sender/Dienst",
-     "Netflix"
+     "Netflix, Shasha"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=e5ExUsk6-OE",
-   "link": "https://www.themoviedb.org/tv/338689",
-   "bild": "https://image.tmdb.org/t/p/w500/zp5lT15wR0cfCYcR12DXcVNsrnh.jpg",
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/311853",
+   "bild": "https://image.tmdb.org/t/p/w500/ThhNhFCIFsYrOtJ2jXkb1ulOd0.jpg",
    "news": []
   },
   "tv-303044": {
@@ -4059,6 +4076,29 @@
    "news": [],
    "sprache": "en"
   },
+  "tv-336241": {
+   "titel": "How to Ruin Diwali: Meet the Parents",
+   "original": "How to Ruin Diwali: Meet the Parents",
+   "leitsatz": null,
+   "handlung": "Geheimnisse gefährden das Diwali-Fest, als eine heimliche Verlobung eine stolze Zulu-Familie und eine indische Arztdynastie unter ein Dach zwingt.",
+   "genres": [
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 3 Folgen"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=e1e0ZlP5o08",
+   "link": "https://www.themoviedb.org/tv/336241",
+   "bild": "https://image.tmdb.org/t/p/w500/84CWUqIiQCfCyC7epKT8y24DGRd.jpg",
+   "news": []
+  },
   "tv-291507": {
    "titel": "The Body",
    "original": "The Body",
@@ -4089,6 +4129,38 @@
    "trailer": "https://www.youtube.com/watch?v=wl7uj7n7DoY",
    "link": "https://www.themoviedb.org/tv/291507",
    "bild": "https://image.tmdb.org/t/p/w500/zksg8e0GZAmg1nLhVP5tKso3QRs.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "tv-300755": {
+   "titel": "Rinnan",
+   "original": "Rinnan",
+   "leitsatz": null,
+   "handlung": "The series follows the young and ambitious Henry Rinnan, and how his personal demons and narcissistic need for recognition drove him from a failed salesman to Norway’s most notorious traitor.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 4 Folgen"
+    ],
+    [
+     "Von",
+     "Øyvind Holtmon"
+    ],
+    [
+     "Mit",
+     "Axel Bøyum, Odin Waage, Andrea Berntzen, Håkon Stene"
+    ],
+    [
+     "Sender/Dienst",
+     "Prime Video"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/300755",
+   "bild": "https://image.tmdb.org/t/p/w500/6uFaEHVmoP88w0RxIOYAjWq2A7W.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4398,42 +4470,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
    "news": []
   },
-  "tv-456": {
-   "titel": "Die Simpsons",
-   "original": "The Simpsons",
-   "leitsatz": null,
-   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
-   "genres": [
-    "Animation",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "38 Staffeln, 816 Folgen"
-    ],
-    [
-     "Von",
-     "Matt Groening"
-    ],
-    [
-     "Mit",
-     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
-    ],
-    [
-     "Sender/Dienst",
-     "FOX"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
-   "link": "https://www.themoviedb.org/tv/456",
-   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
-   "news": []
-  },
   "tv-2734": {
    "titel": "Law & Order: Special Victims Unit",
    "original": "Law & Order: Special Victims Unit",
@@ -4504,6 +4540,115 @@
    "trailer": "https://www.youtube.com/watch?v=hc0ZFCHbR40",
    "link": "https://www.themoviedb.org/tv/1416",
    "bild": "https://image.tmdb.org/t/p/w500/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
+   "news": []
+  },
+  "tv-456": {
+   "titel": "Die Simpsons",
+   "original": "The Simpsons",
+   "leitsatz": null,
+   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
+   "genres": [
+    "Animation",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "38 Staffeln, 816 Folgen"
+    ],
+    [
+     "Von",
+     "Matt Groening"
+    ],
+    [
+     "Mit",
+     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
+    ],
+    [
+     "Sender/Dienst",
+     "FOX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
+   "link": "https://www.themoviedb.org/tv/456",
+   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "news": []
+  },
+  "tv-247718": {
+   "titel": "MobLand: Familie bis aufs Blut",
+   "original": "MobLand",
+   "leitsatz": "Jetzt regiert das Chaos.",
+   "handlung": "Die Karten werden neu gemischt, als zwei verfeindete Verbrecherfamilien in einer Schlacht aneinandergeraten, die Imperien zu stürzen droht. Harry Da Souza, ein gewiefter Mann fürs Grobe, gerät ins Kreuzfeuer und stellt seine Loyalität unter Beweis.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "2 Staffeln, 20 Folgen"
+    ],
+    [
+     "Von",
+     "Ronan Bennett"
+    ],
+    [
+     "Mit",
+     "Tom Hardy, Pierce Brosnan, Paddy Considine, Joanne Froggatt"
+    ],
+    [
+     "Sender/Dienst",
+     "Paramount+, Paramount+"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=cyYZAc0TZ7U",
+   "link": "https://www.themoviedb.org/tv/247718",
+   "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
+   "news": []
+  },
+  "tv-4614": {
+   "titel": "Navy CIS",
+   "original": "NCIS",
+   "leitsatz": null,
+   "handlung": "Der Naval Crime Investigative Service wird dann gerufen, wenn Verbrechen begangen werden, die gegen den Uniform Code of Military Justice verstoßen und innerhalb der Navy stattfinden. Das Hauptquartier befindet sich in Washington D.C. und steht unter der Leitung von Special Agent Leroy Jethro Gibbs. Er selbst ist ein Veteran aus dem Irak-Krieg und hat mit moderner Technik wenig zu tun. Aus diesem Grund ermittelt er gemeinsam mit einem Elite-Team, bestehend aus dem Ballistik-Experten Tony DiNozzo, dem Technikspezialisten Tim McGee, der Forensikspezialistin Abby Sciuto sowie dem Gerichtsmediziner Ducky Mallard.",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Action & Adventure"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "24 Staffeln, 513 Folgen"
+    ],
+    [
+     "Von",
+     "Don McGill, Donald P. Bellisario"
+    ],
+    [
+     "Mit",
+     "Sean Murray, Wilmer Valderrama, Katrina Law, Brian Dietzen"
+    ],
+    [
+     "Sender/Dienst",
+     "CBS"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=BhtDgn31XZo",
+   "link": "https://www.themoviedb.org/tv/4614",
+   "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
    "news": []
   },
   "tv-213375": {
@@ -4586,353 +4731,6 @@
     }
    ]
   },
-  "tv-4614": {
-   "titel": "Navy CIS",
-   "original": "NCIS",
-   "leitsatz": null,
-   "handlung": "Der Naval Crime Investigative Service wird dann gerufen, wenn Verbrechen begangen werden, die gegen den Uniform Code of Military Justice verstoßen und innerhalb der Navy stattfinden. Das Hauptquartier befindet sich in Washington D.C. und steht unter der Leitung von Special Agent Leroy Jethro Gibbs. Er selbst ist ein Veteran aus dem Irak-Krieg und hat mit moderner Technik wenig zu tun. Aus diesem Grund ermittelt er gemeinsam mit einem Elite-Team, bestehend aus dem Ballistik-Experten Tony DiNozzo, dem Technikspezialisten Tim McGee, der Forensikspezialistin Abby Sciuto sowie dem Gerichtsmediziner Ducky Mallard.",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Action & Adventure"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "24 Staffeln, 513 Folgen"
-    ],
-    [
-     "Von",
-     "Don McGill, Donald P. Bellisario"
-    ],
-    [
-     "Mit",
-     "Sean Murray, Wilmer Valderrama, Katrina Law, Brian Dietzen"
-    ],
-    [
-     "Sender/Dienst",
-     "CBS"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=BhtDgn31XZo",
-   "link": "https://www.themoviedb.org/tv/4614",
-   "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
-   "news": []
-  },
-  "tv-247718": {
-   "titel": "MobLand: Familie bis aufs Blut",
-   "original": "MobLand",
-   "leitsatz": "Jetzt regiert das Chaos.",
-   "handlung": "Die Karten werden neu gemischt, als zwei verfeindete Verbrecherfamilien in einer Schlacht aneinandergeraten, die Imperien zu stürzen droht. Harry Da Souza, ein gewiefter Mann fürs Grobe, gerät ins Kreuzfeuer und stellt seine Loyalität unter Beweis.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "2 Staffeln, 20 Folgen"
-    ],
-    [
-     "Von",
-     "Ronan Bennett"
-    ],
-    [
-     "Mit",
-     "Tom Hardy, Pierce Brosnan, Paddy Considine, Joanne Froggatt"
-    ],
-    [
-     "Sender/Dienst",
-     "Paramount+, Paramount+"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=cyYZAc0TZ7U",
-   "link": "https://www.themoviedb.org/tv/247718",
-   "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
-   "news": []
-  },
-  "tv-153312": {
-   "titel": "Tulsa King",
-   "original": "Tulsa King",
-   "leitsatz": "Ursprünglicher Gangster. Neue Stadt.",
-   "handlung": "Kurz nachdem er nach 25 Jahren aus dem Gefängnis entlassen wurde, wird der New Yorker Mafia-Capo Dwight \"The General\" Manfredi von seinem Boss kurzerhand ins Exil geschickt, um sich in Tulsa, Oklahoma, niederzulassen. Dwight erkennt, dass seine Mafia-Familie möglicherweise nicht sein Bestes im Sinn hat, und baut langsam eine \"Crew\" aus einer Gruppe unwahrscheinlicher Charaktere auf, die ihm dabei hilft, ein neues kriminelles Imperium an einem Ort aufzubauen, der für ihn genauso gut ein anderer Planet sein könnte.",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "4 Staffeln, 39 Folgen"
-    ],
-    [
-     "Von",
-     "Taylor Sheridan"
-    ],
-    [
-     "Mit",
-     "Sylvester Stallone, Martin Starr, Jay Will, Vincent Piazza"
-    ],
-    [
-     "Sender/Dienst",
-     "Paramount+"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=Mh417ri7rgk",
-   "link": "https://www.themoviedb.org/tv/153312",
-   "bild": "https://image.tmdb.org/t/p/w500/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
-   "news": []
-  },
-  "tv-58841": {
-   "titel": "Chicago P.D.",
-   "original": "Chicago P.D.",
-   "leitsatz": null,
-   "handlung": "Der District 21 des Chicago Police Departments besteht aus zwei unterschiedlichen Abteilungen: Einmal gibt es die Uniformed Cops, die ihren Einsatz auf den Straßen der Stadt haben und sich um Kleinkriminelle kümmern. Die Intelligence Unit hingegen bekämpft Straftaten im großen Stil, sei es Drogenschmuggel oder Morde aller Art.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "14 Staffeln, 270 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Jason Beghe, Marina Squerciati, Patrick John Flueger, Benjamin Levy Aguilar"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=NZcr9IFS9R0",
-   "link": "https://www.themoviedb.org/tv/58841",
-   "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Neue Ära bei „Chicago P.D.“: Nach dem Abschied eines Publikumslieblings übernimmt dieser neue Officer",
-     "link": "https://www.serienjunkies.de/news/serien/neue-aera-bei-chicago-nach-dem-abschied-eines-publikumslieblings-uebernimmt-dieser-neue-officer-94566196.html",
-     "datum": "2026-10-30T11:00:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Naiqui Macabroad Joins ‘Chicago P.D.’ Following LaRoyce Hawkins Exit",
-     "link": "https://deadline.com/2026/10/naiqui-macabroad-chicago-p-d-season-14-cast-1237208550/",
-     "datum": "2026-10-29T20:11:11.000Z"
-    }
-   ]
-  },
-  "tv-3034": {
-   "titel": "Tatort",
-   "original": "Tatort",
-   "leitsatz": null,
-   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
-   "genres": [
-    "Drama",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "57 Staffeln, 1347 Folgen"
-    ],
-    [
-     "Sender/Dienst",
-     "ORF 1, Das Erste"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
-   "link": "https://www.themoviedb.org/tv/3034",
-   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
-   "news": []
-  },
-  "tv-44006": {
-   "titel": "Chicago Fire",
-   "original": "Chicago Fire",
-   "leitsatz": null,
-   "handlung": "Für die Feuerwehrmänner und Rettungssanitäter der Feuerwache 51 in Chicago sind Stress und Gefahren an der Tagesordnung. Die enorme Verantwortung, der sich die Alltagshelden aussetzen, macht auch vor dem Privatleben nicht halt. Matthew Casey, der Chef von Truck 81, steckt gerade mitten in einer Scheidung und sucht in seinem Job Ablenkung. Nach dem Tod eines Feuerwehrmanns gerät er mit Kelly Severide, dem Anführer von Rescue Squad 3, aneinander. Trotz gelegentlicher Scharmützel ist das Department für die meisten Teammitglieder wie eine Ersatzfamilie, zumal die bisweilen traumatischen Erlebnisse während der Einsätze für eine emotionale Bindung sorgen.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "15 Staffeln, 301 Folgen"
-    ],
-    [
-     "Von",
-     "Derek Haas, Michael Brandt"
-    ],
-    [
-     "Mit",
-     "Taylor Kinney, David Eigenberg, Christian Stolte, Miranda Rae Mayo"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=IIeSDILTE5M",
-   "link": "https://www.themoviedb.org/tv/44006",
-   "bild": "https://image.tmdb.org/t/p/w500/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
-   "news": []
-  },
-  "tv-30983": {
-   "titel": "Detektiv Conan",
-   "original": "名探偵コナン",
-   "leitsatz": null,
-   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
-   "genres": [
-    "Animation",
-    "Krimi",
-    "Mystery",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 1218 Folgen"
-    ],
-    [
-     "Mit",
-     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
-    ],
-    [
-     "Sender/Dienst",
-     "YTV"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
-   "link": "https://www.themoviedb.org/tv/30983",
-   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
-   "news": []
-  },
-  "tv-1413": {
-   "titel": "American Horror Story",
-   "original": "American Horror Story",
-   "leitsatz": "Was verschweigen sie uns noch?",
-   "handlung": "Die Serienanthologie American Horror Story erzählt von Staffel zu Staffel verschiedene, in sich abgeschlossene Geschichten, die sich mit unterschiedlichen Arten von Horror beschäftigen. Während jedes Jahr die Thematik sowie das Setting und viele Darsteller gewechselt werden, kehren einige Schauspieler mehrmals in unterschiedlichen Rollen zur Serie zurück.",
-   "genres": [
-    "Drama",
-    "Mystery",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "13 Staffeln, 145 Folgen"
-    ],
-    [
-     "Von",
-     "Ryan Murphy, Brad Falchuk"
-    ],
-    [
-     "Mit",
-     "Sarah Paulson, Evan Peters, Angela Bassett, Kathy Bates"
-    ],
-    [
-     "Sender/Dienst",
-     "FX"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.1 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=GYoTOIsn5yk",
-   "link": "https://www.themoviedb.org/tv/1413",
-   "bild": "https://image.tmdb.org/t/p/w500/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Disney+ im November 2026: mit „Scrubs“, „American Horror Story“, „Vienna Game“ und „RJ Decker“",
-     "link": "https://www.serienjunkies.de/news/serien/disney-im-november-2026-mit-scrubs-american-horror-story-vienna-game-und-rj-decker-94566649.html",
-     "datum": "2026-10-30T14:00:00.000Z"
-    },
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘American Horror Story’ Finale: Paul Anthony Kelly on the Season 13 Ending and Whether He’ll Return",
-     "link": "https://www.hollywoodreporter.com/tv/tv-features/american-horror-story-finale-paul-anthony-kelly-explained-1236741324/",
-     "datum": "2026-10-30T04:52:00.000Z"
-    }
-   ]
-  },
-  "tv-80748": {
-   "titel": "FBI",
-   "original": "FBI",
-   "leitsatz": null,
-   "handlung": "Die Agenten des New Yorker Büro des FBI arbeiten rund um die Uhr daran, die Stadt und ihr Land vor Terror, organisiertem Verbrechen und fremden Spionen zu beschützen. Unter der Leitung von Special Agent in Charge Dana Mosier setzt sich ihr Team aus verschiedenen Spezialisten mit einzigartigen Fähigkeiten zusammen.",
-   "genres": [
-    "Krimi",
-    "Action & Adventure",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "9 Staffeln, 162 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Craig Turk"
-    ],
-    [
-     "Mit",
-     "Missy Peregrym, Zeeko Zaki, John Boyd, Jeremy Sisto"
-    ],
-    [
-     "Sender/Dienst",
-     "CBS"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.9 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=r-btgaBL6-4",
-   "link": "https://www.themoviedb.org/tv/80748",
-   "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
-   "news": []
-  },
   "tv-2190": {
    "titel": "South Park",
    "original": "South Park",
@@ -4991,6 +4789,280 @@
     }
    ]
   },
+  "tv-153312": {
+   "titel": "Tulsa King",
+   "original": "Tulsa King",
+   "leitsatz": "Ursprünglicher Gangster. Neue Stadt.",
+   "handlung": "Kurz nachdem er nach 25 Jahren aus dem Gefängnis entlassen wurde, wird der New Yorker Mafia-Capo Dwight \"The General\" Manfredi von seinem Boss kurzerhand ins Exil geschickt, um sich in Tulsa, Oklahoma, niederzulassen. Dwight erkennt, dass seine Mafia-Familie möglicherweise nicht sein Bestes im Sinn hat, und baut langsam eine \"Crew\" aus einer Gruppe unwahrscheinlicher Charaktere auf, die ihm dabei hilft, ein neues kriminelles Imperium an einem Ort aufzubauen, der für ihn genauso gut ein anderer Planet sein könnte.",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "4 Staffeln, 39 Folgen"
+    ],
+    [
+     "Von",
+     "Taylor Sheridan"
+    ],
+    [
+     "Mit",
+     "Sylvester Stallone, Martin Starr, Jay Will, Vincent Piazza"
+    ],
+    [
+     "Sender/Dienst",
+     "Paramount+"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=Mh417ri7rgk",
+   "link": "https://www.themoviedb.org/tv/153312",
+   "bild": "https://image.tmdb.org/t/p/w500/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
+   "news": []
+  },
+  "tv-3034": {
+   "titel": "Tatort",
+   "original": "Tatort",
+   "leitsatz": null,
+   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
+   "genres": [
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "57 Staffeln, 1347 Folgen"
+    ],
+    [
+     "Sender/Dienst",
+     "ORF 1, Das Erste"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
+   "link": "https://www.themoviedb.org/tv/3034",
+   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+   "news": []
+  },
+  "tv-1413": {
+   "titel": "American Horror Story",
+   "original": "American Horror Story",
+   "leitsatz": "Was verschweigen sie uns noch?",
+   "handlung": "Die Serienanthologie American Horror Story erzählt von Staffel zu Staffel verschiedene, in sich abgeschlossene Geschichten, die sich mit unterschiedlichen Arten von Horror beschäftigen. Während jedes Jahr die Thematik sowie das Setting und viele Darsteller gewechselt werden, kehren einige Schauspieler mehrmals in unterschiedlichen Rollen zur Serie zurück.",
+   "genres": [
+    "Drama",
+    "Mystery",
+    "Sci-Fi & Fantasy"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "13 Staffeln, 145 Folgen"
+    ],
+    [
+     "Von",
+     "Ryan Murphy, Brad Falchuk"
+    ],
+    [
+     "Mit",
+     "Sarah Paulson, Evan Peters, Angela Bassett, Kathy Bates"
+    ],
+    [
+     "Sender/Dienst",
+     "FX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.1 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=GYoTOIsn5yk",
+   "link": "https://www.themoviedb.org/tv/1413",
+   "bild": "https://image.tmdb.org/t/p/w500/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Disney+ im November 2026: mit „Scrubs“, „American Horror Story“, „Vienna Game“ und „RJ Decker“",
+     "link": "https://www.serienjunkies.de/news/serien/disney-im-november-2026-mit-scrubs-american-horror-story-vienna-game-und-rj-decker-94566649.html",
+     "datum": "2026-10-30T14:00:00.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘American Horror Story’ Finale: Paul Anthony Kelly on the Season 13 Ending and Whether He’ll Return",
+     "link": "https://www.hollywoodreporter.com/tv/tv-features/american-horror-story-finale-paul-anthony-kelly-explained-1236741324/",
+     "datum": "2026-10-30T04:52:00.000Z"
+    }
+   ]
+  },
+  "tv-58841": {
+   "titel": "Chicago P.D.",
+   "original": "Chicago P.D.",
+   "leitsatz": null,
+   "handlung": "Der District 21 des Chicago Police Departments besteht aus zwei unterschiedlichen Abteilungen: Einmal gibt es die Uniformed Cops, die ihren Einsatz auf den Straßen der Stadt haben und sich um Kleinkriminelle kümmern. Die Intelligence Unit hingegen bekämpft Straftaten im großen Stil, sei es Drogenschmuggel oder Morde aller Art.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "14 Staffeln, 270 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Matt Olmstead"
+    ],
+    [
+     "Mit",
+     "Jason Beghe, Marina Squerciati, Patrick John Flueger, Benjamin Levy Aguilar"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=NZcr9IFS9R0",
+   "link": "https://www.themoviedb.org/tv/58841",
+   "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Neue Ära bei „Chicago P.D.“: Nach dem Abschied eines Publikumslieblings übernimmt dieser neue Officer",
+     "link": "https://www.serienjunkies.de/news/serien/neue-aera-bei-chicago-nach-dem-abschied-eines-publikumslieblings-uebernimmt-dieser-neue-officer-94566196.html",
+     "datum": "2026-10-30T11:00:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Naiqui Macabroad Joins ‘Chicago P.D.’ Following LaRoyce Hawkins Exit",
+     "link": "https://deadline.com/2026/10/naiqui-macabroad-chicago-p-d-season-14-cast-1237208550/",
+     "datum": "2026-10-29T20:11:11.000Z"
+    }
+   ]
+  },
+  "tv-44006": {
+   "titel": "Chicago Fire",
+   "original": "Chicago Fire",
+   "leitsatz": null,
+   "handlung": "Für die Feuerwehrmänner und Rettungssanitäter der Feuerwache 51 in Chicago sind Stress und Gefahren an der Tagesordnung. Die enorme Verantwortung, der sich die Alltagshelden aussetzen, macht auch vor dem Privatleben nicht halt. Matthew Casey, der Chef von Truck 81, steckt gerade mitten in einer Scheidung und sucht in seinem Job Ablenkung. Nach dem Tod eines Feuerwehrmanns gerät er mit Kelly Severide, dem Anführer von Rescue Squad 3, aneinander. Trotz gelegentlicher Scharmützel ist das Department für die meisten Teammitglieder wie eine Ersatzfamilie, zumal die bisweilen traumatischen Erlebnisse während der Einsätze für eine emotionale Bindung sorgen.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "15 Staffeln, 301 Folgen"
+    ],
+    [
+     "Von",
+     "Derek Haas, Michael Brandt"
+    ],
+    [
+     "Mit",
+     "Taylor Kinney, David Eigenberg, Christian Stolte, Miranda Rae Mayo"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=IIeSDILTE5M",
+   "link": "https://www.themoviedb.org/tv/44006",
+   "bild": "https://image.tmdb.org/t/p/w500/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
+   "news": []
+  },
+  "tv-80748": {
+   "titel": "FBI",
+   "original": "FBI",
+   "leitsatz": null,
+   "handlung": "Die Agenten des New Yorker Büro des FBI arbeiten rund um die Uhr daran, die Stadt und ihr Land vor Terror, organisiertem Verbrechen und fremden Spionen zu beschützen. Unter der Leitung von Special Agent in Charge Dana Mosier setzt sich ihr Team aus verschiedenen Spezialisten mit einzigartigen Fähigkeiten zusammen.",
+   "genres": [
+    "Krimi",
+    "Action & Adventure",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "9 Staffeln, 162 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Craig Turk"
+    ],
+    [
+     "Mit",
+     "Missy Peregrym, Zeeko Zaki, John Boyd, Jeremy Sisto"
+    ],
+    [
+     "Sender/Dienst",
+     "CBS"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=r-btgaBL6-4",
+   "link": "https://www.themoviedb.org/tv/80748",
+   "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "news": []
+  },
+  "tv-30983": {
+   "titel": "Detektiv Conan",
+   "original": "名探偵コナン",
+   "leitsatz": null,
+   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
+   "genres": [
+    "Animation",
+    "Krimi",
+    "Mystery",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 1218 Folgen"
+    ],
+    [
+     "Mit",
+     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
+    ],
+    [
+     "Sender/Dienst",
+     "YTV"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
+   "link": "https://www.themoviedb.org/tv/30983",
+   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "news": []
+  },
   "tv-312359": {
    "titel": "Dragon Ball Super: Beerus",
    "original": "ドラゴンボール超 ビルス",
@@ -5022,6 +5094,77 @@
    "trailer": "https://www.youtube.com/watch?v=iCD3Lf7Jf9o",
    "link": "https://www.themoviedb.org/tv/312359",
    "bild": "https://image.tmdb.org/t/p/w500/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
+   "news": []
+  },
+  "tv-284833": {
+   "titel": "Avatar - Die sieben Häfen",
+   "original": "Avatar: Seven Havens",
+   "leitsatz": "Neue Legenden werden geboren.",
+   "handlung": "Ein junges Mädchen erfährt, dass sie der neue Avatar ist. Verfolgt von Menschen und Geistern macht sie sich mit ihrem Zwilling auf die Suche nach ihrer Herkunft - und nach einem Weg, die Menschheit vor einer weiteren Katastrophe zu retten.",
+   "genres": [
+    "Animation",
+    "Action & Adventure",
+    "Sci-Fi & Fantasy",
+    "Familie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 13 Folgen"
+    ],
+    [
+     "Von",
+     "Michael Dante DiMartino, Bryan Konietzko"
+    ],
+    [
+     "Mit",
+     "Saheli Khan, Aishwarya 'Aishu' Devan, Major Curda, Akshay Khanna"
+    ],
+    [
+     "Sender/Dienst",
+     "Paramount+"
+    ],
+    [
+     "TMDB-Wertung",
+     "9.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=KPoaJjgdKBo",
+   "link": "https://www.themoviedb.org/tv/284833",
+   "bild": "https://image.tmdb.org/t/p/w500/me3xp8w0RkAGLChEhuf7BVENUHO.jpg",
+   "news": []
+  },
+  "tv-45790": {
+   "titel": "JoJo's Bizarre Adventure",
+   "original": "ジョジョの奇妙な冒険",
+   "leitsatz": null,
+   "handlung": "Im England des Jahres 1880 nimmt der Adlige George Joestar seinen neuen Adoptivsohn bei sich auf: den jungen Dio Brando, dessen Vater Georges Leben vor 12 Jahren gerettet hat. Doch statt friedlich in seinem neuen Heim einzuziehen, möchte der in Armut großgewordene Dio die Joestar-Familie zerstören und ihren Status für sich gewinnen. Was als simple Fehde mit Georges Sohn Jonathan beginnt, entwickelt sich bald zu einem Konflikt, welcher weit über 100 Jahre andauert und sämtliche Generationen der Joestars in den Kampf gegen Vampire, aztekische Gottheiten, Nazis und gewitzte Serienmörder schickt.",
+   "genres": [
+    "Animation",
+    "Action & Adventure",
+    "Sci-Fi & Fantasy"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "6 Staffeln, 202 Folgen"
+    ],
+    [
+     "Mit",
+     "Shogo Sakata, Yohei Azakami, Kaito Ishikawa, Rie Takahashi"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix, TOKYO MX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=2esDNWsLAXQ",
+   "link": "https://www.themoviedb.org/tv/45790",
+   "bild": "https://image.tmdb.org/t/p/w500/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
    "news": []
   },
   "tv-75219": {
@@ -5094,39 +5237,6 @@
    "trailer": "https://www.youtube.com/watch?v=U2NZ7G02e40",
    "link": "https://www.themoviedb.org/tv/62650",
    "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
-   "news": []
-  },
-  "tv-45790": {
-   "titel": "JoJo's Bizarre Adventure",
-   "original": "ジョジョの奇妙な冒険",
-   "leitsatz": null,
-   "handlung": "Im England des Jahres 1880 nimmt der Adlige George Joestar seinen neuen Adoptivsohn bei sich auf: den jungen Dio Brando, dessen Vater Georges Leben vor 12 Jahren gerettet hat. Doch statt friedlich in seinem neuen Heim einzuziehen, möchte der in Armut großgewordene Dio die Joestar-Familie zerstören und ihren Status für sich gewinnen. Was als simple Fehde mit Georges Sohn Jonathan beginnt, entwickelt sich bald zu einem Konflikt, welcher weit über 100 Jahre andauert und sämtliche Generationen der Joestars in den Kampf gegen Vampire, aztekische Gottheiten, Nazis und gewitzte Serienmörder schickt.",
-   "genres": [
-    "Animation",
-    "Action & Adventure",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "6 Staffeln, 202 Folgen"
-    ],
-    [
-     "Mit",
-     "Shogo Sakata, Yohei Azakami, Kaito Ishikawa, Rie Takahashi"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix, TOKYO MX"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=2esDNWsLAXQ",
-   "link": "https://www.themoviedb.org/tv/45790",
-   "bild": "https://image.tmdb.org/t/p/w500/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
    "news": []
   },
   "tv-220542": {
