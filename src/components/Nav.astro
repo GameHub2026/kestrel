@@ -1,4 +1,5 @@
 ---
+import Falke from './Falke.astro';
 // Navigation nach Kevins Video vom 28.10.2026: eine schmale Symbolleiste links (schwebendes Glas).
 // Ein einziges dunkles Schild mit Name und Kürzel gleitet zum Symbol unter der Maus; der Text darin rollt
 // beim Wechsel nach oben weg und der neue von unten herein, die Breite wächst mit.
@@ -31,6 +32,7 @@ const mond = `<svg class="mond" viewBox="0 0 24 24" aria-hidden="true"><path d="
 ---
 <div id="gn">
   <a class="gn-wort-schild" href="/" aria-label="Kestrel, Startseite">
+    <Falke class="gn-marke" klein />
     <span id="gn-wort" class:list={[{ 'gn-wort--start': path === '/' }]}>Kestrel</span>
   </a>
 
@@ -228,12 +230,13 @@ const mond = `<svg class="mond" viewBox="0 0 24 24" aria-hidden="true"><path d="
 <style>
   /* ---------- Wort oben links ---------- */
   .gn-wort-schild {
-    position: fixed; z-index: 51; top: 16px; left: 16px; display: inline-flex; align-items: center; height: 36px; padding: 0 14px;
+    position: fixed; z-index: 51; top: 16px; left: 16px; display: inline-flex; align-items: center; height: 36px; padding: 0 14px 0 11px;
     border-radius: 980px; color: var(--ink); text-decoration: none;
     background: var(--nav); -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
     box-shadow: 0 0 0 0.5px var(--hair), 0 4px 16px rgb(0 0 0 / 0.06);
   }
   .gn-wort-schild:hover { text-decoration: none; }
+  .gn-wort-schild :global(.gn-marke) { width: 20px; height: auto; margin-right: 7px; flex: none; }
   .gn-wort-schild span { font-size: 17px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
   /* Startseite: das Wort fliegt beim Scrollen aus dem Seitenkopf hierher (siehe index.astro); bis dahin bleibt das Schild leer */
   .gn-wort--start { opacity: 0; }

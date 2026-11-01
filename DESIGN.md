@@ -1,261 +1,204 @@
 ---
 name: Kestrel
-description: Spiele, Filme und Serien von Kevin. Jeder Text ist eine Eintrittskarte, die behalten wurde.
+description: Spiele, Filme und Serien von Kevin. Ehrlich bewertet, eine Skala von 1 bis 10 für alle drei Medien. Gestaltet im Stil von apple.com.
 colors:
-  film: "#c8342b"
-  serie: "#1f5fa8"
-  spiel: "#e8b21d"
-  film-ink: "#ffffff"
-  serie-ink: "#ffffff"
-  spiel-ink: "#17140c"
-  stamp: "#7a1f8f"
-  focus: "#1f5fa8"
-  ground: "#dcdfe3"
-  ground-2: "#cdd1d6"
-  paper: "#f7f8f9"
-  ink: "#121417"
-  ink-2: "#3f454d"
-  rule: "#121417"
-  ground-dark: "#141619"
-  ground-2-dark: "#1d2024"
-  paper-dark: "#1b1e22"
-  ink-dark: "#eceef0"
-  ink-2-dark: "#a9b0b8"
-  stamp-dark: "#c98ad8"
-  focus-dark: "#8fb8ee"
+  film: "#ff3b30"
+  spiel: "#34c759"
+  serie: "#00c7be"
+  ground: "#ffffff"
+  ground-2: "#f5f5f7"
+  tile: "#f5f5f7"
+  ink: "#1d1d1f"
+  ink-2: "#6e6e73"
+  ink-3: "#86868b"
+  link: "#0066cc"
+  blue: "#0071e3"
+  fill: "#e8e8ed"
+  line: "#d2d2d7"
+  neu: "#bf4800"
+  film-dark: "#ff453a"
+  spiel-dark: "#30d158"
+  serie-dark: "#63e6e2"
+  ground-dark: "#000000"
+  ground-2-dark: "#161617"
+  tile-dark: "#161617"
+  paper-dark: "#1d1d1f"
+  ink-dark: "#f5f5f7"
+  ink-2-dark: "#a1a1a6"
+  link-dark: "#2997ff"
+  fill-dark: "#2c2c2e"
+  line-dark: "#424245"
+  neu-dark: "#ff9f0a"
+  fuss-blau: "#1d3d9c"
+  fuss-creme: "#efe6cf"
 typography:
-  display:
-    fontFamily: "Big Shoulders Display Variable, Arial Narrow, sans-serif"
-    fontSize: "clamp(3rem, 10vw, 6rem)"
-    fontWeight: 900
-    lineHeight: 0.86
-    letterSpacing: "-0.01em"
-  headline:
-    fontFamily: "Big Shoulders Display Variable, Arial Narrow, sans-serif"
-    fontSize: "clamp(2.6rem, 6.5vw, 5.5rem)"
-    fontWeight: 900
-    lineHeight: 0.92
-  title:
-    fontFamily: "Big Shoulders Display Variable, Arial Narrow, sans-serif"
-    fontSize: "1.9rem"
-    fontWeight: 900
-    lineHeight: 0.92
-  section:
-    fontFamily: "Big Shoulders Display Variable, Arial Narrow, sans-serif"
-    fontSize: "1.1rem"
-    fontWeight: 800
-    letterSpacing: "0.06em"
-  body:
-    fontFamily: "Source Serif 4 Variable, Georgia, serif"
-    fontSize: "1.0625rem"
-    fontWeight: 400
-    lineHeight: 1.6
-  prose:
-    fontFamily: "Source Serif 4 Variable, Georgia, serif"
-    fontSize: "1.15rem"
-    fontWeight: 400
-    lineHeight: 1.68
-  fazit:
-    fontFamily: "Source Serif 4 Variable, Georgia, serif"
-    fontSize: "1rem"
-    fontWeight: 400
-    lineHeight: 1.4
-  label:
-    fontFamily: "Red Hat Mono Variable, ui-monospace, monospace"
-    fontSize: "0.72rem"
+  hero:
+    fontFamily: "-apple-system, SF Pro Display, Inter Variable, Helvetica Neue, sans-serif"
+    fontSize: "clamp(48px, 8vw, 96px)"
     fontWeight: 600
-    letterSpacing: "0.1em"
-  score:
-    fontFamily: "Big Shoulders Display Variable, Arial Narrow, sans-serif"
-    fontSize: "clamp(6rem, 12vw, 9.5rem)"
-    fontWeight: 900
-    lineHeight: 0.8
+    lineHeight: 1.04
+    letterSpacing: "-0.015em"
+  headline:
+    fontFamily: "-apple-system, SF Pro Display, Inter Variable, sans-serif"
+    fontSize: "clamp(36px, 5.4vw, 56px)"
+    fontWeight: 600
+    lineHeight: 1.07
+    letterSpacing: "-0.005em"
+  subhead:
+    fontFamily: "-apple-system, SF Pro Display, Inter Variable, sans-serif"
+    fontSize: "clamp(21px, 2.6vw, 28px)"
+    fontWeight: 400
+    lineHeight: 1.14
+  body:
+    fontFamily: "-apple-system, SF Pro Text, Inter Variable, sans-serif"
+    fontSize: "17px"
+    fontWeight: 400
+    lineHeight: 1.47
+    letterSpacing: "-0.022em"
+  prose:
+    fontFamily: "-apple-system, SF Pro Text, Inter Variable, sans-serif"
+    fontSize: "19px"
+    fontWeight: 400
+    lineHeight: 1.58
+    letterSpacing: "0.012em"
+  fuss:
+    fontFamily: "Source Serif 4 Variable, Georgia, serif"
+    fontSize: "0.92–2rem"
+    fontWeight: 400
 rounded:
-  stub: "4px"
-  ticket: "6px"
-  hole: "50%"
+  pill: "980px"
+  card: "18px"
+  card-lg: "28px"
+  reel: "clamp(28px, 3.4vw, 48px)"
+  archiv-zeile: "14px"
 spacing:
-  gutter: "clamp(16px, 4vw, 48px)"
-  stack-gap: "14px"
-  measure: "68ch"
-  container: "1180px"
+  gutter: "max(22px, 4vw)"
+  container: "980px (ab 1069px), sonst max. 1024px mit Rand"
+  measure: "692px"
+  kante: "96px + safe-area unten"
 components:
-  ticket-film:
-    backgroundColor: "{colors.film}"
-    textColor: "{colors.film-ink}"
-    rounded: "{rounded.ticket}"
-  ticket-serie:
-    backgroundColor: "{colors.serie}"
-    textColor: "{colors.serie-ink}"
-    rounded: "{rounded.ticket}"
-  ticket-spiel:
-    backgroundColor: "{colors.spiel}"
-    textColor: "{colors.spiel-ink}"
-    rounded: "{rounded.ticket}"
-  chip:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink}"
-    typography: "{typography.section}"
-    rounded: "{rounded.stub}"
-    padding: "7px 14px 6px 10px"
-  chip-checked:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.ground}"
-    rounded: "{rounded.stub}"
-  stub-row:
-    rounded: "{rounded.stub}"
-    padding: "8px 12px 8px 0"
-  steckbrief:
-    backgroundColor: "{colors.paper}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.ticket}"
-    padding: "30px 22px 22px"
-  stamp:
-    textColor: "{colors.stamp}"
-    typography: "{typography.label}"
-    rounded: "{rounded.stub}"
-    padding: "6px 10px"
-  button-ink:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.ground}"
-    rounded: "{rounded.stub}"
-    padding: "6px 12px"
+  logo: "Falke.astro, currentColor, Master ab 48px, Kleinfassung darunter"
+  ring: "Ring.astro, Medienfarbe, gefüllt bis zur Wertung"
+  ticket: "Ticket.astro, Kachel auf --tile, Radius 18px"
+  button: "Pille, --blue, weiße Schrift 17px, min. 44px hoch"
+  nav: "Glasleiste links bzw. Tab-Leiste unten, --nav mit Unschärfe"
 ---
 
 # Design System: Kestrel
 
-## Overview
+## Überblick
 
-**Creative North Star: "Die Abrisskarte"**
+Kestrel sieht aus wie eine Produktseite von apple.com: viel Weiß bzw. Schwarz, große Systemschrift, ruhige Flächen, wenige Farben. Inhalt steht im Vordergrund, die Gestaltung tritt zurück. Drei Dinge geben der Seite ein eigenes Gesicht:
 
-Jeder Text ist eine Eintrittskarte, die Kevin behalten hat. Die Seite ist ein Kassentresen in kühlem Grau, auf dem Rollen-Kartenkarton in drei Medienfarben liegt: Film rot, Serie blau, Spiel gelb. Jede Karte hat einen Abriss mit Seriennummer, eine Perforation mit halbrunden Kerben, eine Lochung als Stand-Marke und, wenn das Urteil später ergänzt wurde, einen Entwertungsstempel. Die Wertungsziffer steht groß im Karteninnern, nicht in einem Abzeichen.
+- **Der Wertungsring.** Jede Wertung ist ein Ring wie bei den Aktivitätsringen der Apple Watch, gefüllt bis zur Zahl. Er zeigt die eine Skala von 1 bis 10 auf einen Blick.
+- **Das Logo „Ring“.** Derselbe Ring läuft oben rechts in einen Hakenschnabel aus, der Punkt ist das Auge. Ring und Turmfalke (englisch *kestrel*) in einem Zeichen.
+- **Der blaue Footer.** Als einziger Bruch mit dem Apple-Stil: eine Illustration in Kobaltblau und Creme mit Serifenschrift und einem Reiter im Holzschnitt-Stil.
 
-Die Dichte ist die eines Kartenalbums: oben eine große, leicht schräg gelegte Karte, darunter ein Stapel kleinerer, minimal versetzter Karten. Typografie trägt den Ton: eine schmale, schwere Plakat-Grotesk in Versalien für alles, was auf der Karte gedruckt steht, eine ruhige Serifenschrift zum Lesen, eine Mono für Nummern, Daten und Meta-Angaben. Abgelehnt sind Poster-Raster mit Wertungsabzeichen im Letterboxd-Stil und Gaming-Score-Kästen.
+Hell und dunkel folgen dem System, bis man in der Navigation umschaltet. Die Wahl steht dann als `data-theme` am `<html>` und in localStorage (`kestrel-theme`).
 
-Die Medienfarbe kommt über `data-medium` als lokales Paar `--card` / `--card-ink` in jede Komponente. Kein Bauteil kennt die drei Farben direkt; es liest nur Karte und Karten-Tinte.
+## Farben
 
-**Key Characteristics:**
-- Kartenkarton in drei vollgesättigten Medienfarben auf kühlem, entsättigtem Grund.
-- Gestrichelte Linien (2px dashed) als durchgehende Perforations-Sprache: Abriss, Trenner, Fußzeile, aktive Navigation.
-- Versal-Display für Titel, Ziffern und Überschriften; Serif nur zum Lesen.
-- Leichte Drehungen (−1,2° Hero, ±0,35° Stapel) statt gerader Kachelraster.
-- Ein einziger inszenierter Moment: Der Abriss reißt beim Öffnen eines Textes einmal ab.
+Alle Farben sind Variablen in `src/styles/global.css`: hell in `:root`, dunkel per Media-Query und noch einmal unter `[data-theme='dark']`.
 
-## Colors
+### Medienfarben
+- **Film** rot, **Spiel** grün, **Serie** türkis, im Dunkeln jeweils etwas heller.
+- Sie stehen nur im Wertungsring, als kleiner Punkt und auf den Bildkarten der Bildstrecke. Nie als Fläche hinter Text, nie für Links.
 
-Drei laute Kartenfarben, ein stiller Grauton als Tresen und eine einzige Stempelfarbe für Nachträge.
-
-### Primary
-- **Kinokarten-Rot** (film): Karton aller Film-Texte, außerdem die Wortmarke im Kopf. Darauf weiße Tinte (film-ink).
-- **Serienkarten-Blau** (serie): Karton aller Serien-Texte, darauf weiße Tinte (serie-ink). Derselbe Blauton dient im Hellmodus als Fokusfarbe (focus).
-- **Spielkarten-Gelb** (spiel): Karton aller Spiel-Texte, darauf fast schwarze Tinte (spiel-ink). Auch die Textauswahl (`::selection`) ist gelb.
-
-### Secondary
-- **Entwertungsstempel-Violett** (stamp; dunkel: stamp-dark): ausschließlich für Nachtrag-Stempel im Text, auf Papier oder Grund.
+### Blau
+- **Link** (`--link`) für Textlinks, **Blue** (`--blue`) als Fläche für Knöpfe. Blau ist für Bedienung reserviert und kein Medium.
 
 ### Neutral
-- **Tresengrau** (ground; dunkel: ground-dark): Seitenhintergrund, auch die Farbe ausgestanzter Löcher.
-- **Tresengrau tief** (ground-2): zweite Grundstufe.
-- **Kartenrückseite** (paper; dunkel: paper-dark): Lesefläche für Steckbrief, Filter-Abrisse und die Skala-Rolle.
-- **Druckschwarz** (ink; dunkel: ink-dark): Fließtext, Überschriften, gewählte neutrale Abrisse.
-- **Graphit** (ink-2; dunkel: ink-2-dark): Nebentexte, Legenden, Meta-Angaben auf Papier.
-- **Perforationslinie** (rule): gestrichelte Trenner, gleich der Tinte.
+- **Ground** Weiß bzw. Schwarz für die Seite, **Ground-2/Tile** `#f5f5f7` bzw. `#161617` für Bänder und Kacheln.
+- **Ink** für Text, **Ink-2** für Nebentext (mindestens 4,5:1 auf jeder Fläche), **Ink-3** nur für Beiwerk.
+- **Neu** orange für das Wort „Neu“, wie bei Apple.
 
-Die Medienfarben bleiben im Dunkelmodus unverändert; nur Grund, Papier, Tinte, Stempel und Fokus wechseln.
+### Footer
+- **Fuss-Blau** `#1d3d9c` und **Fuss-Creme** `#efe6cf`, in Hell und Dunkel gleich. Der Footer ist eine Illustration in fester Druckfarbe.
 
-### Named Rules
-**The Karton-Tinte Rule.** Auf Kartenkarton steht nur `--card-ink`, nie eine andere Farbe. Deshalb druckt der „Nachtrag"-Aufdruck auf der Hero-Karte in Karten-Tinte (`currentColor`), nicht in Stempel-Violett: Violett fällt auf dem roten Film- und dem blauen Serienkarton durch den Kontrast. Violett bleibt den Nachtrag-Stempeln im Text auf Papier oder Grund vorbehalten.
+### Regeln
+**Eine Farbe pro Bedeutung.** Rot, Grün und Türkis bedeuten Medium, Blau bedeutet „klickbar“. Keine Farbe übernimmt eine zweite Aufgabe.
 
-**The Drei-Kartons Rule.** Die Medienfarben sind Material, keine Akzente. Sie füllen ganze Karten, Abrisse und den „Für wen?"-Streifen, nie einzelne Wörter oder Icons. Neutrale Bedienelemente (Skala, Filter ohne Medium) bleiben auf Papier.
+**Das Logo ist einfarbig.** Es nimmt immer die Textfarbe an (`currentColor`), nie eine Medienfarbe, keinen Verlauf.
 
-## Typography
+## Typografie
 
-**Display Font:** Big Shoulders Display Variable (mit Arial Narrow)
-**Body Font:** Source Serif 4 Variable (mit Georgia), optische Größen automatisch
-**Label/Mono Font:** Red Hat Mono Variable (mit ui-monospace), tabellarische Ziffern
+**Schrift:** Systemschrift, also SF Pro auf Apple-Geräten, sonst Inter Variable. **Footer:** Source Serif 4 Variable.
 
-**Character:** Die Display-Schrift ist der Kartendruck: schmal, schwer, immer in Versalien, eng gesetzt. Die Serif ist die Stimme des Schreibers. Die Mono ist der Nummerator der Kasse.
+### Hierarchie
+- **Hero** (600, bis 96px, Zeilenhöhe 1.04): „Ehrlich bewertet.“ auf der Startseite.
+- **Headline** (600, 36–56px): Titel auf der Textseite und Seitentitel.
+- **Subhead** (400, 21–28px): Unterzeilen unter großen Titeln, ausgeglichen umbrochen.
+- **Body** (400, 17px, 1.47): Bedienung, Listen, Seitentexte.
+- **Prose** (400, 19px, 1.58, Spalte 692px): der Fließtext eines Textes.
+- **Wortmarke** „Kestrel“: 600, Laufweite −2 %. Im Glasschild 17px, auf der Startseite 30–44px.
 
-### Hierarchy
-- **Display** (900, clamp(3rem, 10vw, 6rem), 0.86): Seitentitel; die Startseiten-Überschrift läuft mit clamp(2.6rem, 7.5vw, 5.75rem) und max. 16ch. Jahreszahlen im Archiv bis 9rem.
-- **Headline** (900, clamp(2.6rem, 6.5vw, 5.5rem), 0.92): Titel auf der Hero-Karte.
-- **Title** (900, 1.9rem, 0.92; mobil 1.6rem): Titel auf Stapel- und Listenkarten.
-- **Section** (800, 1.1–1.25rem, Sperrung 0.06em): Abschnittsköpfe wie „Davor", Steckbrief, Nachträge; oft mit gestrichelter Linie bis zum Rand.
-- **Body** (400, 1.0625rem, 1.6): Seitentexte. **Prose** (1.15rem, 1.68, max. 68ch) im Einzeltext.
-- **Fazit** (kursiv, 1rem, 1.4, max. 60ch; Hero bis 1.3rem): der Fazit-Satz auf jeder Karte.
-- **Label** (Mono 600, 0.68–0.8rem, Versalien, Sperrung 0.08–0.14em): Meta-Zeile, Seriennummer, Datum, Legenden, „von 10".
-- **Score** (Display 900, Hero clamp(6rem, 12vw, 9.5rem), Liste 4.5rem, Archiv 2rem, Zeilenhöhe 0.8): die Wertungsziffer.
+### Regeln
+**Gewicht statt Größe.** Überschriften sind halbfett (600), nie fett (700+). Hierarchie entsteht über Größe und Abstand.
 
-### Named Rules
-**The Versal-Druck Rule.** Alles in Display-Schrift steht in Versalien. Die Serif erscheint nie in Versalien, die Display-Schrift nie als Fließtext.
-
-**The Ziffer-im-Karton Rule.** Die Wertung ist eine riesige Display-Ziffer im Karteninneren mit „von 10" in Mono und dem festen Skalensatz daneben, nie in einem Kreis, Kasten oder Abzeichen.
+**Keine Versalien als Stil.** Text steht in normaler Groß- und Kleinschreibung. Ausnahme: kleine Augenbrauen-Zeilen über Titeln.
 
 ## Layout
 
-Ein zentrierter Container (max. 1180px) mit fließendem Rand (gutter, clamp(16px, 4vw, 48px)). Listen sind einspaltige Kartenstapel mit 14px Abstand, keine Raster. Der Einzeltext hat Lesespalte plus Steckbrief-Rückseite (320px, sticky) rechts; unter 900px fällt der Steckbrief über den Text, Wertung und „Für wen?" stehen dann direkt unter der Karte. Unter 720px stapelt die Karte Hauptteil und Wertung, der Abriss schrumpft (64px → 48px, Hero 88px → 56px). Große vertikale Abstände zwischen Abschnitten (clamp(56px, 8vw, 96px)). Die Hero-Karte liegt um −1,2° gedreht (mobil −0,8°), Stapelkarten abwechselnd ±0,35°, gerade Karten zusätzlich 6px versetzt.
+- Ein zentrierter Container: 980px ab 1069px Breite, darunter volle Breite mit Rand `max(22px, 4vw)`. Lesespalte 692px.
+- Große Abstände zwischen Abschnitten. Listen sind einspaltig mit Kacheln, die Startseite wechselt zwischen Weiß und Bändern in `--ground-2`.
+- **Startseite:** Logo, Wortmarke, Hero-Satz und zwei Knöpfe, darunter die Bildstrecke über die volle Höhe, dann der neueste Text, ein schwarzes Band, in dem die Sätze beim Scrollen Wort für Wort aufleuchten, und ältere Texte.
+- **Textseite** im Newsroom-Stil: Titel, Ring, Fazit, Fließtext, darunter der Steckbrief als „Technische Daten“.
+- **Handy (unter 834px):** Die Navigation wird zur Tab-Leiste unten, die Bildstrecke nutzt eigene Bildausschnitte (`fokus`, `fokusHell`).
 
-## Elevation & Depth
+## Tiefe
 
-Die Karten liegen auf dem Tresen: weiche, nach unten fallende Schatten, keine harten Versätze. Weil Abriss und Karte per Maske ausgestanzt sind, tragen Karten `filter: drop-shadow`, damit der Schatten der Kerbenform folgt. Ausgestanzte Löcher zeigen den Grund mit innerem Schatten.
+- Flächen statt Schatten: Kacheln heben sich über die Farbe ab (`--tile` auf `--ground`), höchstens mit einer Haarlinie (`--hair`).
+- **Glas** nur für schwebende Bedienung (Navigation, Glasschild, Suche): `--nav` mit `backdrop-filter: saturate(180%) blur(20px)`.
+- **Kante:** Unten am Bildschirm verschwimmt der Inhalt in sechs Stufen (`Kante.astro`). Über dem Footer übernimmt der Verlauf dessen Farbe (`--kante-ton`).
 
-### Shadow Vocabulary
-- **Aufliegen** (`--shadow`: `0 1px 1px rgb(18 20 23 / 0.10), 0 10px 24px -10px rgb(18 20 23 / 0.35)`): Papierflächen, Filter-Abrisse, Archivzeilen, Skala.
-- **Angehoben** (`--shadow-lift`: `0 2px 2px rgb(18 20 23 / 0.10), 0 22px 40px -14px rgb(18 20 23 / 0.45)`): Hover auf Archivzeilen.
-- **Karte** (`drop-shadow(0 1px 1px …/0.12) drop-shadow(0 10px 14px …/0.22)`, Hover `…0 20px 22px …/0.3`): maskierte Tickets.
-- **Lochung** (`inset 0 2px 2px rgb(0 0 0 / 0.35)`): ausgestanzte Löcher in Abriss und gewähltem Filter.
+## Formen
 
-### Named Rules
-**The Abheben Rule.** Hover hebt die Karte an (−3px, −0,4° Drehung, tieferer Schatten) bzw. schiebt Archivzeilen 4px nach rechts. Übergänge 240–280ms mit `cubic-bezier(0.16, 1, 0.3, 1)`.
+- Knöpfe, Glasschild und Segmente sind Pillen (980px Radius).
+- Kacheln 18px, große Kacheln 28px, Bildkarten der Bildstrecke 28–48px, Archivzeilen 14px.
+- Der Ring ist die einzige Kreisform mit Bedeutung. Andere Kreise (Avatare, Punkte) bleiben klein.
 
-## Shapes
+## Komponenten
 
-Leicht gerundete Kartenecken (6px Ticket, 4px Abriss und kleine Teile). Die Perforation ist eine 2px gestrichelte Linie in Karten-Tinte mit 55 % Deckung; daneben sitzen halbrunde Kerben oben und unten (9px, Hero 14px, mobil 7px), ausgestanzt per radial-gradient-Maske auf Abriss und Kartenrest. Kreisrunde Löcher (14px, Hero 20px) markieren den Stand: ein Loch = Abspann, zwei = 100 %. Ein abgebrochener Text bekommt einen eingerissenen Abriss (clip-path-Zacke an der unteren Kante).
+### Logo „Ring“ (`Falke.astro`)
+Offener Ring mit Hakenschnabel und Auge, einfarbig in `currentColor`. Master ab 48px, darunter die Kleinfassung (`klein`) mit dickerem Ring und größerem Auge. Steht auf der Startseite über der Wortmarke (84–112px) und im Glasschild oben links (20px, Kleinfassung). Dateien, Varianten und Regeln liegen in `marke/`.
 
-## Components
+### Wertungsring (`Ring.astro`)
+Ring in der Medienfarbe, gefüllt bis zur Wertung (7 von 10 = 70 %), die Zahl steht in der Mitte. Screenreader hören „Wertung 7 von 10“ mit dem Satz der Skala.
 
-### Ticket (Signatur)
-Das Kernstück aller Seiten. Zwei Teile: Abriss links (senkrechte Schrift „Kestrel", Nº-Nummer, Lochung, Datum) und Kartenrest mit Titel, Meta-Zeile (Mono, durch „/" getrennt), Fazit und Wertung. Die ganze Karte ist über den Titel-Link klickbar; Fokus zeichnet einen 3px-Rahmen um die ganze Karte.
-- **Row:** kompakter Abriss nur mit Nummer und Lochung, Score 4.5rem.
-- **Hero:** breiterer Abriss, Score bis 9.5rem durch eine 25-%-Linie in Karten-Tinte abgetrennt. Hat der Text Nachträge, sitzt unten rechts ein um −9° gedrehter Aufdruck „Nachtrag + Datum" in Karten-Tinte (2.5px Rahmen, 80 % Deckung).
-- **Tear:** im Einzeltext reißt der Abriss nach 300ms einmal ab (1100ms, um −4° gedreht und 10px versetzt). Respektiert reduzierte Bewegung.
+### Navigation (`Nav.astro`)
+Schwebende Glasleiste links: Start, Sammlung, Demnächst, Archiv, dann Suchen, Hell/Dunkel und „Kevin“ (Wie ich werte). Ein dunkles Schild mit Name und Kürzel (⌥1–⌥6) gleitet zum Symbol unter der Maus. Oben links das Glasschild mit Logo und „Kestrel“. Auf der Startseite fliegt die Wortmarke beim Scrollen aus dem Seitenkopf in dieses Schild. Suche wie Spotlight (Taste `/`).
 
-### Chips (Filter-Abrisse)
-- **Style:** kleine Papier-Abrisse (paper, Druckschwarz, Display 800 in Versalien, 4px Ecken, Aufliegen-Schatten) mit einem gestrichelten Lochkreis (10px, 60 % Deckung) vor dem Wort.
-- **State:** gewählt wird das Loch gestanzt (gefüllt in Grundfarbe mit innerem Schatten); der Abriss wird druckschwarz, Medien-Filter nehmen ihren Karton (`--card` / `--card-ink`). Hover hebt um 2px. Fokus 3px in focus.
-- **Offen:** Eine Perforationskante bzw. Kerbe am Chip fehlt noch; bisher trägt nur das Loch die Abriss-Anmutung.
+### Bildstrecke (`Reel.astro`)
+Bildkarten über die volle Bildschirmhöhe (Spiele, Filme, Serien, Demnächst, Archiv). Die aktive Karte ist scharf, die Nachbarn lugen kleiner und abgedunkelt hervor. Jede Karte hat ein dunkles und optional ein helles Bild, das per `--hell-an` darüber blendet. Natürliches Scrollen mit sanftem Einrasten.
 
-### Steckbrief (Kartenrückseite)
-Papierfläche mit einem 8px-Streifen in Kartenfarbe oben (inset-Schatten), Zeilen als Definitionsliste mit gestrichelten Trennern, Mono-Labels in Graphit. Unten der „Für wen?"-Block vollflächig in Kartenkarton.
+### Textkachel (`Ticket.astro`)
+Kachel auf `--tile`. In Listen Ring links, Titel und Fazit daneben. Auf der Startseite als große, zentrierte Kachel.
 
-### Nachtrag-Stempel
-Mono-Text in Stempel-Violett, 2.5px Rahmen, 4px Ecken, −4° gedreht, 92 % Deckung: „Nachtrag" + datiertes Datum. Nur auf Papier oder Grund.
+### Knöpfe
+Primär: blaue Pille, weiße Schrift 17px, mindestens 44px hoch. Sekundär: Textlink in `--link` mit Pfeil (›).
 
-### Archiv-Zeile
-Flacher Karten-Abriss pro Text im Kartenkarton: Nummer hinter gestrichelter Perforation, Titel in Display, Textform, Skalensatz, Ziffer rechts. Hover 4px nach rechts mit Angehoben-Schatten.
+### Footer (`Fuss.astro`, `Reiter.astro`)
+Kobaltblaue Fläche mit Papierkorn, cremefarbene Serifenschrift, Spalten mit kurzem Strich unter der Überschrift, Suchfeld. Darunter eine Landschaft im Kupferstich-Stil auf Canvas mit einem selbst gezeichneten Reiter.
 
-### Skala-Rolle
-Papierstreifen von 10 bis 1, Ziffer links hinter einer gestrichelten Linie; das Schriftgewicht der Ziffer sinkt mit jeder Stufe (`900 − i × 45`). Ohne Medienfarbe, weil die Skala für alle gilt.
+### Meldungen (`Meldungen.astro`)
+Gestapelte Toasts unten in der Mitte, die sich beim Überfahren zur Liste auffächern. Nur auf Kevins Geräten.
 
-### Navigation
-Wortmarke als kleiner roter Abriss (Nº-Stummel, gestrichelte Kante, „Kestrel" in Display 900) links, Nav rechts: Display 700 in Versalien, Hover mit durchgezogener, aktive Seite mit gestrichelter 2px-Unterlinie.
+## Bewegung
 
-### Buttons
-Selten. Der einzige Button (Filter zurücksetzen) ist druckschwarz mit Grund-Text, Display 800 in Versalien, 4px Ecken.
+- Weiche Kurven (`--ease`), kurze Übergänge. Beim Umschalten von Hell und Dunkel blenden die Farben 450ms über.
+- Bewegung hat einen Grund: Die Wortmarke fliegt ins Schild, das Logo blendet beim Laden ein, Wörter leuchten beim Lesen auf.
+- `prefers-reduced-motion` schaltet alles davon ab, die Inhalte stehen dann sofort an ihrem Platz.
 
 ## Do's and Don'ts
 
-### Do:
-- **Do** Medienfarbe nur über `data-medium` → `--card` / `--card-ink` an Bauteile geben.
-- **Do** auf Kartenkarton ausschließlich Karten-Tinte verwenden, auch für Aufdrucke wie „Nachtrag".
-- **Do** Trenner, aktive Zustände und Abriss-Kanten als 2px gestrichelte Linie zeichnen.
-- **Do** Wertungen als große Display-Ziffer mit „von 10" und dem festen Skalensatz zeigen.
-- **Do** maskierte Karten mit `filter: drop-shadow` statt `box-shadow` beschatten.
-- **Do** Bewegung bei `prefers-reduced-motion` abschalten; der Abriss-Moment bleibt der einzige inszenierte Effekt.
+### Do
+- Viel Fläche lassen, eine Aussage pro Abschnitt.
+- Medienfarben nur im Ring, am Punkt und auf den Bildkarten.
+- Kontrast prüfen: Fließtext mindestens 4,5:1 in Hell und Dunkel.
+- Neue Farben als Variable in `global.css` anlegen, hell und dunkel.
 
-### Don't:
-- **Don't** Stempel-Violett auf roten oder blauen Kartenkarton setzen; es fällt dort durch den Kontrast.
-- **Don't** Wertungen in Kreise, Kästen oder Score-Abzeichen packen.
-- **Don't** Texte als Poster-Raster mit Wertungs-Badges anlegen; Listen bleiben Kartenstapel.
-- **Don't** Medienfarben als Textakzent oder Icon-Farbe verwenden.
-- **Don't** harte Versatzschatten verwenden; Karten liegen weich auf dem Tresen.
+### Don't
+- Keine Sterne, Daumen oder Prozentbalken für Wertungen. Die Wertung ist immer der Ring.
+- Keine Schatten-Stapel, Verläufe oder Neon-Effekte auf Kacheln.
+- Das Logo nicht einfärben, drehen, schließen oder ohne Auge zeigen.
+- Keine Serifenschrift außerhalb des Footers.

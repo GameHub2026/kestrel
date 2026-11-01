@@ -11,16 +11,16 @@ Regeln: Nur diese Datei ändern, maximal 40 Zeilen, Veraltetes streichen. Dateie
 - Startseite: „Kestrel“ steht über „Ehrlich bewertet.“ und gleitet beim Scrollen in das Glasschild oben links (Skript in `index.astro`, Ziel `#gn-wort` in `Nav.astro`). Schalter, helle Bilder und Schriftzug gepusht (Commit 2f3ca72).
 - Footer wieder blau nach Vorlage (collectui „sequel“, Pranav): Serifenschrift Source Serif 4, Spalten, Suche, gestochene Landschaft auf Canvas. Pferd und Reiter neu als eigene Vektorzeichnung `Reiter.astro` in Haltung und Holzschnitt-Stil der Vorlage (nicht deren Bild). Unschärfe-Verlauf übernimmt über dem Footer Blau bzw. Creme (`--kante-ton`). Commit 907bc6e.
 - Navigation nach Kevins Video (28.10.2026): schwebende Glasleiste links (Start, Sammlung, Demnächst, Archiv | Suchen, Hell/Dunkel, Kevin → Wie ich werte), ein gleitendes Schild mit Name und Kürzel ⌥1–⌥6, Text rollt beim Wechsel. Suche wie Spotlight (Taste /). Handy: Tab-Leiste unten. „Kestrel“ im Glasschild oben links. „Alle Texte“ heißt überall „Sammlung“ (URL bleibt `/texte/`). Commit 57092b6.
-- 01.11.2026: Logo „Ring“ (mit Skill logo-design): Wertungsring läuft in Hakenschnabel aus, Punkt = Auge. Auf der Startseite statt der drei Ringe (`Falke.astro`, currentColor), Favicon/ICO/Touch-Icon/Manifest in `public/`. Master, Kleinfassung, Varianten und Regeln in `marke/`. Gepusht (Commit 9f5acb0), online geprüft. Skill liegt in `~/.claude/skills/logo-design`.
-- `.claude/launch.json`: `kestrel` (`npm run dev`, Port 4321). Testen, solange ein Text lokal den Build blockiert: Projekt ohne `node_modules` in den Scratchpad kopieren, den Text dort auf `entwurf: true` setzen, `node_modules.nosync` verlinken, dort bauen. Im versteckten Browser-Fenster laufen requestAnimationFrame und CSS-Übergänge nicht; Bewegung dann per Timer-Ersatz für requestAnimationFrame messen.
+- 01.11.2026: Logo „Ring“ (mit Skill logo-design): Wertungsring läuft in Hakenschnabel aus, Punkt = Auge. Auf der Startseite statt der drei Ringe (`Falke.astro`, currentColor), Favicon/ICO/Touch-Icon/Manifest in `public/`. Master, Kleinfassung, Varianten und Regeln in `marke/`. Auch im Glasschild der Navigation (Kleinfassung, 20 px). Gepusht (Commit 9f5acb0 und Folgecommit), online geprüft. Skill liegt in `~/.claude/skills/logo-design`.
+- `DESIGN.md` neu für das Apple-Design (Farben, Schrift, Komponenten, Logo). Ungenutzte Pakete `three`, Big Shoulders, Red Hat Mono entfernt.
+- `.claude/launch.json`: `kestrel` (`npm run dev`, Port 4321). Blockiert ein Text lokal den Build: Projekt ohne `node_modules` in den Scratchpad kopieren, Text dort auf `entwurf: true`, `node_modules.nosync` verlinken, dort bauen. Im versteckten Browser-Fenster laufen requestAnimationFrame und CSS-Übergänge nicht; Bewegung dann per Timer-Ersatz für requestAnimationFrame messen.
 
 ## Offen
 - `archiv-hell.jpeg` zeigt ein echtes Super-Mario-Modul (Nintendo-Logo) und eine Fujifilm-Dose; auf Kevins Wunsch trotzdem veröffentlicht. Bei Bedarf gleichnamig ersetzen.
-- Logo: nicht im Glasschild der Navigation, keine Datei mit Schriftzug als Pfad, keine Markenrecherche (DPMA/EUIPO).
-- `Gears of War E Day.md` steht lokal auf `entwurf: false` mit leeren Pflichtfeldern: lokaler Build und `npm run dev` brechen ab. Online gilt der Text noch als Entwurf.
+- Logo: keine Datei mit Schriftzug als Pfad, keine Markenrecherche (DPMA/EUIPO).
+- Entwürfe von Kevin, nicht von mir committet: Gears of War E Day (jetzt `entwurf: true`), Dune Awakening (Interview angefangen).
 - Bildstrecke: Bilder sind kein 4K; schärfere Fassungen gleichnamig in `src/assets/reel/` ersetzen.
-- `DESIGN.md` und `.impeccable/` beschreiben noch das alte Papier-/Kinokarten-Design.
-- Ungenutzte Pakete in package.json: `three`, Big Shoulders, Red Hat Mono (Source Serif nutzt der Footer).
+- `.impeccable/` (design.json usw.) beschreibt noch das alte Papier-/Kinokarten-Design.
 
 ## Entscheidungen
 <!-- Format: Entscheidung – kurze Begründung -->
