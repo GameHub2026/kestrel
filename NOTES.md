@@ -10,6 +10,7 @@ Regeln: Nur diese Datei ändern, maximal 40 Zeilen, Veraltetes streichen. Dateie
 - Hell/Dunkel-Schalter in der Navigation (Sonne/Mond), Wahl in localStorage `kestrel-theme`, sonst Systemeinstellung. Farben zentral in `global.css` (`:root`, dunkel per Media-Query und `[data-theme='dark']`). Helle Bildkarten: `spiele-hell.jpeg` usw. in `src/assets/reel/` (alle fünf eingelegt, 1376 × 768 px, eigener Handy-Ausschnitt per `fokusHell`), Prompts in `_Bildprompts.md`.
 - Startseite: „Kestrel“ steht über „Ehrlich bewertet.“ und gleitet beim Scrollen an seinen Platz oben links in der Navigation (Skript in `index.astro`, Ziel `#gn-wort` in `Nav.astro`). Schalter, helle Bilder und Schriftzug gepusht (Commit 2f3ca72).
 - Footer wieder blau nach Vorlage (collectui „sequel“, Pranav): Serifenschrift Source Serif 4, Spalten, Suche, gestochene Landschaft auf Canvas. Pferd und Reiter neu als eigene Vektorzeichnung `Reiter.astro` in Haltung und Holzschnitt-Stil der Vorlage (nicht deren Bild). Unschärfe-Verlauf übernimmt über dem Footer Blau bzw. Creme (`--kante-ton`). Gepusht am 01.11.2026.
+- Navigation nach Kevins Video (28.10.2026): schwebende Glasleiste links (Start, Sammlung, Demnächst, Archiv | Suchen, Hell/Dunkel, Kevin → Wie ich werte), ein gleitendes Schild mit Name und Kürzel ⌥1–⌥6, Text rollt beim Wechsel. Suche wie Spotlight (Taste /). Handy: Tab-Leiste unten. „Kestrel“ im Glasschild oben links. „Alle Texte“ heißt überall „Sammlung“. Gepusht am 01.11.2026.
 - `.claude/launch.json`: Startkonfiguration `kestrel` für die Vorschau (`npm run dev`, Port 4321).
 - Testen, solange ein Text lokal den Build blockiert: Projekt ohne `node_modules` in den Scratchpad kopieren, den Text dort auf `entwurf: true` setzen, `node_modules.nosync` verlinken, dort bauen. Im versteckten Browser-Fenster laufen requestAnimationFrame und CSS-Übergänge nicht; Bewegung dann per Timer-Ersatz für requestAnimationFrame messen.
 
@@ -28,6 +29,8 @@ Regeln: Nur diese Datei ändern, maximal 40 Zeilen, Veraltetes streichen. Dateie
 - Wertung als Ring, gefüllt bis zur Zahl – Erkennungszeichen, zeigt die eine Skala auf einen Blick.
 - Systemschrift (SF Pro), Inter als Ersatz außerhalb von Apple-Geräten.
 - Bildstrecke über natürliches Scrollen mit sanftem Einrasten statt abgefangenem Mausrad – Tastatur, Touch und reduzierte Bewegung funktionieren normal.
+- Kürzel ⌥1–⌥6 statt ⌘1–⌘5 wie im Video – ⌘-Ziffern wechseln im Browser die Tabs.
+- „Sammlung“ statt „Texte“ für Spiele, Filme, Serien – passt zu „Kestrel ist meine Sammlung“.
 - Reiter selbst gezeichnet statt Vorlagenbild eingebunden – das Bild gehört dem Designer; Haltung und Stil nachgebaut.
 - Footer in Hell und Dunkel gleich blau – feste Druckfarbe der Illustration.
 - Bilder über `src/assets` statt `public` – Astro verkleinert sie automatisch zu WebP.

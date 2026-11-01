@@ -60,7 +60,7 @@ const karten: Karte[] = [
     <p class="unter">Was ich spiele und schaue. Eine Skala von 1 bis 10, gleich für alle drei Medien.</p>
     <p class="knoepfe">
       {neuester && <a class="btn" href={url(neuester)}>Neuesten Text lesen</a>}
-      <a class="mehr" href="/texte/">Alle Texte</a>
+      <a class="mehr" href="/texte/">Zur Sammlung</a>
     </p>
   </section>
 
@@ -86,7 +86,7 @@ const karten: Karte[] = [
     <section class="stack wrap" aria-labelledby="stack-h">
       <div class="stack-kopf">
         <h2 id="stack-h">Davor geschrieben.</h2>
-        <a class="mehr" href="/texte/">{texte.length > 1 ? `Alle ${texte.length} Texte` : 'Alle Texte'}</a>
+        <a class="mehr" href="/texte/">{texte.length > 1 ? `Alle ${texte.length} in der Sammlung` : 'Zur Sammlung'}</a>
       </div>
       <ol class="stack-list">
         {weitere.map((t) => <li><Ticket text={t} headingLevel="h3" /></li>)}

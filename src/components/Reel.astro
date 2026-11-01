@@ -84,7 +84,7 @@ const zwei = (n: number) => String(n).padStart(2, '0');
     const punkte = [...reel.querySelectorAll<HTMLButtonElement>('.reel-punkte button')];
     const jetzt = document.getElementById('reel-jetzt')!;
     const n = karten.length;
-    const bar = () => parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--bar')) || 48;
+    const bar = () => { const v = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--bar')); return Number.isNaN(v) ? 0 : v; };
     let geplant = false, aktiv = -1;
 
     const zeichne = () => {
@@ -162,6 +162,8 @@ const zwei = (n: number) => String(n).padStart(2, '0');
     height: 84%; min-height: 0; will-change: transform;
   }
   .reel.an .reel-punkte { display: grid; }
+  /* Platz für die Navigationsleiste links */
+  @media (min-width: 1161px) { .reel.an .reel-karte { left: max(96px, calc(50% - 720px)); } }
   :global(html:has(.reel.an)) { scroll-snap-type: y proximity; }
 
   /* Bild: füllt die Karte, verschiebt sich gegen die Bewegung (Parallaxe) */

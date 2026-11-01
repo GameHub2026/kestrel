@@ -1,123 +1,212 @@
 ---
-// Globale Navigation wie auf apple.com: eine 48 px hohe Glasleiste oben, Marke links, Bereiche in der Mitte, Suche rechts.
-// Unter 834 px: Marke, Suche und ein Menüknopf; das Menü öffnet sich über den ganzen Bildschirm.
-// Merkliste und „Ich folge“ erscheinen nur auf Kevins Geräten (dort liegt der Merkliste-Schlüssel im Browser).
+// Navigation nach Kevins Video vom 28.10.2026: eine schmale Symbolleiste links (schwebendes Glas).
+// Ein einziges dunkles Schild mit Name und Kürzel gleitet zum Symbol unter der Maus; der Text darin rollt
+// beim Wechsel nach oben weg und der neue von unten herein, die Breite wächst mit.
+// Felder: Start, Sammlung (Spiele, Filme, Serien), Demnächst, Archiv; dann Suchen, Hell/Dunkel und
+// unten „Kevin“ (Wie ich werte). Merkliste und „Ich folge“ nur auf Kevins Geräten (Schlüssel im Browser).
+// Kürzel ⌥1 … ⌥6 (⌘-Ziffern gehören im Browser den Tabs), „/“ öffnet die Suche.
+// Unter 834 px wird die Leiste zur Tab-Leiste unten wie bei iOS, mit Beschriftung unter dem Symbol.
+// Oben links steht das Wort „Kestrel“ in einem kleinen Glasschild; auf der Startseite fliegt es dort hinein.
 const path = Astro.url.pathname;
-const punkte = [
-  { href: '/texte/', text: 'Texte', aktiv: path.startsWith('/texte') },
-  { href: '/texte/?medium=spiel', text: 'Spiele' },
-  { href: '/texte/?medium=film', text: 'Filme' },
-  { href: '/texte/?medium=serie', text: 'Serien' },
-  { href: '/demnaechst/', text: 'Demnächst', aktiv: path.startsWith('/demnaechst') },
-  { href: '/archiv/', text: 'Archiv', aktiv: path.startsWith('/archiv') },
-  { href: '/wie-ich-werte/', text: 'Wie ich werte', aktiv: path.startsWith('/wie-ich-werte') },
-  { href: '/merkliste/', text: 'Merkliste', privat: true, zaehler: 'merk', aktiv: path.startsWith('/merkliste') },
-  { href: '/serien/', text: 'Ich folge', privat: true, zaehler: 'serien', aktiv: path.startsWith('/serien') },
+const I = {
+  start: '<circle cx="12" cy="12" r="8" class="spur" /><path d="M12 4a8 8 0 1 1-7.6 10.47" />',
+  sammlung: '<rect x="4" y="9" width="16" height="11" rx="2.5" /><path d="M6.5 6h11M9 3h6" />',
+  demnaechst: '<rect x="3.5" y="5" width="17" height="15.5" rx="3" /><path d="M8 3v4M16 3v4M3.5 10h17" /><path d="M8.5 14h.01M12 14h.01M15.5 14h.01M8.5 17.5h.01M12 17.5h.01" />',
+  archiv: '<path d="M3.6 12a8.4 8.4 0 1 0 2.5-6L3.6 8.4" /><path d="M3.6 3.8v4.6h4.6" /><path d="M12 7.6V12l3 1.9" />',
+  merk: '<path d="M7 3.5h10a1 1 0 0 1 1 1V21l-6-3.8L6 21V4.5a1 1 0 0 1 1-1Z" />',
+  glocke: '<path d="M6 9a6 6 0 0 1 12 0c0 6.5 2.5 8 2.5 8h-17S6 15.5 6 9Z" /><path d="M10.2 20.5a2 2 0 0 0 3.6 0" />',
+  suche: '<circle cx="10.5" cy="10.5" r="6.5" /><path d="m20 20-4.8-4.8" />',
+};
+const felder = [
+  { id: 'start', href: '/', text: 'Start', icon: I.start, aktiv: path === '/' },
+  { id: 'sammlung', href: '/texte/', text: 'Sammlung', icon: I.sammlung, aktiv: path.startsWith('/texte') },
+  { id: 'demnaechst', href: '/demnaechst/', text: 'Demnächst', icon: I.demnaechst, aktiv: path.startsWith('/demnaechst') },
+  { id: 'archiv', href: '/archiv/', text: 'Archiv', icon: I.archiv, aktiv: path.startsWith('/archiv') },
+  { id: 'merkliste', href: '/merkliste/', text: 'Merkliste', icon: I.merk, aktiv: path.startsWith('/merkliste'), privat: true, zaehler: 'merk' },
+  { id: 'folge', href: '/serien/', text: 'Ich folge', icon: I.glocke, aktiv: path.startsWith('/serien'), privat: true, zaehler: 'serien' },
 ];
+const svg = (p: string) => `<svg viewBox="0 0 24 24" aria-hidden="true">${p}</svg>`;
+const sonne = `<svg class="sonne" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.4" /><path d="M12 2.6v2M12 19.4v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2.6 12h2M19.4 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" /></svg>`;
+const mond = `<svg class="mond" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.3 6.3 0 0 0 10.5 10.5Z" /></svg>`;
 ---
-<header class="gn" id="gn">
-  <nav class="gn-innen" aria-label="Hauptnavigation">
-    <a class="gn-marke" href="/" aria-label="Kestrel, Startseite">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" class="m-spur" /><path d="M12 3.5a8.5 8.5 0 1 1-8.08 11.13" class="m-wert" /></svg>
-      <span id="gn-wort" class:list={[{ 'gn-wort--start': path === '/' }]}>Kestrel</span>
-    </a>
-    <ul class="gn-liste" id="gn-liste">
-      {punkte.map((p, i) => (
-        <li hidden={p.privat || undefined} data-privat={p.privat ? '' : undefined} data-zaehler={p.zaehler} style={`--i:${i}`}>
-          <a href={p.href} aria-current={p.aktiv ? 'page' : undefined}>{p.text}</a>
+<div id="gn">
+  <a class="gn-wort-schild" href="/" aria-label="Kestrel, Startseite">
+    <span id="gn-wort" class:list={[{ 'gn-wort--start': path === '/' }]}>Kestrel</span>
+  </a>
+
+  <nav class="leiste" aria-label="Hauptnavigation" data-leiste>
+    <ul class="leiste-gruppe">
+      {felder.map((f, i) => (
+        <li hidden={f.privat || undefined} data-privat={f.privat ? '' : undefined} data-zaehler={f.zaehler} data-handy={i < 4 ? '' : undefined}>
+          <a class="feld" href={f.href} aria-current={f.aktiv ? 'page' : undefined} data-name={f.text} data-kuerzel={`⌥${i + 1}`} data-taste={i + 1}>
+            <Fragment set:html={svg(f.icon)} />
+            <span class="feld-name">{f.text}</span>
+          </a>
         </li>
       ))}
     </ul>
-    <div class="gn-rechts">
-      <button type="button" class="gn-knopf gn-thema" id="gn-thema" aria-label="Dunkles Design" aria-pressed="false" title="Hell / Dunkel">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <mask id="gn-mond"><rect width="24" height="24" fill="#fff" /><circle class="t-schatten" cx="24" cy="4" r="7" fill="#000" /></mask>
-          <circle class="t-kern" cx="12" cy="12" r="4.6" mask="url(#gn-mond)" />
-          <g class="t-strahlen"><path d="M12 2.5v1.8M12 19.7v1.8M4.6 4.6l1.3 1.3M18.1 18.1l1.3 1.3M2.5 12h1.8M19.7 12h1.8M4.6 19.4l1.3-1.3M18.1 5.9l1.3-1.3" /></g>
-        </svg>
-      </button>
-      <button type="button" class="gn-knopf" id="gn-suche-knopf" aria-label="Texte durchsuchen" aria-expanded="false" aria-controls="gn-suche">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg>
-      </button>
-      <button type="button" class="gn-knopf gn-menue" id="gn-menue" aria-label="Menü" aria-expanded="false" aria-controls="gn-liste">
-        <span></span><span></span>
-      </button>
-    </div>
+    <span class="leiste-trenner" aria-hidden="true"></span>
+    <ul class="leiste-gruppe">
+      <li data-handy>
+        <button type="button" class="feld" id="gn-suche-knopf" aria-expanded="false" aria-controls="gn-suche" data-name="Suchen" data-kuerzel="/">
+          <Fragment set:html={svg(I.suche)} />
+          <span class="feld-name">Suchen</span>
+        </button>
+      </li>
+      <li class="nur-gross">
+        <button type="button" class="feld" id="gn-thema" aria-pressed="false" data-name="Dunkles Design" data-kuerzel="">
+          <Fragment set:html={sonne + mond} />
+          <span class="feld-name">Hell oder dunkel</span>
+        </button>
+      </li>
+      <li class="nur-gross">
+        <a class="feld feld-kevin" href="/wie-ich-werte/" aria-current={path.startsWith('/wie-ich-werte') ? 'page' : undefined} data-name="Kevin · Wie ich werte" data-kuerzel="">
+          <span class="kevin" aria-hidden="true">K</span>
+          <span class="feld-name">Kevin, wie ich werte</span>
+        </a>
+      </li>
+    </ul>
+    <!-- Das gleitende Schild (nur Maus und Tastatur, rein visuell; die Namen stehen in den Feldern selbst) -->
+    <div class="schild" aria-hidden="true"><span class="schild-rolle"></span></div>
   </nav>
+
+  <!-- Suche wie Spotlight: schwebendes Glasfeld, darunter Schnellzugriffe -->
   <form class="gn-suche" id="gn-suche" action="/texte/" method="get" role="search" hidden>
-    <div class="gn-suche-innen">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg>
-      <label class="visually-hidden" for="gn-q">Texte durchsuchen</label>
-      <input id="gn-q" name="q" type="search" placeholder="Texte durchsuchen" autocomplete="off" required />
+    <div class="gn-suche-feld">
+      <Fragment set:html={svg(I.suche)} />
+      <label class="visually-hidden" for="gn-q">Sammlung durchsuchen</label>
+      <input id="gn-q" name="q" type="search" placeholder="Sammlung durchsuchen" autocomplete="off" required />
+      <kbd>esc</kbd>
     </div>
-    <p class="gn-tipps"><span>Schnellzugriff</span><a href="/texte/">Alle Texte</a><a href="/demnaechst/">Demnächst im Kino</a><a href="/archiv/">Archiv nach Jahr</a></p>
+    <div class="gn-tipps">
+      <p>In der Sammlung</p>
+      <a href="/texte/?medium=spiel"><span class="punkt" data-medium="spiel"></span>Spiele</a>
+      <a href="/texte/?medium=film"><span class="punkt" data-medium="film"></span>Filme</a>
+      <a href="/texte/?medium=serie"><span class="punkt" data-medium="serie"></span>Serien</a>
+      <p class="nur-handy">Mehr</p>
+      <a class="nur-handy" href="/wie-ich-werte/">Wie ich werte</a>
+      <a class="nur-handy" href="/merkliste/" data-privat hidden>Merkliste</a>
+      <a class="nur-handy" href="/serien/" data-privat hidden>Ich folge</a>
+      <button type="button" class="nur-handy gn-thema-zeile" id="gn-thema-handy" aria-pressed="false">Dunkles Design</button>
+    </div>
   </form>
-</header>
-<div class="gn-schleier" id="gn-schleier" hidden></div>
+  <div class="gn-schleier" id="gn-schleier" hidden></div>
+</div>
 
 <script>
   const gn = document.getElementById('gn')!;
-  const menue = document.getElementById('gn-menue')!;
+  const leiste = gn.querySelector<HTMLElement>('[data-leiste]')!;
+  const schild = leiste.querySelector<HTMLElement>('.schild')!;
+  const rolle = schild.querySelector<HTMLElement>('.schild-rolle')!;
+  const felder = [...leiste.querySelectorAll<HTMLElement>('.feld')];
+  const ruhig = matchMedia('(prefers-reduced-motion: reduce)');
+
+  // ---------- Das gleitende Schild ----------
+  let aktiv: HTMLElement | null = null, zu = 0;
+  const textVon = (f: HTMLElement) => {
+    const s = document.createElement('span'); s.className = 'schild-text';
+    s.append(f.dataset.name || '');
+    if (f.dataset.kuerzel) { const k = document.createElement('kbd'); k.textContent = f.dataset.kuerzel; s.append(k); }
+    return s;
+  };
+  function zeige(f: HTMLElement) {
+    if (matchMedia('(max-width: 833px)').matches) return;
+    clearTimeout(zu);
+    if (f === aktiv) return;
+    const vorher = aktiv; aktiv = f;
+    const neu = textVon(f);
+    // Breite des neuen Textes messen, dann rollen: alter Text nach oben raus, neuer von unten rein
+    neu.style.position = 'absolute'; neu.style.visibility = 'hidden'; rolle.append(neu);
+    const breite = neu.offsetWidth; neu.style.position = ''; neu.style.visibility = ''; neu.remove();
+    const runter = vorher ? felder.indexOf(f) > felder.indexOf(vorher) : true;
+    const alt = rolle.querySelector<HTMLElement>('.schild-text:not(.weg)');
+    if (alt && vorher && !ruhig.matches) {
+      alt.classList.add('weg', runter ? 'nach-oben' : 'nach-unten');
+      setTimeout(() => alt.remove(), 260);
+      neu.classList.add('kommt', runter ? 'von-unten' : 'von-oben');
+      rolle.append(neu);
+      requestAnimationFrame(() => requestAnimationFrame(() => neu.classList.remove('kommt')));
+    } else { rolle.replaceChildren(neu); }
+    const r = f.getBoundingClientRect(), l = leiste.getBoundingClientRect();
+    schild.style.setProperty('--y', `${r.top - l.top + r.height / 2}px`);
+    schild.style.width = `${breite + 24}px`;
+    if (!vorher) { schild.classList.add('ohne-gleiten'); requestAnimationFrame(() => requestAnimationFrame(() => schild.classList.remove('ohne-gleiten'))); }
+    schild.classList.add('an');
+  }
+  function verstecke() {
+    clearTimeout(zu);
+    zu = window.setTimeout(() => { schild.classList.remove('an'); aktiv = null; setTimeout(() => { if (!aktiv) rolle.replaceChildren(); }, 200); }, 140);
+  }
+  felder.forEach((f) => {
+    f.addEventListener('pointerenter', () => zeige(f));
+    f.addEventListener('focus', () => { if (f.matches(':focus-visible')) zeige(f); });
+    f.addEventListener('blur', verstecke);
+  });
+  leiste.addEventListener('pointerleave', verstecke);
+
+  // ---------- Suche ----------
   const sucheKnopf = document.getElementById('gn-suche-knopf')!;
   const suche = document.getElementById('gn-suche') as HTMLFormElement;
   const schleier = document.getElementById('gn-schleier')!;
-
-  const zu = () => {
-    gn.classList.remove('menue-offen', 'suche-offen');
-    menue.setAttribute('aria-expanded', 'false'); sucheKnopf.setAttribute('aria-expanded', 'false');
-    document.documentElement.classList.remove('gn-gesperrt');
-    schleier.classList.remove('an');
-    setTimeout(() => { if (!gn.classList.contains('suche-offen')) suche.hidden = true; if (!schleier.classList.contains('an')) schleier.hidden = true; }, 300);
+  const sucheZu = () => {
+    gn.classList.remove('suche-offen'); schleier.classList.remove('an'); sucheKnopf.setAttribute('aria-expanded', 'false');
+    setTimeout(() => { if (!gn.classList.contains('suche-offen')) { suche.hidden = true; schleier.hidden = true; } }, 260);
   };
-  menue.addEventListener('click', () => {
-    const auf = !gn.classList.contains('menue-offen');
-    zu(); if (!auf) return;
-    gn.classList.add('menue-offen'); menue.setAttribute('aria-expanded', 'true');
-    document.documentElement.classList.add('gn-gesperrt');
-  });
-  sucheKnopf.addEventListener('click', () => {
-    const auf = !gn.classList.contains('suche-offen');
-    zu(); if (!auf) return;
+  const sucheAuf = () => {
     suche.hidden = false; schleier.hidden = false;
     requestAnimationFrame(() => { gn.classList.add('suche-offen'); schleier.classList.add('an'); });
     sucheKnopf.setAttribute('aria-expanded', 'true');
-    setTimeout(() => (document.getElementById('gn-q') as HTMLInputElement).focus(), 60);
-  });
-  schleier.addEventListener('click', zu);
+    setTimeout(() => (document.getElementById('gn-q') as HTMLInputElement).focus(), 50);
+  };
+  sucheKnopf.addEventListener('click', () => (gn.classList.contains('suche-offen') ? sucheZu() : sucheAuf()));
+  schleier.addEventListener('click', sucheZu);
 
-  // Hell/Dunkel: ohne Wahl gilt die Systemeinstellung; ein Klick legt das Gegenteil fest und merkt es sich.
+  // ---------- Tastatur: ⌥1 … ⌥6 springt, „/“ sucht, Esc schließt ----------
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { sucheZu(); return; }
+    const t = e.target; const tippt = t instanceof Element && t.closest('input, textarea, select, [contenteditable]');
+    if (e.key === '/' && !tippt && !e.metaKey && !e.ctrlKey) { e.preventDefault(); sucheAuf(); return; }
+    if (!e.altKey || e.metaKey || e.ctrlKey) return;
+    const n = Number(e.code.replace('Digit', ''));
+    const ziel = leiste.querySelector<HTMLAnchorElement>(`[data-taste="${n}"]`);
+    if (ziel && !ziel.closest('li')?.hidden) { e.preventDefault(); location.href = ziel.href; }
+  });
+
+  // ---------- Hell/Dunkel: ohne Wahl gilt die Systemeinstellung ----------
   const root = document.documentElement;
   const thema = document.getElementById('gn-thema')!;
+  const themaHandy = document.getElementById('gn-thema-handy')!;
   const systemDunkel = matchMedia('(prefers-color-scheme: dark)');
   const istDunkel = () => (root.dataset.theme ? root.dataset.theme === 'dark' : systemDunkel.matches);
   const zeigeThema = () => {
     const d = istDunkel();
-    thema.setAttribute('aria-pressed', String(d));
-    thema.setAttribute('aria-label', d ? 'Helles Design' : 'Dunkles Design');
-    // Statusleiste am Handy passend einfärben
+    const name = d ? 'Helles Design' : 'Dunkles Design';
+    [thema, themaHandy].forEach((b) => b.setAttribute('aria-pressed', String(d)));
+    thema.dataset.name = name; thema.setAttribute('aria-label', name); themaHandy.textContent = name;
+    if (aktiv === thema) { aktiv = null; zeige(thema); }
     document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]').forEach((m) => {
       m.media = root.dataset.theme ? 'all' : m.hasAttribute('data-hell') ? '(prefers-color-scheme: light)' : '(prefers-color-scheme: dark)';
       if (root.dataset.theme) m.content = d ? '#161617' : '#fafafc';
     });
   };
-  thema.addEventListener('click', () => {
+  const wechsle = () => {
     const neu = istDunkel() ? 'light' : 'dark';
     root.classList.add('theme-wechsel');
     root.dataset.theme = neu;
     try { localStorage.setItem('kestrel-theme', neu); } catch {}
     zeigeThema();
-    document.dispatchEvent(new CustomEvent('thema-gewechselt'));
     setTimeout(() => root.classList.remove('theme-wechsel'), 500);
-  });
+  };
+  thema.addEventListener('click', wechsle);
+  themaHandy.addEventListener('click', wechsle);
   systemDunkel.addEventListener('change', zeigeThema);
   zeigeThema();
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') zu(); });
 
-  // Private Punkte und Zähler neuer Meldungen (10 Minuten zwischengespeichert)
+  // ---------- Private Felder und Zähler neuer Meldungen (10 Minuten zwischengespeichert) ----------
   (async () => {
     let token = ''; try { token = localStorage.getItem('kestrel-merk-token') || ''; } catch {}
     if (!token) return;
-    document.querySelectorAll<HTMLElement>('#gn [data-privat]').forEach((li) => (li.hidden = false));
+    gn.querySelectorAll<HTMLElement>('[data-privat]').forEach((el) => (el.hidden = false));
     let c: { t: number; n: number; merk?: number; serien?: number } | null = null;
     try { c = JSON.parse(sessionStorage.getItem('kestrel-neu') || 'null'); if (!c || Date.now() - c.t > 600000 || c.merk == null) c = null; } catch {}
     if (!c) {
@@ -127,97 +216,141 @@ const punkte = [
       } catch {}
     }
     if (!c?.n) return;
-    document.querySelectorAll<HTMLElement>('#gn [data-zaehler]').forEach((li) => {
+    gn.querySelectorAll<HTMLElement>('li[data-zaehler]').forEach((li) => {
       const k = (c as Record<string, number>)[li.dataset.zaehler || ''] || 0;
       if (!k) return;
-      const a = li.querySelector('a')!;
-      const z = document.createElement('span'); z.className = 'gn-zahl'; z.textContent = String(k);
-      z.setAttribute('aria-label', `${k} neu`); a.append(z);
+      const a = li.querySelector<HTMLElement>('.feld')!;
+      a.classList.add('hat-neues'); a.dataset.name = `${a.dataset.name} · ${k} neu`;
     });
   })();
 </script>
 
 <style>
-  .gn {
-    position: sticky; top: 0; z-index: 50; height: var(--bar);
+  /* ---------- Wort oben links ---------- */
+  .gn-wort-schild {
+    position: fixed; z-index: 51; top: 16px; left: 16px; display: inline-flex; align-items: center; height: 36px; padding: 0 14px;
+    border-radius: 980px; color: var(--ink); text-decoration: none;
     background: var(--nav); -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
-    transition: background-color 300ms var(--ease);
+    box-shadow: 0 0 0 0.5px var(--hair), 0 4px 16px rgb(0 0 0 / 0.06);
   }
-  @media (prefers-reduced-transparency: reduce) { .gn { background: var(--ground-2); -webkit-backdrop-filter: none; backdrop-filter: none; } }
-  .gn-innen { position: relative; z-index: 2; height: 100%; max-width: 1024px; margin: 0 auto; padding: 0 22px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
-
-  .gn-marke { display: inline-flex; align-items: center; gap: 7px; height: 44px; padding: 0 8px; margin-left: -8px; color: var(--ink); font-size: 17px; font-weight: 600; letter-spacing: -0.02em; text-decoration: none; opacity: 0.88; transition: opacity 200ms; }
-  .gn-marke:hover { opacity: 1; text-decoration: none; }
-  .gn-marke svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; }
-  .gn-marke .m-spur { opacity: 0.22; }
-  .gn-marke span { line-height: 1; }
-  /* Startseite: das Wort kommt beim Scrollen aus dem Seitenkopf hierher geflogen (siehe index.astro) */
+  .gn-wort-schild:hover { text-decoration: none; }
+  .gn-wort-schild span { font-size: 17px; font-weight: 600; letter-spacing: -0.02em; line-height: 1; }
+  /* Startseite: das Wort fliegt beim Scrollen aus dem Seitenkopf hierher (siehe index.astro); bis dahin bleibt das Schild leer */
   .gn-wort--start { opacity: 0; }
 
-  .gn-liste { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 0; flex: 1; justify-content: center; }
-  .gn-liste a {
-    display: flex; align-items: center; gap: 5px; height: 44px; padding: 0 clamp(7px, 1.1vw, 10px);
-    font-size: 12px; letter-spacing: -0.01em; color: var(--ink); opacity: 0.8; text-decoration: none; transition: opacity 200ms var(--ease);
+  /* ---------- Leiste links ---------- */
+  .leiste {
+    position: fixed; z-index: 50; left: 16px; top: 50%; transform: translateY(-50%);
+    display: grid; justify-items: center; gap: 0; padding: 8px; border-radius: 22px;
+    background: var(--nav); -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+    box-shadow: 0 0 0 0.5px var(--hair), 0 8px 28px rgb(0 0 0 / 0.08);
   }
-  .gn-liste a:hover, .gn-liste a[aria-current='page'] { opacity: 1; }
-  .gn-liste a[aria-current='page'] { font-weight: 600; }
-  .gn-liste :global(.gn-zahl) { min-width: 16px; height: 16px; padding: 0 5px; border-radius: 8px; background: var(--blue); color: #fff; font-size: 10px; font-weight: 600; display: inline-grid; place-items: center; line-height: 1; }
+  .leiste-gruppe { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+  .leiste-trenner { display: block; width: 20px; height: 1px; margin: 8px 0; background: var(--line); }
+  .feld {
+    position: relative; display: grid; place-items: center; width: 40px; height: 40px; padding: 0; border: 0; border-radius: 12px;
+    background: transparent; color: var(--ink); opacity: 0.72; cursor: pointer; text-decoration: none;
+    transition: background-color 180ms var(--ease), opacity 180ms var(--ease);
+  }
+  .feld:hover, .feld:focus-visible { opacity: 1; background: color-mix(in srgb, var(--ink) 8%, transparent); text-decoration: none; outline: none; }
+  .feld:focus-visible { box-shadow: 0 0 0 2px var(--focus); }
+  .feld[aria-current='page'] { opacity: 1; background: color-mix(in srgb, var(--ink) 11%, transparent); }
+  .feld :global(svg) { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+  .feld :global(.spur) { opacity: 0.3; }
+  .feld-name { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .feld.hat-neues::after { content: ''; position: absolute; top: 7px; right: 7px; width: 8px; height: 8px; border-radius: 50%; background: var(--blue); box-shadow: 0 0 0 2px var(--ground); }
+  .kevin {
+    display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%;
+    background: linear-gradient(140deg, #5ac8fa, #0071e3 60%, #5e5ce6); color: #fff; font-size: 13px; font-weight: 600; letter-spacing: 0;
+  }
+  .feld-kevin { opacity: 1; }
+  /* Hell/Dunkel: Sonne im hellen, Mond im dunklen Design */
+  #gn-thema :global(.mond) { position: absolute; opacity: 0; transform: rotate(-60deg) scale(0.6); transition: opacity 300ms var(--ease), transform 450ms var(--ease); }
+  #gn-thema :global(.sonne) { transition: opacity 300ms var(--ease), transform 450ms var(--ease); }
+  #gn-thema[aria-pressed='true'] :global(.sonne) { opacity: 0; transform: rotate(60deg) scale(0.6); }
+  #gn-thema[aria-pressed='true'] :global(.mond) { opacity: 1; transform: none; }
 
-  .gn-rechts { display: flex; align-items: center; }
-  .gn-knopf { width: 44px; height: 44px; margin-right: -12px; border: 0; padding: 0; background: none; color: var(--ink); opacity: 0.8; display: grid; place-items: center; cursor: pointer; transition: opacity 200ms; }
-  .gn-knopf:hover { opacity: 1; }
-  .gn-knopf svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; }
-  .gn-thema { margin-right: -4px; }
-  .gn-thema svg { width: 18px; height: 18px; overflow: visible; }
-  .t-kern { fill: currentColor; stroke: none; transition: r 500ms var(--ease); }
-  .t-schatten { transition: cx 500ms var(--ease), cy 500ms var(--ease); }
-  .t-strahlen { transform-origin: 12px 12px; transition: transform 500ms var(--ease), opacity 300ms var(--ease); }
-  /* Dunkel gewählt: Sonne wird zum Mond (Schattenkreis schiebt sich über den Kern, Strahlen drehen weg) */
-  .gn-thema[aria-pressed='true'] .t-kern { r: 7.5px; }
-  .gn-thema[aria-pressed='true'] .t-schatten { cx: 16px; cy: 8px; }
-  .gn-thema[aria-pressed='true'] .t-strahlen { opacity: 0; transform: rotate(-90deg) scale(0.5); }
-  .gn-menue { display: none; position: relative; margin-left: 4px; }
-  .gn-menue span { position: absolute; left: 14px; width: 17px; height: 1.5px; border-radius: 1px; background: currentColor; transition: transform 320ms var(--ease); }
-  .gn-menue span:first-child { transform: translateY(-3.5px); }
-  .gn-menue span:last-child { transform: translateY(3.5px); }
-  .gn.menue-offen .gn-menue span:first-child { transform: rotate(45deg); }
-  .gn.menue-offen .gn-menue span:last-child { transform: rotate(-45deg); }
+  /* ---------- Das gleitende Schild ---------- */
+  .schild {
+    --y: 0px;
+    position: absolute; left: calc(100% + 10px); top: 0; height: 30px; width: 60px; border-radius: 980px; overflow: hidden;
+    background: #1d1d1f; color: #f5f5f7; box-shadow: 0 4px 14px rgb(0 0 0 / 0.22), inset 0 0 0 0.5px rgb(255 255 255 / 0.08);
+    transform: translateY(calc(var(--y) - 15px)) scale(0.94); transform-origin: left center; opacity: 0; pointer-events: none;
+    transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1), width 260ms cubic-bezier(0.22, 1, 0.36, 1), opacity 160ms var(--ease);
+  }
+  .schild.an { opacity: 1; transform: translateY(calc(var(--y) - 15px)) scale(1); }
+  .schild.ohne-gleiten { transition: opacity 160ms var(--ease), transform 200ms var(--ease); }
+  .schild-rolle { position: relative; display: block; height: 100%; }
+  .schild :global(.schild-text) {
+    position: absolute; left: 12px; top: 0; height: 30px; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;
+    font-size: 13px; font-weight: 600; letter-spacing: -0.01em;
+    transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1), opacity 200ms var(--ease), filter 220ms var(--ease);
+  }
+  .schild :global(kbd) { font: inherit; font-weight: 500; color: #a1a1a6; }
+  .schild :global(.schild-text.kommt.von-unten) { transform: translateY(100%); opacity: 0; filter: blur(3px); }
+  .schild :global(.schild-text.kommt.von-oben) { transform: translateY(-100%); opacity: 0; filter: blur(3px); }
+  .schild :global(.schild-text.weg.nach-oben) { transform: translateY(-100%); opacity: 0; filter: blur(3px); }
+  .schild :global(.schild-text.weg.nach-unten) { transform: translateY(100%); opacity: 0; filter: blur(3px); }
+  @media (prefers-color-scheme: dark) { :global(:root:not([data-theme='light'])) .schild { background: #f5f5f7; color: #1d1d1f; } :global(:root:not([data-theme='light'])) .schild :global(kbd) { color: #6e6e73; } }
+  :global(:root[data-theme='dark']) .schild { background: #f5f5f7; color: #1d1d1f; }
+  :global(:root[data-theme='dark']) .schild :global(kbd) { color: #6e6e73; }
 
-  /* Suche: Fläche klappt unter der Leiste auf, die Seite dahinter wird weich verdeckt */
+  /* Seiten rücken bei mittleren Breiten nach rechts, damit die Leiste nichts verdeckt */
+  @media (min-width: 834px) and (max-width: 1160px) { :global(main), :global(.fuss-innen) { padding-left: 64px; } }
+
+  /* ---------- Suche wie Spotlight ---------- */
   .gn-suche {
-    position: absolute; z-index: 1; left: 0; right: 0; top: 0; padding: calc(var(--bar) + 20px) 0 52px;
-    background: var(--ground); box-shadow: 0 12px 30px rgb(0 0 0 / 0.08);
-    opacity: 0; transform: translateY(-12px); transition: opacity 280ms var(--ease), transform 340ms var(--ease);
+    position: fixed; z-index: 60; left: 50%; top: 14vh; width: min(640px, calc(100vw - 32px)); transform: translateX(-50%) translateY(-8px) scale(0.98);
+    padding: 10px; border-radius: 26px; opacity: 0;
+    background: var(--nav); -webkit-backdrop-filter: saturate(180%) blur(30px); backdrop-filter: saturate(180%) blur(30px);
+    box-shadow: 0 0 0 0.5px var(--hair), 0 24px 60px rgb(0 0 0 / 0.22);
+    transition: opacity 220ms var(--ease), transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
   }
-  .gn.suche-offen .gn-suche { opacity: 1; transform: none; }
-  .gn-suche-innen, .gn-tipps { max-width: 692px; margin: 0 auto; padding: 0 22px; }
-  .gn-suche-innen { display: flex; align-items: center; gap: 12px; }
-  .gn-suche-innen svg { width: 24px; height: 24px; flex: none; fill: none; stroke: var(--ink-2); stroke-width: 1.8; stroke-linecap: round; }
-  .gn-suche input {
-    flex: 1; min-width: 0; border: 0; background: none; color: var(--ink); padding: 8px 0; font: 600 clamp(24px, 3vw, 32px)/1.2 var(--display); letter-spacing: -0.01em;
-  }
+  #gn.suche-offen .gn-suche { opacity: 1; transform: translateX(-50%); }
+  .gn-suche-feld { display: flex; align-items: center; gap: 12px; padding: 6px 10px 6px 12px; }
+  .gn-suche-feld :global(svg) { width: 22px; height: 22px; flex: none; fill: none; stroke: var(--ink-2); stroke-width: 1.8; stroke-linecap: round; }
+  .gn-suche input { flex: 1; min-width: 0; border: 0; background: none; color: var(--ink); padding: 8px 0; font: 400 22px/1.2 var(--sans); letter-spacing: -0.01em; }
   .gn-suche input::placeholder { color: var(--ink-3); }
   .gn-suche input:focus { outline: none; }
-  .gn-tipps { margin-top: 26px; display: grid; gap: 4px; font-size: 14px; }
-  .gn-tipps span { color: var(--ink-2); font-size: 12px; margin-bottom: 6px; }
-  .gn-tipps a { color: var(--ink); font-weight: 600; width: fit-content; padding: 4px 0; }
-  .gn-schleier { position: fixed; inset: 0; z-index: 40; background: var(--schleier); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); opacity: 0; transition: opacity 300ms var(--ease); }
+  .gn-suche kbd { font: 500 12px var(--sans); color: var(--ink-3); padding: 3px 7px; border-radius: 6px; background: var(--fill); }
+  .gn-tipps { display: grid; gap: 2px; padding: 8px 4px 4px; margin-top: 4px; border-top: 1px solid var(--hair); }
+  .gn-tipps p { margin: 8px 10px 4px; font-size: 12px; font-weight: 600; color: var(--ink-2); }
+  .gn-tipps a, .gn-tipps button {
+    display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 10px; border: 0; background: none; text-align: left;
+    color: var(--ink); font: 400 15px var(--sans); text-decoration: none; cursor: pointer;
+  }
+  .gn-tipps a:hover, .gn-tipps button:hover, .gn-tipps a:focus-visible { background: color-mix(in srgb, var(--ink) 7%, transparent); text-decoration: none; }
+  .gn-tipps .punkt { width: 8px; height: 8px; border-radius: 50%; background: var(--akzent); }
+  .gn-tipps [hidden] { display: none; }
+  .nur-handy { display: none !important; }
+  .gn-schleier { position: fixed; inset: 0; z-index: 55; background: var(--schleier); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); opacity: 0; transition: opacity 260ms var(--ease); }
   .gn-schleier.an { opacity: 1; }
 
-  /* Schmal: Liste wird zum Vollbild-Menü, Einträge erscheinen gestaffelt */
-  @media (max-width: 833px) {
-    .gn-menue { display: grid; }
-    .gn-liste {
-      position: fixed; left: 0; right: 0; top: var(--bar); height: calc(100dvh - var(--bar)); z-index: 1;
-      flex-direction: column; align-items: stretch; justify-content: flex-start; padding: 12px 40px 40px; overflow-y: auto;
-      background: var(--ground); visibility: hidden; opacity: 0; transition: opacity 240ms var(--ease), visibility 0s 240ms;
-    }
-    .gn.menue-offen { background: var(--ground); }
-    .gn.menue-offen .gn-liste { visibility: visible; opacity: 1; transition: opacity 240ms var(--ease); }
-    .gn-liste a { height: auto; padding: 8px 0; font-size: 28px; font-weight: 600; letter-spacing: 0.007em; opacity: 1; line-height: 1.14; }
-    .gn-liste li { opacity: 0; transform: translateY(-8px); transition: opacity 300ms var(--ease), transform 400ms var(--ease); }
-    .gn.menue-offen .gn-liste li { opacity: 1; transform: none; transition-delay: calc(80ms + var(--i) * 25ms); }
-    .gn-liste :global(.gn-zahl) { height: 20px; min-width: 20px; font-size: 12px; border-radius: 10px; }
+  @media (prefers-reduced-transparency: reduce) {
+    .leiste, .gn-wort-schild, .gn-suche { background: var(--ground-2); -webkit-backdrop-filter: none; backdrop-filter: none; }
   }
-  :global(html.gn-gesperrt) { overflow: hidden; }
+
+  /* ---------- Handy: Tab-Leiste unten wie bei iOS ---------- */
+  @media (max-width: 833px) {
+    .leiste {
+      top: auto; bottom: max(10px, env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%);
+      grid-auto-flow: column; padding: 6px; border-radius: 28px; width: min(420px, calc(100vw - 24px));
+    }
+    .leiste-gruppe { display: contents; }
+    .leiste-trenner, .nur-gross, .schild { display: none; }
+    .leiste li:not([data-handy]):not([data-privat]) { display: none; }
+    .leiste li[data-privat] { display: none; }
+    .feld { width: auto; min-width: 56px; height: 52px; border-radius: 22px; gap: 2px; padding: 6px 4px 4px; align-content: center; }
+    .feld :global(svg) { width: 22px; height: 22px; }
+    .feld-name { position: static; width: auto; height: auto; overflow: visible; clip: auto; font-size: 10px; font-weight: 500; letter-spacing: 0; line-height: 1.1; }
+    .feld[aria-current='page'] { color: var(--link); background: color-mix(in srgb, var(--ink) 7%, transparent); }
+    .nur-handy { display: flex !important; }
+    p.nur-handy { display: block !important; }
+    .gn-tipps [hidden] { display: none !important; }
+    .gn-suche { top: 10px; }
+    .gn-wort-schild { top: max(10px, env(safe-area-inset-top)); left: 12px; }
+    /* Platz oben für das Glasschild, unten für die Tab-Leiste */
+    :global(main) { padding-top: 40px; }
+    .gn-suche kbd { display: none; }
+  }
 </style>

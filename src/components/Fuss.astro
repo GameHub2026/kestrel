@@ -23,20 +23,20 @@ const jahr = new Date().getFullYear();
         <li><Fragment set:html={ic('ort')} />Deutschland</li>
       </ul>
       <p class="fuss-symbole">
-        <a href="/texte/" aria-label="Alle Texte" title="Alle Texte"><Fragment set:html={ic('text')} /></a>
+        <a href="/texte/" aria-label="Sammlung" title="Sammlung"><Fragment set:html={ic('text')} /></a>
         <a href="/demnaechst/" aria-label="Demnächst" title="Demnächst"><Fragment set:html={ic('kalender')} /></a>
         <a href="/archiv/" aria-label="Archiv" title="Archiv"><Fragment set:html={ic('rueckblick')} /></a>
         <a href="/wie-ich-werte/" aria-label="Wie ich werte" title="Wie ich werte"><Fragment set:html={ic('waage')} /></a>
       </p>
     </div>
 
-    <nav class="fuss-spalte" aria-label="Lesen"><h2>Lesen</h2><a href="/">Neueste</a><a href="/texte/">Alle Texte</a><a href="/texte/?textform=test">Tests</a><a href="/texte/?textform=kurzkritik">Kurzkritiken</a></nav>
+    <nav class="fuss-spalte" aria-label="Lesen"><h2>Lesen</h2><a href="/">Neueste</a><a href="/texte/">Sammlung</a><a href="/texte/?textform=test">Tests</a><a href="/texte/?textform=kurzkritik">Kurzkritiken</a></nav>
     <nav class="fuss-spalte" aria-label="Termine"><h2>Termine</h2><a href="/demnaechst/">Demnächst</a><a href="/demnaechst/?f=kino">Kinostarts</a><a href="/demnaechst/?f=serie">Serienstarts</a></nav>
     <nav class="fuss-spalte" aria-label="Rückblick"><h2>Rückblick</h2><a href="/archiv/">Archiv</a><a href="/archiv/spiele/">Spiele A–Z</a><a href="/archiv/filme/">Filme A–Z</a><a href="/archiv/serien/">Serien A–Z</a></nav>
 
     <form class="fuss-suche" action="/texte/" method="get" role="search">
       <h2>Suchen</h2>
-      <p>Einen Titel unter allen Texten finden, ob Spiel, Film oder Serie.</p>
+      <p>Einen Titel in der Sammlung finden, ob Spiel, Film oder Serie.</p>
       <div class="fuss-feld">
         <label class="visually-hidden" for="fuss-q">Titel suchen</label>
         <input id="fuss-q" name="q" type="search" placeholder="Titel eingeben" autocomplete="off" required />

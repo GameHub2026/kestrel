@@ -55,7 +55,7 @@
 
   --gutter: max(22px, 4vw);
   --measure: 692px;
-  --bar: 48px;
+  --bar: 0px;              /* keine Leiste oben mehr: die Navigation sitzt links bzw. unten */
   --kante: calc(96px + env(safe-area-inset-bottom)); /* Höhe des Unschärfe-Verlaufs unten */
   --radius: 18px;
   --radius-lg: 28px;
