@@ -1,7 +1,7 @@
 ---
 // Unschärfe-Verlauf, immer am unteren Bildschirmrand: Inhalt, der unten aus dem Bild läuft, verschwimmt stufenweise
 // (wie Apples „Scroll Edge Effect“). Sechs Ebenen mit wachsender Unschärfe, jede nur in ihrem Streifen sichtbar.
-// Der Footer hat unten genau so viel Luft, dass seine letzte Zeile am Seitenende über dem Verlauf scharf steht.
+// Über dem Footer übernimmt der Schleier dessen Farbe (--kante-ton, gesetzt in Fuss.astro).
 ---
 <div class="kante" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
 
@@ -19,10 +19,10 @@
   .kante i:nth-child(6) { -webkit-backdrop-filter: blur(16px); backdrop-filter: blur(16px); --m: linear-gradient(to bottom, transparent 62.5%, #000 75%, #000 100%); }
   .kante i { -webkit-mask-image: var(--m); mask-image: var(--m); }
   /* leichter Schleier in der Seitenfarbe, damit der Rand weich ausläuft */
-  .kante::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--ground) 55%, transparent)); }
+  .kante::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, transparent, color-mix(in srgb, var(--kante-ton, var(--ground)) 55%, transparent)); transition: background 400ms var(--ease); }
 
   @media (prefers-reduced-transparency: reduce) {
     .kante i { display: none; }
-    .kante::after { background: linear-gradient(to bottom, transparent, var(--ground)); }
+    .kante::after { background: linear-gradient(to bottom, transparent, var(--kante-ton, var(--ground))); }
   }
 </style>
