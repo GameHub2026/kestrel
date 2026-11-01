@@ -18,9 +18,8 @@ Regeln: Nur diese Datei ändern, maximal 40 Zeilen, Veraltetes streichen. Dateie
 ## Offen
 - `archiv-hell.jpeg` zeigt ein echtes Super-Mario-Modul (Nintendo-Logo) und eine Fujifilm-Dose; auf Kevins Wunsch trotzdem veröffentlicht. Bei Bedarf gleichnamig ersetzen.
 - Logo: keine Datei mit Schriftzug als Pfad, keine Markenrecherche (DPMA/EUIPO).
-- Entwürfe von Kevin, nicht von mir committet: Gears of War E Day (jetzt `entwurf: true`), Dune Awakening (Interview angefangen).
+- Kevins Texte (Gears of War E Day, Dune Awakening, Cover Our Flag Means Death) bearbeitet er noch selbst und veröffentlicht sie dann. Nicht anfassen, nicht mitcommitten.
 - Bildstrecke: Bilder sind kein 4K; schärfere Fassungen gleichnamig in `src/assets/reel/` ersetzen.
-- `.impeccable/` (design.json usw.) beschreibt noch das alte Papier-/Kinokarten-Design.
 
 ## Entscheidungen
 <!-- Format: Entscheidung – kurze Begründung -->
@@ -28,6 +27,7 @@ Regeln: Nur diese Datei ändern, maximal 40 Zeilen, Veraltetes streichen. Dateie
 - Medienfarben wie Apple-Watch-Ringe: Film rot, Spiel grün, Serie türkis – Blau bleibt für Links und Knöpfe.
 - Wertung als Ring, gefüllt bis zur Zahl – zeigt die eine Skala auf einen Blick.
 - Logo „Ring“ statt Falkensilhouette – verbindet den Wertungsring mit dem Turmfalken; einfarbig für Hell/Dunkel; Bartstreif weggelassen, las sich als „i“.
+- Design kommt aus dem Apple-Skill (`apple-design`), nicht aus impeccable – `.impeccable/` ist veraltet und bleibt unbeachtet.
 - Systemschrift (SF Pro), Inter als Ersatz außerhalb von Apple-Geräten.
 - Bildstrecke über natürliches Scrollen mit sanftem Einrasten statt abgefangenem Mausrad – Tastatur, Touch und reduzierte Bewegung funktionieren normal.
 - Kürzel ⌥1–⌥6 statt ⌘1–⌘5 wie im Video – ⌘-Ziffern wechseln im Browser die Tabs.
