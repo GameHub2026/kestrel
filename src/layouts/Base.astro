@@ -29,7 +29,10 @@ const canonical = new URL(path, Astro.site);
     <meta property="og:locale" content="de_DE" />
     <meta name="theme-color" content="#fafafc" media="(prefers-color-scheme: light)" data-hell />
     <meta name="theme-color" content="#161617" media="(prefers-color-scheme: dark)" data-dunkel />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {privat && <meta name="robots" content="noindex, nofollow" />}
     <script is:inline>

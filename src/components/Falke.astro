@@ -1,0 +1,9 @@
+---
+// Logo „Ring“: Der Wertungsring läuft oben rechts in einen Hakenschnabel aus, der Punkt ist das Auge.
+// Master und alle Varianten liegen in /marke. Farbe kommt aus currentColor.
+interface Props { class?: string; titel?: string }
+const { class: klasse, titel } = Astro.props;
+---
+<svg class={klasse} viewBox="21 28 214 194" fill="currentColor" role={titel ? 'img' : undefined} aria-label={titel} aria-hidden={titel ? undefined : 'true'}>
+  <path fill-rule="evenodd" d="M191.54 186.77A96.10 96.10 0 1 1 168.85 43.50C198.53 38.20 226.43 56.80 232.62 90.90C234.18 100.20 234.18 109.50 231.07 118.80C224.88 106.40 214.03 97.10 198.53 94.00C189.22 84.70 179.93 78.50 155.71 64.53A71.30 71.30 0 1 0 172.54 170.83ZM142.72 103.30a12.40 12.40 0 1 0 24.80 0a12.40 12.40 0 1 0 -24.80 0Z" />
+</svg>

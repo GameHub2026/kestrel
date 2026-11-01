@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Ticket from '../components/Ticket.astro';
+import Falke from '../components/Falke.astro';
 import Reel, { type Karte } from '../components/Reel.astro';
 import { alleTexte, url, jahr } from '../lib';
 import termine from '../data/demnaechst.json';
@@ -14,16 +15,15 @@ const saetze = [
   'Sehe ich etwas später anders, kommt ein datierter Nachtrag dazu. So bleibt sichtbar, wie ein Eindruck gewachsen ist.',
 ];
 
-// Drei Ringe wie bei der Apple Watch: je Medium füllt sich der Ring bis zur durchschnittlichen Wertung (auf ganze Zahlen gerundet).
+// Je Medium: Anzahl der Texte und durchschnittliche Wertung (auf ganze Zahlen gerundet).
 const medien = [
   { key: 'spiel', name: 'Spiele', href: '/texte/?medium=spiel' },
   { key: 'film', name: 'Filme', href: '/texte/?medium=film' },
   { key: 'serie', name: 'Serien', href: '/texte/?medium=serie' },
-].map((m, i) => {
+].map((m) => {
   const liste = texte.filter((t) => t.data.medium === m.key);
   const schnitt = liste.length ? Math.round(liste.reduce((s, t) => s + t.data.wertung, 0) / liste.length) : 0;
-  const r = 46 - i * 13;
-  return { ...m, anzahl: liste.length, schnitt, r, u: 2 * Math.PI * r };
+  return { ...m, anzahl: liste.length, schnitt };
 });
 
 // Große Bildstrecke unter dem Kopf: je Medium eine Karte, dazu Termine und Archiv
@@ -47,14 +47,7 @@ const karten: Karte[] = [
 ---
 <Base>
   <section class="held wrap" aria-labelledby="held-h">
-    <svg class="ringe" viewBox="0 0 110 110" aria-hidden="true">
-      {medien.map((m) => (
-        <g data-medium={m.key}>
-          <circle class="spur" cx="55" cy="55" r={m.r} />
-          <circle class="wert" cx="55" cy="55" r={m.r} style={`--u:${m.u.toFixed(2)}; --voll:${(m.u * (1 - m.schnitt / 10)).toFixed(2)}`} />
-        </g>
-      ))}
-    </svg>
+    <Falke class="falke" />
     <p class="held-marke"><span id="held-marke">Kestrel</span></p>
     <h1 id="held-h">Ehrlich bewertet.</h1>
     <p class="unter">Was ich spiele und schaue. Eine Skala von 1 bis 10, gleich für alle drei Medien.</p>
@@ -162,13 +155,9 @@ const karten: Karte[] = [
 
 <style>
   .held { text-align: center; padding-top: clamp(48px, 8vw, 96px); padding-bottom: clamp(40px, 6vw, 72px); }
-  .ringe { width: clamp(132px, 16vw, 176px); height: auto; display: block; margin: 0 auto 28px; transform: rotate(-90deg); overflow: visible; }
-  .ringe circle { fill: none; stroke: var(--akzent); stroke-width: 11.5; stroke-linecap: round; }
-  .ringe .spur { opacity: 0.2; }
-  .ringe .wert { stroke-dasharray: var(--u); stroke-dashoffset: var(--voll); animation: zieh 1600ms cubic-bezier(0.22, 1, 0.36, 1) both; }
-  .ringe g:nth-child(2) .wert { animation-delay: 120ms; }
-  .ringe g:nth-child(3) .wert { animation-delay: 240ms; }
-  @keyframes zieh { from { stroke-dashoffset: var(--u); } }
+  .held :global(.falke) { width: clamp(84px, 9vw, 112px); height: auto; display: block; margin: 0 auto 24px; color: var(--ink); animation: schweb 1200ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  @keyframes schweb { from { opacity: 0; transform: translateY(14px) scale(0.96); } }
+  @media (prefers-reduced-motion: reduce) { .held :global(.falke) { animation: none; } }
 
   .held-marke { margin: 0 0 10px; }
   .held-marke span, :global(.marke-flug) { display: inline-block; font-size: clamp(30px, 3.6vw, 44px); font-weight: 600; letter-spacing: -0.02em; line-height: 1; white-space: nowrap; }
