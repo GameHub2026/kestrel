@@ -27,14 +27,14 @@ const canonical = new URL(path, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="de_DE" />
-    <meta name="theme-color" content="#fafafc" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#161617" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafafc" media="(prefers-color-scheme: light)" data-hell />
+    <meta name="theme-color" content="#161617" media="(prefers-color-scheme: dark)" data-dunkel />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="sitemap" href="/sitemap-index.xml" />
     {privat && <meta name="robots" content="noindex, nofollow" />}
     <script is:inline>
-      // Frühere Hell/Dunkel-Wahl entfernen: die Seite folgt jetzt nur noch der Systemeinstellung.
-      try { localStorage.removeItem('kestrel-theme'); } catch (e) {}
+      // Hell/Dunkel vor dem ersten Zeichnen: gespeicherte Wahl, sonst Systemeinstellung.
+      try { var t = localStorage.getItem('kestrel-theme'); if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
     </script>
   </head>
   <body>

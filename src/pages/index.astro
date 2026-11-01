@@ -34,15 +34,15 @@ const kommend = (termine.eintraege as { datum: string; typ: string }[]).filter((
 const jahre = new Set(texte.map((t) => jahr(t.data.datum)));
 const karten: Karte[] = [
   { id: 'spiele', medium: 'spiel', eyebrow: 'Spiele', titel: 'Bis zum Abspann.', text: 'Tests und Ersteindrücke zu allem, was ich spiele. Von der ersten Stunde bis zur letzten Trophäe.',
-    fakten: [m.spiel.anzahl ? anz(m.spiel.anzahl, 'Text', 'Texte') : 'Erster Test folgt bald', 'Eine Skala von 1 bis 10'], schnitt: m.spiel.anzahl ? m.spiel.schnitt : undefined, href: '/texte/?medium=spiel', knopf: 'Spiele ansehen', fokus: '74% 55%' },
+    fakten: [m.spiel.anzahl ? anz(m.spiel.anzahl, 'Text', 'Texte') : 'Erster Test folgt bald', 'Eine Skala von 1 bis 10'], schnitt: m.spiel.anzahl ? m.spiel.schnitt : undefined, href: '/texte/?medium=spiel', knopf: 'Spiele ansehen', fokus: '74% 55%', fokusHell: '74% 60%' },
   { id: 'filme', medium: 'film', eyebrow: 'Filme', titel: 'Licht aus. Film ab.', text: 'Kritiken zu Kino und Streaming. Eine Zahl, ein Satz, und für wen es sich lohnt.',
-    fakten: [m.film.anzahl ? anz(m.film.anzahl, 'Text', 'Texte') : 'Erste Kritik folgt bald', 'Kino und Streaming'], schnitt: m.film.anzahl ? m.film.schnitt : undefined, href: '/texte/?medium=film', knopf: 'Filme ansehen', fokus: '48% 50%' },
+    fakten: [m.film.anzahl ? anz(m.film.anzahl, 'Text', 'Texte') : 'Erste Kritik folgt bald', 'Kino und Streaming'], schnitt: m.film.anzahl ? m.film.schnitt : undefined, href: '/texte/?medium=film', knopf: 'Filme ansehen', fokus: '48% 50%', fokusHell: '68% 55%' },
   { id: 'serien', medium: 'serie', eyebrow: 'Serien', titel: 'Nur noch eine Folge.', text: 'Von der ersten Folge bis zum Finale. Was sich lohnt, und was man getrost auslassen kann.',
-    fakten: [m.serie.anzahl ? anz(m.serie.anzahl, 'Text', 'Texte') : 'Erste Kritik folgt bald', 'Ganze Staffeln'], schnitt: m.serie.anzahl ? m.serie.schnitt : undefined, href: '/texte/?medium=serie', knopf: 'Serien ansehen', fokus: '80% 50%' },
+    fakten: [m.serie.anzahl ? anz(m.serie.anzahl, 'Text', 'Texte') : 'Erste Kritik folgt bald', 'Ganze Staffeln'], schnitt: m.serie.anzahl ? m.serie.schnitt : undefined, href: '/texte/?medium=serie', knopf: 'Serien ansehen', fokus: '80% 50%', fokusHell: '72% 50%' },
   { id: 'demnaechst', eyebrow: 'Demnächst', titel: 'Bald auf der Leinwand.', text: 'Kinostarts und neue Staffeln in Deutschland, jeden Tag aktuell.',
-    fakten: [anz(kommend.length, 'Termin', 'Termine'), anz(kommend.filter((e) => e.datum === heute).length, 'Start heute', 'Starts heute')], href: '/demnaechst/', knopf: 'Termine ansehen', fokus: '72% 50%' },
+    fakten: [anz(kommend.length, 'Termin', 'Termine'), anz(kommend.filter((e) => e.datum === heute).length, 'Start heute', 'Starts heute')], href: '/demnaechst/', knopf: 'Termine ansehen', fokus: '72% 50%', fokusHell: '72% 60%' },
   { id: 'archiv', eyebrow: 'Rückblick', titel: 'Alles bleibt stehen.', text: 'Das Archiv nach Jahr und Monat. Alte Wertungen werden nie geändert, nur ergänzt.',
-    fakten: [anz(texte.length, 'Text', 'Texte'), anz(jahre.size, 'Jahr', 'Jahre')], href: '/archiv/', knopf: 'Zum Archiv', fokus: '62% 50%' },
+    fakten: [anz(texte.length, 'Text', 'Texte'), anz(jahre.size, 'Jahr', 'Jahre')], href: '/archiv/', knopf: 'Zum Archiv', fokus: '62% 50%', fokusHell: '72% 55%' },
 ];
 ---
 <Base>
@@ -55,6 +55,7 @@ const karten: Karte[] = [
         </g>
       ))}
     </svg>
+    <p class="held-marke"><span id="held-marke">Kestrel</span></p>
     <h1 id="held-h">Ehrlich bewertet.</h1>
     <p class="unter">Was ich spiele und schaue. Eine Skala von 1 bis 10, gleich für alle drei Medien.</p>
     <p class="knoepfe">
@@ -96,6 +97,52 @@ const karten: Karte[] = [
 </Base>
 
 <script>
+  // „Kestrel“ wandert beim Scrollen aus dem Seitenkopf an seinen Platz oben links in der Navigation.
+  // Eine Kopie fliegt fest über der Seite: Position und Größe gleiten von der Überschrift zur Navigation.
+  (() => {
+    const wort = document.getElementById('held-marke');
+    const ziel = document.getElementById('gn-wort');
+    const gn = document.getElementById('gn');
+    if (!wort || !ziel || !gn) return;
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { ziel.classList.remove('gn-wort--start'); return; }
+
+    const flug = document.createElement('div');
+    flug.className = 'marke-flug'; flug.setAttribute('aria-hidden', 'true'); flug.textContent = 'Kestrel';
+    document.body.append(flug);
+    wort.style.visibility = 'hidden';
+
+    let start = { top: 0, left: 0, fs: 1 }, end = { top: 0, left: 0, s: 1 }, weg = 1, geplant = false;
+    const miss = () => {
+      const r = wort.getBoundingClientRect(); const t = ziel.getBoundingClientRect();
+      const fs = parseFloat(getComputedStyle(wort).fontSize);
+      start = { top: r.top + scrollY, left: r.left, fs };
+      end = { top: t.top, left: t.left, s: parseFloat(getComputedStyle(ziel).fontSize) / fs };
+      flug.style.fontSize = `${fs}px`;
+      weg = Math.max(60, start.top - end.top);
+      zeichne();
+    };
+    const sanft = (p: number) => (p < 0.5 ? 4 * p * p * p : 1 - Math.pow(-2 * p + 2, 3) / 2);
+    const zeichne = () => {
+      geplant = false;
+      const p = Math.min(1, Math.max(0, scrollY / weg));
+      const e = sanft(p);
+      const yNatur = start.top - scrollY;
+      const y = yNatur + (end.top - yNatur) * e;
+      const x = start.left + (end.left - start.left) * e;
+      const sc = 1 + (end.s - 1) * e;
+      flug.style.transform = `translate3d(${x.toFixed(2)}px, ${y.toFixed(2)}px, 0) scale(${sc.toFixed(4)})`;
+      // Menü oder Suche offen: unterwegs ausblenden, damit nichts über dem Menü schwebt
+      const offen = gn.classList.contains('menue-offen') || gn.classList.contains('suche-offen');
+      flug.style.opacity = offen && p < 1 ? '0' : '1';
+    };
+    const plane = () => { if (!geplant) { geplant = true; requestAnimationFrame(zeichne); } };
+    addEventListener('scroll', plane, { passive: true });
+    addEventListener('resize', miss);
+    new MutationObserver(plane).observe(gn, { attributes: true, attributeFilter: ['class'] });
+    document.fonts?.ready.then(miss);
+    miss();
+  })();
+
   const woerter = [...document.querySelectorAll<HTMLElement>('[data-aufleuchten]')].flatMap((p) => {
     const teile = (p.textContent || '').split(/(\s+)/);
     p.replaceChildren(...teile.map((w) => { if (/^\s+$/.test(w)) return document.createTextNode(w); const s = document.createElement('span'); s.className = 'wort'; s.textContent = w; return s; }));
@@ -123,6 +170,12 @@ const karten: Karte[] = [
   .ringe g:nth-child(3) .wert { animation-delay: 240ms; }
   @keyframes zieh { from { stroke-dashoffset: var(--u); } }
 
+  .held-marke { margin: 0 0 10px; }
+  .held-marke span, :global(.marke-flug) { display: inline-block; font-size: clamp(30px, 3.6vw, 44px); font-weight: 600; letter-spacing: -0.02em; line-height: 1; white-space: nowrap; }
+  :global(.marke-flug) {
+    position: fixed; top: 0; left: 0; z-index: 52; pointer-events: none; color: var(--ink);
+    transform-origin: 0 0; will-change: transform; transition: opacity 200ms var(--ease);
+  }
   h1 { margin: 0; font-size: clamp(48px, 8vw, 96px); line-height: 1.04; font-weight: 600; letter-spacing: -0.015em; }
   .unter { margin: 14px auto 0; max-width: 24ch; font-size: clamp(21px, 2.6vw, 28px); line-height: 1.14; font-weight: 400; letter-spacing: 0.007em; text-wrap: balance; }
   .knoepfe { margin: 30px 0 0; display: flex; justify-content: center; align-items: center; gap: 14px 30px; flex-wrap: wrap; }
@@ -130,17 +183,15 @@ const karten: Karte[] = [
 
 
   .neu { margin-top: clamp(80px, 11vw, 140px); margin-bottom: clamp(64px, 9vw, 110px); }
-  .neu-eyebrow { margin: 0 0 12px; text-align: center; font-size: 17px; font-weight: 600; color: #bf4800; }
-  @media (prefers-color-scheme: dark) { .neu-eyebrow { color: #ff9f0a; } }
+  .neu-eyebrow { margin: 0 0 12px; text-align: center; font-size: 17px; font-weight: 600; color: var(--neu); }
 
   /* Manifest: schwarzes Band wie Apples Pro-Seiten, Wörter werden beim Scrollen hell */
-  .manifest { background: #000; color: #f5f5f7; padding: clamp(96px, 16vh, 180px) 0; }
+  .manifest { background: var(--manifest); color: #f5f5f7; padding: clamp(96px, 16vh, 180px) 0; }
   .manifest-innen { max-width: 820px; }
   .manifest p { margin: 0 0 0.9em; font-size: clamp(28px, 4vw, 48px); line-height: 1.12; letter-spacing: -0.005em; font-weight: 600; text-wrap: pretty; }
   .manifest :global(.wort) { color: #424245; transition: color 600ms var(--ease); }
   .manifest :global(.wort.an) { color: #f5f5f7; }
   .manifest .mehr { color: #2997ff; font-size: 21px; margin-top: 12px; }
-  @media (prefers-color-scheme: dark) { .manifest { background: var(--ground-2); } }
 
   .stack { margin-top: clamp(72px, 10vw, 120px); }
   .stack-kopf { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; margin-bottom: 24px; }

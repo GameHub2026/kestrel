@@ -85,6 +85,5 @@ const path = Astro.url.pathname;
     font-size: 14px; color: var(--ink); text-decoration: none; transition: background-color 200ms var(--ease), box-shadow 200ms var(--ease);
   }
   a:hover { text-decoration: none; background: color-mix(in srgb, var(--paper) 50%, transparent); }
-  a[aria-current='page'] { background: var(--paper); font-weight: 600; box-shadow: 0 1px 3px rgb(0 0 0 / 0.12), 0 0 0 0.5px rgb(0 0 0 / 0.04); }
-  @media (prefers-color-scheme: dark) { a[aria-current='page'] { background: #636366; } }
+  a[aria-current='page'] { background: var(--segment); font-weight: 600; box-shadow: 0 1px 3px rgb(0 0 0 / 0.12), 0 0 0 0.5px rgb(0 0 0 / 0.04); }
 </style>

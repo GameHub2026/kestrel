@@ -4,12 +4,15 @@ Regeln: Nur diese Datei ändern, maximal 40 Zeilen, Veraltetes streichen. Dateie
 
 ## Erledigt
 - 01.11.2026: Komplett-Redesign im Stil von apple.com, gepusht (Commit a951d97). Neu: `Nav.astro` (Glasleiste oben, Vollbild-Menü am Handy, Suche), `Ring.astro` (Wertungsring), Apple-Footer, Textseite im Newsroom-Stil mit Steckbrief als „Technische Daten“, neues Favicon (drei Ringe).
-- Entfernt: Seitenleiste `Pille.astro`, `Szene.astro` samt `src/scripts/szene/`, Hell/Dunkel-Schalter, Uhr, eigener Mauszeiger, Kupferstich-Footer.
+- Entfernt: Seitenleiste `Pille.astro`, `Szene.astro` samt `src/scripts/szene/`, alter Hell/Dunkel-Schalter (inzwischen neu in der Navigation), Uhr, eigener Mauszeiger, Kupferstich-Footer.
 - `Kante.astro`: Unschärfe-Verlauf, immer am unteren Bildschirmrand auf allen Seiten; Footer hat unten passenden Abstand (`--kante`).
 - `Reel.astro`: Bildstrecke auf der Startseite nach motionin.design „Cinema Reel“ (Spiele, Filme, Serien, Demnächst, Archiv). Bilder in `src/assets/reel/` (1672 × 941 px), Prompts in `src/assets/reel/_Bildprompts.md`, Bildausschnitt fürs Handy per `fokus` in `src/pages/index.astro`.
+- Hell/Dunkel-Schalter in der Navigation (Sonne/Mond), Wahl in localStorage `kestrel-theme`, sonst Systemeinstellung. Farben zentral in `global.css` (`:root`, dunkel per Media-Query und `[data-theme='dark']`). Helle Bildkarten: `spiele-hell.jpeg` usw. in `src/assets/reel/` (alle fünf eingelegt, 1376 × 768 px, eigener Handy-Ausschnitt per `fokusHell`), Prompts in `_Bildprompts.md`.
+- Startseite: „Kestrel“ steht über „Ehrlich bewertet.“ und gleitet beim Scrollen an seinen Platz oben links in der Navigation (Skript in `index.astro`, Ziel `#gn-wort` in `Nav.astro`). Alles gepusht am 01.11.2026.
 - `.claude/launch.json`: Startkonfiguration `kestrel` für die Vorschau (`npm run dev`, Port 4321).
 
 ## Offen
+- `archiv-hell.jpeg` zeigt ein echtes Super-Mario-Modul (Nintendo-Logo) und eine Fujifilm-Dose; auf Kevins Wunsch trotzdem veröffentlicht. Bei Bedarf gleichnamig ersetzen.
 - Online-Stand nach dem Push nicht im Browser geprüft (Cloudflare-Build lokal sauber nachgebaut).
 - `Gears of War E Day.md` steht lokal auf `entwurf: false` mit leeren Pflichtfeldern: lokaler Build und `npm run dev` brechen ab. Online gilt der Text noch als Entwurf.
 - Bildstrecke: Bilder sind kein 4K; schärfere Fassungen gleichnamig in `src/assets/reel/` ersetzen.
@@ -18,7 +21,7 @@ Regeln: Nur diese Datei ändern, maximal 40 Zeilen, Veraltetes streichen. Dateie
 
 ## Entscheidungen
 <!-- Format: Entscheidung – kurze Begründung -->
-- Kein Hell/Dunkel-Schalter, nur Systemeinstellung – Apple-Richtlinie, keine eigene Darstellungswahl; alte Wahl wird aus localStorage gelöscht.
+- Hell/Dunkel-Schalter doch wieder eingebaut – Kevins Wunsch; ohne Wahl gilt die Systemeinstellung.
 - Medienfarben wie Apple-Watch-Ringe: Film rot, Spiel grün, Serie türkis – Blau bleibt für Links und Knöpfe.
 - Wertung als Ring, gefüllt bis zur Zahl – Erkennungszeichen, zeigt die eine Skala auf einen Blick.
 - Systemschrift (SF Pro), Inter als Ersatz außerhalb von Apple-Geräten.

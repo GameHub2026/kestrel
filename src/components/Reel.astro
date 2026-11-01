@@ -3,6 +3,8 @@
 // die beim Scrollen weich nach oben gleiten. Die aktive Karte ist scharf, ihr Text kommt aus der Unschärfe;
 // die Nachbarn lugen oben und unten hervor, etwas kleiner und abgedunkelt. Rechts eine Punktleiste mit Zähler.
 // Bilder: Datei in src/assets/reel/ legen (spiele, filme, serien, demnaechst, archiv; .jpg/.png/.webp/.avif).
+// Helles Design: zusätzlich „spiele-hell.png“ usw. Dann blendet die Karte im hellen Design auf dieses Bild über
+// und zeigt dunkle Schrift. Ohne helles Bild bleibt die Karte auch im hellen Design dunkel.
 // Fehlt eine Datei, zeigt die Karte einen Farbverlauf. Prompts dazu stehen in src/assets/reel/_Bildprompts.md.
 import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
@@ -19,6 +21,7 @@ export interface Karte {
   href: string;
   knopf: string;
   fokus?: string;        // Bildausschnitt, z. B. "70% 50%"
+  fokusHell?: string;    // Bildausschnitt des hellen Bildes, falls das Motiv anders liegt
 }
 interface Props { karten: Karte[] }
 const { karten } = Astro.props;
@@ -33,13 +36,19 @@ const zwei = (n: number) => String(n).padStart(2, '0');
     <ol class="reel-spur">
       {karten.map((k, i) => {
         const bild = bildVon(k.id);
+        const hell = bildVon(`${k.id}-hell`);
         return (
-          <li class="reel-karte" data-art={k.id} data-medium={k.medium} style={k.fokus ? `--fokus:${k.fokus}` : undefined}>
+          <li class:list={['reel-karte', { 'hat-hell': hell }]} data-art={k.id} data-medium={k.medium} style={[k.fokus && `--fokus:${k.fokus}`, k.fokusHell && `--fokus-hell:${k.fokusHell}`].filter(Boolean).join(';') || undefined}>
             <div class="reel-bild">
               {bild
                 ? <Image src={bild} alt="" widths={[960, 1600, 2400, 3840]} sizes="(max-width: 700px) 100vw, 92vw" quality={82} loading={i === 0 ? 'eager' : 'lazy'} decoding="async" />
                 : <span class="reel-ersatz" aria-hidden="true"></span>}
             </div>
+            {hell && (
+              <div class="reel-bild reel-bild--hell">
+                <Image src={hell} alt="" widths={[960, 1600, 2400, 3840]} sizes="(max-width: 700px) 100vw, 92vw" quality={82} loading={i === 0 ? 'eager' : 'lazy'} decoding="async" />
+              </div>
+            )}
             <div class="reel-dunkel" aria-hidden="true"></div>
             <div class="reel-inhalt">
               <p class="reel-eyebrow">{k.eyebrow}</p>
@@ -123,9 +132,24 @@ const zwei = (n: number) => String(n).padStart(2, '0');
   .reel-spur { list-style: none; margin: 0 auto; padding: 0 var(--gutter); display: grid; gap: 16px; max-width: 1440px; }
   .reel-karte {
     position: relative; overflow: hidden; height: min(82svh, 860px); min-height: 460px;
-    border-radius: clamp(28px, 3.4vw, 48px); background: #0b0b0c; color: #f5f5f7; isolation: isolate;
+    border-radius: clamp(28px, 3.4vw, 48px); background: #0b0b0c; color: var(--r-ink); isolation: isolate;
     transform-origin: 50% 50%;
+    /* Farben der Karte: dunkel als Standard, helle Karten übernehmen die Werte des gewählten Designs */
+    --r-ink: #f5f5f7; --r-ink-2: rgb(245 245 247 / 0.86); --r-ink-3: rgb(245 245 247 / 0.7);
+    --r-boden: 0 0 0; --r-knopf: rgb(255 255 255 / 0.16); --r-knopf-ink: #fff; --r-akzent: var(--akzent, #f5f5f7);
   }
+  .reel-karte[data-art='demnaechst'] { --r-akzent: #ffb340; }
+  .reel-karte[data-art='archiv'] { --r-akzent: #a1a1a6; }
+  .reel-karte.hat-hell {
+    --r-ink: var(--reel-ink); --r-ink-2: var(--reel-ink-2); --r-ink-3: var(--reel-ink-3);
+    --r-boden: var(--reel-boden); --r-knopf: var(--reel-knopf); --r-knopf-ink: var(--reel-knopf-ink);
+    transition: color 600ms var(--ease);
+  }
+  .hat-hell[data-medium='spiel'] { --r-akzent: var(--reel-spiel); }
+  .hat-hell[data-medium='film'] { --r-akzent: var(--reel-film); }
+  .hat-hell[data-medium='serie'] { --r-akzent: var(--reel-serie); }
+  .hat-hell[data-art='demnaechst'] { --r-akzent: var(--reel-demnaechst); }
+  .hat-hell[data-art='archiv'] { --r-akzent: var(--reel-archiv); }
   .reel-punkte, .reel-rast { display: none; }
 
   /* Mit Bewegung: Bühne klebt, die Spur gleitet */
@@ -147,6 +171,9 @@ const zwei = (n: number) => String(n).padStart(2, '0');
     transform: translate3d(0, calc(var(--d, 0) * -9%), 0) scale(calc(1.04 + var(--a, 0) * 0.06)); will-change: transform;
   }
   .reel-ersatz { display: block; }
+  /* helles Bild liegt über dem dunklen und blendet beim Umschalten weich über */
+  .reel-bild--hell { opacity: var(--hell-an); transition: opacity 700ms var(--ease); }
+  .reel-bild--hell :global(img) { object-position: var(--fokus-hell, var(--fokus, 50% 50%)); }
   [data-art='spiele'] .reel-ersatz { background: radial-gradient(120% 90% at 78% 22%, #2b7a4b 0%, #0f3020 38%, #050c08 75%); }
   [data-art='filme'] .reel-ersatz { background: radial-gradient(120% 90% at 76% 18%, #a3342b 0%, #43110d 40%, #0b0303 78%); }
   [data-art='serien'] .reel-ersatz { background: radial-gradient(120% 90% at 74% 24%, #1d8a85 0%, #0b3634 40%, #030b0b 78%); }
@@ -157,9 +184,9 @@ const zwei = (n: number) => String(n).padStart(2, '0');
   .reel-dunkel {
     position: absolute; inset: 0; z-index: -1; pointer-events: none;
     background:
-      linear-gradient(to top, rgb(0 0 0 / 0.72), rgb(0 0 0 / 0.2) 45%, transparent 70%),
-      linear-gradient(to right, rgb(0 0 0 / 0.45), transparent 60%),
-      rgb(0 0 0 / calc(var(--a, 0) * 0.45));
+      linear-gradient(to top, rgb(var(--r-boden) / 0.72), rgb(var(--r-boden) / 0.2) 45%, transparent 70%),
+      linear-gradient(to right, rgb(var(--r-boden) / 0.45), transparent 60%),
+      rgb(var(--r-boden) / calc(var(--a, 0) * 0.45));
   }
 
   /* Text unten links: kommt aus der Unschärfe, sobald die Karte in der Mitte steht */
@@ -169,28 +196,26 @@ const zwei = (n: number) => String(n).padStart(2, '0');
     opacity: calc(1 - var(--a, 0) * 1.6); filter: blur(calc(var(--a, 0) * 16px));
     transform: translate3d(0, calc(var(--d, 0) * 40px), 0);
   }
-  .reel-eyebrow { margin: 0 0 8px; font-size: 17px; font-weight: 600; color: var(--akzent, #f5f5f7); }
-  .reel-karte[data-art='demnaechst'] .reel-eyebrow { color: #ffb340; }
-  .reel-karte[data-art='archiv'] .reel-eyebrow { color: #a1a1a6; }
+  .reel-eyebrow { margin: 0 0 8px; font-size: 17px; font-weight: 600; color: var(--r-akzent); }
   .reel-inhalt h2 { margin: 0; font-size: clamp(40px, 7vw, 96px); line-height: 1.02; font-weight: 600; letter-spacing: -0.015em; text-wrap: balance; }
-  .reel-text { margin: 14px 0 0; max-width: 32ch; font-size: clamp(19px, 2vw, 24px); line-height: 1.3; color: rgb(245 245 247 / 0.86); }
-  .reel-fakten { margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 14px; color: rgb(245 245 247 / 0.7); }
+  .reel-text { margin: 14px 0 0; max-width: 32ch; font-size: clamp(19px, 2vw, 24px); line-height: 1.3; color: var(--r-ink-2); }
+  .reel-fakten { margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 14px; color: var(--r-ink-3); }
   .reel-knopf {
     display: inline-flex; align-items: center; margin-top: 24px; min-height: 44px; padding: 0 22px; border-radius: 980px;
-    background: rgb(255 255 255 / 0.16); color: #fff; font-size: 17px; text-decoration: none;
+    background: var(--r-knopf); color: var(--r-knopf-ink); font-size: 17px; text-decoration: none;
     -webkit-backdrop-filter: blur(20px) saturate(180%); backdrop-filter: blur(20px) saturate(180%);
     box-shadow: inset 0 0 0 0.5px rgb(255 255 255 / 0.3); transition: background-color 200ms var(--ease);
   }
-  .reel-knopf:hover { background: rgb(255 255 255 / 0.26); text-decoration: none; }
-  .reel-knopf:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+  .reel-knopf:hover { background: color-mix(in srgb, var(--r-knopf) 60%, var(--r-knopf-ink) 14%); text-decoration: none; }
+  .reel-knopf:focus-visible { outline: 2px solid var(--r-ink); outline-offset: 3px; }
 
   /* Ring oben rechts wie die Wertungen in der Vorlage */
   .reel-ring {
     position: absolute; top: clamp(24px, 4vw, 52px); right: clamp(24px, 4vw, 56px); display: grid; justify-items: center; gap: 10px;
-    text-align: center; font-size: 12px; line-height: 1.3; color: rgb(245 245 247 / 0.8);
+    text-align: center; font-size: 12px; line-height: 1.3; color: var(--r-ink-2);
     opacity: calc(1 - var(--a, 0) * 1.6); filter: blur(calc(var(--a, 0) * 16px));
   }
-  .reel-ring :global(.zahl) { color: #fff; }
+  .reel-ring :global(.zahl) { color: var(--r-ink); }
   .reel-ring :global(.spur) { opacity: 0.3; }
 
   /* Punktleiste rechts */

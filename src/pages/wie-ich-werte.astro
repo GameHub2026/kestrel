@@ -39,9 +39,8 @@ const regeln = [
 <style>
   /* Die Skala als Raster aus Ringen in Apple-Blau: von 10 nach 1 wird der Ring kürzer */
   .skala { list-style: none; margin: 0 auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-  .skala li { --akzent: var(--blue); display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 18px; padding: 16px 22px 16px 16px; border-radius: var(--radius); background: var(--tile); }
+  .skala li { --akzent: var(--skala); display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 18px; padding: 16px 22px 16px 16px; border-radius: var(--radius); background: var(--tile); }
   .s { font-size: 17px; font-weight: 600; line-height: 1.3; text-wrap: balance; }
-  @media (prefers-color-scheme: dark) { .skala li { --akzent: #2997ff; } }
 
   .regeln { margin-top: clamp(64px, 9vw, 110px); }
   .regeln h2 { margin: 0 0 28px; font-size: clamp(32px, 4.4vw, 48px); line-height: 1.08; font-weight: 600; letter-spacing: -0.003em; }
