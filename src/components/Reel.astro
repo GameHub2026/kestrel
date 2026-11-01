@@ -1,0 +1,213 @@
+---
+// Bildstrecke nach der Vorlage „Cinema Reel“: eine Bühne über die ganze Bildschirmhöhe, darin riesige Bildkarten,
+// die beim Scrollen weich nach oben gleiten. Die aktive Karte ist scharf, ihr Text kommt aus der Unschärfe;
+// die Nachbarn lugen oben und unten hervor, etwas kleiner und abgedunkelt. Rechts eine Punktleiste mit Zähler.
+// Bilder: Datei in src/assets/reel/ legen (spiele, filme, serien, demnaechst, archiv; .jpg/.png/.webp/.avif).
+// Fehlt eine Datei, zeigt die Karte einen Farbverlauf. Prompts dazu stehen in src/assets/reel/_Bildprompts.md.
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import Ring from './Ring.astro';
+
+export interface Karte {
+  id: string;            // Dateiname des Bildes ohne Endung
+  medium?: string;       // spiel | film | serie: Farbe und Ring
+  eyebrow: string;
+  titel: string;
+  text: string;
+  fakten: string[];
+  schnitt?: number;      // Ring, wenn es schon Texte gibt
+  href: string;
+  knopf: string;
+  fokus?: string;        // Bildausschnitt, z. B. "70% 50%"
+}
+interface Props { karten: Karte[] }
+const { karten } = Astro.props;
+
+const dateien = import.meta.glob<{ default: ImageMetadata }>('../assets/reel/*.{jpg,jpeg,png,webp,avif}', { eager: true });
+const bildVon = (id: string) => Object.entries(dateien).find(([pfad]) => pfad.split('/').pop()!.replace(/\.\w+$/, '') === id)?.[1].default;
+const zwei = (n: number) => String(n).padStart(2, '0');
+---
+<section class="reel" id="reel" style={`--n:${karten.length}`} aria-label="Bereiche">
+  {karten.map((_, i) => <span class="reel-rast" style={`--i:${i}`} aria-hidden="true"></span>)}
+  <div class="reel-buehne">
+    <ol class="reel-spur">
+      {karten.map((k, i) => {
+        const bild = bildVon(k.id);
+        return (
+          <li class="reel-karte" data-art={k.id} data-medium={k.medium} style={k.fokus ? `--fokus:${k.fokus}` : undefined}>
+            <div class="reel-bild">
+              {bild
+                ? <Image src={bild} alt="" widths={[960, 1600, 2400, 3840]} sizes="(max-width: 700px) 100vw, 92vw" quality={82} loading={i === 0 ? 'eager' : 'lazy'} decoding="async" />
+                : <span class="reel-ersatz" aria-hidden="true"></span>}
+            </div>
+            <div class="reel-dunkel" aria-hidden="true"></div>
+            <div class="reel-inhalt">
+              <p class="reel-eyebrow">{k.eyebrow}</p>
+              <h2>{k.titel}</h2>
+              <p class="reel-text">{k.text}</p>
+              <p class="reel-fakten">{k.fakten.map((f) => <span>{f}</span>)}</p>
+              <a class="reel-knopf" href={k.href}>{k.knopf}</a>
+            </div>
+            {k.medium && k.schnitt ? (
+              <div class="reel-ring">
+                <Ring wertung={k.schnitt} medium={k.medium} groesse={92} label={false} />
+                <span>im Schnitt<br />{k.schnitt} von 10</span>
+              </div>
+            ) : null}
+          </li>
+        );
+      })}
+    </ol>
+    <nav class="reel-punkte" aria-label="Bereich wählen">
+      <span class="reel-zahl" id="reel-jetzt">01</span>
+      {karten.map((k, i) => <button type="button" data-i={i} aria-label={`Zu ${k.eyebrow}`}></button>)}
+      <span class="reel-zahl">{zwei(karten.length)}</span>
+    </nav>
+  </div>
+</section>
+
+<script>
+  const reel = document.getElementById('reel');
+  if (reel && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    reel.classList.add('an');
+    const buehne = reel.querySelector<HTMLElement>('.reel-buehne')!;
+    const karten = [...reel.querySelectorAll<HTMLElement>('.reel-karte')];
+    const punkte = [...reel.querySelectorAll<HTMLButtonElement>('.reel-punkte button')];
+    const jetzt = document.getElementById('reel-jetzt')!;
+    const n = karten.length;
+    const bar = () => parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--bar')) || 48;
+    let geplant = false, aktiv = -1;
+
+    const zeichne = () => {
+      geplant = false;
+      const weg = reel.offsetHeight - buehne.offsetHeight;
+      const f = Math.min(1, Math.max(0, (bar() - reel.getBoundingClientRect().top) / Math.max(1, weg))) * (n - 1);
+      const S = buehne.clientHeight;
+      const H = karten[0].offsetHeight;
+      const schritt = H + S * 0.035;
+      karten.forEach((k, i) => {
+        const d = i - f;                       // Abstand zur Mitte, in Karten
+        const a = Math.min(1, Math.abs(d));
+        const y = (S - H) / 2 + d * schritt;
+        k.style.transform = `translate3d(0, ${y.toFixed(1)}px, 0) scale(${(1 - a * 0.06).toFixed(4)})`;
+        k.style.setProperty('--d', d.toFixed(4));
+        k.style.setProperty('--a', a.toFixed(4));
+        k.inert = a > 0.5;
+      });
+      const i = Math.round(f);
+      if (i !== aktiv) {
+        aktiv = i;
+        punkte.forEach((p, k) => p.toggleAttribute('aria-current', k === i));
+        jetzt.textContent = String(i + 1).padStart(2, '0');
+        // nächstes Bild vorladen, damit es beim Übergang schon da ist
+        [i, i + 1].forEach((k) => karten[k]?.querySelector('img')?.setAttribute('loading', 'eager'));
+      }
+    };
+    const plane = () => { if (!geplant) { geplant = true; requestAnimationFrame(zeichne); } };
+    addEventListener('scroll', plane, { passive: true });
+    addEventListener('resize', plane);
+    new ResizeObserver(plane).observe(buehne);
+    zeichne();
+
+    punkte.forEach((p) => p.addEventListener('click', () => {
+      const weg = reel.offsetHeight - buehne.offsetHeight;
+      const ziel = scrollY + reel.getBoundingClientRect().top - bar() + (Number(p.dataset.i) / (n - 1)) * weg;
+      scrollTo({ top: ziel, behavior: 'smooth' });
+    }));
+  }
+</script>
+
+<style>
+  /* Ohne Bewegung (reduzierte Bewegung, kein JS): Karten stehen einfach untereinander */
+  .reel { position: relative; margin: 0 auto; }
+  .reel-spur { list-style: none; margin: 0 auto; padding: 0 var(--gutter); display: grid; gap: 16px; max-width: 1440px; }
+  .reel-karte {
+    position: relative; overflow: hidden; height: min(82svh, 860px); min-height: 460px;
+    border-radius: clamp(28px, 3.4vw, 48px); background: #0b0b0c; color: #f5f5f7; isolation: isolate;
+    transform-origin: 50% 50%;
+  }
+  .reel-punkte, .reel-rast { display: none; }
+
+  /* Mit Bewegung: Bühne klebt, die Spur gleitet */
+  .reel.an { height: calc((var(--n) - 1) * 100svh + 100svh - var(--bar)); }
+  .reel.an .reel-rast { display: block; position: absolute; left: 0; width: 1px; height: 1px; top: calc(var(--i) * 100svh); scroll-snap-align: start; }
+  .reel.an .reel-buehne { position: sticky; top: var(--bar); height: calc(100svh - var(--bar)); overflow: hidden; }
+  .reel.an .reel-spur { display: block; position: absolute; inset: 0; padding: 0; max-width: none; }
+  .reel.an .reel-karte {
+    position: absolute; top: 0; left: max(var(--gutter), calc(50% - 720px)); right: max(var(--gutter), calc(50% - 720px));
+    height: 84%; min-height: 0; will-change: transform;
+  }
+  .reel.an .reel-punkte { display: grid; }
+  :global(html:has(.reel.an)) { scroll-snap-type: y proximity; }
+
+  /* Bild: füllt die Karte, verschiebt sich gegen die Bewegung (Parallaxe) */
+  .reel-bild { position: absolute; inset: 0; z-index: -2; }
+  .reel-bild :global(img), .reel-ersatz {
+    position: absolute; inset: -8% 0; width: 100%; height: 116%; object-fit: cover; object-position: var(--fokus, 50% 50%);
+    transform: translate3d(0, calc(var(--d, 0) * -9%), 0) scale(calc(1.04 + var(--a, 0) * 0.06)); will-change: transform;
+  }
+  .reel-ersatz { display: block; }
+  [data-art='spiele'] .reel-ersatz { background: radial-gradient(120% 90% at 78% 22%, #2b7a4b 0%, #0f3020 38%, #050c08 75%); }
+  [data-art='filme'] .reel-ersatz { background: radial-gradient(120% 90% at 76% 18%, #a3342b 0%, #43110d 40%, #0b0303 78%); }
+  [data-art='serien'] .reel-ersatz { background: radial-gradient(120% 90% at 74% 24%, #1d8a85 0%, #0b3634 40%, #030b0b 78%); }
+  [data-art='demnaechst'] .reel-ersatz { background: radial-gradient(120% 90% at 72% 20%, #c08a3e 0%, #4a2f12 40%, #0d0905 78%); }
+  [data-art='archiv'] .reel-ersatz { background: radial-gradient(120% 90% at 70% 24%, #6e6e78 0%, #26262b 42%, #08080a 80%); }
+
+  /* Lesbarkeit: dunkler Verlauf unten links; Nachbarkarten werden zusätzlich abgedunkelt */
+  .reel-dunkel {
+    position: absolute; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      linear-gradient(to top, rgb(0 0 0 / 0.72), rgb(0 0 0 / 0.2) 45%, transparent 70%),
+      linear-gradient(to right, rgb(0 0 0 / 0.45), transparent 60%),
+      rgb(0 0 0 / calc(var(--a, 0) * 0.45));
+  }
+
+  /* Text unten links: kommt aus der Unschärfe, sobald die Karte in der Mitte steht */
+  .reel-inhalt {
+    position: absolute; left: clamp(24px, 5vw, 64px); right: clamp(24px, 5vw, 64px); bottom: clamp(28px, 5vw, 60px);
+    max-width: 40rem;
+    opacity: calc(1 - var(--a, 0) * 1.6); filter: blur(calc(var(--a, 0) * 16px));
+    transform: translate3d(0, calc(var(--d, 0) * 40px), 0);
+  }
+  .reel-eyebrow { margin: 0 0 8px; font-size: 17px; font-weight: 600; color: var(--akzent, #f5f5f7); }
+  .reel-karte[data-art='demnaechst'] .reel-eyebrow { color: #ffb340; }
+  .reel-karte[data-art='archiv'] .reel-eyebrow { color: #a1a1a6; }
+  .reel-inhalt h2 { margin: 0; font-size: clamp(40px, 7vw, 96px); line-height: 1.02; font-weight: 600; letter-spacing: -0.015em; text-wrap: balance; }
+  .reel-text { margin: 14px 0 0; max-width: 32ch; font-size: clamp(19px, 2vw, 24px); line-height: 1.3; color: rgb(245 245 247 / 0.86); }
+  .reel-fakten { margin: 16px 0 0; display: flex; flex-wrap: wrap; gap: 4px 18px; font-size: 14px; color: rgb(245 245 247 / 0.7); }
+  .reel-knopf {
+    display: inline-flex; align-items: center; margin-top: 24px; min-height: 44px; padding: 0 22px; border-radius: 980px;
+    background: rgb(255 255 255 / 0.16); color: #fff; font-size: 17px; text-decoration: none;
+    -webkit-backdrop-filter: blur(20px) saturate(180%); backdrop-filter: blur(20px) saturate(180%);
+    box-shadow: inset 0 0 0 0.5px rgb(255 255 255 / 0.3); transition: background-color 200ms var(--ease);
+  }
+  .reel-knopf:hover { background: rgb(255 255 255 / 0.26); text-decoration: none; }
+  .reel-knopf:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+
+  /* Ring oben rechts wie die Wertungen in der Vorlage */
+  .reel-ring {
+    position: absolute; top: clamp(24px, 4vw, 52px); right: clamp(24px, 4vw, 56px); display: grid; justify-items: center; gap: 10px;
+    text-align: center; font-size: 12px; line-height: 1.3; color: rgb(245 245 247 / 0.8);
+    opacity: calc(1 - var(--a, 0) * 1.6); filter: blur(calc(var(--a, 0) * 16px));
+  }
+  .reel-ring :global(.zahl) { color: #fff; }
+  .reel-ring :global(.spur) { opacity: 0.3; }
+
+  /* Punktleiste rechts */
+  .reel-punkte {
+    position: absolute; right: max(6px, calc(var(--gutter) / 2 - 12px)); top: 50%; transform: translateY(-50%); z-index: 2;
+    justify-items: center; gap: 2px; font-size: 11px; font-variant-numeric: tabular-nums; color: var(--ink-2);
+  }
+  .reel-zahl { padding: 6px 0; }
+  .reel-punkte button { width: 24px; height: 22px; border: 0; padding: 0; background: none; cursor: pointer; display: grid; place-items: center; }
+  .reel-punkte button::before { content: ''; width: 5px; height: 5px; border-radius: 3px; background: var(--ink-3); transition: height 400ms var(--ease), background-color 300ms; }
+  .reel-punkte button[aria-current]::before { height: 16px; background: var(--ink); }
+  @media (min-width: 1500px) { .reel-punkte { right: calc(50% - 760px); } }
+
+  @media (max-width: 700px) {
+    .reel.an .reel-karte { height: 86%; }
+    .reel-ring { transform: scale(0.75); transform-origin: top right; }
+    .reel-text { font-size: 17px; }
+    .reel-punkte { display: none !important; }
+  }
+</style>

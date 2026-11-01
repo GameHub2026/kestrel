@@ -1,45 +1,37 @@
 ---
+import Ring from './Ring.astro';
 import { MEDIUM, TEXTFORM, SKALA } from '../wertung';
-import { nummer, url, type Text } from '../lib';
+import { url, type Text } from '../lib';
 
 interface Props { text: Text }
 const { text: t } = Astro.props;
 ---
 <li data-medium={t.data.medium}>
-  <a href={url(t)} class="stub-row">
-    <span class="s-nr mono">{nummer(t.nr)}</span>
-    <span class="s-title">{t.data.titel}</span>
-    <span class="s-kind mono">{MEDIUM[t.data.medium]} · {TEXTFORM[t.data.textform]}</span>
-    <span class="s-say">{SKALA[t.data.wertung]}</span>
-    <span class="s-score"><span class="display">{t.data.wertung}</span><span class="visually-hidden"> von 10</span></span>
+  <a href={url(t)} class="zeile">
+    <Ring wertung={t.data.wertung} medium={t.data.medium} groesse={44} label={false} />
+    <span class="z-text">
+      <span class="z-titel">{t.data.titel}</span>
+      <span class="z-art">{MEDIUM[t.data.medium]} · {TEXTFORM[t.data.textform]}</span>
+    </span>
+    <span class="z-satz"><span class="visually-hidden">Wertung {t.data.wertung} von 10: </span>{SKALA[t.data.wertung]}</span>
   </a>
 </li>
 
 <style>
-  /* Kartenkarton in der Medienfarbe (die Seite selbst nutzt --card sonst als Papier) */
-  li[data-medium='film'] { --card: var(--film); --card-ink: var(--film-ink); }
-  li[data-medium='serie'] { --card: var(--serie); --card-ink: var(--serie-ink); }
-  li[data-medium='spiel'] { --card: var(--spiel); --card-ink: var(--spiel-ink); }
   li { list-style: none; }
-  .stub-row {
-    display: grid; grid-template-columns: 5.2rem 1fr auto minmax(8rem, 12rem) 3.2rem; align-items: center; gap: 14px;
-    background: var(--card); color: var(--card-ink); text-decoration: none; border-radius: 4px;
-    padding: 8px 12px 8px 0; box-shadow: var(--shadow);
-    transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  .zeile {
+    position: relative; display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(8rem, 15rem); align-items: center; gap: 16px;
+    padding: 12px 44px 12px 14px; border-radius: 14px; background: var(--tile); color: var(--ink); text-decoration: none;
+    transition: transform 400ms var(--ease), box-shadow 400ms var(--ease);
   }
-  .stub-row:hover { transform: translateX(4px); box-shadow: var(--shadow-lift); }
-  .s-nr { font-size: 0.72rem; font-weight: 700; padding: 0 10px; border-right: 2px dashed color-mix(in srgb, var(--card-ink) 55%, transparent); align-self: stretch; display: grid; place-items: center; }
-  .s-title { font-family: var(--display); font-weight: 800; text-transform: uppercase; font-size: 1.3rem; line-height: 1; min-width: 0; }
-  .s-kind { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
-  .s-say { font-size: 0.8rem; line-height: 1.2; font-weight: 600; text-align: right; }
-  .s-score { text-align: right; }
-  .s-score .display { font-size: 2rem; line-height: 0.9; }
-
+  .zeile::after { content: ''; position: absolute; right: 20px; top: 50%; width: 7px; height: 7px; margin-top: -4px; border: solid var(--ink-3); border-width: 1.6px 1.6px 0 0; transform: rotate(45deg); }
+  .zeile:hover { transform: scale(1.008); box-shadow: var(--shadow-lift); text-decoration: none; }
+  .z-text { display: grid; gap: 1px; min-width: 0; }
+  .z-titel { font-size: 17px; font-weight: 600; line-height: 1.24; }
+  .z-art { font-size: 12px; color: var(--ink-2); }
+  .z-satz { font-size: 14px; line-height: 1.3; color: var(--ink-2); text-align: right; }
   @media (max-width: 720px) {
-    .stub-row { grid-template-columns: 4.4rem 1fr 2.6rem; row-gap: 3px; }
-    .s-kind { grid-column: 2; grid-row: 2; }
-    .s-say { grid-column: 2; grid-row: 3; text-align: left; }
-    .s-score { grid-column: 3; grid-row: 1 / 4; }
-    .s-nr { grid-row: 1 / 4; }
+    .zeile { grid-template-columns: auto minmax(0, 1fr); }
+    .z-satz { grid-column: 2; text-align: left; margin-top: -10px; font-size: 12px; }
   }
 </style>

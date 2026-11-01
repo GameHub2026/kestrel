@@ -1,12 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Szene from '../../components/Szene.astro';
 import { ic } from '../../icons';
 ---
 <Base title="Merkliste" privat description="Private Merkliste.">
 <div class="merk">
   <header class="page-head wrap">
-    <Szene thema="gewitter" />
     <div class="kopf-schild">
       <h1>Merkliste</h1>
       <p>Was ich spielen und schauen will. Termine halten sich selbst aktuell.</p>
@@ -375,39 +373,39 @@ import { ic } from '../../icons';
   .klapp { grid-column: 1 / -1; display: grid; grid-template-rows: 0fr; transition: grid-template-rows 420ms cubic-bezier(0.16, 1, 0.3, 1); cursor: default; }
   .eintrag.offen .klapp { grid-template-rows: 1fr; }
   .klapp-innen { overflow: hidden; min-height: 0; opacity: 0; transform: translateY(-6px); transition: opacity 300ms ease 60ms, transform 420ms cubic-bezier(0.16, 1, 0.3, 1); }
-  .eintrag.offen .klapp-innen { opacity: 1; transform: none; padding-top: 14px; margin-top: 10px; border-top: 1px dashed color-mix(in srgb, currentColor 35%, transparent); }
+  .eintrag.offen .klapp-innen { opacity: 1; transform: none; padding-top: 14px; margin-top: 10px; border-top: 1px solid color-mix(in srgb, currentColor 35%, transparent); }
   .klapp-innen > * { margin: 0 0 12px; }
-  .unter { font-style: italic; font-size: 1rem; }
+  .unter {  font-size: 1rem; }
   .genres { display: flex; flex-wrap: wrap; gap: 6px; }
-  .genre { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 999px; background: color-mix(in srgb, currentColor 14%, transparent); }
+  .genre { font-size: 0.7rem; letter-spacing: -0.01em; padding: 3px 8px; border-radius: 999px; background: color-mix(in srgb, currentColor 14%, transparent); }
   .handlung { font-size: 1rem; line-height: 1.55; max-width: 70ch; }
   .fakten { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px 20px; }
-  .fakten dt { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.75; }
+  .fakten dt { font-size: 0.68rem; letter-spacing: -0.01em; opacity: 0.75; }
   .fakten dd { margin: 2px 0 0; font-size: 0.95rem; }
-  .klapp-kopf { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.75; margin: 0 0 4px; }
+  .klapp-kopf { font-size: 0.7rem; letter-spacing: -0.01em; opacity: 0.75; margin: 0 0 4px; }
   .termine ol { list-style: none; margin: 0; padding: 0; font-size: 0.82rem; display: grid; gap: 2px; }
   .knoepfe { display: flex; gap: 10px; flex-wrap: wrap; }
-  .knoepfe .knopf { background: var(--ink); color: var(--ground); }
+  .knoepfe .knopf { background: var(--blue); color: #fff; }
   .knoepfe .knopf.leise { background: transparent; color: var(--ink); }
   .laed { opacity: 0.8; font-size: 0.8rem; }
 
   .zugang form, .suche { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
   input[type='password'], input[type='search'] {
-    font: inherit; font-size: 1.1rem; padding: 12px 14px; border-radius: 4px; border: 2px solid var(--ink);
+    font: inherit; font-size: 1.1rem; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--ink-3);
     background: var(--paper); color: var(--ink); flex: 1 1 280px; min-width: 0;
   }
   button, .knopf {
-    font-family: var(--display); font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase; font-size: 1.05rem;
-    border: 0; border-radius: 999px; height: 40px; padding: 2px 18px 0 14px; cursor: pointer; background: var(--ink); color: var(--ground);
+    font-family: var(--sans); font-weight: 400; letter-spacing: -0.016em; font-size: 15px;
+    border: 0; border-radius: 999px; height: 40px; padding: 0 18px 0 14px; cursor: pointer; background: var(--blue); color: #fff;
     text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
   }
   button:disabled { opacity: 0.55; cursor: default; }
-  .knopf.leise, .weg { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent); }
-  .knopf.leise:hover, .weg:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
+  .knopf.leise, .weg { background: transparent; color: var(--ink); box-shadow: none; background: var(--fill); }
+  .knopf.leise:hover, .weg:hover { background: color-mix(in srgb, var(--fill) 70%, var(--ink-3)); }
 
   .tabs { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
-  .tabs button { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent); height: 38px; }
-  .tabs button[aria-pressed='false']:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
+  .tabs button { background: transparent; color: var(--ink); box-shadow: none; background: var(--fill); height: 38px; }
+  .tabs button[aria-pressed='false']:hover { background: color-mix(in srgb, var(--fill) 70%, var(--ink-3)); }
   .tabs button[aria-pressed='true'] { box-shadow: none; }
   .tabs button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
 
@@ -415,20 +413,20 @@ import { ic } from '../../icons';
   .treffer, .liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; width: 100%; }
   .treffer-zeile, .eintrag {
     display: grid; grid-template-columns: 48px 1fr auto; gap: 14px; align-items: center;
-    background: var(--paper); border-radius: 4px; padding: 8px 12px 8px 8px; box-shadow: var(--shadow);
+    background: var(--paper); border-radius: 14px; padding: 8px 12px 8px 8px; box-shadow: var(--shadow);
   }
   .eintrag { border-left: 0; background: var(--card); color: var(--card-ink); box-shadow: inset 3px 0 0 var(--akzent), var(--shadow); grid-template-columns: 48px 1fr auto 18px; align-items: center; }
-  .poster { width: 48px; height: 68px; border-radius: 2px; background: color-mix(in srgb, currentColor 15%, transparent); overflow: hidden; display: block; }
+  .poster { width: 48px; height: 68px; border-radius: 8px; background: color-mix(in srgb, currentColor 15%, transparent); overflow: hidden; display: block; }
   .poster img { width: 100%; height: 100%; object-fit: cover; }
   .mitte { display: grid; gap: 3px; min-width: 0; }
-  .titel { font-family: var(--display); text-transform: uppercase; font-weight: 800; font-size: 1.25rem; line-height: 1; }
+  .titel { font-family: var(--display); font-weight: 600; font-size: 1.25rem; line-height: 1; }
   .info, .termin, details, .fehler { font-size: 0.78rem; }
   .termin { font-weight: 700; }
   details summary { cursor: pointer; }
   .alle { margin: 4px 0 0; padding-left: 1.1em; }
   .fehler { opacity: 0.85; }
   .rechts { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
-  .schalter { display: inline-flex; gap: 6px; align-items: center; font-family: var(--mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; cursor: pointer; }
+  .schalter { display: inline-flex; gap: 6px; align-items: center; font-family: var(--mono); font-size: 0.75rem; letter-spacing: -0.01em; cursor: pointer; }
   .schalter input { width: 18px; height: 18px; accent-color: var(--ink); }
   .weg { font-size: 0.85rem; height: 32px; padding: 2px 13px 0 10px; gap: 6px; }
   .weg .ic { width: 15px; height: 15px; }
@@ -446,39 +444,39 @@ import { ic } from '../../icons';
   .ansicht button { height: auto; gap: 0; padding: 7px 9px; background: transparent; color: var(--ink-2); box-shadow: none; border-radius: 999px; display: grid; place-items: center; }
   .ansicht button[aria-pressed='true'] { background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
   .ansicht svg, .auge svg, .plakette svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
-  .art { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 600; opacity: 0.85; }
+  .art { font-size: 0.66rem; letter-spacing: -0.01em; font-weight: 600; opacity: 0.85; }
 
   /* Auge */
   .auge { display: inline-flex; align-items: center; gap: 6px; font-size: 0.85rem; height: 32px; padding: 2px 13px 0 10px; background: var(--paper); color: var(--ink); box-shadow: var(--shadow); }
   .auge[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
   .auge[aria-pressed='true'] svg circle { fill: currentColor; }
   .auge svg { width: 16px; height: 16px; }
-  .plakette { display: inline-flex; align-items: center; gap: 5px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 700; opacity: 0.85; }
+  .plakette { display: inline-flex; align-items: center; gap: 5px; font-size: 0.7rem; letter-spacing: -0.01em; font-weight: 700; opacity: 0.85; }
   .plakette svg { width: 14px; height: 14px; }
   .plakette.hat-neues { opacity: 1; background: var(--ink); color: var(--ground); padding: 2px 8px 2px 6px; border-radius: 999px; width: max-content; }
 
   /* Neues */
   .neues { margin-bottom: 10px; }
   .neues-link { margin: 0 auto 16px; }
-  .neues-link a { display: inline-block; padding: 10px 14px; border-radius: 4px; background: var(--ink); color: var(--ground); text-decoration: none; font-family: var(--mono); font-size: 0.82rem; box-shadow: var(--shadow); }
+  .neues-link a { display: inline-block; padding: 10px 14px; border-radius: 14px; background: var(--ink); color: var(--ground); text-decoration: none; font-family: var(--mono); font-size: 0.82rem; box-shadow: var(--shadow); }
   .punkt-text { font-weight: 600; line-height: 1.35; }
   .neues-liste, .punkte { list-style: none; margin: 10px 0 0; padding: 0; display: grid; gap: 8px; }
-  .neues-liste .punkt { background: var(--paper); border-radius: 4px; box-shadow: var(--shadow); padding: 10px 14px; border-left: 4px solid var(--card); }
+  .neues-liste .punkt { background: var(--paper); border-radius: 14px; box-shadow: var(--shadow); padding: 10px 14px; border-left: 4px solid var(--card); }
   .punkt { display: grid; gap: 2px; }
   .punkt a { color: inherit; font-weight: 600; line-height: 1.35; }
-  .punkt-art { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; opacity: 0.8; }
+  .punkt-art { font-size: 0.66rem; letter-spacing: -0.01em; font-weight: 700; opacity: 0.8; }
   .punkt-quelle { font-size: 0.72rem; opacity: 0.8; }
   .punkte .punkt.ist-neu .punkt-art::after { content: ' · neu'; }
 
   /* Kachelansicht */
   .liste.kacheln { grid-template-columns: repeat(auto-fill, minmax(158px, 1fr)); gap: 16px; }
   .kachel { display: grid; }
-  .kachel-knopf { all: unset; box-sizing: border-box; display: grid; grid-template-rows: auto 1fr; align-content: start; width: 100%; height: 100%; cursor: pointer; border-radius: 4px; overflow: hidden; background: var(--card); color: var(--card-ink); box-shadow: var(--shadow); transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 240ms ease; }
+  .kachel-knopf { all: unset; box-sizing: border-box; display: grid; grid-template-rows: auto 1fr; align-content: start; width: 100%; height: 100%; cursor: pointer; border-radius: 14px; overflow: hidden; background: var(--card); color: var(--card-ink); box-shadow: var(--shadow); transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 240ms ease; }
   .kachel-knopf:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); }
   .kachel-knopf:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
   .cover { position: relative; display: block; aspect-ratio: 2 / 3; background: color-mix(in srgb, currentColor 14%, transparent); }
   .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .cover-leer { position: absolute; inset: 0; display: grid; place-items: center; padding: 12px; text-align: center; font-family: var(--display); text-transform: uppercase; font-weight: 800; font-size: 1.2rem; }
+  .cover-leer { position: absolute; inset: 0; display: grid; place-items: center; padding: 12px; text-align: center; font-family: var(--display); font-weight: 600; font-size: 1.2rem; }
   .cover .plakette { position: absolute; top: 8px; right: 8px; background: rgb(10 12 14 / 0.72); color: #fff; padding: 4px 8px 4px 6px; border-radius: 999px; opacity: 1; backdrop-filter: blur(4px); }
   .cover .plakette.hat-neues { background: var(--card); color: var(--card-ink); box-shadow: 0 2px 8px rgb(0 0 0 / 0.35); }
   .kachel-unten { display: grid; gap: 3px; padding: 10px 11px 11px; }
@@ -487,11 +485,11 @@ import { ic } from '../../icons';
 
   /* Box der Kachelansicht */
   .kbox { width: min(680px, calc(100vw - 32px)); max-height: calc(100vh - 48px); overflow: auto; border: 0; border-radius: 8px; padding: 26px; background: var(--paper); color: var(--ink); box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.6); }
-  .kbox::backdrop { background: rgb(10 12 14 / 0.55); backdrop-filter: blur(4px); }
+  .kbox::backdrop { background: rgb(0 0 0 / 0.32); backdrop-filter: blur(4px); }
   .kbox[open] { animation: kbox-auf 320ms cubic-bezier(0.16, 1, 0.3, 1); }
   .kbox-zu { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; padding: 0; border-radius: 50%; justify-content: center; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
   .kbox-kopf { display: grid; grid-template-columns: 48px 1fr; gap: 14px; align-items: center; margin-bottom: 14px; padding-right: 36px; }
-  .kbox .rechts { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 10px 16px; padding-bottom: 14px; border-bottom: 1px dashed var(--rule); }
+  .kbox .rechts { flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 10px 16px; padding-bottom: 14px; border-bottom: 1px solid var(--rule); }
   .kbox .klapp-innen { opacity: 1; transform: none; padding-top: 14px; }
 
   @media (max-width: 560px) {

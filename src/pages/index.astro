@@ -1,9 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
 import Ticket from '../components/Ticket.astro';
-import Szene from '../components/Szene.astro';
-import { alleTexte, url } from '../lib';
-import { ic } from '../icons';
+import Reel, { type Karte } from '../components/Reel.astro';
+import { alleTexte, url, jahr } from '../lib';
+import termine from '../data/demnaechst.json';
 
 const texte = await alleTexte();
 const [neuester, ...rest] = texte;
@@ -13,134 +13,139 @@ const saetze = [
   'Eine Skala für Spiele, Filme und Serien. Jede Zahl bedeutet immer dasselbe, und alte Wertungen bleiben stehen.',
   'Sehe ich etwas später anders, kommt ein datierter Nachtrag dazu. So bleibt sichtbar, wie ein Eindruck gewachsen ist.',
 ];
+
+// Drei Ringe wie bei der Apple Watch: je Medium füllt sich der Ring bis zur durchschnittlichen Wertung (auf ganze Zahlen gerundet).
+const medien = [
+  { key: 'spiel', name: 'Spiele', href: '/texte/?medium=spiel' },
+  { key: 'film', name: 'Filme', href: '/texte/?medium=film' },
+  { key: 'serie', name: 'Serien', href: '/texte/?medium=serie' },
+].map((m, i) => {
+  const liste = texte.filter((t) => t.data.medium === m.key);
+  const schnitt = liste.length ? Math.round(liste.reduce((s, t) => s + t.data.wertung, 0) / liste.length) : 0;
+  const r = 46 - i * 13;
+  return { ...m, anzahl: liste.length, schnitt, r, u: 2 * Math.PI * r };
+});
+
+// Große Bildstrecke unter dem Kopf: je Medium eine Karte, dazu Termine und Archiv
+const anz = (n: number, eins: string, viele: string) => `${n} ${n === 1 ? eins : viele}`;
+const m = Object.fromEntries(medien.map((x) => [x.key, x]));
+const heute = new Date().toISOString().slice(0, 10);
+const kommend = (termine.eintraege as { datum: string; typ: string }[]).filter((e) => e.datum >= heute);
+const jahre = new Set(texte.map((t) => jahr(t.data.datum)));
+const karten: Karte[] = [
+  { id: 'spiele', medium: 'spiel', eyebrow: 'Spiele', titel: 'Bis zum Abspann.', text: 'Tests und Ersteindrücke zu allem, was ich spiele. Von der ersten Stunde bis zur letzten Trophäe.',
+    fakten: [m.spiel.anzahl ? anz(m.spiel.anzahl, 'Text', 'Texte') : 'Erster Test folgt bald', 'Eine Skala von 1 bis 10'], schnitt: m.spiel.anzahl ? m.spiel.schnitt : undefined, href: '/texte/?medium=spiel', knopf: 'Spiele ansehen', fokus: '74% 55%' },
+  { id: 'filme', medium: 'film', eyebrow: 'Filme', titel: 'Licht aus. Film ab.', text: 'Kritiken zu Kino und Streaming. Eine Zahl, ein Satz, und für wen es sich lohnt.',
+    fakten: [m.film.anzahl ? anz(m.film.anzahl, 'Text', 'Texte') : 'Erste Kritik folgt bald', 'Kino und Streaming'], schnitt: m.film.anzahl ? m.film.schnitt : undefined, href: '/texte/?medium=film', knopf: 'Filme ansehen', fokus: '48% 50%' },
+  { id: 'serien', medium: 'serie', eyebrow: 'Serien', titel: 'Nur noch eine Folge.', text: 'Von der ersten Folge bis zum Finale. Was sich lohnt, und was man getrost auslassen kann.',
+    fakten: [m.serie.anzahl ? anz(m.serie.anzahl, 'Text', 'Texte') : 'Erste Kritik folgt bald', 'Ganze Staffeln'], schnitt: m.serie.anzahl ? m.serie.schnitt : undefined, href: '/texte/?medium=serie', knopf: 'Serien ansehen', fokus: '80% 50%' },
+  { id: 'demnaechst', eyebrow: 'Demnächst', titel: 'Bald auf der Leinwand.', text: 'Kinostarts und neue Staffeln in Deutschland, jeden Tag aktuell.',
+    fakten: [anz(kommend.length, 'Termin', 'Termine'), anz(kommend.filter((e) => e.datum === heute).length, 'Start heute', 'Starts heute')], href: '/demnaechst/', knopf: 'Termine ansehen', fokus: '72% 50%' },
+  { id: 'archiv', eyebrow: 'Rückblick', titel: 'Alles bleibt stehen.', text: 'Das Archiv nach Jahr und Monat. Alte Wertungen werden nie geändert, nur ergänzt.',
+    fakten: [anz(texte.length, 'Text', 'Texte'), anz(jahre.size, 'Jahr', 'Jahre')], href: '/archiv/', knopf: 'Zum Archiv', fokus: '62% 50%' },
+];
 ---
 <Base>
-  <!-- Bühne: Neonstadt über die ganze Breite; beim Scrollen steigt der neueste Text zwischen den Ebenen auf -->
-  <section class="buehne" id="buehne" aria-label="Kestrel">
-    <div class="buehne-innen">
-      <Szene thema="stadt" art="buehne" />
-      <div class="buehne-text wrap">
-        <h1>Was ich spiele und schaue,<br />ehrlich bewertet.</h1>
-        <p class="lead">Wertung von 1 bis 10, gleich für alle drei Medien. Sehe ich etwas später anders, kommt ein Nachtrag dazu.</p>
-        <p class="knoepfe">
-          {neuester && <a class="knopf" href={url(neuester)}><Fragment set:html={ic('text')} /><span>Neuester Text</span></a>}
-          <a class="link" href="/texte/"><span>Alle Texte</span><Fragment set:html={ic('pfeil', 'ic pf')} /></a>
-        </p>
-      </div>
-      {neuester && (
-        <div class="buehne-fenster wrap">
-          <Ticket text={neuester} size="hero" />
-        </div>
-      )}
-    </div>
+  <section class="held wrap" aria-labelledby="held-h">
+    <svg class="ringe" viewBox="0 0 110 110" aria-hidden="true">
+      {medien.map((m) => (
+        <g data-medium={m.key}>
+          <circle class="spur" cx="55" cy="55" r={m.r} />
+          <circle class="wert" cx="55" cy="55" r={m.r} style={`--u:${m.u.toFixed(2)}; --voll:${(m.u * (1 - m.schnitt / 10)).toFixed(2)}`} />
+        </g>
+      ))}
+    </svg>
+    <h1 id="held-h">Ehrlich bewertet.</h1>
+    <p class="unter">Was ich spiele und schaue. Eine Skala von 1 bis 10, gleich für alle drei Medien.</p>
+    <p class="knoepfe">
+      {neuester && <a class="btn" href={url(neuester)}>Neuesten Text lesen</a>}
+      <a class="mehr" href="/texte/">Alle Texte</a>
+    </p>
   </section>
 
-  <!-- Satz für Satz: die Wörter leuchten auf, während man scrollt -->
+  <Reel karten={karten} />
+
+  {neuester && (
+    <section class="neu wrap" aria-labelledby="neu-h">
+      <h2 id="neu-h" class="visually-hidden">Neuester Text</h2>
+      <p class="neu-eyebrow">Neu</p>
+      <Ticket text={neuester} size="hero" headingLevel="h3" />
+    </section>
+  )}
+
+  <!-- Satz für Satz: die Wörter werden hell, während man scrollt -->
   <section class="manifest" aria-label="Über Kestrel">
     <div class="wrap manifest-innen">
       {saetze.map((s) => <p data-aufleuchten>{s}</p>)}
+      <a class="mehr" href="/wie-ich-werte/">So werte ich</a>
     </div>
   </section>
 
   {weitere.length > 0 && (
     <section class="stack wrap" aria-labelledby="stack-h">
-      <h2 id="stack-h" class="stack-h">Davor geschrieben</h2>
+      <div class="stack-kopf">
+        <h2 id="stack-h">Davor geschrieben.</h2>
+        <a class="mehr" href="/texte/">{texte.length > 1 ? `Alle ${texte.length} Texte` : 'Alle Texte'}</a>
+      </div>
       <ol class="stack-list">
         {weitere.map((t) => <li><Ticket text={t} headingLevel="h3" /></li>)}
       </ol>
     </section>
   )}
   {!neuester && <p class="empty wrap">Noch keine Texte. Der erste kommt bald.</p>}
-  {neuester && <p class="more wrap"><a href="/texte/"><span>{texte.length > 1 ? `Alle ${texte.length} Texte` : 'Alle Texte'}</span><Fragment set:html={ic('pfeil')} /></a></p>}
 </Base>
 
 <script>
-  const buehne = document.getElementById('buehne')!;
-  const sz = buehne.querySelector<HTMLElement>('[data-szene]');
-  let q = 0;
-  const verbinde = (s: any) => { s.scrollVersatz = (tiefe: number) => q * (1 - tiefe) * 70; };
-  if (sz) { if ((sz as any).szene) verbinde((sz as any).szene); else sz.addEventListener('szene-bereit', (e) => verbinde((e as CustomEvent).detail)); }
-
   const woerter = [...document.querySelectorAll<HTMLElement>('[data-aufleuchten]')].flatMap((p) => {
     const teile = (p.textContent || '').split(/(\s+)/);
     p.replaceChildren(...teile.map((w) => { if (/^\s+$/.test(w)) return document.createTextNode(w); const s = document.createElement('span'); s.className = 'wort'; s.textContent = w; return s; }));
     return [...p.querySelectorAll<HTMLElement>('.wort')];
   });
-
   let geplant = false;
   const rechne = () => {
     geplant = false;
-    const r = buehne.getBoundingClientRect();
-    q = Math.min(1, Math.max(0, -r.top / Math.max(1, r.height - innerHeight)));
-    buehne.style.setProperty('--q', q.toFixed(4));
-    // Wörter: hell, sobald sie die Linie bei 70 % der Fensterhöhe passieren
-    const linie = innerHeight * 0.7;
-    for (const w of woerter) { const y = w.getBoundingClientRect().top; w.classList.toggle('an', y < linie); }
+    const linie = innerHeight * 0.72;
+    for (const w of woerter) w.classList.toggle('an', w.getBoundingClientRect().top < linie);
   };
   addEventListener('scroll', () => { if (!geplant) { geplant = true; requestAnimationFrame(rechne); } }, { passive: true });
   addEventListener('resize', rechne);
+  addEventListener('load', rechne);
   rechne();
 </script>
 
 <style>
-  /* Bühne zieht sich unter die Kopfleiste; das Innere klebt, solange man durch die Bühne scrollt */
-  .buehne { --q: 0; position: relative; height: 185vh; margin-top: calc(-1 * var(--bar)); }
-  .buehne-innen { position: sticky; top: 0; height: 100vh; height: 100svh; overflow: hidden; }
-  .buehne-text {
-    position: relative; z-index: 3; text-align: center; padding-top: calc(var(--bar) + 13vh);
-    transform: translateY(calc(var(--q) * -12vh)); opacity: calc(1 - var(--q) * 1.5);
-    text-shadow: 0 1px 20px color-mix(in srgb, var(--ground) 70%, transparent);
-  }
-  /* Schleier: weiche Unschärfe hinter dem Text, damit er über der Szene gut lesbar bleibt */
-  .buehne-text::before {
-    content: ''; position: absolute; z-index: -1; left: 50%; top: calc(var(--bar) + 6vh); width: min(1100px, 96vw); height: min(440px, 58vh); transform: translateX(-50%);
-    -webkit-backdrop-filter: blur(9px) saturate(1.1); backdrop-filter: blur(9px) saturate(1.1);
-    background: radial-gradient(closest-side, color-mix(in srgb, var(--ground) 62%, transparent), color-mix(in srgb, var(--ground) 30%, transparent) 60%, transparent);
-    -webkit-mask-image: radial-gradient(closest-side, #000 55%, transparent); mask-image: radial-gradient(closest-side, #000 55%, transparent);
-  }
-  .buehne-text .kicker { margin-bottom: 18px; }
-  .buehne-text h1 { margin: 0; font-family: var(--display); font-weight: 900; text-transform: uppercase; font-size: clamp(2.8rem, 6.2vw, 5.4rem); line-height: 0.9; letter-spacing: 0; text-wrap: balance; }
-  .lead { margin: 18px auto 0; max-width: 46ch; color: var(--ink-2); font-size: clamp(0.95rem, 1.2vw, 1.05rem); line-height: 1.55; }
-  .knoepfe { margin: 26px 0 0; display: flex; justify-content: center; align-items: center; gap: 10px; flex-wrap: wrap; }
-  .knopf { display: inline-flex; align-items: center; gap: 9px; height: 44px; padding: 2px 22px 0 18px; border-radius: 999px; background: var(--ink); color: var(--ground); text-decoration: none; font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.1rem; text-shadow: none; }
-  .knopf:hover { opacity: 0.86; }
-  .link { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 2px 20px 0; border-radius: 999px; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 22%, transparent); background: color-mix(in srgb, var(--paper) 55%, transparent); color: var(--ink); font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.1rem; text-decoration: none; }
-  .link :global(.pf) { transition: transform 240ms cubic-bezier(0.16, 1, 0.3, 1); }
-  .link:hover :global(.pf) { transform: translateX(3px); }
-  .link:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
+  .held { text-align: center; padding-top: clamp(48px, 8vw, 96px); padding-bottom: clamp(40px, 6vw, 72px); }
+  .ringe { width: clamp(132px, 16vw, 176px); height: auto; display: block; margin: 0 auto 28px; transform: rotate(-90deg); overflow: visible; }
+  .ringe circle { fill: none; stroke: var(--akzent); stroke-width: 11.5; stroke-linecap: round; }
+  .ringe .spur { opacity: 0.2; }
+  .ringe .wert { stroke-dasharray: var(--u); stroke-dashoffset: var(--voll); animation: zieh 1600ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .ringe g:nth-child(2) .wert { animation-delay: 120ms; }
+  .ringe g:nth-child(3) .wert { animation-delay: 240ms; }
+  @keyframes zieh { from { stroke-dashoffset: var(--u); } }
 
-  /* Das Fenster: startet tief zwischen den Dächern und steigt beim Scrollen auf */
-  /* startet ganz unter dem Bildrand, steigt erst beim Scrollen auf */
-  .buehne-fenster {
-    position: absolute; z-index: 1; left: 0; right: 0; top: 54vh;
-    transform: translateY(calc((1 - var(--q)) * 60vh)) scale(calc(0.94 + var(--q) * 0.06));
-    transform-origin: 50% 100%;
-  }
-  .buehne-fenster :global(.ticket--hero) {
-    background: color-mix(in srgb, var(--paper) 90%, transparent); backdrop-filter: blur(14px) saturate(1.2);
-    box-shadow: 0 30px 80px -30px rgb(0 0 0 / 0.6), 0 0 0 1px var(--line);
-  }
+  h1 { margin: 0; font-size: clamp(48px, 8vw, 96px); line-height: 1.04; font-weight: 600; letter-spacing: -0.015em; }
+  .unter { margin: 14px auto 0; max-width: 24ch; font-size: clamp(21px, 2.6vw, 28px); line-height: 1.14; font-weight: 400; letter-spacing: 0.007em; text-wrap: balance; }
+  .knoepfe { margin: 30px 0 0; display: flex; justify-content: center; align-items: center; gap: 14px 30px; flex-wrap: wrap; }
+  .knoepfe .mehr { font-size: 17px; }
 
-  /* Manifest: dunkles Band, Wörter leuchten nacheinander auf */
-  .manifest { position: relative; z-index: 2; background: #0c0c0d; color: #f2f1ec; padding: clamp(80px, 14vh, 160px) 0; }
-  .manifest-innen { max-width: 860px; }
-  .manifest .kicker { color: #8f8b84; margin-bottom: 28px; }
-  .manifest p { margin: 0 0 1.1em; font-size: clamp(1.4rem, 2.7vw, 2.2rem); line-height: 1.3; letter-spacing: -0.025em; font-weight: 400; }
-  .manifest :global(.wort) { color: rgb(242 241 236 / 0.16); transition: color 500ms ease; }
-  .manifest :global(.wort.an) { color: rgb(242 241 236 / 1); }
 
-  .stack { margin-top: clamp(56px, 8vw, 96px); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr); gap: 24px 48px; }
-  .stack-h { font-family: var(--display); font-weight: 800; font-size: clamp(1.5rem, 2.4vw, 2rem); line-height: 1.1; letter-spacing: 0.01em; text-transform: uppercase; margin: 0; }
-  .stack-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
-  @media (max-width: 760px) {
-    .stack { grid-template-columns: 1fr; }
-    .buehne { height: 165vh; }
-    .buehne-text { padding-top: calc(var(--bar) + 8vh); }
-    .buehne-fenster { top: 50vh; }
-  }
-  .more { margin-top: 28px; font-family: var(--display); font-weight: 800; text-transform: uppercase; letter-spacing: 0.04em; font-size: 1.15rem; }
-  .more a { text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
-  .more a :global(.ic) { margin-top: -2px; }
-  .empty { padding-top: 48px; padding-bottom: 48px; font-size: 1.1rem; }
-  @media (prefers-reduced-motion: reduce) { .buehne { height: auto; } .buehne-innen { position: relative; } .buehne-fenster { position: relative; top: auto; transform: none; padding-bottom: 40px; } .manifest :global(.wort) { color: #f2f1ec; } }
+  .neu { margin-top: clamp(80px, 11vw, 140px); margin-bottom: clamp(64px, 9vw, 110px); }
+  .neu-eyebrow { margin: 0 0 12px; text-align: center; font-size: 17px; font-weight: 600; color: #bf4800; }
+  @media (prefers-color-scheme: dark) { .neu-eyebrow { color: #ff9f0a; } }
+
+  /* Manifest: schwarzes Band wie Apples Pro-Seiten, Wörter werden beim Scrollen hell */
+  .manifest { background: #000; color: #f5f5f7; padding: clamp(96px, 16vh, 180px) 0; }
+  .manifest-innen { max-width: 820px; }
+  .manifest p { margin: 0 0 0.9em; font-size: clamp(28px, 4vw, 48px); line-height: 1.12; letter-spacing: -0.005em; font-weight: 600; text-wrap: pretty; }
+  .manifest :global(.wort) { color: #424245; transition: color 600ms var(--ease); }
+  .manifest :global(.wort.an) { color: #f5f5f7; }
+  .manifest .mehr { color: #2997ff; font-size: 21px; margin-top: 12px; }
+  @media (prefers-color-scheme: dark) { .manifest { background: var(--ground-2); } }
+
+  .stack { margin-top: clamp(72px, 10vw, 120px); }
+  .stack-kopf { display: flex; align-items: baseline; justify-content: space-between; gap: 12px 24px; flex-wrap: wrap; margin-bottom: 24px; }
+  .stack-kopf h2 { margin: 0; font-size: clamp(32px, 4.4vw, 48px); line-height: 1.08; font-weight: 600; letter-spacing: -0.003em; }
+  .stack-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .empty { padding-top: 48px; padding-bottom: 48px; font-size: 21px; text-align: center; color: var(--ink-2); }
+  @media (prefers-reduced-motion: reduce) { .manifest :global(.wort) { color: #f5f5f7; } }
 </style>

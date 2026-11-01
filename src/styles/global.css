@@ -1,166 +1,147 @@
-@import '@fontsource-variable/big-shoulders-display';
-@import '@fontsource-variable/source-serif-4';
-@import '@fontsource-variable/source-serif-4/wght-italic.css';
-@import '@fontsource-variable/red-hat-mono';
+@import '@fontsource-variable/inter';
 
-/* Redaktionelles Papier: warmes Weiß, feine gestrichelte Raster, schlichte Schrift.
-   Medienfarben (Film rot, Serie blau, Spiel gelb) nur noch als kleine Akzente. */
+/* Kestrel im Stil von apple.com: Systemschrift (SF Pro auf Apple-Geräten, sonst Inter), Weiß und #f5f5f7 als Flächen,
+   Apple-Blau nur für Links und Knöpfe. Medienfarben wie die Aktivitätsringe der Apple Watch: Film rot, Spiel grün,
+   Serie türkis. Sie tauchen nur im Wertungsring und als kleiner Punkt auf. Hell und dunkel folgen dem System. */
 :root {
-  --film: #c8342b;
-  --serie: #1f5fa8;
-  --spiel: #d9a514;
-  --film-ink: #ffffff;
-  --serie-ink: #ffffff;
-  --spiel-ink: #17140c;
+  --film: #ff3b30;
+  --spiel: #34c759;
+  --serie: #00c7be;
 
-  --ground: #f4f2ed;        /* Papier */
-  --ground-2: #ebe8e1;
-  --paper: #fbfaf7;         /* Flächen, Karten */
-  --ink: #161616;
-  --ink-2: #6d6962;
-  --line: rgb(22 22 22 / 0.13);
-  --raster: rgb(22 22 22 / 0.16);
-  --rule: rgb(22 22 22 / 0.22);
-  --stamp: #7a1f8f;
-  --focus: #1f5fa8;
-  --shadow: 0 0 0 1px var(--line);
-  --shadow-lift: 0 0 0 1px rgb(22 22 22 / 0.28), 0 10px 28px -16px rgb(22 22 22 / 0.35);
+  --ground: #ffffff;        /* Seite */
+  --ground-2: #f5f5f7;      /* Bänder, Kacheln auf Weiß */
+  --paper: #ffffff;         /* Karten auf Grau */
+  --tile: #f5f5f7;
+  --ink: #1d1d1f;           /* 16,8:1 auf Weiß */
+  --ink-2: #6e6e73;         /* 5,1:1 auf Weiß, 4,6:1 auf #f5f5f7 */
+  --ink-3: #86868b;
+  --link: #0066cc;          /* 5,6:1 auf Weiß */
+  --blue: #0071e3;          /* Knopffläche, weiße Schrift 4,6:1 */
+  --blue-hover: #0077ed;
+  --fill: #e8e8ed;          /* Pillen, Segmente */
+  --line: #d2d2d7;
+  --hair: rgb(0 0 0 / 0.08);
+  --raster: var(--hair);
+  --rule: var(--line);
+  --stamp: var(--ink-2);
+  --focus: #0071e3;
+  --nav: rgb(250 250 252 / 0.8);
+  --shadow: 0 0 0 1px var(--hair);
+  --shadow-lift: 0 4px 24px rgb(0 0 0 / 0.08), 0 0 0 1px var(--hair);
 
-  /* Kartendruck (schmal, schwer, Versalien) · Stimme zum Lesen · Nummerator für Zahlen und Daten */
-  --display: 'Big Shoulders Display Variable', 'Arial Narrow', sans-serif;
-  --text: 'Source Serif 4 Variable', Georgia, serif;
-  --sans: var(--text);
-  --mono: 'Red Hat Mono Variable', ui-monospace, monospace;
+  --sans: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display', 'Inter Variable', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter Variable', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --text: var(--sans);
+  --mono: var(--sans);
 
-  --gutter: clamp(16px, 4vw, 48px);
-  --measure: 66ch;
-  --bar: 60px;
+  --gutter: max(22px, 4vw);
+  --measure: 692px;
+  --bar: 48px;
+  --kante: calc(96px + env(safe-area-inset-bottom)); /* Höhe des Unschärfe-Verlaufs unten */
+  --radius: 18px;
+  --radius-lg: 28px;
+  --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme='light']) {
-    --ground: #121211;
-    --ground-2: #1a1a18;
-    --paper: #191917;
-    --ink: #ecebe6;
-    --ink-2: #9b978f;
-    --line: rgb(236 235 230 / 0.12);
-    --raster: rgb(236 235 230 / 0.13);
-    --rule: rgb(236 235 230 / 0.24);
-    --stamp: #c98ad8;
-    --focus: #8fb8ee;
-    --shadow-lift: 0 0 0 1px rgb(236 235 230 / 0.3), 0 12px 30px -16px rgb(0 0 0 / 0.8);
+  :root {
+    --film: #ff453a;
+    --spiel: #30d158;
+    --serie: #63e6e2;
+    --ground: #000000;
+    --ground-2: #161617;
+    --paper: #1d1d1f;
+    --tile: #161617;
+    --ink: #f5f5f7;
+    --ink-2: #a1a1a6;       /* 8,0:1 auf Schwarz, 6,3:1 auf #1d1d1f */
+    --ink-3: #86868b;
+    --link: #2997ff;        /* 7,1:1 auf Schwarz */
+    --blue: #0071e3;
+    --blue-hover: #0077ed;
+    --fill: #2c2c2e;
+    --line: #424245;
+    --hair: rgb(255 255 255 / 0.1);
+    --focus: #2997ff;
+    --nav: rgb(22 22 23 / 0.8);
+    --shadow-lift: 0 4px 24px rgb(0 0 0 / 0.5), 0 0 0 1px var(--hair);
     color-scheme: dark;
   }
 }
-:root[data-theme='dark'] {
-  --ground: #121211;
-  --ground-2: #1a1a18;
-  --paper: #191917;
-  --ink: #ecebe6;
-  --ink-2: #9b978f;
-  --line: rgb(236 235 230 / 0.12);
-  --raster: rgb(236 235 230 / 0.13);
-  --rule: rgb(236 235 230 / 0.24);
-  --stamp: #c98ad8;
-  --focus: #8fb8ee;
-  --shadow-lift: 0 0 0 1px rgb(236 235 230 / 0.3), 0 12px 30px -16px rgb(0 0 0 / 0.8);
-  color-scheme: dark;
-}
 
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scrollbar-gutter: stable; overflow-x: clip; }
-body { overflow-x: clip; } /* kein Verrutschen zwischen kurzen und langen Seiten */
+html { -webkit-text-size-adjust: 100%; overflow-x: clip; scroll-padding-top: var(--bar); }
 body {
   margin: 0;
+  overflow-x: clip;
   background: var(--ground);
   color: var(--ink);
-  font: 400 1.0625rem/1.6 var(--text);
-  font-optical-sizing: auto;
+  font: 400 17px/1.47 var(--sans);
+  letter-spacing: -0.022em;
+  font-feature-settings: 'kern';
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 main { flex: 1; }
-::selection { background: var(--ink); color: var(--ground); }
-:focus-visible { outline: 2px solid var(--focus); outline-offset: 3px; border-radius: 2px; }
-a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.22em; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); }
-a:hover { text-decoration-color: currentColor; }
+::selection { background: color-mix(in srgb, var(--blue) 25%, transparent); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
 img { max-width: 100%; height: auto; display: block; }
-html { scrollbar-color: var(--ink-2) var(--ground); }
+h1, h2, h3, h4 { font-family: var(--display); }
 
-.wrap { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 var(--gutter); }
+.wrap { width: 100%; max-width: 1024px; margin: 0 auto; padding: 0 var(--gutter); }
+@media (min-width: 1069px) { .wrap { padding: 0; width: 980px; } }
 
-/* Medium: Karten bleiben Papier, die Medienfarbe wird zum Akzent (--akzent) */
 [data-medium] { --card: var(--paper); --card-ink: var(--ink); }
 [data-medium='film']  { --akzent: var(--film); }
 [data-medium='serie'] { --akzent: var(--serie); }
 [data-medium='spiel'] { --akzent: var(--spiel); }
 
-/* Raster: gestrichelte Senkrechte an den Rändern der Inhaltsspalte, wie auf einem Satzspiegel */
-body::before {
-  content: ''; position: fixed; inset: 0 0 0 0; margin: 0 auto; width: min(100%, 1180px); pointer-events: none; z-index: 0;
-  background:
-    repeating-linear-gradient(to bottom, var(--raster) 0 4px, transparent 4px 9px) left / 1px 100% no-repeat,
-    repeating-linear-gradient(to bottom, var(--raster) 0 4px, transparent 4px 9px) right / 1px 100% no-repeat;
-}
-main, footer { position: relative; z-index: 1; }
-.linie { border: 0; height: 1px; margin: 0; background: repeating-linear-gradient(to right, var(--raster) 0 4px, transparent 4px 9px); }
-.kicker { display: block; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 10px; }
-
-.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; letter-spacing: 0.02em; }
-.display { font-family: var(--display); font-weight: 800; line-height: 1.05; letter-spacing: 0.01em; text-transform: uppercase; }
+.linie { border: 0; height: 1px; margin: 0; background: var(--line); }
+.kicker { display: block; font-size: 12px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink-2); margin: 0 0 8px; }
+.mono { font-variant-numeric: tabular-nums; }
+.display { font-family: var(--display); font-weight: 600; letter-spacing: -0.003em; line-height: 1.05; }
 
 .visually-hidden {
   position: absolute; width: 1px; height: 1px; overflow: hidden;
   clip: rect(0 0 0 0); white-space: nowrap;
 }
 
-/* Seitenkopf „Leinwand und Titelschild“: oben läuft die Szene als Band über die ganze Breite, ohne Text darauf.
-   Titel, Untertitel und eine Faktenzeile stehen auf einem festen Papierschild im Kinokarten-Stil, das von unten
-   in die Leinwand ragt. Dadurch ist der Text auf jeder Szene lesbar und sitzt weit oben. */
-:root { --band: clamp(190px, 27vh, 290px); }
+/* Seitenkopf: große Überschrift links, Untertitel in Grau, darunter eine kleine Faktenzeile (wie Apples Store-Seiten) */
 .page-head {
-  position: relative; display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px 24px;
-  padding-top: max(16px, calc(var(--band) * 0.5 - var(--bar))); margin-bottom: 34px;
+  display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px 24px;
+  padding-top: clamp(44px, 7vw, 84px); margin-bottom: clamp(32px, 5vw, 52px);
 }
-.page-head > :not(.szene):not(.schleier) { position: relative; z-index: 1; }
-.kopf-schild {
-  position: relative; max-width: min(100%, 46rem); padding: 20px 28px 18px 38px; border-radius: 6px;
-  background: var(--paper); box-shadow: 0 0 0 1px var(--line), 0 22px 44px -24px rgb(0 0 0 / 0.5);
-}
-/* Perforation links wie bei den Kinokarten */
-.kopf-schild::before { content: ''; position: absolute; left: 16px; top: 12px; bottom: 12px; border-left: 2px dashed color-mix(in srgb, var(--ink) 20%, transparent); }
+.kopf-schild { max-width: 46rem; }
 .kopf-schild h1 {
-  font-family: var(--display); font-weight: 900; text-transform: uppercase; letter-spacing: 0; text-wrap: balance;
-  font-size: clamp(2.3rem, 4.4vw, 3.5rem); line-height: 0.9; margin: 0;
+  font-weight: 600; font-size: clamp(40px, 6vw, 64px); line-height: 1.0625; letter-spacing: -0.009em; margin: 0; text-wrap: balance;
 }
-.kopf-schild p { margin: 10px 0 0; max-width: 62ch; color: var(--ink-2); font-size: 1rem; line-height: 1.45; }
-.kopf-schild .kopf-fakt { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--rule); font-size: 0.74rem; letter-spacing: 0.03em; line-height: 1.4; }
+.kopf-schild p { margin: 10px 0 0; max-width: 40ch; color: var(--ink-2); font-size: clamp(21px, 2.4vw, 28px); line-height: 1.14; font-weight: 600; letter-spacing: 0.004em; text-wrap: balance; }
+.kopf-schild .kopf-fakt { max-width: none; margin-top: 16px; font-size: 14px; font-weight: 400; line-height: 1.43; letter-spacing: -0.016em; color: var(--ink-2); }
 .page-head > .kopf-rechts { margin-bottom: 4px; }
-@media (max-width: 760px) {
-  :root { --band: 150px; }
-  .kopf-schild { padding: 16px 18px 14px 30px; }
-  .kopf-schild::before { left: 12px; }
-}
 
 /* Abschnittsüberschriften auf allen Seiten gleich */
-.abschnitt { font-family: var(--display); font-weight: 800; letter-spacing: 0.04em; text-transform: uppercase; font-size: 1.5rem; line-height: 1; margin: 40px 0 14px; }
+.abschnitt { font-weight: 600; font-size: clamp(24px, 3vw, 32px); line-height: 1.125; letter-spacing: 0.004em; margin: 48px 0 16px; }
+
+/* Knöpfe wie bei Apple: blaue Pille, Sekundär als blau umrandete Pille; Text-Links mit Chevron */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px; min-height: 44px; padding: 0 22px;
+  border-radius: 980px; border: 0; background: var(--blue); color: #fff; font: 400 17px/1 var(--sans); letter-spacing: -0.022em;
+  cursor: pointer; text-decoration: none; transition: background-color 200ms var(--ease);
+}
+.btn:hover { background: var(--blue-hover); text-decoration: none; }
+.btn--sek { background: transparent; color: var(--link); box-shadow: inset 0 0 0 1px var(--link); }
+.btn--sek:hover { background: var(--link); color: #fff; }
+.mehr { display: inline-flex; align-items: center; gap: 2px; color: var(--link); font-size: 17px; }
+.mehr::after { content: ''; width: 7px; height: 7px; margin-left: 4px; border: solid currentColor; border-width: 1.5px 1.5px 0 0; transform: rotate(45deg); }
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
 
-/* kestrel-cursor: derselbe eigene Mauszeiger wie in GameHub */
-html, body { cursor: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2720%27 height=%2720%27 viewBox=%270 0 20 20%27%3E%3Cpath d=%27M2.5 2.5 L15.5 7.4 L9.9 9 L7.9 15 Z%27 fill=%27%23161e1a%27 stroke=%27%23fff%27 stroke-width=%271.8%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E") 2 2, default; }
-a, button, label, summary, [role='switch'] { cursor: pointer; }
-
-/* Weicher Übergang beim Umschalten Hell/Dunkel */
-html.theme-wechsel, html.theme-wechsel * { transition: background-color 400ms ease, color 400ms ease, border-color 400ms ease !important; }
-
-/* Icons und Knöpfe (Vorlage: dünne Linien-Icons im 24er-Raster, Knöpfe als Pille mit Icon vorne).
-   Ein Strich, eine Größe: jedes Knopf-Icon nutzt .ic. Die Seiten setzen Farbe und Füllung ihrer Knöpfe selbst. */
-.ic { width: 18px; height: 18px; flex: none; display: block; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
-.knopf .ic, button .ic { margin-top: -2px; }
+/* Icons: 24er-Raster, eine Linie. Die Seiten setzen Farbe und Füllung ihrer Knöpfe selbst. */
+.ic { width: 17px; height: 17px; flex: none; display: block; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }

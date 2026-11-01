@@ -1,13 +1,17 @@
 ---
 import Base from '../layouts/Base.astro';
-import Szene from '../components/Szene.astro';
 ---
 <Base title="Nicht gefunden">
-  <header class="page-head wrap">
-    <Szene thema="western" />
-    <div class="kopf-schild">
-      <h1>Karte verloren</h1>
-      <p>Diese Seite gibt es nicht (mehr). Versuch es bei <a href="/texte/">allen Texten</a> oder im <a href="/archiv/">Archiv</a>.</p>
-    </div>
-  </header>
+  <section class="weg wrap">
+    <h1>Diese Seite gibt es nicht.</h1>
+    <p>Vielleicht wurde sie verschoben. Der Text, den du suchst, steht sicher unter allen Texten oder im Archiv.</p>
+    <p class="knoepfe"><a class="btn" href="/texte/">Alle Texte</a><a class="mehr" href="/archiv/">Zum Archiv</a></p>
+  </section>
 </Base>
+
+<style>
+  .weg { text-align: center; padding-top: clamp(80px, 14vw, 160px); }
+  h1 { margin: 0; font-size: clamp(40px, 6vw, 64px); line-height: 1.07; font-weight: 600; letter-spacing: -0.009em; text-wrap: balance; }
+  p { margin: 16px auto 0; max-width: 32ch; font-size: 21px; line-height: 1.38; color: var(--ink-2); }
+  .knoepfe { margin-top: 32px; display: flex; justify-content: center; align-items: center; gap: 14px 30px; flex-wrap: wrap; max-width: none; }
+</style>

@@ -1,6 +1,5 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Szene from '../../components/Szene.astro';
 import Ticket from '../../components/Ticket.astro';
 import { MEDIUM, TEXTFORM } from '../../wertung';
 import { alleTexte, jahr } from '../../lib';
@@ -16,7 +15,6 @@ const gruppen = [
 ---
 <Base title="Alle Texte" description="Alle Tests, Kurzkritiken, Ersteindrücke und Rückblicke zu Spielen, Filmen und Serien, filterbar nach Medium, Textform und Jahr.">
   <header class="page-head wrap">
-    <Szene thema="mordor" />
     <div class="kopf-schild">
       <h1>Alle Texte</h1>
       <p>Filtern nach Medium, Textform oder Jahr.</p>
@@ -24,7 +22,7 @@ const gruppen = [
     </div>
   </header>
 
-  {texte.length === 0 && <p class="none wrap">Noch keine Karten im Album. Der erste Text kommt bald.</p>}
+  {texte.length === 0 && <p class="none wrap">Noch keine Texte. Der erste kommt bald.</p>}
   <form class="filter wrap" aria-label="Texte filtern" hidden={texte.length === 0}>
     {gruppen.map((g) => (
       <fieldset>
@@ -35,7 +33,7 @@ const gruppen = [
         ))}
       </fieldset>
     ))}
-    <p class="count mono" aria-live="polite"><button type="button" class="suche-chip" id="suche-chip" hidden></button><span id="anzahl">{texte.length}</span> von {texte.length} Karten</p>
+    <p class="count mono" aria-live="polite"><button type="button" class="suche-chip" id="suche-chip" hidden></button><span id="anzahl">{texte.length}</span> von {texte.length} Texten</p>
   </form>
 
   <ol class="list wrap" id="liste">
@@ -45,7 +43,7 @@ const gruppen = [
       </li>
     ))}
   </ol>
-  <p class="none wrap" id="leer" hidden>Keine Karte passt zu diesem Filter. <button type="button" id="reset"><Fragment set:html={ic('zurueck')} /><span>Filter zurücksetzen</span></button></p>
+  <p class="none wrap" id="leer" hidden>Kein Text passt zu diesem Filter. <button type="button" id="reset"><Fragment set:html={ic('zurueck')} /><span>Filter zurücksetzen</span></button></p>
 </Base>
 
 <script>
@@ -92,34 +90,31 @@ const gruppen = [
 
 <style>
   .filter[hidden] { display: none; }
-  .filter { display: flex; flex-wrap: wrap; gap: 18px 36px; align-items: end; margin-bottom: 32px; }
-  fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
-  legend { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-2); margin-bottom: 8px; font-weight: 600; }
+  .filter { display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: end; margin-bottom: 36px; }
+  fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+  legend { font-size: 12px; font-weight: 600; color: var(--ink-2); margin-bottom: 10px; padding: 0; }
   label { position: relative; cursor: pointer; }
   label input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
-  /* Jede Option ist ein kleiner Abriss; gewählt = gelocht */
+  /* Filter als Pillen wie im Apple Store: grau, gewählt dunkel */
   label span {
-    display: inline-flex; align-items: center; gap: 8px; height: 38px; font-family: var(--display); font-weight: 800;
-    letter-spacing: 0.01em; text-transform: uppercase; font-size: 1.05rem; padding: 2px 16px 0 13px; background: transparent; color: var(--ink);
-    border-radius: 999px; box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent);
-    transition: background-color 160ms, color 160ms, transform 200ms cubic-bezier(0.16, 1, 0.3, 1);
+    display: inline-flex; align-items: center; gap: 7px; min-height: 36px; padding: 0 16px 0 13px; border-radius: 980px;
+    background: var(--fill); color: var(--ink); font-size: 14px; letter-spacing: -0.016em;
+    transition: background-color 200ms var(--ease), color 200ms var(--ease);
   }
-  label span :global(.ic) { margin-top: -2px; opacity: 0.75; }
+  label span :global(.ic) { width: 15px; height: 15px; opacity: 0.7; }
+  label:hover input:not(:checked) + span { background: color-mix(in srgb, var(--fill) 70%, var(--ink-3)); }
   label input:checked + span { background: var(--ink); color: var(--ground); }
-  label input:checked + span { box-shadow: none; }
   label input:checked + span :global(.ic) { opacity: 1; }
-  label:hover input:not(:checked) + span { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
-  label[data-medium] input:checked + span { background: var(--ink); color: var(--ground); }
-  label input:focus-visible + span { outline: 3px solid var(--focus); outline-offset: 3px; }
-  .count { margin: 0 0 6px auto; font-size: 0.8rem; color: var(--ink-2); display: flex; align-items: center; gap: 10px; }
-  .suche-chip { font: inherit; font-size: 0.8rem; border: 0; cursor: pointer; padding: 5px 11px; border-radius: 999px; background: var(--ink); color: var(--ground); }
+  label input:focus-visible + span { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .count { margin: 0 0 8px auto; font-size: 14px; color: var(--ink-2); display: flex; align-items: center; gap: 10px; }
+  .suche-chip { font: inherit; font-size: 14px; border: 0; cursor: pointer; padding: 6px 13px; border-radius: 980px; background: var(--blue); color: #fff; }
   .suche-chip[hidden] { display: none; }
 
-  .list { list-style: none; margin: 0 auto; padding-top: 0; padding-bottom: 0; display: grid; gap: 14px; }
-  .none { padding-top: 32px; padding-bottom: 32px; font-size: 1.1rem; }
+  .list { list-style: none; margin: 0 auto; display: grid; gap: 14px; }
+  .none { padding-top: 32px; padding-bottom: 32px; font-size: 19px; color: var(--ink-2); }
   .none button {
-    font: inherit; font-family: var(--display); text-transform: uppercase; font-weight: 800; background: var(--ink); color: var(--ground);
-    border: 0; border-radius: 999px; height: 38px; padding: 2px 16px 0 13px; cursor: pointer; margin-left: 8px; display: inline-flex; align-items: center; gap: 8px; vertical-align: middle;
+    font: inherit; font-size: 17px; background: var(--blue); color: #fff; border: 0; border-radius: 980px; min-height: 40px; padding: 0 18px 0 14px;
+    cursor: pointer; margin-left: 8px; display: inline-flex; align-items: center; gap: 7px; vertical-align: middle;
   }
   @media (max-width: 720px) { .count { margin-left: 0; width: 100%; } }
 </style>

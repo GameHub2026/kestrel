@@ -1,0 +1,178 @@
+---
+// Globale Navigation wie auf apple.com: eine 48 px hohe Glasleiste oben, Marke links, Bereiche in der Mitte, Suche rechts.
+// Unter 834 px: Marke, Suche und ein Menüknopf; das Menü öffnet sich über den ganzen Bildschirm.
+// Merkliste und „Ich folge“ erscheinen nur auf Kevins Geräten (dort liegt der Merkliste-Schlüssel im Browser).
+const path = Astro.url.pathname;
+const punkte = [
+  { href: '/texte/', text: 'Texte', aktiv: path.startsWith('/texte') },
+  { href: '/texte/?medium=spiel', text: 'Spiele' },
+  { href: '/texte/?medium=film', text: 'Filme' },
+  { href: '/texte/?medium=serie', text: 'Serien' },
+  { href: '/demnaechst/', text: 'Demnächst', aktiv: path.startsWith('/demnaechst') },
+  { href: '/archiv/', text: 'Archiv', aktiv: path.startsWith('/archiv') },
+  { href: '/wie-ich-werte/', text: 'Wie ich werte', aktiv: path.startsWith('/wie-ich-werte') },
+  { href: '/merkliste/', text: 'Merkliste', privat: true, zaehler: 'merk', aktiv: path.startsWith('/merkliste') },
+  { href: '/serien/', text: 'Ich folge', privat: true, zaehler: 'serien', aktiv: path.startsWith('/serien') },
+];
+---
+<header class="gn" id="gn">
+  <nav class="gn-innen" aria-label="Hauptnavigation">
+    <a class="gn-marke" href="/" aria-label="Kestrel, Startseite">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" class="m-spur" /><path d="M12 3.5a8.5 8.5 0 1 1-8.08 11.13" class="m-wert" /></svg>
+      <span>Kestrel</span>
+    </a>
+    <ul class="gn-liste" id="gn-liste">
+      {punkte.map((p, i) => (
+        <li hidden={p.privat || undefined} data-privat={p.privat ? '' : undefined} data-zaehler={p.zaehler} style={`--i:${i}`}>
+          <a href={p.href} aria-current={p.aktiv ? 'page' : undefined}>{p.text}</a>
+        </li>
+      ))}
+    </ul>
+    <div class="gn-rechts">
+      <button type="button" class="gn-knopf" id="gn-suche-knopf" aria-label="Texte durchsuchen" aria-expanded="false" aria-controls="gn-suche">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg>
+      </button>
+      <button type="button" class="gn-knopf gn-menue" id="gn-menue" aria-label="Menü" aria-expanded="false" aria-controls="gn-liste">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <form class="gn-suche" id="gn-suche" action="/texte/" method="get" role="search" hidden>
+    <div class="gn-suche-innen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.8-4.8"/></svg>
+      <label class="visually-hidden" for="gn-q">Texte durchsuchen</label>
+      <input id="gn-q" name="q" type="search" placeholder="Texte durchsuchen" autocomplete="off" required />
+    </div>
+    <p class="gn-tipps"><span>Schnellzugriff</span><a href="/texte/">Alle Texte</a><a href="/demnaechst/">Demnächst im Kino</a><a href="/archiv/">Archiv nach Jahr</a></p>
+  </form>
+</header>
+<div class="gn-schleier" id="gn-schleier" hidden></div>
+
+<script>
+  const gn = document.getElementById('gn')!;
+  const menue = document.getElementById('gn-menue')!;
+  const sucheKnopf = document.getElementById('gn-suche-knopf')!;
+  const suche = document.getElementById('gn-suche') as HTMLFormElement;
+  const schleier = document.getElementById('gn-schleier')!;
+
+  const zu = () => {
+    gn.classList.remove('menue-offen', 'suche-offen');
+    menue.setAttribute('aria-expanded', 'false'); sucheKnopf.setAttribute('aria-expanded', 'false');
+    document.documentElement.classList.remove('gn-gesperrt');
+    schleier.classList.remove('an');
+    setTimeout(() => { if (!gn.classList.contains('suche-offen')) suche.hidden = true; if (!schleier.classList.contains('an')) schleier.hidden = true; }, 300);
+  };
+  menue.addEventListener('click', () => {
+    const auf = !gn.classList.contains('menue-offen');
+    zu(); if (!auf) return;
+    gn.classList.add('menue-offen'); menue.setAttribute('aria-expanded', 'true');
+    document.documentElement.classList.add('gn-gesperrt');
+  });
+  sucheKnopf.addEventListener('click', () => {
+    const auf = !gn.classList.contains('suche-offen');
+    zu(); if (!auf) return;
+    suche.hidden = false; schleier.hidden = false;
+    requestAnimationFrame(() => { gn.classList.add('suche-offen'); schleier.classList.add('an'); });
+    sucheKnopf.setAttribute('aria-expanded', 'true');
+    setTimeout(() => (document.getElementById('gn-q') as HTMLInputElement).focus(), 60);
+  });
+  schleier.addEventListener('click', zu);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') zu(); });
+
+  // Private Punkte und Zähler neuer Meldungen (10 Minuten zwischengespeichert)
+  (async () => {
+    let token = ''; try { token = localStorage.getItem('kestrel-merk-token') || ''; } catch {}
+    if (!token) return;
+    document.querySelectorAll<HTMLElement>('#gn [data-privat]').forEach((li) => (li.hidden = false));
+    let c: { t: number; n: number; merk?: number; serien?: number } | null = null;
+    try { c = JSON.parse(sessionStorage.getItem('kestrel-neu') || 'null'); if (!c || Date.now() - c.t > 600000 || c.merk == null) c = null; } catch {}
+    if (!c) {
+      try {
+        const r = await fetch('/api/merk/neues?anzahl=1', { headers: { 'x-merk-token': token } });
+        if (r.ok) { const d = await r.json(); c = { t: Date.now(), n: d.anzahl || 0, merk: d.merk || 0, serien: d.serien || 0 }; sessionStorage.setItem('kestrel-neu', JSON.stringify(c)); }
+      } catch {}
+    }
+    if (!c?.n) return;
+    document.querySelectorAll<HTMLElement>('#gn [data-zaehler]').forEach((li) => {
+      const k = (c as Record<string, number>)[li.dataset.zaehler || ''] || 0;
+      if (!k) return;
+      const a = li.querySelector('a')!;
+      const z = document.createElement('span'); z.className = 'gn-zahl'; z.textContent = String(k);
+      z.setAttribute('aria-label', `${k} neu`); a.append(z);
+    });
+  })();
+</script>
+
+<style>
+  .gn {
+    position: sticky; top: 0; z-index: 50; height: var(--bar);
+    background: var(--nav); -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+    transition: background-color 300ms var(--ease);
+  }
+  @media (prefers-reduced-transparency: reduce) { .gn { background: var(--ground-2); -webkit-backdrop-filter: none; backdrop-filter: none; } }
+  .gn-innen { position: relative; z-index: 2; height: 100%; max-width: 1024px; margin: 0 auto; padding: 0 22px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+
+  .gn-marke { display: inline-flex; align-items: center; gap: 7px; height: 44px; padding: 0 8px; margin-left: -8px; color: var(--ink); font-size: 17px; font-weight: 600; letter-spacing: -0.02em; text-decoration: none; opacity: 0.88; transition: opacity 200ms; }
+  .gn-marke:hover { opacity: 1; text-decoration: none; }
+  .gn-marke svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; }
+  .gn-marke .m-spur { opacity: 0.22; }
+
+  .gn-liste { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 0; flex: 1; justify-content: center; }
+  .gn-liste a {
+    display: flex; align-items: center; gap: 5px; height: 44px; padding: 0 clamp(7px, 1.1vw, 10px);
+    font-size: 12px; letter-spacing: -0.01em; color: var(--ink); opacity: 0.8; text-decoration: none; transition: opacity 200ms var(--ease);
+  }
+  .gn-liste a:hover, .gn-liste a[aria-current='page'] { opacity: 1; }
+  .gn-liste a[aria-current='page'] { font-weight: 600; }
+  .gn-liste :global(.gn-zahl) { min-width: 16px; height: 16px; padding: 0 5px; border-radius: 8px; background: var(--blue); color: #fff; font-size: 10px; font-weight: 600; display: inline-grid; place-items: center; line-height: 1; }
+
+  .gn-rechts { display: flex; align-items: center; }
+  .gn-knopf { width: 44px; height: 44px; margin-right: -12px; border: 0; padding: 0; background: none; color: var(--ink); opacity: 0.8; display: grid; place-items: center; cursor: pointer; transition: opacity 200ms; }
+  .gn-knopf:hover { opacity: 1; }
+  .gn-knopf svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; }
+  .gn-menue { display: none; position: relative; margin-left: 4px; }
+  .gn-menue span { position: absolute; left: 14px; width: 17px; height: 1.5px; border-radius: 1px; background: currentColor; transition: transform 320ms var(--ease); }
+  .gn-menue span:first-child { transform: translateY(-3.5px); }
+  .gn-menue span:last-child { transform: translateY(3.5px); }
+  .gn.menue-offen .gn-menue span:first-child { transform: rotate(45deg); }
+  .gn.menue-offen .gn-menue span:last-child { transform: rotate(-45deg); }
+
+  /* Suche: Fläche klappt unter der Leiste auf, die Seite dahinter wird weich verdeckt */
+  .gn-suche {
+    position: absolute; z-index: 1; left: 0; right: 0; top: 0; padding: calc(var(--bar) + 20px) 0 52px;
+    background: var(--ground); box-shadow: 0 12px 30px rgb(0 0 0 / 0.08);
+    opacity: 0; transform: translateY(-12px); transition: opacity 280ms var(--ease), transform 340ms var(--ease);
+  }
+  .gn.suche-offen .gn-suche { opacity: 1; transform: none; }
+  .gn-suche-innen, .gn-tipps { max-width: 692px; margin: 0 auto; padding: 0 22px; }
+  .gn-suche-innen { display: flex; align-items: center; gap: 12px; }
+  .gn-suche-innen svg { width: 24px; height: 24px; flex: none; fill: none; stroke: var(--ink-2); stroke-width: 1.8; stroke-linecap: round; }
+  .gn-suche input {
+    flex: 1; min-width: 0; border: 0; background: none; color: var(--ink); padding: 8px 0; font: 600 clamp(24px, 3vw, 32px)/1.2 var(--display); letter-spacing: -0.01em;
+  }
+  .gn-suche input::placeholder { color: var(--ink-3); }
+  .gn-suche input:focus { outline: none; }
+  .gn-tipps { margin-top: 26px; display: grid; gap: 4px; font-size: 14px; }
+  .gn-tipps span { color: var(--ink-2); font-size: 12px; margin-bottom: 6px; }
+  .gn-tipps a { color: var(--ink); font-weight: 600; width: fit-content; padding: 4px 0; }
+  .gn-schleier { position: fixed; inset: 0; z-index: 40; background: rgb(232 232 237 / 0.4); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px); opacity: 0; transition: opacity 300ms var(--ease); }
+  .gn-schleier.an { opacity: 1; }
+  @media (prefers-color-scheme: dark) { .gn-schleier { background: rgb(0 0 0 / 0.4); } }
+
+  /* Schmal: Liste wird zum Vollbild-Menü, Einträge erscheinen gestaffelt */
+  @media (max-width: 833px) {
+    .gn-menue { display: grid; }
+    .gn-liste {
+      position: fixed; left: 0; right: 0; top: var(--bar); height: calc(100dvh - var(--bar)); z-index: 1;
+      flex-direction: column; align-items: stretch; justify-content: flex-start; padding: 12px 40px 40px; overflow-y: auto;
+      background: var(--ground); visibility: hidden; opacity: 0; transition: opacity 240ms var(--ease), visibility 0s 240ms;
+    }
+    .gn.menue-offen { background: var(--ground); }
+    .gn.menue-offen .gn-liste { visibility: visible; opacity: 1; transition: opacity 240ms var(--ease); }
+    .gn-liste a { height: auto; padding: 8px 0; font-size: 28px; font-weight: 600; letter-spacing: 0.007em; opacity: 1; line-height: 1.14; }
+    .gn-liste li { opacity: 0; transform: translateY(-8px); transition: opacity 300ms var(--ease), transform 400ms var(--ease); }
+    .gn.menue-offen .gn-liste li { opacity: 1; transform: none; transition-delay: calc(80ms + var(--i) * 25ms); }
+    .gn-liste :global(.gn-zahl) { height: 20px; min-width: 20px; font-size: 12px; border-radius: 10px; }
+  }
+  :global(html.gn-gesperrt) { overflow: hidden; }
+</style>

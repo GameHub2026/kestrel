@@ -1,61 +1,55 @@
 ---
 import Base from '../layouts/Base.astro';
-import Szene from '../components/Szene.astro';
+import Ring from '../components/Ring.astro';
 import { SKALA } from '../wertung';
 const stufen = Object.entries(SKALA).map(([n, s]) => [Number(n), s] as const).sort((a, b) => b[0] - a[0]);
+const regeln = [
+  ['Eine Skala für alles.', 'Eine 7 ist bei Film, Serie und Spiel dieselbe 7.'],
+  ['Die Wertung bleibt stehen.', 'Sehe ich es später anders, kommt ein datierter Nachtrag dazu.'],
+  ['Fazit und „Für wen?“ gehören dazu.', 'Ein Satz, was bleibt, und für wen es sich lohnt.'],
+  ['Der Stand steht dabei.', 'Abspann, komplett, abgebrochen oder läuft noch.'],
+];
 ---
 <Base title="Wie ich werte" description="Kevins Wertungsskala von 1 bis 10: ganze Zahlen, ein fester Satz pro Zahl, gleich für Spiele, Filme und Serien.">
   <header class="page-head wrap">
-    <Szene thema="maschinen" />
     <div class="kopf-schild">
       <h1>Wie ich werte</h1>
-      <p>Ganze Zahlen von 1 bis 10, für Spiele, Filme und Serien gleich.</p>
-      <p class="kopf-fakt mono">Skala 1–10 · jede Zahl heißt immer dasselbe</p>
+      <p>Ganze Zahlen von 1 bis 10. Für Spiele, Filme und Serien gleich.</p>
+      <p class="kopf-fakt">Jede Zahl heißt immer dasselbe. Der Ring füllt sich bis zur Wertung.</p>
     </div>
   </header>
 
-  <ol class="roll wrap" aria-label="Wertungsskala">
+  <ol class="skala wrap" aria-label="Wertungsskala">
     {stufen.map(([n, s]) => (
-      <li style={`--i:${10 - n}`}>
-        <span class="n display">{n}</span>
-        <span class="s">{s}</span>
+      <li data-medium="neutral">
+        <Ring wertung={n} medium="neutral" groesse={56} label={false} />
+        <span class="s"><span class="visually-hidden">{n}: </span>{s}</span>
       </li>
     ))}
   </ol>
 
-  <section class="rules wrap" aria-labelledby="regeln">
-    <h2 id="regeln">Regeln</h2>
+  <section class="regeln wrap" aria-labelledby="regeln">
+    <h2 id="regeln">Vier Regeln.</h2>
     <ul>
-      <li><strong>Eine Skala für alles.</strong> Eine 7 ist bei Film, Serie und Spiel dieselbe 7.</li>
-      <li><strong>Die Wertung bleibt stehen.</strong> Sehe ich es später anders, kommt ein datierter Nachtrag dazu.</li>
-      <li><strong>Fazit und „Für wen?“ gehören dazu.</strong> Ein Satz, was bleibt, und für wen es sich lohnt.</li>
-      <li><strong>Der Stand steht dabei.</strong> Abspann, komplett, abgebrochen oder läuft noch.</li>
+      {regeln.map(([t, s]) => <li><h3>{t}</h3><p>{s}</p></li>)}
     </ul>
   </section>
 </Base>
 
 <style>
-  /* Die Skala als Tabelle im Satzspiegel: Ziffer als leichte Kennzahl, feine Trennlinien. Von 10 nach 1 wird die Ziffer blasser. */
-  .roll { list-style: none; margin: 0 auto; padding-top: 0; padding-bottom: 0; display: grid; }
-  .roll::before { content: ''; height: 1px; background: var(--line); }
-  .roll li {
-    display: grid; grid-template-columns: 5rem 1fr; align-items: center; gap: 28px;
-    color: var(--ink); padding: 10px 0; border-bottom: 1px solid var(--line); position: relative;
-  }
-  .n {
-    font-size: clamp(2rem, 3.6vw, 2.6rem); font-weight: 300; letter-spacing: -0.04em; text-align: left; font-variant-numeric: tabular-nums; line-height: 1;
-    opacity: calc(1 - var(--i) * 0.055);
-  }
-  .s { font-family: var(--display); font-weight: 800; font-size: clamp(1rem, 1.8vw, 1.2rem); line-height: 1.3; letter-spacing: 0.01em; text-transform: uppercase; text-wrap: balance; }
+  /* Die Skala als Raster aus Ringen in Apple-Blau: von 10 nach 1 wird der Ring kürzer */
+  .skala { list-style: none; margin: 0 auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .skala li { --akzent: var(--blue); display: grid; grid-template-columns: auto 1fr; align-items: center; gap: 18px; padding: 16px 22px 16px 16px; border-radius: var(--radius); background: var(--tile); }
+  .s { font-size: 17px; font-weight: 600; line-height: 1.3; text-wrap: balance; }
+  @media (prefers-color-scheme: dark) { .skala li { --akzent: #2997ff; } }
 
-  .rules { margin-top: clamp(32px, 5vw, 56px); }
-  .rules h2 { font-family: var(--display); font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase; font-size: 1.2rem; line-height: 1; margin: 0 0 14px; }
-  .rules ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; max-width: 68ch; }
-  .rules li { padding-left: 24px; position: relative; font-size: 1rem; }
-  .rules li::before { content: ''; position: absolute; left: 0; top: 0.45em; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); }
-  .rules strong { display: block; font-family: var(--display); font-weight: 800; font-size: 1.05rem; letter-spacing: 0.01em; text-transform: uppercase; }
+  .regeln { margin-top: clamp(64px, 9vw, 110px); }
+  .regeln h2 { margin: 0 0 28px; font-size: clamp(32px, 4.4vw, 48px); line-height: 1.08; font-weight: 600; letter-spacing: -0.003em; }
+  .regeln ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 48px; }
+  .regeln h3 { margin: 0 0 6px; font-size: 21px; line-height: 1.19; font-weight: 600; }
+  .regeln p { margin: 0; font-size: 17px; color: var(--ink-2); }
 
-  @media (max-width: 600px) {
-    .roll li { grid-template-columns: 3.2rem 1fr; gap: 14px; }
+  @media (max-width: 700px) {
+    .skala, .regeln ul { grid-template-columns: 1fr; }
   }
 </style>

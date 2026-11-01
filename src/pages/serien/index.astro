@@ -1,12 +1,10 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Szene from '../../components/Szene.astro';
 import { ic } from '../../icons';
 ---
 <Base title="Ich folge" privat description="Private Liste der Serien, Filme und Spiele, denen ich folge.">
 <div class="ser kacheln" id="ser">
   <header class="page-head wrap">
-    <Szene thema="rabenwald" />
     <div class="kopf-schild">
       <h1>Ich folge</h1>
       <p>Alles aus Plex und alles mit Glocke, täglich auf Neues geprüft.</p>
@@ -335,84 +333,84 @@ import { ic } from '../../icons';
   .hinweis { font-size: 0.8rem; min-height: 1.2em; margin: 6px 0; }
   .stand { font-size: 0.76rem; display: flex; align-items: center; gap: 10px; margin: 0; }
   button, .knopf {
-    font-family: var(--display); font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase; font-size: 1rem;
-    border: 0; border-radius: 999px; height: 40px; padding: 2px 18px 0 14px; cursor: pointer; background: var(--ink); color: var(--ground); text-decoration: none;
+    font-family: var(--display); font-weight: 600; letter-spacing: -0.01em; font-size: 1rem;
+    border: 0; border-radius: 999px; height: 40px; padding: 0 18px 0 14px; cursor: pointer; background: var(--blue); color: #fff; text-decoration: none;
     display: inline-flex; align-items: center; gap: 8px;
   }
   button:disabled { opacity: 0.55; cursor: default; }
-  .knopf.leise { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent); }
-  .knopf.leise:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
+  .knopf.leise { background: transparent; color: var(--ink); box-shadow: none; background: var(--fill); }
+  .knopf.leise:hover { background: color-mix(in srgb, var(--fill) 70%, var(--ink-3)); }
   .klein { font-size: 0.85rem; height: 32px; padding: 2px 13px 0 10px; gap: 6px; }
   .klein .ic { width: 15px; height: 15px; }
   .zugang form, .suche { display: flex; flex-wrap: wrap; gap: 10px; }
-  input[type='password'], input[type='search'] { font: inherit; font-size: 1.1rem; padding: 12px 14px; border-radius: 4px; border: 2px solid var(--ink); background: var(--paper); color: var(--ink); flex: 1 1 280px; min-width: 0; }
+  input[type='password'], input[type='search'] { font: inherit; font-size: 1.1rem; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--ink-3); background: var(--paper); color: var(--ink); flex: 1 1 280px; min-width: 0; }
 
-  .poster { width: 44px; height: 66px; border-radius: 2px; overflow: hidden; display: block; flex: none; background: color-mix(in srgb, currentColor 14%, transparent); }
+  .poster { width: 44px; height: 66px; border-radius: 8px; overflow: hidden; display: block; flex: none; background: color-mix(in srgb, currentColor 14%, transparent); }
   .poster img, .cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .mitte { display: grid; gap: 3px; min-width: 0; }
-  .art { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 700; }
+  .art { font-size: 0.66rem; letter-spacing: -0.01em; font-weight: 700; }
   .quelle, .info { font-size: 0.72rem; opacity: 0.85; }
 
   /* Neu für dich: Staffel-Hinweise in Serienblau, der Rest auf Papier */
   .hinweise, .kommt, .treffer, .aus-liste { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
-  .hinweis-zeile { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: center; padding: 8px 14px 8px 8px; border-radius: 4px; background: var(--paper); box-shadow: var(--shadow); }
+  .hinweis-zeile { display: grid; grid-template-columns: 44px 1fr; gap: 14px; align-items: center; padding: 8px 14px 8px 8px; border-radius: 14px; background: var(--paper); box-shadow: var(--shadow); }
   .hinweis-zeile.art-staffel, .hinweis-zeile.art-status { background: var(--paper); color: var(--ink); box-shadow: inset 3px 0 0 var(--serie), var(--shadow); }
   .h-titel { font-weight: 700; line-height: 1.3; color: inherit; }
-  .art-staffel .h-titel { font-family: var(--display); text-transform: uppercase; font-weight: 800; font-size: 1.2rem; line-height: 1.05; }
+  .art-staffel .h-titel { font-family: var(--display); font-weight: 600; font-size: 1.2rem; line-height: 1.05; }
 
   /* Kommende Staffeln als Fahrplan */
-  .kommt-zeile { display: grid; grid-template-columns: 15.5rem 1fr auto; gap: 14px; align-items: baseline; padding: 10px 0; border-bottom: 1px dashed var(--rule); }
+  .kommt-zeile { display: grid; grid-template-columns: 15.5rem 1fr auto; gap: 14px; align-items: baseline; padding: 10px 0; border-bottom: 1px solid var(--rule); }
   .k-datum { font-size: 0.78rem; font-weight: 700; white-space: nowrap; }
-  .k-titel { font-family: var(--display); text-transform: uppercase; font-weight: 800; font-size: 1.2rem; line-height: 1; }
+  .k-titel { font-family: var(--display); font-weight: 600; font-size: 1.2rem; line-height: 1; }
   .k-staffel { font-size: 0.74rem; color: var(--ink-2); text-align: right; }
 
-  .treffer-zeile { display: grid; grid-template-columns: 44px 1fr auto; gap: 14px; align-items: center; background: var(--paper); border-radius: 4px; padding: 8px 12px 8px 8px; box-shadow: var(--shadow); }
-  .titel { font-family: var(--display); text-transform: uppercase; font-weight: 800; font-size: 1.2rem; line-height: 1; }
+  .treffer-zeile { display: grid; grid-template-columns: 44px 1fr auto; gap: 14px; align-items: center; background: var(--paper); border-radius: 14px; padding: 8px 12px 8px 8px; box-shadow: var(--shadow); }
+  .titel { font-family: var(--display); font-weight: 600; font-size: 1.2rem; line-height: 1; }
   .glocke { background: var(--ink); color: var(--ground); }
 
   /* Raster der verfolgten Serien */
   .raster { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
-  .kachel { display: grid; grid-template-rows: auto 1fr; border-radius: 4px; overflow: hidden; background: var(--paper); box-shadow: var(--shadow); }
+  .kachel { display: grid; grid-template-rows: auto 1fr; border-radius: 14px; overflow: hidden; background: var(--paper); box-shadow: var(--shadow); }
   .cover { position: relative; display: block; aspect-ratio: 2 / 3; background: color-mix(in srgb, var(--ink) 10%, transparent); }
   .neu-plakette { position: absolute; top: 8px; right: 8px; padding: 3px 8px; border-radius: 999px; background: var(--serie); color: var(--serie-ink); font-size: 0.7rem; font-weight: 700; box-shadow: 0 2px 8px rgb(0 0 0 / 0.35); }
   .k-info { display: grid; gap: 4px; padding: 10px 11px 11px; align-content: start; }
-  .k-name { font-family: var(--display); text-transform: uppercase; font-weight: 800; font-size: 1.05rem; line-height: 1; }
+  .k-name { font-family: var(--display); font-weight: 600; font-size: 1.05rem; line-height: 1; }
   .k-zeile { font-size: 0.7rem; font-weight: 700; }
-  .k-quelle { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-2); }
-  .k-weg { justify-self: start; margin-top: 4px; background: transparent; color: var(--ink-2); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent); }
-  .k-weg:hover { color: var(--ink); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
+  .k-quelle { font-size: 0.64rem; letter-spacing: -0.01em; color: var(--ink-2); }
+  .k-weg { justify-self: start; margin-top: 4px; background: transparent; color: var(--ink-2); box-shadow: none; background: var(--fill); }
+  .k-weg:hover { color: var(--ink); background: color-mix(in srgb, var(--fill) 70%, var(--ink-3)); }
   .aus { margin-top: 22px; }
   .aus summary { cursor: pointer; font-size: 0.8rem; color: var(--ink-2); }
   .aus-liste { margin-top: 10px; }
-  .aus-liste li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 1px dashed var(--rule); }
+  .aus-liste li { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 6px 0; border-bottom: 1px solid var(--rule); }
 
   /* Info-Box */
   .klickbar { cursor: pointer; transition: transform 220ms cubic-bezier(0.16, 1, 0.3, 1), box-shadow 220ms ease; }
   .kachel.klickbar:hover, &.kacheln .klickbar:hover { transform: translateY(-3px); box-shadow: var(--shadow-lift); }
   .klickbar:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
   .sbox { width: min(700px, calc(100vw - 32px)); max-height: calc(100vh - 48px); overflow: auto; border: 0; border-radius: 8px; padding: 26px; background: var(--paper); color: var(--ink); box-shadow: 0 24px 60px -20px rgb(0 0 0 / 0.6); }
-  .sbox::backdrop { background: rgb(10 12 14 / 0.55); backdrop-filter: blur(4px); }
+  .sbox::backdrop { background: rgb(0 0 0 / 0.32); backdrop-filter: blur(4px); }
   .sbox[open] { animation: sbox-auf 320ms cubic-bezier(0.16, 1, 0.3, 1); }
   .sbox-zu { position: absolute; top: 10px; right: 12px; width: 36px; height: 36px; padding: 0; border-radius: 50%; justify-content: center; background: color-mix(in srgb, var(--ink) 8%, transparent); color: var(--ink); }
   .sbox-zu .ic { margin: 0; }
   .sbox-kopf { display: grid; grid-template-columns: 120px 1fr; gap: 20px; align-items: start; margin-bottom: 16px; padding-right: 36px; }
-  .sbox-bild { display: block; width: 120px; aspect-ratio: 2 / 3; border-radius: 4px; overflow: hidden; box-shadow: var(--shadow); background: color-mix(in srgb, var(--ink) 10%, transparent); }
+  .sbox-bild { display: block; width: 120px; aspect-ratio: 2 / 3; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); background: color-mix(in srgb, var(--ink) 10%, transparent); }
   .sbox-bild img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .sbox-titel { font-family: var(--display); text-transform: uppercase; font-weight: 800; font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.05; margin: 4px 0 8px; }
+  .sbox-titel { font-family: var(--display); font-weight: 600; font-size: clamp(1.4rem, 3vw, 1.9rem); line-height: 1.05; margin: 4px 0 8px; }
   .sbox-termin { font-size: 0.8rem; font-weight: 700; }
   .sbox-details > * { margin: 0 0 12px; }
-  .unter { font-style: italic; }
+  .unter {  }
   .genres { display: flex; flex-wrap: wrap; gap: 6px; }
-  .genre { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 9px; border-radius: 999px; background: color-mix(in srgb, var(--ink) 9%, transparent); }
+  .genre { font-size: 0.68rem; letter-spacing: -0.01em; padding: 3px 9px; border-radius: 999px; background: color-mix(in srgb, var(--ink) 9%, transparent); }
   .handlung { line-height: 1.6; }
   .fakten { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px 20px; }
-  .fakten dt { font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-2); }
+  .fakten dt { font-size: 0.66rem; letter-spacing: -0.01em; color: var(--ink-2); }
   .fakten dd { margin: 2px 0 0; }
   .knoepfe { display: flex; gap: 10px; flex-wrap: wrap; }
-  .knoepfe .knopf:not(.leise) { background: var(--ink); color: var(--ground); }
+  .knoepfe .knopf:not(.leise) { background: var(--blue); color: #fff; }
   .laed { font-size: 0.8rem; color: var(--ink-2); }
-  .sbox-gefunden { border-top: 2px dashed var(--rule); padding-top: 14px; margin: 6px 0 16px; }
-  .sbox-gefunden h3 { font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; margin: 0 0 10px; color: var(--ink-2); }
+  .sbox-gefunden { border-top: 2px solid var(--rule); padding-top: 14px; margin: 6px 0 16px; }
+  .sbox-gefunden h3 { font-size: 0.72rem; letter-spacing: -0.01em; margin: 0 0 10px; color: var(--ink-2); }
   .sbox-gefunden ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
   .sbox-gefunden li { display: grid; gap: 2px; }
   .sbox-gefunden a, .sbox-gefunden .h-titel { color: var(--ink); font-weight: 600; line-height: 1.35; }
@@ -421,8 +419,8 @@ import { ic } from '../../icons';
 
   /* Ansicht-Umschalter */
   .filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
-  .filter button { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent); font-size: 0.95rem; height: 38px; }
-  .filter button[aria-pressed='false']:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
+  .filter button { background: transparent; color: var(--ink); box-shadow: none; background: var(--fill); font-size: 0.95rem; height: 38px; }
+  .filter button[aria-pressed='false']:hover { background: color-mix(in srgb, var(--fill) 70%, var(--ink-3)); }
   .filter button[aria-pressed='true'] { box-shadow: none; }
   .filter button[aria-pressed='true'] { background: var(--ink); color: var(--ground); }
   .filter button[data-medium][aria-pressed='true'] { background: var(--ink); color: var(--ground); }
@@ -437,7 +435,7 @@ import { ic } from '../../icons';
   /* Kacheln: Kommende Staffeln als Poster-Raster; Neu für dich bleibt immer Liste */
   &.kacheln .kommt { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
   &.kacheln .kommt-zeile .poster { display: block; width: 100%; height: auto; aspect-ratio: 2 / 3; border-radius: 0; }
-  &.kacheln .kommt-zeile { grid-template-columns: 1fr; grid-template-rows: auto; gap: 4px; padding: 0 0 12px; border: 0; border-radius: 4px; overflow: hidden; background: var(--paper); box-shadow: var(--shadow); align-content: start; }
+  &.kacheln .kommt-zeile { grid-template-columns: 1fr; grid-template-rows: auto; gap: 4px; padding: 0 0 12px; border: 0; border-radius: 14px; overflow: hidden; background: var(--paper); box-shadow: var(--shadow); align-content: start; }
   &.kacheln .kommt-zeile > span:not(.poster) { padding: 0 11px; }
   &.kacheln .kommt-zeile .k-datum { order: 3; white-space: normal; min-width: 0; }
   &.kacheln .kommt-zeile .k-staffel { order: 4; text-align: left; }
@@ -446,7 +444,7 @@ import { ic } from '../../icons';
   /* Liste: „Ich folge“ als kompakte Zeilen */
   &:not(.kacheln) .raster { grid-template-columns: 1fr; gap: 8px; }
   &:not(.kacheln) .kachel { grid-template-rows: none; grid-template-columns: 44px 1fr; align-items: center; padding: 8px; gap: 12px; }
-  &:not(.kacheln) .cover { width: 44px; height: 66px; aspect-ratio: auto; border-radius: 2px; overflow: hidden; }
+  &:not(.kacheln) .cover { width: 44px; height: 66px; aspect-ratio: auto; border-radius: 8px; overflow: hidden; }
   &:not(.kacheln) .neu-plakette { position: static; display: none; }
   &:not(.kacheln) .k-info { padding: 0; grid-template-columns: 1fr auto; align-items: center; column-gap: 12px; }
   &:not(.kacheln) .k-info > :not(.k-weg) { grid-column: 1; }

@@ -2,8 +2,7 @@
 import { render } from 'astro:content';
 import { Image } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
-import Ticket from '../../components/Ticket.astro';
-import Szene from '../../components/Szene.astro';
+import Ring from '../../components/Ring.astro';
 import { SKALA, MEDIUM, TEXTFORM, STAND } from '../../wertung';
 import { alleTexte, datumLang, url, nummer, type Text } from '../../lib';
 
@@ -26,45 +25,40 @@ const fakten: [string, string][] = [
   ...(d.spielzeit ? [[d.medium === 'spiel' ? 'Spielzeit' : 'Dauer', d.spielzeit] as [string, string]] : []),
   ['Stand', STAND[d.stand]],
   ['Veröffentlicht', datumLang(d.datum)],
-  ['Karte', nummer(text.nr)],
+  ['Nummer', nummer(text.nr)],
 ];
 const beschreibung = `${MEDIUM[d.medium]}-${TEXTFORM[d.textform]}: ${d.titel}. Wertung ${d.wertung}/10. ${d.fazit}`;
 ---
 <Base title={`${d.titel} (${TEXTFORM[d.textform]})`} description={beschreibung}>
-  <div class="wrap top">
-    <Szene thema={d.medium === 'film' ? 'stadt' : d.medium === 'serie' ? 'gewitter' : 'ruinen'} />
-    <Ticket text={text} size="hero" link={false} tear headingLevel="h1" />
-  </div>
+  <article class="artikel" data-medium={d.medium}>
+    <header class="kopf wrap">
+      <p class="eyebrow"><span class="punkt" aria-hidden="true"></span>{MEDIUM[d.medium]} · {TEXTFORM[d.textform]}</p>
+      <p class="datum"><time datetime={d.datum.toISOString().slice(0, 10)}>{datumLang(d.datum)}</time></p>
+      <h1>{d.titel}</h1>
+      <p class="fazit">{d.fazit}</p>
+    </header>
 
-  <div class="wrap who-phone" data-medium={d.medium}>
-    <div class="who">
-      <h2>Für wen?</h2>
-      <p>{d.fuer_wen}</p>
-    </div>
-  </div>
-
-  <div class="wrap layout" data-medium={d.medium}>
-    <aside class="back" aria-label="Steckbrief">
-      <h2 class="back-h">Steckbrief</h2>
-      <dl>
-        {fakten.map(([k, v]) => (<div><dt>{k}</dt><dd>{v}</dd></div>))}
-      </dl>
-      <div class="verdict">
-        <p class="verdict-score"><span class="display">{d.wertung}</span><span class="mono">/10</span></p>
-        <p class="verdict-say">{SKALA[d.wertung]}</p>
-        <a class="verdict-link mono" href="/wie-ich-werte/">So werte ich</a>
+    <!-- Urteil zuerst: Ring, Satz zur Zahl und „Für wen?“ stehen vor dem Fließtext -->
+    <section class="urteil wrap" aria-label="Urteil">
+      <div class="urteil-kachel">
+        <Ring wertung={d.wertung} medium={d.medium} groesse={132} zeichnen />
+        <div class="urteil-text">
+          <p class="u-zahl">Wertung: {d.wertung} von 10</p>
+          <p class="u-satz">{SKALA[d.wertung]}</p>
+          <a class="mehr" href="/wie-ich-werte/">So werte ich</a>
+        </div>
+        <div class="fuer-wen">
+          <h2>Für wen?</h2>
+          <p>{d.fuer_wen}</p>
+        </div>
       </div>
-      <div class="who who-wide">
-        <h2>Für wen?</h2>
-        <p>{d.fuer_wen}</p>
-      </div>
-    </aside>
+    </section>
 
-    <div class="read">
+    <div class="lesen wrap">
       {d.bild && (
         <figure class="motiv">
           <Image src={d.bild} alt={`Bild zu ${d.titel}`} widths={[340, 680]} sizes="340px" />
-          {d.bild_quelle && <figcaption class="mono">Bild: {d.bild_quelle}</figcaption>}
+          {d.bild_quelle && <figcaption>Bild: {d.bild_quelle}</figcaption>}
         </figure>
       )}
       <div class="prose"><Content /></div>
@@ -76,109 +70,103 @@ const beschreibung = `${MEDIUM[d.medium]}-${TEXTFORM[d.textform]}: ${d.titel}. W
           <ol>
             {d.nachtraege.map((n) => (
               <li>
-                <span class="stamp mono">Nachtrag<br /><strong>{datumLang(n.datum)}</strong></span>
+                <time datetime={n.datum.toISOString().slice(0, 10)}>{datumLang(n.datum)}</time>
                 <p>{n.text}</p>
               </li>
             ))}
           </ol>
         </section>
       )}
+
+      <!-- Steckbrief wie Apples „Technische Daten“: Bezeichnung links, Wert rechts, feine Linien -->
+      <section class="steckbrief" aria-labelledby="sb-h">
+        <h2 id="sb-h">Steckbrief</h2>
+        <dl>
+          {fakten.map(([k, v]) => (<div><dt>{k}</dt><dd>{v}</dd></div>))}
+          <div><dt>Wertung</dt><dd>{d.wertung} von 10 · {SKALA[d.wertung]}</dd></div>
+        </dl>
+      </section>
     </div>
-  </div>
+  </article>
 
   {(neuer || aelter) && (
-    <div class="wrap"><nav class="pager" aria-label="Weitere Texte">
-      {aelter ? <a href={url(aelter)} rel="prev"><span class="mono">Älter</span>{aelter.data.titel}</a> : <span />}
-      {neuer && <a href={url(neuer)} rel="next" class="next"><span class="mono">Neuer</span>{neuer.data.titel}</a>}
-    </nav></div>
+    <nav class="pager wrap" aria-label="Weitere Texte">
+      {aelter ? <a href={url(aelter)} rel="prev" data-medium={aelter.data.medium}><span class="p-was">Älterer Text</span><span class="p-titel">{aelter.data.titel}</span></a> : <span />}
+      {neuer && <a href={url(neuer)} rel="next" class="next" data-medium={neuer.data.medium}><span class="p-was">Neuerer Text</span><span class="p-titel">{neuer.data.titel}</span></a>}
+    </nav>
   )}
 </Base>
 
 <style>
-  .top { position: relative; padding-top: clamp(120px, 22vh, 220px); }
-  .top > :global(.ticket) { position: relative; z-index: 1; }
-  .layout {
-    display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: clamp(28px, 5vw, 72px);
-    margin-top: clamp(28px, 4vw, 44px); align-items: start;
-  }
-  .back { grid-column: 2; grid-row: 1; position: sticky; top: 24px; display: grid; gap: 18px; }
-  .read { grid-column: 1; grid-row: 1; min-width: 0; }
+  .kopf { max-width: calc(var(--measure) + 2 * var(--gutter)); padding-top: clamp(44px, 7vw, 80px); }
+  @media (min-width: 1069px) { .kopf { width: var(--measure); } }
+  .eyebrow { margin: 0; display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 600; color: var(--ink-2); text-transform: uppercase; letter-spacing: 0.02em; }
+  .punkt { width: 7px; height: 7px; border-radius: 50%; background: var(--akzent); }
+  .datum { margin: 6px 0 0; font-size: 14px; color: var(--ink-2); }
+  h1 { margin: 18px 0 0; font-size: clamp(36px, 5.4vw, 56px); line-height: 1.07; font-weight: 600; letter-spacing: -0.005em; text-wrap: balance; }
+  .fazit { margin: 18px 0 0; font-size: clamp(21px, 2.4vw, 24px); line-height: 1.33; color: var(--ink-2); font-weight: 400; letter-spacing: 0.009em; }
 
-  .back-h, .who h2, .nachtraege h2 {
-    font-family: var(--display); font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase;
-    font-size: 1.1rem; margin: 0;
+  .urteil { margin-top: clamp(36px, 5vw, 56px); }
+  .urteil-kachel {
+    display: grid; grid-template-columns: auto minmax(0, 1fr) minmax(0, 1.15fr); gap: 28px 36px; align-items: center;
+    padding: clamp(28px, 4vw, 44px); border-radius: var(--radius-lg); background: var(--tile);
   }
-  .back { background: var(--paper); padding: 30px 22px 22px; border-radius: 0 0 6px 6px; box-shadow: inset 0 3px 0 var(--akzent), var(--shadow); }
-  dl { margin: 0; display: grid; gap: 0; }
-  dl div { display: grid; grid-template-columns: 7.5rem 1fr; gap: 10px; padding: 8px 0; border-bottom: 1px dashed color-mix(in srgb, var(--ink) 30%, transparent); }
-  dt { font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-2); padding-top: 3px; }
-  dd { margin: 0; font-size: 0.98rem; }
-  .verdict { display: grid; gap: 4px; }
-  .verdict-score { margin: 0; display: flex; align-items: baseline; gap: 6px; }
-  .verdict-score .display { font-size: 3.2rem; line-height: 0.8; }
-  .verdict-score .mono { font-size: 0.9rem; color: var(--ink-2); }
-  .verdict-say { margin: 0; font-weight: 600; }
-  .verdict-link { font-size: 0.8rem; color: var(--ink-2); }
-  .who { margin: 0 -22px -22px; padding: 18px 22px 22px; border-top: 1px dashed var(--rule); }
-  .who p { margin: 6px 0 0; font-size: 1.05rem; line-height: 1.45; }
-  .who-phone { display: none; }
-
-  .motiv { margin: 0 0 32px; max-width: 340px; } /* Titelbild bewusst klein, der Text soll führen */
-  .motiv :global(img) { border-radius: 4px; box-shadow: var(--shadow); width: 100%; }
-  .motiv figcaption { font-size: 0.75rem; color: var(--ink-2); margin-top: 8px; }
-
-  .prose { max-width: var(--measure); font-size: 1.15rem; line-height: 1.68; }
-  .prose :global(p) { margin: 0 0 1.1em; }
-  .prose :global(h2) {
-    font-family: var(--display); font-weight: 800; font-size: 1.5rem; line-height: 1;
-    margin: 1.6em 0 0.5em; letter-spacing: 0.01em; text-transform: uppercase;
-  }
-  .prose :global(h3) { font-size: 1.25rem; margin: 1.6em 0 0.4em; }
-  .prose :global(blockquote) {
-    margin: 1.6em 0; padding: 0; font-family: var(--display); text-transform: uppercase; font-weight: 800;
-    font-size: clamp(1.35rem, 2.6vw, 1.8rem); line-height: 1.05; color: var(--ink); text-wrap: balance;
-  }
-  .prose :global(blockquote p) { margin: 0; }
-  .prose :global(blockquote)::before { content: ''; display: block; width: 64px; border-top: 2px solid var(--akzent); margin-bottom: 14px; }
-  .prose :global(ul), .prose :global(ol) { padding-left: 1.3em; margin: 0 0 1.1em; }
-  .prose :global(li) { margin-bottom: 0.35em; }
-  .prose :global(li::marker) { color: var(--ink-2); }
-  .prose :global(img) { border-radius: 4px; margin: 1.6em 0; max-height: 520px; width: auto; max-width: 100%; box-shadow: var(--shadow); }
-  .prose :global(strong) { font-weight: 700; }
-  .prose :global(hr) { border: 0; border-top: 2px dashed var(--rule); margin: 2em 0; }
-
-  .nachtraege { margin-top: 56px; max-width: var(--measure); }
-  .nt-note { color: var(--ink-2); margin: 8px 0 20px; }
-  .nachtraege ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; }
-  .nachtraege li { display: grid; grid-template-columns: auto 1fr; gap: 20px; align-items: start; }
-  .nachtraege li p { margin: 4px 0 0; }
-  .stamp {
-    display: inline-block; color: var(--stamp); border: 2.5px solid var(--stamp); border-radius: 4px;
-    padding: 6px 10px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em; line-height: 1.35;
-    transform: rotate(-4deg); text-align: center; opacity: 0.92;
-  }
-  .stamp strong { font-size: 0.82rem; letter-spacing: 0.04em; }
-
-  .pager { display: flex; justify-content: space-between; gap: 20px; margin-top: 64px; padding-top: 24px; border-top: 2px dashed var(--rule); }
-  .pager a {
-    display: grid; gap: 4px; text-decoration: none; font-family: var(--display); text-transform: uppercase; font-weight: 800; font-size: 1.35rem; line-height: 1; max-width: 45%;
-  }
-  .pager a:hover { text-decoration: underline; }
-  .pager .mono { font-family: var(--mono); font-weight: 600; font-size: 0.72rem; letter-spacing: 0.1em; color: var(--ink-2); }
-  .pager .next { text-align: right; margin-left: auto; }
-
-  @media (max-width: 900px) {
-    .layout { grid-template-columns: 1fr; }
-    .back { grid-column: 1; grid-row: 1; position: static; }
-    /* Am Handy steht „Für wen?“ direkt unter der Karte; Wertung steht schon auf der Karte */
-    .who-wide, .verdict { display: none; }
-    .who-phone { display: block; margin-top: 20px; }
-    .who-phone .who { margin: 0; border-radius: 6px; box-shadow: var(--shadow); }
-    .layout { margin-top: 28px; }
-    .read { grid-row: 2; }
+  .u-zahl, .fuer-wen h2 { margin: 0 0 6px; font-size: 12px; font-weight: 600; color: var(--ink-2); text-transform: uppercase; letter-spacing: 0.02em; }
+  .u-satz { margin: 0 0 10px; font-size: 24px; line-height: 1.24; font-weight: 600; text-wrap: balance; }
+  .fuer-wen { padding-left: 36px; border-left: 1px solid var(--line); }
+  .fuer-wen p { margin: 0; font-size: 19px; line-height: 1.42; }
+  @media (max-width: 833px) {
+    .urteil-kachel { grid-template-columns: auto minmax(0, 1fr); }
+    .fuer-wen { grid-column: 1 / -1; padding: 22px 0 0; border-left: 0; border-top: 1px solid var(--line); }
   }
   @media (max-width: 480px) {
-    .nachtraege li { grid-template-columns: 1fr; gap: 10px; }
-    .stamp { justify-self: start; }
+    .urteil-kachel { grid-template-columns: 1fr; justify-items: start; }
+    .urteil-kachel :global(.ring) { --g: 108px !important; }
   }
+
+  .lesen { max-width: calc(var(--measure) + 2 * var(--gutter)); margin-top: clamp(40px, 6vw, 64px); }
+  @media (min-width: 1069px) { .lesen { width: var(--measure); } }
+  .motiv { margin: 0 0 36px; }
+  .motiv :global(img) { border-radius: var(--radius); width: 100%; max-width: 340px; }
+  .motiv figcaption { font-size: 12px; color: var(--ink-2); margin-top: 10px; }
+
+  .prose { font-size: 19px; line-height: 1.58; letter-spacing: 0.012em; }
+  .prose :global(p) { margin: 0 0 1.05em; }
+  .prose :global(h2) { font-size: 28px; line-height: 1.14; font-weight: 600; margin: 1.8em 0 0.5em; letter-spacing: 0.007em; }
+  .prose :global(h3) { font-size: 21px; line-height: 1.19; font-weight: 600; margin: 1.6em 0 0.4em; }
+  .prose :global(blockquote) { margin: 1.6em 0; padding: 0; font-size: clamp(24px, 3vw, 32px); line-height: 1.19; font-weight: 600; letter-spacing: 0.004em; text-wrap: balance; }
+  .prose :global(blockquote p) { margin: 0; }
+  .prose :global(ul), .prose :global(ol) { padding-left: 1.2em; margin: 0 0 1.05em; }
+  .prose :global(li) { margin-bottom: 0.35em; }
+  .prose :global(li::marker) { color: var(--ink-2); }
+  .prose :global(img) { border-radius: var(--radius); margin: 1.6em 0; max-height: 560px; width: auto; max-width: 100%; }
+  .prose :global(strong) { font-weight: 600; }
+  .prose :global(a) { color: var(--link); }
+  .prose :global(hr) { border: 0; border-top: 1px solid var(--line); margin: 2.2em 0; }
+
+  .nachtraege { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line); }
+  .nachtraege h2, .steckbrief h2 { margin: 0; font-size: 28px; line-height: 1.14; font-weight: 600; letter-spacing: 0.007em; }
+  .nt-note { color: var(--ink-2); margin: 8px 0 24px; font-size: 17px; }
+  .nachtraege ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+  .nachtraege li { position: relative; padding: 0 0 26px 26px; border-left: 2px solid var(--fill); margin-left: 5px; }
+  .nachtraege li:last-child { padding-bottom: 0; }
+  .nachtraege li::before { content: ''; position: absolute; left: -7px; top: 5px; width: 12px; height: 12px; border-radius: 50%; background: var(--ground); box-shadow: inset 0 0 0 3px var(--akzent); }
+  .nachtraege time { font-size: 14px; font-weight: 600; }
+  .nachtraege li p { margin: 4px 0 0; font-size: 17px; }
+
+  .steckbrief { margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--line); }
+  dl { margin: 18px 0 0; }
+  dl div { display: grid; grid-template-columns: 11rem 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+  dl div:last-child { border-bottom: 0; }
+  dt { font-size: 14px; font-weight: 600; color: var(--ink); }
+  dd { margin: 0; font-size: 14px; color: var(--ink-2); }
+  @media (max-width: 480px) { dl div { grid-template-columns: 1fr; gap: 2px; } }
+
+  .pager { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 72px; }
+  .pager a { display: grid; gap: 4px; padding: 22px 26px; border-radius: var(--radius); background: var(--tile); color: var(--ink); text-decoration: none; transition: transform 400ms var(--ease); }
+  .pager a:hover { transform: scale(1.015); }
+  .p-was { font-size: 12px; font-weight: 600; color: var(--ink-2); }
+  .p-titel { font-size: 21px; line-height: 1.19; font-weight: 600; }
+  .pager .next { text-align: right; grid-column: 2; }
+  @media (max-width: 600px) { .pager { grid-template-columns: 1fr; } .pager .next { grid-column: auto; } }
 </style>

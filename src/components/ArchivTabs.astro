@@ -1,21 +1,22 @@
 ---
 // Umschalter im Archiv: Rückblick nach Jahr oder je Medium von A bis Z.
 // Der Wechsel lädt nicht die ganze Seite neu: nur der Inhalt unter den Reitern wird getauscht,
-// Seitenkopf und Szene bleiben stehen (vorher ruckelte jeder Wechsel, weil alles neu aufgebaut wurde).
-import { ic } from '../icons';
+// der Seitenkopf bleibt stehen (vorher ruckelte jeder Wechsel, weil alles neu aufgebaut wurde).
 const tabs = [
   { href: '/archiv/', label: 'Nach Jahr', icon: 'kalender' },
-  { href: '/archiv/spiele/', label: 'Spiele A–Z', medium: 'spiel', icon: 'spiel' },
-  { href: '/archiv/filme/', label: 'Filme A–Z', medium: 'film', icon: 'film' },
-  { href: '/archiv/serien/', label: 'Serien A–Z', medium: 'serie', icon: 'serie' },
+  { href: '/archiv/spiele/', label: 'Spiele', medium: 'spiel', icon: 'spiel' },
+  { href: '/archiv/filme/', label: 'Filme', medium: 'film', icon: 'film' },
+  { href: '/archiv/serien/', label: 'Serien', medium: 'serie', icon: 'serie' },
 ];
 const path = Astro.url.pathname;
 ---
-<nav class="tabs wrap" aria-label="Archiv-Ansicht" data-archiv-tabs>
-  {tabs.map((t) => (
-    <a href={t.href} data-medium={t.medium} aria-current={path === t.href ? 'page' : undefined}><Fragment set:html={ic(t.icon)} /><span>{t.label}</span></a>
-  ))}
-</nav>
+<div class="wrap tabs-rahmen">
+  <nav class="tabs" aria-label="Archiv-Ansicht" data-archiv-tabs>
+    {tabs.map((t) => (
+      <a href={t.href} aria-current={path === t.href ? 'page' : undefined}>{t.label}</a>
+    ))}
+  </nav>
+</div>
 
 <script>
   const nav = document.querySelector<HTMLElement>('[data-archiv-tabs]');
@@ -45,8 +46,8 @@ const path = Astro.url.pathname;
       await Promise.all(warten);
 
       // Inhalt nach den Reitern tauschen, Untertitel und Titel übernehmen
-      const altNav = document.querySelector('[data-archiv-tabs]')!;
-      const neuNav = doc.querySelector('[data-archiv-tabs]');
+      const altNav = document.querySelector('[data-archiv-tabs]')!.parentElement!;
+      const neuNav = doc.querySelector('[data-archiv-tabs]')?.parentElement;
       if (!neuNav) { location.href = url; return; }
       while (altNav.nextSibling) altNav.nextSibling.remove();
       let x = neuNav.nextSibling;
@@ -76,15 +77,14 @@ const path = Astro.url.pathname;
 </script>
 
 <style>
-  .tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: clamp(28px, 5vw, 48px); }
+  /* Segmentschalter wie in iOS: graue Spur, die gewählte Ansicht liegt als weiße Fläche darauf */
+  .tabs-rahmen { margin-bottom: clamp(32px, 5vw, 52px); }
+  .tabs { display: inline-flex; flex-wrap: wrap; gap: 2px; padding: 3px; border-radius: 980px; background: var(--fill); }
   a {
-    display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 2px 18px 0 14px;
-    font-family: var(--display); font-weight: 800; letter-spacing: 0.01em; text-transform: uppercase; font-size: 1.05rem;
-    text-decoration: none; border-radius: 999px; background: transparent; color: var(--ink);
-    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 20%, transparent);
-    transition: box-shadow 160ms ease, background-color 160ms ease, color 160ms ease;
+    display: inline-flex; align-items: center; min-height: 34px; padding: 0 18px; border-radius: 980px;
+    font-size: 14px; color: var(--ink); text-decoration: none; transition: background-color 200ms var(--ease), box-shadow 200ms var(--ease);
   }
-  a :global(.ic) { margin-top: -2px; }
-  a:hover { box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ink) 45%, transparent); }
-  a[aria-current='page'] { background: var(--ink); color: var(--ground); box-shadow: none; }
+  a:hover { text-decoration: none; background: color-mix(in srgb, var(--paper) 50%, transparent); }
+  a[aria-current='page'] { background: var(--paper); font-weight: 600; box-shadow: 0 1px 3px rgb(0 0 0 / 0.12), 0 0 0 0.5px rgb(0 0 0 / 0.04); }
+  @media (prefers-color-scheme: dark) { a[aria-current='page'] { background: #636366; } }
 </style>
