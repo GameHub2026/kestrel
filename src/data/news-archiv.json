@@ -2,6 +2,615 @@
  {
   "quelle": "Collider",
   "art": "film",
+  "titel": "'Dune's’ Best Line Is Still the Greatest Quote in Franchise History",
+  "link": "https://collider.com/dune-best-quote-sci-fi-timothee-chalamet-rebecca-ferguson/",
+  "datum": "2026-11-01T11:22:12.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "id Tech: „Uns geht es großartig“ – Doom- und Wolfenstein-Macher bündeln nach Xbox-Entlassungen ihre Kräfte",
+  "link": "https://www.play3.de/2026/11/01/id-tech-uns-geht-es-grossartig-doom-und-wolfenstein-macher-buendeln-nach-xbox-entlassungen-ihre-kraefte/",
+  "datum": "2026-11-01T11:20:50.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Prime Video’s Twisted Stephen King Adaptation Is Officially a Streaming Nightmare",
+  "link": "https://collider.com/carrie-stephen-king-prime-video-streaming-success-october-2026/",
+  "datum": "2026-11-01T11:00:12.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Von „Gotham“ bis „Watchmen“: Das sind die 25 besten DC-Serien aller Zeiten",
+  "link": "https://www.serienjunkies.de/news/serien/die-25-besten-dc-serien-aller-zeiten-im-grossen-ranking-94555019.html",
+  "datum": "2026-11-01T11:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Kirby Air Riders: Halloween-Event ist so kaputt, dass Nintendo den Stecker zieht",
+  "link": "https://www.pcgames.de/Kirby-Air-Riders-Spiel-75158/News/Halloween-Event-Bugs-Abgebrochen-1558506/",
+  "datum": "2026-11-01T11:00:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Pikmin 4 Nintendo Switch 2 Edition: Release am 12. November, Demo und neuer Modus enthüllt",
+  "link": "https://www.eurogamer.de/pikmin-4-switch-2-edition-demo",
+  "datum": "2026-11-01T11:00:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "MediaMarkt-Sale: PS5-Spiele wie God of War, Gran Turismo 7 und Spider-Man stark reduziert",
+  "link": "https://www.play3.de/2026/11/01/mediamarkt-sale-ps5-spiele-wie-god-of-war-und-spider-man-stark-reduziert/",
+  "datum": "2026-11-01T10:53:22.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "CBS' Hit Crime Procedural Officially Reaches a Massive Viewership Milestone",
+  "link": "https://collider.com/cbs-sheriff-country-season-2-premiere-ratings-10-million-viewers/",
+  "datum": "2026-11-01T10:40:12.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Erkennt ihr ihn? Dieser Scrubs-Star spielte bereits in Star Trek einen Arzt",
+  "link": "https://www.moviepilot.de/news/erkennt-ihr-ihn-dieser-scrubs-star-spielte-bereits-in-star-trek-einen-arzt-1165228",
+  "datum": "2026-11-01T10:35:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Days Gone: Bend Studio soll 2027 zurückkehren – mit Koop statt Teil 2",
+  "link": "https://www.pcgames.de/Spiele-Thema-239104/News/days-gone-bend-studio-neues-koop-spiel-2027-1558505/",
+  "datum": "2026-11-01T10:31:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Skyblivion: Ehemaliger Entwickler droht Fan-Projekt mit rechtlichen Schritten",
+  "link": "https://www.eurogamer.de/skyblivion-ex-entwickler-droht-klage",
+  "datum": "2026-11-01T10:30:00.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "10 Great Adventure Video Games You Haven't Played",
+  "link": "https://collider.com/best-adventure-games-you-havent-played/",
+  "datum": "2026-11-01T10:26:12.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Gary Oldman’s 6-Part Spy Thriller Officially Takes Apple TV’s No. 1 Spot",
+  "link": "https://collider.com/slow-horses-gary-oldman-apple-tv-streaming-success-october-2026/",
+  "datum": "2026-11-01T10:20:12.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "‘Top Gun’ Officially Flies High Again With a Massive Streaming Comeback",
+  "link": "https://collider.com/tom-cruise-top-gun-maverick-paramount-plus-streaming-hit-october-2026/",
+  "datum": "2026-11-01T10:00:12.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "„Sollen sie doch Cloud nutzen“: OpenAI-Chef hätte euren RAM lieber im Rechenzentrum – Marie Antoinette lässt grüßen",
+  "link": "https://www.pcgames.de/Spiele-Thema-239104/News/OpenAI-Chef-Euer-Ram-Im-Rechenzentrum-1558501/",
+  "datum": "2026-11-01T10:00:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Angebliches Gameplay-Video zeigt unangekündigtes Remake von Persona 1",
+  "link": "https://www.eurogamer.de/persona-1-remake-gameplay-leak",
+  "datum": "2026-11-01T10:00:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Sony Bend: Woran arbeiten die Days-Gone-Macher? Insiderbericht liefert mögliche Details",
+  "link": "https://www.play3.de/2026/11/01/sony-bend-woran-arbeiten-die-days-gone-macher-insiderbericht-liefert-moegliche-details/",
+  "datum": "2026-11-01T09:54:55.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Download-Steuer: Gesetzesvorschlag für 5,5 Cent pro Gigabyte nimmt in Frankreich erste Hürde",
+  "link": "https://www.play3.de/2026/11/01/download-steuer-gesetzesvorschlag-fuer-55-cent-pro-gigabyte-nimmt-in-frankreich-erste-huerde/",
+  "datum": "2026-11-01T09:43:48.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "‘Resident Evil’ Officially Unleashes a Double Dose of Horror on Netflix",
+  "link": "https://collider.com/resident-evil-apocalypse-netflix-streaming-november-2026/",
+  "datum": "2026-11-01T09:40:12.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Cyberpunk 2: Neue Stellenanzeige liefert Hinweise auf Koop-Quests",
+  "link": "https://www.pcgames.de/Spiele-Thema-239104/News/cyberpunk-2-stellenanzeige-koop-quests-1558503/",
+  "datum": "2026-11-01T09:31:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Silent Hill: Townfall führt neuen Hard-Modus ein und balanciert alle Stufen neu aus",
+  "link": "https://www.eurogamer.de/silent-hill-townfall-update-hard-modus",
+  "datum": "2026-11-01T09:30:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Fans sind bis heute wütend: Sieben Sci-Fi-Serien ohne Finale",
+  "link": "https://www.serienjunkies.de/news/serien/fans-sind-bis-heute-wuetend-sieben-sci-fi-serien-ohne-finale-94568161.html",
+  "datum": "2026-11-01T09:28:00.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Ben Affleck’s Forgotten Sci-Fi Flop Officially Scores a Surprising Streaming Comeback",
+  "link": "https://collider.com/ben-affleck-hypnotic-streaming-success-30-days-october-2026/",
+  "datum": "2026-11-01T09:20:12.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Quentin Tarantino Officially Refuses to Watch Denis Villeneuve’s ‘Dune’ Because of This Movie on HBO Max",
+  "link": "https://collider.com/david-lynch-dune-1984-streaming-hbo-max-november-2026/",
+  "datum": "2026-11-01T09:00:12.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Sie wurde gerade 55 Jahre alt und war 2 Mal für den Oscar nominiert: Erkennt ihr die Hollywoodgröße in ihrer allerersten Rolle?",
+  "link": "https://www.moviepilot.de/news/winona-ryder-55-geburtstag-erkennt-ihr-1155400",
+  "datum": "2026-11-01T09:00:00.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Vanessa \"Nessi\" Borck wird das Gesicht von \"Love Hunter\"",
+  "link": "https://www.dwdl.de/nachrichten/108410/vanessa_nessi_borck_wird_das_gesicht_von_love_hunter/",
+  "datum": "2026-11-01T09:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Zelda: Ocarina of Time im Retro – Was das beste Spiel aller Zeiten heute noch besonders macht",
+  "link": "https://www.pcgames.de/The-Legend-of-Zelda-Ocarina-of-Time-Classic-15771/Specials/Das-beste-Spiel-aller-Zeiten-1557470/",
+  "datum": "2026-11-01T09:00:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Crimson Desert: Update 2.04.04 veröffentlicht – diese Verbesserungen werden geboten",
+  "link": "https://www.play3.de/2026/11/01/crimson-desert-update-2-04-04-veroeffentlicht-diese-verbesserungen-werden-geboten/",
+  "datum": "2026-11-01T08:57:46.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "‘Godzilla Minus Zero’ Crashes Into Tokyo Film Festival With Stars Ryunosuke Kamiki, Minami Hamabe in Tow",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/godzilla-minus-zero-crashes-tokyo-film-festival-ryunosuke-kamiki-minami-hamabe-1236744328/",
+  "datum": "2026-11-01T08:57:37.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Inde Navarrette Wins Halloween With Penis-Destroying Robot ‘SNL’ Sketch ‘The Inventor’s Wife’",
+  "link": "https://variety.com/2026/tv/news/inde-navarrette-snl-halloween-the-inventors-wife-penis-robot-1236936629/",
+  "datum": "2026-11-01T08:33:26.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "GTA 6: Verfolgungsjagden bei Nacht erfordern völlig neue Taktiken",
+  "link": "https://www.play3.de/2026/11/01/gta-6-verfolgungsjagden-bei-nacht-erfordern-voellig-neue-taktiken/",
+  "datum": "2026-11-01T08:31:09.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Final Fantasy 14 Evercold: Release-Termin steht und neuer Fernkampf-Job Zephyr enthüllt",
+  "link": "https://www.eurogamer.de/final-fantasy-14-evercold-release-zephyr",
+  "datum": "2026-11-01T08:29:56.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Fußball: Bayern-BVB punktet, Saison-Tiefs am Nachmittag und Abend",
+  "link": "https://www.dwdl.de/zahlenzentrale/108415/fussball_bayernbvb_punktet_saisontiefs_am_nachmittag_und_abend/",
+  "datum": "2026-11-01T08:29:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Dieses Netflix-Epos rettet euren Sonntagabend: Gigantische Bilder und eine Geschichte, die bis zum Schluss fesselt",
+  "link": "https://www.moviepilot.de/news/dieses-netflix-epos-rettet-euren-sonntagabend-gigantische-bilder-und-eine-geschichte-die-bis-zum-schluss-fesselt-1165252",
+  "datum": "2026-11-01T08:00:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Halloween ist vorbei, aber mit einer meiner absoluten Lieblingsserien geht die Gruselsaison weiter",
+  "link": "https://www.serienjunkies.de/news/serien/fantasy-serientipp-auf-paramount-rtl-und-prime-video-94564920.html",
+  "datum": "2026-11-01T08:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "WoW Forever: So funktioniert das neue Vermächtnissystem",
+  "link": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Specials/WoW-Forever-so-funktioniert-das-neue-Vermaechtnissystem-1558356/",
+  "datum": "2026-11-01T08:00:00.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "\"Klein gegen Groß\" ganz groß: Rekord-Marktanteile für ARD-Show",
+  "link": "https://www.dwdl.de/zahlenzentrale/108414/klein_gegen_gross_ganz_gross_rekordmarktanteile_fuer_ardshow/",
+  "datum": "2026-11-01T07:56:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Joko geht heute Abend volles Risiko: Warum die neue Staffel von Wer stiehlt mir die Show? völlig anders wird",
+  "link": "https://www.moviepilot.de/news/joko-geht-heute-abend-volles-risiko-warum-die-neue-staffel-von-wer-stiehlt-mir-die-show-vollig-anders-wird-1165299",
+  "datum": "2026-11-01T07:00:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Die 25 besten DC-Serien aller Zeiten im Ranking",
+  "link": "https://www.serienjunkies.de/news/storys/die-25-besten-dc-serien-aller-zeiten-im-ranking-zr-94554909.html",
+  "datum": "2026-11-01T07:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "WoW Forever: 10 Sätze, mit denen ihr jeden Classic-Fan auf die Palme bringt",
+  "link": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Specials/wow-forever-triggern-1558249/",
+  "datum": "2026-11-01T07:00:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Pokémon Go: Halloween-Event Teil 2 startet mit schillerndem Gruff und Mega-Zobiris",
+  "link": "https://www.eurogamer.de/pokemon-go-halloween-teil-2-gruff",
+  "datum": "2026-11-01T07:00:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Heute Abend schauen: Game of Thrones-Star liefert mit 6-teiliger Miniserie bei Amazon Prime Hochspannung",
+  "link": "https://www.moviepilot.de/news/amazon-miniserie-game-of-thrones-star-tipp-1160131",
+  "datum": "2026-11-01T06:30:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "HBO-Serie mit 92 Prozent Kritiker-Zuspruch startet heute in die neue Staffel",
+  "link": "https://www.serienjunkies.de/news/serien/hbo-serie-mit-92-prozent-kritiker-zuspruch-startet-heute-in-die-neue-staffel-94568024.html",
+  "datum": "2026-11-01T06:30:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Deutsche Miniserie feiert heute TV-Premiere ohne Werbung - reale Tragödie steht im Zentrum",
+  "link": "https://www.serienjunkies.de/news/serien/deutsche-miniserie-feiert-heute-tv-premiere-ohne-werbung-reale-tragoedie-steht-im-zentrum-94568014.html",
+  "datum": "2026-11-01T06:15:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Beliebte Sci-Fi-Serie ab heute mit 12 neuen Folgen in Deutschland zu sehen",
+  "link": "https://www.serienjunkies.de/news/serien/beliebte-sci-fi-serie-ab-heute-mit-12-neuen-folgen-in-deutschland-zu-sehen-94568007.html",
+  "datum": "2026-11-01T06:00:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Robert Downey Jr.  Pedro Pascal Serve MCU Role Reversal For Halloween: \"Costume Swap!\"",
+  "link": "https://deadline.com/2026/10/robert-downey-jr-pedro-pascal-mcu-role-reversal-halloween-1237210827/",
+  "datum": "2026-11-01T05:35:33.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Gracie Abrams Channels Baz Luhrmann’s ‘Romeo + Juliet’ For ‘SNL’ Halloween Performance",
+  "link": "https://deadline.com/2026/10/gracie-abrams-baz-luhrmann-romeo-juliet-snl-halloween-1237210810/",
+  "datum": "2026-11-01T05:23:35.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘Godzilla Minus Zero’ Stars Relive Hollywood Ovation and Fan Chants for Yamazaki Takashi at Tokyo Festival",
+  "link": "https://variety.com/2026/film/festivals/godzilla-minus-zero-stars-relive-hollywood-ovation-tokyo-festival-1236936612/",
+  "datum": "2026-11-01T05:18:22.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘SNL’ Pays Tribute To Patrick Stewart With Clip From His 1994 Episode",
+  "link": "https://deadline.com/2026/10/snl-pays-tribute-patrick-stewart-1237210812/",
+  "datum": "2026-11-01T05:11:21.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘SNL’ Weekend Update Finally Weighs in on Israel",
+  "link": "https://variety.com/2026/tv/news/snl-weekend-update-israel-stance-michael-che-colin-jost-1236936599/",
+  "datum": "2026-11-01T05:03:38.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Heute im TV: Unterhaltsame Mischung aus Abenteuerfilm und Krimi, die auf legendärer Vorlage basiert",
+  "link": "https://www.moviepilot.de/news/heute-im-tv-tod-auf-dem-nil-krimi-abenteuer-1159771",
+  "datum": "2026-11-01T05:00:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘SNL’ Celebrates Milwaukee Brewers’ World Series Win With Bobby Moynihan’s Drunk Uncle on Weekend Update",
+  "link": "https://variety.com/2026/tv/news/drunk-uncle-bobby-moynihan-snl-milwaukee-brewers-world-win-1236936586/",
+  "datum": "2026-11-01T04:56:10.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Milwaukee Brewers Make Surprise \"Weekend Update\" Appearance After World Series Win With Returning ‘SNL’ Alum Bobby Moynihan",
+  "link": "https://deadline.com/2026/10/milwaukee-brewers-weekend-update-after-world-series-1237210800/",
+  "datum": "2026-11-01T04:48:53.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘SNL’ Cold Open Crashed by Tom Hanks as David S. Pumpkins, Nicki Minaj and Donald Trump, Who Admits He ‘Might Be Gay’",
+  "link": "https://variety.com/2026/tv/news/tom-hanks-trump-david-pumpkins-snl-nicki-minaj-1236936453/",
+  "datum": "2026-11-01T04:03:35.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Inde Navarrette Kicks Off ‘Saturday Night Live’ Debut With Shane Gillis Quip About Her \"Little Whore Outfit\" For Getting Into Marvel Shape",
+  "link": "https://deadline.com/2026/10/inde-navarrette-snl-debut-shane-gillis-quip-little-whore-outfit-1237210738/",
+  "datum": "2026-11-01T03:58:13.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "‘SNL’: Inde Navarrette Digs at Shane Gillis’ Joke About Women Dressing Like \"Whores\" at the Gym as Tom Hanks Crashes Cold Open",
+  "link": "https://www.hollywoodreporter.com/tv/tv-news/inde-navarrette-snl-shane-gillis-whore-gym-tom-hanks-1236744238/",
+  "datum": "2026-11-01T03:54:45.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Inde Navarrette Takes Swipe at Shane Gillis During ‘SNL’ Monologue",
+  "link": "https://variety.com/2026/tv/news/inde-navarrette-snl-shane-gillis-gym-monologue-1236936565/",
+  "datum": "2026-11-01T03:52:55.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Tom Hanks Returns As David S. Pumpkins For ‘Saturday Night Live’ Opener  Interrupted By Donald Trump’s Fear Of A Midterm Ass-Whipping",
+  "link": "https://deadline.com/2026/10/saturday-night-live-open-tom-hanks-trump-halloween-1237210760/",
+  "datum": "2026-11-01T03:52:52.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "The Greatest Western of the 2010s Is a Remake That Totally Outshines the Original",
+  "link": "https://collider.com/true-grit-2010-greatest-western-movie-remake-coen-brothers/",
+  "datum": "2026-11-01T03:49:12.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Heidi Klum Dressed Up as a Severed Human Hand for Her Annual Halloween Party",
+  "link": "https://variety.com/2026/scene/news/heidi-klum-halloween-2026-severed-human-hand-costume-1236935653/",
+  "datum": "2026-11-01T03:12:07.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Heidi Klum Reveals This Year’s (Very Bloody) Halloween Costume",
+  "link": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/heidi-klum-2026-halloween-costume-reveal-1236741385/",
+  "datum": "2026-11-01T02:36:46.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Tovah Feldshuh Shuts Down ‘Nobody Wants This’ Cast Tension Rumors Amid Adam Brody \"Free Palestine” Support",
+  "link": "https://www.hollywoodreporter.com/tv/tv-news/tovah-feldshuh-nobody-wants-this-tension-adam-brody-palestine-1236744254/",
+  "datum": "2026-11-01T01:12:39.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Pandemic-Era Longing to Gather Fed Qiu Jiongjiong’s Tokyo Competition Title ‘Fuxi: Four Tales of Feasting’",
+  "link": "https://variety.com/2026/film/festivals/pandemic-longing-gather-tokyo-competition-title-fuxi-1236936421/",
+  "datum": "2026-11-01T00:46:15.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Steep Height? No Sweat: ‘Everest: The Other Side’s Jim Morrison And Jimmy Chin Rappel Down Side Of West Hollywood Building [Video]",
+  "link": "https://deadline.com/2026/10/everest-the-other-side-director-and-star-rappel-down-building-1237210694/",
+  "datum": "2026-11-01T00:26:17.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘Vision Quest’s Paul Bettany On How He Blew 10 Blood Vessels In His Eye While \"Wildly Overacting\": \"A Lesson In Less Is More\"",
+  "link": "https://deadline.com/2026/10/vision-quest-paul-bettany-blew-10-blood-vessels-eye-1237210698/",
+  "datum": "2026-11-01T00:22:01.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "‘Green Room’ Director Recalls How Patrick Stewart \"Saved\" Movie From Being Scrapped",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/how-patrick-stewart-saved-green-room-scrapped-jeremy-saulnier-1236744241/",
+  "datum": "2026-11-01T00:13:53.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Phoebe Bridgers Makes L.A.’s Intuit Dome Into an Intimate Space Full of Love, Grief, Light Shows, ‘Peter Pan’ Cosplay and a Great Billie Eilish Duet: Concert Review",
+  "link": "https://variety.com/2026/music/concert-reviews/phoebe-bridgers-concert-review-billie-eilish-intuit-dome-1236936235/",
+  "datum": "2026-11-01T00:09:22.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Trump Lawsuit Against Wall Street Journal Over Epstein Story Dismissed by Judge",
+  "link": "https://www.hollywoodreporter.com/news/politics-news/trump-lawsuit-wall-street-journal-epstein-dismissed-1236744244/",
+  "datum": "2026-11-01T00:01:47.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Input Lag Is So Bad in Call of Duty: Modern Warfare 4 on Nintendo Switch 2 That Players Suffer From a 'Competitive Disadvantage'",
+  "link": "https://www.ign.com/articles/input-lag-is-so-bad-in-call-of-duty-modern-warfare-4-on-nintendo-switch-2-that-players-suffer-from-a-competitive-disadvantage",
+  "datum": "2026-10-31T23:32:09.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Taika Waititi Calls ‘Klara And The Sun’ Critics \"Irrelevant, Out Of Touch, Obsolete\"",
+  "link": "https://deadline.com/2026/10/taika-waititi-calls-klara-and-the-sun-critics-irrelevant-1237210687/",
+  "datum": "2026-10-31T23:28:09.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Judge Dismisses Trump’s Wall Street Journal Defamation Lawsuit Over Published Epstein ‘Birthday Book’ for a Second Time",
+  "link": "https://variety.com/2026/biz/news/judge-dismisses-trump-wsj-defamation-lawsuit-epstein-1236936423/",
+  "datum": "2026-10-31T23:23:28.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Save Mass Effect Graffiti Reportedly Spray-Painted Outside EA Building",
+  "link": "https://www.ign.com/articles/save-mass-effect-graffiti-reportedly-spray-painted-outside-ea-building",
+  "datum": "2026-10-31T23:08:02.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Star Wars Actor Hayden Christensen Says a Man Who Burgled His House Recognized Him Then Gave His Stuff Back Mid-Robbery",
+  "link": "https://www.ign.com/articles/star-wars-actor-hayden-christensen-says-a-man-who-burgled-his-house-recognized-him-then-gave-his-stuff-back-mid-robbery",
+  "datum": "2026-10-31T23:00:27.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "The Arcane Knowledge Directors Wish They Could Summon",
+  "link": "https://www.indiewire.com/features/craft/scad-savannah-film-festival-directors-panel-1235224898/",
+  "datum": "2026-10-31T23:00:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Michael Douglas Shares Update on Jack Nicholson: \"He’s Well. He Has Disappeared\"",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/jack-nicholson-update-michael-douglas-disappeared-1236744230/",
+  "datum": "2026-10-31T22:43:56.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "‘Klara and the Sun’ Director Taika Waititi Calls Critics \"Sad Lost Souls\" Over Negative Reviews",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/klara-and-the-sun-taika-waititi-slams-critics-reviews-1236744227/",
+  "datum": "2026-10-31T22:41:34.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘Harry Potter’s Paapa Essiedu Defends Role After Advocating For Trans Rights: \"People Have A Lot Of Feelings About This\"",
+  "link": "https://deadline.com/2026/10/harry-potter-paapa-essiedu-defends-casting-trans-rights-1237210681/",
+  "datum": "2026-10-31T22:28:18.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "Artisans Break Down the Tricks and Treats of Designing a Trojan Horse at SCAD Savannah Film Festival",
+  "link": "https://www.indiewire.com/features/craft/scad-savannah-film-festival-artisans-ruth-de-jong-amy-roth-1235224897/",
+  "datum": "2026-10-31T22:14:51.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘Green Room’ Writer/Director Recalls How Patrick Stewart \"Saved The Day\" When Film Was Almost Axed, Would Tell Fans: \"Don’t Root For The Nazis\"",
+  "link": "https://deadline.com/2026/10/green-room-patrick-stewart-saved-the-day-1237210678/",
+  "datum": "2026-10-31T22:01:20.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Where to Watch ‘O.J.’s Accomplice,’ New Docuseries Reexamining the 1994 Murders",
+  "link": "https://www.hollywoodreporter.com/tv/tv-news/watch-ojs-accomplice-2026-oj-simpson-doc-peacock-free-trial-1236744180/",
+  "datum": "2026-10-31T21:57:19.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Anthropic Blocks AI Game Clones in Claude Opus Update",
+  "link": "https://www.ign.com/articles/anthropic-blocks-ai-game-clones-in-claude-opus-update",
+  "datum": "2026-10-31T21:46:36.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Best Celebrity Halloween Costumes 2026: Paris Hilton as Britney Spears, Lisa Rinna as Kylie Jenner and More",
+  "link": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/best-celebrity-halloween-costumes-2026-1236744134/",
+  "datum": "2026-10-31T21:28:45.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Everything Coming to Apple TV in November",
+  "link": "https://www.ign.com/articles/whats-new-on-apple-tv-november-2026",
+  "datum": "2026-10-31T20:30:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Persona 1 Remake Footage Seemingly Leaks Online",
+  "link": "https://www.ign.com/articles/persona-1-remake-footage-seemingly-leaks-online",
+  "datum": "2026-10-31T20:21:10.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Judge Again Tosses Out Donald Trump’s $10 Billion Lawsuit Against The Wall Street Journal Over Its Reporting On Jeffrey Epstein Birthday Letter",
+  "link": "https://deadline.com/2026/10/trump-wall-street-journal-lawsuit-dismissed-jeffrey-epstein-1237210665/",
+  "datum": "2026-10-31T20:15:54.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "How to Read the Redwall Books in Order",
+  "link": "https://www.ign.com/articles/how-to-read-the-redwall-books-in-order",
+  "datum": "2026-10-31T19:59:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "The Best Deals Today: Apple Watch Ultra 4, Ocarina of Time Remake, Pikmin 4, and More",
+  "link": "https://www.ign.com/articles/best-deals-for-october-31-2026",
+  "datum": "2026-10-31T19:34:38.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
   "titel": "The 8 Best Sci-Fi Horror Books of All Time, Ranked",
   "link": "https://collider.com/best-sci-fi-horror-books-all-time-ranked/",
   "datum": "2026-10-31T19:26:12.000Z"
