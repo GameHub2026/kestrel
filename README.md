@@ -9,9 +9,10 @@ Technik: Astro (statische Seite aus Markdown), Hosting: Cloudflare Pages (`kestr
 2. Steckbrief oben ausfüllen (✎-Hinweise ersetzen). Wertung immer selbst eintragen.
 3. Das **Interview** beantworten: Stichworte direkt unter den Kästen reichen. Mindestens 3 Antworten.
 4. Bilder in den Kasten **„Bilder“** ziehen und darunter kurz schreiben, was sie zeigen. Sie landen automatisch im Ordner des Textes. Titelbild: Dateiname ins Feld `bild` (z. B. `cover.jpg`).
-5. Doppelklick auf **`Veröffentlichen.command`**: Bilder werden verkleinert, Gemini schreibt aus dem Interview den Text (oberhalb der INTERVIEW-Zeile) und ergänzt leere Felder Fazit/Für wen. Mit `entwurf: false` geht er dann online, sonst nur lokal sichtbar.
+5. Claude Bescheid sagen: Claude schreibt aus dem Interview den Text (oberhalb der INTERVIEW-Zeile), Regeln in `CLAUDE.md` unter „Kritiken schreiben“. Du liest ihn gegen.
+6. Doppelklick auf **`Veröffentlichen.command`**: Bilder werden verkleinert, dann wird geprüft, ob jeder Text mit Interview-Antworten auch einen Text hat. Mit `entwurf: false` geht er online, sonst nur lokal sichtbar.
 
-Alles unterhalb der Zeile `<!-- INTERVIEW … -->` bleibt privat. Text neu schreiben lassen: Text oberhalb der Zeile löschen oder `neu_schreiben: true` in den Steckbrief. Eigene Änderungen am fertigen Text werden nie überschrieben.
+Alles unterhalb der Zeile `<!-- INTERVIEW … -->` bleibt privat.
 
 **Alte Wertung nie ändern.** Wenn du etwas später anders siehst, unter `nachtraege:` einen Eintrag mit Datum anhängen.
 

@@ -20,7 +20,7 @@ Regeln: Nur diese Datei ändern, maximal 40 Zeilen, Veraltetes streichen. Dateie
 - Logo: keine Datei mit Schriftzug als Pfad, keine Markenrecherche (DPMA/EUIPO). Bildstrecke kein 4K: schärfere Bilder gleichnamig in `src/assets/reel/` ersetzen.
 - Kevins Texte (Gears of War E Day, Cover Our Flag Means Death) bearbeitet er noch selbst und veröffentlicht sie dann. Nicht anfassen, nicht mitcommitten.
 - 05.11.2026 Dune Awakening: Steckbrief ohne ✎, Bilder verkleinert, Doppelte im Scratchpad. Text von Claude neu und locker geschrieben (Regel jetzt in CLAUDE.md). Wartet auf Kevins Freigabe, dann nur `Texte/Spiele/Dune Awakening/`, `tools/`, `Veröffentlichen.command` und `CLAUDE.md` committen (nicht Veröffentlichen.command, nimmt alles mit).
-- Veröffentlichen.command schreibt keine Texte mehr (Gemini raus), stattdessen `tools/text-pruefen.mjs`: stoppt, wenn ein Text Interview-Antworten, aber keinen Text hat. `text-schreiben.mjs` bleibt ungenutzt liegen (Schlüssel jetzt in `~/Developer/Spiele-Bibliothek/`).
+- Veröffentlichen.command schreibt keine Texte mehr (Gemini raus), stattdessen `tools/text-pruefen.mjs`: stoppt, wenn ein Text Interview-Antworten, aber keinen Text hat. Gemini-Skript `text-schreiben.mjs` gelöscht, Texte schreibt nur noch Claude mit Skill `vermenschlichen`.
 
 ## Entscheidungen
 <!-- Format: Entscheidung – kurze Begründung -->
