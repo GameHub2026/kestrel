@@ -12,14 +12,15 @@ Regeln: Nur diese Datei ändern, maximal 40 Zeilen, Veraltetes streichen. Dateie
 - Footer wieder blau nach Vorlage (collectui „sequel“, Pranav): Serifenschrift Source Serif 4, Spalten, Suche, gestochene Landschaft auf Canvas. Pferd und Reiter neu als eigene Vektorzeichnung `Reiter.astro` in Haltung und Holzschnitt-Stil der Vorlage (nicht deren Bild). Unschärfe-Verlauf übernimmt über dem Footer Blau bzw. Creme (`--kante-ton`). Commit 907bc6e.
 - Navigation nach Kevins Video (28.10.2026): schwebende Glasleiste links (Start, Sammlung, Demnächst, Archiv | Suchen, Hell/Dunkel, Kevin → Wie ich werte), ein gleitendes Schild mit Name und Kürzel ⌥1–⌥6, Text rollt beim Wechsel. Suche wie Spotlight (Taste /). Handy: Tab-Leiste unten. „Kestrel“ im Glasschild oben links. „Alle Texte“ heißt überall „Sammlung“ (URL bleibt `/texte/`). Commit 57092b6.
 - 01.11.2026: Logo „Ring“ (mit Skill logo-design): Wertungsring läuft in Hakenschnabel aus, Punkt = Auge. Auf der Startseite statt der drei Ringe (`Falke.astro`, currentColor), Favicon/ICO/Touch-Icon/Manifest in `public/`. Master, Kleinfassung, Varianten und Regeln in `marke/`. Auch im Glasschild der Navigation (Kleinfassung, 20 px). Gepusht (Commit 9f5acb0 und Folgecommit), online geprüft. Skill liegt in `~/.claude/skills/logo-design`.
-- `DESIGN.md` neu für das Apple-Design (Farben, Schrift, Komponenten, Logo). Ungenutzte Pakete `three`, Big Shoulders, Red Hat Mono entfernt.
+- `DESIGN.md` neu für das Apple-Design. Ungenutzte Pakete entfernt. 05.11.2026: „Ich folge“ lädt Spiele-Cover groß (`gross()` in `src/pages/serien/index.astro`, IGDB `t_cover_small` → `t_cover_big_2x`), gepusht.
 - `.claude/launch.json`: `kestrel` (`npm run dev`, Port 4321). Blockiert ein Text lokal den Build: Projekt ohne `node_modules` in den Scratchpad kopieren, Text dort auf `entwurf: true`, `node_modules.nosync` verlinken, dort bauen. Im versteckten Browser-Fenster laufen requestAnimationFrame und CSS-Übergänge nicht; Bewegung dann per Timer-Ersatz für requestAnimationFrame messen.
 
 ## Offen
 - `archiv-hell.jpeg` zeigt ein echtes Super-Mario-Modul (Nintendo-Logo) und eine Fujifilm-Dose; auf Kevins Wunsch trotzdem veröffentlicht. Bei Bedarf gleichnamig ersetzen.
-- Logo: keine Datei mit Schriftzug als Pfad, keine Markenrecherche (DPMA/EUIPO).
-- Kevins Texte (Gears of War E Day, Dune Awakening, Cover Our Flag Means Death) bearbeitet er noch selbst und veröffentlicht sie dann. Nicht anfassen, nicht mitcommitten.
-- Bildstrecke: Bilder sind kein 4K; schärfere Fassungen gleichnamig in `src/assets/reel/` ersetzen.
+- Logo: keine Datei mit Schriftzug als Pfad, keine Markenrecherche (DPMA/EUIPO). Bildstrecke kein 4K: schärfere Bilder gleichnamig in `src/assets/reel/` ersetzen.
+- Kevins Texte (Gears of War E Day, Cover Our Flag Means Death) bearbeitet er noch selbst und veröffentlicht sie dann. Nicht anfassen, nicht mitcommitten.
+- 05.11.2026 Dune Awakening: Steckbrief ohne ✎, Bilder verkleinert, Doppelte im Scratchpad. Text von Claude neu und locker geschrieben (Regel jetzt in CLAUDE.md). Wartet auf Kevins Freigabe, dann nur `Texte/Spiele/Dune Awakening/`, `tools/`, `Veröffentlichen.command` und `CLAUDE.md` committen (nicht Veröffentlichen.command, nimmt alles mit).
+- Veröffentlichen.command schreibt keine Texte mehr (Gemini raus), stattdessen `tools/text-pruefen.mjs`: stoppt, wenn ein Text Interview-Antworten, aber keinen Text hat. `text-schreiben.mjs` bleibt ungenutzt liegen (Schlüssel jetzt in `~/Developer/Spiele-Bibliothek/`).
 
 ## Entscheidungen
 <!-- Format: Entscheidung – kurze Begründung -->

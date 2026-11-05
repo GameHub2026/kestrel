@@ -108,7 +108,8 @@ import { ic } from '../../icons';
   const relativ = (iso: string) => { const t = Math.floor((Date.now() - Date.parse(iso)) / 864e5); return t <= 0 ? 'heute' : t === 1 ? 'gestern' : `vor ${t} Tagen`; };
   const bis = (d: string) => { const t = Math.round((Date.parse(d + 'T12:00:00') - Date.now()) / 864e5); return t <= 0 ? 'heute' : t === 1 ? 'morgen' : `in ${t} Tagen`; };
   const ART: Record<string, string> = { ableger: 'Ableger', staffel: 'Neu',  status: 'Status', trailer: '▶ Trailer', news: 'News' };
-  const gross = (u?: string) => u?.replace('/w154/', '/w342/');
+  // Gespeichert sind kleine Vorschaubilder; für Kacheln und Retina die großen Fassungen laden
+  const gross = (u?: string) => u?.replace('/w154/', '/w342/').replace('/t_cover_small/', '/t_cover_big_2x/');
   function poster(src?: string, klasse = 'poster') {
     const b = el('span', klasse);
     src = gross(src);
