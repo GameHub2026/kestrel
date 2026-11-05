@@ -1,5 +1,1034 @@
 [
  {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Netflix Officially Scores New Series Based on 20-Year-Old Classic",
+  "link": "https://collider.com/netflix-prep-coming-of-age-series-nicole-taylor/",
+  "datum": "2026-11-05T12:30:12.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Zelda: Ocarina of Time - Alle Flaschen im Remake finden - Fundort-Tipps im Guide",
+  "link": "https://www.pcgames.de/The-Legend-of-Zelda-Ocarina-of-Time-Remake-Spiel-78201/Tipps/Flaschen-Fundort-Guide-1559071/",
+  "datum": "2026-11-05T12:30:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Marvel's Wolverine sorgt für Rekorde bei PlayStation - Spielerzahlen und Umsätze steigen",
+  "link": "https://www.eurogamer.de/marvels-wolverine-playstation-rekord-quartalszahlen",
+  "datum": "2026-11-05T12:25:20.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "The 8 Greatest Martial Arts War Movies, Ranked",
+  "link": "https://collider.com/best-martial-arts-war-movies-all-time-ranked/",
+  "datum": "2026-11-05T12:21:12.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "8 Classic Action Thrillers That Are Still Perfect From Start to Finish",
+  "link": "https://collider.com/classic-action-thrillers-perfect-start-to-finish/",
+  "datum": "2026-11-05T12:04:13.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Final Fantasy: Auch JRPG hat sich bedient – diese Space-Opera diente als Inspiration",
+  "link": "https://www.play3.de/2026/11/05/final-fantasy-auch-jrpg-hat-sich-bedient-diese-space-opera-diente-als-inspiration/",
+  "datum": "2026-11-05T12:02:09.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "„Chicago Fire“ feiert 300. Folge: Joe Miñoso verlässt Serie nach 14 Jahren",
+  "link": "https://www.serienjunkies.de/news/serien/chicago-fire-joe-minoso-steigt-in-folge-300-bei-nbc-aus-94575529.html",
+  "datum": "2026-11-05T12:02:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Kanadische Fans fordern Staatsgelder: BioWare soll vor dem Studio-Aus gerettet werden",
+  "link": "https://www.eurogamer.de/bioware-rettung-petition-kanada",
+  "datum": "2026-11-05T12:01:50.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Netflix’s New ‘Squid Game’ Replacement Officially Becomes a Global Streaming Hit",
+  "link": "https://collider.com/dead-end-job-streaming-success-netflix-november-2026/",
+  "datum": "2026-11-05T12:00:13.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Steam greift durch: Entwickler müssen ihre Games jetzt selbst spielen",
+  "link": "https://www.pcgames.de/Steam-Software-69900/News/Steam-Regel-Einreichung-Pruefung-1559070/",
+  "datum": "2026-11-05T12:00:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Former England Soccer Manager Gareth Southgate Strikes Content Deal With Sky Sports",
+  "link": "https://deadline.com/2026/11/gareth-southgate-sky-sports-content-deal-football-dugout-1237214217/",
+  "datum": "2026-11-05T11:58:26.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "8 HBO Shows That Are Nearly Perfect, Ranked",
+  "link": "https://collider.com/hbo-shows-nearly-perfect-ranked/",
+  "datum": "2026-11-05T11:56:13.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Umfrage zeigt: Umfrage zeigt: 30 Prozent aller Konsolenspiele im Besitz der Nutzer sind physisch",
+  "link": "https://www.eurogamer.de/newzoo-umfrage-anteil-physische-konsolenspiele",
+  "datum": "2026-11-05T11:55:10.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "6 Best Thriller Books Released Since 2000, Ranked",
+  "link": "https://collider.com/best-thriller-books-since-2000-ranked/",
+  "datum": "2026-11-05T11:53:13.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "The 10 Greatest Cozy Fantasy Books of All Time, Ranked",
+  "link": "https://collider.com/best-cozy-fantasy-books-all-time-ranked/",
+  "datum": "2026-11-05T11:42:13.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "15 'Invincible' Episodes That Are Considered Masterpieces, Ranked",
+  "link": "https://collider.com/best-invincible-episodes-ranked/",
+  "datum": "2026-11-05T11:36:13.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "Fortnite Crew subscribers are no longer getting free skins or the OG Pass, will get more V-Bucks instead",
+  "link": "https://www.videogameschronicle.com/news/fortnite-crew-subscribers-are-no-longer-getting-free-skins-or-the-og-pass-will-get-more-v-bucks-instead/",
+  "datum": "2026-11-05T11:35:48.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "The Fate of Stephen Graham's Perfect Crime Series Has Officially Been Decided",
+  "link": "https://collider.com/stephen-graham-time-season-4-cancelled-jimmy-mcgovern/",
+  "datum": "2026-11-05T11:30:13.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Englisches Dschungelcamp überrascht mit Mega-Star im Cast: Warum das in Deutschland unmöglich wäre!",
+  "link": "https://www.moviepilot.de/news/englisches-dschungelcamp-uberrascht-mit-mega-star-im-cast-warum-das-in-deutschland-unmoglich-ware-1165356",
+  "datum": "2026-11-05T11:30:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Klage um „The Pitt“: Gericht sieht Parallelen zu „ER“",
+  "link": "https://www.serienjunkies.de/news/serien/klage-um-the-pitt-gericht-sieht-parallelen-zu-er-94575439.html",
+  "datum": "2026-11-05T11:30:00.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Hubert Aiwanger gestorben: BR stellt Programm um",
+  "link": "https://www.dwdl.de/nachrichten/108471/hubert_aiwanger_gestorben_br_stellt_programmum/",
+  "datum": "2026-11-05T11:27:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "‘Harry Potter’ Oxford Street Christmas Lights Details Revealed: Hogwarts Houses and a Tree With \"Enchanted Snowfall\"",
+  "link": "https://www.hollywoodreporter.com/news/general-news/harry-potter-christmas-lights-oxford-street-event-tree-hogwarts-1236748385/",
+  "datum": "2026-11-05T11:20:19.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Vin Diesel’s 'Van Helsing' Replacement 'The Last Witch Hunter' Officially Lands on Prime Video",
+  "link": "https://collider.com/vin-diesel-last-witch-hunter-van-helsing-streaming-prime-video-november-2026/",
+  "datum": "2026-11-05T11:17:12.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Sony Announces Official Marvel's Wolverine Sales Figure for the First Time, Raises PlayStation Sales Forecast With GTA 6 Imminent",
+  "link": "https://www.ign.com/articles/sony-announces-official-marvels-wolverine-sales-figure-for-the-first-time-raises-playstation-sales-forecast-with-gta-6-imminent",
+  "datum": "2026-11-05T11:17:06.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Liam Neeson Says There’s ‘Nobody Better Than’ Meryl Streep to Take Over Aslan Role in ‘Narnia,’ but Admits He Didn’t Know About Greta Gerwig’s Movie: ‘This Is News to Me’",
+  "link": "https://variety.com/2026/film/news/liam-neeson-meryl-streep-aslan-narnia-1236940112/",
+  "datum": "2026-11-05T11:16:35.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Kanon-Änderung bei „Scrubs“: Staffel 9 gestrichen – Zach Braff verhinderte Set-Spoiler",
+  "link": "https://www.serienjunkies.de/news/serien/scrubs-revival-staffel-gestrichen-und-set-geheimnisse-94575385.html",
+  "datum": "2026-11-05T11:14:37.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘Conclave’ Director Edward Berger Teases Upcoming Brad Pitt A24 Film ‘The Riders’: It’s a ‘European Odyssey’",
+  "link": "https://variety.com/2026/film/global/conclave-director-edward-berger-a24-the-riders-brad-pitt-1236938487/",
+  "datum": "2026-11-05T11:10:35.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Call of Duty Film: Barry Sloane will Captain Price auch im Kino spielen",
+  "link": "https://www.eurogamer.de/call-of-duty-film-captain-price-besetzung",
+  "datum": "2026-11-05T11:09:20.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "ProSieben gibt \"Duell um die Geld\" einen neuen Sendeplatz",
+  "link": "https://www.dwdl.de/nachrichten/108470/prosieben_gibt_duell_um_die_geld_einen_neuen_sendeplatz/",
+  "datum": "2026-11-05T11:08:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Heute geht eine hochspannende Thrillerserie voller Stars bei Netflix weiter: Staffel 1 wurde 60 Millionen Mal geschaut",
+  "link": "https://www.moviepilot.de/news/black-doves-staffel-2-netflix-start-1165366",
+  "datum": "2026-11-05T11:00:00.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Fabian Wolfart wechselt als Produzent zu Construction Film",
+  "link": "https://www.dwdl.de/nachrichten/108469/fabian_wolfart_wechselt_als_produzent_zu_construction_film/",
+  "datum": "2026-11-05T11:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Superman-Desaster unvergessen: Henry Cavill nimmt seine Peinlichkeit von 2017 auf die Schippe",
+  "link": "https://www.pcgames.de/Kino-Thema-130800/News/henry-cavill-movember-1559047/",
+  "datum": "2026-11-05T11:00:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "The Legend of Zelda Ocarina of Time: Besser, statt nur anders – diese Ziele verfolgte Nintendo beim Remake",
+  "link": "https://www.play3.de/2026/11/05/the-legend-of-zelda-ocarina-of-time-besser-statt-nur-anders-diese-ziele-verfolgte-nintendo-beim-remake/",
+  "datum": "2026-11-05T10:53:43.000Z"
+ },
+ {
+  "quelle": "Spiegel Kultur",
+  "art": "film",
+  "titel": "»Magic: The Gathering«: Maya Hawke soll bei Verfilmung mitspielen",
+  "link": "https://www.spiegel.de/kultur/kino/magic-the-gathering-maya-hawke-soll-bei-verfilmung-mitspielen-a-57f2a8db-f102-4024-a863-914853d1379e#ref=rss",
+  "datum": "2026-11-05T10:47:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "South International Series Festival Prizes: ’Blindspot Berlin,’ ‘The Oligarch and the Art Dealer’ Win Big",
+  "link": "https://variety.com/2026/tv/global/south-international-series-festival-prizes-blindspot-berlin-1236940109/",
+  "datum": "2026-11-05T10:46:24.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "Zelda Ocarina of Time: All Empty Bottle locations",
+  "link": "https://www.videogameschronicle.com/guide/zelda-ocarina-of-time-empty-bottle-locations/",
+  "datum": "2026-11-05T10:45:42.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Xbox Cloud Gaming: Smartphone als Controller und Cloud Connect für den Nano Controller – Microsoft startet Tests",
+  "link": "https://www.play3.de/2026/11/05/xbox-cloud-gaming-smartphone-als-controller-und-cloud-connect-fuer-den-nano-controller-microsoft-startet-tests/",
+  "datum": "2026-11-05T10:44:07.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "Zelda Ocarina of Time: All Great Fairy Fountain locations",
+  "link": "https://www.videogameschronicle.com/guide/zelda-ocarina-of-time-great-fairy-fountain-locations/",
+  "datum": "2026-11-05T10:40:41.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "Zelda Ocarina of Time: Full Biggoron’s Sword trade sequence quest explained",
+  "link": "https://www.videogameschronicle.com/guide/zelda-oot-biggorons-sword-trade-sequence-quest/",
+  "datum": "2026-11-05T10:30:12.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘Married at First Sight’ U.K. Canceled by Channel 4 Following Sexual Assault Allegations",
+  "link": "https://variety.com/2026/tv/global/married-at-first-sight-uk-canceled-1236940065/",
+  "datum": "2026-11-05T10:30:06.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Awkwafina’s ‘Kate Might Die,’ ‘Outside of Cleveland’ With Alex Wolff Among Projects Selected for U.S. in Progress",
+  "link": "https://variety.com/2026/film/global/awkwafina-alex-wolff-projects-us-in-progress-1236937689/",
+  "datum": "2026-11-05T10:30:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Griffin Dunne on Renewed Interest in ‘Practical Magic’ and ‘An American Werewolf in London’: ‘I Seem to Be the King of Lapsed Love’",
+  "link": "https://variety.com/2026/film/awards/griffin-dunne-practical-magic-resurgence-american-werewolf-london-1236938556/",
+  "datum": "2026-11-05T10:30:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Channel 4 Cancels ‘Married At First Sight UK’ After Rape Allegations",
+  "link": "https://deadline.com/2026/11/channel-4-cancels-married-at-first-sight-uk-rape-1237214149/",
+  "datum": "2026-11-05T10:30:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "‘Married at First Sight UK’ Canceled Amid Rape Claims, Review Finds \"Implicit Pressure\" on Contestants to Be Intimate",
+  "link": "https://www.hollywoodreporter.com/tv/tv-news/married-at-first-sight-uk-review-canceled-rape-channel-4-1236748366/",
+  "datum": "2026-11-05T10:30:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "God of War: Laufey – Sony verschiebt den PS5-Blockbuster um drei Monate",
+  "link": "https://www.pcgames.de/God-of-War-Laufey-Spiel-78177/News/Verschoben-Delayed-Release-20-Mai-2027-1559018/",
+  "datum": "2026-11-05T10:30:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "WoW Forever: Stream verpasst? So holt ihr das begehrte Toy doch noch",
+  "link": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/News/Blizzard-verschenkt-ein-Toy-und-nimmt-es-zurueck-1559044/",
+  "datum": "2026-11-05T10:30:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "World of WarCraft Forever gelingt der Traumstart: Blizzards geschmeidigster Launch seit Jahren",
+  "link": "https://www.eurogamer.de/world-of-warcraft-forever-launch",
+  "datum": "2026-11-05T10:29:50.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "SRG kehrt zurück zu UKW, neues Sounddesign für 1Live",
+  "link": "https://www.dwdl.de/audioupdate/108467/srg_kehrt_zurueck_zu_ukw_neues_sounddesign_fuer_1live/",
+  "datum": "2026-11-05T10:29:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Switch 2: Hardware-Verkäufe sinken – doch das Software-Geschäft legt kräftig zu",
+  "link": "https://www.play3.de/2026/11/05/switch-2-hardware-verkaeufe-sinken-doch-das-software-geschaeft-legt-kraeftig-zu/",
+  "datum": "2026-11-05T10:27:29.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "Ocarina remake’s new art style was needed because something ‘expected’ would have had less impact, Aonuma says",
+  "link": "https://www.videogameschronicle.com/news/ocarina-remakes-new-art-style-was-needed-because-something-expected-would-have-had-less-impact-aonuma-says/",
+  "datum": "2026-11-05T10:26:03.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Nintendo Rules Out Further Switch 2 Price Rises as Console Sales and Profit Fall",
+  "link": "https://www.ign.com/articles/nintendo-rules-out-further-switch-2-price-rises-as-console-sales-and-profit-fall",
+  "datum": "2026-11-05T10:21:34.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "„Der Herr der Ringe“-Chronologie: So passt „The Rings of Power“ in Tolkiens Mittelerde-Zeitstrahl",
+  "link": "https://www.serienjunkies.de/news/serien/der-herr-der-ringe-die-ringe-der-macht-chronologie-zeitstrahl-94575215.html",
+  "datum": "2026-11-05T10:12:20.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Hunziker und Brugger präsentieren Comedy-Adventskalender",
+  "link": "https://www.dwdl.de/nachrichten/108468/hunziker_und_brugger_praesentieren_comedyadventskalender/",
+  "datum": "2026-11-05T10:09:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Sky News Stands by Journalist Following Heated Exchange With Abdul El-Sayed: ‘We’re Proud of Our Correspondent, Who Was Doing His Job’",
+  "link": "https://variety.com/2026/tv/global/sky-news-james-matthews-abdul-el-sayed-proud-1236940080/",
+  "datum": "2026-11-05T10:06:13.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Pamela Anderson Set for Torino Film Festival Lifetime Achievement Award (EXCLUSIVE)",
+  "link": "https://variety.com/2026/film/festivals/pamela-anderson-torino-film-festival-lifetime-achievement-award-1236940049/",
+  "datum": "2026-11-05T10:05:13.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "PS5 vs. PS4: Verkaufszahlen im Vergleich – so entwickelt sich der Abstand",
+  "link": "https://www.play3.de/2026/11/05/ps5-vs-ps4-verkaufszahlen-im-vergleich-so-entwickelt-sich-der-abstand/",
+  "datum": "2026-11-05T10:01:12.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Dieses Sci-Fi-Gerät kommt in unzähligen Star Trek-Szenen vor und wurde nie erklärt",
+  "link": "https://www.moviepilot.de/news/sci-fi-gerat-star-trek-nie-erklart-1151535",
+  "datum": "2026-11-05T10:00:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "TrustNordisk Boards Viking Drama ‘Stiklestad’ — AFM",
+  "link": "https://deadline.com/2026/11/trustnordisk-stiklestad-erik-skjoldbjaerg-afm-1237214164/",
+  "datum": "2026-11-05T10:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "WoW Forever: Dämonologie-Hexenmeister Guide – Talente, Rotation, Leveln & Werte",
+  "link": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Tipps/Daemonologie-Hexenmeister-Forever-Guide-1558903/",
+  "datum": "2026-11-05T10:00:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Final Fantasy: Yoshinori Kitase erklärt, wie Star Wars die Rollenspiele inspirierte",
+  "link": "https://www.eurogamer.de/final-fantasy-star-wars-inspiration",
+  "datum": "2026-11-05T09:53:40.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "OpenAI-Chef Sam Altman wehrt sich gegen PC-Gamer: RAM-Aussage aus dem Kontext gerissen",
+  "link": "https://www.eurogamer.de/sam-altman-ram-krise-pc-gamer",
+  "datum": "2026-11-05T09:50:30.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "JioStar’s Alok Jain On Reality TV Competition, Building Indian Formats  The End Of ‘Koffee With Karan’",
+  "link": "https://deadline.com/2026/11/jiostar-unscripted-interview-koffee-with-karan-ending-1237212979/",
+  "datum": "2026-11-05T09:49:57.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "Nintendo Switch 2 sales have dropped 37%, but it’s still comfortably beating the original console",
+  "link": "https://www.videogameschronicle.com/news/nintendo-switch-2-sales-have-dropped-37-but-its-still-comfortably-beating-the-original-console/",
+  "datum": "2026-11-05T09:43:55.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "PS6: Im Zeitplan? Sony liefert Status-Update zur Next-Gen-Konsole",
+  "link": "https://www.play3.de/2026/11/05/ps6-im-zeitplan-sony-liefert-status-update-zur-next-gen-konsole/",
+  "datum": "2026-11-05T09:37:17.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘The Walking Dead’ Star Lennie James Leading ITV Thriller ‘Nightswimming’ From Harry  Jack Williams",
+  "link": "https://deadline.com/2026/11/nightswimming-lennie-james-itv-thriller-two-brothers-1237213214/",
+  "datum": "2026-11-05T09:30:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "‘Fruitcakes: Dawn of Drag’ Goes Back to ‘Happy Gays,’ \"Reclaiming History\" Through a Timely Film (Exclusive Trailer and Chat)",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/tallinn-2026-doc-film-fruitcakes-dawn-of-drag-happy-gays-poff-1236746810/",
+  "datum": "2026-11-05T09:30:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "PlayStation 6 liegt im Zeitplan: Sonys PS5-Verkäufe klettern auf 97,9 Millionen Konsolen",
+  "link": "https://www.eurogamer.de/playstation-6-entwicklung-zeitplan",
+  "datum": "2026-11-05T09:20:30.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Sky veröffentlicht Breitscheidplatz-Doku zum 10. Jahrestag",
+  "link": "https://www.dwdl.de/nachrichten/108466/sky_veroeffentlicht_breitscheidplatzdoku_zum_10_jahrestag/",
+  "datum": "2026-11-05T09:16:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Kaufverhalten 2026: Wie oft Spieler noch zur Disc greifen und wann sie zuschlagen",
+  "link": "https://www.play3.de/2026/11/05/newzoo-studie-zu-disc-und-download-so-viele-konsolenspiele-kaufen-spieler-noch-physisch/",
+  "datum": "2026-11-05T09:05:32.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Spannendes Marvel-Gerücht: Einer der größten Hype-Stars unserer Zeit soll der nächste Wolverine werden",
+  "link": "https://www.moviepilot.de/news/marvel-x-men-wolverine-star-gerucht-1165361",
+  "datum": "2026-11-05T09:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "WoW Forever: Schiffe verschwinden – so kommt ihr trotzdem ans Ziel",
+  "link": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/News/so-reist-ihr-trotz-verschwundener-Schiffe-weiter-1559016/",
+  "datum": "2026-11-05T09:00:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "BioWare: Wichtiger Kulturexport\" – kanadische Regierung soll Studio retten",
+  "link": "https://www.play3.de/2026/11/05/bioware-wichtiger-kulturexport-kanadische-regierung-soll-studio-retten/",
+  "datum": "2026-11-05T08:56:06.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "GTA 6 spielt über 750 Millionen Dollar ein: Vorbesteller-Ansturm zwei Wochen vor Release",
+  "link": "https://www.eurogamer.de/gta-6-vorbestellungen-umsatz",
+  "datum": "2026-11-05T08:55:40.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Bekannte Schauspielerin wird zu Aslan in „Das Wunder von Narnia“ – so reagiert Vorgänger Liam Neeson",
+  "link": "https://www.serienjunkies.de/news/film/das-wunder-von-narnia-auf-netflix-meryl-streep-spielt-aslan-liam-neeson-reagiert-94574963.html",
+  "datum": "2026-11-05T08:52:45.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "DC Studios plant neuen Film über Kult-Ermittler: Dieser Horror-Macher schreibt jetzt das Drehbuch",
+  "link": "https://www.serienjunkies.de/news/film/dc-studios-plant-neuen-film-ueber-kult-ermittler-dieser-horror-macher-schreibt-jetzt-das-drehbuch-94574959.html",
+  "datum": "2026-11-05T08:50:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "The Legend of Zelda: Ocarina of Time Remake erreicht die Top 30 bei Metacritic",
+  "link": "https://www.eurogamer.de/zelda-ocarina-of-time-remake-metacritic-wertung",
+  "datum": "2026-11-05T08:33:50.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Uncharted 5: Was plant Naughty Dog? Crossover-Erinnerung lässt Fans spekulieren",
+  "link": "https://www.play3.de/2026/11/05/the-last-of-us-part-2-remastered-naughty-dog-ueberrascht-fans-mit-uncharted-crossover/",
+  "datum": "2026-11-05T08:31:25.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Ordentlicher Einstand für \"TV Total - Das Quiz\"",
+  "link": "https://www.dwdl.de/zahlenzentrale/108465/ordentlicher_einstand_fuer_tv_total__das_quiz/",
+  "datum": "2026-11-05T08:31:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Sony Pictures Q2 Profits Soars to $581 Million Due to ‘Spider-Man: Brand New Day’",
+  "link": "https://www.hollywoodreporter.com/business/business-news/sony-pictures-q2-results-spiderman-brand-new-day-1236748325/",
+  "datum": "2026-11-05T08:28:53.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Erobert sofort Netflix: Die große Oscar-Sensation dieses Jahres",
+  "link": "https://www.moviepilot.de/news/netflix-platz-1-oscar-sensation-2026-1165359",
+  "datum": "2026-11-05T08:20:00.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "Sony says PlayStation 6 development is ‘progressing as scheduled’, as PS5 sales hit 97.9m",
+  "link": "https://www.videogameschronicle.com/news/sony-says-playstation-6-development-is-progressing-as-scheduled-as-ps5-sales-hit-97-9m/",
+  "datum": "2026-11-05T08:19:53.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "„Criminal Minds“: Dann geht es im Free-TV mit beliebtem US-Krimi weiter",
+  "link": "https://www.serienjunkies.de/news/serien/criminal-minds-dann-geht-es-im-free-tv-mit-beliebtem-us-krimi-weiter-94574902.html",
+  "datum": "2026-11-05T08:15:00.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "ARD-Film \"Doitscha\" enttäuscht, \"Aktenzeichen\" hängt alle ab",
+  "link": "https://www.dwdl.de/zahlenzentrale/108464/ardfilm_doitscha_enttaeuscht_aktenzeichen_haengt_alle_ab/",
+  "datum": "2026-11-05T08:15:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Sophie Stone Has Been Writing a Play and a Sitcom and Says, \"There’s So Much to Gain” From Our Differences",
+  "link": "https://www.hollywoodreporter.com/tv/tv-news/sophie-stone-play-sitcom-retreat-falling-bafta-breakthrough-1236746119/",
+  "datum": "2026-11-05T08:01:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "‘Black Doves’ Season 2 Review: Keira Knightley and Ben Whishaw Return for More Crackling Chemistry and Bittersweet Thrills in Netflix Spy Thriller",
+  "link": "https://www.hollywoodreporter.com/tv/tv-reviews/black-doves-season-2-review-keira-knightley-netflix-1236747277/",
+  "datum": "2026-11-05T08:01:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Olivier Dahan’s Period Drama ‘Nana’ Kicks Off Marvelous Productions, Kapa Studios Pact (EXCLUSIVE)",
+  "link": "https://variety.com/2026/film/global/olivier-dahan-nana-marvelous-productions-kapa-studios-1236937292/",
+  "datum": "2026-11-05T08:00:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘Sea of Glass’ Brings ‘Country Gothic Noir’ Tradition to Greece With Story of Two Women Finding Solidarity Across Generations",
+  "link": "https://variety.com/2026/film/global/sea-of-glass-country-gothic-noir-greece-women-solidarity-1236938537/",
+  "datum": "2026-11-05T08:00:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Our Big Interview With Ocarina of Time Producers Eiji Aonuma and Hidemaro Fujibayashi",
+  "link": "https://www.ign.com/articles/our-big-interview-with-ocarina-of-time-producers-eiji-aonuma-and-hidemaro-fujibayashi",
+  "datum": "2026-11-05T08:00:00.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "RTL und Vox machen sich gegenseitig das Leben schwer",
+  "link": "https://www.dwdl.de/nachrichten/108463/rtl_und_vox_machen_sich_gegenseitig_das_leben_schwer/",
+  "datum": "2026-11-05T07:58:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "PS5-Quartalszahlen: Weniger Konsolen, aber mehr Umsatz – Digitalanteil und PSN-User gestiegen",
+  "link": "https://www.play3.de/2026/11/05/ps5-quartalszahlen-sony-liefert-weniger-konsolen-aus-und-macht-trotzdem-mehr-umsatz/",
+  "datum": "2026-11-05T07:57:04.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Marvel’s Wolverine: Wie gut verkauft sich Logans Abenteuer? Offizielle Zahlen schaffen Klarheit",
+  "link": "https://www.play3.de/2026/11/05/marvels-wolverine-wie-gut-verkauft-sich-logans-abenteuer-offizielle-zahlen-schaffen-klarheit/",
+  "datum": "2026-11-05T07:56:23.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Gewaltige Herr der Ringe-Konkurrenz, die 50 Millionen Menschen lieben, schnappt sich Netflix-Star für Hauptrolle",
+  "link": "https://www.moviepilot.de/news/magic-the-gathering-hauptrolle-netflix-star-1165360",
+  "datum": "2026-11-05T07:55:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "The Legend of Zelda: Ocarina of Time Remake Full English Voice Cast Revealed",
+  "link": "https://www.ign.com/articles/the-legend-of-zelda-ocarina-of-time-remake-full-english-voice-cast-revealed",
+  "datum": "2026-11-05T07:52:50.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Arkane-Aus wäre teurer als Marvel's Blade: Gewerkschaft warnt Xbox vor Studioschließung",
+  "link": "https://www.eurogamer.de/arkane-schliessung-xbox-marvels-blade",
+  "datum": "2026-11-05T07:40:30.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Das nächste Squid Game startet in wenigen Wochen bei Netflix: Erster Trailer entfesselt Sci-Fi-Dystopie mit tödlicher Quizshow",
+  "link": "https://www.moviepilot.de/news/netflix-squid-game-ersatz-trailer-1165344",
+  "datum": "2026-11-05T07:40:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "God of War Laufey verschiebt sich: Sony Santa Monica weicht dem vollgepackten Februar aus",
+  "link": "https://www.eurogamer.de/god-of-war-laufey-release-verschiebung",
+  "datum": "2026-11-05T07:07:10.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘Spider-Man: Brand New Day’ Propels Sony Pictures To Huge Q2 Profit Boost",
+  "link": "https://deadline.com/2026/11/sony-q2-earnings-spider-man-brand-new-day-1237214122/",
+  "datum": "2026-11-05T07:05:49.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Gefährlicher als je zuvor: „Black Doves“ Staffel 2 ist ab heute bei Netflix",
+  "link": "https://www.serienjunkies.de/news/serien/gefaehrlicher-als-je-zuvor-black-doves-staffel-ist-ab-heute-bei-netflix-94574802.html",
+  "datum": "2026-11-05T07:00:00.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Nach dem Vodafone-Aus: Wie geht es mit Sport1 weiter?",
+  "link": "https://www.dwdl.de/nachrichten/108462/nach_dem_vodafoneaus_wie_geht_es_mit_sport1_weiter/",
+  "datum": "2026-11-05T07:00:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "‘Sounds of the Desert’ Explores Lives, Music and Cosmic Visions of Two Members of the Sun Ra Arkestra (Exclusive Tallinn Trailer)",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/tallinn-sounds-of-the-desert-doc-film-trailer-sun-ra-arkestra-1236744161/",
+  "datum": "2026-11-05T07:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "21 Jahre nach dem Kultfilm: Bei Keanu Reeves droht die große Enttäuschung",
+  "link": "https://www.pcgames.de/Kino-Thema-130800/News/neuer-constantine-film-kino-keanu-reeves-1559012/",
+  "datum": "2026-11-05T07:00:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Heute lieber nicht im TV schauen: Nach diesem traurigen Fantasy-Fehlschlag ist ein gewaltiges Universum untergegangen",
+  "link": "https://www.moviepilot.de/news/heute-tv-fantasy-flop-1143890",
+  "datum": "2026-11-05T06:30:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Adam Driver Confirms His Role in Heat 2, Comments on Recent Michael Mann Shooting",
+  "link": "https://www.ign.com/articles/adam-driver-confirms-his-role-in-heat-2-comments-on-recent-michael-mann-shooting",
+  "datum": "2026-11-05T06:21:02.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Mord auf der Privatinsel - die Bescherung wird zum Albtraum",
+  "link": "https://www.serienjunkies.de/news/serien/mord-auf-der-privatinsel-die-bescherung-wird-zum-albtraum-94574765.html",
+  "datum": "2026-11-05T06:15:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Beliebte Krimiserie ab heute wieder mit neuen Folgen zu sehen",
+  "link": "https://www.serienjunkies.de/news/serien/beliebte-krimiserie-ab-heute-wieder-mit-neuen-folgen-in-deutschland-zu-sehen-94569888.html",
+  "datum": "2026-11-05T06:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Epic Games Store: Zwei neue Gratis-Geschenke im Wert von über 100 Euro ab 5. November",
+  "link": "https://www.pcgames.de/Epic-Games-Store-Software-269112/News/Neue-Gratis-Spiele-Flotsam-Idle-Heroes-of-the-Forgotten-Realms-1558962/",
+  "datum": "2026-11-05T06:00:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Petit Planet auf Nintendo Switch 2 angespielt: Eine würdige Herausforderung für Animal Crossing",
+  "link": "https://www.eurogamer.de/petit-planet-switch-2-angespielt",
+  "datum": "2026-11-05T06:00:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Wohlfühl-Krimiserie aus Amerika startet heute in die neue Staffel – hier kann man sie sehen",
+  "link": "https://www.serienjunkies.de/news/serien/wohlfuehl-krimiserie-aus-amerika-startet-heute-in-die-neue-staffel-hier-kann-man-sie-sehen-94569872.html",
+  "datum": "2026-11-05T05:45:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Heute Abend schauen: Richtig guter Sci-Fi-Thriller bei Netflix hat eine der teuersten Filmszenen aller Zeiten",
+  "link": "https://www.moviepilot.de/news/vanilla-sky-netflix-teuerste-szene-tom-cruise-1147704",
+  "datum": "2026-11-05T05:30:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Netflix-Serie mit 100 Prozent Kritiker-Score startet heute in die neue Staffel",
+  "link": "https://www.serienjunkies.de/news/serien/netflix-serie-mit-100-prozent-kritiker-score-startet-heute-in-die-neue-staffel-94569861.html",
+  "datum": "2026-11-05T05:30:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Netflix-Thrillerserie mit Bestbewertungen kehrt heute nach 2 Jahren zurück",
+  "link": "https://www.serienjunkies.de/news/serien/netflix-thrillerserie-mit-bestbewertungen-kehrt-heute-nach-jahren-zurueck-94569850.html",
+  "datum": "2026-11-05T05:15:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Diese Serie ist ein Muss für Geschichtsfans – ab heute im Free-TV ohne Werbung",
+  "link": "https://www.serienjunkies.de/news/serien/diese-serie-ist-ein-muss-fuer-geschichtsfans-ab-heute-im-free-tv-ohne-werbung-94569858.html",
+  "datum": "2026-11-05T05:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "WoW Forever: Alle neuen Reiserouten per Schiff, Zeppelin, Bahn und Portale",
+  "link": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Tipps/WoW-Forever-Schifssrouten-Zeppeline-Reiserouten-1557235/",
+  "datum": "2026-11-05T05:00:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "The Witcher 3 Remastered: Mehr als nur „Cheats“? CDPR erklärt die Bard’s-Ballad-Optionen",
+  "link": "https://www.play3.de/2026/11/05/the-witcher-3-remastered-mehr-als-nur-cheats-cdpr-erklaert-die-bards-ballad-optionen/",
+  "datum": "2026-11-05T05:00:00.000Z"
+ },
+ {
+  "quelle": "Spiegel Kultur",
+  "art": "film",
+  "titel": "Film-Kritik: Hollywood hat seinen neuen Superbösewicht – die kritische Presse",
+  "link": "https://www.spiegel.de/kultur/kino/film-kritik-hollywood-hat-seinen-neuen-superboesewicht-die-kritische-presse-a-24154350-f19c-4003-a247-488d9996981e#ref=rss",
+  "datum": "2026-11-05T04:59:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Raumschiff so schwer wie sieben T-Rex – Dune 3 sprengt alle Dimensionen",
+  "link": "https://www.pcgames.de/Dune-Part-Three-Film-281702/News/raumschiff-wiegt-wie-7-t-rex-1558947/",
+  "datum": "2026-11-05T04:45:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Nicolas Cage Weighs in on Ryan Gosling’s Ghost Rider, 20 Years After His Version",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/nicolas-cage-ryan-gosling-ghost-rider-20-years-1236748268/",
+  "datum": "2026-11-05T04:29:09.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Liam Neeson Reacts To Meryl Streep Taking Over ‘Narnia’ Role Of Aslan: \"Nobody Better\"",
+  "link": "https://deadline.com/2026/11/liam-neeson-reacts-meryl-streep-narnia-aslan-1237213943/",
+  "datum": "2026-11-05T03:04:46.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Joe Miñoso Talks Cruz’s Exit From ‘Chicago Fire,’ Storylines That Almost Happened  Plans To Direct",
+  "link": "https://deadline.com/2026/11/chicago-fire-joe-minoso-exit-interview-1237213901/",
+  "datum": "2026-11-05T03:02:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "The Top 26 Looks in 2026 (So Far), According to 50 of Hollywood’s Biggest Stylists",
+  "link": "https://www.hollywoodreporter.com/gallery/best-celebrity-looks-2026-1236746424/",
+  "datum": "2026-11-05T03:00:25.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "How Joe Miñoso Exits ‘Chicago Fire’ As Cruz In Season 15",
+  "link": "https://deadline.com/2026/11/joe-minoso-exit-cruz-chicago-fire-season-15-recap-1237211554/",
+  "datum": "2026-11-05T03:00:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Six Hollywood Consequences of Tuesday’s Democratic Blockbuster",
+  "link": "https://www.hollywoodreporter.com/news/politics-news/hollywood-consequences-democrat-blockbuster-midterms-trump-1236748202/",
+  "datum": "2026-11-05T02:58:53.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Harold Greene Dies: Longtime L.A. News Anchor Was 82",
+  "link": "https://deadline.com/2026/11/harold-greene-dead-l-a-news-anchor-1237213947/",
+  "datum": "2026-11-05T02:54:41.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "John Constantine Movie From Evil Dead Wrath Filmmaker is in Development at DC",
+  "link": "https://www.ign.com/articles/john-constantine-movie-from-evil-dead-wrath-filmmaker-is-in-development-at-dc",
+  "datum": "2026-11-05T02:32:58.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Charles Porter Dies: ‘Finding Faith’ Producer  Actor Was 47",
+  "link": "https://deadline.com/2026/11/charles-porter-actor-dead-1237213861/",
+  "datum": "2026-11-05T02:17:17.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘Scrubs’ Star Sarah Chalke On J.D.  Elliot’s Big Reveal  Surprise Twist, Sean  Charlie’s Quick Exit, Ollie’s Arrival  What Comes Next",
+  "link": "https://deadline.com/2026/11/scrubs-sarah-chalke-j-d-elliot-sean-charlie-interview-1237211745/",
+  "datum": "2026-11-05T01:31:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Captain Price Actor Barry Sloane Says He's the Most Qualified Person to Star in the Call of Duty Movie",
+  "link": "https://www.ign.com/articles/captain-price-actor-barry-sloane-says-hes-the-most-qualified-person-to-star-in-the-call-of-duty-movie",
+  "datum": "2026-11-05T00:49:28.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "Pixar Promotes Jonathan Garson to President, Taking Reins from Retiring Executive Jim Morris",
+  "link": "https://www.indiewire.com/news/breaking-news/pixar-names-jonathan-garson-president-1235225568/",
+  "datum": "2026-11-05T00:45:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "World of Warcraft Forever Launch Live Blog: It's Looking Like a Smooth Blizzard Launch",
+  "link": "https://www.ign.com/articles/world-of-warcraft-forever-launch-live-blog",
+  "datum": "2026-11-05T00:37:00.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "Cinematography Legend Robert Richardson Answered a Film Student’s Email — Their Conversation Became ‘The White Devil’",
+  "link": "https://www.indiewire.com/features/interviews/robert-richardson-white-devil-documentary-jana-hojdova-1235225542/",
+  "datum": "2026-11-05T00:30:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Scarlett Johansson Says The Batman: Part 2 Role Caused 'Existential Angst'",
+  "link": "https://www.ign.com/articles/scarlett-johansson-the-batman-2-existential-angst",
+  "datum": "2026-11-05T00:24:38.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "You Can Get a 36V 350W Adult Electric Scooter With 19mph Top Speed for Less Than $80 for Black Friday",
+  "link": "https://www.ign.com/articles/best-ladped-lp60-electric-scooter-deal-november-2026",
+  "datum": "2026-11-05T00:10:00.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "Watch ‘The Greatest’ Team Discuss How They Made the Impossible ‘Possible’ on Muhammad Ali Series",
+  "link": "https://www.indiewire.com/news/events/watch-the-greatest-crafts-team-panel-muhammad-ali-1235225455/",
+  "datum": "2026-11-05T00:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "WoW Forever: Positionen aller Waffenmeister – hier lernt ihr Schwerter, Äxte und Co.",
+  "link": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Tipps/Forever-Waffenmeister-Fundorte-Waffenfertigkeit-Lehrer-1558154/",
+  "datum": "2026-11-05T00:00:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "I Just Found an Actual Deal on Corsair DDR5 Desktop Memory Ahead of Black Friday",
+  "link": "https://www.ign.com/articles/corsair-ddr5-desktop-memory-ram-deal-november-2026",
+  "datum": "2026-11-04T23:45:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "World of Warcraft: Forever Review So Far - Beta Impressions",
+  "link": "https://www.ign.com/articles/world-of-warcraft-forever-review",
+  "datum": "2026-11-04T23:20:20.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Pokémon: The Series DVDs Are Getting Early Black Friday Price Drops at Amazon",
+  "link": "https://www.ign.com/articles/pokemon-the-series-dvds-blu-ray-amazon-black-friday-2026",
+  "datum": "2026-11-04T23:15:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Leonardo DiCaprio and Joaquin Phoenix Were Offered the Role of the Joker in The Dark Knight, But Turned it Down",
+  "link": "https://www.ign.com/articles/leonardo-dicaprio-and-joaquin-phoenix-were-offered-the-role-of-the-joker-in-the-dark-knight-but-turned-it-down",
+  "datum": "2026-11-04T23:00:16.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "GTA 6 Rakes in Over $750 Million in Preorders 2 Weeks Ahead of Release Date",
+  "link": "https://www.ign.com/articles/gta-6-rakes-in-over-750-million-in-pre-orders-two-weeks-ahead-of-release-date",
+  "datum": "2026-11-04T22:42:19.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Today’s Best Deals: Marvel’s Wolverine, Apple Watch Ultra 3, and MTG Reality Fracture Booster Box",
+  "link": "https://www.ign.com/articles/best-deals-for-november-4-2026",
+  "datum": "2026-11-04T22:40:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Adam Driver Says He's Done Playing Kylo Ren, but Would Return if Someone Revived His Canceled Solo Film",
+  "link": "https://www.ign.com/articles/adam-driver-says-hes-done-playing-kylo-ren-but-would-return-if-someone-revived-his-canceled-solo-film",
+  "datum": "2026-11-04T22:34:28.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "WoW Forever: Täuschung-Schurke Guide – Talente, Fähigkeiten, Rotation und Klassenquests",
+  "link": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Tipps/Forever-Schurke-Taeuschung-Klassenguide-Rotation-Faehigkeiten-Talente-1558467/",
+  "datum": "2026-11-04T22:30:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Get a 1,000W Peak 48V Electric Bike With 28mph Top Speed and 80-Mile Range Under $250 for Black Friday",
+  "link": "https://www.ign.com/articles/urlife-e20-1000w-48v-adult-electric-bike-deal-november-2026",
+  "datum": "2026-11-04T22:10:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Mob Entertainment Lays Off 'Almost Entire' Escape From Playtime Team",
+  "link": "https://www.ign.com/articles/mob-entertainment-lays-off-almost-entire-escape-from-playtime-team",
+  "datum": "2026-11-04T22:04:45.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "WoW Forever: Disziplin-Priester-Guide – Talente, Fähigkeiten, Rotation & Leveln",
+  "link": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Tipps/WoW-Forever-Disziplin-Priester-Guide-1557278/",
+  "datum": "2026-11-04T22:00:00.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "Canadian BioWare fans are calling on the government to fund the studio",
+  "link": "https://www.videogameschronicle.com/news/canadian-bioware-fans-are-calling-on-the-government-to-fund-the-studio/",
+  "datum": "2026-11-04T21:47:40.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "WoW Forever: Frost-Magier-Guide – Talente, Fähigkeiten, Rotation & Leveln",
+  "link": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Tipps/WoW-Forver-Frost-Magier-Guide-1557832/",
+  "datum": "2026-11-04T21:30:00.000Z"
+ },
+ {
   "quelle": "Variety",
   "art": "film",
   "titel": "‘Dune 3’ Cast Says the Movie Takes ‘Departures’ From the Books, but ‘You’re Crazy If You’re Going to Pick Fault’ With It",
@@ -40,6 +1069,13 @@
   "titel": "Box Office: ‘Godzilla Minus Zero’ to Lead With $30 Million Opening Weekend, ‘Cat in the Hat’ Aims for $20 Million Debut",
   "link": "https://variety.com/2026/film/box-office/godzilla-minus-zero-box-office-opening-weekend-estimates-cat-in-the-hat-1236938885/",
   "datum": "2026-11-04T21:12:24.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Maya Hawke Gets ‘Key’ Role in Live-Action Magic: The Gathering Movie",
+  "link": "https://www.ign.com/articles/maya-hawke-gets-key-role-in-live-action-magic-the-gathering-movie",
+  "datum": "2026-11-04T21:11:53.000Z"
  },
  {
   "quelle": "Deadline",
@@ -513,7 +1549,7 @@
  {
   "quelle": "Moviepilot",
   "art": "film",
-  "titel": "Wirklich wahr: Krimineller ist bei Star Wars-Star Hayden Christensen eingebrochen und hat sich dann bei ihm entschuldigt",
+  "titel": "Star Wars-Star erwischt Einbrecher im Haus – und schenkt ihm Kleidung: Die bizarre Geschichte von Hayden Christensen",
   "link": "https://www.moviepilot.de/news/hayden-christensen-einbrecher-star-wars-1165357",
   "datum": "2026-11-04T18:00:00.000Z"
  },
@@ -828,7 +1864,7 @@
  {
   "quelle": "Moviepilot",
   "art": "film",
-  "titel": "Von \"bezaubernd\" bis \"flache Magie\": Vor 25 Jahren hat Harry Potter und der Stein der Weisen die Kritik gespalten",
+  "titel": "\"Mit Risiken wollte bei diesem Projekt niemand etwas zu tun haben\": Vor 25 Jahren war die Kritik zu Harry Potter und der Stein der Weisen gespalten",
   "link": "https://www.moviepilot.de/news/harry-potter-25-jahre-kritiken-1165353",
   "datum": "2026-11-04T15:32:00.000Z"
  },
@@ -975,7 +2011,7 @@
  {
   "quelle": "Moviepilot",
   "art": "film",
-  "titel": "Kate Mulgrews Söhne haben Star Trek: Voyager nie gesehen – der Grund ist mehr als traurig",
+  "titel": "Kate Mulgrews Söhne haben Star Trek: Raumschiff Voyager nie gesehen – der Grund ist mehr als traurig",
   "link": "https://www.moviepilot.de/news/kate-mulgrews-sohne-haben-star-trek-voyager-nie-gesehen-der-grund-ist-mehr-als-traurig-1165351",
   "datum": "2026-11-04T14:00:00.000Z"
  },
@@ -1050,13 +2086,6 @@
   "datum": "2026-11-04T13:07:00.000Z"
  },
  {
-  "quelle": "Moviepilot",
-  "art": "film",
-  "titel": "Netflix bringt in wenigen Wochen düsteren Squid Game-Ersatz: Erster Trailer entfesselt Sci-Fi-Dystopie mit tödlicher Quizshow",
-  "link": "https://www.moviepilot.de/news/netflix-squid-game-ersatz-trailer-1165344",
-  "datum": "2026-11-04T13:00:00.000Z"
- },
- {
   "quelle": "PC Games",
   "art": "spiel",
   "titel": "Zelda: Ocarina of Time - Test-Übersicht zum Remake - so wertet die internationale Fachpresse",
@@ -1069,13 +2098,6 @@
   "titel": "Fluch der Karibik 6: Kehrt Jack Sparrow zurück? Johnny Depp hat eine klare Antwort",
   "link": "https://www.play3.de/2026/11/04/fluch-der-karibik-6-kehrt-jack-sparrow-zurueck-johnny-depp-hat-eine-klare-antwort/",
   "datum": "2026-11-04T12:39:01.000Z"
- },
- {
-  "quelle": "VGC",
-  "art": "spiel",
-  "titel": "Zelda Ocarina of Time: Full Biggoron’s Sword trade sequence quest explained",
-  "link": "https://www.videogameschronicle.com/guide/zelda-oot-biggorons-sword-trade-sequence-quest/",
-  "datum": "2026-11-04T12:30:12.000Z"
  },
  {
   "quelle": "PC Games",
@@ -1570,7 +2592,7 @@
  {
   "quelle": "Spiegel Kultur",
   "art": "film",
-  "titel": "Til Schweiger will Party-Einladung von Harvey Weinstein abgelehnt haben",
+  "titel": "Til Schweiger will Partyeinladung von Harvey Weinstein abgelehnt haben",
   "link": "https://www.spiegel.de/kultur/kino/til-schweiger-habe-party-einladung-von-harvey-weinstein-abgelehnt-wurde-von-diesem-beschimpft-a-27cc1cc0-fb73-4678-b87e-357ee093b79a#ref=rss",
   "datum": "2026-11-04T08:45:00.000Z"
  },
