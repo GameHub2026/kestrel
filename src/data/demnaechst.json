@@ -1,99 +1,7 @@
 {
- "von": "2026-11-04",
- "bis": "2027-03-06",
+ "von": "2026-11-05",
+ "bis": "2027-03-07",
  "eintraege": [
-  {
-   "id": "tv-312006-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Betäubt",
-   "datum": "2026-11-04",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/oqqn8c87rM7usbgS0pZdCsKI18A.jpg",
-   "anbieter": [
-    "Netflix"
-   ],
-   "link": "https://www.themoviedb.org/tv/312006",
-   "info": "tv-312006"
-  },
-  {
-   "id": "tv-44006-s15-2026-11-04",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Chicago Fire",
-   "datum": "2026-11-04",
-   "text": "S15E5",
-   "jahr": "2012",
-   "bild": "https://image.tmdb.org/t/p/w342/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
-   "anbieter": [
-    "WOW"
-   ],
-   "link": "https://www.themoviedb.org/tv/44006",
-   "info": "tv-44006"
-  },
-  {
-   "id": "tv-62650-s12-2026-11-04",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Chicago Med",
-   "datum": "2026-11-04",
-   "text": "S12E5",
-   "jahr": "2015",
-   "bild": "https://image.tmdb.org/t/p/w342/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
-   "anbieter": [
-    "WOW"
-   ],
-   "link": "https://www.themoviedb.org/tv/62650",
-   "info": "tv-62650"
-  },
-  {
-   "id": "tv-58841-s14-2026-11-04",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Chicago P.D.",
-   "datum": "2026-11-04",
-   "text": "S14E5",
-   "jahr": "2014",
-   "bild": "https://image.tmdb.org/t/p/w342/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
-   "anbieter": [
-    "Netflix",
-    "WOW",
-    "RTL+"
-   ],
-   "link": "https://www.themoviedb.org/tv/58841",
-   "info": "tv-58841"
-  },
-  {
-   "id": "tv-338684-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Taken: Natalee Holloway",
-   "datum": "2026-11-04",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/rKyjcuSbsDDDcIisa6cx5k5yQNa.jpg",
-   "anbieter": [
-    "Netflix"
-   ],
-   "link": "https://www.themoviedb.org/tv/338684",
-   "info": "tv-338684"
-  },
-  {
-   "id": "tv-258989-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "The Greatest",
-   "datum": "2026-11-04",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/fPrRUZFUIm7wYSwhT3hh7hsLG5R.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/258989",
-   "info": "tv-258989"
-  },
   {
    "id": "tv-75219-s10-2026-11-05",
    "art": "serie",
@@ -205,7 +113,7 @@
    "datum": "2026-11-05",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/v7YS8pcERYJ4twQhtDCgzuBcvhP.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/gOWnXaBxqT6k2y40hKfYU6c0Ym.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/656908",
    "info": "movie-656908"
@@ -214,7 +122,7 @@
    "id": "tv-329315-s1",
    "art": "serie",
    "typ": "serienstart",
-   "titel": "The Rise of the Rockstar Chef",
+   "titel": "Rise of the Rockstar Chef",
    "datum": "2026-11-05",
    "text": "Neue Serie",
    "jahr": "2026",
@@ -224,19 +132,6 @@
    ],
    "link": "https://www.themoviedb.org/tv/329315",
    "info": "tv-329315"
-  },
-  {
-   "id": "movie-1685339-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "Unsafe",
-   "datum": "2026-11-05",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/2hPYdVWPJBItyZ8sZ6pPUERvwIV.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1685339",
-   "info": "movie-1685339"
   },
   {
    "id": "movie-791523-kino",
@@ -265,6 +160,21 @@
    ],
    "link": "https://www.themoviedb.org/tv/303044",
    "info": "tv-303044"
+  },
+  {
+   "id": "tv-328010-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Devils' Crest",
+   "datum": "2026-11-06",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/A1eNWdF1kgQy78hMl1RYutTvwbO.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/328010",
+   "info": "tv-328010"
   },
   {
    "id": "tv-45790-s6-2026-11-06",
@@ -296,6 +206,21 @@
    ],
    "link": "https://www.themoviedb.org/tv/247718",
    "info": "tv-247718"
+  },
+  {
+   "id": "tv-297491-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Palacio - Im Belagerungszustand",
+   "datum": "2026-11-06",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/zmZg7TiOO9mLIFOB8yfU8DdhjGI.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/297491",
+   "info": "tv-297491"
   },
   {
    "id": "tv-153312-s4-2026-11-06",
@@ -1314,7 +1239,7 @@
    "datum": "2026-11-25",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/5jO6rhfethzH7xdWl6KCOxCNCzQ.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1457866",
    "info": "movie-1457866"
@@ -1340,7 +1265,7 @@
    "datum": "2026-11-26",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/gPdzdeehaoaYqxH2rA6yayEDSsS.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/z1EXnsDfGJY8W7VWkKf3Qc7EnrW.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1400336",
    "info": "movie-1400336"
@@ -1466,6 +1391,22 @@
    ],
    "link": "https://www.themoviedb.org/tv/294607",
    "info": "tv-294607"
+  },
+  {
+   "id": "tv-549-s26-2026-12-03",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Law & Order",
+   "datum": "2026-12-03",
+   "text": "S26E7",
+   "jahr": "1990",
+   "bild": "https://image.tmdb.org/t/p/w342/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
+   "anbieter": [
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/549",
+   "info": "tv-549"
   },
   {
    "id": "tv-2734-s28-2026-12-03",
@@ -1630,7 +1571,7 @@
    "datum": "2026-12-10",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/tYH4rQZlHtuFSeDS0bsV17khvJC.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1117898",
    "info": "movie-1117898"
@@ -1828,19 +1769,6 @@
    "info": "tv-224377"
   },
   {
-   "id": "movie-1603262-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "Everest: The Other Side",
-   "datum": "2027-01-06",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/2m9ts8LfjG8d4xcUtx66aApngJL.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1603262",
-   "info": "movie-1603262"
-  },
-  {
    "id": "tv-79744-s9",
    "art": "serie",
    "typ": "staffelstart",
@@ -1940,6 +1868,19 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1391239",
    "info": "movie-1391239"
+  },
+  {
+   "id": "movie-1096228-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Musk",
+   "datum": "2027-01-21",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1096228",
+   "info": "movie-1096228"
   },
   {
    "id": "movie-1585239-kino",
@@ -2046,6 +1987,19 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1497464",
    "info": "movie-1497464"
+  },
+  {
+   "id": "movie-1340208-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Karōshi",
+   "datum": "2027-03-04",
+   "text": "Kinostart",
+   "jahr": "2027",
+   "bild": "https://image.tmdb.org/t/p/w342/xOwetUoCyca3yYlqZ5rlElgXiTV.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1340208",
+   "info": "movie-1340208"
   }
  ],
  "infos": {
@@ -2090,6 +2044,75 @@
     }
    ]
   },
+  "movie-1381071": {
+   "titel": "Godzilla Minus Zero",
+   "original": "ゴジラ-0.0",
+   "leitsatz": null,
+   "handlung": "Der Krieg hat Japan auf Null reduziert, und Godzilla hat es ins Minus gestürzt. Zwei Jahre sind seitdem vergangen und das Land kämpft immer noch immer verzweifelt darum, sich wieder zu erholen und endlich in den normalen Alltag zurückzufinden. Gerade als es der Menschheit gelang, an einem hart erkämpften Frieden festzuhalten, schlägt eine neue Bedrohung zu und vernichtet die Hoffnung im Handumdrehen. Ein drittes Mal wird es nicht geben. Hier endet alles.",
+   "genres": [
+    "Science Fiction",
+    "Horror",
+    "Action"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 15 Min"
+    ],
+    [
+     "Regie",
+     "Takashi Yamazaki"
+    ],
+    [
+     "Mit",
+     "Ryunosuke Kamiki, Minami Hamabe, 山田裕貴, Kuranosuke Sasaki"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=x666Mat4ruI",
+   "link": "https://www.themoviedb.org/movie/1381071",
+   "bild": "https://image.tmdb.org/t/p/w500/hZviv9gguqHGw4GK8gS5d5bDhA4.jpg",
+   "news": [
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘Godzilla Minus Zero’ Roars Toward Live-Action Foreign-Language Record $30M-$33M Opening At Domestic Box Office",
+     "link": "https://deadline.com/2026/11/box-office-godzilla-minus-zero-cat-in-the-hat-1237215161/",
+     "datum": "2026-11-06T22:09:00.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "How ‘Godzilla Minus Zero’ Used Real-World Sound to Make Its Monsters More Terrifying",
+     "link": "https://www.indiewire.com/features/craft/godzilla-minus-zero-real-world-sound-design-1235225839/",
+     "datum": "2026-11-06T22:00:00.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘Godzilla Minus Zero’ Roars With $6.7M in Box Office Previews Ahead of Face-Off With ‘Cat in the Hat’",
+     "link": "https://www.hollywoodreporter.com/movies/movie-news/godzilla-minus-zero-box-office-previews-the-cat-in-the-hat-1236749470/",
+     "datum": "2026-11-06T19:06:30.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "Box Office: ‘Godzilla Minus Zero’ Roars with $6.7 Million in Previews, ‘Ramayana: Rise of a Legend’ Earns $3.5 Million",
+     "link": "https://www.indiewire.com/news/box-office/box-office-godzilla-minus-zero-previews-ramayana-1235225976/",
+     "datum": "2026-11-06T17:55:11.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "Inside ‘Godzilla Minus Zero’: How an R Rating, Filming in IMAX, and Epic Kaiju Battles Broke Franchise Tradition",
+     "link": "https://www.indiewire.com/features/interviews/godzilla-minus-zero-spoilers-interview-fight-scenes-1235225726/",
+     "datum": "2026-11-06T13:00:00.000Z"
+    }
+   ]
+  },
   "movie-1422041": {
    "titel": "La bola negra",
    "original": "La bola negra",
@@ -2110,7 +2133,7 @@
     ],
     [
      "Mit",
-     "Guitarricadelafuente, Milo Quifes, Carlos González, Miguel Bernardeau"
+     "Guitarricadelafuente, Miguel Bernardeau, Carlos González, Milo Quifes"
     ],
     [
      "TMDB-Wertung",
@@ -2170,12 +2193,12 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=jxYY7gMelFM",
    "link": "https://www.themoviedb.org/movie/656908",
-   "bild": "https://image.tmdb.org/t/p/w500/v7YS8pcERYJ4twQhtDCgzuBcvhP.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/gOWnXaBxqT6k2y40hKfYU6c0Ym.jpg",
    "news": [
     {
      "quelle": "IndieWire",
      "art": "film",
-     "titel": "Box Office: ‘Godzilla Minus Zero’ Roars With $6.7 Million in Previews, ‘Ramayana: Rise of a Legend’ Earns $3.5 Million",
+     "titel": "Box Office: ‘Godzilla Minus Zero’ Roars with $6.7 Million in Previews, ‘Ramayana: Rise of a Legend’ Earns $3.5 Million",
      "link": "https://www.indiewire.com/news/box-office/box-office-godzilla-minus-zero-previews-ramayana-1235225976/",
      "datum": "2026-11-06T17:55:11.000Z"
     },
@@ -2185,75 +2208,6 @@
      "titel": "‘Ramayana: Rise of a Legend’ Review: India’s National Epic Gets a Fittingly Massive Cinematic Treatment",
      "link": "https://www.indiewire.com/criticism/movies/ramayana-rise-of-a-legend-review-1235224631/",
      "datum": "2026-10-30T16:00:00.000Z"
-    }
-   ]
-  },
-  "movie-1381071": {
-   "titel": "Godzilla Minus Zero",
-   "original": "ゴジラ-0.0",
-   "leitsatz": null,
-   "handlung": "Der Krieg hat Japan auf Null reduziert, und Godzilla hat es ins Minus gestürzt. Zwei Jahre sind seitdem vergangen und das Land kämpft immer noch immer verzweifelt darum, sich wieder zu erholen und endlich in den normalen Alltag zurückzufinden. Gerade als es der Menschheit gelang, an einem hart erkämpften Frieden festzuhalten, schlägt eine neue Bedrohung zu und vernichtet die Hoffnung im Handumdrehen. Ein drittes Mal wird es nicht geben. Hier endet alles.",
-   "genres": [
-    "Science Fiction",
-    "Horror",
-    "Action"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 15 Min"
-    ],
-    [
-     "Regie",
-     "Takashi Yamazaki"
-    ],
-    [
-     "Mit",
-     "Ryunosuke Kamiki, Minami Hamabe, 山田裕貴, Kuranosuke Sasaki"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.1 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=x666Mat4ruI",
-   "link": "https://www.themoviedb.org/movie/1381071",
-   "bild": "https://image.tmdb.org/t/p/w500/hZviv9gguqHGw4GK8gS5d5bDhA4.jpg",
-   "news": [
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘Godzilla Minus Zero’ Roars With $6.7M in Box Office Previews Ahead of Face-Off With ‘Cat in the Hat’",
-     "link": "https://www.hollywoodreporter.com/movies/movie-news/godzilla-minus-zero-box-office-previews-the-cat-in-the-hat-1236749470/",
-     "datum": "2026-11-06T19:06:30.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "Box Office: ‘Godzilla Minus Zero’ Roars With $6.7 Million in Previews, ‘Ramayana: Rise of a Legend’ Earns $3.5 Million",
-     "link": "https://www.indiewire.com/news/box-office/box-office-godzilla-minus-zero-previews-ramayana-1235225976/",
-     "datum": "2026-11-06T17:55:11.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "Inside ‘Godzilla Minus Zero’: How an R Rating, Filming in IMAX, and Epic Kaiju Battles Broke Franchise Tradition",
-     "link": "https://www.indiewire.com/features/interviews/godzilla-minus-zero-spoilers-interview-fight-scenes-1235225726/",
-     "datum": "2026-11-06T13:00:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "‘Godzilla Minus Zero’ Chomping $6M In Previews, Higher Than ‘Predator: Badlands’; ‘Cat In The Hat’ $1M – Box Office Update",
-     "link": "https://deadline.com/2026/11/box-office-godzilla-minus-zero-cat-in-the-hat-1237215161/",
-     "datum": "2026-11-06T02:41:39.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "Potential ‘Godzilla Minus Zero’ Sequel Officially Confirmed",
-     "link": "https://collider.com/godzilla-minus-zero-sequel-comments-takashi-yamazaki/",
-     "datum": "2026-11-05T19:34:45.000Z"
     }
    ]
   },
@@ -2394,6 +2348,66 @@
     }
    ]
   },
+  "movie-1117898": {
+   "titel": "Der Kater mit Hut",
+   "original": "The Cat in the Hat",
+   "leitsatz": "Die Dingse geraten außer Kontrolle.",
+   "handlung": "The Cat übernimmt seinen bisher härtesten Auftrag... er soll ein Geschwisterpaar aufmuntern, das mit dem Umzug in eine neue Stadt zu kämpfen hat.",
+   "genres": [
+    "Animation",
+    "Fantasy",
+    "Abenteuer",
+    "Familie",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 48 Min"
+    ],
+    [
+     "Regie",
+     "Erica Rivinoja, Alessandro Carloni"
+    ],
+    [
+     "Mit",
+     "Bill Hader, Xochitl Gomez, Tiago Martinez, Matt Berry"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=XBQXIBsLQsY",
+   "link": "https://www.themoviedb.org/movie/1117898",
+   "bild": "https://image.tmdb.org/t/p/w500/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
+   "news": [
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "Eric Bauza’s Final ‘Looney Tunes’ Performance Is ‘Daffy Season,’ Now in Theaters Ahead of ‘The Cat in the Hat’",
+     "link": "https://www.indiewire.com/news/business/eric-bauza-final-looney-tunes-film-in-theaters-dies-1235226076/",
+     "datum": "2026-11-07T01:30:00.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "The Cat in the Hat: 3 Art Styles Created a Huge Problem | Set Stories",
+     "link": "https://collider.com/video/the-cat-in-the-hat-3-art-styles-created-a-huge-problem-set-stories/",
+     "datum": "2026-11-06T19:16:12.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "Hollywood Celebrates Halloween, ‘The Cat in the Hat’ Premieres and This Week’s Best Events",
+     "link": "https://www.hollywoodreporter.com/gallery/halloween-cat-in-the-hat-red-carpet-events-1236739585/",
+     "datum": "2026-10-30T18:26:41.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘The Cat in the Hat’ Is Back: How the Seuss Icon’s First Animated Feature Will Kick Off a New Era",
+     "link": "https://www.hollywoodreporter.com/movies/movie-features/cat-in-the-hat-directors-dr-seuss-enterprises-bill-hader-1236734078/",
+     "datum": "2026-10-29T18:19:05.000Z"
+    }
+   ]
+  },
   "movie-1195803": {
    "titel": "Wicker",
    "original": "Wicker",
@@ -2428,59 +2442,6 @@
    "news": [],
    "sprache": "en"
   },
-  "movie-1117898": {
-   "titel": "Der Kater mit Hut",
-   "original": "The Cat in the Hat",
-   "leitsatz": "Die Dingse geraten außer Kontrolle.",
-   "handlung": "The Cat übernimmt seinen bisher härtesten Auftrag... er soll ein Geschwisterpaar aufmuntern, das mit dem Umzug in eine neue Stadt zu kämpfen hat.",
-   "genres": [
-    "Animation",
-    "Fantasy",
-    "Abenteuer",
-    "Familie",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 48 Min"
-    ],
-    [
-     "Regie",
-     "Erica Rivinoja, Alessandro Carloni"
-    ],
-    [
-     "Mit",
-     "Bill Hader, Xochitl Gomez, Tiago Martinez, Matt Berry"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=XBQXIBsLQsY",
-   "link": "https://www.themoviedb.org/movie/1117898",
-   "bild": "https://image.tmdb.org/t/p/w500/tYH4rQZlHtuFSeDS0bsV17khvJC.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "The Cat in the Hat: 3 Art Styles Created a Huge Problem | Set Stories",
-     "link": "https://collider.com/video/the-cat-in-the-hat-3-art-styles-created-a-huge-problem-set-stories/",
-     "datum": "2026-11-06T19:16:12.000Z"
-    },
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "Hollywood Celebrates Halloween, ‘The Cat in the Hat’ Premieres and This Week’s Best Events",
-     "link": "https://www.hollywoodreporter.com/gallery/halloween-cat-in-the-hat-red-carpet-events-1236739585/",
-     "datum": "2026-10-30T18:26:41.000Z"
-    },
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘The Cat in the Hat’ Is Back: How the Seuss Icon’s First Animated Feature Will Kick Off a New Era",
-     "link": "https://www.hollywoodreporter.com/movies/movie-features/cat-in-the-hat-directors-dr-seuss-enterprises-bill-hader-1236734078/",
-     "datum": "2026-10-29T18:19:05.000Z"
-    }
-   ]
-  },
   "movie-891621": {
    "titel": "Wild Horse Nine",
    "original": "Wild Horse Nine",
@@ -2506,7 +2467,7 @@
     ],
     [
      "TMDB-Wertung",
-     "8.5 / 10"
+     "8.3 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=7JEuh1n-WpI",
@@ -2580,35 +2541,6 @@
     }
    ]
   },
-  "movie-1084409": {
-   "titel": "Ein Talent fürs Morden",
-   "original": "A Talent for Murder",
-   "leitsatz": null,
-   "handlung": "Patricia Highsmiths letzter Lebensabschnitt in der Einsamkeit in den Schweizer Alpen wird von Edward unterbrochen, einem jungen Literaturagenten, der vom unermüdlichen Verlag der Autorin geschickt wurde, um sie davon zu überzeugen, einen letzten Roman in ihrer äußerst beliebten Ripley-Reihe zu schreiben. Highsmith nutzt ihre berühmt-makabre Fantasie, um Edward abzuschrecken, doch bevor sie es merken, kommt es zu einer Zusammenarbeit, die dazu führt, dass die Welt, die sie erschaffen haben, nicht mehr von ihrer eigenen zu unterscheiden ist.",
-   "genres": [
-    "Drama",
-    "Krimi",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 46 Min"
-    ],
-    [
-     "Regie",
-     "Anton Corbijn"
-    ],
-    [
-     "Mit",
-     "Helen Mirren, Alden Ehrenreich, Olivia Cooke, Juliet Stevenson"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=bWlJKGSufZU",
-   "link": "https://www.themoviedb.org/movie/1084409",
-   "bild": "https://image.tmdb.org/t/p/w500/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
-   "news": []
-  },
   "movie-822653": {
    "titel": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
    "original": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
@@ -2637,6 +2569,35 @@
    "trailer": "https://www.youtube.com/watch?v=lAIYKMbMMcg",
    "link": "https://www.themoviedb.org/movie/822653",
    "bild": "https://image.tmdb.org/t/p/w500/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
+   "news": []
+  },
+  "movie-1084409": {
+   "titel": "Ein Talent fürs Morden",
+   "original": "A Talent for Murder",
+   "leitsatz": null,
+   "handlung": "Patricia Highsmiths letzter Lebensabschnitt in der Einsamkeit in den Schweizer Alpen wird von Edward unterbrochen, einem jungen Literaturagenten, der vom unermüdlichen Verlag der Autorin geschickt wurde, um sie davon zu überzeugen, einen letzten Roman in ihrer äußerst beliebten Ripley-Reihe zu schreiben. Highsmith nutzt ihre berühmt-makabre Fantasie, um Edward abzuschrecken, doch bevor sie es merken, kommt es zu einer Zusammenarbeit, die dazu führt, dass die Welt, die sie erschaffen haben, nicht mehr von ihrer eigenen zu unterscheiden ist.",
+   "genres": [
+    "Drama",
+    "Krimi",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 46 Min"
+    ],
+    [
+     "Regie",
+     "Anton Corbijn"
+    ],
+    [
+     "Mit",
+     "Helen Mirren, Alden Ehrenreich, Olivia Cooke, Juliet Stevenson"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=bWlJKGSufZU",
+   "link": "https://www.themoviedb.org/movie/1084409",
+   "bild": "https://image.tmdb.org/t/p/w500/mstDPKNKgSGFvVFVdfzeMNkcyw2.jpg",
    "news": []
   },
   "movie-1458099": {
@@ -2886,6 +2847,63 @@
    "bild": "https://image.tmdb.org/t/p/w500/mNGfdRoZFmyzagpxg22fsNZ3d3A.jpg",
    "news": []
   },
+  "movie-1286656": {
+   "titel": "I Play Rocky",
+   "original": "I Play Rocky",
+   "leitsatz": null,
+   "handlung": "Die Entstehung des Boxerfilms „Rocky“ (1976) ist selbst Stoff für großes Kino: Der damals unbekannte Schauspieler Sylvester Stallone (Anthony Ippolito) schreibt innerhalb von nur dreieinhalb Tagen ein Drehbuch und ist fest davon überzeugt, für die Hauptrolle bestimmt zu sein. Obwohl ihm immer wieder Steine in den Weg gelegt werden, setzt der später weltbekannte Actionstar alles auf eine Karte und beharrt trotz scheinbar unüberwindbarer Widerstände darauf, selbst als Rocky Balboa vor der Kamera zu stehen. Der Rest ist Filmgeschichte.",
+   "genres": [
+    "Drama",
+    "Historie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 8 Min"
+    ],
+    [
+     "Regie",
+     "Peter Farrelly"
+    ],
+    [
+     "Mit",
+     "Anthony Ippolito, AnnaSophia Robb, P.J. Byrne, Toby Kebbell"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=VbUZakXlcMc",
+   "link": "https://www.themoviedb.org/movie/1286656",
+   "bild": "https://image.tmdb.org/t/p/w500/fViZxjUGsR6IQD77FP22PIMfk0R.jpg",
+   "news": [
+    {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "I Play Rocky ist ein verklärtes Sylvester Stallone-Biopic mit fast schon ulkigem Schönheitsfehler",
+     "link": "https://www.moviepilot.de/news/i-play-rocky-ist-ein-anhimmelndes-stallone-biopic-1165385",
+     "datum": "2026-11-07T10:30:00.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "‘I Play Rocky’ Celebrates Sylvester Stallone the Screenwriter — but Rocky Balboa Was Only the Beginning",
+     "link": "https://www.indiewire.com/features/commentary/sylvester-stallone-screenwriter-rocky-rambo-1235225006/",
+     "datum": "2026-11-06T15:00:00.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "Before He Played Sylvester Stallone in ‘I Play Rocky,’ Star Anthony Ippolito Fought Hard for His Own Big Break",
+     "link": "https://www.indiewire.com/features/interviews/sylvester-stallone-i-play-rocky-star-anthony-ippolito-1235225053/",
+     "datum": "2026-11-03T14:00:00.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "‘I Play Rocky’ Review: Sylvester Stallone’s Wild Hollywood Underdog Story Gets a Punchy Crowdpleaser",
+     "link": "https://www.indiewire.com/criticism/movies/i-play-rocky-review-sylvester-stallone-1235216617/",
+     "datum": "2026-11-02T19:00:00.000Z"
+    }
+   ]
+  },
   "movie-1165366": {
    "titel": "De Gaulle - Zeit des Widerstands",
    "original": "La Bataille de Gaulle : L’Âge de fer",
@@ -2919,63 +2937,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/zWuZWFKyga6GF3agrhJn8UtdMSu.jpg",
    "news": []
   },
-  "movie-1286656": {
-   "titel": "I Play Rocky",
-   "original": "I Play Rocky",
-   "leitsatz": null,
-   "handlung": "Die Entstehung des Boxerfilms „Rocky“ (1976) ist selbst Stoff für großes Kino: Der damals unbekannte Schauspieler Sylvester Stallone (Anthony Ippolito) schreibt innerhalb von nur dreieinhalb Tagen ein Drehbuch und ist fest davon überzeugt, für die Hauptrolle bestimmt zu sein. Obwohl ihm immer wieder Steine in den Weg gelegt werden, setzt der später weltbekannte Actionstar alles auf eine Karte und beharrt trotz scheinbar unüberwindbarer Widerstände darauf, selbst als Rocky Balboa vor der Kamera zu stehen. Der Rest ist Filmgeschichte.",
-   "genres": [
-    "Drama",
-    "Historie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 8 Min"
-    ],
-    [
-     "Regie",
-     "Peter Farrelly"
-    ],
-    [
-     "Mit",
-     "Anthony Ippolito, AnnaSophia Robb, P.J. Byrne, Toby Kebbell"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=VbUZakXlcMc",
-   "link": "https://www.themoviedb.org/movie/1286656",
-   "bild": "https://image.tmdb.org/t/p/w500/fViZxjUGsR6IQD77FP22PIMfk0R.jpg",
-   "news": [
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "I Play Rocky ist ein anhimmelndes Stallone-Biopic mit sympathischem Star und ulkigem Schönheitsfehler",
-     "link": "https://www.moviepilot.de/news/i-play-rocky-ist-ein-anhimmelndes-stallone-biopic-1165385",
-     "datum": "2026-11-06T19:00:00.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘I Play Rocky’ Celebrates Sylvester Stallone the Screenwriter — but Rocky Balboa Was Only the Beginning",
-     "link": "https://www.indiewire.com/features/commentary/sylvester-stallone-screenwriter-rocky-rambo-1235225006/",
-     "datum": "2026-11-06T15:00:00.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "Before He Played Sylvester Stallone in ‘I Play Rocky,’ Star Anthony Ippolito Fought Hard for His Own Big Break",
-     "link": "https://www.indiewire.com/features/interviews/sylvester-stallone-i-play-rocky-star-anthony-ippolito-1235225053/",
-     "datum": "2026-11-03T14:00:00.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘I Play Rocky’ Review: Sylvester Stallone’s Wild Hollywood Underdog Story Gets a Punchy Crowdpleaser",
-     "link": "https://www.indiewire.com/criticism/movies/i-play-rocky-review-sylvester-stallone-1235216617/",
-     "datum": "2026-11-02T19:00:00.000Z"
-    }
-   ]
-  },
   "movie-1365378": {
    "titel": "Große Träume",
    "original": "Le rêve américain",
@@ -3006,6 +2967,46 @@
    "link": "https://www.themoviedb.org/movie/1365378",
    "bild": "https://image.tmdb.org/t/p/w500/yObiUK0WVhx0hwTIJhocdJTmhFc.jpg",
    "news": []
+  },
+  "movie-1457866": {
+   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "original": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "leitsatz": null,
+   "handlung": "Acht Jahre nach den Ereignissen von „Once Upon a Time in… Hollywood“ navigiert Cliff Booth in seiner neuen Rolle als Fixer durch das Studiosystem.",
+   "genres": [
+    "Drama",
+    "Komödie",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "David Fincher"
+    ],
+    [
+     "Mit",
+     "Brad Pitt, Elizabeth Debicki, Scott Caan, Yahya Abdul-Mateen II"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=fJH-wfSXnWg",
+   "link": "https://www.themoviedb.org/movie/1457866",
+   "bild": "https://image.tmdb.org/t/p/w500/5jO6rhfethzH7xdWl6KCOxCNCzQ.jpg",
+   "news": [
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘The Further Mis-Adventures Of Cliff Booth’ Trailer: More Plot Details Emerge In Latest Look At Fincher-Tarantino-Pitt Team-Up",
+     "link": "https://deadline.com/2026/11/the-further-mis-adventures-of-cliff-booth-trailer-brad-pitt-1237109166/",
+     "datum": "2026-11-06T20:26:20.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "Could ‘The Further Mis-Adventures of Cliff Booth’ Re-Ignite Quentin Tarantino’s Bruce Lee Controversy?",
+     "link": "https://www.indiewire.com/news/general-news/further-mis-adventures-of-cliff-booth-trailer-bruce-lee-tarantino-1235225974/",
+     "datum": "2026-11-06T18:59:14.000Z"
+    }
+   ]
   },
   "movie-1437511": {
    "titel": "How to Rob a Bank",
@@ -3045,38 +3046,6 @@
    ],
    "sprache": "en"
   },
-  "movie-1300926": {
-   "titel": "Angry Birds 3 - Der Film",
-   "original": "The Angry Birds Movie 3",
-   "leitsatz": null,
-   "handlung": "Red faces his greatest challenge yet—surviving fatherhood… while saving the world.",
-   "genres": [
-    "Abenteuer",
-    "Animation",
-    "Komödie",
-    "Familie",
-    "Science Fiction"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 36 Min"
-    ],
-    [
-     "Regie",
-     "John Rice"
-    ],
-    [
-     "Mit",
-     "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=JkF1fSEqRU8",
-   "link": "https://www.themoviedb.org/movie/1300926",
-   "bild": "https://image.tmdb.org/t/p/w500/oxaW6X3xohnzdFSBKCrCjRDckMe.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "movie-1403676": {
    "titel": "April X",
    "original": "April X",
@@ -3106,6 +3075,42 @@
    "link": "https://www.themoviedb.org/movie/1403676",
    "bild": "https://image.tmdb.org/t/p/w500/koNUflGEz6Fdy1GCqpvqBOcIaTP.jpg",
    "news": [],
+   "sprache": "en"
+  },
+  "movie-1096228": {
+   "titel": "Musk",
+   "original": "Musk",
+   "leitsatz": null,
+   "handlung": "An incisive look behind the legend of Elon Musk, the world's most heralded \"inventor-entrepreneur\" who has enormous influence on the world in which we all live.",
+   "genres": [
+    "Dokumentarfilm"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "3 Std 58 Min"
+    ],
+    [
+     "Regie",
+     "Alex Gibney"
+    ],
+    [
+     "Mit",
+     "Elon Musk, Alex Gibney, Justine Musk, Ashley St. Clair"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=eY_8SyndC10",
+   "link": "https://www.themoviedb.org/movie/1096228",
+   "bild": "https://image.tmdb.org/t/p/w500/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+   "news": [
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "Bleecker Street CEO on Why the Social Media Suppression of ‘Musk’ Is About Much More Than Film",
+     "link": "https://www.indiewire.com/news/breaking-news/bleecker-street-ceo-social-media-ad-suppression-musk-1235224208/",
+     "datum": "2026-10-29T20:15:00.000Z"
+    }
+   ],
    "sprache": "en"
   },
   "movie-1260649": {
@@ -3167,7 +3172,7 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=mpLu15l1DwM",
    "link": "https://www.themoviedb.org/movie/1400336",
-   "bild": "https://image.tmdb.org/t/p/w500/gPdzdeehaoaYqxH2rA6yayEDSsS.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/z1EXnsDfGJY8W7VWkKf3Qc7EnrW.jpg",
    "news": [
     {
      "quelle": "Deadline",
@@ -3178,45 +3183,37 @@
     }
    ]
   },
-  "movie-1457866": {
-   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
-   "original": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+  "movie-1300926": {
+   "titel": "Angry Birds 3 - Der Film",
+   "original": "The Angry Birds Movie 3",
    "leitsatz": null,
-   "handlung": "Acht Jahre nach den Ereignissen von „Once Upon a Time in… Hollywood“ navigiert Cliff Booth in seiner neuen Rolle als Fixer durch das Studiosystem.",
+   "handlung": "Red faces his greatest challenge yet—surviving fatherhood… while saving the world.",
    "genres": [
-    "Drama",
+    "Abenteuer",
+    "Animation",
     "Komödie",
-    "Thriller"
+    "Familie",
+    "Science Fiction"
    ],
    "fakten": [
     [
+     "Laufzeit",
+     "1 Std 36 Min"
+    ],
+    [
      "Regie",
-     "David Fincher"
+     "John Rice"
     ],
     [
      "Mit",
-     "Brad Pitt, Elizabeth Debicki, Scott Caan, Yahya Abdul-Mateen II"
+     "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=fJH-wfSXnWg",
-   "link": "https://www.themoviedb.org/movie/1457866",
-   "bild": "https://image.tmdb.org/t/p/w500/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
-   "news": [
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "‘The Further Mis-Adventures Of Cliff Booth’ Trailer: More Plot Details Emerge In Latest Look At Fincher-Tarantino-Pitt Team-Up",
-     "link": "https://deadline.com/2026/11/the-further-mis-adventures-of-cliff-booth-trailer-brad-pitt-1237109166/",
-     "datum": "2026-11-06T20:26:20.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "Could ‘The Further Mis-Adventures of Cliff Booth’ Re-Ignite Quentin Tarantino’s Bruce Lee Controversy?",
-     "link": "https://www.indiewire.com/news/general-news/further-mis-adventures-of-cliff-booth-trailer-bruce-lee-tarantino-1235225974/",
-     "datum": "2026-11-06T18:59:14.000Z"
-    }
-   ]
+   "trailer": "https://www.youtube.com/watch?v=JkF1fSEqRU8",
+   "link": "https://www.themoviedb.org/movie/1300926",
+   "bild": "https://image.tmdb.org/t/p/w500/oxaW6X3xohnzdFSBKCrCjRDckMe.jpg",
+   "news": [],
+   "sprache": "en"
   },
   "movie-1585239": {
    "titel": "Club Kid",
@@ -3623,36 +3620,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/xGiQYHSBXVlMqCdhEoSBjcMUWex.jpg",
    "news": []
   },
-  "movie-1078446": {
-   "titel": "Violent Night - Eine Tödliche Bescherung",
-   "original": "Violent Night 2",
-   "leitsatz": null,
-   "handlung": "When Santa forgets the true meaning of Christmas, he finds himself in the heart of a lively mall community in desperate need of his help. Sapped of his magic, he’ll need another way to take on the goons threatening the mall, and time is running out. Santa has to rediscover his faith in goodness and call in some last-minute reinforcements from the one person no baddie wants to tangle with: Mrs. Claus.",
-   "genres": [
-    "Action",
-    "Komödie",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 50 Min"
-    ],
-    [
-     "Regie",
-     "Tommy Wirkola"
-    ],
-    [
-     "Mit",
-     "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=tzm3cMHOnvk",
-   "link": "https://www.themoviedb.org/movie/1078446",
-   "bild": "https://image.tmdb.org/t/p/w500/7HPvgItDw9NgW3iy4tFRRuGNbuN.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "movie-1649403": {
    "titel": "George Michael: The Faith Tour",
    "original": "George Michael: The Faith Tour",
@@ -3744,6 +3711,36 @@
    "link": "https://www.themoviedb.org/movie/1227877",
    "bild": "https://image.tmdb.org/t/p/w500/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
    "news": []
+  },
+  "movie-1078446": {
+   "titel": "Violent Night - Eine Tödliche Bescherung",
+   "original": "Violent Night 2",
+   "leitsatz": null,
+   "handlung": "When Santa forgets the true meaning of Christmas, he finds himself in the heart of a lively mall community in desperate need of his help. Sapped of his magic, he’ll need another way to take on the goons threatening the mall, and time is running out. Santa has to rediscover his faith in goodness and call in some last-minute reinforcements from the one person no baddie wants to tangle with: Mrs. Claus.",
+   "genres": [
+    "Action",
+    "Komödie",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 50 Min"
+    ],
+    [
+     "Regie",
+     "Tommy Wirkola"
+    ],
+    [
+     "Mit",
+     "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=tzm3cMHOnvk",
+   "link": "https://www.themoviedb.org/movie/1078446",
+   "bild": "https://image.tmdb.org/t/p/w500/7HPvgItDw9NgW3iy4tFRRuGNbuN.jpg",
+   "news": [],
+   "sprache": "en"
   },
   "movie-1452168": {
    "titel": "Behemoth! - Stück meines Lebens",
@@ -3942,108 +3939,6 @@
    "news": [],
    "sprache": "en"
   },
-  "movie-1096228": {
-   "titel": "Musk",
-   "original": "Musk",
-   "leitsatz": null,
-   "handlung": "An incisive look behind the legend of Elon Musk, the world's most heralded \"inventor-entrepreneur\" who has enormous influence on the world in which we all live.",
-   "genres": [
-    "Dokumentarfilm"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "3 Std 55 Min"
-    ],
-    [
-     "Regie",
-     "Alex Gibney"
-    ],
-    [
-     "Mit",
-     "Elon Musk, Alex Gibney, Justine Musk, Ashley St. Clair"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=eY_8SyndC10",
-   "link": "https://www.themoviedb.org/movie/1096228",
-   "bild": "https://image.tmdb.org/t/p/w500/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
-   "news": [
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "Bleecker Street CEO on Why the Social Media Suppression of ‘Musk’ Is About Much More Than Film",
-     "link": "https://www.indiewire.com/news/breaking-news/bleecker-street-ceo-social-media-ad-suppression-musk-1235224208/",
-     "datum": "2026-10-29T20:15:00.000Z"
-    }
-   ],
-   "sprache": "en"
-  },
-  "tv-258989": {
-   "titel": "The Greatest",
-   "original": "The Greatest",
-   "leitsatz": null,
-   "handlung": "Frisch gekrönt mit Olympia-Gold 1960 nimmt der junge Boxer Muhammad Ali (damals Cassius Clay) den Schwergewichtstitel ins Visier. Konfrontiert mit neuem Ruhm, Selbstzweifeln, Familiendramen und einem politisch aufgeladenen Amerika erkennt das Ausnahmetalent, dass sein größter Gegner nicht im Ring steht, sondern in einer Gesellschaft, die nicht bereit für ihn ist.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 8 Folgen"
-    ],
-    [
-     "Von",
-     "Ben Watkins"
-    ],
-    [
-     "Mit",
-     "Jaalen Best, Omari Hardwick, Dana Gourrier, Amin Joseph"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=RnRf-r-RdA4",
-   "link": "https://www.themoviedb.org/tv/258989",
-   "bild": "https://image.tmdb.org/t/p/w500/hu4jco5AOs8NSIctuc9KsRyuSg8.jpg",
-   "news": [
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "Watch ‘The Greatest’ Team Discuss How They Made the Impossible ‘Possible’ on Muhammad Ali Series",
-     "link": "https://www.indiewire.com/news/events/watch-the-greatest-crafts-team-panel-muhammad-ali-1235225455/",
-     "datum": "2026-11-05T00:00:00.000Z"
-    }
-   ]
-  },
-  "tv-312006": {
-   "titel": "Betäubt",
-   "original": "Znieczulenie",
-   "leitsatz": null,
-   "handlung": "Nach einer gewagten, aber erfolglosen OP wechselt ein Arzt von einer renommierten Klinik an ein örtliches Krankenhaus und muss sein Leben wieder auf die richtige Spur bringen.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 8 Folgen"
-    ],
-    [
-     "Mit",
-     "Leszek Lichota, Aleksandra Popławska, Filip Kowalewicz, Karolina Gruszka"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/312006",
-   "bild": "https://image.tmdb.org/t/p/w500/h11NvlBzbTF6P2boA65ITdFSSo4.jpg",
-   "news": []
-  },
   "tv-303044": {
    "titel": "Campus Drivers",
    "original": "Campus Drivers",
@@ -4072,7 +3967,7 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=xybsbjGt1KA",
    "link": "https://www.themoviedb.org/tv/303044",
-   "bild": "https://image.tmdb.org/t/p/w500/8A7kI4l1q7A8537eN5qylZbrctR.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/oPltcyfWWfVmxB6lV8JZZJV3m7Q.jpg",
    "news": [
     {
      "quelle": "Serienjunkies",
@@ -4082,6 +3977,38 @@
      "datum": "2026-11-06T05:00:00.000Z"
     }
    ]
+  },
+  "tv-297491": {
+   "titel": "Palacio - Im Belagerungszustand",
+   "original": "Palacio",
+   "leitsatz": null,
+   "handlung": "November 1985: Die Guerillagruppe M-19 besetzte den Justizpalast in Bogotá und entfesselte damit einen Tag der Gewalt, der Kolumbien für immer verändern sollte. Im Kreuzfeuer, zwischen verzweifelten Geiseln, einer unerbittlichen Armee und einer Guerillatruppe, die bereit war, alles zu verlieren, erlebte das Land zum ersten Mal, wie ein Krieg das Herz der Stadt verwüstete. Die Folgen der Belagerung prägten die Überlebenden und ihre Familien nachhaltig; sie suchten jahrzehntelang nach Gerechtigkeit. Auf die 27 Stunden des Grauens folgten 40 Jahre unbeantworteter Fragen.",
+   "genres": [
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 8 Folgen"
+    ],
+    [
+     "Von",
+     "Natalia Santa, Mariana Berenguer"
+    ],
+    [
+     "Mit",
+     "Natalia Reyes, Luna Baxter, Mariana Gómez, Robinson Díaz"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/297491",
+   "bild": "https://image.tmdb.org/t/p/w500/ju6k9yjDo4kmGq2nylFtBCSmfML.jpg",
+   "news": []
   },
   "tv-224377": {
    "titel": "Harry Potter",
@@ -4112,6 +4039,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/AcVckVxfN169mGOgQGYe983KT1C.jpg",
    "news": [
     {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "Ich verliebte mich in Harry Potter, weil mich ein Schwarm Wespen halbtot gestochen hat",
+     "link": "https://www.moviepilot.de/news/harry-potter-liebe-wespe-1165367",
+     "datum": "2026-11-07T10:00:00.000Z"
+    },
+    {
      "quelle": "The Hollywood Reporter",
      "art": "film",
      "titel": "‘Harry Potter’ Oxford Street Christmas Lights Details Revealed: Hogwarts Houses and a Tree With \"Enchanted Snowfall\"",
@@ -4138,13 +4072,6 @@
      "titel": "Der erste Harry Potter-Film wird 25: Diese Markenzeichen von Hermine und Harry aus den Büchern wurden dafür abgeschafft",
      "link": "https://www.moviepilot.de/news/hermine-harry-potter-markenzeichen-stein-der-weisen-1163331",
      "datum": "2026-11-04T17:00:00.000Z"
-    },
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "\"Mit Risiken wollte bei diesem Projekt niemand etwas zu tun haben\": Vor 25 Jahren war die Kritik zu Harry Potter und der Stein der Weisen gespalten",
-     "link": "https://www.moviepilot.de/news/harry-potter-25-jahre-kritiken-1165353",
-     "datum": "2026-11-04T15:32:00.000Z"
     }
    ]
   },
@@ -4180,13 +4107,15 @@
    "news": [],
    "sprache": "en"
   },
-  "tv-338684": {
-   "titel": "Taken: Natalee Holloway",
-   "original": "Taken: Natalee Holloway",
+  "tv-328010": {
+   "titel": "Devils' Crest",
+   "original": "デモンズ・クレスト",
    "leitsatz": null,
-   "handlung": "Natalee Holloway verschwand 2005 spurlos in Aruba. Diese True-Crime-Serie handelt von der jahrelangen Suche, bis ihre Mutter dem Tatverdächtigen gegenübersteht.",
+   "handlung": "Das neuartige VRMMORPG »Actual Magic« ermöglicht es seinen Spielern, vollständig in eine virtuelle Welt einzutauchen. Doch was zunächst wie ein faszinierendes Abenteuer erscheint, entwickelt sich schnell zu einem Albtraum.\n\nAls die Grenzen zwischen der digitalen Umgebung und der realen Welt verschwinden, geraten die Spieler in einen gefährlichen Kampf ums Überleben.",
    "genres": [
-    "Dokumentarfilm"
+    "Action & Adventure",
+    "Sci-Fi & Fantasy",
+    "Animation"
    ],
    "fakten": [
     [
@@ -4194,17 +4123,17 @@
      "1 Staffel, 3 Folgen"
     ],
     [
-     "Von",
-     "Dani Sloane"
+     "Mit",
+     "Haruka Shiraishi, Konomi Inagaki, Yuya Hirose, Satomi Amano"
     ],
     [
      "Sender/Dienst",
-     "Netflix"
+     "Prime Video"
     ]
    ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/338684",
-   "bild": "https://image.tmdb.org/t/p/w500/rKyjcuSbsDDDcIisa6cx5k5yQNa.jpg",
+   "trailer": "https://www.youtube.com/watch?v=fB4EfJcItPE",
+   "link": "https://www.themoviedb.org/tv/328010",
+   "bild": "https://image.tmdb.org/t/p/w500/kimx6VeIKhNQH0sqyT2OXfWUO07.jpg",
    "news": []
   },
   "tv-291507": {
@@ -4518,8 +4447,8 @@
    "news": []
   },
   "tv-329315": {
-   "titel": "The Rise of the Rockstar Chef",
-   "original": "The Rise of the Rockstar Chef",
+   "titel": "Rise of the Rockstar Chef",
+   "original": "Rise of the Rockstar Chef",
    "leitsatz": null,
    "handlung": "A three-part docuseries charting the rise of three of Britain’s most influential culinary figures: Marco Pierre White, Gordon Ramsay and Heston Blumenthal.",
    "genres": [
@@ -4685,6 +4614,41 @@
    "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
    "news": []
   },
+  "tv-1416": {
+   "titel": "Grey's Anatomy",
+   "original": "Grey's Anatomy",
+   "leitsatz": "Das Leben, das Sie retten, kann Ihr eigenes sein.",
+   "handlung": "Die Serie erzählt die Geschichte von fünf jungen Assistenzärzten des fiktiven Krankenhauses Seattle Grace Hospital in Seattle. Im Mittelpunkt steht die junge Ärztin Meredith Grey, die zusammen mit ihren Kollegen Cristina Yang, Isobel „Izzie“ Stevens, George O’Malley und Alex Karev ihre Ausbildung in der Chirurgie absolviert. Im Kern der Handlung stehen die verschiedenen Beziehungen der Assistenzärzte untereinander und mit ihren Stationsoberärzten.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "23 Staffeln, 466 Folgen"
+    ],
+    [
+     "Von",
+     "Shonda Rhimes"
+    ],
+    [
+     "Mit",
+     "Ellen Pompeo, Chandra Wilson, James Pickens Jr., Caterina Scorsone"
+    ],
+    [
+     "Sender/Dienst",
+     "ABC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=hc0ZFCHbR40",
+   "link": "https://www.themoviedb.org/tv/1416",
+   "bild": "https://image.tmdb.org/t/p/w500/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
+   "news": []
+  },
   "tv-247718": {
    "titel": "MobLand: Familie bis aufs Blut",
    "original": "MobLand",
@@ -4719,41 +4683,6 @@
    "trailer": "https://www.youtube.com/watch?v=cyYZAc0TZ7U",
    "link": "https://www.themoviedb.org/tv/247718",
    "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
-   "news": []
-  },
-  "tv-1416": {
-   "titel": "Grey's Anatomy",
-   "original": "Grey's Anatomy",
-   "leitsatz": "Das Leben, das Sie retten, kann Ihr eigenes sein.",
-   "handlung": "Die Serie erzählt die Geschichte von fünf jungen Assistenzärzten des fiktiven Krankenhauses Seattle Grace Hospital in Seattle. Im Mittelpunkt steht die junge Ärztin Meredith Grey, die zusammen mit ihren Kollegen Cristina Yang, Isobel „Izzie“ Stevens, George O’Malley und Alex Karev ihre Ausbildung in der Chirurgie absolviert. Im Kern der Handlung stehen die verschiedenen Beziehungen der Assistenzärzte untereinander und mit ihren Stationsoberärzten.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "23 Staffeln, 466 Folgen"
-    ],
-    [
-     "Von",
-     "Shonda Rhimes"
-    ],
-    [
-     "Mit",
-     "Ellen Pompeo, Chandra Wilson, James Pickens Jr., Caterina Scorsone"
-    ],
-    [
-     "Sender/Dienst",
-     "ABC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=hc0ZFCHbR40",
-   "link": "https://www.themoviedb.org/tv/1416",
-   "bild": "https://image.tmdb.org/t/p/w500/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
    "news": []
   },
   "tv-456": {
@@ -4829,50 +4758,41 @@
    "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
    "news": []
   },
-  "tv-153312": {
-   "titel": "Tulsa King",
-   "original": "Tulsa King",
-   "leitsatz": "Ursprünglicher Gangster. Neue Stadt.",
-   "handlung": "Kurz nachdem er nach 25 Jahren aus dem Gefängnis entlassen wurde, wird der New Yorker Mafia-Capo Dwight \"The General\" Manfredi von seinem Boss kurzerhand ins Exil geschickt, um sich in Tulsa, Oklahoma, niederzulassen. Dwight erkennt, dass seine Mafia-Familie möglicherweise nicht sein Bestes im Sinn hat, und baut langsam eine \"Crew\" aus einer Gruppe unwahrscheinlicher Charaktere auf, die ihm dabei hilft, ein neues kriminelles Imperium an einem Ort aufzubauen, der für ihn genauso gut ein anderer Planet sein könnte.",
+  "tv-213375": {
+   "titel": "VisionQuest",
+   "original": "VisionQuest",
+   "leitsatz": null,
+   "handlung": "Nach Visions Flucht vor jenen, die ihn als Waffe missbrauchen wollten, führt er ein Leben im Verborgenen. Auf der Suche nach einer neuen Bestimmung zieht er auch die diversen KIs zu Rate, die innerhalb seiner Programmierung ein neues Zuhause gefunden haben. Unter ihnen befinden sich nicht nur Friday, Edith und Jarvis, sondern auch der berüchtigte Ultron. Doch Visions unauffällige Existenz findet ein abruptes Ende, als ein Kopfgeld auf ihn ausgesetzt wird. Auf der Flucht schließt er sich Thomas Shepherd an, einem geheimnisvollen Jungen, bei dem es sich um Visions wiedergeborenen Sohn handeln könnte. Dabei sieht sich Vision zunehmend gezwungen, sich seiner eigenen Natur zu stellen, Ultrons Einfluss zu widerstehen und das Rätsel um seinen jungen Begleiter zu entschlüsseln.",
    "genres": [
-    "Krimi",
-    "Drama",
-    "Komödie"
+    "Sci-Fi & Fantasy",
+    "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "4 Staffeln, 39 Folgen"
+     "1 Staffel, 8 Folgen"
     ],
     [
      "Von",
-     "Taylor Sheridan"
+     "Terry Matalas"
     ],
     [
      "Mit",
-     "Sylvester Stallone, Martin Starr, Jay Will, Vincent Piazza"
+     "Paul Bettany, James Spader, Ruaridh Mollica, Todd Stashwick"
     ],
     [
      "Sender/Dienst",
-     "Paramount+"
+     "Disney+"
     ],
     [
      "TMDB-Wertung",
-     "8.3 / 10"
+     "8.6 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=Mh417ri7rgk",
-   "link": "https://www.themoviedb.org/tv/153312",
-   "bild": "https://image.tmdb.org/t/p/w500/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
-   "news": [
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Manny Montana Joins ‘Tulsa King’ For Season 5",
-     "link": "https://deadline.com/2026/11/manny-montana-cast-tulsa-king-season-5-1237214711/",
-     "datum": "2026-11-05T21:00:00.000Z"
-    }
-   ]
+   "trailer": "https://www.youtube.com/watch?v=rcw2IBSlHwE",
+   "link": "https://www.themoviedb.org/tv/213375",
+   "bild": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
+   "news": []
   },
   "tv-549": {
    "titel": "Law & Order",
@@ -4918,97 +4838,48 @@
     }
    ]
   },
-  "tv-213375": {
-   "titel": "VisionQuest",
-   "original": "VisionQuest",
-   "leitsatz": null,
-   "handlung": "Nach Visions Flucht vor jenen, die ihn als Waffe missbrauchen wollten, führt er ein Leben im Verborgenen. Auf der Suche nach einer neuen Bestimmung zieht er auch die diversen KIs zu Rate, die innerhalb seiner Programmierung ein neues Zuhause gefunden haben. Unter ihnen befinden sich nicht nur Friday, Edith und Jarvis, sondern auch der berüchtigte Ultron. Doch Visions unauffällige Existenz findet ein abruptes Ende, als ein Kopfgeld auf ihn ausgesetzt wird. Auf der Flucht schließt er sich Thomas Shepherd an, einem geheimnisvollen Jungen, bei dem es sich um Visions wiedergeborenen Sohn handeln könnte. Dabei sieht sich Vision zunehmend gezwungen, sich seiner eigenen Natur zu stellen, Ultrons Einfluss zu widerstehen und das Rätsel um seinen jungen Begleiter zu entschlüsseln.",
+  "tv-153312": {
+   "titel": "Tulsa King",
+   "original": "Tulsa King",
+   "leitsatz": "Ursprünglicher Gangster. Neue Stadt.",
+   "handlung": "Kurz nachdem er nach 25 Jahren aus dem Gefängnis entlassen wurde, wird der New Yorker Mafia-Capo Dwight \"The General\" Manfredi von seinem Boss kurzerhand ins Exil geschickt, um sich in Tulsa, Oklahoma, niederzulassen. Dwight erkennt, dass seine Mafia-Familie möglicherweise nicht sein Bestes im Sinn hat, und baut langsam eine \"Crew\" aus einer Gruppe unwahrscheinlicher Charaktere auf, die ihm dabei hilft, ein neues kriminelles Imperium an einem Ort aufzubauen, der für ihn genauso gut ein anderer Planet sein könnte.",
    "genres": [
-    "Sci-Fi & Fantasy",
-    "Drama"
+    "Krimi",
+    "Drama",
+    "Komödie"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 8 Folgen"
+     "4 Staffeln, 39 Folgen"
     ],
     [
      "Von",
-     "Terry Matalas"
+     "Taylor Sheridan"
     ],
     [
      "Mit",
-     "Paul Bettany, James Spader, Ruaridh Mollica, Todd Stashwick"
+     "Sylvester Stallone, Martin Starr, Jay Will, Vincent Piazza"
     ],
     [
      "Sender/Dienst",
-     "Disney+"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=rcw2IBSlHwE",
-   "link": "https://www.themoviedb.org/tv/213375",
-   "bild": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
-   "news": []
-  },
-  "tv-2190": {
-   "titel": "South Park",
-   "original": "South Park",
-   "leitsatz": null,
-   "handlung": "Die Serie konzentriert sich hauptsächlich auf die Abenteuer der vier Kinder Stan Marsh, Kyle Broflovski, Eric Cartman und Kenny McCormick in der fiktionalen Kleinstadt South Park in den Rocky Mountains in den USA der Gegenwart. Neben den vier Hauptcharakteren wird die Stadt von einer Reihe von zusätzlichen Charakteren bevölkert.",
-   "genres": [
-    "Komödie",
-    "Animation"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "29 Staffeln, 337 Folgen"
-    ],
-    [
-     "Von",
-     "Trey Parker, Matt Stone"
-    ],
-    [
-     "Mit",
-     "Trey Parker, Matt Stone, Mona Marshall, Jennifer Howell"
-    ],
-    [
-     "Sender/Dienst",
-     "Comedy Central"
+     "Paramount+"
     ],
     [
      "TMDB-Wertung",
      "8.3 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=oUIK01ek-Ko",
-   "link": "https://www.themoviedb.org/tv/2190",
-   "bild": "https://image.tmdb.org/t/p/w500/4EXUM5hi5nymlmqIVwnbIJENKpe.jpg",
+   "trailer": "https://www.youtube.com/watch?v=Mh417ri7rgk",
+   "link": "https://www.themoviedb.org/tv/153312",
+   "bild": "https://image.tmdb.org/t/p/w500/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
    "news": [
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘South Park’ Serves Up a Steaming Pile of Beef Satire — and a ‘GTA VI’ Sneak Peek",
-     "link": "https://www.hollywoodreporter.com/tv/tv-features/south-park-recap-beef-gta-vi-sneak-peek-1236742371/",
-     "datum": "2026-10-29T06:40:29.000Z"
-    },
     {
      "quelle": "Deadline",
      "art": "film",
-     "titel": "‘South Park’ Parodies ‘GTA VI’ Hype With Dog Poop Gameplay",
-     "link": "https://deadline.com/2026/10/south-park-parodies-gta-vi-dog-poop-gameplay-1237207932/",
-     "datum": "2026-10-29T04:16:47.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "‘South Park’: Cartman, Stan and Kyle Must Solve South America’s Beef Crisis in Halloween Week Episode",
-     "link": "https://variety.com/2026/tv/news/south-park-season-29-episode-4-1236933789/",
-     "datum": "2026-10-29T03:05:04.000Z"
+     "titel": "Manny Montana Joins ‘Tulsa King’ For Season 5",
+     "link": "https://deadline.com/2026/11/manny-montana-cast-tulsa-king-season-5-1237214711/",
+     "datum": "2026-11-05T21:00:00.000Z"
     }
    ]
   },
@@ -5106,6 +4977,64 @@
     }
    ]
   },
+  "tv-2190": {
+   "titel": "South Park",
+   "original": "South Park",
+   "leitsatz": null,
+   "handlung": "Die Serie konzentriert sich hauptsächlich auf die Abenteuer der vier Kinder Stan Marsh, Kyle Broflovski, Eric Cartman und Kenny McCormick in der fiktionalen Kleinstadt South Park in den Rocky Mountains in den USA der Gegenwart. Neben den vier Hauptcharakteren wird die Stadt von einer Reihe von zusätzlichen Charakteren bevölkert.",
+   "genres": [
+    "Komödie",
+    "Animation"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "29 Staffeln, 337 Folgen"
+    ],
+    [
+     "Von",
+     "Trey Parker, Matt Stone"
+    ],
+    [
+     "Mit",
+     "Trey Parker, Matt Stone, Mona Marshall, Jennifer Howell"
+    ],
+    [
+     "Sender/Dienst",
+     "Comedy Central"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=oUIK01ek-Ko",
+   "link": "https://www.themoviedb.org/tv/2190",
+   "bild": "https://image.tmdb.org/t/p/w500/4EXUM5hi5nymlmqIVwnbIJENKpe.jpg",
+   "news": [
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘South Park’ Serves Up a Steaming Pile of Beef Satire — and a ‘GTA VI’ Sneak Peek",
+     "link": "https://www.hollywoodreporter.com/tv/tv-features/south-park-recap-beef-gta-vi-sneak-peek-1236742371/",
+     "datum": "2026-10-29T06:40:29.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘South Park’ Parodies ‘GTA VI’ Hype With Dog Poop Gameplay",
+     "link": "https://deadline.com/2026/10/south-park-parodies-gta-vi-dog-poop-gameplay-1237207932/",
+     "datum": "2026-10-29T04:16:47.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "‘South Park’: Cartman, Stan and Kyle Must Solve South America’s Beef Crisis in Halloween Week Episode",
+     "link": "https://variety.com/2026/tv/news/south-park-season-29-episode-4-1236933789/",
+     "datum": "2026-10-29T03:05:04.000Z"
+    }
+   ]
+  },
   "tv-3034": {
    "titel": "Tatort",
    "original": "Tatort",
@@ -5133,6 +5062,57 @@
    "link": "https://www.themoviedb.org/tv/3034",
    "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
    "news": []
+  },
+  "tv-58841": {
+   "titel": "Chicago P.D.",
+   "original": "Chicago P.D.",
+   "leitsatz": null,
+   "handlung": "Der District 21 des Chicago Police Departments besteht aus zwei unterschiedlichen Abteilungen: Einmal gibt es die Uniformed Cops, die ihren Einsatz auf den Straßen der Stadt haben und sich um Kleinkriminelle kümmern. Die Intelligence Unit hingegen bekämpft Straftaten im großen Stil, sei es Drogenschmuggel oder Morde aller Art.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "14 Staffeln, 270 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Matt Olmstead"
+    ],
+    [
+     "Mit",
+     "Jason Beghe, Marina Squerciati, Patrick John Flueger, Benjamin Levy Aguilar"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=NZcr9IFS9R0",
+   "link": "https://www.themoviedb.org/tv/58841",
+   "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Neue Ära bei „Chicago P.D.“: Nach dem Abschied eines Publikumslieblings übernimmt dieser neue Officer",
+     "link": "https://www.serienjunkies.de/news/serien/neue-aera-bei-chicago-nach-dem-abschied-eines-publikumslieblings-uebernimmt-dieser-neue-officer-94566196.html",
+     "datum": "2026-10-30T11:00:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Naiqui Macabroad Joins ‘Chicago P.D.’ Following LaRoyce Hawkins Exit",
+     "link": "https://deadline.com/2026/10/naiqui-macabroad-chicago-p-d-season-14-cast-1237208550/",
+     "datum": "2026-10-29T20:11:11.000Z"
+    }
+   ]
   },
   "tv-65334": {
    "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
@@ -5208,129 +5188,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
    "news": []
   },
-  "tv-58841": {
-   "titel": "Chicago P.D.",
-   "original": "Chicago P.D.",
-   "leitsatz": null,
-   "handlung": "Der District 21 des Chicago Police Departments besteht aus zwei unterschiedlichen Abteilungen: Einmal gibt es die Uniformed Cops, die ihren Einsatz auf den Straßen der Stadt haben und sich um Kleinkriminelle kümmern. Die Intelligence Unit hingegen bekämpft Straftaten im großen Stil, sei es Drogenschmuggel oder Morde aller Art.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "14 Staffeln, 270 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Jason Beghe, Marina Squerciati, Patrick John Flueger, Benjamin Levy Aguilar"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=NZcr9IFS9R0",
-   "link": "https://www.themoviedb.org/tv/58841",
-   "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Neue Ära bei „Chicago P.D.“: Nach dem Abschied eines Publikumslieblings übernimmt dieser neue Officer",
-     "link": "https://www.serienjunkies.de/news/serien/neue-aera-bei-chicago-nach-dem-abschied-eines-publikumslieblings-uebernimmt-dieser-neue-officer-94566196.html",
-     "datum": "2026-10-30T11:00:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Naiqui Macabroad Joins ‘Chicago P.D.’ Following LaRoyce Hawkins Exit",
-     "link": "https://deadline.com/2026/10/naiqui-macabroad-chicago-p-d-season-14-cast-1237208550/",
-     "datum": "2026-10-29T20:11:11.000Z"
-    }
-   ]
-  },
-  "tv-62650": {
-   "titel": "Chicago Med",
-   "original": "Chicago Med",
-   "leitsatz": null,
-   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "12 Staffeln, 225 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/62650",
-   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
-   "news": []
-  },
-  "tv-75219": {
-   "titel": "9-1-1 Notruf L.A.",
-   "original": "9-1-1",
-   "leitsatz": null,
-   "handlung": "Die Serie folgt den Leben der Ersthelfer von Los Angeles: Polizisten, Sanitäter, Feuerwehrleute und Mitarbeitern der Leitstelle.",
-   "genres": [
-    "Drama",
-    "Krimi",
-    "Action & Adventure"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "10 Staffeln, 148 Folgen"
-    ],
-    [
-     "Von",
-     "Ryan Murphy, Brad Falchuk"
-    ],
-    [
-     "Mit",
-     "Angela Bassett, Jennifer Love Hewitt, Oliver Stark, Aisha Hinds"
-    ],
-    [
-     "Sender/Dienst",
-     "ABC, FOX"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=R4vKvvmt9vk",
-   "link": "https://www.themoviedb.org/tv/75219",
-   "bild": "https://image.tmdb.org/t/p/w500/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
-   "news": []
-  },
   "tv-30983": {
    "titel": "Detektiv Conan",
    "original": "名探偵コナン",
@@ -5365,39 +5222,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
    "news": []
   },
-  "tv-312359": {
-   "titel": "Dragon Ball Super: Beerus",
-   "original": "ドラゴンボール超 ビルス",
-   "leitsatz": null,
-   "handlung": "Jahre nach dem erbitterten Kampf gegen Majin Boo herrscht auf der Erde endlich Frieden. Doch dann erwacht Beerus, der Gott der Zerstörung, aus seinem langen Schlaf. Als er von dem Saiyajin hört, der Freezer besiegt hat, taucht er unvermittelt bei Son Goku auf – und die ganze Erde gerät in Gefahr. Goku und seine Freunde stellen sich einem Kampf, der das Universum erschüttert.",
-   "genres": [
-    "Animation",
-    "Action & Adventure",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 19 Folgen"
-    ],
-    [
-     "Mit",
-     "Masako Nozawa, Ryō Horikawa, 渡辺菜生子, Unsho Ishizuka"
-    ],
-    [
-     "Sender/Dienst",
-     "Fuji TV, Tokai Television Broadcasting"
-    ],
-    [
-     "TMDB-Wertung",
-     "9.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=iCD3Lf7Jf9o",
-   "link": "https://www.themoviedb.org/tv/312359",
-   "bild": "https://image.tmdb.org/t/p/w500/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
-   "news": []
-  },
   "tv-45790": {
    "titel": "JoJo's Bizarre Adventure",
    "original": "ジョジョの奇妙な冒険",
@@ -5429,6 +5253,41 @@
    "trailer": "https://www.youtube.com/watch?v=2esDNWsLAXQ",
    "link": "https://www.themoviedb.org/tv/45790",
    "bild": "https://image.tmdb.org/t/p/w500/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+   "news": []
+  },
+  "tv-62650": {
+   "titel": "Chicago Med",
+   "original": "Chicago Med",
+   "leitsatz": null,
+   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "12 Staffeln, 225 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Matt Olmstead"
+    ],
+    [
+     "Mit",
+     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/62650",
+   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
    "news": []
   },
   "tv-259909": {
@@ -5475,6 +5334,76 @@
      "datum": "2026-10-30T18:31:12.000Z"
     }
    ]
+  },
+  "tv-312359": {
+   "titel": "Dragon Ball Super: Beerus",
+   "original": "ドラゴンボール超 ビルス",
+   "leitsatz": null,
+   "handlung": "Jahre nach dem erbitterten Kampf gegen Majin Boo herrscht auf der Erde endlich Frieden. Doch dann erwacht Beerus, der Gott der Zerstörung, aus seinem langen Schlaf. Als er von dem Saiyajin hört, der Freezer besiegt hat, taucht er unvermittelt bei Son Goku auf – und die ganze Erde gerät in Gefahr. Goku und seine Freunde stellen sich einem Kampf, der das Universum erschüttert.",
+   "genres": [
+    "Animation",
+    "Action & Adventure",
+    "Sci-Fi & Fantasy"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 19 Folgen"
+    ],
+    [
+     "Mit",
+     "Masako Nozawa, Ryō Horikawa, 渡辺菜生子, Unsho Ishizuka"
+    ],
+    [
+     "Sender/Dienst",
+     "Fuji TV, Tokai Television Broadcasting"
+    ],
+    [
+     "TMDB-Wertung",
+     "9.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=iCD3Lf7Jf9o",
+   "link": "https://www.themoviedb.org/tv/312359",
+   "bild": "https://image.tmdb.org/t/p/w500/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
+   "news": []
+  },
+  "tv-75219": {
+   "titel": "9-1-1 Notruf L.A.",
+   "original": "9-1-1",
+   "leitsatz": null,
+   "handlung": "Die Serie folgt den Leben der Ersthelfer von Los Angeles: Polizisten, Sanitäter, Feuerwehrleute und Mitarbeitern der Leitstelle.",
+   "genres": [
+    "Drama",
+    "Krimi",
+    "Action & Adventure"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "10 Staffeln, 148 Folgen"
+    ],
+    [
+     "Von",
+     "Ryan Murphy, Brad Falchuk"
+    ],
+    [
+     "Mit",
+     "Angela Bassett, Jennifer Love Hewitt, Oliver Stark, Aisha Hinds"
+    ],
+    [
+     "Sender/Dienst",
+     "ABC, FOX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=R4vKvvmt9vk",
+   "link": "https://www.themoviedb.org/tv/75219",
+   "bild": "https://image.tmdb.org/t/p/w500/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
+   "news": []
   }
  }
 }
