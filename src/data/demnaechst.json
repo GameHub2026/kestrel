@@ -193,6 +193,21 @@
    "info": "tv-45790"
   },
   {
+   "id": "tv-339697-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Melania Rea",
+   "datum": "2026-11-06",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/yK9Q4ORFEHEaqFRthTlC9jdU0Ac.jpg",
+   "anbieter": [
+    "HBO Max"
+   ],
+   "link": "https://www.themoviedb.org/tv/339697",
+   "info": "tv-339697"
+  },
+  {
    "id": "tv-247718-s2-2026-11-06",
    "art": "serie",
    "typ": "folge",
@@ -258,7 +273,7 @@
    "typ": "folge",
    "titel": "Dexter: Wiedererwachen",
    "datum": "2026-11-08",
-   "text": "S2E2",
+   "text": "S2E2 · Abgestürzt",
    "jahr": "2025",
    "bild": "https://image.tmdb.org/t/p/w342/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
    "anbieter": [
@@ -329,21 +344,6 @@
    ],
    "link": "https://www.themoviedb.org/tv/3034",
    "info": "tv-3034"
-  },
-  {
-   "id": "tv-336478-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Doozie's Doghouse",
-   "datum": "2026-11-09",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/bhFbiSXg7KrwfXkpZfiLDq4QFCt.jpg",
-   "anbieter": [
-    "Netflix"
-   ],
-   "link": "https://www.themoviedb.org/tv/336478",
-   "info": "tv-336478"
   },
   {
    "id": "tv-80748-s9-2026-11-09",
@@ -646,6 +646,21 @@
    "info": "movie-891621"
   },
   {
+   "id": "tv-328010-s1-2026-11-13",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Devils' Crest",
+   "datum": "2026-11-13",
+   "text": "S1E3",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/kimx6VeIKhNQH0sqyT2OXfWUO07.jpg",
+   "anbieter": [
+    "Amazon Prime Video"
+   ],
+   "link": "https://www.themoviedb.org/tv/328010",
+   "info": "tv-328010"
+  },
+  {
    "id": "tv-45790-s6-2026-11-13",
    "art": "serie",
    "typ": "folge",
@@ -660,6 +675,21 @@
    ],
    "link": "https://www.themoviedb.org/tv/45790",
    "info": "tv-45790"
+  },
+  {
+   "id": "tv-339697-s1-2026-11-13",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Melania Rea",
+   "datum": "2026-11-13",
+   "text": "S1E2",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/yK9Q4ORFEHEaqFRthTlC9jdU0Ac.jpg",
+   "anbieter": [
+    "HBO Max"
+   ],
+   "link": "https://www.themoviedb.org/tv/339697",
+   "info": "tv-339697"
   },
   {
    "id": "tv-247718-s2-2026-11-13",
@@ -705,6 +735,21 @@
    ],
    "link": "https://www.themoviedb.org/tv/153312",
    "info": "tv-153312"
+  },
+  {
+   "id": "tv-30983-s1-2026-11-14",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Detektiv Conan",
+   "datum": "2026-11-14",
+   "text": "S1E1220",
+   "jahr": "1996",
+   "bild": "https://image.tmdb.org/t/p/w342/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "anbieter": [
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/30983",
+   "info": "tv-30983"
   },
   {
    "id": "tv-259909-s2-2026-11-15",
@@ -1035,6 +1080,21 @@
    "info": "tv-45790"
   },
   {
+   "id": "tv-339697-s1-2026-11-20",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Melania Rea",
+   "datum": "2026-11-20",
+   "text": "S1E3",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/yK9Q4ORFEHEaqFRthTlC9jdU0Ac.jpg",
+   "anbieter": [
+    "HBO Max"
+   ],
+   "link": "https://www.themoviedb.org/tv/339697",
+   "info": "tv-339697"
+  },
+  {
    "id": "tv-247718-s2-2026-11-20",
    "art": "serie",
    "typ": "folge",
@@ -1063,6 +1123,21 @@
    ],
    "link": "https://www.themoviedb.org/tv/153312",
    "info": "tv-153312"
+  },
+  {
+   "id": "tv-30983-s1-2026-11-21",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Detektiv Conan",
+   "datum": "2026-11-21",
+   "text": "S1E1221",
+   "jahr": "1996",
+   "bild": "https://image.tmdb.org/t/p/w342/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "anbieter": [
+    "Crunchyroll"
+   ],
+   "link": "https://www.themoviedb.org/tv/30983",
+   "info": "tv-30983"
   },
   {
    "id": "tv-259909-s2-2026-11-22",
@@ -1298,6 +1373,21 @@
    ],
    "link": "https://www.themoviedb.org/tv/45790",
    "info": "tv-45790"
+  },
+  {
+   "id": "tv-339697-s1-2026-11-27",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Melania Rea",
+   "datum": "2026-11-27",
+   "text": "S1E4",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/yK9Q4ORFEHEaqFRthTlC9jdU0Ac.jpg",
+   "anbieter": [
+    "HBO Max"
+   ],
+   "link": "https://www.themoviedb.org/tv/339697",
+   "info": "tv-339697"
   },
   {
    "id": "tv-153312-s4-2026-11-27",
@@ -2069,7 +2159,7 @@
     ],
     [
      "TMDB-Wertung",
-     "8.2 / 10"
+     "8.1 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=x666Mat4ruI",
@@ -2077,11 +2167,32 @@
    "bild": "https://image.tmdb.org/t/p/w500/hZviv9gguqHGw4GK8gS5d5bDhA4.jpg",
    "news": [
     {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "‘Godzilla Minus Zero’ Director Takashi Yamazaki Dreamed of Seeing His Hometown Destroyed by King Ghidorah. He Finally Made It Happen.",
+     "link": "https://variety.com/2026/artisans/news/godzilla-minus-zero-vfx-water-particles-1236939477/",
+     "datum": "2026-11-07T17:16:00.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘Godzilla Minus Zero’ Barrels Toward Historic $32M Box Office Launch With ‘Cat in the Hat’ at No. 2",
+     "link": "https://www.hollywoodreporter.com/movies/movie-news/godzilla-minus-zero-box-office-opening-the-cat-in-the-hat-1236750019/",
+     "datum": "2026-11-07T16:43:46.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Box Office: ‘Godzilla Minus Zero’ Dominates With $14.5 Million on Friday as ‘Cat in the Hat’ Follows With $6 Million",
+     "link": "https://variety.com/2026/film/box-office/box-office-godzilla-minus-zero-cat-in-the-hat-1236942032/",
+     "datum": "2026-11-07T16:42:52.000Z"
+    },
+    {
      "quelle": "Deadline",
      "art": "film",
-     "titel": "‘Godzilla Minus Zero’ Roars Toward Live-Action Foreign-Language Record $30M-$33M Opening At Domestic Box Office",
+     "titel": "‘Godzilla Minus Zero’ Is A Box Office Hero With $32M Live-Action Foreign-Language Opening Record – Saturday AM Update",
      "link": "https://deadline.com/2026/11/box-office-godzilla-minus-zero-cat-in-the-hat-1237215161/",
-     "datum": "2026-11-06T22:09:00.000Z"
+     "datum": "2026-11-07T16:10:00.000Z"
     },
     {
      "quelle": "IndieWire",
@@ -2089,27 +2200,6 @@
      "titel": "How ‘Godzilla Minus Zero’ Used Real-World Sound to Make Its Monsters More Terrifying",
      "link": "https://www.indiewire.com/features/craft/godzilla-minus-zero-real-world-sound-design-1235225839/",
      "datum": "2026-11-06T22:00:00.000Z"
-    },
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘Godzilla Minus Zero’ Roars With $6.7M in Box Office Previews Ahead of Face-Off With ‘Cat in the Hat’",
-     "link": "https://www.hollywoodreporter.com/movies/movie-news/godzilla-minus-zero-box-office-previews-the-cat-in-the-hat-1236749470/",
-     "datum": "2026-11-06T19:06:30.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "Box Office: ‘Godzilla Minus Zero’ Roars with $6.7 Million in Previews, ‘Ramayana: Rise of a Legend’ Earns $3.5 Million",
-     "link": "https://www.indiewire.com/news/box-office/box-office-godzilla-minus-zero-previews-ramayana-1235225976/",
-     "datum": "2026-11-06T17:55:11.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "Inside ‘Godzilla Minus Zero’: How an R Rating, Filming in IMAX, and Epic Kaiju Battles Broke Franchise Tradition",
-     "link": "https://www.indiewire.com/features/interviews/godzilla-minus-zero-spoilers-interview-fight-scenes-1235225726/",
-     "datum": "2026-11-06T13:00:00.000Z"
     }
    ]
   },
@@ -2211,6 +2301,39 @@
     }
    ]
   },
+  "movie-1244523": {
+   "titel": "Beware Boiúna",
+   "original": "Beware Boiúna",
+   "leitsatz": "Erlebe Horror in gigantischem Ausmaß.",
+   "handlung": "Tief im Amazonasgebiet verwandelt sich eine medizinische Mission in einen Kampf ums Überleben, als Boiúna, ein riesiges urzeitliches Raubtier, erwacht, um ihr Revier zurückzuerobern. Im Dschungel, wo die Natur die absolute Macht hat, entscheidet sie, wer lebt und wer stirbt.",
+   "genres": [
+    "Horror",
+    "Thriller",
+    "Action"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 44 Min"
+    ],
+    [
+     "Regie",
+     "Mike P. Nelson"
+    ],
+    [
+     "Mit",
+     "Kiana Madeira, Jessica Rothe, Will Close, Juan Pablo Shuk"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=X-IDVQpUHGA",
+   "link": "https://www.themoviedb.org/movie/1244523",
+   "bild": "https://image.tmdb.org/t/p/w500/uW5YMPxJUzT9bkafrCKHXjPTCoQ.jpg",
+   "news": []
+  },
   "movie-1003596": {
    "titel": "Avengers: Doomsday",
    "original": "Avengers: Doomsday",
@@ -2247,39 +2370,6 @@
      "datum": "2026-11-02T09:30:00.000Z"
     }
    ]
-  },
-  "movie-1244523": {
-   "titel": "Beware Boiúna",
-   "original": "Beware Boiúna",
-   "leitsatz": "Erlebe Horror in gigantischem Ausmaß.",
-   "handlung": "Tief im Amazonasgebiet verwandelt sich eine medizinische Mission in einen Kampf ums Überleben, als Boiúna, ein riesiges urzeitliches Raubtier, erwacht, um ihr Revier zurückzuerobern. Im Dschungel, wo die Natur die absolute Macht hat, entscheidet sie, wer lebt und wer stirbt.",
-   "genres": [
-    "Horror",
-    "Thriller",
-    "Action"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 44 Min"
-    ],
-    [
-     "Regie",
-     "Mike P. Nelson"
-    ],
-    [
-     "Mit",
-     "Kiana Madeira, Jessica Rothe, Will Close, Juan Pablo Shuk"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=X-IDVQpUHGA",
-   "link": "https://www.themoviedb.org/movie/1244523",
-   "bild": "https://image.tmdb.org/t/p/w500/uW5YMPxJUzT9bkafrCKHXjPTCoQ.jpg",
-   "news": []
   },
   "movie-1765072": {
    "titel": "You Can See Everything",
@@ -2379,6 +2469,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/mWN6knIVJ2o7eGwSm7mOgSCwNUc.jpg",
    "news": [
     {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "The Cat in the Hat: Dr. Seuss Helped Its Director Learn English | Collider BTS",
+     "link": "https://collider.com/video/the-cat-in-the-hat-dr-seuss-helped-its-director-learn-english-collider-bts/",
+     "datum": "2026-11-07T19:16:12.000Z"
+    },
+    {
      "quelle": "IndieWire",
      "art": "film",
      "titel": "Eric Bauza’s Final ‘Looney Tunes’ Performance Is ‘Daffy Season,’ Now in Theaters Ahead of ‘The Cat in the Hat’",
@@ -2408,6 +2505,47 @@
     }
    ]
   },
+  "movie-891621": {
+   "titel": "Wild Horse Nine",
+   "original": "Wild Horse Nine",
+   "leitsatz": null,
+   "handlung": "Kurz vor dem Militär-Putsch in Chile im Jahr 1973 werden die CIA-Agenten Chris und Lee von ihrem Büroleiter MJ von Santiago auf die Osterinsel entsandt. Vor dem Hintergrund der ikonischen Skulpturen der Insel ringen die langjährigen Partner mit ihrer dunklen Vergangenheit und aktuellen Verschwörungen. Dabei droht Chris’ neu gefundene Freundschaft mit zwei rebellischen Studentinnen die Reise aller in dieses abgelegene Paradies völlig aus dem Ruder laufen zu lassen.",
+   "genres": [
+    "Komödie",
+    "Krimi",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 57 Min"
+    ],
+    [
+     "Regie",
+     "Martin McDonagh"
+    ],
+    [
+     "Mit",
+     "John Malkovich, Sam Rockwell, Steve Buscemi, Mariana di Girolamo"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=7JEuh1n-WpI",
+   "link": "https://www.themoviedb.org/movie/891621",
+   "bild": "https://image.tmdb.org/t/p/w500/wBMhiwn8JpZ0oMox5OCGvEaCDwX.jpg",
+   "news": [
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "‘Wild Horse Nine’ Review: Martin McDonagh’s Prickly but Unconvincing CIA Satire Recasts ‘In Bruges’ as the Stuff of a Classic Western",
+     "link": "https://www.indiewire.com/criticism/movies/wild-horse-nine-movie-review-1235213912/",
+     "datum": "2026-11-05T18:30:00.000Z"
+    }
+   ]
+  },
   "movie-1195803": {
    "titel": "Wicker",
    "original": "Wicker",
@@ -2433,7 +2571,7 @@
     ],
     [
      "TMDB-Wertung",
-     "7.6 / 10"
+     "7.5 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=kA9NfV4pM_Q",
@@ -2441,47 +2579,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
    "news": [],
    "sprache": "en"
-  },
-  "movie-891621": {
-   "titel": "Wild Horse Nine",
-   "original": "Wild Horse Nine",
-   "leitsatz": null,
-   "handlung": "Kurz vor dem Militär-Putsch in Chile im Jahr 1973 werden die CIA-Agenten Chris und Lee von ihrem Büroleiter MJ von Santiago auf die Osterinsel entsandt. Vor dem Hintergrund der ikonischen Skulpturen der Insel ringen die langjährigen Partner mit ihrer dunklen Vergangenheit und aktuellen Verschwörungen. Dabei droht Chris’ neu gefundene Freundschaft mit zwei rebellischen Studentinnen die Reise aller in dieses abgelegene Paradies völlig aus dem Ruder laufen zu lassen.",
-   "genres": [
-    "Komödie",
-    "Krimi",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 57 Min"
-    ],
-    [
-     "Regie",
-     "Martin McDonagh"
-    ],
-    [
-     "Mit",
-     "John Malkovich, Sam Rockwell, Steve Buscemi, Bastián Bodenhöfer"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=7JEuh1n-WpI",
-   "link": "https://www.themoviedb.org/movie/891621",
-   "bild": "https://image.tmdb.org/t/p/w500/wBMhiwn8JpZ0oMox5OCGvEaCDwX.jpg",
-   "news": [
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘Wild Horse Nine’ Review: Martin McDonagh’s Prickly but Unconvincing CIA Satire Recasts ‘In Bruges’ as the Stuff of a Classic Western",
-     "link": "https://www.indiewire.com/criticism/movies/wild-horse-nine-movie-review-1235213912/",
-     "datum": "2026-11-05T18:30:00.000Z"
-    }
-   ]
   },
   "movie-1300968": {
    "titel": "Die Tribute von Panem: Sunrise on the Reaping",
@@ -2904,6 +3001,37 @@
     }
    ]
   },
+  "movie-1403676": {
+   "titel": "April X",
+   "original": "April X",
+   "leitsatz": null,
+   "handlung": "When his twin sister April (Lilly Krug) goes missing, Bax (Connor Storrie) searches every corner of their futuristic, post-Soviet cityscape to find her. Ultimately descending into a violent criminal underworld and madness, Bax is forced to confront the cost of identity, love, and survival.",
+   "genres": [
+    "Action",
+    "Thriller",
+    "Science Fiction",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 32 Min"
+    ],
+    [
+     "Regie",
+     "Michel K. Parandi"
+    ],
+    [
+     "Mit",
+     "Connor Storrie, Lilly Krug, Tudor Chirilă, Șerban Pavlu"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=1Dbuam1jvw4",
+   "link": "https://www.themoviedb.org/movie/1403676",
+   "bild": "https://image.tmdb.org/t/p/w500/koNUflGEz6Fdy1GCqpvqBOcIaTP.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "movie-1165366": {
    "titel": "De Gaulle - Zeit des Widerstands",
    "original": "La Bataille de Gaulle : L’Âge de fer",
@@ -2935,37 +3063,6 @@
    "trailer": "https://www.youtube.com/watch?v=dKUArYoZ_0U",
    "link": "https://www.themoviedb.org/movie/1165366",
    "bild": "https://image.tmdb.org/t/p/w500/zWuZWFKyga6GF3agrhJn8UtdMSu.jpg",
-   "news": []
-  },
-  "movie-1365378": {
-   "titel": "Große Träume",
-   "original": "Le rêve américain",
-   "leitsatz": "Wer nichts zu verlieren hat, kann alles gewinnen.",
-   "handlung": "Als sich Jeremy und Bouna das erste Mal auf dem Spielfeld begegnen, teilen sie nicht nur die Leidenschaft für Basketball, sondern auch die Gewissheit, nie Profispieler werden zu können. Das hält die beiden sympathischen Underdogs aber nicht davon ab, groß ins Business einzusteigen. Schließlich kennen sie jeden Basketballcourt und die vielversprechendsten Spieler. Kurzerhand gründen die beiden eine Agentur, verpflichten erste Talente und wollen diese in die berühmteste Liga der Welt bringen: die nordamerikanische NBA.  In GROSSE TRÄUME nehmen es zwei unerschütterliche Optimisten mit einer Welt auf, in der niemand auf sie gewartet hat. Ohne Beziehungen, ohne Geld, aber mit einer unverschämten Portion Selbstvertrauen kämpfen sie sich allen Widerständen zum Trotz bis in die nordamerikanische NBA. Eine ebenso turbulente wie warmherzige Underdog-Komödie nach einer wahren Geschichte, die zeigt, dass große Träume keine Frage der Herkunft sind – sondern des Mutes, niemals aufzugeben.",
-   "genres": [
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 2 Min"
-    ],
-    [
-     "Regie",
-     "Anthony Marciano"
-    ],
-    [
-     "Mit",
-     "Jean-Pascal Zadi, Raphaël Quenard, Gregory Defleur, David Clark"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.4 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1365378",
-   "bild": "https://image.tmdb.org/t/p/w500/yObiUK0WVhx0hwTIJhocdJTmhFc.jpg",
    "news": []
   },
   "movie-1457866": {
@@ -3046,36 +3143,36 @@
    ],
    "sprache": "en"
   },
-  "movie-1403676": {
-   "titel": "April X",
-   "original": "April X",
-   "leitsatz": null,
-   "handlung": "When his twin sister April (Lilly Krug) goes missing, Bax (Connor Storrie) searches every corner of their futuristic, post-Soviet cityscape to find her. Ultimately descending into a violent criminal underworld and madness, Bax is forced to confront the cost of identity, love, and survival.",
+  "movie-1365378": {
+   "titel": "Große Träume",
+   "original": "Le rêve américain",
+   "leitsatz": "Wer nichts zu verlieren hat, kann alles gewinnen.",
+   "handlung": "Als sich Jeremy und Bouna das erste Mal auf dem Spielfeld begegnen, teilen sie nicht nur die Leidenschaft für Basketball, sondern auch die Gewissheit, nie Profispieler werden zu können. Das hält die beiden sympathischen Underdogs aber nicht davon ab, groß ins Business einzusteigen. Schließlich kennen sie jeden Basketballcourt und die vielversprechendsten Spieler. Kurzerhand gründen die beiden eine Agentur, verpflichten erste Talente und wollen diese in die berühmteste Liga der Welt bringen: die nordamerikanische NBA.  In GROSSE TRÄUME nehmen es zwei unerschütterliche Optimisten mit einer Welt auf, in der niemand auf sie gewartet hat. Ohne Beziehungen, ohne Geld, aber mit einer unverschämten Portion Selbstvertrauen kämpfen sie sich allen Widerständen zum Trotz bis in die nordamerikanische NBA. Eine ebenso turbulente wie warmherzige Underdog-Komödie nach einer wahren Geschichte, die zeigt, dass große Träume keine Frage der Herkunft sind – sondern des Mutes, niemals aufzugeben.",
    "genres": [
-    "Action",
-    "Thriller",
-    "Science Fiction",
-    "Drama"
+    "Komödie"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "1 Std 32 Min"
+     "2 Std 2 Min"
     ],
     [
      "Regie",
-     "Michel K. Parandi"
+     "Anthony Marciano"
     ],
     [
      "Mit",
-     "Connor Storrie, Lilly Krug, Tudor Chirilă, Șerban Pavlu"
+     "Jean-Pascal Zadi, Raphaël Quenard, Gregory Defleur, David Clark"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.4 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=1Dbuam1jvw4",
-   "link": "https://www.themoviedb.org/movie/1403676",
-   "bild": "https://image.tmdb.org/t/p/w500/koNUflGEz6Fdy1GCqpvqBOcIaTP.jpg",
-   "news": [],
-   "sprache": "en"
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/1365378",
+   "bild": "https://image.tmdb.org/t/p/w500/yObiUK0WVhx0hwTIJhocdJTmhFc.jpg",
+   "news": []
   },
   "movie-1096228": {
    "titel": "Musk",
@@ -3109,40 +3206,6 @@
      "titel": "Bleecker Street CEO on Why the Social Media Suppression of ‘Musk’ Is About Much More Than Film",
      "link": "https://www.indiewire.com/news/breaking-news/bleecker-street-ceo-social-media-ad-suppression-musk-1235224208/",
      "datum": "2026-10-29T20:15:00.000Z"
-    }
-   ],
-   "sprache": "en"
-  },
-  "movie-1260649": {
-   "titel": "Jumanji: Open World",
-   "original": "Jumanji: Open World",
-   "leitsatz": null,
-   "handlung": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us—as Jumanji breaks free of its console, unleashing its chaos into our world.",
-   "genres": [
-    "Abenteuer",
-    "Komödie",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Jake Kasdan"
-    ],
-    [
-     "Mit",
-     "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=jcN4p-mizZw",
-   "link": "https://www.themoviedb.org/movie/1260649",
-   "bild": "https://image.tmdb.org/t/p/w500/ntjF2gemedf3ZcWzARGt6cuZlnJ.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Neuer Trailer zum Trilogie-Finale: „Jumanji: Open World“ startet an Weihnachten im Kino",
-     "link": "https://www.serienjunkies.de/news/serien/jumanji-open-world-trailer-und-starttermin-im-kino-94562683.html",
-     "datum": "2026-10-28T13:52:04.000Z"
     }
    ],
    "sprache": "en"
@@ -3215,6 +3278,67 @@
    "news": [],
    "sprache": "en"
   },
+  "movie-1497464": {
+   "titel": "Gatto",
+   "original": "Gatto",
+   "leitsatz": null,
+   "handlung": "After years of maneuvering the canal-ridden, superstitious city of Venice, Italy, a scrappy black cat named Nero begins to question whether he’s lived the right lives. Indebted to Rocco, a ruthless local feline mob boss, Nero finds himself in a quandary and is forced to forge a truly unexpected friendship that may finally lead him to his purpose — unless Venice gets the better of him first.",
+   "genres": [
+    "Animation",
+    "Komödie",
+    "Krimi",
+    "Familie"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Enrico Casarosa"
+    ],
+    [
+     "Mit",
+     "Mark Ruffalo, Laurence Fishburne, Enrico Casarosa"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=NIKfR_uF_d0",
+   "link": "https://www.themoviedb.org/movie/1497464",
+   "bild": "https://image.tmdb.org/t/p/w500/bgt6dSrwkJCMqdKWRpN4ZTAd1kL.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1260649": {
+   "titel": "Jumanji: Open World",
+   "original": "Jumanji: Open World",
+   "leitsatz": null,
+   "handlung": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us—as Jumanji breaks free of its console, unleashing its chaos into our world.",
+   "genres": [
+    "Abenteuer",
+    "Komödie",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Jake Kasdan"
+    ],
+    [
+     "Mit",
+     "Dwayne Johnson, Kevin Hart, Jack Black, Karen Gillan"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=jcN4p-mizZw",
+   "link": "https://www.themoviedb.org/movie/1260649",
+   "bild": "https://image.tmdb.org/t/p/w500/ntjF2gemedf3ZcWzARGt6cuZlnJ.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Neuer Trailer zum Trilogie-Finale: „Jumanji: Open World“ startet an Weihnachten im Kino",
+     "link": "https://www.serienjunkies.de/news/serien/jumanji-open-world-trailer-und-starttermin-im-kino-94562683.html",
+     "datum": "2026-10-28T13:52:04.000Z"
+    }
+   ],
+   "sprache": "en"
+  },
   "movie-1585239": {
    "titel": "Club Kid",
    "original": "Club Kid",
@@ -3264,33 +3388,6 @@
      "datum": "2026-11-03T18:30:00.000Z"
     }
    ]
-  },
-  "movie-1497464": {
-   "titel": "Gatto",
-   "original": "Gatto",
-   "leitsatz": null,
-   "handlung": "After years of maneuvering the canal-ridden, superstitious city of Venice, Italy, a scrappy black cat named Nero begins to question whether he’s lived the right lives. Indebted to Rocco, a ruthless local feline mob boss, Nero finds himself in a quandary and is forced to forge a truly unexpected friendship that may finally lead him to his purpose — unless Venice gets the better of him first.",
-   "genres": [
-    "Animation",
-    "Komödie",
-    "Krimi",
-    "Familie"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Enrico Casarosa"
-    ],
-    [
-     "Mit",
-     "Mark Ruffalo, Laurence Fishburne, Enrico Casarosa"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=NIKfR_uF_d0",
-   "link": "https://www.themoviedb.org/movie/1497464",
-   "bild": "https://image.tmdb.org/t/p/w500/bgt6dSrwkJCMqdKWRpN4ZTAd1kL.jpg",
-   "news": [],
-   "sprache": "en"
   },
   "movie-1440769": {
    "titel": "The Beekeeper 2",
@@ -3350,68 +3447,28 @@
    "bild": "https://image.tmdb.org/t/p/w500/8chAk0TbPT69Q5eN160JYayvfQM.jpg",
    "news": []
   },
-  "movie-848700": {
-   "titel": "Minotaurus",
-   "original": "Minotaure",
-   "leitsatz": null,
-   "handlung": "Russland, 2022: Firmenchef Gleb führt ein Leben in Wohlstand und häuslicher Behaglichkeit. Doch bald gerät er an allen Fronten unter Druck. Zu Hause entzieht sich ihm seine Frau Galina mehr und mehr, und der Verdacht, dass sie ihn betrügt, lässt ihn nicht los. Im Betrieb verlangen die örtlichen Behörden von ihm, eine Anzahl seiner Beschäftigten für den Krieg in der Ukraine zu rekrutieren. Während er weiterhin seine Hände in Unschuld waschen will, ringt Gleb um Kontrolle. Doch der Zerfall seines sorgsam geordneten Lebens beschleunigt sich. Der Weg in die Gewalt scheint längst unausweichlich.",
+  "movie-1340208": {
+   "titel": "Karōshi",
+   "original": "Karōshi",
+   "leitsatz": "Jedes Empire fürchtet die Rebellion.",
+   "handlung": "Manhattan, in naher Zukunft: Unternehmenstreue und kulturelle Traditionen haben den Alltag der Menschen grundlegend verändert. Als eines Tages ein Angestellter des mächtigen Konzerns IKIGAI ums Leben kommt, schleust sich der mysteriöse Hiro in die Firma ein. Hinter der perfekten, glänzenden Fassade stößt er auf ein gnadenloses System aus Gehorsam, Gewalt und einem alten Ehrenkodex.",
    "genres": [
-    "Drama",
-    "Krimi",
+    "Action",
     "Thriller"
    ],
    "fakten": [
     [
-     "Laufzeit",
-     "2 Std 21 Min"
-    ],
-    [
      "Regie",
-     "Андрей Звягинцев"
+     "Takashi Doscher"
     ],
     [
      "Mit",
-     "Дмитрий Мазуров, Ирис Лебедева, Varvara Shmykova, Juris Žagars"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.6 / 10"
+     "태오, Isabel May, Cynthia Erivo, Takehiro Hira"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=kvs17bvubhI",
-   "link": "https://www.themoviedb.org/movie/848700",
-   "bild": "https://image.tmdb.org/t/p/w500/jUzJYKP0vGXj3HTEkjQiVMjE4ej.jpg",
-   "news": []
-  },
-  "movie-1074074": {
-   "titel": "The Beloved - Mein liebster Mensch",
-   "original": "El ser querido",
-   "leitsatz": null,
-   "handlung": "Der gefeierte Filmregisseur Esteban Martínez ist nicht nur wegen seiner Filme eine Legende, sondern auch wegen seiner von Gewalt und Exzessen geprägten Vergangenheit. Für sein neuestes Projekt bietet er seiner Tochter Emilia eine Rolle an – unter dem Vorwand, ihr bei ihrer ins Stocken geratenen Schauspielkarriere helfen zu wollen. Das gemeinsame Leben am Set wird eine Nähe schaffen, die sie seit Jahren nicht mehr erlebt haben, aber es wird auch alte Wunden wieder aufreißen, die nie verheilt sind.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 16 Min"
-    ],
-    [
-     "Regie",
-     "Rodrigo Sorogoyen"
-    ],
-    [
-     "Mit",
-     "Javier Bardem, Victoria Luengo, Melina Matthews, Malena Villa"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.9 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=2I5LLG2XBco",
-   "link": "https://www.themoviedb.org/movie/1074074",
-   "bild": "https://image.tmdb.org/t/p/w500/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
+   "trailer": "https://www.youtube.com/watch?v=oA4nAbWmd28",
+   "link": "https://www.themoviedb.org/movie/1340208",
+   "bild": "https://image.tmdb.org/t/p/w500/xOwetUoCyca3yYlqZ5rlElgXiTV.jpg",
    "news": []
   },
   "movie-1147572": {
@@ -3448,33 +3505,38 @@
    ],
    "sprache": "en"
   },
-  "movie-1421903": {
-   "titel": "Werwulf",
-   "original": "Werwulf",
+  "movie-848700": {
+   "titel": "Minotaurus",
+   "original": "Minotaure",
    "leitsatz": null,
-   "handlung": "A harrowing tale of devotion, damnation and the devil within.",
+   "handlung": "Russland, 2022: Firmenchef Gleb führt ein Leben in Wohlstand und häuslicher Behaglichkeit. Doch bald gerät er an allen Fronten unter Druck. Zu Hause entzieht sich ihm seine Frau Galina mehr und mehr, und der Verdacht, dass sie ihn betrügt, lässt ihn nicht los. Im Betrieb verlangen die örtlichen Behörden von ihm, eine Anzahl seiner Beschäftigten für den Krieg in der Ukraine zu rekrutieren. Während er weiterhin seine Hände in Unschuld waschen will, ringt Gleb um Kontrolle. Doch der Zerfall seines sorgsam geordneten Lebens beschleunigt sich. Der Weg in die Gewalt scheint längst unausweichlich.",
    "genres": [
-    "Horror"
+    "Drama",
+    "Krimi",
+    "Thriller"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 0 Min"
+     "2 Std 21 Min"
     ],
     [
      "Regie",
-     "Robert Eggers"
+     "Андрей Звягинцев"
     ],
     [
      "Mit",
-     "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach"
+     "Дмитрий Мазуров, Ирис Лебедева, Varvara Shmykova, Juris Žagars"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.6 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=rd_s5QdHdYw",
-   "link": "https://www.themoviedb.org/movie/1421903",
-   "bild": "https://image.tmdb.org/t/p/w500/imnkSt4PSQpxIuyiRpJCiLk3SZz.jpg",
-   "news": [],
-   "sprache": "en"
+   "trailer": "https://www.youtube.com/watch?v=kvs17bvubhI",
+   "link": "https://www.themoviedb.org/movie/848700",
+   "bild": "https://image.tmdb.org/t/p/w500/jUzJYKP0vGXj3HTEkjQiVMjE4ej.jpg",
+   "news": []
   },
   "movie-1391239": {
    "titel": "Das Debüt - Ihr großer Auftritt",
@@ -3521,6 +3583,65 @@
    ],
    "sprache": "en"
   },
+  "movie-1074074": {
+   "titel": "The Beloved - Mein liebster Mensch",
+   "original": "El ser querido",
+   "leitsatz": null,
+   "handlung": "Der gefeierte Filmregisseur Esteban Martínez ist nicht nur wegen seiner Filme eine Legende, sondern auch wegen seiner von Gewalt und Exzessen geprägten Vergangenheit. Für sein neuestes Projekt bietet er seiner Tochter Emilia eine Rolle an – unter dem Vorwand, ihr bei ihrer ins Stocken geratenen Schauspielkarriere helfen zu wollen. Das gemeinsame Leben am Set wird eine Nähe schaffen, die sie seit Jahren nicht mehr erlebt haben, aber es wird auch alte Wunden wieder aufreißen, die nie verheilt sind.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 16 Min"
+    ],
+    [
+     "Regie",
+     "Rodrigo Sorogoyen"
+    ],
+    [
+     "Mit",
+     "Javier Bardem, Victoria Luengo, Melina Matthews, Malena Villa"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=2I5LLG2XBco",
+   "link": "https://www.themoviedb.org/movie/1074074",
+   "bild": "https://image.tmdb.org/t/p/w500/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
+   "news": []
+  },
+  "movie-1421903": {
+   "titel": "Werwulf",
+   "original": "Werwulf",
+   "leitsatz": null,
+   "handlung": "A harrowing tale of devotion, damnation and the devil within.",
+   "genres": [
+    "Horror"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 0 Min"
+    ],
+    [
+     "Regie",
+     "Robert Eggers"
+    ],
+    [
+     "Mit",
+     "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=rd_s5QdHdYw",
+   "link": "https://www.themoviedb.org/movie/1421903",
+   "bild": "https://image.tmdb.org/t/p/w500/imnkSt4PSQpxIuyiRpJCiLk3SZz.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "movie-1603262": {
    "titel": "Everest: The Other Side",
    "original": "Everest: The Other Side",
@@ -3564,87 +3685,61 @@
    ],
    "sprache": "en"
   },
-  "movie-1685339": {
-   "titel": "Unsafe",
-   "original": "Unsafe",
+  "movie-1452168": {
+   "titel": "Behemoth! - Stück meines Lebens",
+   "original": "Behemoth!",
    "leitsatz": null,
-   "handlung": "Feuerwehrfrau Alex (Jeanne Goursaud) wird gemeinsam mit ihrem Kollegen Jakob (Laurence Rupp) zu einem abgelegenen Herrenhaus gerufen. Dort soll die sechsjährige Laura in einem antiken Tresor eingeschlossen sein. Was zunächst wie ein ungewöhnlicher, aber routinierter Rettungseinsatz erscheint, entwickelt sich schnell zu einem Albtraum. Denn im Haus der Familie Krüger stimmt nichts. Je näher Alex und Jakob der Wahrheit kommen, desto deutlicher wird, dass der Tresor ein weitaus dunkleres Geheimnis birgt. Zwischen widersprüchlichen Aussagen, rätselhaften Nachbarn und einer immer bedrohlicher werdenden Situation beginnt für die beiden ein Wettlauf gegen die Zeit. Schon bald geht es nicht mehr nur darum Laura zu retten, sondern selbst mit dem Leben davonzukommen.",
+   "handlung": "Der begnadete Cellist Alex Serian kehrt nach 20 Jahren auf Tournee in seine Heimatstadt Los Angeles zurück. Die Musik, die stets der beständige, alles verzehrende Strom seines Lebens war, trägt Alex nun in ein Abenteuer, das ihn für immer verändern wird.",
    "genres": [
-    "Thriller"
+    "Musik",
+    "Drama"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "1 Std 30 Min"
+     "2 Std 7 Min"
     ],
     [
      "Regie",
-     "Thomas Sieben"
+     "Tony Gilroy"
     ],
     [
      "Mit",
-     "Jeanne Goursaud, Laurence Rupp, Alexandra Maria Lara, Miriam Fussenegger"
+     "Pedro Pascal, Olivia Wilde, Eva Victor, Will Arnett"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=tns3sF49oqY",
-   "link": "https://www.themoviedb.org/movie/1685339",
-   "bild": "https://image.tmdb.org/t/p/w500/2hPYdVWPJBItyZ8sZ6pPUERvwIV.jpg",
+   "trailer": "https://www.youtube.com/watch?v=XHMelG1Gvug",
+   "link": "https://www.themoviedb.org/movie/1452168",
+   "bild": "https://image.tmdb.org/t/p/w500/bcyGYWfcXr0GnXewaE5gkvYy1iQ.jpg",
    "news": []
   },
-  "movie-1437981": {
-   "titel": "Coward",
-   "original": "Coward",
+  "movie-1078446": {
+   "titel": "Violent Night - Eine Tödliche Bescherung",
+   "original": "Violent Night 2",
    "leitsatz": null,
-   "handlung": "Während sich der Erste Weltkrieg immer weiter hinzieht, brennt Pierre, ein neu an der Front eingetroffener Soldat, darauf, sich zu beweisen. Hinter den Linien begegnet er Francis, der seine Kameraden mit einer Theaterrevue aufheitern will. Während die Gewalt unvermindert anhält, suchen beide Männer nach Wegen, der Brutalität des Krieges zu entkommen – und sei es nur für einen Augenblick.",
+   "handlung": "When Santa forgets the true meaning of Christmas, he finds himself in the heart of a lively mall community in desperate need of his help. Sapped of his magic, he’ll need another way to take on the goons threatening the mall, and time is running out. Santa has to rediscover his faith in goodness and call in some last-minute reinforcements from the one person no baddie wants to tangle with: Mrs. Claus.",
    "genres": [
-    "Drama",
-    "Liebesfilm",
-    "Kriegsfilm"
+    "Action",
+    "Komödie",
+    "Fantasy"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 0 Min"
+     "1 Std 50 Min"
     ],
     [
      "Regie",
-     "Lukas Dhont"
+     "Tommy Wirkola"
     ],
     [
      "Mit",
-     "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver"
+     "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=6E28mNqDIQU",
-   "link": "https://www.themoviedb.org/movie/1437981",
-   "bild": "https://image.tmdb.org/t/p/w500/xGiQYHSBXVlMqCdhEoSBjcMUWex.jpg",
-   "news": []
-  },
-  "movie-1649403": {
-   "titel": "George Michael: The Faith Tour",
-   "original": "George Michael: The Faith Tour",
-   "leitsatz": null,
-   "handlung": "A stunning delve into George Michael's 1988 Faith Tour, as shot live at the famous Palais Omnisports de Paris-Bercy. This exclusive footage, assembled from a 14-camera shoot captured on 35mm over two nights (30–31 May 1988), features the 24-year-old pop star at the height of his powers.",
-   "genres": [
-    "Musik"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 53 Min"
-    ],
-    [
-     "Regie",
-     "Andy Morahan, David Austin"
-    ],
-    [
-     "Mit",
-     "George Michael"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=H_NwyHRY9yk",
-   "link": "https://www.themoviedb.org/movie/1649403",
-   "bild": "https://image.tmdb.org/t/p/w500/LXqHnaJ4ffkcx5YCuJN1noxkhr.jpg",
+   "trailer": "https://www.youtube.com/watch?v=tzm3cMHOnvk",
+   "link": "https://www.themoviedb.org/movie/1078446",
+   "bild": "https://image.tmdb.org/t/p/w500/7HPvgItDw9NgW3iy4tFRRuGNbuN.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -3712,86 +3807,113 @@
    "bild": "https://image.tmdb.org/t/p/w500/4pNKIUFy7tkZiBx0rnSmG9ysRy.jpg",
    "news": []
   },
-  "movie-1078446": {
-   "titel": "Violent Night - Eine Tödliche Bescherung",
-   "original": "Violent Night 2",
+  "movie-1437981": {
+   "titel": "Coward",
+   "original": "Coward",
    "leitsatz": null,
-   "handlung": "When Santa forgets the true meaning of Christmas, he finds himself in the heart of a lively mall community in desperate need of his help. Sapped of his magic, he’ll need another way to take on the goons threatening the mall, and time is running out. Santa has to rediscover his faith in goodness and call in some last-minute reinforcements from the one person no baddie wants to tangle with: Mrs. Claus.",
+   "handlung": "Während sich der Erste Weltkrieg immer weiter hinzieht, brennt Pierre, ein neu an der Front eingetroffener Soldat, darauf, sich zu beweisen. Hinter den Linien begegnet er Francis, der seine Kameraden mit einer Theaterrevue aufheitern will. Während die Gewalt unvermindert anhält, suchen beide Männer nach Wegen, der Brutalität des Krieges zu entkommen – und sei es nur für einen Augenblick.",
    "genres": [
-    "Action",
-    "Komödie",
-    "Fantasy"
+    "Drama",
+    "Liebesfilm",
+    "Kriegsfilm"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "1 Std 50 Min"
+     "2 Std 0 Min"
     ],
     [
      "Regie",
-     "Tommy Wirkola"
+     "Lukas Dhont"
     ],
     [
      "Mit",
-     "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris"
+     "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=tzm3cMHOnvk",
-   "link": "https://www.themoviedb.org/movie/1078446",
-   "bild": "https://image.tmdb.org/t/p/w500/7HPvgItDw9NgW3iy4tFRRuGNbuN.jpg",
+   "trailer": "https://www.youtube.com/watch?v=6E28mNqDIQU",
+   "link": "https://www.themoviedb.org/movie/1437981",
+   "bild": "https://image.tmdb.org/t/p/w500/xGiQYHSBXVlMqCdhEoSBjcMUWex.jpg",
+   "news": []
+  },
+  "movie-1649403": {
+   "titel": "George Michael: The Faith Tour",
+   "original": "George Michael: The Faith Tour",
+   "leitsatz": null,
+   "handlung": "A stunning delve into George Michael's 1988 Faith Tour, as shot live at the famous Palais Omnisports de Paris-Bercy. This exclusive footage, assembled from a 14-camera shoot captured on 35mm over two nights (30–31 May 1988), features the 24-year-old pop star at the height of his powers.",
+   "genres": [
+    "Musik"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 53 Min"
+    ],
+    [
+     "Regie",
+     "Andy Morahan, David Austin"
+    ],
+    [
+     "Mit",
+     "George Michael"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=H_NwyHRY9yk",
+   "link": "https://www.themoviedb.org/movie/1649403",
+   "bild": "https://image.tmdb.org/t/p/w500/LXqHnaJ4ffkcx5YCuJN1noxkhr.jpg",
    "news": [],
    "sprache": "en"
   },
-  "movie-1452168": {
-   "titel": "Behemoth! - Stück meines Lebens",
-   "original": "Behemoth!",
+  "movie-1685339": {
+   "titel": "Unsafe",
+   "original": "Unsafe",
    "leitsatz": null,
-   "handlung": "Der begnadete Cellist Alex Serian kehrt nach 20 Jahren auf Tournee in seine Heimatstadt Los Angeles zurück. Die Musik, die stets der beständige, alles verzehrende Strom seines Lebens war, trägt Alex nun in ein Abenteuer, das ihn für immer verändern wird.",
+   "handlung": "Feuerwehrfrau Alex (Jeanne Goursaud) wird gemeinsam mit ihrem Kollegen Jakob (Laurence Rupp) zu einem abgelegenen Herrenhaus gerufen. Dort soll die sechsjährige Laura in einem antiken Tresor eingeschlossen sein. Was zunächst wie ein ungewöhnlicher, aber routinierter Rettungseinsatz erscheint, entwickelt sich schnell zu einem Albtraum. Denn im Haus der Familie Krüger stimmt nichts. Je näher Alex und Jakob der Wahrheit kommen, desto deutlicher wird, dass der Tresor ein weitaus dunkleres Geheimnis birgt. Zwischen widersprüchlichen Aussagen, rätselhaften Nachbarn und einer immer bedrohlicher werdenden Situation beginnt für die beiden ein Wettlauf gegen die Zeit. Schon bald geht es nicht mehr nur darum Laura zu retten, sondern selbst mit dem Leben davonzukommen.",
    "genres": [
-    "Musik",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 7 Min"
-    ],
-    [
-     "Regie",
-     "Tony Gilroy"
-    ],
-    [
-     "Mit",
-     "Pedro Pascal, Olivia Wilde, Eva Victor, Will Arnett"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=XHMelG1Gvug",
-   "link": "https://www.themoviedb.org/movie/1452168",
-   "bild": "https://image.tmdb.org/t/p/w500/bcyGYWfcXr0GnXewaE5gkvYy1iQ.jpg",
-   "news": []
-  },
-  "movie-1340208": {
-   "titel": "Karōshi",
-   "original": "Karōshi",
-   "leitsatz": "Jedes Empire fürchtet die Rebellion.",
-   "handlung": "Manhattan, in naher Zukunft: Unternehmenstreue und kulturelle Traditionen haben den Alltag der Menschen grundlegend verändert. Als eines Tages ein Angestellter des mächtigen Konzerns IKIGAI ums Leben kommt, schleust sich der mysteriöse Hiro in die Firma ein. Hinter der perfekten, glänzenden Fassade stößt er auf ein gnadenloses System aus Gehorsam, Gewalt und einem alten Ehrenkodex.",
-   "genres": [
-    "Action",
     "Thriller"
    ],
    "fakten": [
     [
+     "Laufzeit",
+     "1 Std 30 Min"
+    ],
+    [
      "Regie",
-     "Takashi Doscher"
+     "Thomas Sieben"
     ],
     [
      "Mit",
-     "태오, Isabel May, Cynthia Erivo, Takehiro Hira"
+     "Jeanne Goursaud, Laurence Rupp, Alexandra Maria Lara, Miriam Fussenegger"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=oA4nAbWmd28",
-   "link": "https://www.themoviedb.org/movie/1340208",
-   "bild": "https://image.tmdb.org/t/p/w500/xOwetUoCyca3yYlqZ5rlElgXiTV.jpg",
+   "trailer": "https://www.youtube.com/watch?v=tns3sF49oqY",
+   "link": "https://www.themoviedb.org/movie/1685339",
+   "bild": "https://image.tmdb.org/t/p/w500/2hPYdVWPJBItyZ8sZ6pPUERvwIV.jpg",
+   "news": []
+  },
+  "movie-1209723": {
+   "titel": "Yeh Prem Mol Liya",
+   "original": "ये प्रेम मोल लिया",
+   "leitsatz": null,
+   "handlung": "Ein herzergreifendes, romantisches Familiendrama über zwei beste Freunde, deren enge Verbundenheit sich langsam in Liebe verwandelt. Doch eine Lüge führt zu Missverständnissen und Konflikten, die ihre Beziehung und ihre familiären Bindungen auf eine harte Probe stellen. Die Geschichte handelt von Liebe, Opferbereitschaft, Verständnis und der Bedeutung der Familie.",
+   "genres": [
+    "Liebesfilm",
+    "Familie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Sooraj Barjatya"
+    ],
+    [
+     "Mit",
+     "Ayushmann Khurrana, Sharvari Wagh, अनुपम खेर, Geeta Agrawal Sharma"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/1209723",
+   "bild": "https://image.tmdb.org/t/p/w500/kUxkvh6GMZL4AHNgNDty68yTnwQ.jpg",
    "news": []
   },
   "movie-1185542": {
@@ -3822,29 +3944,35 @@
    "bild": "https://image.tmdb.org/t/p/w500/9N9i5QcWnaH3kmMMeXDDU1e0hmV.jpg",
    "news": []
   },
-  "movie-1209723": {
-   "titel": "Yeh Prem Mol Liya",
-   "original": "ये प्रेम मोल लिया",
+  "movie-1084728": {
+   "titel": "Asterix und das Königreich Nubien",
+   "original": "Astérix - Le Royaume de Nubie",
    "leitsatz": null,
-   "handlung": "Ein herzergreifendes, romantisches Familiendrama über zwei beste Freunde, deren enge Verbundenheit sich langsam in Liebe verwandelt. Doch eine Lüge führt zu Missverständnissen und Konflikten, die ihre Beziehung und ihre familiären Bindungen auf eine harte Probe stellen. Die Geschichte handelt von Liebe, Opferbereitschaft, Verständnis und der Bedeutung der Familie.",
+   "handlung": "Die unbesiegbaren Gallier werden in harmlose Kinder verwandelt, nachdem ein seltenes Jugendelixier versehentlich in den Zaubertrank geraten ist.",
    "genres": [
-    "Liebesfilm",
+    "Animation",
+    "Abenteuer",
+    "Komödie",
     "Familie",
-    "Drama"
+    "Fantasy"
    ],
    "fakten": [
     [
+     "Laufzeit",
+     "1 Std 26 Min"
+    ],
+    [
      "Regie",
-     "Sooraj Barjatya"
+     "Alexandre Heboyan"
     ],
     [
      "Mit",
-     "Ayushmann Khurrana, Sharvari Wagh, अनुपम खेर, Geeta Agrawal Sharma"
+     "Christian Clavier, François-Xavier Demaison, Bernard Alane, Issa Doumbia"
     ]
    ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1209723",
-   "bild": "https://image.tmdb.org/t/p/w500/kUxkvh6GMZL4AHNgNDty68yTnwQ.jpg",
+   "trailer": "https://www.youtube.com/watch?v=JZZz8m0N3t8",
+   "link": "https://www.themoviedb.org/movie/1084728",
+   "bild": "https://image.tmdb.org/t/p/w500/eu1OPnvIVhLmYwmxNiM5UAW0hM0.jpg",
    "news": []
   },
   "movie-1554956": {
@@ -3879,37 +4007,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/iccroKK1eUTdCnLfmp7I3YXwAKF.jpg",
    "news": [],
    "sprache": "en"
-  },
-  "movie-1084728": {
-   "titel": "Asterix und das Königreich Nubien",
-   "original": "Astérix - Le Royaume de Nubie",
-   "leitsatz": null,
-   "handlung": "Die unbesiegbaren Gallier werden in harmlose Kinder verwandelt, nachdem ein seltenes Jugendelixier versehentlich in den Zaubertrank geraten ist.",
-   "genres": [
-    "Animation",
-    "Abenteuer",
-    "Komödie",
-    "Familie",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 26 Min"
-    ],
-    [
-     "Regie",
-     "Alexandre Heboyan"
-    ],
-    [
-     "Mit",
-     "Christian Clavier, François-Xavier Demaison, Bernard Alane, Issa Doumbia"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=JZZz8m0N3t8",
-   "link": "https://www.themoviedb.org/movie/1084728",
-   "bild": "https://image.tmdb.org/t/p/w500/eu1OPnvIVhLmYwmxNiM5UAW0hM0.jpg",
-   "news": []
   },
   "movie-1372443": {
    "titel": "Mr. Irrelevant",
@@ -4136,6 +4233,33 @@
    "bild": "https://image.tmdb.org/t/p/w500/kimx6VeIKhNQH0sqyT2OXfWUO07.jpg",
    "news": []
   },
+  "tv-339697": {
+   "titel": "Melania Rea",
+   "original": "Melania Rea",
+   "leitsatz": null,
+   "handlung": "Der stille Untergang einer Frau, die in einer zerstörerischen Beziehung gefangen ist. Eine Geschichte, die Italien verändert hat.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 4 Folgen"
+    ],
+    [
+     "Mit",
+     "Maria Esposito, Daniele Rienzo"
+    ],
+    [
+     "Sender/Dienst",
+     "HBO Max"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/339697",
+   "bild": "https://image.tmdb.org/t/p/w500/yK9Q4ORFEHEaqFRthTlC9jdU0Ac.jpg",
+   "news": []
+  },
   "tv-291507": {
    "titel": "The Body",
    "original": "The Body",
@@ -4166,6 +4290,38 @@
    "trailer": "https://www.youtube.com/watch?v=wl7uj7n7DoY",
    "link": "https://www.themoviedb.org/tv/291507",
    "bild": "https://image.tmdb.org/t/p/w500/zksg8e0GZAmg1nLhVP5tKso3QRs.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "tv-288672": {
+   "titel": "Pride and Prejudice",
+   "original": "Pride and Prejudice",
+   "leitsatz": null,
+   "handlung": "Elizabeth Bennet is an unmarried woman and the second of five daughters of Mr. and Mrs. Bennet from Hertfordshire, near London. The Bennet home can only be inherited by males in the family, so the pressure is on for the daughters to marry well or risk losing everything. While out in society, Elizabeth interacts with single men like Mr. Darcy, an outwardly curmudgeon who is misunderstood.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 6 Folgen"
+    ],
+    [
+     "Von",
+     "Dolly Alderton"
+    ],
+    [
+     "Mit",
+     "Emma Corrin, Jack Lowden, Olivia Colman, Rufus Sewell"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=inRhiLf42O4",
+   "link": "https://www.themoviedb.org/tv/288672",
+   "bild": "https://image.tmdb.org/t/p/w500/bXXPLMqdWikH5KfdgKcClTssgzQ.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4211,38 +4367,6 @@
    ],
    "sprache": "en"
   },
-  "tv-288672": {
-   "titel": "Pride and Prejudice",
-   "original": "Pride and Prejudice",
-   "leitsatz": null,
-   "handlung": "Elizabeth Bennet is an unmarried woman and the second of five daughters of Mr. and Mrs. Bennet from Hertfordshire, near London. The Bennet home can only be inherited by males in the family, so the pressure is on for the daughters to marry well or risk losing everything. While out in society, Elizabeth interacts with single men like Mr. Darcy, an outwardly curmudgeon who is misunderstood.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 6 Folgen"
-    ],
-    [
-     "Von",
-     "Dolly Alderton"
-    ],
-    [
-     "Mit",
-     "Emma Corrin, Jack Lowden, Olivia Colman, Rufus Sewell"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=inRhiLf42O4",
-   "link": "https://www.themoviedb.org/tv/288672",
-   "bild": "https://image.tmdb.org/t/p/w500/bXXPLMqdWikH5KfdgKcClTssgzQ.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "tv-308007": {
    "titel": "The Altruists",
    "original": "The Altruists",
@@ -4273,38 +4397,6 @@
    "trailer": "https://www.youtube.com/watch?v=9aGeKSSyuhk",
    "link": "https://www.themoviedb.org/tv/308007",
    "bild": "https://image.tmdb.org/t/p/w500/foTyGlJ1jJh8QID5KwjsMytsJTV.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "tv-285887": {
-   "titel": "Bloodaxe",
-   "original": "Bloodaxe",
-   "leitsatz": null,
-   "handlung": "Follow Erik Bloodaxe, and his formidable wife, Gunnhild, Mother of Kings as they fight for the throne of Norway, the land is torn apart by fierce rivals, shifting loyalties, and bloody betrayals. With war looming and chaos consuming the kingdom, drawing in the ruthless Kings of other Scandinavian countries, and even a powerful English ruler, the stage is set for a thundering, cataclysmic, compelling and utterly magical new Viking Saga.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 8 Folgen"
-    ],
-    [
-     "Von",
-     "Michael Hirst, Horatio Hirst"
-    ],
-    [
-     "Mit",
-     "Xavier Molyneux, Jessica Madsen, Karlis Arnolds Avots, Rod Hallett"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=nT8Mdw5nKd0",
-   "link": "https://www.themoviedb.org/tv/285887",
-   "bild": "https://image.tmdb.org/t/p/w500/3dWNyzYFQfuL7pj3OdlSjyOr6yN.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4382,6 +4474,38 @@
    "bild": "https://image.tmdb.org/t/p/w500/t7bQuXEN4dvWtUBY2DUDxsKjZlv.jpg",
    "news": []
   },
+  "tv-285887": {
+   "titel": "Bloodaxe",
+   "original": "Bloodaxe",
+   "leitsatz": null,
+   "handlung": "Follow Erik Bloodaxe, and his formidable wife, Gunnhild, Mother of Kings as they fight for the throne of Norway, the land is torn apart by fierce rivals, shifting loyalties, and bloody betrayals. With war looming and chaos consuming the kingdom, drawing in the ruthless Kings of other Scandinavian countries, and even a powerful English ruler, the stage is set for a thundering, cataclysmic, compelling and utterly magical new Viking Saga.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 8 Folgen"
+    ],
+    [
+     "Von",
+     "Michael Hirst, Horatio Hirst"
+    ],
+    [
+     "Mit",
+     "Xavier Molyneux, Jessica Madsen, Karlis Arnolds Avots, Rod Hallett"
+    ],
+    [
+     "Sender/Dienst",
+     "Prime Video"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=nT8Mdw5nKd0",
+   "link": "https://www.themoviedb.org/tv/285887",
+   "bild": "https://image.tmdb.org/t/p/w500/3dWNyzYFQfuL7pj3OdlSjyOr6yN.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "tv-274395": {
    "titel": "The Land",
    "original": "The Land",
@@ -4413,38 +4537,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/klcJ21KUgkDFQBQuECYr2FJYR5z.jpg",
    "news": [],
    "sprache": "en"
-  },
-  "tv-336478": {
-   "titel": "Doozie's Doghouse",
-   "original": "Doozie's Doghouse",
-   "leitsatz": null,
-   "handlung": "Doozie zieht in ihre ganz eigene Hundehütte ein, um dort gemeinsam mit ihrem besten Freund Puggie und all ihren Doozie-Hunden tolle Welpenabenteuer zu erleben. Von den Machern der erfolgreichen DreamWorks-Animationsserie „Gabby’s Dollhouse“ stammt „Doozie’s Doghouse“ - eine Begleitserie in verschiedenen Medien, die den Spaß mit schwanzwedelnden Überraschungen, „woof-tastischen“ Unboxing-Videos und fantasievollem Spiel fortsetzt. Der Kreativität sind in „Doozie’s Doghouse“ keine Grenzen gesetzt!",
-   "genres": [
-    "Animation",
-    "Kids"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 1 Folgen"
-    ],
-    [
-     "Von",
-     "Traci Paige Johnson, Jennifer Twomey"
-    ],
-    [
-     "Mit",
-     "Celestina Harris, Sebastian Billingsley-Rodriguez, Aaliyah Butler, Kimiko Glenn"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/336478",
-   "bild": "https://image.tmdb.org/t/p/w500/bhFbiSXg7KrwfXkpZfiLDq4QFCt.jpg",
-   "news": []
   },
   "tv-329315": {
    "titel": "Rise of the Rockstar Chef",
@@ -4577,43 +4669,6 @@
     }
    ]
   },
-  "tv-2734": {
-   "titel": "Law & Order: Special Victims Unit",
-   "original": "Law & Order: Special Victims Unit",
-   "leitsatz": null,
-   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Mystery"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "28 Staffeln, 602 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf"
-    ],
-    [
-     "Mit",
-     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/2734",
-   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
-   "news": []
-  },
   "tv-1416": {
    "titel": "Grey's Anatomy",
    "original": "Grey's Anatomy",
@@ -4721,41 +4776,41 @@
    "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
    "news": []
   },
-  "tv-4614": {
-   "titel": "Navy CIS",
-   "original": "NCIS",
+  "tv-2734": {
+   "titel": "Law & Order: Special Victims Unit",
+   "original": "Law & Order: Special Victims Unit",
    "leitsatz": null,
-   "handlung": "Der Naval Crime Investigative Service wird dann gerufen, wenn Verbrechen begangen werden, die gegen den Uniform Code of Military Justice verstoßen und innerhalb der Navy stattfinden. Das Hauptquartier befindet sich in Washington D.C. und steht unter der Leitung von Special Agent Leroy Jethro Gibbs. Er selbst ist ein Veteran aus dem Irak-Krieg und hat mit moderner Technik wenig zu tun. Aus diesem Grund ermittelt er gemeinsam mit einem Elite-Team, bestehend aus dem Ballistik-Experten Tony DiNozzo, dem Technikspezialisten Tim McGee, der Forensikspezialistin Abby Sciuto sowie dem Gerichtsmediziner Ducky Mallard.",
+   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
    "genres": [
     "Krimi",
     "Drama",
-    "Action & Adventure"
+    "Mystery"
    ],
    "fakten": [
     [
      "Umfang",
-     "24 Staffeln, 513 Folgen"
+     "28 Staffeln, 602 Folgen"
     ],
     [
      "Von",
-     "Don McGill, Donald P. Bellisario"
+     "Dick Wolf"
     ],
     [
      "Mit",
-     "Sean Murray, Wilmer Valderrama, Katrina Law, Brian Dietzen"
+     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
     ],
     [
      "Sender/Dienst",
-     "CBS"
+     "NBC"
     ],
     [
      "TMDB-Wertung",
-     "7.6 / 10"
+     "8.0 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=BhtDgn31XZo",
-   "link": "https://www.themoviedb.org/tv/4614",
-   "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/2734",
+   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
    "news": []
   },
   "tv-213375": {
@@ -4793,50 +4848,6 @@
    "link": "https://www.themoviedb.org/tv/213375",
    "bild": "https://image.tmdb.org/t/p/w500/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
    "news": []
-  },
-  "tv-549": {
-   "titel": "Law & Order",
-   "original": "Law & Order",
-   "leitsatz": null,
-   "handlung": "Vertreter der Polizei und der Staatsanwaltschaft klären Kriminalverbrechen in und um New York auf. Mit allen zur Verfügung stehenden Mitteln versuchen die Ermittler dabei, den oder die Straftäter zur Verantwortung zu ziehen.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "26 Staffeln, 549 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf"
-    ],
-    [
-     "Mit",
-     "Maura Tierney, David Ajala, James Badge Dale, Tony Goldwyn"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=RzN8cPlcMTU",
-   "link": "https://www.themoviedb.org/tv/549",
-   "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "NBC Officially Announces New 'Law & Order' Replacement",
-     "link": "https://collider.com/nbc-law-and-order-replacement-great-gatsby-reboot-detective-series/",
-     "datum": "2026-10-30T18:18:47.000Z"
-    }
-   ]
   },
   "tv-153312": {
    "titel": "Tulsa King",
@@ -4883,6 +4894,87 @@
     }
    ]
   },
+  "tv-4614": {
+   "titel": "Navy CIS",
+   "original": "NCIS",
+   "leitsatz": null,
+   "handlung": "Der Naval Crime Investigative Service wird dann gerufen, wenn Verbrechen begangen werden, die gegen den Uniform Code of Military Justice verstoßen und innerhalb der Navy stattfinden. Das Hauptquartier befindet sich in Washington D.C. und steht unter der Leitung von Special Agent Leroy Jethro Gibbs. Er selbst ist ein Veteran aus dem Irak-Krieg und hat mit moderner Technik wenig zu tun. Aus diesem Grund ermittelt er gemeinsam mit einem Elite-Team, bestehend aus dem Ballistik-Experten Tony DiNozzo, dem Technikspezialisten Tim McGee, der Forensikspezialistin Abby Sciuto sowie dem Gerichtsmediziner Ducky Mallard.",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Action & Adventure"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "24 Staffeln, 513 Folgen"
+    ],
+    [
+     "Von",
+     "Don McGill, Donald P. Bellisario"
+    ],
+    [
+     "Mit",
+     "Sean Murray, Wilmer Valderrama, Katrina Law, Brian Dietzen"
+    ],
+    [
+     "Sender/Dienst",
+     "CBS"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=BhtDgn31XZo",
+   "link": "https://www.themoviedb.org/tv/4614",
+   "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
+   "news": []
+  },
+  "tv-549": {
+   "titel": "Law & Order",
+   "original": "Law & Order",
+   "leitsatz": null,
+   "handlung": "Vertreter der Polizei und der Staatsanwaltschaft klären Kriminalverbrechen in und um New York auf. Mit allen zur Verfügung stehenden Mitteln versuchen die Ermittler dabei, den oder die Straftäter zur Verantwortung zu ziehen.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "26 Staffeln, 549 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf"
+    ],
+    [
+     "Mit",
+     "Maura Tierney, David Ajala, James Badge Dale, Tony Goldwyn"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=RzN8cPlcMTU",
+   "link": "https://www.themoviedb.org/tv/549",
+   "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
+   "news": [
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "NBC Officially Announces New 'Law & Order' Replacement",
+     "link": "https://collider.com/nbc-law-and-order-replacement-great-gatsby-reboot-detective-series/",
+     "datum": "2026-10-30T18:18:47.000Z"
+    }
+   ]
+  },
   "tv-279246": {
    "titel": "Die neuvermählte Kaiserin",
    "original": "재혼 황후",
@@ -4919,63 +5011,6 @@
     }
    ],
    "sprache": "en"
-  },
-  "tv-44006": {
-   "titel": "Chicago Fire",
-   "original": "Chicago Fire",
-   "leitsatz": null,
-   "handlung": "Für die Feuerwehrmänner und Rettungssanitäter der Feuerwache 51 in Chicago sind Stress und Gefahren an der Tagesordnung. Die enorme Verantwortung, der sich die Alltagshelden aussetzen, macht auch vor dem Privatleben nicht halt. Matthew Casey, der Chef von Truck 81, steckt gerade mitten in einer Scheidung und sucht in seinem Job Ablenkung. Nach dem Tod eines Feuerwehrmanns gerät er mit Kelly Severide, dem Anführer von Rescue Squad 3, aneinander. Trotz gelegentlicher Scharmützel ist das Department für die meisten Teammitglieder wie eine Ersatzfamilie, zumal die bisweilen traumatischen Erlebnisse während der Einsätze für eine emotionale Bindung sorgen.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "15 Staffeln, 301 Folgen"
-    ],
-    [
-     "Von",
-     "Derek Haas, Michael Brandt"
-    ],
-    [
-     "Mit",
-     "Taylor Kinney, David Eigenberg, Christian Stolte, Miranda Rae Mayo"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=IIeSDILTE5M",
-   "link": "https://www.themoviedb.org/tv/44006",
-   "bild": "https://image.tmdb.org/t/p/w500/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "„Chicago Fire“ feiert 300. Folge: Joe Miñoso verlässt Serie nach 14 Jahren",
-     "link": "https://www.serienjunkies.de/news/serien/chicago-fire-joe-minoso-steigt-in-folge-300-bei-nbc-aus-94575529.html",
-     "datum": "2026-11-05T12:02:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Joe Miñoso Talks Cruz’s Exit From ‘Chicago Fire,’ Storylines That Almost Happened  Plans To Direct",
-     "link": "https://deadline.com/2026/11/chicago-fire-joe-minoso-exit-interview-1237213901/",
-     "datum": "2026-11-05T03:02:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "How Joe Miñoso Exits ‘Chicago Fire’ As Cruz In Season 15",
-     "link": "https://deadline.com/2026/11/joe-minoso-exit-cruz-chicago-fire-season-15-recap-1237211554/",
-     "datum": "2026-11-05T03:00:00.000Z"
-    }
-   ]
   },
   "tv-2190": {
    "titel": "South Park",
@@ -5035,33 +5070,62 @@
     }
    ]
   },
-  "tv-3034": {
-   "titel": "Tatort",
-   "original": "Tatort",
+  "tv-44006": {
+   "titel": "Chicago Fire",
+   "original": "Chicago Fire",
    "leitsatz": null,
-   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
+   "handlung": "Für die Feuerwehrmänner und Rettungssanitäter der Feuerwache 51 in Chicago sind Stress und Gefahren an der Tagesordnung. Die enorme Verantwortung, der sich die Alltagshelden aussetzen, macht auch vor dem Privatleben nicht halt. Matthew Casey, der Chef von Truck 81, steckt gerade mitten in einer Scheidung und sucht in seinem Job Ablenkung. Nach dem Tod eines Feuerwehrmanns gerät er mit Kelly Severide, dem Anführer von Rescue Squad 3, aneinander. Trotz gelegentlicher Scharmützel ist das Department für die meisten Teammitglieder wie eine Ersatzfamilie, zumal die bisweilen traumatischen Erlebnisse während der Einsätze für eine emotionale Bindung sorgen.",
    "genres": [
-    "Drama",
-    "Krimi"
+    "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "57 Staffeln, 1347 Folgen"
+     "15 Staffeln, 301 Folgen"
+    ],
+    [
+     "Von",
+     "Derek Haas, Michael Brandt"
+    ],
+    [
+     "Mit",
+     "Taylor Kinney, David Eigenberg, Christian Stolte, Miranda Rae Mayo"
     ],
     [
      "Sender/Dienst",
-     "ORF 1, Das Erste"
+     "NBC"
     ],
     [
      "TMDB-Wertung",
-     "6.2 / 10"
+     "8.4 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
-   "link": "https://www.themoviedb.org/tv/3034",
-   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
-   "news": []
+   "trailer": "https://www.youtube.com/watch?v=IIeSDILTE5M",
+   "link": "https://www.themoviedb.org/tv/44006",
+   "bild": "https://image.tmdb.org/t/p/w500/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "„Chicago Fire“ feiert 300. Folge: Joe Miñoso verlässt Serie nach 14 Jahren",
+     "link": "https://www.serienjunkies.de/news/serien/chicago-fire-joe-minoso-steigt-in-folge-300-bei-nbc-aus-94575529.html",
+     "datum": "2026-11-05T12:02:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Joe Miñoso Talks Cruz’s Exit From ‘Chicago Fire,’ Storylines That Almost Happened  Plans To Direct",
+     "link": "https://deadline.com/2026/11/chicago-fire-joe-minoso-exit-interview-1237213901/",
+     "datum": "2026-11-05T03:02:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "How Joe Miñoso Exits ‘Chicago Fire’ As Cruz In Season 15",
+     "link": "https://deadline.com/2026/11/joe-minoso-exit-cruz-chicago-fire-season-15-recap-1237211554/",
+     "datum": "2026-11-05T03:00:00.000Z"
+    }
+   ]
   },
   "tv-58841": {
    "titel": "Chicago P.D.",
@@ -5075,7 +5139,7 @@
    "fakten": [
     [
      "Umfang",
-     "14 Staffeln, 270 Folgen"
+     "14 Staffeln, 271 Folgen"
     ],
     [
      "Von",
@@ -5114,6 +5178,34 @@
     }
    ]
   },
+  "tv-3034": {
+   "titel": "Tatort",
+   "original": "Tatort",
+   "leitsatz": null,
+   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
+   "genres": [
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "57 Staffeln, 1347 Folgen"
+    ],
+    [
+     "Sender/Dienst",
+     "ORF 1, Das Erste"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
+   "link": "https://www.themoviedb.org/tv/3034",
+   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+   "news": []
+  },
   "tv-65334": {
    "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
    "original": "Miraculous, les aventures de Ladybug et Chat Noir",
@@ -5151,6 +5243,58 @@
    "bild": "https://image.tmdb.org/t/p/w500/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
    "news": []
   },
+  "tv-259909": {
+   "titel": "Dexter: Wiedererwachen",
+   "original": "Dexter: Resurrection",
+   "leitsatz": null,
+   "handlung": "Dexter Morgan erwacht aus dem Koma und macht sich auf den Weg zu Harrison nach New York, um ihre Beziehung zu kitten. Doch als der Ermittler Angel Batista auftaucht und Fragen stellt, wird Dexter klar, dass seine Vergangenheit ihn schnell einholt.",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Mystery"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "2 Staffeln, 20 Folgen"
+    ],
+    [
+     "Von",
+     "Clyde Phillips"
+    ],
+    [
+     "Mit",
+     "Michael C. Hall, Uma Thurman, Jack Alcott, Dan Stevens"
+    ],
+    [
+     "Sender/Dienst",
+     "Paramount+ with Showtime"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=84o1Q6fB20k",
+   "link": "https://www.themoviedb.org/tv/259909",
+   "bild": "https://image.tmdb.org/t/p/w500/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
+   "news": [
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "11 Best New Characters in 'Dexter: Resurrection,' Ranked",
+     "link": "https://collider.com/dexter-resurrection-best-new-characters-ranked/",
+     "datum": "2026-11-07T18:19:12.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "‘Dexter: Resurrection’ Quietly Revives a Missing Piece of the Original Show's Formula",
+     "link": "https://collider.com/dexter-resurrection-season-2-intro-opening-credits-original-show/",
+     "datum": "2026-10-30T18:31:12.000Z"
+    }
+   ]
+  },
   "tv-80748": {
    "titel": "FBI",
    "original": "FBI",
@@ -5186,6 +5330,43 @@
    "trailer": "https://www.youtube.com/watch?v=r-btgaBL6-4",
    "link": "https://www.themoviedb.org/tv/80748",
    "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "news": []
+  },
+  "tv-75219": {
+   "titel": "9-1-1 Notruf L.A.",
+   "original": "9-1-1",
+   "leitsatz": null,
+   "handlung": "Die Serie folgt den Leben der Ersthelfer von Los Angeles: Polizisten, Sanitäter, Feuerwehrleute und Mitarbeitern der Leitstelle.",
+   "genres": [
+    "Drama",
+    "Krimi",
+    "Action & Adventure"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "10 Staffeln, 149 Folgen"
+    ],
+    [
+     "Von",
+     "Ryan Murphy, Brad Falchuk"
+    ],
+    [
+     "Mit",
+     "Angela Bassett, Jennifer Love Hewitt, Oliver Stark, Aisha Hinds"
+    ],
+    [
+     "Sender/Dienst",
+     "ABC, FOX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=R4vKvvmt9vk",
+   "link": "https://www.themoviedb.org/tv/75219",
+   "bild": "https://image.tmdb.org/t/p/w500/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
    "news": []
   },
   "tv-30983": {
@@ -5255,86 +5436,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
    "news": []
   },
-  "tv-62650": {
-   "titel": "Chicago Med",
-   "original": "Chicago Med",
-   "leitsatz": null,
-   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "12 Staffeln, 225 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/62650",
-   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
-   "news": []
-  },
-  "tv-259909": {
-   "titel": "Dexter: Wiedererwachen",
-   "original": "Dexter: Resurrection",
-   "leitsatz": null,
-   "handlung": "Dexter Morgan erwacht aus dem Koma und macht sich auf den Weg zu Harrison nach New York, um ihre Beziehung zu kitten. Doch als der Ermittler Angel Batista auftaucht und Fragen stellt, wird Dexter klar, dass seine Vergangenheit ihn schnell einholt.",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Mystery"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "2 Staffeln, 20 Folgen"
-    ],
-    [
-     "Von",
-     "Clyde Phillips"
-    ],
-    [
-     "Mit",
-     "Michael C. Hall, Uma Thurman, Jack Alcott, Dan Stevens"
-    ],
-    [
-     "Sender/Dienst",
-     "Paramount+ with Showtime"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=84o1Q6fB20k",
-   "link": "https://www.themoviedb.org/tv/259909",
-   "bild": "https://image.tmdb.org/t/p/w500/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "‘Dexter: Resurrection’ Quietly Revives a Missing Piece of the Original Show's Formula",
-     "link": "https://collider.com/dexter-resurrection-season-2-intro-opening-credits-original-show/",
-     "datum": "2026-10-30T18:31:12.000Z"
-    }
-   ]
-  },
   "tv-312359": {
    "titel": "Dragon Ball Super: Beerus",
    "original": "ドラゴンボール超 ビルス",
@@ -5368,41 +5469,39 @@
    "bild": "https://image.tmdb.org/t/p/w500/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
    "news": []
   },
-  "tv-75219": {
-   "titel": "9-1-1 Notruf L.A.",
-   "original": "9-1-1",
+  "tv-62650": {
+   "titel": "Chicago Med",
+   "original": "Chicago Med",
    "leitsatz": null,
-   "handlung": "Die Serie folgt den Leben der Ersthelfer von Los Angeles: Polizisten, Sanitäter, Feuerwehrleute und Mitarbeitern der Leitstelle.",
+   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
    "genres": [
-    "Drama",
-    "Krimi",
-    "Action & Adventure"
+    "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "10 Staffeln, 148 Folgen"
+     "12 Staffeln, 225 Folgen"
     ],
     [
      "Von",
-     "Ryan Murphy, Brad Falchuk"
+     "Dick Wolf, Matt Olmstead"
     ],
     [
      "Mit",
-     "Angela Bassett, Jennifer Love Hewitt, Oliver Stark, Aisha Hinds"
+     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
     ],
     [
      "Sender/Dienst",
-     "ABC, FOX"
+     "NBC"
     ],
     [
      "TMDB-Wertung",
-     "8.2 / 10"
+     "8.3 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=R4vKvvmt9vk",
-   "link": "https://www.themoviedb.org/tv/75219",
-   "bild": "https://image.tmdb.org/t/p/w500/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/62650",
+   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
    "news": []
   }
  }
