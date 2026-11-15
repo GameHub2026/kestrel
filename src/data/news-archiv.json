@@ -1,5 +1,488 @@
 [
  {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘The Good Daughter’ Author Is \"Thinking About\" Short Story Sequel",
+  "link": "https://deadline.com/2026/11/the-good-daughter-author-thinking-about-sequel-1237224525/",
+  "datum": "2026-11-15T20:27:36.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Ben Affleck Raved About Robert Pattinson’s ‘The Odyssey’ Performance, Recalls Matt Damon: He Said ‘It Was Like Watching a Guy Run Into an Avalanche’",
+  "link": "https://variety.com/2026/film/news/ben-affleck-robert-pattinson-the-odyssey-1236948199/",
+  "datum": "2026-11-15T20:08:45.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Gemma Arterton's 'Slow Horses' Replacement Officially Lands on MGM+ Next Week",
+  "link": "https://collider.com/secret-service-gemma-arterton-mgm-plus-november-2026/",
+  "datum": "2026-11-15T20:00:12.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "This 3-Part Agatha Christie Masterpiece Doesn’t Flinch From Its Dark Ending",
+  "link": "https://collider.com/agatha-christie-masterpiece-miniseries-and-then-there-were-none-2015/",
+  "datum": "2026-11-15T19:58:12.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Hulu’s ‘The Boys’ Meets ‘Derry Girls’ Comedy Is a Perfect Weekend Binge",
+  "link": "https://collider.com/hulu-extraordinary-the-boys-derry-girls-weekend-binge/",
+  "datum": "2026-11-15T19:51:12.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "5 Upcoming Netflix Movies, Ranked by Hype",
+  "link": "https://collider.com/upcoming-netflix-movies-ranked-by-hype/",
+  "datum": "2026-11-15T19:49:12.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "GTA 6's Jason and Lucia Will Start as Small-Time Criminals Who Have to Work Up to High-Value Jobs",
+  "link": "https://www.ign.com/articles/gta-6s-jason-and-lucia-will-start-as-small-time-criminals-who-have-to-work-up-to-high-value-jobs",
+  "datum": "2026-11-15T19:41:28.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Baby2Baby Gala Fetes Demi Moore and Raises Over $20M for the Cause",
+  "link": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/baby2baby-gala-demi-moore-raises-20-million-1236755662/",
+  "datum": "2026-11-15T19:40:34.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "5 MCU TV Episodes To Watch Before 'Avengers: Doomsday'",
+  "link": "https://collider.com/avengers-doomsday-mcu-tv-episodes-to-watch/",
+  "datum": "2026-11-15T19:34:12.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "‘The Penguin’ Star’s Divisive Sci-Fi Remake Is Officially a Surprise Streaming Smash",
+  "link": "https://collider.com/colin-farrell-total-recall-remake-streaming-hit-november-2026-prime-video/",
+  "datum": "2026-11-15T19:30:12.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Kevin Feige Felt Bringing X-Men Into ‘Avengers’ Franchise Was \"Fun Way\" To Celebrate 25 Years",
+  "link": "https://deadline.com/2026/11/kevin-feige-x-men-avengerss-fun-way-celebrate-25-years-1237224515/",
+  "datum": "2026-11-15T19:21:52.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "I Play Rocky's Final Fight Had to Match Every Punch | Set Stories",
+  "link": "https://collider.com/video/i-play-rocky-s-final-fight-had-to-match-every-punch-set-stories/",
+  "datum": "2026-11-15T19:15:12.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Phil Collins Says He’s a ‘Well Man’ Now and Hints at the ‘Possibility of Doing Some Shows’ Amid Health Battle: ‘You Haven’t Heard the Last of Me’",
+  "link": "https://variety.com/2026/music/news/phil-collins-rock-roll-hall-of-fame-induction-health-1236948171/",
+  "datum": "2026-11-15T19:12:41.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "A Man Has Just Retired, But the Government Insists He Is Dead. Welcome to ‘When I Existed’! (Exclusive Trailer, Plus Chat With the Directors)",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/tallinn-film-satire-when-i-existed-uruguay-pensioner-dead-1236753960/",
+  "datum": "2026-11-15T19:12:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Box Office: Domestic Ticket Sales Up 20% From Last Year as Hollywood Awaits ‘Hunger Games’ Prequel, ‘Dune 3’ and ‘Avengers: Doomsday’",
+  "link": "https://variety.com/2026/film/box-office/box-office-domestic-ticket-sales-increase-hunger-games-dune-3-avengers-doomsday-1236948160/",
+  "datum": "2026-11-15T19:04:29.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "ABC’s ‘High Potential’ Replacement Isn’t Officially Renewed for Season 3 Yet",
+  "link": "https://collider.com/rj-decker-season-3-abc-renewal-status/",
+  "datum": "2026-11-15T19:01:13.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Soho House Creator Nick Jones Is Reinventing the Hotel — Again",
+  "link": "https://www.hollywoodreporter.com/lifestyle/lifestyle-news/soho-house-creator-nick-jones-new-london-hotel-st-clement-1236753229/",
+  "datum": "2026-11-15T19:00:00.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Disney's 'Agatha All Along' Replacement Has Already Solved 1 Major Problem",
+  "link": "https://collider.com/coven-academy-season-1-problem-disney-agatha-all-along-replacement/",
+  "datum": "2026-11-15T18:59:12.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Rock  Roll Hall of Fame Ceremony Gets Fired Up With Live-Wire Numbers From U2, the Chili Peppers, Usher, Cynthia Erivo, Sienna Spiro, Aerosmith and More",
+  "link": "https://variety.com/2026/music/news/rock-roll-hall-fame-induction-ceremony-2026-performances-1236948068/",
+  "datum": "2026-11-15T18:33:42.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "The Quentin Tarantino Western He Once Called “Traumatizing” Is Officially Free to Stream",
+  "link": "https://collider.com/quentin-tarantino-django-unchained-streaming-free-pluto-tv-november-2026/",
+  "datum": "2026-11-15T18:30:12.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Grand Theft Auto 6: Die ersten zehn Serien-Ableger erschienen schneller als Teil 6 allein",
+  "link": "https://www.eurogamer.de/grand-theft-auto-6-wartezeit-vergleich",
+  "datum": "2026-11-15T18:30:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘KPop Demon Hunters’ Criterion Collection Blu-ray On Sale for 50% Off on Heels of New Tour Announcement",
+  "link": "https://variety.com/2026/shopping/news/kpop-demon-criterion-blu-ray-buy-online-1236759288/",
+  "datum": "2026-11-15T18:02:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Johnny Depp’s ‘Ebenezer’ Richer Abroad At $42M WW; ‘Ramayana’ Nears $150M WW; ‘Godzilla Minus Zero’ Roars Past $100M WW; ‘Wildwood’ $70M – Global Box Office",
+  "link": "https://deadline.com/2026/11/box-office-global-ebenezer-ramayana-godzilla-minus-zero-1237224479/",
+  "datum": "2026-11-15T18:00:41.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Pitch Perfect: The 20 Best Music Schools in the World",
+  "link": "https://www.hollywoodreporter.com/music/music-features/best-music-schools-world-1236752338/",
+  "datum": "2026-11-15T18:00:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘Behemoth!’s Humanity Gave Pedro Pascal \"Tremendous Amount Of Hope\" Amid AI Boom, Tony Gilroy Wants To \"Blow Up AI Centers At The Voting Box\"",
+  "link": "https://deadline.com/2026/11/behemoth-humanity-pedro-pascal-hope-amid-ai-boom-1237224503/",
+  "datum": "2026-11-15T17:51:03.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "David Tennant Teases \"Very Small Part\" In ‘Only Murders In The Building\", Addresses Future Of ‘Doctor Who’: \"It Deserves To Run Forever\"",
+  "link": "https://deadline.com/2026/11/david-tennant-only-murders-in-the-building-doctor-who-future-1237224368/",
+  "datum": "2026-11-15T17:40:57.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Die Neuauflage einer der größten Abenteuergeschichten ist jetzt komplett im Stream – als 6-teilige Schatzsuche mit Star-Besetzung",
+  "link": "https://www.moviepilot.de/news/abenteuerserie-die-schatzinsel-streamen-amazon-1164990",
+  "datum": "2026-11-15T17:35:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Billy Evans Addresses Amanda Seyfried’s Portrayal of Elizabeth Holmes in ‘You Can See Everything’: She Was ‘Eager’ to ‘Play a Character’",
+  "link": "https://variety.com/2026/film/news/billy-evans-amanda-seyfried-elizabeth-holmes-portrayal-1236948144/",
+  "datum": "2026-11-15T17:34:36.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Xbox: Grafik-Panne weckt falsche Hoffnungen auf Disc-to-Digital für Xbox 360",
+  "link": "https://www.eurogamer.de/xbox-360-disc-to-digital",
+  "datum": "2026-11-15T17:30:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "EA Adds 'Don't Delete' Message to Madden NFL 27 in Bid to Keep Players From Making Room Ahead of GTA 6",
+  "link": "https://www.ign.com/articles/ea-adds-dont-delete-message-to-madden-nfl-27-in-bid-to-keep-players-from-making-room-ahead-of-gta-6",
+  "datum": "2026-11-15T17:22:20.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "Box Office: ‘Club Kid’ Scores Best Limited Expansion of the Year as Younger Audiences Embrace Jordan Firstman’s Oscar Hopeful",
+  "link": "https://www.indiewire.com/news/box-office/box-office-club-kid-best-limited-expansion-of-2026-jordan-firstman-1235228073/",
+  "datum": "2026-11-15T17:15:02.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "„Percy Jackson“, „Yellowjackets“ und Panem im Kino",
+  "link": "https://www.serienjunkies.de/news/serien/percy-jackson-yellowjackets-und-panem-im-kino-94591277.html",
+  "datum": "2026-11-15T17:15:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "The Witcher: Autorin einer gefeierten Baldur’s Gate 3 Story verstärkt das Team",
+  "link": "https://www.play3.de/2026/11/15/the-witcher-autorin-einer-gefeierten-baldurs-gate-3-story-verstaerkt-das-team/",
+  "datum": "2026-11-15T17:11:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "The Best Tech Gifts to Shop at Best Buy This Holiday Season, From Bose Headphones to the Oura Ring",
+  "link": "https://variety.com/2026/shopping/news/best-buy-tech-gift-guide-headphones-oura-ring-shop-1236948059/",
+  "datum": "2026-11-15T17:00:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "The 2026 NWSL Semifinal: Where to Watch Gotham FC vs. Kansas City Current",
+  "link": "https://www.hollywoodreporter.com/tv/tv-news/watch-gotham-fc-kansas-city-current-2026-nwsl-semifinal-1236754395/",
+  "datum": "2026-11-15T17:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "PlayStation Plus verliert PC-Funktion: Sony schaltet Streaming im Dezember ab",
+  "link": "https://www.pcgames.de/PlayStation-Plus-Thema-260472/News/Streaming-auf-den-PC-ist-bald-Geschichte-1560027/",
+  "datum": "2026-11-15T17:00:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Billy Evans Claims He \"Did Not Give Consent\" For ‘You Can See Everything’ Nudity, Still Loves The Doc: \"It’s Entertainment\"",
+  "link": "https://deadline.com/2026/11/billy-evans-did-not-give-consent-you-can-see-everything-nudity-1237224469/",
+  "datum": "2026-11-15T16:59:43.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Johnny Depp’s ‘Ebenezer’ Unwraps $19M to Win Weekend in Box Office Return",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/johnny-depp-ebenezer-box-office-opening-how-to-rob-bank-1236755417/",
+  "datum": "2026-11-15T16:54:04.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Xbox Game Pass: Erste fünf Neuzugänge für Dezember 2026 stehen fest",
+  "link": "https://www.eurogamer.de/xbox-game-pass-dezember-2026-spiele",
+  "datum": "2026-11-15T16:30:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Matt Damon Reveals Ben Affleck’s Review of ‘The Odyssey’ — and the One Performance He Couldn’t Stop Talking About",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/matt-damon-ben-affleck-review-the-odyssey-robert-pattinson-1236755603/",
+  "datum": "2026-11-15T16:22:54.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Box Office: Johnny Depp’s ‘Ebenezer’ Opens to No. 1 With $19 Million, ‘How to Rob a Bank’ Stumbles With $5 Million Debut",
+  "link": "https://variety.com/2026/film/box-office/ebenezer-box-office-johnny-depp-opening-weekend-how-to-rob-a-bank-1236948055/",
+  "datum": "2026-11-15T16:20:53.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Johnny Depp Pic ‘Ebenezer’ Counts $19M U.S. Opening As Moviegoers Pinch Pennies – Sunday AM Box Office Update",
+  "link": "https://deadline.com/2026/11/box-office-ebenezer-1237222749/",
+  "datum": "2026-11-15T16:18:00.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "Box Office: ‘Ebenezer’ Opens to Modest $19 Million, Showing Johnny Depp Is Still a Draw for the Right Price",
+  "link": "https://www.indiewire.com/news/box-office/box-office-ebenezer-opens-20-million-johnny-depp-comeback-1235228068/",
+  "datum": "2026-11-15T16:16:52.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "GTA 6: Spielzeit im Detail – So lange seid ihr mit Kampagne und Platin-Trophäe beschäftigt",
+  "link": "https://www.play3.de/2026/11/15/gta-6-spielzeit-im-detail-so-lange-seid-ihr-mit-kampagne-und-platin-trophaee-beschaeftigt/",
+  "datum": "2026-11-15T16:07:13.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "News der Woche: James Gunn verlässt DC und „Virgin River“ schreibt Geschichte",
+  "link": "https://www.serienjunkies.de/news/serien/news-der-woche-james-gunn-verlaesst-dc-und-virgin-river-schreibt-geschichte-94591161.html",
+  "datum": "2026-11-15T16:05:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Nur echte Star Trek-Fans kennen diese Bilder von Geordi: Ihr werdet den Enterprise-Ingenieur nie wieder mit denselben Augen sehen",
+  "link": "https://www.moviepilot.de/news/nur-echte-star-trek-fans-kennen-diese-bilder-von-geordi-1165490",
+  "datum": "2026-11-15T16:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "GTA 6: CEO hat keine Angst vor inoffiziellen KI-Portierungen auf den PC",
+  "link": "https://www.pcgames.de/GTA-6-Spiel-55239/News/KI-Klone-machen-Take-Two-CEO-keine-Sorgen-1560017/",
+  "datum": "2026-11-15T16:00:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "PlayStation: Sonys Live-Service-Desaster muss enden! – Meinung",
+  "link": "https://www.play3.de/2026/11/15/playstation-sonys-live-service-desaster-muss-enden-meinung/",
+  "datum": "2026-11-15T16:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "GTA 6 könnte zum Spiel des Jahres nominiert werden, bevor es überhaupt erscheint",
+  "link": "https://www.pcgames.de/GTA-6-Spiel-55239/News/game-awards-2026-nominierung-vor-release-1560030/",
+  "datum": "2026-11-15T15:30:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Forza Horizon 6: Neue Roadmap verrät Pläne für den Rest des Jahres und liefert ersten Ausblick auf 2027",
+  "link": "https://www.eurogamer.de/forza-horizon-6-roadmap-erweiterung",
+  "datum": "2026-11-15T15:30:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Xbox at 25: My Memories From Across Xbox’s Entire (and Quite Incredible) History",
+  "link": "https://www.ign.com/articles/xbox-at-25-my-memories-from-across-xboxs-entire-and-quite-incredible-history",
+  "datum": "2026-11-15T15:15:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Star Wars Fate of the Old Republic: Schlechte Nachrichten für die Game Awards – doch 2027 wird spannend",
+  "link": "https://www.play3.de/2026/11/15/star-wars-fate-of-the-old-republic-schlechte-nachrichten-fuer-die-game-awards-doch-2027-wird-spannend/",
+  "datum": "2026-11-15T15:06:02.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Heute Abend streamen: Einer der ultimativen 2000er-Thriller",
+  "link": "https://www.moviepilot.de/news/stream-ultimativer-thriller-2000er-1165258",
+  "datum": "2026-11-15T15:00:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "How to Watch Billy Evans’ First TV Interview About ‘You Can See Everything’ Online",
+  "link": "https://variety.com/2026/shopping/news/how-to-watch-billy-evans-cbs-interview-online-1236948056/",
+  "datum": "2026-11-15T14:56:35.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "The Legend of Zelda Ocarina of Time: Zelda Notes verrät die häufigsten Todesursachen  kuriose Statistiken zum Switch-2-Remake",
+  "link": "https://www.play3.de/2026/11/15/the-legend-of-zelda-ocarina-of-time-zelda-notes-verraet-die-haeufigsten-todesursachen-kuriose-statistiken-zum-switch-2-remake/",
+  "datum": "2026-11-15T14:32:41.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Atelier Karia: Entwickler wollten ein Feature streichen, doch Spieler hatten das letzte Wort",
+  "link": "https://www.pcgames.de/Spiele-Thema-239104/News/atelier-karia-koerperveraenderung-spielerumfrage-1560028/",
+  "datum": "2026-11-15T14:30:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Resident Evil Requiem: Darstellerin hofft auf Zukunft für Grace, sieht in ihr aber keinen Leon",
+  "link": "https://www.eurogamer.de/resident-evil-requiem-grace-ashcroft-zukunft",
+  "datum": "2026-11-15T14:30:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "7 Spionageserien für alle, die „Black Doves“ verschlungen haben",
+  "link": "https://www.serienjunkies.de/news/serien/spionageserien-fuer-alle-die-black-doves-verschlungen-haben-94590999.html",
+  "datum": "2026-11-15T14:15:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Dieser extrem kontroverse Film war 25 Jahre lang der erfolgreichste aller Zeiten: Heute kennt ihn kaum noch jemand",
+  "link": "https://www.moviepilot.de/news/dieser-extrem-kontroverse-film-war-25-jahre-lang-der-erfolgreichste-aller-zeite-1165438",
+  "datum": "2026-11-15T14:00:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Die längsten Netflix-Serien aller Zeiten: Virgin River zieht mit Rekordhalter gleich",
+  "link": "https://www.serienjunkies.de/news/serien/top-10-netflix-serien-die-laengsten-originals-nach-folgen-94589423.html",
+  "datum": "2026-11-15T14:00:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Thessaloniki Awards: Jacqueline Lentzou’s ‘A Day in the Life of Jo: Chapter Phaedra’ Wins the Golden Alexander",
+  "link": "https://variety.com/2026/film/global/thessaloniki-awards-a-day-in-the-life-of-jo-wins-1236948029/",
+  "datum": "2026-11-15T13:45:14.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Halo: Campaign Evolved bekommt einen Firefight-Modus für vier Spieler",
+  "link": "https://www.pcgames.de/Halo-Campaign-Evolved-Spiel-78207/News/firefight-modus-update-1560026/",
+  "datum": "2026-11-15T13:30:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "The Legend of Zelda: Ocarina of Time: ReDead sind im Remake die häufigste Game-Over-Ursache",
+  "link": "https://www.eurogamer.de/zelda-ocarina-of-time-statistiken",
+  "datum": "2026-11-15T13:30:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Resident Evil Requiem: Sie hat noch einen langen Weg vor sich\" – Darstellerin über Grace",
+  "link": "https://www.play3.de/2026/11/15/resident-evil-requiem-sie-hat-noch-einen-langen-weg-vor-sich-darstellerin-ueber-grace/",
+  "datum": "2026-11-15T13:23:15.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "\"Man möchte Zwerge kämpfen sehen\": Die Ringe der Macht-Star Owain Arthur erklärt Durins großen Konflikt in Staffel 3",
+  "link": "https://www.moviepilot.de/news/ringe-der-macht-interview-owain-arthur-1165442",
+  "datum": "2026-11-15T13:00:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "GTA-Geschichte: Die legendäre PS2-Ära von Grand Theft Auto mit GTA 3 – Special Teil 2",
+  "link": "https://www.play3.de/2026/11/15/gta-geschichte-die-legendaere-ps2-aera-von-grand-theft-auto-mit-gta-3-special-teil-2/",
+  "datum": "2026-11-15T13:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Super Meat Boy Again+: Remaster des Kult-Plattformers angekündigt - mit neuem Content",
+  "link": "https://www.pcgames.de/Super-Meat-Boy-Spiel-35959/News/Neuauflage-mit-mehr-als-300-Leveln-soll-kommen-1560021/",
+  "datum": "2026-11-15T12:45:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Limited Run Games legt physische Switch-2-Version von Tomb Raider: Definitive Edition neu auf",
+  "link": "https://www.eurogamer.de/tomb-raider-definitive-edition-neuauflage",
+  "datum": "2026-11-15T12:30:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Russell Brand Accuser Waives Anonymity, Alleging She Was Raped By Star At Age Of 16",
+  "link": "https://deadline.com/2026/11/russell-brand-mia-latter-waives-anonymity-allege-rape-1237224442/",
+  "datum": "2026-11-15T12:09:06.000Z"
+ },
+ {
   "quelle": "Collider",
   "art": "film",
   "titel": "‘Will Trent’ Creator’s New Thriller Series Officially Divides Critics",
@@ -252,6 +735,13 @@
   "datum": "2026-11-15T08:30:00.000Z"
  },
  {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "NDR schlägt mit Pflaume Das Erste, \"Friesland\" hat leichtes Spiel",
+  "link": "https://www.dwdl.de/zahlenzentrale/108570/ndr_schlaegt_mit_pflaume_das_erste_friesland_hat_leichtes_spiel/",
+  "datum": "2026-11-15T08:22:00.000Z"
+ },
+ {
   "quelle": "Variety",
   "art": "film",
   "titel": "‘Dhurandhar,’ ‘Kantara: A Legend – Chapter 1’ Among Indian Panorama Lineup at IFFI Goa",
@@ -292,6 +782,13 @@
   "titel": "WoW Forever: Die vergessene Geschichte hinter Dalaran",
   "link": "https://www.pcgames.de/World-of-Warcraft-Spiel-42971/Specials/die-vergessene-Geschichte-hinter-Dalaran-1559689/",
   "datum": "2026-11-15T08:00:00.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Löwen-Duell beschert \"Schlag den Star\" Jahres-Bestwert",
+  "link": "https://www.dwdl.de/zahlenzentrale/108569/loewenduell_beschert_schlag_den_star_jahresbestwert/",
+  "datum": "2026-11-15T07:44:00.000Z"
  },
  {
   "quelle": "Variety",
@@ -917,13 +1414,6 @@
   "datum": "2026-11-14T16:44:37.000Z"
  },
  {
-  "quelle": "The Hollywood Reporter",
-  "art": "film",
-  "titel": "Johnny Depp’s ‘Ebenezer’ Conjuring Up Box Office Victory in Star’s Return to Studio Fare",
-  "link": "https://www.hollywoodreporter.com/movies/movie-news/johnny-depp-ebenezer-box-office-opening-how-to-rob-bank-1236755417/",
-  "datum": "2026-11-14T16:33:47.000Z"
- },
- {
   "quelle": "IGN",
   "art": "spiel",
   "titel": "Daggerheart: Hope & Fear Expansion Review",
@@ -964,13 +1454,6 @@
   "titel": "Adam Driver Says Disney Killing ‘The Hunt for Ben Solo’ Felt ‘Criminal’: ‘Steven Soderbergh Wants to Make a “Star Wars” Movie. What Are We Debating?’",
   "link": "https://variety.com/2026/film/news/adam-driver-disney-hunt-for-ben-solo-criminal-1236947685/",
   "datum": "2026-11-14T16:02:04.000Z"
- },
- {
-  "quelle": "Deadline",
-  "art": "film",
-  "titel": "Johnny Depp Pic ‘Ebenezer’ Hoping For $20M+ U.S. – Saturday AM Box Office Update",
-  "link": "https://deadline.com/2026/11/box-office-ebenezer-1237222749/",
-  "datum": "2026-11-14T16:02:00.000Z"
  },
  {
   "quelle": "Moviepilot",
