@@ -1,100 +1,22 @@
 {
- "von": "2026-11-15",
- "bis": "2027-03-17",
+ "von": "2026-11-16",
+ "bis": "2027-03-18",
  "eintraege": [
   {
-   "id": "tv-259909-s2-2026-11-15",
+   "id": "tv-80748-s9-2026-11-16",
    "art": "serie",
    "typ": "folge",
-   "titel": "Dexter: Wiedererwachen",
-   "datum": "2026-11-15",
-   "text": "S2E3 · Lebe frei und stirb",
-   "jahr": "2025",
-   "bild": "https://image.tmdb.org/t/p/w342/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
+   "titel": "FBI",
+   "datum": "2026-11-16",
+   "text": "S9E7",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
    "anbieter": [
+    "Amazon Prime Video",
     "Paramount+"
    ],
-   "link": "https://www.themoviedb.org/tv/259909",
-   "info": "tv-259909"
-  },
-  {
-   "id": "tv-456-s38-2026-11-15",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Die Simpsons",
-   "datum": "2026-11-15",
-   "text": "S38E7",
-   "jahr": "1989",
-   "bild": "https://image.tmdb.org/t/p/w342/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
-   "anbieter": [
-    "Disney+"
-   ],
-   "link": "https://www.themoviedb.org/tv/456",
-   "info": "tv-456"
-  },
-  {
-   "id": "tv-312359-s1-2026-11-15",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Dragon Ball Super: Beerus",
-   "datum": "2026-11-15",
-   "text": "S1E6",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
-   "anbieter": [
-    "Netflix",
-    "Disney+",
-    "Crunchyroll"
-   ],
-   "link": "https://www.themoviedb.org/tv/312359",
-   "info": "tv-312359"
-  },
-  {
-   "id": "tv-65334-s7-2026-11-15",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
-   "datum": "2026-11-15",
-   "text": "S7E4",
-   "jahr": "2015",
-   "bild": "https://image.tmdb.org/t/p/w342/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
-   "anbieter": [
-    "Netflix",
-    "Disney+"
-   ],
-   "link": "https://www.themoviedb.org/tv/65334",
-   "info": "tv-65334"
-  },
-  {
-   "id": "tv-3034-s57-2026-11-15",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Tatort",
-   "datum": "2026-11-15",
-   "text": "S57E24 · Narrentanz",
-   "jahr": "1970",
-   "bild": "https://image.tmdb.org/t/p/w342/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/3034",
-   "info": "tv-3034"
-  },
-  {
-   "id": "tv-85077-s6",
-   "art": "serie",
-   "typ": "staffelstart",
-   "titel": "The Chosen",
-   "datum": "2026-11-15",
-   "text": "Staffel 6",
-   "jahr": "2019",
-   "bild": "https://image.tmdb.org/t/p/w342/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
-   "anbieter": [
-    "Netflix",
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/85077",
-   "info": "tv-85077"
+   "link": "https://www.themoviedb.org/tv/80748",
+   "info": "tv-80748"
   },
   {
    "id": "tv-303745-s1-2026-11-16",
@@ -237,21 +159,6 @@
    "info": "tv-340280"
   },
   {
-   "id": "tv-318420-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Os 12 Signos de Valentina",
-   "datum": "2026-11-18",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/ihjonCRR5gEUEH8RG2Qbk4Fy3HB.jpg",
-   "anbieter": [
-    "Netflix"
-   ],
-   "link": "https://www.themoviedb.org/tv/318420",
-   "info": "tv-318420"
-  },
-  {
    "id": "tv-336592-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -349,19 +256,6 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1422041",
    "info": "movie-1422041"
-  },
-  {
-   "id": "movie-1185542-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "Lieblingsmenschen - Die außergewöhnliche Freundschaft von Agnes & Amir",
-   "datum": "2026-11-19",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/9N9i5QcWnaH3kmMMeXDDU1e0hmV.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1185542",
-   "info": "movie-1185542"
   },
   {
    "id": "tv-308007-s1",
@@ -589,21 +483,6 @@
    "info": "tv-65334"
   },
   {
-   "id": "tv-341164-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Oobah: Scams for a Better Tomorrow",
-   "datum": "2026-11-22",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/rWqhULNvOmIBHZymAPce2SlRr2T.jpg",
-   "anbieter": [
-    "HBO"
-   ],
-   "link": "https://www.themoviedb.org/tv/341164",
-   "info": "tv-341164"
-  },
-  {
    "id": "tv-3034-s57-2026-11-22",
    "art": "serie",
    "typ": "folge",
@@ -760,7 +639,7 @@
    "datum": "2026-11-25",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/yQggulnRAvssNRGpxOMf8CfVim6.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/5jO6rhfethzH7xdWl6KCOxCNCzQ.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1457866",
    "info": "movie-1457866"
@@ -947,19 +826,20 @@
    "info": "tv-85077"
   },
   {
-   "id": "tv-337600-s1",
+   "id": "tv-80748-s9-2026-11-30",
    "art": "serie",
-   "typ": "serienstart",
-   "titel": "The Boy Who Stole Billions?",
+   "typ": "folge",
+   "titel": "FBI",
    "datum": "2026-11-30",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/1VBEnGprHEmhABgbAzihQYwZRKJ.jpg",
+   "text": "S9E8",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
    "anbieter": [
-    "Amazon Prime Video"
+    "Amazon Prime Video",
+    "Paramount+"
    ],
-   "link": "https://www.themoviedb.org/tv/337600",
-   "info": "tv-337600"
+   "link": "https://www.themoviedb.org/tv/80748",
+   "info": "tv-80748"
   },
   {
    "id": "tv-4614-s24-2026-12-01",
@@ -1205,6 +1085,22 @@
    "info": "tv-85077"
   },
   {
+   "id": "tv-80748-s9-2026-12-07",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "FBI",
+   "datum": "2026-12-07",
+   "text": "S9E9",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/80748",
+   "info": "tv-80748"
+  },
+  {
    "id": "tv-4614-s24-2026-12-08",
    "art": "serie",
    "typ": "folge",
@@ -1221,19 +1117,6 @@
    ],
    "link": "https://www.themoviedb.org/tv/4614",
    "info": "tv-4614"
-  },
-  {
-   "id": "movie-1403676-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "April X",
-   "datum": "2026-12-10",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/8ESrQhJW1q3a96CkQ4TZjCIo91r.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1403676",
-   "info": "movie-1403676"
   },
   {
    "id": "movie-1117898-kino",
@@ -1309,6 +1192,22 @@
    ],
    "link": "https://www.themoviedb.org/tv/312359",
    "info": "tv-312359"
+  },
+  {
+   "id": "tv-80748-s9-2026-12-14",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "FBI",
+   "datum": "2026-12-14",
+   "text": "S9E10",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/80748",
+   "info": "tv-80748"
   },
   {
    "id": "movie-1003596-kino",
@@ -1544,6 +1443,19 @@
    "info": "movie-1437981"
   },
   {
+   "id": "tv-22980-s24",
+   "art": "serie",
+   "typ": "staffelstart",
+   "titel": "Watch What Happens Live with Andy Cohen",
+   "datum": "2027-01-04",
+   "text": "Staffel 24",
+   "jahr": "2009",
+   "bild": "https://image.tmdb.org/t/p/w342/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/tv/22980",
+   "info": "tv-22980"
+  },
+  {
    "id": "tv-79744-s9",
    "art": "serie",
    "typ": "staffelstart",
@@ -1684,6 +1596,19 @@
    "info": "movie-1585239"
   },
   {
+   "id": "movie-969681-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Spider-Man: Brand New Day",
+   "datum": "2027-01-28",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/h2R2dPbIyjxXorGL6V8Mau01hJy.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/969681",
+   "info": "movie-969681"
+  },
+  {
    "id": "movie-1165366-kino",
    "art": "film",
    "typ": "kino",
@@ -1697,17 +1622,17 @@
    "info": "movie-1165366"
   },
   {
-   "id": "movie-1365378-kino",
+   "id": "movie-1425859-kino",
    "art": "film",
    "typ": "kino",
-   "titel": "Große Träume",
+   "titel": "Remain",
    "datum": "2027-02-04",
    "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/yObiUK0WVhx0hwTIJhocdJTmhFc.jpg",
+   "jahr": "2027",
+   "bild": "https://image.tmdb.org/t/p/w342/5hPNq5h2y8Ux6nPBRMEwZ8npVTp.jpg",
    "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1365378",
-   "info": "movie-1365378"
+   "link": "https://www.themoviedb.org/movie/1425859",
+   "info": "movie-1425859"
   },
   {
    "id": "movie-1074074-kino",
@@ -1788,9 +1713,91 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1599230",
    "info": "movie-1599230"
+  },
+  {
+   "id": "movie-1476614-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "All of a Sudden",
+   "datum": "2027-03-18",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/miiSSAn8STrbQZvd4i1TCPfZtU9.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1476614",
+   "info": "movie-1476614"
   }
  ],
  "infos": {
+  "movie-969681": {
+   "titel": "Spider-Man: Brand New Day",
+   "original": "Spider-Man: Brand New Day",
+   "leitsatz": "Ein brandneuer Tag beginnt.",
+   "handlung": "Vier Jahre sind seit den Ereignissen von „No Way Home“ vergangen. Peter ist nun erwachsen und lebt für sich allein, nachdem er sich freiwillig aus dem Leben und den Erinnerungen derer, die er liebt, ausgelöscht hat. Er bekämpft Verbrechen in einem New York, das ihn und seinen Namen nicht mehr kennt, und widmet sich ganz dem Schutz seiner Stadt: Spider-Man in Vollzeit. Doch mit den steigenden Anforderungen löst der Druck eine überraschende körperliche Veränderung aus, die seine Existenz bedroht – gerade als eine seltsame neue Art von Verbrechen eine der mächtigsten Bedrohungen hervorbringt, denen er je gegenüberstand.",
+   "genres": [
+    "Science Fiction",
+    "Action",
+    "Abenteuer"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 30 Min"
+    ],
+    [
+     "Regie",
+     "Destin Daniel Cretton"
+    ],
+    [
+     "Mit",
+     "Tom Holland, Sadie Sink, Tramell Tillman, Zendaya"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.5 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=f_1rHzdY4Qc",
+   "link": "https://www.themoviedb.org/movie/969681",
+   "bild": "https://image.tmdb.org/t/p/w500/h2R2dPbIyjxXorGL6V8Mau01hJy.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "„Spider-Man: Brand New Day“: Rosario Dawson kehrt im Extended Cut zurück – Re-Release im Januar",
+     "link": "https://www.serienjunkies.de/news/film/spider-man-brand-new-day-extended-cut-mit-rosario-dawson-94596310.html",
+     "datum": "2026-11-18T12:22:10.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "‘Spider-Man: Brand New Day’ Officially Returns to Theaters With New Footage",
+     "link": "https://collider.com/spider-man-brand-new-day-extended-cut-theatrical-release-date/",
+     "datum": "2026-11-16T23:40:04.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "‘Spider-Man: Brand New Day’ Returning to Theaters with a New Rosario Dawson Cameo — and Box Office Records and Oscar Noms in Mind",
+     "link": "https://www.indiewire.com/news/breaking-news/spider-man-brand-new-day-returning-theaters-extended-cut-1235228526/",
+     "datum": "2026-11-16T23:37:56.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "‘Spider-Man: Brand New Day’ Extended Cut Sets December Release Date in Theaters",
+     "link": "https://variety.com/2026/film/news/spider-man-brand-new-day-extended-cut-release-date-1236949654/",
+     "datum": "2026-11-16T23:00:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘Spider-Man: Brand New Day’ Re-Release With New Rosario Dawson Night Nurse Footage Sets Release",
+     "link": "https://deadline.com/2026/11/spider-man-brand-new-day-rosario-dawson-re-release-date-1237225762/",
+     "datum": "2026-11-16T23:00:00.000Z"
+    }
+   ]
+  },
   "movie-1003596": {
    "titel": "Avengers: Doomsday",
    "original": "Avengers: Doomsday",
@@ -2020,6 +2027,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/Ap8QwmKfSjYbWC4XIP8w9pdn72O.jpg",
    "news": [
     {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "IDA Documentary Awards 2026 Nominations: ‘You Can See Everything,’ ‘Concrete Land,’ and More Earn Nods",
+     "link": "https://www.indiewire.com/awards/results/ida-documentary-awards-nominations-2026-full-list-1235228889/",
+     "datum": "2026-11-18T01:36:24.000Z"
+    },
+    {
      "quelle": "The Hollywood Reporter",
      "art": "film",
      "titel": "IDA Documentary Awards Nominations: ‘Concrete Land,’ ‘To Hold a Mountain,’ ‘You Can See Everything’ Among Top Nominees",
@@ -2046,13 +2060,6 @@
      "titel": "Billy Evans Addresses Amanda Seyfried’s Portrayal of Elizabeth Holmes in ‘You Can See Everything’: She Was ‘Eager’ to ‘Play a Character’",
      "link": "https://variety.com/2026/film/news/billy-evans-amanda-seyfried-elizabeth-holmes-portrayal-1236948144/",
      "datum": "2026-11-15T17:34:36.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Billy Evans Claims He \"Did Not Give Consent\" For ‘You Can See Everything’ Nudity, Still Loves The Doc: \"It’s Entertainment\"",
-     "link": "https://deadline.com/2026/11/billy-evans-did-not-give-consent-you-can-see-everything-nudity-1237224469/",
-     "datum": "2026-11-15T16:59:43.000Z"
     }
    ]
   },
@@ -2199,6 +2206,66 @@
    "bild": "https://image.tmdb.org/t/p/w500/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
    "news": []
   },
+  "movie-1401459": {
+   "titel": "Fjord",
+   "original": "Fjord",
+   "leitsatz": null,
+   "handlung": "Nach dem Tod von Mihais Eltern lassen Mihai und Lisbet Gheorghiu ihr Leben in Rumänien hinter sich und ziehen mit ihren Kindern in ein abgelegenes Dorf in Norwegen – in der Hoffnung, in der Nähe von Lisbets Familie einen Neuanfang zu wagen. Dort kommen sie ihren Nachbarn, der Familie Halberg, näher, deren Herzlichkeit ihnen Hoffnung auf einen neuen Anfang gibt. Doch der zerbrechliche Frieden gerät ins Wanken, als die kleine Tochter der Familie Gheorghiu, Elia, mit blauen Flecken am Körper in der Schule erscheint.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 26 Min"
+    ],
+    [
+     "Regie",
+     "Cristian Mungiu"
+    ],
+    [
+     "Mit",
+     "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=frg59VOungA",
+   "link": "https://www.themoviedb.org/movie/1401459",
+   "bild": "https://image.tmdb.org/t/p/w500/rIhqYAVPmMQaTCiBJI5o21KDFM2.jpg",
+   "news": [
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Marrakech Film Festival Grows Its Awards-Season Clout With ‘Artificial,’ ‘The Debut,’ ‘Fjord’ and Other Oscar Hopefuls",
+     "link": "https://variety.com/2026/film/global/artificial-the-debut-oscar-campaigns-marrakech-1236951607/",
+     "datum": "2026-11-18T11:17:24.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘Fatherland,’ ‘La Bola Negra,’ ‘Fjord’ Lead European Film Award Nominations",
+     "link": "https://www.hollywoodreporter.com/movies/movie-news/fatherland-la-bola-negra-european-film-award-nominations-1236754942/",
+     "datum": "2026-11-14T10:30:00.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Palme d’Or Winner ‘Fjord’ to Open 26th European Film Festival Malaysia, Astro First to Stream Selected Titles",
+     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-european-film-festival-malaysia-1236945991/",
+     "datum": "2026-11-12T11:23:19.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Cristian Mungiu’s Palme d’Or Winner ‘Fjord’ Takes Jakarta World Cinema Audience Award as Short Film Winners Land Debut Feature Funding",
+     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-jakarta-world-cinema-audience-award-1236942247/",
+     "datum": "2026-11-08T03:50:26.000Z"
+    }
+   ]
+  },
   "movie-1286656": {
    "titel": "I Play Rocky",
    "original": "I Play Rocky",
@@ -2223,7 +2290,7 @@
     ],
     [
      "TMDB-Wertung",
-     "8.4 / 10"
+     "8.5 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=VbUZakXlcMc",
@@ -2264,59 +2331,6 @@
      "titel": "‘I Play Rocky’ Review: Sylvester Stallone’s Wild Hollywood Underdog Story Gets a Punchy Crowdpleaser",
      "link": "https://www.indiewire.com/criticism/movies/i-play-rocky-review-sylvester-stallone-1235216617/",
      "datum": "2026-11-02T19:00:00.000Z"
-    }
-   ]
-  },
-  "movie-1401459": {
-   "titel": "Fjord",
-   "original": "Fjord",
-   "leitsatz": null,
-   "handlung": "Nach dem Tod von Mihais Eltern lassen Mihai und Lisbet Gheorghiu ihr Leben in Rumänien hinter sich und ziehen mit ihren Kindern in ein abgelegenes Dorf in Norwegen – in der Hoffnung, in der Nähe von Lisbets Familie einen Neuanfang zu wagen. Dort kommen sie ihren Nachbarn, der Familie Halberg, näher, deren Herzlichkeit ihnen Hoffnung auf einen neuen Anfang gibt. Doch der zerbrechliche Frieden gerät ins Wanken, als die kleine Tochter der Familie Gheorghiu, Elia, mit blauen Flecken am Körper in der Schule erscheint.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 26 Min"
-    ],
-    [
-     "Regie",
-     "Cristian Mungiu"
-    ],
-    [
-     "Mit",
-     "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=frg59VOungA",
-   "link": "https://www.themoviedb.org/movie/1401459",
-   "bild": "https://image.tmdb.org/t/p/w500/rIhqYAVPmMQaTCiBJI5o21KDFM2.jpg",
-   "news": [
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘Fatherland,’ ‘La Bola Negra,’ ‘Fjord’ Lead European Film Award Nominations",
-     "link": "https://www.hollywoodreporter.com/movies/movie-news/fatherland-la-bola-negra-european-film-award-nominations-1236754942/",
-     "datum": "2026-11-14T10:30:00.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "Palme d’Or Winner ‘Fjord’ to Open 26th European Film Festival Malaysia, Astro First to Stream Selected Titles",
-     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-european-film-festival-malaysia-1236945991/",
-     "datum": "2026-11-12T11:23:19.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "Cristian Mungiu’s Palme d’Or Winner ‘Fjord’ Takes Jakarta World Cinema Audience Award as Short Film Winners Land Debut Feature Funding",
-     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-jakarta-world-cinema-audience-award-1236942247/",
-     "datum": "2026-11-08T03:50:26.000Z"
     }
    ]
   },
@@ -2543,7 +2557,7 @@
     ],
     [
      "TMDB-Wertung",
-     "6.7 / 10"
+     "6.6 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=IexQvEpqwrE",
@@ -2562,6 +2576,10 @@
     "Fantasy"
    ],
    "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 6 Min"
+    ],
     [
      "Regie",
      "Jake Kasdan"
@@ -2584,6 +2602,64 @@
     }
    ],
    "sprache": "en"
+  },
+  "movie-1457866": {
+   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "original": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "leitsatz": null,
+   "handlung": "Acht Jahre nach den Ereignissen von „Once Upon a Time in… Hollywood“ navigiert Cliff Booth in seiner neuen Rolle als Fixer durch das Studiosystem.",
+   "genres": [
+    "Komödie",
+    "Drama",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 21 Min"
+    ],
+    [
+     "Regie",
+     "David Fincher"
+    ],
+    [
+     "Mit",
+     "Brad Pitt, Elizabeth Debicki, Scott Caan, Yahya Abdul-Mateen II"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=Ic7IAhJQ8Lw",
+   "link": "https://www.themoviedb.org/movie/1457866",
+   "bild": "https://image.tmdb.org/t/p/w500/5jO6rhfethzH7xdWl6KCOxCNCzQ.jpg",
+   "news": [
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "‘The Further Mis-Adventures of Cliff Booth’ Throws Netflix’s Oscar Campaign a Curveball",
+     "link": "https://www.indiewire.com/awards/predictions/further-mis-adventures-cliff-booth-netflix-oscar-chances-1235228865/",
+     "datum": "2026-11-17T20:53:37.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "‘The Further Mis-Adventures of Cliff Booth’ First Reactions: Quentin Tarantino and David Fincher Deliver a ‘Pure Riot’ of a Hangout Movie",
+     "link": "https://www.indiewire.com/news/general-news/the-further-mis-adventures-of-cliff-booth-first-reactions-1235228540/",
+     "datum": "2026-11-17T06:58:15.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘The Further Mis-Adventures Of Cliff Booth’ Trailer: More Plot Details Emerge In Latest Look At Fincher-Tarantino-Pitt Team-Up",
+     "link": "https://deadline.com/2026/11/the-further-mis-adventures-of-cliff-booth-trailer-brad-pitt-1237109166/",
+     "datum": "2026-11-06T20:26:20.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "Could ‘The Further Mis-Adventures of Cliff Booth’ Re-Ignite Quentin Tarantino’s Bruce Lee Controversy?",
+     "link": "https://www.indiewire.com/news/general-news/further-mis-adventures-of-cliff-booth-trailer-bruce-lee-tarantino-1235225974/",
+     "datum": "2026-11-06T18:59:14.000Z"
+    }
+   ]
   },
   "movie-1165366": {
    "titel": "De Gaulle - Zeit des Widerstands",
@@ -2631,6 +2707,10 @@
    ],
    "fakten": [
     [
+     "Laufzeit",
+     "1 Std 38 Min"
+    ],
+    [
      "Regie",
      "Enrico Casarosa"
     ],
@@ -2652,64 +2732,6 @@
     }
    ],
    "sprache": "en"
-  },
-  "movie-1457866": {
-   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
-   "original": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
-   "leitsatz": null,
-   "handlung": "Acht Jahre nach den Ereignissen von „Once Upon a Time in… Hollywood“ navigiert Cliff Booth in seiner neuen Rolle als Fixer durch das Studiosystem.",
-   "genres": [
-    "Komödie",
-    "Drama",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 21 Min"
-    ],
-    [
-     "Regie",
-     "David Fincher"
-    ],
-    [
-     "Mit",
-     "Brad Pitt, Elizabeth Debicki, Scott Caan, Yahya Abdul-Mateen II"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=Ic7IAhJQ8Lw",
-   "link": "https://www.themoviedb.org/movie/1457866",
-   "bild": "https://image.tmdb.org/t/p/w500/yQggulnRAvssNRGpxOMf8CfVim6.jpg",
-   "news": [
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘The Further Mis-Adventures of Cliff Booth’ Throws Netflix’s Oscar Campaign a Curveball",
-     "link": "https://www.indiewire.com/awards/predictions/further-mis-adventures-cliff-booth-netflix-oscar-chances-1235228865/",
-     "datum": "2026-11-17T20:53:37.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘The Further Mis-Adventures of Cliff Booth’ First Reactions: Quentin Tarantino and David Fincher Deliver a ‘Pure Riot’ of a Hangout Movie",
-     "link": "https://www.indiewire.com/news/general-news/the-further-mis-adventures-of-cliff-booth-first-reactions-1235228540/",
-     "datum": "2026-11-17T06:58:15.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "‘The Further Mis-Adventures Of Cliff Booth’ Trailer: More Plot Details Emerge In Latest Look At Fincher-Tarantino-Pitt Team-Up",
-     "link": "https://deadline.com/2026/11/the-further-mis-adventures-of-cliff-booth-trailer-brad-pitt-1237109166/",
-     "datum": "2026-11-06T20:26:20.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "Could ‘The Further Mis-Adventures of Cliff Booth’ Re-Ignite Quentin Tarantino’s Bruce Lee Controversy?",
-     "link": "https://www.indiewire.com/news/general-news/further-mis-adventures-of-cliff-booth-trailer-bruce-lee-tarantino-1235225974/",
-     "datum": "2026-11-06T18:59:14.000Z"
-    }
-   ]
   },
   "movie-1585239": {
    "titel": "Club Kid",
@@ -2779,6 +2801,36 @@
     }
    ]
   },
+  "movie-1300926": {
+   "titel": "Angry Birds 3 - Der Film",
+   "original": "The Angry Birds Movie 3",
+   "leitsatz": null,
+   "handlung": "Red steht vor seiner bisher größten Herausforderung: das Vaterdasein zu überstehen – und gleichzeitig die Welt zu retten.",
+   "genres": [
+    "Abenteuer",
+    "Animation",
+    "Komödie",
+    "Familie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 36 Min"
+    ],
+    [
+     "Regie",
+     "John Rice"
+    ],
+    [
+     "Mit",
+     "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=JkF1fSEqRU8",
+   "link": "https://www.themoviedb.org/movie/1300926",
+   "bild": "https://image.tmdb.org/t/p/w500/xyml31x5gu23tOMIFJ43XO4aTD6.jpg",
+   "news": []
+  },
   "movie-1096228": {
    "titel": "Musk",
    "original": "Musk",
@@ -2819,6 +2871,36 @@
    ],
    "sprache": "en"
   },
+  "movie-1078446": {
+   "titel": "Violent Night - Eine Tödliche Bescherung",
+   "original": "Violent Night 2",
+   "leitsatz": null,
+   "handlung": "When Santa forgets the true meaning of Christmas, he finds himself in the heart of a lively mall community in desperate need of his help. Sapped of his magic, he’ll need another way to take on the goons threatening the mall, and time is running out. Santa has to rediscover his faith in goodness and call in some last-minute reinforcements from the one person no baddie wants to tangle with: Mrs. Claus.",
+   "genres": [
+    "Action",
+    "Komödie",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 50 Min"
+    ],
+    [
+     "Regie",
+     "Tommy Wirkola"
+    ],
+    [
+     "Mit",
+     "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=tzm3cMHOnvk",
+   "link": "https://www.themoviedb.org/movie/1078446",
+   "bild": "https://image.tmdb.org/t/p/w500/h37dlv6kOJ5Gx6JXZWpflz3OftW.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "movie-1437981": {
    "titel": "Les Braves",
    "original": "Les Braves",
@@ -2848,33 +2930,29 @@
    "bild": "https://image.tmdb.org/t/p/w500/xGiQYHSBXVlMqCdhEoSBjcMUWex.jpg",
    "news": []
   },
-  "movie-1078446": {
-   "titel": "Violent Night - Eine Tödliche Bescherung",
-   "original": "Violent Night 2",
+  "movie-1440769": {
+   "titel": "The Beekeeper 2",
+   "original": "The Beekeeper 2",
    "leitsatz": null,
-   "handlung": "When Santa forgets the true meaning of Christmas, he finds himself in the heart of a lively mall community in desperate need of his help. Sapped of his magic, he’ll need another way to take on the goons threatening the mall, and time is running out. Santa has to rediscover his faith in goodness and call in some last-minute reinforcements from the one person no baddie wants to tangle with: Mrs. Claus.",
+   "handlung": "Pulled back into the fight when the Beekeeper organization goes rogue and sets its sights on controlling the government, Clay must take on the very group that made him.",
    "genres": [
     "Action",
-    "Komödie",
-    "Fantasy"
+    "Krimi",
+    "Thriller"
    ],
    "fakten": [
     [
-     "Laufzeit",
-     "1 Std 50 Min"
-    ],
-    [
      "Regie",
-     "Tommy Wirkola"
+     "Timo Tjahjanto"
     ],
     [
      "Mit",
-     "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris"
+     "Jason Statham, Jeremy Irons, Yara Shahidi, Emmy Raver-Lampman"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=tzm3cMHOnvk",
-   "link": "https://www.themoviedb.org/movie/1078446",
-   "bild": "https://image.tmdb.org/t/p/w500/h37dlv6kOJ5Gx6JXZWpflz3OftW.jpg",
+   "trailer": "https://www.youtube.com/watch?v=Q7MvYmUttXM",
+   "link": "https://www.themoviedb.org/movie/1440769",
+   "bild": "https://image.tmdb.org/t/p/w500/bNlIm8bk5AHrinnUmi4Y8A8W0XM.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -2907,35 +2985,29 @@
    "bild": "https://image.tmdb.org/t/p/w500/kUxkvh6GMZL4AHNgNDty68yTnwQ.jpg",
    "news": []
   },
-  "movie-1300926": {
-   "titel": "Angry Birds 3 - Der Film",
-   "original": "The Angry Birds Movie 3",
+  "movie-1425859": {
+   "titel": "Remain",
+   "original": "Remain",
    "leitsatz": null,
-   "handlung": "Red faces his greatest challenge yet—surviving fatherhood… while saving the world.",
+   "handlung": "When reclusive architect Tate Gordon moves to small coastal town to complete his latest project, he encounters an alluring young woman who pulls him out of his shell, and into the center of a deadly mystery that hangs over the town.",
    "genres": [
-    "Abenteuer",
-    "Animation",
-    "Komödie",
-    "Familie",
-    "Science Fiction"
+    "Liebesfilm",
+    "Mystery",
+    "Thriller"
    ],
    "fakten": [
     [
-     "Laufzeit",
-     "1 Std 36 Min"
-    ],
-    [
      "Regie",
-     "John Rice"
+     "M. Night Shyamalan"
     ],
     [
      "Mit",
-     "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom"
+     "Jake Gyllenhaal, Phoebe Dynevor, Ashley Walters, Julie Hagerty"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=JkF1fSEqRU8",
-   "link": "https://www.themoviedb.org/movie/1300926",
-   "bild": "https://image.tmdb.org/t/p/w500/xyml31x5gu23tOMIFJ43XO4aTD6.jpg",
+   "trailer": "https://www.youtube.com/watch?v=P3WeIJ61V38",
+   "link": "https://www.themoviedb.org/movie/1425859",
+   "bild": "https://image.tmdb.org/t/p/w500/5hPNq5h2y8Ux6nPBRMEwZ8npVTp.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -2998,31 +3070,101 @@
    "bild": "https://image.tmdb.org/t/p/w500/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
    "news": []
   },
-  "movie-1440769": {
-   "titel": "The Beekeeper 2",
-   "original": "The Beekeeper 2",
+  "movie-1421903": {
+   "titel": "Werwulf",
+   "original": "Werwulf",
    "leitsatz": null,
-   "handlung": "Pulled back into the fight when the Beekeeper organization goes rogue and sets its sights on controlling the government, Clay must take on the very group that made him.",
+   "handlung": "Eine erschütternde Geschichte von Hingabe, Verdammnis und dem Teufel im Inneren.",
    "genres": [
-    "Action",
+    "Horror",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 0 Min"
+    ],
+    [
+     "Regie",
+     "Robert Eggers"
+    ],
+    [
+     "Mit",
+     "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=rd_s5QdHdYw",
+   "link": "https://www.themoviedb.org/movie/1421903",
+   "bild": "https://image.tmdb.org/t/p/w500/imnkSt4PSQpxIuyiRpJCiLk3SZz.jpg",
+   "news": []
+  },
+  "movie-1476614": {
+   "titel": "All of a Sudden",
+   "original": "急に具合が悪くなる",
+   "leitsatz": null,
+   "handlung": "Marie-Lou Fontaine, Leiterin der Pflegeeinrichtung „Garten der Freiheit“ in einem Vorort von Paris, strebte zwar danach, die Bewohner auf menschenwürdige Weise zu betreuen, hatte jedoch mit Personalmangel und dem Unverständnis der Mitarbeiter zu kämpfen. In dieser Situation lernte Marie-Lou die japanische Theaterregisseurin Mari Morisaki kennen und schöpfte Mut aus den Theaterstücken, die diese während ihres Kampfes gegen den Krebs entwarf. Durch den Zufall, dass ihre Namen ähnlich klingen, beginnen Mari und Marie-Loue einen Austausch, doch eines Tages geht es Mari plötzlich schlecht. Mit dem Fortschreiten von Maris Krankheit vertieft sich die Beziehung der beiden, und sie beginnen, sich auf einer seelischen Ebene zu verstehen.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "3 Std 16 Min"
+    ],
+    [
+     "Regie",
+     "Ryusuke Hamaguchi"
+    ],
+    [
+     "Mit",
+     "Virginie Efira, Tao Okamoto, 長塚京三, 黒崎煌代"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.8 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=2AxtdPvDojA",
+   "link": "https://www.themoviedb.org/movie/1476614",
+   "bild": "https://image.tmdb.org/t/p/w500/miiSSAn8STrbQZvd4i1TCPfZtU9.jpg",
+   "news": [
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Ryūsuke Hamaguchi’s ‘All Of A Sudden’ To Open AFI Silver’s 2026 European Union Film Showcase — Full Lineup",
+     "link": "https://deadline.com/2026/11/afi-silver-european-showcase-2026-full-lineup-1237218391/",
+     "datum": "2026-11-10T20:00:00.000Z"
+    }
+   ]
+  },
+  "movie-1384528": {
+   "titel": "Om Chapter 1: Udhiram - The Blood Wood",
+   "original": "ஓ.ம்: Operation Mole",
+   "leitsatz": null,
+   "handlung": "Die Geschichte handelt von einem Mann, der 20 tamilische Holzfäller rettet, die von der Polizei in einem Wald in Tiruvannamalai festgenommen wurden. Sai Pallavi spielt die CBI-/IPS-Beamtin Nithya Reddy, die den Schmuggel von rotem Sandelholz untersucht und eine persönliche Verbindung zu diesem Wald hat.",
+   "genres": [
     "Krimi",
+    "Action",
     "Thriller"
    ],
    "fakten": [
     [
+     "Laufzeit",
+     "2 Std 40 Min"
+    ],
+    [
      "Regie",
-     "Timo Tjahjanto"
+     "Rajkumar Periasamy"
     ],
     [
      "Mit",
-     "Jason Statham, Jeremy Irons, Yara Shahidi, Emmy Raver-Lampman"
+     "Dhanush, Mammootty, Sai Pallavi, Sreeleela"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=Q7MvYmUttXM",
-   "link": "https://www.themoviedb.org/movie/1440769",
-   "bild": "https://image.tmdb.org/t/p/w500/bNlIm8bk5AHrinnUmi4Y8A8W0XM.jpg",
-   "news": [],
-   "sprache": "en"
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/1384528",
+   "bild": "https://image.tmdb.org/t/p/w500/vFnFLqXjf7RQfkNxrrys43BZKxJ.jpg",
+   "news": []
   },
   "movie-940009": {
    "titel": "Ray Gunn",
@@ -3054,35 +3196,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/rpP29aOKpHy1FhX8OZQdUICEs2j.jpg",
    "news": [],
    "sprache": "en"
-  },
-  "movie-1384528": {
-   "titel": "Om Chapter 1: Udhiram - The Blood Wood",
-   "original": "ஓ.ம்: Operation Mole",
-   "leitsatz": null,
-   "handlung": "Die Geschichte handelt von einem Mann, der 20 tamilische Holzfäller rettet, die von der Polizei in einem Wald in Tiruvannamalai festgenommen wurden. Sai Pallavi spielt die CBI-/IPS-Beamtin Nithya Reddy, die den Schmuggel von rotem Sandelholz untersucht und eine persönliche Verbindung zu diesem Wald hat.",
-   "genres": [
-    "Krimi",
-    "Action",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 40 Min"
-    ],
-    [
-     "Regie",
-     "Rajkumar Periasamy"
-    ],
-    [
-     "Mit",
-     "Dhanush, Mammootty, Sai Pallavi, Sreeleela"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1384528",
-   "bild": "https://image.tmdb.org/t/p/w500/vFnFLqXjf7RQfkNxrrys43BZKxJ.jpg",
-   "news": []
   },
   "movie-1404684": {
    "titel": "Nur geträumt",
@@ -3144,34 +3257,6 @@
    "trailer": "https://www.youtube.com/watch?v=okeELGJFG2I",
    "link": "https://www.themoviedb.org/movie/1403676",
    "bild": "https://image.tmdb.org/t/p/w500/8ESrQhJW1q3a96CkQ4TZjCIo91r.jpg",
-   "news": []
-  },
-  "movie-1421903": {
-   "titel": "Werwulf",
-   "original": "Werwulf",
-   "leitsatz": null,
-   "handlung": "Eine erschütternde Geschichte von Hingabe, Verdammnis und dem Teufel im Inneren.",
-   "genres": [
-    "Horror",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 0 Min"
-    ],
-    [
-     "Regie",
-     "Robert Eggers"
-    ],
-    [
-     "Mit",
-     "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=rd_s5QdHdYw",
-   "link": "https://www.themoviedb.org/movie/1421903",
-   "bild": "https://image.tmdb.org/t/p/w500/imnkSt4PSQpxIuyiRpJCiLk3SZz.jpg",
    "news": []
   },
   "movie-1391239": {
@@ -3447,32 +3532,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/ai1aZhF6NZ5LqHWxX1GziBN8luj.jpg",
    "news": []
   },
-  "movie-1425859": {
-   "titel": "Remain",
-   "original": "Remain",
-   "leitsatz": null,
-   "handlung": "When reclusive architect Tate Gordon moves to small coastal town to complete his latest project, he encounters an alluring young woman who pulls him out of his shell, and into the center of a deadly mystery that hangs over the town.",
-   "genres": [
-    "Liebesfilm",
-    "Mystery",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "M. Night Shyamalan"
-    ],
-    [
-     "Mit",
-     "Jake Gyllenhaal, Phoebe Dynevor, Ashley Walters, Julie Hagerty"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=P3WeIJ61V38",
-   "link": "https://www.themoviedb.org/movie/1425859",
-   "bild": "https://image.tmdb.org/t/p/w500/5hPNq5h2y8Ux6nPBRMEwZ8npVTp.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "movie-615121": {
    "titel": "The Thomas Crown Affair",
    "original": "The Thomas Crown Affair",
@@ -3556,6 +3615,39 @@
    "bild": "https://image.tmdb.org/t/p/w500/eu1OPnvIVhLmYwmxNiM5UAW0hM0.jpg",
    "news": []
   },
+  "movie-1554956": {
+   "titel": "Der Festländer",
+   "original": "The Incomer",
+   "leitsatz": null,
+   "handlung": "On an Orkney isle, siblings Isla and Sandy survive by hunting seabirds, retelling the stories of their ancestors, and defending the isle from dreaded \"Incomers\". Their world is upended with the arrival of an awkward council worker who has come to uproot them from their homeland.",
+   "genres": [
+    "Komödie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 42 Min"
+    ],
+    [
+     "Regie",
+     "Louis Paxton"
+    ],
+    [
+     "Mit",
+     "Domhnall Gleeson, Gayle Rankin, Grant O'Rourke, Emun Elliott"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=TNH4i8lrDFo",
+   "link": "https://www.themoviedb.org/movie/1554956",
+   "bild": "https://image.tmdb.org/t/p/w500/iccroKK1eUTdCnLfmp7I3YXwAKF.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "movie-1603262": {
    "titel": "Everest: The Other Side",
    "original": "Everest: The Other Side",
@@ -3597,39 +3689,6 @@
      "datum": "2026-10-30T12:09:00.000Z"
     }
    ],
-   "sprache": "en"
-  },
-  "movie-1554956": {
-   "titel": "Der Festländer",
-   "original": "The Incomer",
-   "leitsatz": null,
-   "handlung": "On an Orkney isle, siblings Isla and Sandy survive by hunting seabirds, retelling the stories of their ancestors, and defending the isle from dreaded \"Incomers\". Their world is upended with the arrival of an awkward council worker who has come to uproot them from their homeland.",
-   "genres": [
-    "Komödie",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 42 Min"
-    ],
-    [
-     "Regie",
-     "Louis Paxton"
-    ],
-    [
-     "Mit",
-     "Domhnall Gleeson, Gayle Rankin, Grant O'Rourke, Emun Elliott"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=TNH4i8lrDFo",
-   "link": "https://www.themoviedb.org/movie/1554956",
-   "bild": "https://image.tmdb.org/t/p/w500/iccroKK1eUTdCnLfmp7I3YXwAKF.jpg",
-   "news": [],
    "sprache": "en"
   },
   "movie-1372443": {
@@ -3704,6 +3763,35 @@
    ],
    "sprache": "en"
   },
+  "movie-1198746": {
+   "titel": "Above the Below",
+   "original": "Above the Below",
+   "leitsatz": null,
+   "handlung": "Sechzig Meilen über der Erde gerät eine Raumkapsel außer Kontrolle. An Board kämpfen Kapitän Jackson und seine beiden Mitastronauten Brooks und Rhodes verzweifelt darum, den Absturz zu verhindern - doch die Kapsel schlägt in den endlosen Weiten des Ozeans auf.",
+   "genres": [
+    "Action",
+    "Thriller",
+    "Science Fiction"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 27 Min"
+    ],
+    [
+     "Regie",
+     "Martin Owen, Idris Elba"
+    ],
+    [
+     "Mit",
+     "Idris Elba, Caitlin FitzGerald, Hero Fiennes Tiffin"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=iv15pVtCjK0",
+   "link": "https://www.themoviedb.org/movie/1198746",
+   "bild": "https://image.tmdb.org/t/p/w500/ytUoQYt0m7vbpnNqMrDJ7Prp0Aj.jpg",
+   "news": []
+  },
   "movie-1340208": {
    "titel": "Karōshi",
    "original": "Karōshi",
@@ -3759,64 +3847,6 @@
    "trailer": "https://www.youtube.com/watch?v=tTaFQqPIoGY",
    "link": "https://www.themoviedb.org/movie/1157869",
    "bild": "https://image.tmdb.org/t/p/w500/skVHP9WjL0N7urDMJGXev2RwoK8.jpg",
-   "news": []
-  },
-  "movie-1472813": {
-   "titel": "Le Journal d'une femme de chambre",
-   "original": "Le Journal d'une femme de chambre",
-   "leitsatz": null,
-   "handlung": "A young Romanian woman living in France works for a French family and joins a theatre company who are adapting Octave Mirbeau's The Diary of a Chambermaid.",
-   "genres": [
-    "Drama",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 34 Min"
-    ],
-    [
-     "Regie",
-     "Radu Jude"
-    ],
-    [
-     "Mit",
-     "Ana Dumitrașcu, Mélanie Thierry, Arnaud Baudoin, Marie Rivière"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1472813",
-   "bild": "https://image.tmdb.org/t/p/w500/4s2tTxThQlcgbbMpcWsbmVvlcYG.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1198746": {
-   "titel": "Above the Below",
-   "original": "Above the Below",
-   "leitsatz": null,
-   "handlung": "Sechzig Meilen über der Erde gerät eine Raumkapsel außer Kontrolle. An Board kämpfen Kapitän Jackson und seine beiden Mitastronauten Brooks und Rhodes verzweifelt darum, den Absturz zu verhindern - doch die Kapsel schlägt in den endlosen Weiten des Ozeans auf.",
-   "genres": [
-    "Action",
-    "Thriller",
-    "Science Fiction"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 27 Min"
-    ],
-    [
-     "Regie",
-     "Martin Owen, Idris Elba"
-    ],
-    [
-     "Mit",
-     "Idris Elba, Caitlin FitzGerald, Hero Fiennes Tiffin"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=iv15pVtCjK0",
-   "link": "https://www.themoviedb.org/movie/1198746",
-   "bild": "https://image.tmdb.org/t/p/w500/ytUoQYt0m7vbpnNqMrDJ7Prp0Aj.jpg",
    "news": []
   },
   "tv-224377": {
@@ -3915,6 +3945,38 @@
    "news": [],
    "sprache": "en"
   },
+  "tv-288672": {
+   "titel": "Pride and Prejudice",
+   "original": "Pride and Prejudice",
+   "leitsatz": null,
+   "handlung": "Elizabeth Bennet is an unmarried woman and the second of five daughters of Mr and Mrs Bennet from Hertfordshire, near London. The Bennet home can only be inherited by males in the family, so the pressure is on for the daughters to marry well or risk losing everything. While out in society, Elizabeth interacts with single men like Mr Darcy, an outwardly, misunderstood curmudgeon.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 6 Folgen"
+    ],
+    [
+     "Von",
+     "Dolly Alderton"
+    ],
+    [
+     "Mit",
+     "Emma Corrin, Jack Lowden, Olivia Colman, Rufus Sewell"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=inRhiLf42O4",
+   "link": "https://www.themoviedb.org/tv/288672",
+   "bild": "https://image.tmdb.org/t/p/w500/aqJpnEB4Vo6ergqMD7Sc2G7T1pe.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "tv-308007": {
    "titel": "The Altruists",
    "original": "The Altruists",
@@ -3945,38 +4007,6 @@
    "trailer": "https://www.youtube.com/watch?v=9aGeKSSyuhk",
    "link": "https://www.themoviedb.org/tv/308007",
    "bild": "https://image.tmdb.org/t/p/w500/foTyGlJ1jJh8QID5KwjsMytsJTV.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "tv-288672": {
-   "titel": "Pride and Prejudice",
-   "original": "Pride and Prejudice",
-   "leitsatz": null,
-   "handlung": "Elizabeth Bennet is an unmarried woman and the second of five daughters of Mr and Mrs Bennet from Hertfordshire, near London. The Bennet home can only be inherited by males in the family, so the pressure is on for the daughters to marry well or risk losing everything. While out in society, Elizabeth interacts with single men like Mr Darcy, an outwardly, misunderstood curmudgeon.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 6 Folgen"
-    ],
-    [
-     "Von",
-     "Dolly Alderton"
-    ],
-    [
-     "Mit",
-     "Emma Corrin, Jack Lowden, Olivia Colman, Rufus Sewell"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=inRhiLf42O4",
-   "link": "https://www.themoviedb.org/tv/288672",
-   "bild": "https://image.tmdb.org/t/p/w500/aqJpnEB4Vo6ergqMD7Sc2G7T1pe.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4069,37 +4099,6 @@
     }
    ]
   },
-  "tv-279382": {
-   "titel": "Eldorado",
-   "original": "Eldorado",
-   "leitsatz": null,
-   "handlung": "Im Jahr 1973 markierte die Ölkrise das Ende der „Trente Glorieuses“. Glücklicherweise gibt es in Frankreich zwar kein Öl, aber dafür Ideen. Einem belgischen Adligen und einem unbekannten italienischen Wissenschaftler gelang es, den mächtigen Konzern Elf Aquitaine von der Existenz eines revolutionären Verfahrens zu überzeugen, mit dem sich Öl aus der Luft aufspüren lässt.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 6 Folgen"
-    ],
-    [
-     "Von",
-     "Tarek Haoudy, Nacim Mehtar"
-    ],
-    [
-     "Mit",
-     "Jérémie Renier, Karim Leklou, Marie Colomb, Laurent Capelluto"
-    ],
-    [
-     "Sender/Dienst",
-     "ARTE"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/279382",
-   "bild": "https://image.tmdb.org/t/p/w500/jT2KO2QnY857A4r8V7HRgL5WAKK.jpg",
-   "news": []
-  },
   "tv-274395": {
    "titel": "The Land",
    "original": "The Land",
@@ -4132,6 +4131,37 @@
    "news": [],
    "sprache": "en"
   },
+  "tv-279382": {
+   "titel": "Eldorado",
+   "original": "Eldorado",
+   "leitsatz": null,
+   "handlung": "Im Jahr 1973 markierte die Ölkrise das Ende der „Trente Glorieuses“. Glücklicherweise gibt es in Frankreich zwar kein Öl, aber dafür Ideen. Einem belgischen Adligen und einem unbekannten italienischen Wissenschaftler gelang es, den mächtigen Konzern Elf Aquitaine von der Existenz eines revolutionären Verfahrens zu überzeugen, mit dem sich Öl aus der Luft aufspüren lässt.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 6 Folgen"
+    ],
+    [
+     "Von",
+     "Tarek Haoudy, Nacim Mehtar"
+    ],
+    [
+     "Mit",
+     "Jérémie Renier, Karim Leklou, Marie Colomb, Laurent Capelluto"
+    ],
+    [
+     "Sender/Dienst",
+     "ARTE"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/279382",
+   "bild": "https://image.tmdb.org/t/p/w500/jT2KO2QnY857A4r8V7HRgL5WAKK.jpg",
+   "news": []
+  },
   "tv-285887": {
    "titel": "Bloodaxe",
    "original": "Bloodaxe",
@@ -4161,68 +4191,6 @@
    "trailer": "https://www.youtube.com/watch?v=nT8Mdw5nKd0",
    "link": "https://www.themoviedb.org/tv/285887",
    "bild": "https://image.tmdb.org/t/p/w500/3dWNyzYFQfuL7pj3OdlSjyOr6yN.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "tv-314131": {
-   "titel": "MELANIA the Series",
-   "original": "MELANIA the Series",
-   "leitsatz": null,
-   "handlung": "Experience Melania Trump's transition to First Lady as she navigates the White House and puts her mission into action.",
-   "genres": [
-    "Dokumentarfilm",
-    "War & Politics"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 2 Folgen"
-    ],
-    [
-     "Mit",
-     "Melania Trump"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=vQhH-mOVtPs",
-   "link": "https://www.themoviedb.org/tv/314131",
-   "bild": "https://image.tmdb.org/t/p/w500/zSrsB8xxvTHGCy4Q4ci5FDxipna.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "tv-340280": {
-   "titel": "Gordon",
-   "original": "Gordon",
-   "leitsatz": null,
-   "handlung": "Aníbal Gordon rises from a small-time thief to a convicted murderer in Argentina during the '70s.",
-   "genres": [
-    "Drama",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 7 Folgen"
-    ],
-    [
-     "Von",
-     "Pablo Trapero"
-    ],
-    [
-     "Mit",
-     "Rodrigo de la Serna, Matías Recalt, Camila Peralta, Fiorella Bottaioli"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/340280",
-   "bild": "https://image.tmdb.org/t/p/w500/wzY5EjF8X1plKUWHwIRW6eNCqFU.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4258,34 +4226,66 @@
    "news": [],
    "sprache": "en"
   },
-  "tv-341164": {
-   "titel": "Oobah: Scams for a Better Tomorrow",
-   "original": "Oobah: Scams for a Better Tomorrow",
+  "tv-283220": {
+   "titel": "Quiztopia",
+   "original": "国民クイズ",
    "leitsatz": null,
-   "handlung": "Oobah Butler sets his sights on the world’s biggest industries and most powerful institutions. To infiltrate the worlds of wine, wellness, royalty, and more, Oobah hatches elaborate and increasingly audacious schemes by gaming online reviews, assuming made-up personas, and launching fake companies with entirely bogus backstories.",
+   "handlung": "Bei einem Sieg werden Wünsche wahr. Bei einer Niederlage folgt Zwangsarbeit. In einem alternativen Japan bricht Chaos aus, als Rebellen einen Quizshow-Moderator anvisieren.",
    "genres": [
-    "Komödie",
-    "Dokumentarfilm"
+    "Sci-Fi & Fantasy",
+    "Action & Adventure",
+    "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 5 Folgen"
+     "1 Staffel, 6 Folgen"
     ],
     [
      "Mit",
-     "Oobah Butler"
+     "山田孝之, 倉科カナ, 石田莉子, 瀬戸康史"
     ],
     [
      "Sender/Dienst",
-     "HBO"
+     "Netflix"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=i3fXiJ40WOw",
-   "link": "https://www.themoviedb.org/tv/341164",
-   "bild": "https://image.tmdb.org/t/p/w500/rWqhULNvOmIBHZymAPce2SlRr2T.jpg",
-   "news": [],
-   "sprache": "en"
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/283220",
+   "bild": "https://image.tmdb.org/t/p/w500/bxXkZhCj5CVLgkEP1Mh4mdy8wM6.jpg",
+   "news": []
+  },
+  "tv-340280": {
+   "titel": "Gordon",
+   "original": "Gordon",
+   "leitsatz": null,
+   "handlung": "Der Argentinier Aníbal Gordon wandelt sich in dieser Dramaserie nach dem Buch von Marcelo Larraquy in den 1970ern vom Kleinkriminellen zum verurteilten Mörder.",
+   "genres": [
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 7 Folgen"
+    ],
+    [
+     "Von",
+     "Pablo Trapero"
+    ],
+    [
+     "Mit",
+     "Rodrigo de la Serna, Matías Recalt, Camila Peralta, Fiorella Bottaioli"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/340280",
+   "bild": "https://image.tmdb.org/t/p/w500/wzY5EjF8X1plKUWHwIRW6eNCqFU.jpg",
+   "news": []
   },
   "tv-332839": {
    "titel": "Das Bestiengesetz",
@@ -4316,42 +4316,74 @@
    "news": [],
    "sprache": "en"
   },
-  "tv-283220": {
-   "titel": "Quiztopia",
-   "original": "国民クイズ",
+  "tv-314131": {
+   "titel": "MELANIA the Series",
+   "original": "MELANIA the Series",
    "leitsatz": null,
-   "handlung": "Bei einem Sieg werden Wünsche wahr. Bei einer Niederlage folgt Zwangsarbeit. In einem alternativen Japan bricht Chaos aus, als Rebellen einen Quizshow-Moderator anvisieren.",
+   "handlung": "Experience Melania Trump's transition to First Lady as she navigates the White House and puts her mission into action.",
    "genres": [
-    "Sci-Fi & Fantasy",
-    "Action & Adventure",
+    "Dokumentarfilm",
+    "War & Politics"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 2 Folgen"
+    ],
+    [
+     "Mit",
+     "Melania Trump"
+    ],
+    [
+     "Sender/Dienst",
+     "Prime Video"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=vQhH-mOVtPs",
+   "link": "https://www.themoviedb.org/tv/314131",
+   "bild": "https://image.tmdb.org/t/p/w500/zSrsB8xxvTHGCy4Q4ci5FDxipna.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "tv-289729": {
+   "titel": "Unaccustomed Earth",
+   "original": "Unaccustomed Earth",
+   "leitsatz": null,
+   "handlung": "When a health crisis forces a devoted mother and her family to return to the US, she confronts buried desires that upend her Indian American community.",
+   "genres": [
     "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 6 Folgen"
+     "1 Staffel, 1 Folgen"
+    ],
+    [
+     "Von",
+     "Nisha Ganatra"
     ],
     [
      "Mit",
-     "山田孝之, 倉科カナ, 石田莉子, 瀬戸康史"
+     "Freida Pinto, சித்தார்த், Indraneil Sengupta, Parveen Kaur"
     ],
     [
      "Sender/Dienst",
      "Netflix"
     ]
    ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/283220",
-   "bild": "https://image.tmdb.org/t/p/w500/bxXkZhCj5CVLgkEP1Mh4mdy8wM6.jpg",
-   "news": []
+   "trailer": "https://www.youtube.com/watch?v=2UUB54kGsKM",
+   "link": "https://www.themoviedb.org/tv/289729",
+   "bild": "https://image.tmdb.org/t/p/w500/woKoBzADQDl6roxcCERAnGLgYf9.jpg",
+   "news": [],
+   "sprache": "en"
   },
-  "tv-318420": {
-   "titel": "Os 12 Signos de Valentina",
-   "original": "Os 12 Signos de Valentina",
+  "tv-336592": {
+   "titel": "Win the Mall",
+   "original": "Win the Mall",
    "leitsatz": null,
-   "handlung": "Valentina is a young woman who, after being betrayed by her boyfriend—and blaming astrology for the end of their relationship—decides to take revenge in an unusual way: she sets out on a mission to hook up with a guy from every sign of the zodiac. Her plan is to document all these encounters and experiences in a videocast, but things get complicated when she falls for a guy who has \"no sign.\"",
+   "handlung": "Ten teams move into a mall where they must conquer storefronts, forge alliances and outsmart rivals to win $1 million in this reality competition series.",
    "genres": [
-    "Komödie"
+    "Reality"
    ],
    "fakten": [
     [
@@ -4359,21 +4391,17 @@
      "1 Staffel, 8 Folgen"
     ],
     [
-     "Von",
-     "Ray Tavares"
-    ],
-    [
      "Mit",
-     "Giovanna Grigio, Lucas Leto, José Condessa, Jéssica Marques"
+     "Haley Kalil"
     ],
     [
      "Sender/Dienst",
      "Netflix"
     ]
    ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/318420",
-   "bild": "https://image.tmdb.org/t/p/w500/ihjonCRR5gEUEH8RG2Qbk4Fy3HB.jpg",
+   "trailer": "https://www.youtube.com/watch?v=dnNvYvYk9yQ",
+   "link": "https://www.themoviedb.org/tv/336592",
+   "bild": "https://image.tmdb.org/t/p/w500/awZejt5KgmNzqlQIReQa4vJelx4.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4438,93 +4466,41 @@
    "news": [],
    "sprache": "en"
   },
-  "tv-337600": {
-   "titel": "The Boy Who Stole Billions?",
-   "original": "The Boy Who Stole Billions?",
+  "tv-22980": {
+   "titel": "Watch What Happens Live with Andy Cohen",
+   "original": "Watch What Happens Live with Andy Cohen",
    "leitsatz": null,
-   "handlung": "At 30, Sam Bankman-Fried ran a $32 billion crypto empire until he was convicted of stealing $8 billion in customer funds, one of the biggest frauds in U.S. history. For the first time, he tells his story from prison.",
+   "handlung": "Andy Cohen, Führungskraft beim Sender Bravo, diskutiert mit Prominenten und Reality-TV-Persönlichkeiten über Themen der Popkultur.",
    "genres": [
-    "Dokumentarfilm"
+    "Talk",
+    "Komödie"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 3 Folgen"
-    ],
-    [
-     "Mit",
-     "Sam Bankman-Fried"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=mrAqd_Yxq00",
-   "link": "https://www.themoviedb.org/tv/337600",
-   "bild": "https://image.tmdb.org/t/p/w500/hyeUQX6kwouMca3BY6afqbFkTwr.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "tv-289729": {
-   "titel": "Unaccustomed Earth",
-   "original": "Unaccustomed Earth",
-   "leitsatz": null,
-   "handlung": "When a health crisis forces a devoted mother and her family to return to the US, she confronts buried desires that upend her Indian American community.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 1 Folgen"
+     "24 Staffeln, 3250 Folgen"
     ],
     [
      "Von",
-     "Nisha Ganatra"
+     "Andy Cohen"
     ],
     [
      "Mit",
-     "Freida Pinto, சித்தார்த், Indraneil Sengupta, Parveen Kaur"
+     "Andy Cohen"
     ],
     [
      "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=2UUB54kGsKM",
-   "link": "https://www.themoviedb.org/tv/289729",
-   "bild": "https://image.tmdb.org/t/p/w500/woKoBzADQDl6roxcCERAnGLgYf9.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "tv-336592": {
-   "titel": "Win the Mall",
-   "original": "Win the Mall",
-   "leitsatz": null,
-   "handlung": "Ten teams move into a mall where they must conquer storefronts, forge alliances and outsmart rivals to win $1 million in this reality competition series.",
-   "genres": [
-    "Reality"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 8 Folgen"
+     "Bravo"
     ],
     [
-     "Mit",
-     "Haley Kalil"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
+     "TMDB-Wertung",
+     "4.9 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=dnNvYvYk9yQ",
-   "link": "https://www.themoviedb.org/tv/336592",
-   "bild": "https://image.tmdb.org/t/p/w500/awZejt5KgmNzqlQIReQa4vJelx4.jpg",
-   "news": [],
-   "sprache": "en"
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/22980",
+   "bild": "https://image.tmdb.org/t/p/w500/onSD9UXfJwrMXWhq7UY7hGF2S1h.jpg",
+   "news": []
   },
   "tv-387": {
    "titel": "SpongeBob Schwammkopf",
@@ -4629,51 +4605,6 @@
     }
    ]
   },
-  "tv-85077": {
-   "titel": "The Chosen",
-   "original": "The Chosen",
-   "leitsatz": null,
-   "handlung": "Das Leben des Christus gesehen durch die Augen derer, die ihn kannten.",
-   "genres": [
-    "Action & Adventure",
-    "Familie",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "6 Staffeln, 46 Folgen"
-    ],
-    [
-     "Von",
-     "Dallas Jenkins"
-    ],
-    [
-     "Mit",
-     "Elizabeth Tabish"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video, VidAngel"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.9 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=D93sE9d-M38",
-   "link": "https://www.themoviedb.org/tv/85077",
-   "bild": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "Prime Video’s ‘The Chosen’ Christmas Special Officially Sets December Release Date",
-     "link": "https://collider.com/the-chosen-the-three-kings-release-date-fox-december-2026/",
-     "datum": "2026-11-12T12:00:12.000Z"
-    }
-   ]
-  },
   "tv-1416": {
    "titel": "Grey's Anatomy",
    "original": "Grey's Anatomy",
@@ -4716,6 +4647,43 @@
      "datum": "2026-11-12T09:51:24.000Z"
     }
    ]
+  },
+  "tv-2734": {
+   "titel": "Law & Order: Special Victims Unit",
+   "original": "Law & Order: Special Victims Unit",
+   "leitsatz": null,
+   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Mystery"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "28 Staffeln, 602 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf"
+    ],
+    [
+     "Mit",
+     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=O53wYUc_fA4",
+   "link": "https://www.themoviedb.org/tv/2734",
+   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "news": []
   },
   "tv-84773": {
    "titel": "Der Herr der Ringe: Die Ringe der Macht",
@@ -4802,43 +4770,6 @@
    "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
    "link": "https://www.themoviedb.org/tv/456",
    "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
-   "news": []
-  },
-  "tv-2734": {
-   "titel": "Law & Order: Special Victims Unit",
-   "original": "Law & Order: Special Victims Unit",
-   "leitsatz": null,
-   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Mystery"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "28 Staffeln, 602 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf"
-    ],
-    [
-     "Mit",
-     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=O53wYUc_fA4",
-   "link": "https://www.themoviedb.org/tv/2734",
-   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
    "news": []
   },
   "tv-153312": {
@@ -4929,43 +4860,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
    "news": []
   },
-  "tv-4614": {
-   "titel": "Navy CIS",
-   "original": "NCIS",
-   "leitsatz": null,
-   "handlung": "Der Naval Crime Investigative Service wird dann gerufen, wenn Verbrechen begangen werden, die gegen den Uniform Code of Military Justice verstoßen und innerhalb der Navy stattfinden. Das Hauptquartier befindet sich in Washington D.C. und steht unter der Leitung von Special Agent Leroy Jethro Gibbs. Er selbst ist ein Veteran aus dem Irak-Krieg und hat mit moderner Technik wenig zu tun. Aus diesem Grund ermittelt er gemeinsam mit einem Elite-Team, bestehend aus dem Ballistik-Experten Tony DiNozzo, dem Technikspezialisten Tim McGee, der Forensikspezialistin Abby Sciuto sowie dem Gerichtsmediziner Ducky Mallard.",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Action & Adventure"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "24 Staffeln, 515 Folgen"
-    ],
-    [
-     "Von",
-     "Don McGill, Donald P. Bellisario"
-    ],
-    [
-     "Mit",
-     "Sean Murray, Wilmer Valderrama, Katrina Law, Brian Dietzen"
-    ],
-    [
-     "Sender/Dienst",
-     "CBS"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=BhtDgn31XZo",
-   "link": "https://www.themoviedb.org/tv/4614",
-   "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
-   "news": []
-  },
   "tv-549": {
    "titel": "Law & Order",
    "original": "Law & Order",
@@ -5017,6 +4911,51 @@
     }
    ]
   },
+  "tv-4614": {
+   "titel": "Navy CIS",
+   "original": "NCIS",
+   "leitsatz": null,
+   "handlung": "Der Naval Crime Investigative Service wird dann gerufen, wenn Verbrechen begangen werden, die gegen den Uniform Code of Military Justice verstoßen und innerhalb der Navy stattfinden. Das Hauptquartier befindet sich in Washington D.C. und steht unter der Leitung von Special Agent Leroy Jethro Gibbs. Er selbst ist ein Veteran aus dem Irak-Krieg und hat mit moderner Technik wenig zu tun. Aus diesem Grund ermittelt er gemeinsam mit einem Elite-Team, bestehend aus dem Ballistik-Experten Tony DiNozzo, dem Technikspezialisten Tim McGee, der Forensikspezialistin Abby Sciuto sowie dem Gerichtsmediziner Ducky Mallard.",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Action & Adventure"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "24 Staffeln, 515 Folgen"
+    ],
+    [
+     "Von",
+     "Don McGill, Donald P. Bellisario"
+    ],
+    [
+     "Mit",
+     "Sean Murray, Wilmer Valderrama, Katrina Law, Brian Dietzen"
+    ],
+    [
+     "Sender/Dienst",
+     "CBS"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=BhtDgn31XZo",
+   "link": "https://www.themoviedb.org/tv/4614",
+   "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
+   "news": [
+    {
+     "quelle": "DWDL",
+     "art": "film",
+     "titel": "\"Navy CIS\" verabschiedet sich mit leicht steigenden Quoten",
+     "link": "https://www.dwdl.de/zahlenzentrale/108606/navy_cis_verabschiedet_sich_mit_leicht_steigenden_quoten/",
+     "datum": "2026-11-18T08:11:00.000Z"
+    }
+   ]
+  },
   "tv-279246": {
    "titel": "Die neuvermählte Kaiserin",
    "original": "재혼 황후",
@@ -5056,43 +4995,6 @@
      "datum": "2026-11-01T15:22:13.000Z"
     }
    ]
-  },
-  "tv-65334": {
-   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
-   "original": "Miraculous, les aventures de Ladybug et Chat Noir",
-   "leitsatz": null,
-   "handlung": "Marinette und Adrien sind zwei Schüler – fast – wie andere auch. Bei der kleinsten Bedrohung von Paris werden sie zu Ladybug und Cat Noir. Ihre Mission: Die Akumas des mysteriösen Hawk Moth fangen, der die Pariser in Super-Bösewichte verwandelt. Obwohl die beiden Helden ein Team bilden, wissen sie wenig voneinander: Marinette weiß nicht, dass sich hinter Cat Noir Adrien verbirgt, der Junge, in den sie heimlich verliebt ist; und Adrien, dessen Herzen für Ladybug schlägt, ignoriert, dass sich hinter dem Kostüm der Superheldin das nette und zerstreute Mädchen aus seiner Klasse verbirgt",
-   "genres": [
-    "Action & Adventure",
-    "Animation",
-    "Kids"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "7 Staffeln, 181 Folgen"
-    ],
-    [
-     "Von",
-     "Thomas Astruc, Jeremy Zag"
-    ],
-    [
-     "Mit",
-     "Anouck Hautbois, Benjamin Bollen, Marie Nonnenmacher, Thierry Kazazian"
-    ],
-    [
-     "Sender/Dienst",
-     "TF1"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.1 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=xK9KUNoMQCc",
-   "link": "https://www.themoviedb.org/tv/65334",
-   "bild": "https://image.tmdb.org/t/p/w500/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
-   "news": []
   },
   "tv-44006": {
    "titel": "Chicago Fire",
@@ -5150,6 +5052,80 @@
      "datum": "2026-11-05T03:00:00.000Z"
     }
    ]
+  },
+  "tv-65334": {
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "original": "Miraculous, les aventures de Ladybug et Chat Noir",
+   "leitsatz": null,
+   "handlung": "Marinette und Adrien sind zwei Schüler – fast – wie andere auch. Bei der kleinsten Bedrohung von Paris werden sie zu Ladybug und Cat Noir. Ihre Mission: Die Akumas des mysteriösen Hawk Moth fangen, der die Pariser in Super-Bösewichte verwandelt. Obwohl die beiden Helden ein Team bilden, wissen sie wenig voneinander: Marinette weiß nicht, dass sich hinter Cat Noir Adrien verbirgt, der Junge, in den sie heimlich verliebt ist; und Adrien, dessen Herzen für Ladybug schlägt, ignoriert, dass sich hinter dem Kostüm der Superheldin das nette und zerstreute Mädchen aus seiner Klasse verbirgt",
+   "genres": [
+    "Action & Adventure",
+    "Animation",
+    "Kids"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "7 Staffeln, 181 Folgen"
+    ],
+    [
+     "Von",
+     "Thomas Astruc, Jeremy Zag"
+    ],
+    [
+     "Mit",
+     "Anouck Hautbois, Benjamin Bollen, Marie Nonnenmacher, Thierry Kazazian"
+    ],
+    [
+     "Sender/Dienst",
+     "TF1"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.1 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=xK9KUNoMQCc",
+   "link": "https://www.themoviedb.org/tv/65334",
+   "bild": "https://image.tmdb.org/t/p/w500/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
+   "news": []
+  },
+  "tv-303745": {
+   "titel": "Undercover-Liebe",
+   "original": "나의 유죄인간",
+   "leitsatz": null,
+   "handlung": "Yoon Yi-jun, der Erbe der Taekang-Gruppe, ist der Hauptverdächtige in einem Mordfall. Um die Wahrheit aufzudecken, schleust sich Kang Jae-hee als männlicher Sekretär ein. Doch je näher sie der Wahrheit kommen, desto näher kommen sich auch Yi-jun und Jae-hee. Werden Jae-hee, die ihre wahre Identität verbirgt, und Yi-jun, der ein Geheimnis hütet, einander ihre wahren Gefühle offenbaren?",
+   "genres": [
+    "Komödie",
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 12 Folgen"
+    ],
+    [
+     "Von",
+     "문수정"
+    ],
+    [
+     "Mit",
+     "임시완, Seol In-a, 김정현, 연우"
+    ],
+    [
+     "Sender/Dienst",
+     "tvN"
+    ],
+    [
+     "TMDB-Wertung",
+     "9.1 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=Q7Xj7sASXSU",
+   "link": "https://www.themoviedb.org/tv/303745",
+   "bild": "https://image.tmdb.org/t/p/w500/fFcn3MngCVaQ19kAraXgmIOshN0.jpg",
+   "news": []
   },
   "tv-2190": {
    "titel": "South Park",
@@ -5209,42 +5185,129 @@
     }
    ]
   },
-  "tv-303745": {
-   "titel": "Undercover-Liebe",
-   "original": "나의 유죄인간",
+  "tv-30983": {
+   "titel": "Detektiv Conan",
+   "original": "名探偵コナン",
    "leitsatz": null,
-   "handlung": "Yoon Yi-jun, der Erbe der Taekang-Gruppe, ist der Hauptverdächtige in einem Mordfall. Um die Wahrheit aufzudecken, schleust sich Kang Jae-hee als männlicher Sekretär ein. Doch je näher sie der Wahrheit kommen, desto näher kommen sich auch Yi-jun und Jae-hee. Werden Jae-hee, die ihre wahre Identität verbirgt, und Yi-jun, der ein Geheimnis hütet, einander ihre wahren Gefühle offenbaren?",
+   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
    "genres": [
-    "Komödie",
-    "Drama",
-    "Krimi"
+    "Animation",
+    "Krimi",
+    "Mystery",
+    "Komödie"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 12 Folgen"
-    ],
-    [
-     "Von",
-     "문수정"
+     "1 Staffel, 1219 Folgen"
     ],
     [
      "Mit",
-     "임시완, Seol In-a, 김정현, 연우"
+     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
     ],
     [
      "Sender/Dienst",
-     "tvN"
+     "YTV"
     ],
     [
      "TMDB-Wertung",
-     "9.1 / 10"
+     "8.0 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=Q7Xj7sASXSU",
-   "link": "https://www.themoviedb.org/tv/303745",
-   "bild": "https://image.tmdb.org/t/p/w500/fFcn3MngCVaQ19kAraXgmIOshN0.jpg",
+   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
+   "link": "https://www.themoviedb.org/tv/30983",
+   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
    "news": []
+  },
+  "tv-85077": {
+   "titel": "The Chosen",
+   "original": "The Chosen",
+   "leitsatz": null,
+   "handlung": "Das Leben des Christus gesehen durch die Augen derer, die ihn kannten.",
+   "genres": [
+    "Action & Adventure",
+    "Familie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "6 Staffeln, 46 Folgen"
+    ],
+    [
+     "Von",
+     "Dallas Jenkins"
+    ],
+    [
+     "Mit",
+     "Elizabeth Tabish"
+    ],
+    [
+     "Sender/Dienst",
+     "Prime Video, VidAngel"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=D93sE9d-M38",
+   "link": "https://www.themoviedb.org/tv/85077",
+   "bild": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "news": [
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "Prime Video’s ‘The Chosen’ Christmas Special Officially Sets December Release Date",
+     "link": "https://collider.com/the-chosen-the-three-kings-release-date-fox-december-2026/",
+     "datum": "2026-11-12T12:00:12.000Z"
+    }
+   ]
+  },
+  "tv-75219": {
+   "titel": "9-1-1 Notruf L.A.",
+   "original": "9-1-1",
+   "leitsatz": null,
+   "handlung": "Die Serie folgt den Leben der Ersthelfer von Los Angeles: Polizisten, Sanitäter, Feuerwehrleute und Mitarbeitern der Leitstelle.",
+   "genres": [
+    "Drama",
+    "Krimi",
+    "Action & Adventure"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "10 Staffeln, 149 Folgen"
+    ],
+    [
+     "Von",
+     "Ryan Murphy, Brad Falchuk"
+    ],
+    [
+     "Mit",
+     "Angela Bassett, Jennifer Love Hewitt, Oliver Stark, Aisha Hinds"
+    ],
+    [
+     "Sender/Dienst",
+     "ABC, FOX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=R4vKvvmt9vk",
+   "link": "https://www.themoviedb.org/tv/75219",
+   "bild": "https://image.tmdb.org/t/p/w500/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Wann kehren „Grey‘s Anatomy“, „High Potential“, „9-1-1“ und „The Rookie“ mit neuen Staffeln zurück?",
+     "link": "https://www.serienjunkies.de/news/serien/abc-midseason-2027-alle-starttermine-im-ueberblick-94580446.html",
+     "datum": "2026-11-09T07:59:49.000Z"
+    }
+   ]
   },
   "tv-58841": {
    "titel": "Chicago P.D.",
@@ -5297,38 +5360,37 @@
     }
    ]
   },
-  "tv-30983": {
-   "titel": "Detektiv Conan",
-   "original": "名探偵コナン",
+  "tv-312359": {
+   "titel": "Dragon Ball Super: Beerus",
+   "original": "ドラゴンボール超 ビルス",
    "leitsatz": null,
-   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
+   "handlung": "Jahre nach dem erbitterten Kampf gegen Majin Boo herrscht auf der Erde endlich Frieden. Doch dann erwacht Beerus, der Gott der Zerstörung, aus seinem langen Schlaf. Als er von dem Saiyajin hört, der Freezer besiegt hat, taucht er unvermittelt bei Son Goku auf – und die ganze Erde gerät in Gefahr. Goku und seine Freunde stellen sich einem Kampf, der das Universum erschüttert.",
    "genres": [
     "Animation",
-    "Krimi",
-    "Mystery",
-    "Komödie"
+    "Action & Adventure",
+    "Sci-Fi & Fantasy"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 1219 Folgen"
+     "1 Staffel, 19 Folgen"
     ],
     [
      "Mit",
-     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
+     "Masako Nozawa, Ryō Horikawa, 渡辺菜生子, Unsho Ishizuka"
     ],
     [
      "Sender/Dienst",
-     "YTV"
+     "Fuji TV, Tokai Television Broadcasting"
     ],
     [
      "TMDB-Wertung",
-     "8.0 / 10"
+     "9.6 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
-   "link": "https://www.themoviedb.org/tv/30983",
-   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "trailer": "https://www.youtube.com/watch?v=lJMXyiENRAM",
+   "link": "https://www.themoviedb.org/tv/312359",
+   "bild": "https://image.tmdb.org/t/p/w500/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
    "news": []
   },
   "tv-259909": {
@@ -5390,39 +5452,6 @@
     }
    ]
   },
-  "tv-312359": {
-   "titel": "Dragon Ball Super: Beerus",
-   "original": "ドラゴンボール超 ビルス",
-   "leitsatz": null,
-   "handlung": "Jahre nach dem erbitterten Kampf gegen Majin Boo herrscht auf der Erde endlich Frieden. Doch dann erwacht Beerus, der Gott der Zerstörung, aus seinem langen Schlaf. Als er von dem Saiyajin hört, der Freezer besiegt hat, taucht er unvermittelt bei Son Goku auf – und die ganze Erde gerät in Gefahr. Goku und seine Freunde stellen sich einem Kampf, der das Universum erschüttert.",
-   "genres": [
-    "Animation",
-    "Action & Adventure",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 19 Folgen"
-    ],
-    [
-     "Mit",
-     "Masako Nozawa, Ryō Horikawa, 渡辺菜生子, Unsho Ishizuka"
-    ],
-    [
-     "Sender/Dienst",
-     "Fuji TV, Tokai Television Broadcasting"
-    ],
-    [
-     "TMDB-Wertung",
-     "9.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=lJMXyiENRAM",
-   "link": "https://www.themoviedb.org/tv/312359",
-   "bild": "https://image.tmdb.org/t/p/w500/sGuCmIy8kEmx3FWZyMj654rF6g8.jpg",
-   "news": []
-  },
   "tv-3034": {
    "titel": "Tatort",
    "original": "Tatort",
@@ -5451,50 +5480,42 @@
    "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
    "news": []
   },
-  "tv-75219": {
-   "titel": "9-1-1 Notruf L.A.",
-   "original": "9-1-1",
+  "tv-80748": {
+   "titel": "FBI",
+   "original": "FBI",
    "leitsatz": null,
-   "handlung": "Die Serie folgt den Leben der Ersthelfer von Los Angeles: Polizisten, Sanitäter, Feuerwehrleute und Mitarbeitern der Leitstelle.",
+   "handlung": "Die Agenten des New Yorker Büro des FBI arbeiten rund um die Uhr daran, die Stadt und ihr Land vor Terror, organisiertem Verbrechen und fremden Spionen zu beschützen. Unter der Leitung von Special Agent in Charge Dana Mosier setzt sich ihr Team aus verschiedenen Spezialisten mit einzigartigen Fähigkeiten zusammen.",
    "genres": [
-    "Drama",
     "Krimi",
-    "Action & Adventure"
+    "Action & Adventure",
+    "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "10 Staffeln, 149 Folgen"
+     "9 Staffeln, 167 Folgen"
     ],
     [
      "Von",
-     "Ryan Murphy, Brad Falchuk"
+     "Dick Wolf, Craig Turk"
     ],
     [
      "Mit",
-     "Angela Bassett, Jennifer Love Hewitt, Oliver Stark, Aisha Hinds"
+     "Missy Peregrym, Zeeko Zaki, John Boyd, Jeremy Sisto"
     ],
     [
      "Sender/Dienst",
-     "ABC, FOX"
+     "CBS"
     ],
     [
      "TMDB-Wertung",
-     "8.2 / 10"
+     "7.9 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=R4vKvvmt9vk",
-   "link": "https://www.themoviedb.org/tv/75219",
-   "bild": "https://image.tmdb.org/t/p/w500/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Wann kehren „Grey‘s Anatomy“, „High Potential“, „9-1-1“ und „The Rookie“ mit neuen Staffeln zurück?",
-     "link": "https://www.serienjunkies.de/news/serien/abc-midseason-2027-alle-starttermine-im-ueberblick-94580446.html",
-     "datum": "2026-11-09T07:59:49.000Z"
-    }
-   ]
+   "trailer": "https://www.youtube.com/watch?v=r-btgaBL6-4",
+   "link": "https://www.themoviedb.org/tv/80748",
+   "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "news": []
   }
  }
 }
