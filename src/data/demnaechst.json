@@ -279,7 +279,7 @@
    "datum": "2026-11-19",
    "text": "Neue Serie",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/foTyGlJ1jJh8QID5KwjsMytsJTV.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/hiX70sXdvEPVE11QqmLuaX16gdh.jpg",
    "anbieter": [
     "Netflix"
    ],
@@ -432,21 +432,6 @@
    ],
    "link": "https://www.themoviedb.org/tv/30983",
    "info": "tv-30983"
-  },
-  {
-   "id": "tv-259909-s2-2026-11-22",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Dexter: Wiedererwachen",
-   "datum": "2026-11-22",
-   "text": "S2E4",
-   "jahr": "2025",
-   "bild": "https://image.tmdb.org/t/p/w342/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
-   "anbieter": [
-    "Paramount+"
-   ],
-   "link": "https://www.themoviedb.org/tv/259909",
-   "info": "tv-259909"
   },
   {
    "id": "tv-456-s38-2026-11-22",
@@ -744,21 +729,6 @@
    "info": "movie-1209723"
   },
   {
-   "id": "tv-259909-s2-2026-11-29",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Dexter: Wiedererwachen",
-   "datum": "2026-11-29",
-   "text": "S2E5",
-   "jahr": "2025",
-   "bild": "https://image.tmdb.org/t/p/w342/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
-   "anbieter": [
-    "Paramount+"
-   ],
-   "link": "https://www.themoviedb.org/tv/259909",
-   "info": "tv-259909"
-  },
-  {
    "id": "tv-456-s38-2026-11-29",
    "art": "serie",
    "typ": "folge",
@@ -986,21 +956,6 @@
    "info": "tv-153312"
   },
   {
-   "id": "tv-259909-s2-2026-12-06",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Dexter: Wiedererwachen",
-   "datum": "2026-12-06",
-   "text": "S2E6",
-   "jahr": "2025",
-   "bild": "https://image.tmdb.org/t/p/w342/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
-   "anbieter": [
-    "Paramount+"
-   ],
-   "link": "https://www.themoviedb.org/tv/259909",
-   "info": "tv-259909"
-  },
-  {
    "id": "tv-456-s38-2026-12-06",
    "art": "serie",
    "typ": "folge",
@@ -1097,6 +1052,53 @@
    "info": "tv-4614"
   },
   {
+   "id": "tv-44006-s15-2026-12-09",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago Fire",
+   "datum": "2026-12-09",
+   "text": "S15E8",
+   "jahr": "2012",
+   "bild": "https://image.tmdb.org/t/p/w342/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
+   "anbieter": [
+    "WOW"
+   ],
+   "link": "https://www.themoviedb.org/tv/44006",
+   "info": "tv-44006"
+  },
+  {
+   "id": "tv-62650-s12-2026-12-09",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago Med",
+   "datum": "2026-12-09",
+   "text": "S12E8",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "anbieter": [
+    "WOW"
+   ],
+   "link": "https://www.themoviedb.org/tv/62650",
+   "info": "tv-62650"
+  },
+  {
+   "id": "tv-58841-s14-2026-12-09",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago P.D.",
+   "datum": "2026-12-09",
+   "text": "S14E8",
+   "jahr": "2014",
+   "bild": "https://image.tmdb.org/t/p/w342/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
+   "anbieter": [
+    "Netflix",
+    "WOW",
+    "RTL+"
+   ],
+   "link": "https://www.themoviedb.org/tv/58841",
+   "info": "tv-58841"
+  },
+  {
    "id": "movie-1117898-kino",
    "art": "film",
    "typ": "kino",
@@ -1123,21 +1125,6 @@
    ],
    "link": "https://www.themoviedb.org/tv/153312",
    "info": "tv-153312"
-  },
-  {
-   "id": "tv-259909-s2-2026-12-13",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Dexter: Wiedererwachen",
-   "datum": "2026-12-13",
-   "text": "S2E7",
-   "jahr": "2025",
-   "bild": "https://image.tmdb.org/t/p/w342/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
-   "anbieter": [
-    "Paramount+"
-   ],
-   "link": "https://www.themoviedb.org/tv/259909",
-   "info": "tv-259909"
   },
   {
    "id": "tv-456-s38-2026-12-13",
@@ -1178,7 +1165,7 @@
    "datum": "2026-12-16",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/1zqWkLwC1zLBBBtIWzmkmWeMWnT.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1003596",
    "info": "movie-1003596"
@@ -1240,21 +1227,6 @@
    "info": "tv-153312"
   },
   {
-   "id": "tv-259909-s2-2026-12-20",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Dexter: Wiedererwachen",
-   "datum": "2026-12-20",
-   "text": "S2E8",
-   "jahr": "2025",
-   "bild": "https://image.tmdb.org/t/p/w342/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
-   "anbieter": [
-    "Paramount+"
-   ],
-   "link": "https://www.themoviedb.org/tv/259909",
-   "info": "tv-259909"
-  },
-  {
    "id": "tv-456-s38-2026-12-20",
    "art": "serie",
    "typ": "folge",
@@ -1312,21 +1284,6 @@
    "info": "tv-224377"
   },
   {
-   "id": "tv-259909-s2-2026-12-27",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Dexter: Wiedererwachen",
-   "datum": "2026-12-27",
-   "text": "S2E9",
-   "jahr": "2025",
-   "bild": "https://image.tmdb.org/t/p/w342/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
-   "anbieter": [
-    "Paramount+"
-   ],
-   "link": "https://www.themoviedb.org/tv/259909",
-   "info": "tv-259909"
-  },
-  {
    "id": "tv-456-s38-2026-12-27",
    "art": "serie",
    "typ": "folge",
@@ -1353,21 +1310,6 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1437981",
    "info": "movie-1437981"
-  },
-  {
-   "id": "tv-259909-s2-2027-01-03",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Dexter: Wiedererwachen",
-   "datum": "2027-01-03",
-   "text": "S2E10",
-   "jahr": "2025",
-   "bild": "https://image.tmdb.org/t/p/w342/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
-   "anbieter": [
-    "Paramount+"
-   ],
-   "link": "https://www.themoviedb.org/tv/259909",
-   "info": "tv-259909"
   },
   {
    "id": "tv-456-s38-2027-01-03",
@@ -1558,7 +1500,7 @@
    "datum": "2027-02-04",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/nwgEAaNjsnzTa1QFDE8kDS5VsDr.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/pNaHwxMkymhGky2VXl3ARd3hc7o.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1165366",
    "info": "movie-1165366"
@@ -1631,6 +1573,19 @@
    "info": "tv-274395"
   },
   {
+   "id": "movie-1165369-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "De Gaulle: Zeit der Freiheit",
+   "datum": "2027-03-04",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/uYmzx1mFcgYgHfp0U9CVLvXFhcU.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1165369",
+   "info": "movie-1165369"
+  },
+  {
    "id": "movie-1497464-kino",
    "art": "film",
    "typ": "kino",
@@ -1642,19 +1597,6 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1497464",
    "info": "movie-1497464"
-  },
-  {
-   "id": "movie-1599230-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "Elsinore",
-   "datum": "2027-03-11",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/kohUtEueIVyDXC30MaOdi36aAwn.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1599230",
-   "info": "movie-1599230"
   },
   {
    "id": "movie-1476614-kino",
@@ -1704,6 +1646,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/h2R2dPbIyjxXorGL6V8Mau01hJy.jpg",
    "news": [
     {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘Spider-Man: Brand New Day’ Re-Release: First Look At Rosario Dawson As Night Nurse In Deleted Scene",
+     "link": "https://deadline.com/2026/11/spider-man-brand-new-day-rosario-dawson-nurse-deleted-scene-1237229518/",
+     "datum": "2026-11-19T21:15:43.000Z"
+    },
+    {
      "quelle": "Moviepilot",
      "art": "film",
      "titel": "Spider-Man: Brand New Day kommt in Kürze zu Netflix: Das steckt hinter der Streaming-Sensation",
@@ -1730,13 +1679,6 @@
      "titel": "‘Spider-Man: Brand New Day’ Returning to Theaters with a New Rosario Dawson Cameo — and Box Office Records and Oscar Noms in Mind",
      "link": "https://www.indiewire.com/news/breaking-news/spider-man-brand-new-day-returning-theaters-extended-cut-1235228526/",
      "datum": "2026-11-16T23:37:56.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "‘Spider-Man: Brand New Day’ Extended Cut Sets December Release Date in Theaters",
-     "link": "https://variety.com/2026/film/news/spider-man-brand-new-day-extended-cut-release-date-1236949654/",
-     "datum": "2026-11-16T23:00:00.000Z"
     }
    ]
   },
@@ -1766,7 +1708,7 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=JznHmU4yrV4",
    "link": "https://www.themoviedb.org/movie/1003596",
-   "bild": "https://image.tmdb.org/t/p/w500/cWXtJhrlruF8CeYuaBGE8vdj3Q9.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/1zqWkLwC1zLBBBtIWzmkmWeMWnT.jpg",
    "news": [
     {
      "quelle": "Moviepilot",
@@ -2097,7 +2039,7 @@
     ],
     [
      "Regie",
-     "Alex Huston Fischer, Eleanor Wilson"
+     "Eleanor Wilson, Alex Huston Fischer"
     ],
     [
      "Mit",
@@ -2129,135 +2071,73 @@
    ],
    "sprache": "en"
   },
-  "movie-1401459": {
-   "titel": "Fjord",
-   "original": "Fjord",
-   "leitsatz": null,
-   "handlung": "Nach dem Tod von Mihais Eltern lassen Mihai und Lisbet Gheorghiu ihr Leben in Rumänien hinter sich und ziehen mit ihren Kindern in ein abgelegenes Dorf in Norwegen – in der Hoffnung, in der Nähe von Lisbets Familie einen Neuanfang zu wagen. Dort kommen sie ihren Nachbarn, der Familie Halberg, näher, deren Herzlichkeit ihnen Hoffnung auf einen neuen Anfang gibt. Doch der zerbrechliche Frieden gerät ins Wanken, als die kleine Tochter der Familie Gheorghiu, Elia, mit blauen Flecken am Körper in der Schule erscheint.",
+  "movie-1286656": {
+   "titel": "I Play Rocky",
+   "original": "I Play Rocky",
+   "leitsatz": "Sein Traum. Sein Wille. Sein Weg.",
+   "handlung": "Die Entstehung des Boxerfilms „Rocky“ (1976) ist selbst Stoff für großes Kino: Der damals unbekannte Schauspieler Sylvester Stallone schreibt innerhalb von nur dreieinhalb Tagen ein Drehbuch und ist fest davon überzeugt, für die Hauptrolle bestimmt zu sein. Obwohl ihm immer wieder Steine in den Weg gelegt werden, setzt der später weltbekannte Actionstar alles auf eine Karte und beharrt trotz scheinbar unüberwindbarer Widerstände darauf, selbst als Rocky Balboa vor der Kamera zu stehen. Der Rest ist Filmgeschichte.",
    "genres": [
-    "Drama"
+    "Drama",
+    "Historie"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 26 Min"
+     "2 Std 8 Min"
     ],
     [
      "Regie",
-     "Cristian Mungiu"
+     "Peter Farrelly"
     ],
     [
      "Mit",
-     "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen"
+     "Anthony Ippolito, AnnaSophia Robb, P.J. Byrne, Toby Kebbell"
     ],
     [
      "TMDB-Wertung",
-     "7.2 / 10"
+     "8.5 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=frg59VOungA",
-   "link": "https://www.themoviedb.org/movie/1401459",
-   "bild": "https://image.tmdb.org/t/p/w500/rIhqYAVPmMQaTCiBJI5o21KDFM2.jpg",
+   "trailer": "https://www.youtube.com/watch?v=VbUZakXlcMc",
+   "link": "https://www.themoviedb.org/movie/1286656",
+   "bild": "https://image.tmdb.org/t/p/w500/fViZxjUGsR6IQD77FP22PIMfk0R.jpg",
    "news": [
     {
-     "quelle": "Variety",
+     "quelle": "IndieWire",
      "art": "film",
-     "titel": "Marrakech Film Festival Grows Its Awards-Season Clout With ‘Artificial,’ ‘The Debut,’ ‘Fjord’ and Other Oscar Hopefuls",
-     "link": "https://variety.com/2026/film/global/artificial-the-debut-oscar-campaigns-marrakech-1236951607/",
-     "datum": "2026-11-18T11:17:24.000Z"
+     "titel": "Before He Played Sylvester Stallone in ‘I Play Rocky,’ Star Anthony Ippolito Fought Hard for His Own Big Break",
+     "link": "https://www.indiewire.com/features/interviews/sylvester-stallone-i-play-rocky-star-anthony-ippolito-1235225053/",
+     "datum": "2026-11-19T19:00:00.000Z"
     },
     {
-     "quelle": "The Hollywood Reporter",
+     "quelle": "IndieWire",
      "art": "film",
-     "titel": "‘Fatherland,’ ‘La Bola Negra,’ ‘Fjord’ Lead European Film Award Nominations",
-     "link": "https://www.hollywoodreporter.com/movies/movie-news/fatherland-la-bola-negra-european-film-award-nominations-1236754942/",
-     "datum": "2026-11-14T10:30:00.000Z"
+     "titel": "‘I Play Rocky’ Star P.J. Byrne Isn’t a Scene-Stealer — He’s Something Better",
+     "link": "https://www.indiewire.com/awards/consider-this/i-play-rocky-p-j-byrne-scene-stealer-irwin-winkler-1235228652/",
+     "datum": "2026-11-18T20:30:00.000Z"
     },
     {
-     "quelle": "Variety",
+     "quelle": "Collider",
      "art": "film",
-     "titel": "Palme d’Or Winner ‘Fjord’ to Open 26th European Film Festival Malaysia, Astro First to Stream Selected Titles",
-     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-european-film-festival-malaysia-1236945991/",
-     "datum": "2026-11-12T11:23:19.000Z"
+     "titel": "I Play Rocky's Final Fight Had to Match Every Punch | Set Stories",
+     "link": "https://collider.com/video/i-play-rocky-s-final-fight-had-to-match-every-punch-set-stories/",
+     "datum": "2026-11-15T19:15:12.000Z"
     },
     {
-     "quelle": "Variety",
+     "quelle": "Moviepilot",
      "art": "film",
-     "titel": "Cristian Mungiu’s Palme d’Or Winner ‘Fjord’ Takes Jakarta World Cinema Audience Award as Short Film Winners Land Debut Feature Funding",
-     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-jakarta-world-cinema-audience-award-1236942247/",
-     "datum": "2026-11-08T03:50:26.000Z"
+     "titel": "I Play Rocky ist ein verklärtes Sylvester Stallone-Biopic mit fast schon ulkigem Schönheitsfehler",
+     "link": "https://www.moviepilot.de/news/i-play-rocky-ist-ein-anhimmelndes-stallone-biopic-1165385",
+     "datum": "2026-11-07T10:30:00.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "‘I Play Rocky’ Celebrates Sylvester Stallone the Screenwriter — but Rocky Balboa Was Only the Beginning",
+     "link": "https://www.indiewire.com/features/commentary/sylvester-stallone-screenwriter-rocky-rambo-1235225006/",
+     "datum": "2026-11-06T15:00:00.000Z"
     }
    ]
-  },
-  "movie-822653": {
-   "titel": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
-   "original": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-   "leitsatz": null,
-   "handlung": "Nach den Ereignissen von „Rebellion“ scheint die Welt im Gleichgewicht zu sein – doch dieser Frieden ist brüchig. Als eine neue Bedrohung im Zusammenhang mit der Walpurgisnacht auftaucht, ist Homura Akemi gezwungen, sich den Konsequenzen ihrer Entscheidungen zu stellen und sich zu fragen, wie weit sie bereit ist zu gehen, um Madoka zu beschützen.",
-   "genres": [
-    "Animation",
-    "Drama",
-    "Mystery",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 0 Min"
-    ],
-    [
-     "Regie",
-     "宮本幸裕, Akiyuki Simbo"
-    ],
-    [
-     "Mit",
-     "Aoi Yuki, Chiwa Saito, Eri Kitamura, Ai Nonaka"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=lAIYKMbMMcg",
-   "link": "https://www.themoviedb.org/movie/822653",
-   "bild": "https://image.tmdb.org/t/p/w500/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
-   "news": []
-  },
-  "movie-1538497": {
-   "titel": "Wie verhext",
-   "original": "Hexed",
-   "leitsatz": "Wir warten schon auf dich.",
-   "handlung": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
-   "genres": [
-    "Abenteuer",
-    "Animation",
-    "Familie",
-    "Fantasy",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 43 Min"
-    ],
-    [
-     "Regie",
-     "Jason Hand, ฝน วีระสุนทร"
-    ],
-    [
-     "Mit",
-     "Hailee Steinfeld, Rashida Jones, Jodie Foster, Walton Goggins"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=6YYMqS8_Bp0",
-   "link": "https://www.themoviedb.org/movie/1538497",
-   "bild": "https://image.tmdb.org/t/p/w500/lMYJ4ogEBiB6pTxi5sm73kBsxiE.jpg",
-   "news": [
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Ariana Grande Comedy ‘Focker-In-Law’  Disney’s ‘Hexed’ Hope To Lure $40M-$50M Apiece Over Thanksgiving Box Office Stretch",
-     "link": "https://deadline.com/2026/11/ariana-grande-focker-in-law-hexed-box-office-projections-1237215651/",
-     "datum": "2026-11-06T18:32:16.000Z"
-    }
-   ],
-   "sprache": "en"
   },
   "movie-1458099": {
    "titel": "The Only Living Pickpocket in New York",
@@ -2306,6 +2186,136 @@
      "datum": "2026-10-30T19:53:37.000Z"
     }
    ]
+  },
+  "movie-1401459": {
+   "titel": "Fjord",
+   "original": "Fjord",
+   "leitsatz": null,
+   "handlung": "Nach dem Tod von Mihais Eltern lassen Mihai und Lisbet Gheorghiu ihr Leben in Rumänien hinter sich und ziehen mit ihren Kindern in ein abgelegenes Dorf in Norwegen – in der Hoffnung, in der Nähe von Lisbets Familie einen Neuanfang zu wagen. Dort kommen sie ihren Nachbarn, der Familie Halberg, näher, deren Herzlichkeit ihnen Hoffnung auf einen neuen Anfang gibt. Doch der zerbrechliche Frieden gerät ins Wanken, als die kleine Tochter der Familie Gheorghiu, Elia, mit blauen Flecken am Körper in der Schule erscheint.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 27 Min"
+    ],
+    [
+     "Regie",
+     "Cristian Mungiu"
+    ],
+    [
+     "Mit",
+     "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=frg59VOungA",
+   "link": "https://www.themoviedb.org/movie/1401459",
+   "bild": "https://image.tmdb.org/t/p/w500/rIhqYAVPmMQaTCiBJI5o21KDFM2.jpg",
+   "news": [
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Marrakech Film Festival Grows Its Awards-Season Clout With ‘Artificial,’ ‘The Debut,’ ‘Fjord’ and Other Oscar Hopefuls",
+     "link": "https://variety.com/2026/film/global/artificial-the-debut-oscar-campaigns-marrakech-1236951607/",
+     "datum": "2026-11-18T11:17:24.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘Fatherland,’ ‘La Bola Negra,’ ‘Fjord’ Lead European Film Award Nominations",
+     "link": "https://www.hollywoodreporter.com/movies/movie-news/fatherland-la-bola-negra-european-film-award-nominations-1236754942/",
+     "datum": "2026-11-14T10:30:00.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Palme d’Or Winner ‘Fjord’ to Open 26th European Film Festival Malaysia, Astro First to Stream Selected Titles",
+     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-european-film-festival-malaysia-1236945991/",
+     "datum": "2026-11-12T11:23:19.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Cristian Mungiu’s Palme d’Or Winner ‘Fjord’ Takes Jakarta World Cinema Audience Award as Short Film Winners Land Debut Feature Funding",
+     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-jakarta-world-cinema-audience-award-1236942247/",
+     "datum": "2026-11-08T03:50:26.000Z"
+    }
+   ]
+  },
+  "movie-1538497": {
+   "titel": "Wie verhext",
+   "original": "Hexed",
+   "leitsatz": "Wir warten schon auf dich.",
+   "handlung": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
+   "genres": [
+    "Abenteuer",
+    "Animation",
+    "Familie",
+    "Fantasy",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 43 Min"
+    ],
+    [
+     "Regie",
+     "Jason Hand, ฝน วีระสุนทร"
+    ],
+    [
+     "Mit",
+     "Hailee Steinfeld, Rashida Jones, Jodie Foster, Walton Goggins"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=6YYMqS8_Bp0",
+   "link": "https://www.themoviedb.org/movie/1538497",
+   "bild": "https://image.tmdb.org/t/p/w500/lMYJ4ogEBiB6pTxi5sm73kBsxiE.jpg",
+   "news": [
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Ariana Grande Comedy ‘Focker-In-Law’  Disney’s ‘Hexed’ Hope To Lure $40M-$50M Apiece Over Thanksgiving Box Office Stretch",
+     "link": "https://deadline.com/2026/11/ariana-grande-focker-in-law-hexed-box-office-projections-1237215651/",
+     "datum": "2026-11-06T18:32:16.000Z"
+    }
+   ],
+   "sprache": "en"
+  },
+  "movie-822653": {
+   "titel": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
+   "original": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+   "leitsatz": null,
+   "handlung": "Nach den Ereignissen von „Rebellion“ scheint die Welt im Gleichgewicht zu sein – doch dieser Frieden ist brüchig. Als eine neue Bedrohung im Zusammenhang mit der Walpurgisnacht auftaucht, ist Homura Akemi gezwungen, sich den Konsequenzen ihrer Entscheidungen zu stellen und sich zu fragen, wie weit sie bereit ist zu gehen, um Madoka zu beschützen.",
+   "genres": [
+    "Animation",
+    "Drama",
+    "Mystery",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 0 Min"
+    ],
+    [
+     "Regie",
+     "宮本幸裕, Akiyuki Simbo"
+    ],
+    [
+     "Mit",
+     "Aoi Yuki, Chiwa Saito, Eri Kitamura, Ai Nonaka"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=lAIYKMbMMcg",
+   "link": "https://www.themoviedb.org/movie/822653",
+   "bild": "https://image.tmdb.org/t/p/w500/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
+   "news": []
   },
   "movie-1400336": {
    "titel": "Meine Frau, unsere Schwiegertochter und ich",
@@ -2386,73 +2396,34 @@
     }
    ]
   },
-  "movie-1286656": {
-   "titel": "I Play Rocky",
-   "original": "I Play Rocky",
-   "leitsatz": "Sein Traum. Sein Wille. Sein Weg.",
-   "handlung": "Die Entstehung des Boxerfilms „Rocky“ (1976) ist selbst Stoff für großes Kino: Der damals unbekannte Schauspieler Sylvester Stallone schreibt innerhalb von nur dreieinhalb Tagen ein Drehbuch und ist fest davon überzeugt, für die Hauptrolle bestimmt zu sein. Obwohl ihm immer wieder Steine in den Weg gelegt werden, setzt der später weltbekannte Actionstar alles auf eine Karte und beharrt trotz scheinbar unüberwindbarer Widerstände darauf, selbst als Rocky Balboa vor der Kamera zu stehen. Der Rest ist Filmgeschichte.",
+  "movie-1384528": {
+   "titel": "Om Chapter 1: Udhiram - The Blood Wood",
+   "original": "ஓ.ம்: ஆபரேஷன் மோல்",
+   "leitsatz": null,
+   "handlung": "Die Geschichte handelt von einem Mann, der 20 tamilische Holzfäller rettet, die von der Polizei in einem Wald in Tiruvannamalai festgenommen wurden. Sai Pallavi spielt die CBI-/IPS-Beamtin Nithya Reddy, die den Schmuggel von rotem Sandelholz untersucht und eine persönliche Verbindung zu diesem Wald hat.",
    "genres": [
-    "Drama",
-    "Historie"
+    "Krimi",
+    "Action",
+    "Thriller"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 8 Min"
+     "2 Std 40 Min"
     ],
     [
      "Regie",
-     "Peter Farrelly"
+     "Rajkumar Periasamy"
     ],
     [
      "Mit",
-     "Anthony Ippolito, AnnaSophia Robb, P.J. Byrne, Toby Kebbell"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.5 / 10"
+     "Dhanush, Mammootty, Sai Pallavi, Sreeleela"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=VbUZakXlcMc",
-   "link": "https://www.themoviedb.org/movie/1286656",
-   "bild": "https://image.tmdb.org/t/p/w500/fViZxjUGsR6IQD77FP22PIMfk0R.jpg",
-   "news": [
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘I Play Rocky’ Star P.J. Byrne Isn’t a Scene-Stealer — He’s Something Better",
-     "link": "https://www.indiewire.com/awards/consider-this/i-play-rocky-p-j-byrne-scene-stealer-irwin-winkler-1235228652/",
-     "datum": "2026-11-18T20:30:00.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "I Play Rocky's Final Fight Had to Match Every Punch | Set Stories",
-     "link": "https://collider.com/video/i-play-rocky-s-final-fight-had-to-match-every-punch-set-stories/",
-     "datum": "2026-11-15T19:15:12.000Z"
-    },
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "I Play Rocky ist ein verklärtes Sylvester Stallone-Biopic mit fast schon ulkigem Schönheitsfehler",
-     "link": "https://www.moviepilot.de/news/i-play-rocky-ist-ein-anhimmelndes-stallone-biopic-1165385",
-     "datum": "2026-11-07T10:30:00.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘I Play Rocky’ Celebrates Sylvester Stallone the Screenwriter — but Rocky Balboa Was Only the Beginning",
-     "link": "https://www.indiewire.com/features/commentary/sylvester-stallone-screenwriter-rocky-rambo-1235225006/",
-     "datum": "2026-11-06T15:00:00.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "Before He Played Sylvester Stallone in ‘I Play Rocky,’ Star Anthony Ippolito Fought Hard for His Own Big Break",
-     "link": "https://www.indiewire.com/features/interviews/sylvester-stallone-i-play-rocky-star-anthony-ippolito-1235225053/",
-     "datum": "2026-11-03T14:00:00.000Z"
-    }
-   ]
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/1384528",
+   "bild": "https://image.tmdb.org/t/p/w500/vFnFLqXjf7RQfkNxrrys43BZKxJ.jpg",
+   "news": []
   },
   "movie-1430077": {
    "titel": "Hokum",
@@ -2531,7 +2502,7 @@
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 21 Min"
+     "2 Std 0 Min"
     ],
     [
      "Regie",
@@ -2546,6 +2517,13 @@
    "link": "https://www.themoviedb.org/movie/1457866",
    "bild": "https://image.tmdb.org/t/p/w500/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
    "news": [
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "‘The Further Mis-Adventures of Cliff Booth’ Review: David Fincher’s Breezy Tarantino Spinoff Is a Disappointing Compromise Between Great Directors",
+     "link": "https://www.indiewire.com/criticism/movies/further-misadventures-of-cliff-booth-movie-review-netflix-1235229234/",
+     "datum": "2026-11-19T18:00:00.000Z"
+    },
     {
      "quelle": "IndieWire",
      "art": "film",
@@ -2614,45 +2592,6 @@
    ],
    "sprache": "en"
   },
-  "movie-1497464": {
-   "titel": "Gatto",
-   "original": "Gatto",
-   "leitsatz": null,
-   "handlung": "After years of maneuvering the canal-ridden, superstitious city of Venice, Italy, a scrappy black cat named Nero begins to question whether he’s lived the right lives. Indebted to Rocco, a ruthless local feline mob boss, Nero finds himself in a quandary and is forced to forge a truly unexpected friendship that may finally lead him to his purpose—unless Venice gets the better of him first.",
-   "genres": [
-    "Animation",
-    "Komödie",
-    "Krimi",
-    "Familie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 38 Min"
-    ],
-    [
-     "Regie",
-     "Enrico Casarosa"
-    ],
-    [
-     "Mit",
-     "Mark Ruffalo, Laurence Fishburne, Enrico Casarosa, Bianca Babaşa"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=fq7Q-dtIZeM",
-   "link": "https://www.themoviedb.org/movie/1497464",
-   "bild": "https://image.tmdb.org/t/p/w500/jNDWZ8hV7LHATIhaA3pDV5iWWcZ.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "„Gatto“: Pixar schickt einen Straßenkater durch die Gassen Venedigs – neuer Trailer ist da",
-     "link": "https://www.serienjunkies.de/news/film/gatto-neuer-trailer-zum-pixar-film-ueber-venedig-94588111.html",
-     "datum": "2026-11-13T07:51:38.000Z"
-    }
-   ],
-   "sprache": "en"
-  },
   "movie-1165366": {
    "titel": "De Gaulle - Zeit des Widerstands",
    "original": "La Bataille de Gaulle : L’Âge de fer",
@@ -2681,9 +2620,38 @@
      "7.8 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=dKUArYoZ_0U",
+   "trailer": "https://www.youtube.com/watch?v=P_bc5JtHsZk",
    "link": "https://www.themoviedb.org/movie/1165366",
-   "bild": "https://image.tmdb.org/t/p/w500/nwgEAaNjsnzTa1QFDE8kDS5VsDr.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/pNaHwxMkymhGky2VXl3ARd3hc7o.jpg",
+   "news": []
+  },
+  "movie-1437981": {
+   "titel": "Les Braves",
+   "original": "Les Braves",
+   "leitsatz": null,
+   "handlung": "Während sich der Erste Weltkrieg immer weiter hinzieht, brennt Pierre, ein neu an der Front eingetroffener Soldat, darauf, sich zu beweisen. Hinter den Linien begegnet er Francis, der seine Kameraden mit einer Theaterrevue aufheitern will. Während die Gewalt unvermindert anhält, suchen beide Männer nach Wegen, der Brutalität des Krieges zu entkommen – und sei es nur für einen Augenblick.",
+   "genres": [
+    "Drama",
+    "Liebesfilm",
+    "Kriegsfilm"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 0 Min"
+    ],
+    [
+     "Regie",
+     "Lukas Dhont"
+    ],
+    [
+     "Mit",
+     "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=6E28mNqDIQU",
+   "link": "https://www.themoviedb.org/movie/1437981",
+   "bild": "https://image.tmdb.org/t/p/w500/xGiQYHSBXVlMqCdhEoSBjcMUWex.jpg",
    "news": []
   },
   "movie-1585239": {
@@ -2710,7 +2678,7 @@
     ],
     [
      "TMDB-Wertung",
-     "7.7 / 10"
+     "7.9 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=guKEdb_iRXw",
@@ -2754,64 +2722,39 @@
     }
    ]
   },
-  "movie-1300926": {
-   "titel": "Angry Birds 3 - Der Film",
-   "original": "The Angry Birds Movie 3",
+  "movie-1497464": {
+   "titel": "Gatto",
+   "original": "Gatto",
    "leitsatz": null,
-   "handlung": "Red steht vor seiner bisher größten Herausforderung: das Vaterdasein zu überstehen – und gleichzeitig die Welt zu retten.",
+   "handlung": "After years of maneuvering the canal-ridden, superstitious city of Venice, Italy, a scrappy black cat named Nero begins to question whether he’s lived the right lives. Indebted to Rocco, a ruthless local feline mob boss, Nero finds himself in a quandary and is forced to forge a truly unexpected friendship that may finally lead him to his purpose—unless Venice gets the better of him first.",
    "genres": [
-    "Abenteuer",
     "Animation",
     "Komödie",
+    "Krimi",
     "Familie"
    ],
    "fakten": [
     [
-     "Laufzeit",
-     "1 Std 36 Min"
-    ],
-    [
      "Regie",
-     "John Rice"
+     "Enrico Casarosa"
     ],
     [
      "Mit",
-     "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom"
+     "Mark Ruffalo, Laurence Fishburne, Enrico Casarosa, Bianca Babaşa"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=JkF1fSEqRU8",
-   "link": "https://www.themoviedb.org/movie/1300926",
-   "bild": "https://image.tmdb.org/t/p/w500/xyml31x5gu23tOMIFJ43XO4aTD6.jpg",
-   "news": []
-  },
-  "movie-1078446": {
-   "titel": "Violent Night - Eine Tödliche Bescherung",
-   "original": "Violent Night 2",
-   "leitsatz": null,
-   "handlung": "When Santa forgets the true meaning of Christmas, he finds himself in the heart of a lively mall community in desperate need of his help. Sapped of his magic, he’ll need another way to take on the goons threatening the mall, and time is running out. Santa has to rediscover his faith in goodness and call in some last-minute reinforcements from the one person no baddie wants to tangle with: Mrs. Claus.",
-   "genres": [
-    "Action",
-    "Komödie",
-    "Fantasy"
+   "trailer": "https://www.youtube.com/watch?v=fq7Q-dtIZeM",
+   "link": "https://www.themoviedb.org/movie/1497464",
+   "bild": "https://image.tmdb.org/t/p/w500/jNDWZ8hV7LHATIhaA3pDV5iWWcZ.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "„Gatto“: Pixar schickt einen Straßenkater durch die Gassen Venedigs – neuer Trailer ist da",
+     "link": "https://www.serienjunkies.de/news/film/gatto-neuer-trailer-zum-pixar-film-ueber-venedig-94588111.html",
+     "datum": "2026-11-13T07:51:38.000Z"
+    }
    ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 50 Min"
-    ],
-    [
-     "Regie",
-     "Tommy Wirkola"
-    ],
-    [
-     "Mit",
-     "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=tzm3cMHOnvk",
-   "link": "https://www.themoviedb.org/movie/1078446",
-   "bild": "https://image.tmdb.org/t/p/w500/h37dlv6kOJ5Gx6JXZWpflz3OftW.jpg",
-   "news": [],
    "sprache": "en"
   },
   "movie-1096228": {
@@ -2854,33 +2797,64 @@
    ],
    "sprache": "en"
   },
-  "movie-1437981": {
-   "titel": "Les Braves",
-   "original": "Les Braves",
+  "movie-1078446": {
+   "titel": "Violent Night - Eine Tödliche Bescherung",
+   "original": "Violent Night 2",
    "leitsatz": null,
-   "handlung": "Während sich der Erste Weltkrieg immer weiter hinzieht, brennt Pierre, ein neu an der Front eingetroffener Soldat, darauf, sich zu beweisen. Hinter den Linien begegnet er Francis, der seine Kameraden mit einer Theaterrevue aufheitern will. Während die Gewalt unvermindert anhält, suchen beide Männer nach Wegen, der Brutalität des Krieges zu entkommen – und sei es nur für einen Augenblick.",
+   "handlung": "When Santa forgets the true meaning of Christmas, he finds himself in the heart of a lively mall community in desperate need of his help. Sapped of his magic, he’ll need another way to take on the goons threatening the mall, and time is running out. Santa has to rediscover his faith in goodness and call in some last-minute reinforcements from the one person no baddie wants to tangle with: Mrs. Claus.",
    "genres": [
-    "Drama",
-    "Liebesfilm",
-    "Kriegsfilm"
+    "Action",
+    "Komödie",
+    "Fantasy"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 0 Min"
+     "1 Std 50 Min"
     ],
     [
      "Regie",
-     "Lukas Dhont"
+     "Tommy Wirkola"
     ],
     [
      "Mit",
-     "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver"
+     "David Harbour, Kristen Bell, Daniela Melchior, Jared Harris"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=6E28mNqDIQU",
-   "link": "https://www.themoviedb.org/movie/1437981",
-   "bild": "https://image.tmdb.org/t/p/w500/xGiQYHSBXVlMqCdhEoSBjcMUWex.jpg",
+   "trailer": "https://www.youtube.com/watch?v=tzm3cMHOnvk",
+   "link": "https://www.themoviedb.org/movie/1078446",
+   "bild": "https://image.tmdb.org/t/p/w500/h37dlv6kOJ5Gx6JXZWpflz3OftW.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1300926": {
+   "titel": "Angry Birds 3 - Der Film",
+   "original": "The Angry Birds Movie 3",
+   "leitsatz": null,
+   "handlung": "Red steht vor seiner bisher größten Herausforderung: das Vaterdasein zu überstehen – und gleichzeitig die Welt zu retten.",
+   "genres": [
+    "Abenteuer",
+    "Animation",
+    "Komödie",
+    "Familie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 36 Min"
+    ],
+    [
+     "Regie",
+     "John Rice"
+    ],
+    [
+     "Mit",
+     "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=JkF1fSEqRU8",
+   "link": "https://www.themoviedb.org/movie/1300926",
+   "bild": "https://image.tmdb.org/t/p/w500/xyml31x5gu23tOMIFJ43XO4aTD6.jpg",
    "news": []
   },
   "movie-1440769": {
@@ -2908,6 +2882,68 @@
    "bild": "https://image.tmdb.org/t/p/w500/bNlIm8bk5AHrinnUmi4Y8A8W0XM.jpg",
    "news": [],
    "sprache": "en"
+  },
+  "movie-1165369": {
+   "titel": "De Gaulle: Zeit der Freiheit",
+   "original": "La Bataille de Gaulle : J'écris ton nom",
+   "leitsatz": null,
+   "handlung": "Im Juni 1940, nach Frankreichs Kapitulation vor Nazi-Deutschland, flieht der noch unbekannte General Charles de Gaulle mit Churchills Hilfe nach London. Über die BBC ruft er die Franzosen zum Widerstand auf und gründet eine Exilregierung, die die Alliierten anfangs kaum ernst nehmen. Seine Beziehung zu Churchill ist eng, aber spannungsreich. Nach und nach wächst seine Bewegung, und als sich schließlich die afrikanischen Kolonien ihm anschließen, kommt die Wende.",
+   "genres": [
+    "Drama",
+    "Kriegsfilm",
+    "Historie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 37 Min"
+    ],
+    [
+     "Regie",
+     "Antonin Baudry"
+    ],
+    [
+     "Mit",
+     "Simon Abkarian, Niels Schneider, Thierry Lhermitte, Karim Leklou"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=J6MRNchmZkY",
+   "link": "https://www.themoviedb.org/movie/1165369",
+   "bild": "https://image.tmdb.org/t/p/w500/uYmzx1mFcgYgHfp0U9CVLvXFhcU.jpg",
+   "news": []
+  },
+  "movie-1209723": {
+   "titel": "Yeh Prem Mol Liya",
+   "original": "ये प्रेम मोल लिया",
+   "leitsatz": null,
+   "handlung": "Ein herzergreifendes, romantisches Familiendrama über zwei beste Freunde, deren enge Verbundenheit sich langsam in Liebe verwandelt. Doch eine Lüge führt zu Missverständnissen und Konflikten, die ihre Beziehung und ihre familiären Bindungen auf eine harte Probe stellen. Die Geschichte handelt von Liebe, Opferbereitschaft, Verständnis und der Bedeutung der Familie.",
+   "genres": [
+    "Liebesfilm",
+    "Familie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 53 Min"
+    ],
+    [
+     "Regie",
+     "Sooraj Barjatya"
+    ],
+    [
+     "Mit",
+     "Ayushmann Khurrana, Sharvari Wagh, अनुपम खेर, Geeta Agrawal Sharma"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=yTSDTmdLb0k",
+   "link": "https://www.themoviedb.org/movie/1209723",
+   "bild": "https://image.tmdb.org/t/p/w500/kUxkvh6GMZL4AHNgNDty68yTnwQ.jpg",
+   "news": []
   },
   "movie-1476614": {
    "titel": "All of a Sudden",
@@ -2948,88 +2984,58 @@
     }
    ]
   },
-  "movie-1384528": {
-   "titel": "Om Chapter 1: Udhiram - The Blood Wood",
-   "original": "ஓ.ம்: Operation Mole",
+  "movie-940009": {
+   "titel": "Ray Gunn",
+   "original": "Ray Gunn",
    "leitsatz": null,
-   "handlung": "Die Geschichte handelt von einem Mann, der 20 tamilische Holzfäller rettet, die von der Polizei in einem Wald in Tiruvannamalai festgenommen wurden. Sai Pallavi spielt die CBI-/IPS-Beamtin Nithya Reddy, die den Schmuggel von rotem Sandelholz untersucht und eine persönliche Verbindung zu diesem Wald hat.",
+   "handlung": "In Metropia, a gigantic city in an alternate future as seen from 1939, private eye Raymond Gunn is drawn into a case involving aliens, murder and a multimedia star named Venus Nova.",
    "genres": [
+    "Animation",
+    "Science Fiction",
     "Krimi",
-    "Action",
-    "Thriller"
+    "Mystery"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 40 Min"
+     "1 Std 59 Min"
     ],
     [
      "Regie",
-     "Rajkumar Periasamy"
+     "Brad Bird"
     ],
     [
      "Mit",
-     "Dhanush, Mammootty, Sai Pallavi, Sreeleela"
+     "Sam Rockwell, Scarlett Johansson, Tom Waits, Matt Berry"
     ]
    ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1384528",
-   "bild": "https://image.tmdb.org/t/p/w500/vFnFLqXjf7RQfkNxrrys43BZKxJ.jpg",
-   "news": []
-  },
-  "movie-1425859": {
-   "titel": "Remain",
-   "original": "Remain",
-   "leitsatz": null,
-   "handlung": "When reclusive architect Tate Gordon moves to small coastal town to complete his latest project, he encounters an alluring young woman who pulls him out of his shell, and into the center of a deadly mystery that hangs over the town.",
-   "genres": [
-    "Liebesfilm",
-    "Mystery",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "M. Night Shyamalan"
-    ],
-    [
-     "Mit",
-     "Jake Gyllenhaal, Phoebe Dynevor, Ashley Walters, Julie Hagerty"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=P3WeIJ61V38",
-   "link": "https://www.themoviedb.org/movie/1425859",
-   "bild": "https://image.tmdb.org/t/p/w500/5hPNq5h2y8Ux6nPBRMEwZ8npVTp.jpg",
+   "trailer": "https://www.youtube.com/watch?v=oAmCTknTA6I",
+   "link": "https://www.themoviedb.org/movie/940009",
+   "bild": "https://image.tmdb.org/t/p/w500/rpP29aOKpHy1FhX8OZQdUICEs2j.jpg",
    "news": [],
    "sprache": "en"
   },
-  "movie-1209723": {
-   "titel": "Yeh Prem Mol Liya",
-   "original": "ये प्रेम मोल लिया",
+  "movie-1301248": {
+   "titel": "2 Aile Arasında",
+   "original": "2 Aile Arasında",
    "leitsatz": null,
-   "handlung": "Ein herzergreifendes, romantisches Familiendrama über zwei beste Freunde, deren enge Verbundenheit sich langsam in Liebe verwandelt. Doch eine Lüge führt zu Missverständnissen und Konflikten, die ihre Beziehung und ihre familiären Bindungen auf eine harte Probe stellen. Die Geschichte handelt von Liebe, Opferbereitschaft, Verständnis und der Bedeutung der Familie.",
+   "handlung": "Fikret (Fiko) und Solmaz sind nach den Ereignissen des ersten Films zu einer echten Familie geworden. Doch Jahre später taucht die aus Adana stammende Familie Kurt wieder auf und bringt alte Konflikte, Verletzungen und neue Geheimnisse ans Licht. Als die Missverständnisse zwischen den beiden Familien auf Fikrets panische Reaktionen treffen, verwandelt sich alles erneut in ein urkomisches Chaos.",
    "genres": [
-    "Liebesfilm",
-    "Familie",
-    "Drama"
+    "Komödie"
    ],
    "fakten": [
     [
-     "Laufzeit",
-     "2 Std 53 Min"
-    ],
-    [
      "Regie",
-     "Sooraj Barjatya"
+     "Ozan Açıktan"
     ],
     [
      "Mit",
-     "Ayushmann Khurrana, Sharvari Wagh, अनुपम खेर, Geeta Agrawal Sharma"
+     "Engin Günaydın, Demet Evgar, Erdal Özyağcılar, Devrim Yakut"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=yTSDTmdLb0k",
-   "link": "https://www.themoviedb.org/movie/1209723",
-   "bild": "https://image.tmdb.org/t/p/w500/kUxkvh6GMZL4AHNgNDty68yTnwQ.jpg",
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/1301248",
+   "bild": "https://image.tmdb.org/t/p/w500/tRiQj2PDSbpt01O3BD7zgPFZZFn.jpg",
    "news": []
   },
   "movie-1074074": {
@@ -3142,155 +3148,6 @@
     }
    ]
   },
-  "movie-1301248": {
-   "titel": "2 Aile Arasında",
-   "original": "2 Aile Arasında",
-   "leitsatz": null,
-   "handlung": "Fikret (Fiko) und Solmaz sind nach den Ereignissen des ersten Films zu einer echten Familie geworden. Doch Jahre später taucht die aus Adana stammende Familie Kurt wieder auf und bringt alte Konflikte, Verletzungen und neue Geheimnisse ans Licht. Als die Missverständnisse zwischen den beiden Familien auf Fikrets panische Reaktionen treffen, verwandelt sich alles erneut in ein urkomisches Chaos.",
-   "genres": [
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Ozan Açıktan"
-    ],
-    [
-     "Mit",
-     "Engin Günaydın, Demet Evgar, Erdal Özyağcılar, Devrim Yakut"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1301248",
-   "bild": "https://image.tmdb.org/t/p/w500/tRiQj2PDSbpt01O3BD7zgPFZZFn.jpg",
-   "news": []
-  },
-  "movie-940009": {
-   "titel": "Ray Gunn",
-   "original": "Ray Gunn",
-   "leitsatz": null,
-   "handlung": "In Metropia, a gigantic city in an alternate future as seen from 1939, private eye Raymond Gunn is drawn into a case involving aliens, murder and a multimedia star named Venus Nova.",
-   "genres": [
-    "Animation",
-    "Science Fiction",
-    "Krimi",
-    "Mystery"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 59 Min"
-    ],
-    [
-     "Regie",
-     "Brad Bird"
-    ],
-    [
-     "Mit",
-     "Sam Rockwell, Scarlett Johansson, Tom Waits, Matt Berry"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=oAmCTknTA6I",
-   "link": "https://www.themoviedb.org/movie/940009",
-   "bild": "https://image.tmdb.org/t/p/w500/rpP29aOKpHy1FhX8OZQdUICEs2j.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-621304": {
-   "titel": "Children of Blood and Bone",
-   "original": "Children of Blood and Bone",
-   "leitsatz": null,
-   "handlung": "In the world of Orïsha, a young woman goes on a quest to reclaim the magic that was violently stolen from her people. She and her brother ally with the daughter and son of the king to fight back against his brutal rule.",
-   "genres": [
-    "Fantasy",
-    "Abenteuer"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 26 Min"
-    ],
-    [
-     "Regie",
-     "Gina Prince-Bythewood"
-    ],
-    [
-     "Mit",
-     "Thuso Mbedu, Damson Idris, Amandla Stenberg, Tosin Cole"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=a20LtkPALYM",
-   "link": "https://www.themoviedb.org/movie/621304",
-   "bild": "https://image.tmdb.org/t/p/w500/qxUPu92DF5Bo6jcCDhnMTHFPEEc.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1147572": {
-   "titel": "Das Wunder von Narnia",
-   "original": "Narnia: The Magician's Nephew",
-   "leitsatz": null,
-   "handlung": "Two children discover a wood full of pools leading to other worlds. One takes them to a dead city beneath a dying sun, where they wake a queen who exterminated its population and accidentally bring her back to London.",
-   "genres": [
-    "Fantasy",
-    "Abenteuer",
-    "Familie"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Greta Gerwig"
-    ],
-    [
-     "Mit",
-     "David McKenna, Beatrice Campbell, Daniel Craig, Carey Mulligan"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=nYqwH8GC97E",
-   "link": "https://www.themoviedb.org/movie/1147572",
-   "bild": "https://image.tmdb.org/t/p/w500/dKJ6ownJGWwSReCGRQWimXf700v.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Bekannte Schauspielerin wird zu Aslan in „Das Wunder von Narnia“ – so reagiert Vorgänger Liam Neeson",
-     "link": "https://www.serienjunkies.de/news/film/das-wunder-von-narnia-auf-netflix-meryl-streep-spielt-aslan-liam-neeson-reagiert-94574963.html",
-     "datum": "2026-11-05T08:52:45.000Z"
-    }
-   ],
-   "sprache": "en"
-  },
-  "movie-1404684": {
-   "titel": "Nur geträumt",
-   "original": "Juste une illusion",
-   "leitsatz": null,
-   "handlung": "1985, ein Vorort von Paris: Der fast 13-jährige Vincent steckt mitten im ganz normalen Familienwahnsinn. Während die Mutter von einer Karriere träumt, aber nur zum Kaffeekochen abgestellt wird, sein arbeitsloser Vater den allzu hilfsbereiten Nachbarn argwöhnisch beäugt und der große Bruder heimlich mit Mixtapes handelt, erlebt Vincent die bittersüßen Qualen der ersten Liebe. Derweil setzen seine besten Freunde alles daran, einen nicht jugendfreien Film aus der Videothek zu schmuggeln. Im Trubel familiärer Dauerkonflikte und pubertärer Gefühlsstürme stellt sich Vincent den großen Fragen des Lebens und muss erkennen: Auch die Erwachsenen haben längst nicht auf alles eine Antwort.",
-   "genres": [
-    "Komödie",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 59 Min"
-    ],
-    [
-     "Regie",
-     "Olivier Nakache, Éric Toledano"
-    ],
-    [
-     "Mit",
-     "Louis Garrel, Camille Cottin, Simon Boublil, Alexis Rosenstiehl"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=vZtK0AdeXk8",
-   "link": "https://www.themoviedb.org/movie/1404684",
-   "bild": "https://image.tmdb.org/t/p/w500/aeEqPMjDCP9zrfViDb7xrcRbN5p.jpg",
-   "news": []
-  },
   "movie-1452168": {
    "titel": "Behemoth! - Stück meines Lebens",
    "original": "Behemoth!",
@@ -3326,6 +3183,127 @@
      "datum": "2026-11-15T17:51:03.000Z"
     }
    ]
+  },
+  "movie-1425859": {
+   "titel": "Remain",
+   "original": "Remain",
+   "leitsatz": null,
+   "handlung": "When reclusive architect Tate Gordon moves to small coastal town to complete his latest project, he encounters an alluring young woman who pulls him out of his shell, and into the center of a deadly mystery that hangs over the town.",
+   "genres": [
+    "Liebesfilm",
+    "Mystery",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "M. Night Shyamalan"
+    ],
+    [
+     "Mit",
+     "Jake Gyllenhaal, Phoebe Dynevor, Ashley Walters, Julie Hagerty"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=P3WeIJ61V38",
+   "link": "https://www.themoviedb.org/movie/1425859",
+   "bild": "https://image.tmdb.org/t/p/w500/5hPNq5h2y8Ux6nPBRMEwZ8npVTp.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-621304": {
+   "titel": "Children of Blood and Bone",
+   "original": "Children of Blood and Bone",
+   "leitsatz": null,
+   "handlung": "In the world of Orïsha, a young woman goes on a quest to reclaim the magic that was violently stolen from her people. She and her brother ally with the daughter and son of the king to fight back against his brutal rule.",
+   "genres": [
+    "Fantasy",
+    "Abenteuer"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 26 Min"
+    ],
+    [
+     "Regie",
+     "Gina Prince-Bythewood"
+    ],
+    [
+     "Mit",
+     "Thuso Mbedu, Damson Idris, Amandla Stenberg, Tosin Cole"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=a20LtkPALYM",
+   "link": "https://www.themoviedb.org/movie/621304",
+   "bild": "https://image.tmdb.org/t/p/w500/qxUPu92DF5Bo6jcCDhnMTHFPEEc.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "movie-1404684": {
+   "titel": "Nur geträumt",
+   "original": "Juste une illusion",
+   "leitsatz": null,
+   "handlung": "1985, ein Vorort von Paris: Der fast 13-jährige Vincent steckt mitten im ganz normalen Familienwahnsinn. Während die Mutter von einer Karriere träumt, aber nur zum Kaffeekochen abgestellt wird, sein arbeitsloser Vater den allzu hilfsbereiten Nachbarn argwöhnisch beäugt und der große Bruder heimlich mit Mixtapes handelt, erlebt Vincent die bittersüßen Qualen der ersten Liebe. Derweil setzen seine besten Freunde alles daran, einen nicht jugendfreien Film aus der Videothek zu schmuggeln. Im Trubel familiärer Dauerkonflikte und pubertärer Gefühlsstürme stellt sich Vincent den großen Fragen des Lebens und muss erkennen: Auch die Erwachsenen haben längst nicht auf alles eine Antwort.",
+   "genres": [
+    "Komödie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 59 Min"
+    ],
+    [
+     "Regie",
+     "Olivier Nakache, Éric Toledano"
+    ],
+    [
+     "Mit",
+     "Louis Garrel, Camille Cottin, Simon Boublil, Alexis Rosenstiehl"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=vZtK0AdeXk8",
+   "link": "https://www.themoviedb.org/movie/1404684",
+   "bild": "https://image.tmdb.org/t/p/w500/aeEqPMjDCP9zrfViDb7xrcRbN5p.jpg",
+   "news": []
+  },
+  "movie-1147572": {
+   "titel": "Das Wunder von Narnia",
+   "original": "Narnia: The Magician's Nephew",
+   "leitsatz": null,
+   "handlung": "Two children discover a wood full of pools leading to other worlds. One takes them to a dead city beneath a dying sun, where they wake a queen who exterminated its population and accidentally bring her back to London.",
+   "genres": [
+    "Fantasy",
+    "Abenteuer",
+    "Familie"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Greta Gerwig"
+    ],
+    [
+     "Mit",
+     "David McKenna, Beatrice Campbell, Daniel Craig, Carey Mulligan"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=nYqwH8GC97E",
+   "link": "https://www.themoviedb.org/movie/1147572",
+   "bild": "https://image.tmdb.org/t/p/w500/dKJ6ownJGWwSReCGRQWimXf700v.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Bekannte Schauspielerin wird zu Aslan in „Das Wunder von Narnia“ – so reagiert Vorgänger Liam Neeson",
+     "link": "https://www.serienjunkies.de/news/film/das-wunder-von-narnia-auf-netflix-meryl-streep-spielt-aslan-liam-neeson-reagiert-94574963.html",
+     "datum": "2026-11-05T08:52:45.000Z"
+    }
+   ],
+   "sprache": "en"
   },
   "movie-1599230": {
    "titel": "Elsinore",
@@ -3434,31 +3412,33 @@
    "bild": "https://image.tmdb.org/t/p/w500/8ESrQhJW1q3a96CkQ4TZjCIo91r.jpg",
    "news": []
   },
-  "movie-1319522": {
-   "titel": "Gohan – Drei Leben auf vier Pfoten",
-   "original": "โกฮัง..หัวใจโกโฮม",
+  "movie-615121": {
+   "titel": "The Thomas Crown Affair",
+   "original": "The Thomas Crown Affair",
    "leitsatz": null,
-   "handlung": "Der Streuner Gohan (Kori) wechselt im Laufe seines Lebens immer wieder den Besitzer und verbringt mehr als zehn Jahre bei unterschiedlichen Menschen. Dabei erlebt er verschiedene Formen des Zusammenlebens mit seinen jeweiligen Bezugspersonen – von gemeinsamen glücklichen Momenten bis zu schwierigen Zeiten. Jede neue Station bringt Veränderungen und Abschiede mit sich, während Gohan immer wieder Teil eines anderen Zuhauses wird.",
+   "handlung": "Thomas Crown begehrt einen wertvollen Diamanten, der im Topkaki-Palast in Istanbul aufbewahrt wird.",
    "genres": [
-    "Drama"
+    "Krimi",
+    "Liebesfilm",
+    "Thriller"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 25 Min"
+     "2 Std 10 Min"
     ],
     [
      "Regie",
-     "นัฐวุฒิ พูนพิริยะ, อัตตา เหมวดี"
+     "Michael B. Jordan"
     ],
     [
      "Mit",
-     "Yasushi Kitajima, ชาติชาย ชินศรี, Poe Mamhe Thar, นพพันธ์ บุญใหญ่"
+     "Michael B. Jordan, Adria Arjona, Kenneth Branagh, Lily Gladstone"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=aUQXzjauqio",
-   "link": "https://www.themoviedb.org/movie/1319522",
-   "bild": "https://image.tmdb.org/t/p/w500/ai1aZhF6NZ5LqHWxX1GziBN8luj.jpg",
+   "trailer": "https://www.youtube.com/watch?v=O2lUDjQqZ9o",
+   "link": "https://www.themoviedb.org/movie/615121",
+   "bild": "https://image.tmdb.org/t/p/w500/sT1TQeAy1PdRfPIb6rrM2DB7DB.jpg",
    "news": []
   },
   "movie-1297467": {
@@ -3517,64 +3497,31 @@
    "news": [],
    "sprache": "en"
   },
-  "movie-615121": {
-   "titel": "The Thomas Crown Affair",
-   "original": "The Thomas Crown Affair",
+  "movie-1319522": {
+   "titel": "Gohan – Drei Leben auf vier Pfoten",
+   "original": "โกฮัง..หัวใจโกโฮม",
    "leitsatz": null,
-   "handlung": "Thomas Crown begehrt einen wertvollen Diamanten, der im Topkaki-Palast in Istanbul aufbewahrt wird.",
+   "handlung": "Der Streuner Gohan (Kori) wechselt im Laufe seines Lebens immer wieder den Besitzer und verbringt mehr als zehn Jahre bei unterschiedlichen Menschen. Dabei erlebt er verschiedene Formen des Zusammenlebens mit seinen jeweiligen Bezugspersonen – von gemeinsamen glücklichen Momenten bis zu schwierigen Zeiten. Jede neue Station bringt Veränderungen und Abschiede mit sich, während Gohan immer wieder Teil eines anderen Zuhauses wird.",
    "genres": [
-    "Krimi",
-    "Liebesfilm",
-    "Thriller"
+    "Drama"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 10 Min"
+     "2 Std 25 Min"
     ],
     [
      "Regie",
-     "Michael B. Jordan"
+     "นัฐวุฒิ พูนพิริยะ, อัตตา เหมวดี"
     ],
     [
      "Mit",
-     "Michael B. Jordan, Adria Arjona, Kenneth Branagh, Lily Gladstone"
+     "Yasushi Kitajima, ชาติชาย ชินศรี, Poe Mamhe Thar, นพพันธ์ บุญใหญ่"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=O2lUDjQqZ9o",
-   "link": "https://www.themoviedb.org/movie/615121",
-   "bild": "https://image.tmdb.org/t/p/w500/sT1TQeAy1PdRfPIb6rrM2DB7DB.jpg",
-   "news": []
-  },
-  "movie-1365378": {
-   "titel": "Große Träume",
-   "original": "Le rêve américain",
-   "leitsatz": "Wer nichts zu verlieren hat, kann alles gewinnen.",
-   "handlung": "Als sich Jeremy und Bouna das erste Mal auf dem Spielfeld begegnen, teilen sie nicht nur die Leidenschaft für Basketball, sondern auch die Gewissheit, nie Profispieler werden zu können. Das hält die beiden sympathischen Underdogs aber nicht davon ab, groß ins Business einzusteigen. Schließlich kennen sie jeden Basketballcourt und die vielversprechendsten Spieler. Kurzerhand gründen die beiden eine Agentur, verpflichten erste Talente und wollen diese in die berühmteste Liga der Welt bringen: die nordamerikanische NBA.  In GROSSE TRÄUME nehmen es zwei unerschütterliche Optimisten mit einer Welt auf, in der niemand auf sie gewartet hat. Ohne Beziehungen, ohne Geld, aber mit einer unverschämten Portion Selbstvertrauen kämpfen sie sich allen Widerständen zum Trotz bis in die nordamerikanische NBA. Eine ebenso turbulente wie warmherzige Underdog-Komödie nach einer wahren Geschichte, die zeigt, dass große Träume keine Frage der Herkunft sind – sondern des Mutes, niemals aufzugeben.",
-   "genres": [
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 2 Min"
-    ],
-    [
-     "Regie",
-     "Anthony Marciano"
-    ],
-    [
-     "Mit",
-     "Jean-Pascal Zadi, Raphaël Quenard, Gregory Defleur, David Clark"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.4 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/movie/1365378",
-   "bild": "https://image.tmdb.org/t/p/w500/yObiUK0WVhx0hwTIJhocdJTmhFc.jpg",
+   "trailer": "https://www.youtube.com/watch?v=aUQXzjauqio",
+   "link": "https://www.themoviedb.org/movie/1319522",
+   "bild": "https://image.tmdb.org/t/p/w500/ai1aZhF6NZ5LqHWxX1GziBN8luj.jpg",
    "news": []
   },
   "movie-1532610": {
@@ -3695,61 +3642,35 @@
    ],
    "sprache": "en"
   },
-  "movie-1157869": {
-   "titel": "Parallele Leben",
-   "original": "Histoires parallèles",
-   "leitsatz": null,
-   "handlung": "Auf der Suche nach Inspiration für ihren neuen Roman spioniert Sylvie ihre Nachbarn in dem Gebäude auf der anderen Straßenseite mit einem Teleskop aus. Als sie den jungen Adam anheuert, um ihr bei ihrer täglichen Routine zu helfen, hat sie keine Ahnung, dass er ihr Leben und ihre Arbeit auf den Kopf stellen wird, bis die Fiktion, die sie sich vorgestellt hatte, die Realität von allen übertrifft.",
+  "movie-1365378": {
+   "titel": "Große Träume",
+   "original": "Le rêve américain",
+   "leitsatz": "Wer nichts zu verlieren hat, kann alles gewinnen.",
+   "handlung": "Als sich Jeremy und Bouna das erste Mal auf dem Spielfeld begegnen, teilen sie nicht nur die Leidenschaft für Basketball, sondern auch die Gewissheit, nie Profispieler werden zu können. Das hält die beiden sympathischen Underdogs aber nicht davon ab, groß ins Business einzusteigen. Schließlich kennen sie jeden Basketballcourt und die vielversprechendsten Spieler. Kurzerhand gründen die beiden eine Agentur, verpflichten erste Talente und wollen diese in die berühmteste Liga der Welt bringen: die nordamerikanische NBA.  In GROSSE TRÄUME nehmen es zwei unerschütterliche Optimisten mit einer Welt auf, in der niemand auf sie gewartet hat. Ohne Beziehungen, ohne Geld, aber mit einer unverschämten Portion Selbstvertrauen kämpfen sie sich allen Widerständen zum Trotz bis in die nordamerikanische NBA. Eine ebenso turbulente wie warmherzige Underdog-Komödie nach einer wahren Geschichte, die zeigt, dass große Träume keine Frage der Herkunft sind – sondern des Mutes, niemals aufzugeben.",
    "genres": [
-    "Drama",
-    "Thriller",
-    "Mystery"
+    "Komödie"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 19 Min"
+     "2 Std 2 Min"
     ],
     [
      "Regie",
-     "اصغر فرهادی"
+     "Anthony Marciano"
     ],
     [
      "Mit",
-     "Isabelle Huppert, Virginie Efira, Vincent Cassel, Pierre Niney"
+     "Jean-Pascal Zadi, Raphaël Quenard, Gregory Defleur, David Clark"
     ],
     [
      "TMDB-Wertung",
-     "5.7 / 10"
+     "7.4 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=tTaFQqPIoGY",
-   "link": "https://www.themoviedb.org/movie/1157869",
-   "bild": "https://image.tmdb.org/t/p/w500/skVHP9WjL0N7urDMJGXev2RwoK8.jpg",
-   "news": []
-  },
-  "movie-1340208": {
-   "titel": "Karōshi",
-   "original": "Karōshi",
-   "leitsatz": "Jedes Empire fürchtet die Rebellion.",
-   "handlung": "Manhattan, in naher Zukunft: Unternehmenstreue und kulturelle Traditionen haben den Alltag der Menschen grundlegend verändert. Als eines Tages ein Angestellter des mächtigen Konzerns IKIGAI ums Leben kommt, schleust sich der mysteriöse Hiro in die Firma ein. Hinter der perfekten, glänzenden Fassade stößt er auf ein gnadenloses System aus Gehorsam, Gewalt und einem alten Ehrenkodex.",
-   "genres": [
-    "Action",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Takashi Doscher"
-    ],
-    [
-     "Mit",
-     "태오, Isabel May, Cynthia Erivo, Takehiro Hira"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=oA4nAbWmd28",
-   "link": "https://www.themoviedb.org/movie/1340208",
-   "bild": "https://image.tmdb.org/t/p/w500/xOwetUoCyca3yYlqZ5rlElgXiTV.jpg",
+   "trailer": null,
+   "link": "https://www.themoviedb.org/movie/1365378",
+   "bild": "https://image.tmdb.org/t/p/w500/yObiUK0WVhx0hwTIJhocdJTmhFc.jpg",
    "news": []
   },
   "movie-1372443": {
@@ -3779,6 +3700,34 @@
    "bild": "https://image.tmdb.org/t/p/w500/v9xESDLVKXw9CqzbzA7MNWs1ROT.jpg",
    "news": [],
    "sprache": "en"
+  },
+  "movie-1505644": {
+   "titel": "ENE Repeat",
+   "original": "ఈNఈ Repeat",
+   "leitsatz": null,
+   "handlung": "Vivek und seine Freunde treffen sich Jahre nach ihrem Missgeschick in Goa wieder, um eine neue Reise zu unternehmen. Während sie sich den Herausforderungen des Lebens, impulsiven Plänen und unerwarteten Eskapaden stellen, herrscht erneut Chaos.",
+   "genres": [
+    "Komödie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 35 Min"
+    ],
+    [
+     "Regie",
+     "తరుణ్ భాస్కర్ దాస్యం"
+    ],
+    [
+     "Mit",
+     "Vishwak Sen, Abhinav Gomatam, Venkatesh Kakumanu, Maganti Srinath"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=l0FcBZJLY9I",
+   "link": "https://www.themoviedb.org/movie/1505644",
+   "bild": "https://image.tmdb.org/t/p/w500/qMBlRfQNusaUhhBAIcHmforVTW5.jpg",
+   "news": []
   },
   "tv-332839": {
    "titel": "Das Bestiengesetz",
@@ -4011,10 +3960,10 @@
    "titel": "The Altruists",
    "original": "The Altruists",
    "leitsatz": null,
-   "handlung": "The story of Sam Bankman-Fried and Caroline Ellison, two hyper-smart, ambitious young idealists who tried to remake the global financial system in the blink of an eye - before they were accused of stealing $8 billion and became Gen Z's own Bonnie & Clyde.",
+   "handlung": "Eine Geschichte über die stürmische Beziehung zweier Krypto-Unternehmer und ihren ehrgeizigen Plan, das Finanzsystem zu revolutionieren - der in einem 36-Milliarden-Dollar-Betrug endet.",
    "genres": [
-    "Drama",
-    "Krimi"
+    "Krimi",
+    "Drama"
    ],
    "fakten": [
     [
@@ -4036,7 +3985,7 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=9aGeKSSyuhk",
    "link": "https://www.themoviedb.org/tv/308007",
-   "bild": "https://image.tmdb.org/t/p/w500/foTyGlJ1jJh8QID5KwjsMytsJTV.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/hiX70sXdvEPVE11QqmLuaX16gdh.jpg",
    "news": [
     {
      "quelle": "The Hollywood Reporter",
@@ -4045,8 +3994,7 @@
      "link": "https://www.hollywoodreporter.com/tv/tv-reviews/the-altruists-review-julia-garner-anthony-boyle-netflix-1236758009/",
      "datum": "2026-11-19T08:01:00.000Z"
     }
-   ],
-   "sprache": "en"
+   ]
   },
   "tv-336592": {
    "titel": "Win the Mall",
@@ -4614,56 +4562,42 @@
     }
    ]
   },
-  "tv-84773": {
-   "titel": "Der Herr der Ringe: Die Ringe der Macht",
-   "original": "The Lord of the Rings: The Rings of Power",
-   "leitsatz": "Das Böse hat viele Namen gehabt.",
-   "handlung": "Bekannte und neue Charaktere müssen sich dem Wiedererstarken des Bösen in Mittelerde stellen. Von den dunkelsten Tiefen des Nebelgebirges bis zu den majestätischen Wäldern von Lindon, vom Inselkönigreich Númenor bis zu den entlegensten Winkeln der Landkarte werden diese Reiche und Charaktere ein Vermächtnis schaffen, das die Zukunft von Mittelerde prägen wird.",
+  "tv-2734": {
+   "titel": "Law & Order: Special Victims Unit",
+   "original": "Law & Order: Special Victims Unit",
+   "leitsatz": null,
+   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
    "genres": [
-    "Action & Adventure",
-    "Sci-Fi & Fantasy"
+    "Krimi",
+    "Drama",
+    "Mystery"
    ],
    "fakten": [
     [
      "Umfang",
-     "3 Staffeln, 24 Folgen"
+     "28 Staffeln, 602 Folgen"
     ],
     [
      "Von",
-     "Patrick McKay, John D. Payne"
+     "Dick Wolf"
     ],
     [
      "Mit",
-     "Charlie Vickers, Morfydd Clark, Robert Aramayo, Owain Arthur"
+     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
     ],
     [
      "Sender/Dienst",
-     "Prime Video"
+     "NBC"
     ],
     [
      "TMDB-Wertung",
-     "7.2 / 10"
+     "8.0 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=jL6TUZq0vos",
-   "link": "https://www.themoviedb.org/tv/84773",
-   "bild": "https://image.tmdb.org/t/p/w500/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Deutsche Serienstarts im November 2026 - Teil 2: „The Lord of the Rings: The Rings of Power“, „Yellowjackets“, „Die Kaiserin“",
-     "link": "https://www.serienjunkies.de/news/serien/deutsche-serienstarts-im-november-2026-teil-the-lord-of-the-rings-the-rings-of-power-yellowjackets-die-kaiserin-94583343.html",
-     "datum": "2026-11-10T14:00:00.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "'The Lord of the Rings: The Rings of Power' Officially Debuts New Release Today",
-     "link": "https://collider.com/the-lord-of-the-rings-the-rings-of-power-seasons-1-2-4k-blu-ray-release-november-2026/",
-     "datum": "2026-11-03T20:46:23.000Z"
-    }
-   ]
+   "trailer": "https://www.youtube.com/watch?v=O53wYUc_fA4",
+   "link": "https://www.themoviedb.org/tv/2734",
+   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "news": []
   },
   "tv-456": {
    "titel": "Die Simpsons",
@@ -4744,42 +4678,96 @@
     }
    ]
   },
-  "tv-2734": {
-   "titel": "Law & Order: Special Victims Unit",
-   "original": "Law & Order: Special Victims Unit",
-   "leitsatz": null,
-   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
+  "tv-84773": {
+   "titel": "Der Herr der Ringe: Die Ringe der Macht",
+   "original": "The Lord of the Rings: The Rings of Power",
+   "leitsatz": "Das Böse hat viele Namen gehabt.",
+   "handlung": "Bekannte und neue Charaktere müssen sich dem Wiedererstarken des Bösen in Mittelerde stellen. Von den dunkelsten Tiefen des Nebelgebirges bis zu den majestätischen Wäldern von Lindon, vom Inselkönigreich Númenor bis zu den entlegensten Winkeln der Landkarte werden diese Reiche und Charaktere ein Vermächtnis schaffen, das die Zukunft von Mittelerde prägen wird.",
    "genres": [
-    "Krimi",
-    "Drama",
-    "Mystery"
+    "Action & Adventure",
+    "Sci-Fi & Fantasy"
    ],
    "fakten": [
     [
      "Umfang",
-     "28 Staffeln, 602 Folgen"
+     "3 Staffeln, 24 Folgen"
     ],
     [
      "Von",
-     "Dick Wolf"
+     "Patrick McKay, John D. Payne"
     ],
     [
      "Mit",
-     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
+     "Charlie Vickers, Morfydd Clark, Robert Aramayo, Owain Arthur"
     ],
     [
      "Sender/Dienst",
-     "NBC"
+     "Prime Video"
     ],
     [
      "TMDB-Wertung",
-     "8.0 / 10"
+     "7.2 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=O53wYUc_fA4",
-   "link": "https://www.themoviedb.org/tv/2734",
-   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
-   "news": []
+   "trailer": "https://www.youtube.com/watch?v=jL6TUZq0vos",
+   "link": "https://www.themoviedb.org/tv/84773",
+   "bild": "https://image.tmdb.org/t/p/w500/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Deutsche Serienstarts im November 2026 - Teil 2: „The Lord of the Rings: The Rings of Power“, „Yellowjackets“, „Die Kaiserin“",
+     "link": "https://www.serienjunkies.de/news/serien/deutsche-serienstarts-im-november-2026-teil-the-lord-of-the-rings-the-rings-of-power-yellowjackets-die-kaiserin-94583343.html",
+     "datum": "2026-11-10T14:00:00.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "'The Lord of the Rings: The Rings of Power' Officially Debuts New Release Today",
+     "link": "https://collider.com/the-lord-of-the-rings-the-rings-of-power-seasons-1-2-4k-blu-ray-release-november-2026/",
+     "datum": "2026-11-03T20:46:23.000Z"
+    }
+   ]
+  },
+  "tv-279246": {
+   "titel": "Die neuvermählte Kaiserin",
+   "original": "재혼 황후",
+   "leitsatz": null,
+   "handlung": "Die Beziehung zwischen Navier (Shin Min-a), Kaiserin des Östlichen Reiches, und ihrem Ehemann, Kaiser Sovieshu (Ju Ji-hoon), ist mehr als angespannt. Nicht nur in ihrem Reich wird die Stimmung innerhalb der Bevölkerung immer unruhiger, auch privat wird das regierende Paar vor eine große Herausforderung gestellt. Denn der Kaiser hat sich in eine entlaufene Sklavin verliebt und somit das Versprechen gebrochen, das er einst Navier gegeben hat: niemals eine Nebenfrau zu haben. Gleichzeitig reist Prinz Heinrey (Lee Jong-Suk), der Thronfolger des Westlichen Königreichs, zum Palast des Östlichen Kaiserreichs. Dort soll er als Spion fungieren, doch er verliebt sich schließlich in Kaiserin Navier.",
+   "genres": [
+    "Drama",
+    "Sci-Fi & Fantasy"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 10 Folgen"
+    ],
+    [
+     "Mit",
+     "Shin Min-a, 주지훈, Lee Jong-suk, 이세영"
+    ],
+    [
+     "Sender/Dienst",
+     "Disney+"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.8 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=aScUjuKvHSo",
+   "link": "https://www.themoviedb.org/tv/279246",
+   "bild": "https://image.tmdb.org/t/p/w500/l0v4MHlLMtmn1DrhL4G6fM9en3s.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "„Bridgerton“-Fans aufgepasst: „Die neuvermählte Kaiserin“ startet bei Disney+",
+     "link": "https://www.serienjunkies.de/news/storys/bridgerton-fans-aufgepasst-die-neuvermaehlte-kaiserin-startet-bei-disney-zr-94568678.html",
+     "datum": "2026-11-01T15:22:13.000Z"
+    }
+   ]
   },
   "tv-153312": {
    "titel": "Tulsa King",
@@ -4833,82 +4821,6 @@
     }
    ]
   },
-  "tv-279246": {
-   "titel": "Die neuvermählte Kaiserin",
-   "original": "재혼 황후",
-   "leitsatz": null,
-   "handlung": "Die Beziehung zwischen Navier (Shin Min-a), Kaiserin des Östlichen Reiches, und ihrem Ehemann, Kaiser Sovieshu (Ju Ji-hoon), ist mehr als angespannt. Nicht nur in ihrem Reich wird die Stimmung innerhalb der Bevölkerung immer unruhiger, auch privat wird das regierende Paar vor eine große Herausforderung gestellt. Denn der Kaiser hat sich in eine entlaufene Sklavin verliebt und somit das Versprechen gebrochen, das er einst Navier gegeben hat: niemals eine Nebenfrau zu haben. Gleichzeitig reist Prinz Heinrey (Lee Jong-Suk), der Thronfolger des Westlichen Königreichs, zum Palast des Östlichen Kaiserreichs. Dort soll er als Spion fungieren, doch er verliebt sich schließlich in Kaiserin Navier.",
-   "genres": [
-    "Drama",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 10 Folgen"
-    ],
-    [
-     "Mit",
-     "Shin Min-a, 주지훈, Lee Jong-suk, 이세영"
-    ],
-    [
-     "Sender/Dienst",
-     "Disney+"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.8 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=aScUjuKvHSo",
-   "link": "https://www.themoviedb.org/tv/279246",
-   "bild": "https://image.tmdb.org/t/p/w500/l0v4MHlLMtmn1DrhL4G6fM9en3s.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "„Bridgerton“-Fans aufgepasst: „Die neuvermählte Kaiserin“ startet bei Disney+",
-     "link": "https://www.serienjunkies.de/news/storys/bridgerton-fans-aufgepasst-die-neuvermaehlte-kaiserin-startet-bei-disney-zr-94568678.html",
-     "datum": "2026-11-01T15:22:13.000Z"
-    }
-   ]
-  },
-  "tv-247718": {
-   "titel": "MobLand: Familie bis aufs Blut",
-   "original": "MobLand",
-   "leitsatz": "Jetzt regiert das Chaos.",
-   "handlung": "Die Karten werden neu gemischt, als zwei verfeindete Verbrecherfamilien in einer Schlacht aneinandergeraten, die Imperien zu stürzen droht. Harry Da Souza, ein gewiefter Mann fürs Grobe, gerät ins Kreuzfeuer und stellt seine Loyalität unter Beweis.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "2 Staffeln, 20 Folgen"
-    ],
-    [
-     "Von",
-     "Ronan Bennett"
-    ],
-    [
-     "Mit",
-     "Tom Hardy, Pierce Brosnan, Paddy Considine, Joanne Froggatt"
-    ],
-    [
-     "Sender/Dienst",
-     "Paramount+, Paramount+"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.7 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=cyYZAc0TZ7U",
-   "link": "https://www.themoviedb.org/tv/247718",
-   "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
-   "news": []
-  },
   "tv-4614": {
    "titel": "Navy CIS",
    "original": "NCIS",
@@ -4960,6 +4872,42 @@
      "datum": "2026-11-18T08:11:00.000Z"
     }
    ]
+  },
+  "tv-247718": {
+   "titel": "MobLand: Familie bis aufs Blut",
+   "original": "MobLand",
+   "leitsatz": "Jetzt regiert das Chaos.",
+   "handlung": "Die Karten werden neu gemischt, als zwei verfeindete Verbrecherfamilien in einer Schlacht aneinandergeraten, die Imperien zu stürzen droht. Harry Da Souza, ein gewiefter Mann fürs Grobe, gerät ins Kreuzfeuer und stellt seine Loyalität unter Beweis.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "2 Staffeln, 20 Folgen"
+    ],
+    [
+     "Von",
+     "Ronan Bennett"
+    ],
+    [
+     "Mit",
+     "Tom Hardy, Pierce Brosnan, Paddy Considine, Joanne Froggatt"
+    ],
+    [
+     "Sender/Dienst",
+     "Paramount+, Paramount+"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.7 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=cyYZAc0TZ7U",
+   "link": "https://www.themoviedb.org/tv/247718",
+   "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
+   "news": []
   },
   "tv-549": {
    "titel": "Law & Order",
@@ -5280,6 +5228,40 @@
    "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
    "news": []
   },
+  "tv-30983": {
+   "titel": "Detektiv Conan",
+   "original": "名探偵コナン",
+   "leitsatz": null,
+   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
+   "genres": [
+    "Animation",
+    "Krimi",
+    "Mystery",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 1221 Folgen"
+    ],
+    [
+     "Mit",
+     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
+    ],
+    [
+     "Sender/Dienst",
+     "YTV"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
+   "link": "https://www.themoviedb.org/tv/30983",
+   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "news": []
+  },
   "tv-85077": {
    "titel": "The Chosen",
    "original": "The Chosen",
@@ -5362,6 +5344,41 @@
    "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
    "news": []
   },
+  "tv-62650": {
+   "titel": "Chicago Med",
+   "original": "Chicago Med",
+   "leitsatz": null,
+   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "12 Staffeln, 229 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Matt Olmstead"
+    ],
+    [
+     "Mit",
+     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/62650",
+   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "news": []
+  },
   "tv-75219": {
    "titel": "9-1-1 Notruf L.A.",
    "original": "9-1-1",
@@ -5404,134 +5421,6 @@
      "titel": "Wann kehren „Grey‘s Anatomy“, „High Potential“, „9-1-1“ und „The Rookie“ mit neuen Staffeln zurück?",
      "link": "https://www.serienjunkies.de/news/serien/abc-midseason-2027-alle-starttermine-im-ueberblick-94580446.html",
      "datum": "2026-11-09T07:59:49.000Z"
-    }
-   ]
-  },
-  "tv-30983": {
-   "titel": "Detektiv Conan",
-   "original": "名探偵コナン",
-   "leitsatz": null,
-   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
-   "genres": [
-    "Animation",
-    "Krimi",
-    "Mystery",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 1221 Folgen"
-    ],
-    [
-     "Mit",
-     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
-    ],
-    [
-     "Sender/Dienst",
-     "YTV"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
-   "link": "https://www.themoviedb.org/tv/30983",
-   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
-   "news": []
-  },
-  "tv-62650": {
-   "titel": "Chicago Med",
-   "original": "Chicago Med",
-   "leitsatz": null,
-   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "12 Staffeln, 225 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/62650",
-   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
-   "news": []
-  },
-  "tv-259909": {
-   "titel": "Dexter: Wiedererwachen",
-   "original": "Dexter: Resurrection",
-   "leitsatz": null,
-   "handlung": "Dexter Morgan erwacht aus dem Koma und macht sich auf den Weg zu Harrison nach New York, um ihre Beziehung zu kitten. Doch als der Ermittler Angel Batista auftaucht und Fragen stellt, wird Dexter klar, dass seine Vergangenheit ihn schnell einholt.",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Mystery"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "2 Staffeln, 20 Folgen"
-    ],
-    [
-     "Von",
-     "Clyde Phillips"
-    ],
-    [
-     "Mit",
-     "Michael C. Hall, Uma Thurman, Jack Alcott, Dan Stevens"
-    ],
-    [
-     "Sender/Dienst",
-     "Paramount+ with Showtime"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.5 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=84o1Q6fB20k",
-   "link": "https://www.themoviedb.org/tv/259909",
-   "bild": "https://image.tmdb.org/t/p/w500/dOsPeIDkYLGAmqDWMCN000MNBCI.jpg",
-   "news": [
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "Wann kommt Dexter: Wiedererwachen Staffel 2, Folge 4 und der Rest der Season?",
-     "link": "https://www.moviepilot.de/news/dexter-wiedererwachen-staffel-2-episoden-guide-ubersicht-1165509",
-     "datum": "2026-11-16T14:00:00.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "11 Best New Characters in 'Dexter: Resurrection,' Ranked",
-     "link": "https://collider.com/dexter-resurrection-best-new-characters-ranked/",
-     "datum": "2026-11-07T18:19:12.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "‘Dexter: Resurrection’ Quietly Revives a Missing Piece of the Original Show's Formula",
-     "link": "https://collider.com/dexter-resurrection-season-2-intro-opening-credits-original-show/",
-     "datum": "2026-10-30T18:31:12.000Z"
     }
    ]
   }
