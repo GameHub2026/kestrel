@@ -1,40 +1,7 @@
 {
- "von": "2026-11-17",
- "bis": "2027-03-19",
+ "von": "2026-11-18",
+ "bis": "2027-03-20",
  "eintraege": [
-  {
-   "id": "tv-4614-s24-2026-11-17",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Navy CIS",
-   "datum": "2026-11-17",
-   "text": "S24E6",
-   "jahr": "2003",
-   "bild": "https://image.tmdb.org/t/p/w342/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
-   "anbieter": [
-    "Disney+",
-    "Paramount+",
-    "WOW",
-    "Sky Go"
-   ],
-   "link": "https://www.themoviedb.org/tv/4614",
-   "info": "tv-4614"
-  },
-  {
-   "id": "tv-303745-s1-2026-11-17",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Undercover-Liebe",
-   "datum": "2026-11-17",
-   "text": "S1E10",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/fFcn3MngCVaQ19kAraXgmIOshN0.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/303745",
-   "info": "tv-303745"
-  },
   {
    "id": "tv-44006-s15-2026-11-18",
    "art": "serie",
@@ -90,7 +57,7 @@
    "datum": "2026-11-18",
    "text": "Neue Serie",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/KnhUSXgKqiG96mf4GofisAhhS2.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/zgDP2Czy9ocIHR7zOsxs4OHqLHA.jpg",
    "anbieter": [
     "Netflix"
    ],
@@ -150,7 +117,7 @@
    "datum": "2026-11-18",
    "text": "Neue Serie",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/ihjonCRR5gEUEH8RG2Qbk4Fy3HB.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/uBJAQlKVYV9tMOOT5zszE0InnLI.jpg",
    "anbieter": [
     "Netflix"
    ],
@@ -210,7 +177,7 @@
    "datum": "2026-11-19",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/eyxBOW9HSTbhT7s5V17SJKVegvC.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/xiCHNyV8SmZ3tm8JqZp1lQOBj5Q.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1300968",
    "info": "movie-1300968"
@@ -409,7 +376,7 @@
    "typ": "folge",
    "titel": "Tulsa King",
    "datum": "2026-11-20",
-   "text": "S4E6",
+   "text": "S4E6 · Hoch gepokert",
    "jahr": "2022",
    "bild": "https://image.tmdb.org/t/p/w342/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
    "anbieter": [
@@ -509,6 +476,21 @@
    ],
    "link": "https://www.themoviedb.org/tv/85077",
    "info": "tv-85077"
+  },
+  {
+   "id": "tv-340566-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "The Witch Farm",
+   "datum": "2026-11-22",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/hglk1OHLnaqZkaEcqK8maEJP1t4.jpg",
+   "anbieter": [
+    "BBC One"
+   ],
+   "link": "https://www.themoviedb.org/tv/340566",
+   "info": "tv-340566"
   },
   {
    "id": "tv-171802-s1",
@@ -792,21 +774,6 @@
    "info": "tv-80748"
   },
   {
-   "id": "tv-337600-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "The Boy Who Stole Billions?",
-   "datum": "2026-11-30",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/1VBEnGprHEmhABgbAzihQYwZRKJ.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/337600",
-   "info": "tv-337600"
-  },
-  {
    "id": "tv-4614-s24-2026-12-01",
    "art": "serie",
    "typ": "folge",
@@ -818,8 +785,7 @@
    "anbieter": [
     "Disney+",
     "Paramount+",
-    "WOW",
-    "Sky Go"
+    "WOW"
    ],
    "link": "https://www.themoviedb.org/tv/4614",
    "info": "tv-4614"
@@ -1045,8 +1011,7 @@
    "anbieter": [
     "Disney+",
     "Paramount+",
-    "WOW",
-    "Sky Go"
+    "WOW"
    ],
    "link": "https://www.themoviedb.org/tv/4614",
    "info": "tv-4614"
@@ -1184,19 +1149,6 @@
    "info": "movie-1170608"
   },
   {
-   "id": "movie-1404684-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "Nur geträumt",
-   "datum": "2026-12-17",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/aeEqPMjDCP9zrfViDb7xrcRbN5p.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1404684",
-   "info": "movie-1404684"
-  },
-  {
    "id": "tv-283220-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -1310,6 +1262,19 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1437981",
    "info": "movie-1437981"
+  },
+  {
+   "id": "tv-91555-s9",
+   "art": "serie",
+   "typ": "staffelstart",
+   "titel": "All Elite Wrestling: Dynamite",
+   "datum": "2027-01-01",
+   "text": "Staffel 9",
+   "jahr": "2019",
+   "bild": "https://image.tmdb.org/t/p/w342/uXst536FXtszhbUJzFikifRKvrK.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/tv/91555",
+   "info": "tv-91555"
   },
   {
    "id": "tv-456-s38-2027-01-03",
@@ -1426,19 +1391,6 @@
    ],
    "link": "https://www.themoviedb.org/tv/285887",
    "info": "tv-285887"
-  },
-  {
-   "id": "movie-621304-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "Children of Blood and Bone",
-   "datum": "2027-01-21",
-   "text": "Kinostart",
-   "jahr": "2027",
-   "bild": "https://image.tmdb.org/t/p/w342/qxUPu92DF5Bo6jcCDhnMTHFPEEc.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/621304",
-   "info": "movie-621304"
   },
   {
    "id": "movie-1391239-kino",
@@ -1599,6 +1551,19 @@
    "info": "movie-1497464"
   },
   {
+   "id": "movie-1599230-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Elsinore",
+   "datum": "2027-03-11",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/kohUtEueIVyDXC30MaOdi36aAwn.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1599230",
+   "info": "movie-1599230"
+  },
+  {
    "id": "movie-1476614-kino",
    "art": "film",
    "typ": "kino",
@@ -1610,6 +1575,19 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1476614",
    "info": "movie-1476614"
+  },
+  {
+   "id": "movie-458896-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "The Nightingale",
+   "datum": "2027-03-18",
+   "text": "Kinostart",
+   "jahr": "2027",
+   "bild": "https://image.tmdb.org/t/p/w342/b6CN8AAjev9ud7z9DXCKk0ipAsm.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/458896",
+   "info": "movie-458896"
   }
  ],
  "infos": {
@@ -1646,6 +1624,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/h2R2dPbIyjxXorGL6V8Mau01hJy.jpg",
    "news": [
     {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "GTA 6 hat nach 24 Stunden mehr eingespielt als Die Odyssee – und Spider-Man: Brand New Day ist nicht mehr weit entfernt",
+     "link": "https://www.moviepilot.de/news/gta-6-erfolg-die-odyssee-spider-man-1165590",
+     "datum": "2026-11-20T07:50:00.000Z"
+    },
+    {
      "quelle": "Deadline",
      "art": "film",
      "titel": "‘Spider-Man: Brand New Day’ Re-Release: First Look At Rosario Dawson As Night Nurse In Deleted Scene",
@@ -1672,13 +1657,75 @@
      "titel": "‘Spider-Man: Brand New Day’ Officially Returns to Theaters With New Footage",
      "link": "https://collider.com/spider-man-brand-new-day-extended-cut-theatrical-release-date/",
      "datum": "2026-11-16T23:40:04.000Z"
+    }
+   ]
+  },
+  "movie-1300968": {
+   "titel": "Die Tribute von Panem: Sunrise on the Reaping",
+   "original": "The Hunger Games: Sunrise on the Reaping",
+   "leitsatz": "Willkommen zu den 50. Hungerspielen",
+   "handlung": "Kehren Sie in die Welt von Panem zurück – 24 Jahre vor den Ereignissen von „Die Tribute von Panem“ –, beginnend am Morgen der Ernte für die 50. Hungerspiele, auch bekannt als das zweite Jubel-Jubiläum.",
+   "genres": [
+    "Science Fiction",
+    "Action",
+    "Abenteuer"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 39 Min"
+    ],
+    [
+     "Regie",
+     "Francis Lawrence"
+    ],
+    [
+     "Mit",
+     "Joseph Zada, Mckenna Grace, Ralph Fiennes, Jesse Plemons"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=3xfVyH0iwlc",
+   "link": "https://www.themoviedb.org/movie/1300968",
+   "bild": "https://image.tmdb.org/t/p/w500/xiCHNyV8SmZ3tm8JqZp1lQOBj5Q.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "„Die Tribute von Panem: Sunrise on the Reaping“: Filmkritik zum Prequel",
+     "link": "https://www.serienjunkies.de/news/serien/die-tribute-von-panem-sunrise-on-the-reaping-filmkritik-zum-prequel-94594728.html",
+     "datum": "2026-11-17T14:00:00.000Z"
     },
     {
      "quelle": "IndieWire",
      "art": "film",
-     "titel": "‘Spider-Man: Brand New Day’ Returning to Theaters with a New Rosario Dawson Cameo — and Box Office Records and Oscar Noms in Mind",
-     "link": "https://www.indiewire.com/news/breaking-news/spider-man-brand-new-day-returning-theaters-extended-cut-1235228526/",
-     "datum": "2026-11-16T23:37:56.000Z"
+     "titel": "‘The Hunger Games: Sunrise on the Reaping’ Review: They Shoot Franchises, Don’t They?",
+     "link": "https://www.indiewire.com/criticism/shows/the-hunger-games-sunrise-on-the-reaping-review-1235228481/",
+     "datum": "2026-11-17T14:00:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘The Hunger Games: Sunrise On The Reaping’ Album Full Tracklist Revealed",
+     "link": "https://deadline.com/feature/hunger-games-sunrise-on-the-reaping-songs-soundtrack-album-1237165820/",
+     "datum": "2026-11-02T20:45:00.000Z"
+    },
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "‘The Hunger Games: Sunrise on the Reaping’ Will Be in 3D in Theaters — and on Meta’s New VR Glasses",
+     "link": "https://www.indiewire.com/news/breaking-news/hunger-games-sunrise-reaping-3d-version-meta-vr-glasses-1235225062/",
+     "datum": "2026-11-02T20:00:00.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘The Hunger Games: Sunrise on the Reaping’ First Reactions",
+     "link": "https://www.hollywoodreporter.com/movies/movie-news/hunger-games-sunrise-on-the-reaping-first-reactions-1236742404/",
+     "datum": "2026-10-29T07:05:19.000Z"
     }
    ]
   },
@@ -1744,75 +1791,6 @@
      "titel": "Xochitl Gomez On Why Joining Marvel’s MCU Was \"A Gift  A Curse\"  The Possibility Of An ‘Avengers: Doomsday’ Appearance",
      "link": "https://deadline.com/2026/11/xochitl-gomez-marvel-mcu-avengers-doomsday-1237223299/",
      "datum": "2026-11-13T20:40:39.000Z"
-    }
-   ]
-  },
-  "movie-1300968": {
-   "titel": "Die Tribute von Panem: Sunrise on the Reaping",
-   "original": "The Hunger Games: Sunrise on the Reaping",
-   "leitsatz": "Willkommen zu den 50. Hungerspielen",
-   "handlung": "Kehren Sie in die Welt von Panem zurück – 24 Jahre vor den Ereignissen von „Die Tribute von Panem“ –, beginnend am Morgen der Ernte für die 50. Hungerspiele, auch bekannt als das zweite Jubel-Jubiläum.",
-   "genres": [
-    "Science Fiction",
-    "Action",
-    "Abenteuer"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 39 Min"
-    ],
-    [
-     "Regie",
-     "Francis Lawrence"
-    ],
-    [
-     "Mit",
-     "Joseph Zada, Mckenna Grace, Ralph Fiennes, Jesse Plemons"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.5 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=3xfVyH0iwlc",
-   "link": "https://www.themoviedb.org/movie/1300968",
-   "bild": "https://image.tmdb.org/t/p/w500/eyxBOW9HSTbhT7s5V17SJKVegvC.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "„Die Tribute von Panem: Sunrise on the Reaping“: Filmkritik zum Prequel",
-     "link": "https://www.serienjunkies.de/news/serien/die-tribute-von-panem-sunrise-on-the-reaping-filmkritik-zum-prequel-94594728.html",
-     "datum": "2026-11-17T14:00:00.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘The Hunger Games: Sunrise on the Reaping’ Review: They Shoot Franchises, Don’t They?",
-     "link": "https://www.indiewire.com/criticism/shows/the-hunger-games-sunrise-on-the-reaping-review-1235228481/",
-     "datum": "2026-11-17T14:00:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "‘The Hunger Games: Sunrise On The Reaping’ Album Full Tracklist Revealed",
-     "link": "https://deadline.com/feature/hunger-games-sunrise-on-the-reaping-songs-soundtrack-album-1237165820/",
-     "datum": "2026-11-02T20:45:00.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘The Hunger Games: Sunrise on the Reaping’ Will Be in 3D in Theaters — and on Meta’s New VR Glasses",
-     "link": "https://www.indiewire.com/news/breaking-news/hunger-games-sunrise-reaping-3d-version-meta-vr-glasses-1235225062/",
-     "datum": "2026-11-02T20:00:00.000Z"
-    },
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘The Hunger Games: Sunrise on the Reaping’ First Reactions",
-     "link": "https://www.hollywoodreporter.com/movies/movie-news/hunger-games-sunrise-on-the-reaping-first-reactions-1236742404/",
-     "datum": "2026-10-29T07:05:19.000Z"
     }
    ]
   },
@@ -1915,6 +1893,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/mVh3qkw2NUFxWWyF0G1hg2Wh0K5.jpg",
    "news": [
     {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "Billy Evans Will Secure His Cut of ‘You Can See Everything’ Profits After All — and Give It to Charity (Exclusive)",
+     "link": "https://www.hollywoodreporter.com/movies/movie-news/billy-evans-profits-you-can-see-everything-ycse-charity-1236759761/",
+     "datum": "2026-11-20T01:52:13.000Z"
+    },
+    {
      "quelle": "IndieWire",
      "art": "film",
      "titel": "IDA Documentary Awards 2026 Nominations: ‘You Can See Everything,’ ‘Concrete Land,’ and More Earn Nods",
@@ -1941,13 +1926,6 @@
      "titel": "2027 Oscar Predictions: The Odyssey Leads, but You Can See Everything Could Make History",
      "link": "https://collider.com/2027-oscar-predictions-nominations-the-odyssey-you-can-see-everything/",
      "datum": "2026-11-16T12:00:12.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "Billy Evans Addresses Amanda Seyfried’s Portrayal of Elizabeth Holmes in ‘You Can See Everything’: She Was ‘Eager’ to ‘Play a Character’",
-     "link": "https://variety.com/2026/film/news/billy-evans-amanda-seyfried-elizabeth-holmes-portrayal-1236948144/",
-     "datum": "2026-11-15T17:34:36.000Z"
     }
    ]
   },
@@ -2022,55 +2000,6 @@
     }
    ]
   },
-  "movie-1195803": {
-   "titel": "Wicker",
-   "original": "Wicker",
-   "leitsatz": null,
-   "handlung": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
-   "genres": [
-    "Liebesfilm",
-    "Fantasy",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 45 Min"
-    ],
-    [
-     "Regie",
-     "Eleanor Wilson, Alex Huston Fischer"
-    ],
-    [
-     "Mit",
-     "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.5 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=kA9NfV4pM_Q",
-   "link": "https://www.themoviedb.org/movie/1195803",
-   "bild": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
-   "news": [
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "\"Wicker Nipples\" and All: ‘Wicker’ Cinematographer Celebrates Steamy Film’s Viral Success",
-     "link": "https://www.hollywoodreporter.com/movies/movie-news/wicker-alexander-skarsgard-lol-crawley-camerimage-nipples-1236759179/",
-     "datum": "2026-11-19T07:46:52.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "‘Wicker’ Star Alexander Skarsgård Appreciated “Social Commentary” Of Feminist Romantasy Film Without It Being “Too Preachy” – Contenders L.A.",
-     "link": "https://deadline.com/2026/11/alexander-skarsgard-wicker-interview-1237224217/",
-     "datum": "2026-11-15T01:55:07.000Z"
-    }
-   ],
-   "sprache": "en"
-  },
   "movie-1286656": {
    "titel": "I Play Rocky",
    "original": "I Play Rocky",
@@ -2139,6 +2068,155 @@
     }
    ]
   },
+  "movie-1195803": {
+   "titel": "Wicker",
+   "original": "Wicker",
+   "leitsatz": null,
+   "handlung": "On the outskirts of a village by the sea, lives a Fisherwoman; smelly, single and perpetually ridiculed. One day, fed up with her stuffy, small-minded neighbours, she commissions herself a husband to be made from wicker. In an otherwise conservative town, this unconventional romance sparks outrage, jealousy and chaos.",
+   "genres": [
+    "Liebesfilm",
+    "Fantasy",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 45 Min"
+    ],
+    [
+     "Regie",
+     "Eleanor Wilson, Alex Huston Fischer"
+    ],
+    [
+     "Mit",
+     "Olivia Colman, Alexander Skarsgård, Peter Dinklage, Elizabeth Debicki"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.5 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=kA9NfV4pM_Q",
+   "link": "https://www.themoviedb.org/movie/1195803",
+   "bild": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
+   "news": [
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "\"Wicker Nipples\" and All: ‘Wicker’ Cinematographer Celebrates Steamy Film’s Viral Success",
+     "link": "https://www.hollywoodreporter.com/movies/movie-news/wicker-alexander-skarsgard-lol-crawley-camerimage-nipples-1236759179/",
+     "datum": "2026-11-19T07:46:52.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘Wicker’ Star Alexander Skarsgård Appreciated “Social Commentary” Of Feminist Romantasy Film Without It Being “Too Preachy” – Contenders L.A.",
+     "link": "https://deadline.com/2026/11/alexander-skarsgard-wicker-interview-1237224217/",
+     "datum": "2026-11-15T01:55:07.000Z"
+    }
+   ],
+   "sprache": "en"
+  },
+  "movie-1538497": {
+   "titel": "Wie verhext",
+   "original": "Hexed",
+   "leitsatz": "Wir warten schon auf dich.",
+   "handlung": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
+   "genres": [
+    "Abenteuer",
+    "Animation",
+    "Familie",
+    "Fantasy",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 43 Min"
+    ],
+    [
+     "Regie",
+     "Jason Hand, ฝน วีระสุนทร"
+    ],
+    [
+     "Mit",
+     "Hailee Steinfeld, Rashida Jones, Jodie Foster, Walton Goggins"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=6YYMqS8_Bp0",
+   "link": "https://www.themoviedb.org/movie/1538497",
+   "bild": "https://image.tmdb.org/t/p/w500/lMYJ4ogEBiB6pTxi5sm73kBsxiE.jpg",
+   "news": [
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Ariana Grande Comedy ‘Focker-In-Law’  Disney’s ‘Hexed’ Hope To Lure $40M-$50M Apiece Over Thanksgiving Box Office Stretch",
+     "link": "https://deadline.com/2026/11/ariana-grande-focker-in-law-hexed-box-office-projections-1237215651/",
+     "datum": "2026-11-06T18:32:16.000Z"
+    }
+   ],
+   "sprache": "en"
+  },
+  "movie-1401459": {
+   "titel": "Fjord",
+   "original": "Fjord",
+   "leitsatz": null,
+   "handlung": "Nach dem Tod von Mihais Eltern lassen Mihai und Lisbet Gheorghiu ihr Leben in Rumänien hinter sich und ziehen mit ihren Kindern in ein abgelegenes Dorf in Norwegen – in der Hoffnung, in der Nähe von Lisbets Familie einen Neuanfang zu wagen. Dort kommen sie ihren Nachbarn, der Familie Halberg, näher, deren Herzlichkeit ihnen Hoffnung auf einen neuen Anfang gibt. Doch der zerbrechliche Frieden gerät ins Wanken, als die kleine Tochter der Familie Gheorghiu, Elia, mit blauen Flecken am Körper in der Schule erscheint.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 27 Min"
+    ],
+    [
+     "Regie",
+     "Cristian Mungiu"
+    ],
+    [
+     "Mit",
+     "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=frg59VOungA",
+   "link": "https://www.themoviedb.org/movie/1401459",
+   "bild": "https://image.tmdb.org/t/p/w500/rIhqYAVPmMQaTCiBJI5o21KDFM2.jpg",
+   "news": [
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Marrakech Film Festival Grows Its Awards-Season Clout With ‘Artificial,’ ‘The Debut,’ ‘Fjord’ and Other Oscar Hopefuls",
+     "link": "https://variety.com/2026/film/global/artificial-the-debut-oscar-campaigns-marrakech-1236951607/",
+     "datum": "2026-11-18T11:17:24.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘Fatherland,’ ‘La Bola Negra,’ ‘Fjord’ Lead European Film Award Nominations",
+     "link": "https://www.hollywoodreporter.com/movies/movie-news/fatherland-la-bola-negra-european-film-award-nominations-1236754942/",
+     "datum": "2026-11-14T10:30:00.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Palme d’Or Winner ‘Fjord’ to Open 26th European Film Festival Malaysia, Astro First to Stream Selected Titles",
+     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-european-film-festival-malaysia-1236945991/",
+     "datum": "2026-11-12T11:23:19.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Cristian Mungiu’s Palme d’Or Winner ‘Fjord’ Takes Jakarta World Cinema Audience Award as Short Film Winners Land Debut Feature Funding",
+     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-jakarta-world-cinema-audience-award-1236942247/",
+     "datum": "2026-11-08T03:50:26.000Z"
+    }
+   ]
+  },
   "movie-1458099": {
    "titel": "The Only Living Pickpocket in New York",
    "original": "The Only Living Pickpocket in New York",
@@ -2187,136 +2265,6 @@
     }
    ]
   },
-  "movie-1401459": {
-   "titel": "Fjord",
-   "original": "Fjord",
-   "leitsatz": null,
-   "handlung": "Nach dem Tod von Mihais Eltern lassen Mihai und Lisbet Gheorghiu ihr Leben in Rumänien hinter sich und ziehen mit ihren Kindern in ein abgelegenes Dorf in Norwegen – in der Hoffnung, in der Nähe von Lisbets Familie einen Neuanfang zu wagen. Dort kommen sie ihren Nachbarn, der Familie Halberg, näher, deren Herzlichkeit ihnen Hoffnung auf einen neuen Anfang gibt. Doch der zerbrechliche Frieden gerät ins Wanken, als die kleine Tochter der Familie Gheorghiu, Elia, mit blauen Flecken am Körper in der Schule erscheint.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 27 Min"
-    ],
-    [
-     "Regie",
-     "Cristian Mungiu"
-    ],
-    [
-     "Mit",
-     "Sebastian Stan, Renate Reinsve, Lisa Carlehed, Ellen Dorrit Petersen"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=frg59VOungA",
-   "link": "https://www.themoviedb.org/movie/1401459",
-   "bild": "https://image.tmdb.org/t/p/w500/rIhqYAVPmMQaTCiBJI5o21KDFM2.jpg",
-   "news": [
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "Marrakech Film Festival Grows Its Awards-Season Clout With ‘Artificial,’ ‘The Debut,’ ‘Fjord’ and Other Oscar Hopefuls",
-     "link": "https://variety.com/2026/film/global/artificial-the-debut-oscar-campaigns-marrakech-1236951607/",
-     "datum": "2026-11-18T11:17:24.000Z"
-    },
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘Fatherland,’ ‘La Bola Negra,’ ‘Fjord’ Lead European Film Award Nominations",
-     "link": "https://www.hollywoodreporter.com/movies/movie-news/fatherland-la-bola-negra-european-film-award-nominations-1236754942/",
-     "datum": "2026-11-14T10:30:00.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "Palme d’Or Winner ‘Fjord’ to Open 26th European Film Festival Malaysia, Astro First to Stream Selected Titles",
-     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-european-film-festival-malaysia-1236945991/",
-     "datum": "2026-11-12T11:23:19.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "Cristian Mungiu’s Palme d’Or Winner ‘Fjord’ Takes Jakarta World Cinema Audience Award as Short Film Winners Land Debut Feature Funding",
-     "link": "https://variety.com/2026/film/festivals/palme-dor-winner-fjord-jakarta-world-cinema-audience-award-1236942247/",
-     "datum": "2026-11-08T03:50:26.000Z"
-    }
-   ]
-  },
-  "movie-1538497": {
-   "titel": "Wie verhext",
-   "original": "Hexed",
-   "leitsatz": "Wir warten schon auf dich.",
-   "handlung": "An impulsive and unconventional teenage girl named Billie discovers secret magical abilities which, once unleashed, hurtle her into a spectacle-filled journey out of suburbia and into a vast witch realm called Hexe. Forced to team up with her cautious mother, Alice, they uncover family mysteries that could change the world of witches forever.",
-   "genres": [
-    "Abenteuer",
-    "Animation",
-    "Familie",
-    "Fantasy",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 43 Min"
-    ],
-    [
-     "Regie",
-     "Jason Hand, ฝน วีระสุนทร"
-    ],
-    [
-     "Mit",
-     "Hailee Steinfeld, Rashida Jones, Jodie Foster, Walton Goggins"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=6YYMqS8_Bp0",
-   "link": "https://www.themoviedb.org/movie/1538497",
-   "bild": "https://image.tmdb.org/t/p/w500/lMYJ4ogEBiB6pTxi5sm73kBsxiE.jpg",
-   "news": [
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Ariana Grande Comedy ‘Focker-In-Law’  Disney’s ‘Hexed’ Hope To Lure $40M-$50M Apiece Over Thanksgiving Box Office Stretch",
-     "link": "https://deadline.com/2026/11/ariana-grande-focker-in-law-hexed-box-office-projections-1237215651/",
-     "datum": "2026-11-06T18:32:16.000Z"
-    }
-   ],
-   "sprache": "en"
-  },
-  "movie-822653": {
-   "titel": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
-   "original": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-   "leitsatz": null,
-   "handlung": "Nach den Ereignissen von „Rebellion“ scheint die Welt im Gleichgewicht zu sein – doch dieser Frieden ist brüchig. Als eine neue Bedrohung im Zusammenhang mit der Walpurgisnacht auftaucht, ist Homura Akemi gezwungen, sich den Konsequenzen ihrer Entscheidungen zu stellen und sich zu fragen, wie weit sie bereit ist zu gehen, um Madoka zu beschützen.",
-   "genres": [
-    "Animation",
-    "Drama",
-    "Mystery",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 0 Min"
-    ],
-    [
-     "Regie",
-     "宮本幸裕, Akiyuki Simbo"
-    ],
-    [
-     "Mit",
-     "Aoi Yuki, Chiwa Saito, Eri Kitamura, Ai Nonaka"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=lAIYKMbMMcg",
-   "link": "https://www.themoviedb.org/movie/822653",
-   "bild": "https://image.tmdb.org/t/p/w500/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
-   "news": []
-  },
   "movie-1400336": {
    "titel": "Meine Frau, unsere Schwiegertochter und ich",
    "original": "Focker-in-Law",
@@ -2352,6 +2300,36 @@
      "datum": "2026-11-06T18:32:16.000Z"
     }
    ]
+  },
+  "movie-822653": {
+   "titel": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
+   "original": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
+   "leitsatz": null,
+   "handlung": "Nach den Ereignissen von „Rebellion“ scheint die Welt im Gleichgewicht zu sein – doch dieser Frieden ist brüchig. Als eine neue Bedrohung im Zusammenhang mit der Walpurgisnacht auftaucht, ist Homura Akemi gezwungen, sich den Konsequenzen ihrer Entscheidungen zu stellen und sich zu fragen, wie weit sie bereit ist zu gehen, um Madoka zu beschützen.",
+   "genres": [
+    "Animation",
+    "Drama",
+    "Mystery",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 0 Min"
+    ],
+    [
+     "Regie",
+     "宮本幸裕, Akiyuki Simbo"
+    ],
+    [
+     "Mit",
+     "Aoi Yuki, Chiwa Saito, Eri Kitamura, Ai Nonaka"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=lAIYKMbMMcg",
+   "link": "https://www.themoviedb.org/movie/822653",
+   "bild": "https://image.tmdb.org/t/p/w500/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
+   "news": []
   },
   "movie-1170608": {
    "titel": "Dune: Part Three",
@@ -2425,70 +2403,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/vFnFLqXjf7RQfkNxrrys43BZKxJ.jpg",
    "news": []
   },
-  "movie-1430077": {
-   "titel": "Hokum",
-   "original": "Hokum",
-   "leitsatz": "Wir haben dich erwartet.",
-   "handlung": "Jahrhundertelang hat eine Hexe die Menschen im irischen County Cork terrorisiert, hat ihre Opfer in Ketten gelegt und durch die Unterwelt gezerrt, wo sie von verlorenen Seelen verschlungen wurden. Aber jetzt ist das grausame Wesen endlich gefangen, erzählt man Ohm (Adam Scott): und zwar in der Hochzeitssuite des kleinen Hotels, in dem sich der amerikanische Autor nichts ahnend einquartiert hat. Herablassend tut er die Legenden und Warnungen als Humbug ab. Bis sich ihm eines Nachts die Tür zur verbotenen Suite öffnet.",
-   "genres": [
-    "Horror",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 47 Min"
-    ],
-    [
-     "Regie",
-     "Damian McCarthy"
-    ],
-    [
-     "Mit",
-     "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.8 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=I1dx_clHJ-Q",
-   "link": "https://www.themoviedb.org/movie/1430077",
-   "bild": "https://image.tmdb.org/t/p/w500/mNGfdRoZFmyzagpxg22fsNZ3d3A.jpg",
-   "news": []
-  },
-  "movie-1433583": {
-   "titel": "The Weight – Im Goldrausch",
-   "original": "The Weight",
-   "leitsatz": null,
-   "handlung": "Oregon 1933: Nach dem Tod seiner Frau wird Samuel Murphy von seiner Tochter getrennt und landet in einem Arbeitslager. Um das Sorgerecht zurückzuerlangen, lässt Murphy sich auf einen riskanten Deal mit dem skrupellosen Lageraufseher Clancy ein: Man stellt ihm eine vorzeitige Entlassung in Aussicht, wenn er sich im Gegenzug einer Gruppe Schmuggler bei einem Goldtransport durch die unbarmherzige Wildnis anschließt. Doch abgesehen von den Gefahren, die auf dem unwegsamen Terrain lauern, wird das Unterfangen auch durch Misstrauen und Verrat in den eigenen Reihen sabotiert. Je näher die Gruppe ihrem Ziel kommt, desto mehr zweifelt Murphy an dem Preis, den er für seine Freiheit und das Wiedersehen mit seinem Kind zahlen muss.",
-   "genres": [
-    "Drama",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 55 Min"
-    ],
-    [
-     "Regie",
-     "Padraic McKinley"
-    ],
-    [
-     "Mit",
-     "Ethan Hawke, Russell Crowe, Julia Jones, Austin Amelio"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=IexQvEpqwrE",
-   "link": "https://www.themoviedb.org/movie/1433583",
-   "bild": "https://image.tmdb.org/t/p/w500/ha3AUl0Zc0xs2hWxCROHTkDId25.jpg",
-   "news": []
-  },
   "movie-1457866": {
    "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
    "original": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
@@ -2554,6 +2468,70 @@
     }
    ]
   },
+  "movie-1430077": {
+   "titel": "Hokum",
+   "original": "Hokum",
+   "leitsatz": "Wir haben dich erwartet.",
+   "handlung": "Jahrhundertelang hat eine Hexe die Menschen im irischen County Cork terrorisiert, hat ihre Opfer in Ketten gelegt und durch die Unterwelt gezerrt, wo sie von verlorenen Seelen verschlungen wurden. Aber jetzt ist das grausame Wesen endlich gefangen, erzählt man Ohm (Adam Scott): und zwar in der Hochzeitssuite des kleinen Hotels, in dem sich der amerikanische Autor nichts ahnend einquartiert hat. Herablassend tut er die Legenden und Warnungen als Humbug ab. Bis sich ihm eines Nachts die Tür zur verbotenen Suite öffnet.",
+   "genres": [
+    "Horror",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 47 Min"
+    ],
+    [
+     "Regie",
+     "Damian McCarthy"
+    ],
+    [
+     "Mit",
+     "Adam Scott, Peter Coonan, David Wilmot, Florence Ordesh"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.8 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=I1dx_clHJ-Q",
+   "link": "https://www.themoviedb.org/movie/1430077",
+   "bild": "https://image.tmdb.org/t/p/w500/mNGfdRoZFmyzagpxg22fsNZ3d3A.jpg",
+   "news": []
+  },
+  "movie-1433583": {
+   "titel": "The Weight – Im Goldrausch",
+   "original": "The Weight",
+   "leitsatz": null,
+   "handlung": "Oregon 1933: Nach dem Tod seiner Frau wird Samuel Murphy von seiner Tochter getrennt und landet in einem Arbeitslager. Um das Sorgerecht zurückzuerlangen, lässt Murphy sich auf einen riskanten Deal mit dem skrupellosen Lageraufseher Clancy ein: Man stellt ihm eine vorzeitige Entlassung in Aussicht, wenn er sich im Gegenzug einer Gruppe Schmuggler bei einem Goldtransport durch die unbarmherzige Wildnis anschließt. Doch abgesehen von den Gefahren, die auf dem unwegsamen Terrain lauern, wird das Unterfangen auch durch Misstrauen und Verrat in den eigenen Reihen sabotiert. Je näher die Gruppe ihrem Ziel kommt, desto mehr zweifelt Murphy an dem Preis, den er für seine Freiheit und das Wiedersehen mit seinem Kind zahlen muss.",
+   "genres": [
+    "Drama",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 55 Min"
+    ],
+    [
+     "Regie",
+     "Padraic McKinley"
+    ],
+    [
+     "Mit",
+     "Ethan Hawke, Russell Crowe, Julia Jones, Austin Amelio"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=IexQvEpqwrE",
+   "link": "https://www.themoviedb.org/movie/1433583",
+   "bild": "https://image.tmdb.org/t/p/w500/ha3AUl0Zc0xs2hWxCROHTkDId25.jpg",
+   "news": []
+  },
   "movie-1260649": {
    "titel": "Jumanji: Open World",
    "original": "Jumanji: Open World",
@@ -2591,68 +2569,6 @@
     }
    ],
    "sprache": "en"
-  },
-  "movie-1165366": {
-   "titel": "De Gaulle - Zeit des Widerstands",
-   "original": "La Bataille de Gaulle : L’Âge de fer",
-   "leitsatz": null,
-   "handlung": "Juni 1940. Frankreich bricht zusammen und unterzeichnet den Waffenstillstand. Inmitten des Chaos weigert sich ein Mann, aufzugeben. Ganz auf sich allein gestellt, flieht dieser bis dahin unbekannte General nach London, um zu retten, was von der Freiheit geblieben ist.",
-   "genres": [
-    "Historie",
-    "Drama",
-    "Kriegsfilm"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 40 Min"
-    ],
-    [
-     "Regie",
-     "Antonin Baudry"
-    ],
-    [
-     "Mit",
-     "Simon Abkarian, Simon Russell Beale, Florian Lesieur, Benoît Magimel"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.8 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=P_bc5JtHsZk",
-   "link": "https://www.themoviedb.org/movie/1165366",
-   "bild": "https://image.tmdb.org/t/p/w500/pNaHwxMkymhGky2VXl3ARd3hc7o.jpg",
-   "news": []
-  },
-  "movie-1437981": {
-   "titel": "Les Braves",
-   "original": "Les Braves",
-   "leitsatz": null,
-   "handlung": "Während sich der Erste Weltkrieg immer weiter hinzieht, brennt Pierre, ein neu an der Front eingetroffener Soldat, darauf, sich zu beweisen. Hinter den Linien begegnet er Francis, der seine Kameraden mit einer Theaterrevue aufheitern will. Während die Gewalt unvermindert anhält, suchen beide Männer nach Wegen, der Brutalität des Krieges zu entkommen – und sei es nur für einen Augenblick.",
-   "genres": [
-    "Drama",
-    "Liebesfilm",
-    "Kriegsfilm"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 0 Min"
-    ],
-    [
-     "Regie",
-     "Lukas Dhont"
-    ],
-    [
-     "Mit",
-     "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=6E28mNqDIQU",
-   "link": "https://www.themoviedb.org/movie/1437981",
-   "bild": "https://image.tmdb.org/t/p/w500/xGiQYHSBXVlMqCdhEoSBjcMUWex.jpg",
-   "news": []
   },
   "movie-1585239": {
    "titel": "Club Kid",
@@ -2721,6 +2637,98 @@
      "datum": "2026-11-04T18:00:00.000Z"
     }
    ]
+  },
+  "movie-1165366": {
+   "titel": "De Gaulle - Zeit des Widerstands",
+   "original": "La Bataille de Gaulle : L’Âge de fer",
+   "leitsatz": null,
+   "handlung": "Juni 1940. Frankreich bricht zusammen und unterzeichnet den Waffenstillstand. Inmitten des Chaos weigert sich ein Mann, aufzugeben. Ganz auf sich allein gestellt, flieht dieser bis dahin unbekannte General nach London, um zu retten, was von der Freiheit geblieben ist.",
+   "genres": [
+    "Historie",
+    "Drama",
+    "Kriegsfilm"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 40 Min"
+    ],
+    [
+     "Regie",
+     "Antonin Baudry"
+    ],
+    [
+     "Mit",
+     "Simon Abkarian, Simon Russell Beale, Florian Lesieur, Benoît Magimel"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.8 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=P_bc5JtHsZk",
+   "link": "https://www.themoviedb.org/movie/1165366",
+   "bild": "https://image.tmdb.org/t/p/w500/pNaHwxMkymhGky2VXl3ARd3hc7o.jpg",
+   "news": []
+  },
+  "movie-1437981": {
+   "titel": "Les Braves",
+   "original": "Les Braves",
+   "leitsatz": null,
+   "handlung": "Während sich der Erste Weltkrieg immer weiter hinzieht, brennt Pierre, ein neu an der Front eingetroffener Soldat, darauf, sich zu beweisen. Hinter den Linien begegnet er Francis, der seine Kameraden mit einer Theaterrevue aufheitern will. Während die Gewalt unvermindert anhält, suchen beide Männer nach Wegen, der Brutalität des Krieges zu entkommen – und sei es nur für einen Augenblick.",
+   "genres": [
+    "Drama",
+    "Liebesfilm",
+    "Kriegsfilm"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 0 Min"
+    ],
+    [
+     "Regie",
+     "Lukas Dhont"
+    ],
+    [
+     "Mit",
+     "Emmanuel Macchia, Valentin Campagne, Jef Jacobs, Willem De Schryver"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=6E28mNqDIQU",
+   "link": "https://www.themoviedb.org/movie/1437981",
+   "bild": "https://image.tmdb.org/t/p/w500/xGiQYHSBXVlMqCdhEoSBjcMUWex.jpg",
+   "news": []
+  },
+  "movie-1300926": {
+   "titel": "Angry Birds 3 - Der Film",
+   "original": "The Angry Birds Movie 3",
+   "leitsatz": null,
+   "handlung": "Red steht vor seiner bisher größten Herausforderung: das Vaterdasein zu überstehen – und gleichzeitig die Welt zu retten.",
+   "genres": [
+    "Abenteuer",
+    "Animation",
+    "Komödie",
+    "Familie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 36 Min"
+    ],
+    [
+     "Regie",
+     "John Rice"
+    ],
+    [
+     "Mit",
+     "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=JkF1fSEqRU8",
+   "link": "https://www.themoviedb.org/movie/1300926",
+   "bild": "https://image.tmdb.org/t/p/w500/xyml31x5gu23tOMIFJ43XO4aTD6.jpg",
+   "news": []
   },
   "movie-1497464": {
    "titel": "Gatto",
@@ -2827,36 +2835,6 @@
    "news": [],
    "sprache": "en"
   },
-  "movie-1300926": {
-   "titel": "Angry Birds 3 - Der Film",
-   "original": "The Angry Birds Movie 3",
-   "leitsatz": null,
-   "handlung": "Red steht vor seiner bisher größten Herausforderung: das Vaterdasein zu überstehen – und gleichzeitig die Welt zu retten.",
-   "genres": [
-    "Abenteuer",
-    "Animation",
-    "Komödie",
-    "Familie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 36 Min"
-    ],
-    [
-     "Regie",
-     "John Rice"
-    ],
-    [
-     "Mit",
-     "Jason Sudeikis, Josh Gad, Danny McBride, Rachel Bloom"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=JkF1fSEqRU8",
-   "link": "https://www.themoviedb.org/movie/1300926",
-   "bild": "https://image.tmdb.org/t/p/w500/xyml31x5gu23tOMIFJ43XO4aTD6.jpg",
-   "news": []
-  },
   "movie-1440769": {
    "titel": "The Beekeeper 2",
    "original": "The Beekeeper 2",
@@ -2916,35 +2894,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/uYmzx1mFcgYgHfp0U9CVLvXFhcU.jpg",
    "news": []
   },
-  "movie-1209723": {
-   "titel": "Yeh Prem Mol Liya",
-   "original": "ये प्रेम मोल लिया",
-   "leitsatz": null,
-   "handlung": "Ein herzergreifendes, romantisches Familiendrama über zwei beste Freunde, deren enge Verbundenheit sich langsam in Liebe verwandelt. Doch eine Lüge führt zu Missverständnissen und Konflikten, die ihre Beziehung und ihre familiären Bindungen auf eine harte Probe stellen. Die Geschichte handelt von Liebe, Opferbereitschaft, Verständnis und der Bedeutung der Familie.",
-   "genres": [
-    "Liebesfilm",
-    "Familie",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 53 Min"
-    ],
-    [
-     "Regie",
-     "Sooraj Barjatya"
-    ],
-    [
-     "Mit",
-     "Ayushmann Khurrana, Sharvari Wagh, अनुपम खेर, Geeta Agrawal Sharma"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=yTSDTmdLb0k",
-   "link": "https://www.themoviedb.org/movie/1209723",
-   "bild": "https://image.tmdb.org/t/p/w500/kUxkvh6GMZL4AHNgNDty68yTnwQ.jpg",
-   "news": []
-  },
   "movie-1476614": {
    "titel": "All of a Sudden",
    "original": "急に具合が悪くなる",
@@ -2983,6 +2932,35 @@
      "datum": "2026-11-10T20:00:00.000Z"
     }
    ]
+  },
+  "movie-1209723": {
+   "titel": "Yeh Prem Mol Liya",
+   "original": "ये प्रेम मोल लिया",
+   "leitsatz": null,
+   "handlung": "Ein herzergreifendes, romantisches Familiendrama über zwei beste Freunde, deren enge Verbundenheit sich langsam in Liebe verwandelt. Doch eine Lüge führt zu Missverständnissen und Konflikten, die ihre Beziehung und ihre familiären Bindungen auf eine harte Probe stellen. Die Geschichte handelt von Liebe, Opferbereitschaft, Verständnis und der Bedeutung der Familie.",
+   "genres": [
+    "Liebesfilm",
+    "Familie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 53 Min"
+    ],
+    [
+     "Regie",
+     "Sooraj Barjatya"
+    ],
+    [
+     "Mit",
+     "Ayushmann Khurrana, Sharvari Wagh, अनुपम खेर, Geeta Agrawal Sharma"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=yTSDTmdLb0k",
+   "link": "https://www.themoviedb.org/movie/1209723",
+   "bild": "https://image.tmdb.org/t/p/w500/kUxkvh6GMZL4AHNgNDty68yTnwQ.jpg",
+   "news": []
   },
   "movie-940009": {
    "titel": "Ray Gunn",
@@ -3068,6 +3046,55 @@
    "link": "https://www.themoviedb.org/movie/1074074",
    "bild": "https://image.tmdb.org/t/p/w500/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
    "news": []
+  },
+  "movie-1599230": {
+   "titel": "Elsinore",
+   "original": "Elsinore",
+   "leitsatz": null,
+   "handlung": "Die zutiefst bewegende und inspirierende wahre Geschichte von Ian Charleson, einem begabten Schauspieler, dessen größte Herausforderung zu seinem größten Triumph wird. Charleson begegnet seiner eigenen Sterblichkeit mit unerschütterlicher Ehrlichkeit, Witz und Anmut und liefert eine mutige Darbietung, die für seine Mitmenschen zu einer Quelle der Heilung und Inspiration wird.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 51 Min"
+    ],
+    [
+     "Regie",
+     "Simon Stone"
+    ],
+    [
+     "Mit",
+     "Andrew Scott, Olivia Colman, Billie Piper, Johnny Flynn"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=9TCvtaiwBlY",
+   "link": "https://www.themoviedb.org/movie/1599230",
+   "bild": "https://image.tmdb.org/t/p/w500/kohUtEueIVyDXC30MaOdi36aAwn.jpg",
+   "news": [
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "‘Elsinore’ Review: Andrew Scott’s Towering Performance as a Dying Actor Can’t Overcome AIDS-Movie Awards Bait Clichés",
+     "link": "https://www.indiewire.com/criticism/movies/elsinore-movie-review-andrew-scott-1235214584/",
+     "datum": "2026-11-18T18:00:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "British Independent Film Awards: ‘Elsinore’ Leads Nominations",
+     "link": "https://deadline.com/2026/11/british-independent-film-awards-elsinore-2026-1237211788/",
+     "datum": "2026-11-03T10:00:00.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "British Independent Film Awards: ‘Elsinore’ Leads Nominations With 12",
+     "link": "https://www.hollywoodreporter.com/movies/movie-news/bifa-nominations-2026-list-elsinore-andrew-scott-1236746638/",
+     "datum": "2026-11-03T10:00:00.000Z"
+    }
+   ]
   },
   "movie-1421903": {
    "titel": "Werwulf",
@@ -3183,6 +3210,40 @@
      "datum": "2026-11-15T17:51:03.000Z"
     }
    ]
+  },
+  "movie-458896": {
+   "titel": "The Nightingale",
+   "original": "The Nightingale",
+   "leitsatz": null,
+   "handlung": "The lives of two French sisters are torn apart by the onset of World War II.",
+   "genres": [
+    "Drama",
+    "Historie",
+    "Kriegsfilm"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Michael Morris"
+    ],
+    [
+     "Mit",
+     "Elle Fanning, Dakota Fanning, Mark Rylance, Shira Haas"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=gNHr2-JjKRM",
+   "link": "https://www.themoviedb.org/movie/458896",
+   "bild": "https://image.tmdb.org/t/p/w500/b6CN8AAjev9ud7z9DXCKk0ipAsm.jpg",
+   "news": [
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Everything We Know About ‘The Nightingale’ Movie So Far: Release Date, Stars  More",
+     "link": "https://deadline.com/feature/the-nightingale-movie-news-updates-kristin-hannah-book-1236690359/",
+     "datum": "2026-11-19T21:40:48.000Z"
+    }
+   ],
+   "sprache": "en"
   },
   "movie-1425859": {
    "titel": "Remain",
@@ -3304,55 +3365,6 @@
     }
    ],
    "sprache": "en"
-  },
-  "movie-1599230": {
-   "titel": "Elsinore",
-   "original": "Elsinore",
-   "leitsatz": null,
-   "handlung": "Die zutiefst bewegende und inspirierende wahre Geschichte von Ian Charleson, einem begabten Schauspieler, dessen größte Herausforderung zu seinem größten Triumph wird. Charleson begegnet seiner eigenen Sterblichkeit mit unerschütterlicher Ehrlichkeit, Witz und Anmut und liefert eine mutige Darbietung, die für seine Mitmenschen zu einer Quelle der Heilung und Inspiration wird.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 51 Min"
-    ],
-    [
-     "Regie",
-     "Simon Stone"
-    ],
-    [
-     "Mit",
-     "Andrew Scott, Olivia Colman, Billie Piper, Johnny Flynn"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=9TCvtaiwBlY",
-   "link": "https://www.themoviedb.org/movie/1599230",
-   "bild": "https://image.tmdb.org/t/p/w500/kohUtEueIVyDXC30MaOdi36aAwn.jpg",
-   "news": [
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘Elsinore’ Review: Andrew Scott’s Towering Performance as a Dying Actor Can’t Overcome AIDS-Movie Awards Bait Clichés",
-     "link": "https://www.indiewire.com/criticism/movies/elsinore-movie-review-andrew-scott-1235214584/",
-     "datum": "2026-11-18T18:00:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "British Independent Film Awards: ‘Elsinore’ Leads Nominations",
-     "link": "https://deadline.com/2026/11/british-independent-film-awards-elsinore-2026-1237211788/",
-     "datum": "2026-11-03T10:00:00.000Z"
-    },
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "British Independent Film Awards: ‘Elsinore’ Leads Nominations With 12",
-     "link": "https://www.hollywoodreporter.com/movies/movie-news/bifa-nominations-2026-list-elsinore-andrew-scott-1236746638/",
-     "datum": "2026-11-03T10:00:00.000Z"
-    }
-   ]
   },
   "movie-1185542": {
    "titel": "Lieblingsmenschen - Die außergewöhnliche Freundschaft von Agnes & Amir",
@@ -3701,33 +3713,45 @@
    "news": [],
    "sprache": "en"
   },
-  "movie-1505644": {
-   "titel": "ENE Repeat",
-   "original": "ఈNఈ Repeat",
-   "leitsatz": null,
-   "handlung": "Vivek und seine Freunde treffen sich Jahre nach ihrem Missgeschick in Goa wieder, um eine neue Reise zu unternehmen. Während sie sich den Herausforderungen des Lebens, impulsiven Plänen und unerwarteten Eskapaden stellen, herrscht erneut Chaos.",
+  "tv-308007": {
+   "titel": "The Altruists",
+   "original": "The Altruists",
+   "leitsatz": "Zwei Menschen, ein Milliardenbetrug.",
+   "handlung": "Jung, idealistisch, milliardenschwer: Sie wollten Gutes tun, weckten aber das Schlimmste ineinander. Eine toxische Liebesgeschichte nach einem wahren Betrug.",
    "genres": [
-    "Komödie",
+    "Krimi",
     "Drama"
    ],
    "fakten": [
     [
-     "Laufzeit",
-     "2 Std 35 Min"
+     "Umfang",
+     "1 Staffel, 8 Folgen"
     ],
     [
-     "Regie",
-     "తరుణ్ భాస్కర్ దాస్యం"
+     "Von",
+     "Graham Moore"
     ],
     [
      "Mit",
-     "Vishwak Sen, Abhinav Gomatam, Venkatesh Kakumanu, Maganti Srinath"
+     "Julia Garner, Anthony Boyle, Alex Lawther, Karan Soni"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=l0FcBZJLY9I",
-   "link": "https://www.themoviedb.org/movie/1505644",
-   "bild": "https://image.tmdb.org/t/p/w500/qMBlRfQNusaUhhBAIcHmforVTW5.jpg",
-   "news": []
+   "trailer": "https://www.youtube.com/watch?v=9aGeKSSyuhk",
+   "link": "https://www.themoviedb.org/tv/308007",
+   "bild": "https://image.tmdb.org/t/p/w500/pH9cWXlRDiVVMCTLnhj67H37cj6.jpg",
+   "news": [
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘The Altruists’ Review: Anthony Boyle and Julia Garner Make a Toxically Perfect Match in Netflix’s Intriguing but Unsatisfying Crypto Love Story",
+     "link": "https://www.hollywoodreporter.com/tv/tv-reviews/the-altruists-review-julia-garner-anthony-boyle-netflix-1236758009/",
+     "datum": "2026-11-19T08:01:00.000Z"
+    }
+   ]
   },
   "tv-332839": {
    "titel": "Das Bestiengesetz",
@@ -3754,7 +3778,7 @@
    ],
    "trailer": null,
    "link": "https://www.themoviedb.org/tv/332839",
-   "bild": "https://image.tmdb.org/t/p/w500/KnhUSXgKqiG96mf4GofisAhhS2.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/muZfKeW9ZA2kwm7ul7CnTBllbpb.jpg",
    "news": []
   },
   "tv-340280": {
@@ -3821,70 +3845,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/ihjonCRR5gEUEH8RG2Qbk4Fy3HB.jpg",
    "news": []
   },
-  "tv-224377": {
-   "titel": "Harry Potter",
-   "original": "Harry Potter",
-   "leitsatz": null,
-   "handlung": "Eine neue, treue Adaption der ikonischen und megaerfolgreichen Buchreihe von J.K. Rowling.",
-   "genres": [
-    "Sci-Fi & Fantasy",
-    "Action & Adventure"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 1 Folgen"
-    ],
-    [
-     "Mit",
-     "Dominic McLaughlin, Arabella Stanton, Alastair Stout, John Lithgow"
-    ],
-    [
-     "Sender/Dienst",
-     "HBO, HBO Max"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=faL2oI_rRRc",
-   "link": "https://www.themoviedb.org/tv/224377",
-   "bild": "https://image.tmdb.org/t/p/w500/6spxkjxCcog8HR3cLsDVROsjz3h.jpg",
-   "news": [
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "Nicola Coughlan \"Will Not Be Watching\" HBO’s ‘Harry Potter’: \"And I Would Never Be in It\"",
-     "link": "https://www.hollywoodreporter.com/tv/tv-news/nicola-coughlan-harry-potter-jk-rowling-show-series-trans-1236756089/",
-     "datum": "2026-11-16T12:04:39.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "Nicola Coughlan ‘Will Not Be Watching’ New ‘Harry Potter’ Series Over J.K. Rowling’s Trans Views: ‘It’s Not for Me’",
-     "link": "https://variety.com/2026/tv/global/nicola-coughlan-not-watching-harry-potter-series-jk-rowling-views-1236948687/",
-     "datum": "2026-11-16T11:13:43.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Nicola Coughlan Boycotting ‘Harry Potter’ Series Over J.K. Rowling’s Trans Views: \"It’s Not For Me\"",
-     "link": "https://deadline.com/2026/11/nicola-coughlan-boycott-harry-potter-jk-rowlings-trans-1237224887/",
-     "datum": "2026-11-16T08:54:15.000Z"
-    },
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "Erste Szene aus der Harry Potter-Serie enthüllt: Sie verändert einen der ikonischsten Momente aus Teil 1",
-     "link": "https://www.moviepilot.de/news/erste-szene-aus-der-harry-potter-serie-enthullt-sie-verandert-einen-der-ikonischsten-momente-aus-teil-1-1165497",
-     "datum": "2026-11-16T08:45:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "HBO Releases Surprise ‘Harry Potter’ Clip Of Hogwarts Banquet",
-     "link": "https://deadline.com/2026/11/hbo-surprise-harry-potter-clip-hogwarts-banquet-1237224436/",
-     "datum": "2026-11-15T11:03:17.000Z"
-    }
-   ]
-  },
   "tv-288120": {
    "titel": "Vienna Game",
    "original": "Vienna Game",
@@ -3924,6 +3884,70 @@
     }
    ]
   },
+  "tv-224377": {
+   "titel": "Harry Potter",
+   "original": "Harry Potter",
+   "leitsatz": null,
+   "handlung": "Eine neue, treue Adaption der ikonischen und megaerfolgreichen Buchreihe von J.K. Rowling.",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 1 Folgen"
+    ],
+    [
+     "Mit",
+     "Dominic McLaughlin, Arabella Stanton, Alastair Stout, John Lithgow"
+    ],
+    [
+     "Sender/Dienst",
+     "HBO, HBO Max"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=faL2oI_rRRc",
+   "link": "https://www.themoviedb.org/tv/224377",
+   "bild": "https://image.tmdb.org/t/p/w500/6spxkjxCcog8HR3cLsDVROsjz3h.jpg",
+   "news": [
+    {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "Neues Fantasy-Abenteuer startet heute bei Netflix – und versteckt Harry Potter-Star Daniel Radcliffe unter seinen Märchenfiguren",
+     "link": "https://www.moviepilot.de/news/steps-fantasy-netflix-start-1165452",
+     "datum": "2026-11-20T11:00:00.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "Nicola Coughlan \"Will Not Be Watching\" HBO’s ‘Harry Potter’: \"And I Would Never Be in It\"",
+     "link": "https://www.hollywoodreporter.com/tv/tv-news/nicola-coughlan-harry-potter-jk-rowling-show-series-trans-1236756089/",
+     "datum": "2026-11-16T12:04:39.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Nicola Coughlan ‘Will Not Be Watching’ New ‘Harry Potter’ Series Over J.K. Rowling’s Trans Views: ‘It’s Not for Me’",
+     "link": "https://variety.com/2026/tv/global/nicola-coughlan-not-watching-harry-potter-series-jk-rowling-views-1236948687/",
+     "datum": "2026-11-16T11:13:43.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Nicola Coughlan Boycotting ‘Harry Potter’ Series Over J.K. Rowling’s Trans Views: \"It’s Not For Me\"",
+     "link": "https://deadline.com/2026/11/nicola-coughlan-boycott-harry-potter-jk-rowlings-trans-1237224887/",
+     "datum": "2026-11-16T08:54:15.000Z"
+    },
+    {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "Erste Szene aus der Harry Potter-Serie enthüllt: Sie verändert einen der ikonischsten Momente aus Teil 1",
+     "link": "https://www.moviepilot.de/news/erste-szene-aus-der-harry-potter-serie-enthullt-sie-verandert-einen-der-ikonischsten-momente-aus-teil-1-1165497",
+     "datum": "2026-11-16T08:45:00.000Z"
+    }
+   ]
+  },
   "tv-171802": {
    "titel": "Blade Runner 2099",
    "original": "Blade Runner 2099",
@@ -3955,73 +3979,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/qAcXaAoJiYry9nGEyxTirnJ82Jj.jpg",
    "news": [],
    "sprache": "en"
-  },
-  "tv-308007": {
-   "titel": "The Altruists",
-   "original": "The Altruists",
-   "leitsatz": null,
-   "handlung": "Eine Geschichte über die stürmische Beziehung zweier Krypto-Unternehmer und ihren ehrgeizigen Plan, das Finanzsystem zu revolutionieren - der in einem 36-Milliarden-Dollar-Betrug endet.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 8 Folgen"
-    ],
-    [
-     "Von",
-     "Graham Moore"
-    ],
-    [
-     "Mit",
-     "Julia Garner, Anthony Boyle, Alex Lawther, Karan Soni"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=9aGeKSSyuhk",
-   "link": "https://www.themoviedb.org/tv/308007",
-   "bild": "https://image.tmdb.org/t/p/w500/hiX70sXdvEPVE11QqmLuaX16gdh.jpg",
-   "news": [
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘The Altruists’ Review: Anthony Boyle and Julia Garner Make a Toxically Perfect Match in Netflix’s Intriguing but Unsatisfying Crypto Love Story",
-     "link": "https://www.hollywoodreporter.com/tv/tv-reviews/the-altruists-review-julia-garner-anthony-boyle-netflix-1236758009/",
-     "datum": "2026-11-19T08:01:00.000Z"
-    }
-   ]
-  },
-  "tv-336592": {
-   "titel": "Win the Mall",
-   "original": "Win the Mall",
-   "leitsatz": null,
-   "handlung": "In dieser Reality-Show wollen zehn Teams in einem Einkaufszentrum Verkaufsflächen erobern, Bündnisse schmieden, die Konkurrenz austricksen und am Ende 1 Mio. Dollar gewinnen.",
-   "genres": [
-    "Reality"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 8 Folgen"
-    ],
-    [
-     "Mit",
-     "Haley Kalil"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=dnNvYvYk9yQ",
-   "link": "https://www.themoviedb.org/tv/336592",
-   "bild": "https://image.tmdb.org/t/p/w500/awZejt5KgmNzqlQIReQa4vJelx4.jpg",
-   "news": []
   },
   "tv-288672": {
    "titel": "Pride and Prejudice",
@@ -4062,6 +4019,33 @@
     }
    ],
    "sprache": "en"
+  },
+  "tv-336592": {
+   "titel": "Win the Mall",
+   "original": "Win the Mall",
+   "leitsatz": null,
+   "handlung": "In dieser Reality-Show wollen zehn Teams in einem Einkaufszentrum Verkaufsflächen erobern, Bündnisse schmieden, die Konkurrenz austricksen und am Ende 1 Mio. Dollar gewinnen.",
+   "genres": [
+    "Reality"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 8 Folgen"
+    ],
+    [
+     "Mit",
+     "Haley Kalil"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=dnNvYvYk9yQ",
+   "link": "https://www.themoviedb.org/tv/336592",
+   "bild": "https://image.tmdb.org/t/p/w500/awZejt5KgmNzqlQIReQa4vJelx4.jpg",
+   "news": []
   },
   "tv-294607": {
    "titel": "Trinity",
@@ -4136,38 +4120,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/jT2KO2QnY857A4r8V7HRgL5WAKK.jpg",
    "news": []
   },
-  "tv-274395": {
-   "titel": "The Land",
-   "original": "The Land",
-   "leitsatz": null,
-   "handlung": "The story of two families, in which the high-stakes drama plays out not only on the field but also in the front offices of this NFL franchise, as a loyal fanbase wants a winning season now ... or face big changes if they don't.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 10 Folgen"
-    ],
-    [
-     "Von",
-     "Dan Fogelman"
-    ],
-    [
-     "Mit",
-     "Christopher Meloni, Mandy Moore, Chace Crawford, Sam Corlett"
-    ],
-    [
-     "Sender/Dienst",
-     "Hulu"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=_xnU6YVrCpA",
-   "link": "https://www.themoviedb.org/tv/274395",
-   "bild": "https://image.tmdb.org/t/p/w500/klcJ21KUgkDFQBQuECYr2FJYR5z.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "tv-243214": {
    "titel": "Criminal",
    "original": "Criminal",
@@ -4215,90 +4167,35 @@
     }
    ]
   },
-  "tv-314131": {
-   "titel": "MELANIA the Series",
-   "original": "MELANIA the Series",
+  "tv-274395": {
+   "titel": "The Land",
+   "original": "The Land",
    "leitsatz": null,
-   "handlung": "Experience Melania Trump's transition to First Lady as she navigates the White House and puts her mission into action.",
+   "handlung": "The story of two families, in which the high-stakes drama plays out not only on the field but also in the front offices of this NFL franchise, as a loyal fanbase wants a winning season now ... or face big changes if they don't.",
    "genres": [
-    "Dokumentarfilm",
-    "War & Politics"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 2 Folgen"
-    ],
-    [
-     "Mit",
-     "Melania Trump"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=vQhH-mOVtPs",
-   "link": "https://www.themoviedb.org/tv/314131",
-   "bild": "https://image.tmdb.org/t/p/w500/zSrsB8xxvTHGCy4Q4ci5FDxipna.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "tv-283220": {
-   "titel": "Quiztopia",
-   "original": "国民クイズ",
-   "leitsatz": null,
-   "handlung": "Bei einem Sieg werden Wünsche wahr. Bei einer Niederlage folgt Zwangsarbeit. In einem alternativen Japan bricht Chaos aus, als Rebellen einen Quizshow-Moderator anvisieren.",
-   "genres": [
-    "Sci-Fi & Fantasy",
-    "Action & Adventure",
     "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 6 Folgen"
+     "1 Staffel, 10 Folgen"
+    ],
+    [
+     "Von",
+     "Dan Fogelman"
     ],
     [
      "Mit",
-     "山田孝之, 倉科カナ, 石田莉子, 瀬戸康史"
+     "Christopher Meloni, Mandy Moore, Chace Crawford, Sam Corlett"
     ],
     [
      "Sender/Dienst",
-     "Netflix"
+     "Hulu"
     ]
    ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/283220",
-   "bild": "https://image.tmdb.org/t/p/w500/bxXkZhCj5CVLgkEP1Mh4mdy8wM6.jpg",
-   "news": []
-  },
-  "tv-302837": {
-   "titel": "Toos: De van der valk ontvoering",
-   "original": "Toos: De van der valk ontvoering",
-   "leitsatz": null,
-   "handlung": "1982. When the matriarch of a Dutch hotel empire is kidnapped for ransom, her family launches a desperate effort to free her.",
-   "genres": [
-    "Drama",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 1 Folgen"
-    ],
-    [
-     "Mit",
-     "Lies Visschedijk, Frank Lammers, Gijs Blom, Victor Löw"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/302837",
-   "bild": "https://image.tmdb.org/t/p/w500/yTn41duVqEmiBimV3itSyOpUPnU.jpg",
+   "trailer": "https://www.youtube.com/watch?v=_xnU6YVrCpA",
+   "link": "https://www.themoviedb.org/tv/274395",
+   "bild": "https://image.tmdb.org/t/p/w500/klcJ21KUgkDFQBQuECYr2FJYR5z.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4334,6 +4231,93 @@
    "news": [],
    "sprache": "en"
   },
+  "tv-283220": {
+   "titel": "Quiztopia",
+   "original": "国民クイズ",
+   "leitsatz": null,
+   "handlung": "Bei einem Sieg werden Wünsche wahr. Bei einer Niederlage folgt Zwangsarbeit. In einem alternativen Japan bricht Chaos aus, als Rebellen einen Quizshow-Moderator anvisieren.",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 6 Folgen"
+    ],
+    [
+     "Mit",
+     "山田孝之, 倉科カナ, 石田莉子, 瀬戸康史"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/283220",
+   "bild": "https://image.tmdb.org/t/p/w500/bxXkZhCj5CVLgkEP1Mh4mdy8wM6.jpg",
+   "news": []
+  },
+  "tv-314131": {
+   "titel": "MELANIA the Series",
+   "original": "MELANIA the Series",
+   "leitsatz": null,
+   "handlung": "Experience Melania Trump's transition to First Lady as she navigates the White House and puts her mission into action.",
+   "genres": [
+    "Dokumentarfilm",
+    "War & Politics"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 2 Folgen"
+    ],
+    [
+     "Mit",
+     "Melania Trump"
+    ],
+    [
+     "Sender/Dienst",
+     "Prime Video"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=vQhH-mOVtPs",
+   "link": "https://www.themoviedb.org/tv/314131",
+   "bild": "https://image.tmdb.org/t/p/w500/zSrsB8xxvTHGCy4Q4ci5FDxipna.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "tv-302837": {
+   "titel": "Toos: De van der valk ontvoering",
+   "original": "Toos: De van der valk ontvoering",
+   "leitsatz": null,
+   "handlung": "1982. When the matriarch of a Dutch hotel empire is kidnapped for ransom, her family launches a desperate effort to free her.",
+   "genres": [
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 1 Folgen"
+    ],
+    [
+     "Mit",
+     "Lies Visschedijk, Frank Lammers, Gijs Blom, Victor Löw"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/302837",
+   "bild": "https://image.tmdb.org/t/p/w500/yTn41duVqEmiBimV3itSyOpUPnU.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "tv-285887": {
    "titel": "Bloodaxe",
    "original": "Bloodaxe",
@@ -4366,6 +4350,38 @@
    "news": [],
    "sprache": "en"
   },
+  "tv-340566": {
+   "titel": "The Witch Farm",
+   "original": "The Witch Farm",
+   "leitsatz": null,
+   "handlung": "Follows Bill and Liz Rich who move to a remote Welsh farmhouse in 1989 for a fresh start, but after Liz sees a ghostly figure during a traumatic home birth, they face escalating paranormal disturbances.",
+   "genres": [
+    "Mystery"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 4 Folgen"
+    ],
+    [
+     "Von",
+     "Danny Robins"
+    ],
+    [
+     "Mit",
+     "Michael Socha, Jeremy Swift, Gabrielle Creevy, Robert Pugh"
+    ],
+    [
+     "Sender/Dienst",
+     "BBC One"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=oj6FPgDOI-I",
+   "link": "https://www.themoviedb.org/tv/340566",
+   "bild": "https://image.tmdb.org/t/p/w500/hglk1OHLnaqZkaEcqK8maEJP1t4.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "tv-341164": {
    "titel": "Oobah: Scams for a Better Tomorrow",
    "original": "Oobah: Scams for a Better Tomorrow",
@@ -4392,34 +4408,6 @@
    "trailer": "https://www.youtube.com/watch?v=i3fXiJ40WOw",
    "link": "https://www.themoviedb.org/tv/341164",
    "bild": "https://image.tmdb.org/t/p/w500/rWqhULNvOmIBHZymAPce2SlRr2T.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "tv-337600": {
-   "titel": "The Boy Who Stole Billions?",
-   "original": "The Boy Who Stole Billions?",
-   "leitsatz": null,
-   "handlung": "At 30, Sam Bankman-Fried ran a $32 billion crypto empire until he was convicted of stealing $8 billion in customer funds, one of the biggest frauds in U.S. history. For the first time, he tells his story from prison.",
-   "genres": [
-    "Dokumentarfilm"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 3 Folgen"
-    ],
-    [
-     "Mit",
-     "Sam Bankman-Fried"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=mrAqd_Yxq00",
-   "link": "https://www.themoviedb.org/tv/337600",
-   "bild": "https://image.tmdb.org/t/p/w500/hyeUQX6kwouMca3BY6afqbFkTwr.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -4535,6 +4523,13 @@
     {
      "quelle": "Serienjunkies",
      "art": "film",
+     "titel": "„The Rookie“: Trailer zur neuen Staffel verrät, wie dramatisch es für ein beliebtes Paar weitergeht",
+     "link": "https://www.serienjunkies.de/news/serien/the-rookie-trailer-zur-neuen-staffel-verraet-wie-dramatisch-es-fuer-ein-beliebtes-paar-weitergeht-94599811.html",
+     "datum": "2026-11-20T10:15:00.000Z"
+    },
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
      "titel": "Wann kehren „Grey‘s Anatomy“, „High Potential“, „9-1-1“ und „The Rookie“ mit neuen Staffeln zurück?",
      "link": "https://www.serienjunkies.de/news/serien/abc-midseason-2027-alle-starttermine-im-ueberblick-94580446.html",
      "datum": "2026-11-09T07:59:49.000Z"
@@ -4561,6 +4556,669 @@
      "datum": "2026-10-30T09:30:12.000Z"
     }
    ]
+  },
+  "tv-91555": {
+   "titel": "All Elite Wrestling: Dynamite",
+   "original": "All Elite Wrestling: Dynamite",
+   "leitsatz": null,
+   "handlung": "\"All Elite Wrestling: Dynamite\" bringt mit außergewöhnlichen Wrestlern, spannender Handlung und schneller Kampfanalyse frischen Wind in den Ring.\n\nZur brandneuen Wrestling-Liga zählen erstklassige Kämpfer und Kämpferinnen wie Cody & Brandi Rhodes, die Young Bucks (Matt & Nick Jackson), Kenny Omega, Hangman Adam Page, Chris Jericho, Jon Moxley, Nyla Rose, Awesome Kong, Dustin Rhodes, Jungle Boy, Dr. Britt Baker, MJF und SCU.\n\nGegründet von Präsident und CEO Tony Khan, besticht \"All Elite Wrestling\" durch den Fokus auf sportlicheLeistung im Ring sowie der Diversität in der Riege der Kämpfer, mit Authentizität und Vielfalt. Actiongeladene Matches, herausragende sportliche Leistungen und außergewöhnliche Kampfbegegnungen garantieren Unterhaltung pur!",
+   "genres": [
+    "Action & Adventure",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "9 Staffeln, 378 Folgen"
+    ],
+    [
+     "Sender/Dienst",
+     "TNT, TBS"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=1Dm7VOhNQK8",
+   "link": "https://www.themoviedb.org/tv/91555",
+   "bild": "https://image.tmdb.org/t/p/w500/uXst536FXtszhbUJzFikifRKvrK.jpg",
+   "news": []
+  },
+  "tv-1416": {
+   "titel": "Grey's Anatomy",
+   "original": "Grey's Anatomy",
+   "leitsatz": "Das Leben, das Sie retten, kann Ihr eigenes sein.",
+   "handlung": "Die Serie erzählt die Geschichte von fünf jungen Assistenzärzten des fiktiven Krankenhauses Seattle Grace Hospital in Seattle. Im Mittelpunkt steht die junge Ärztin Meredith Grey, die zusammen mit ihren Kollegen Cristina Yang, Isobel „Izzie“ Stevens, George O’Malley und Alex Karev ihre Ausbildung in der Chirurgie absolviert. Im Kern der Handlung stehen die verschiedenen Beziehungen der Assistenzärzte untereinander und mit ihren Stationsoberärzten.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "23 Staffeln, 467 Folgen"
+    ],
+    [
+     "Von",
+     "Shonda Rhimes"
+    ],
+    [
+     "Mit",
+     "Ellen Pompeo, Chandra Wilson, James Pickens Jr., Caterina Scorsone"
+    ],
+    [
+     "Sender/Dienst",
+     "ABC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=hc0ZFCHbR40",
+   "link": "https://www.themoviedb.org/tv/1416",
+   "bild": "https://image.tmdb.org/t/p/w500/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Nach „Station 19“: ABC bestellt neues Texas-Spin-off von „Grey's Anatomy“ mit Karla Souza",
+     "link": "https://www.serienjunkies.de/news/serien/grey-anatomy-karla-souza-fuehrt-neues-spin-off-bei-abc-an-94586505.html",
+     "datum": "2026-11-12T09:51:24.000Z"
+    }
+   ]
+  },
+  "tv-247718": {
+   "titel": "MobLand: Familie bis aufs Blut",
+   "original": "MobLand",
+   "leitsatz": "Jetzt regiert das Chaos.",
+   "handlung": "Die Karten werden neu gemischt, als zwei verfeindete Verbrecherfamilien in einer Schlacht aneinandergeraten, die Imperien zu stürzen droht. Harry Da Souza, ein gewiefter Mann fürs Grobe, gerät ins Kreuzfeuer und stellt seine Loyalität unter Beweis.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "2 Staffeln, 20 Folgen"
+    ],
+    [
+     "Von",
+     "Ronan Bennett"
+    ],
+    [
+     "Mit",
+     "Tom Hardy, Pierce Brosnan, Paddy Considine, Joanne Froggatt"
+    ],
+    [
+     "Sender/Dienst",
+     "Paramount+, Paramount+"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.7 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=cyYZAc0TZ7U",
+   "link": "https://www.themoviedb.org/tv/247718",
+   "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
+   "news": []
+  },
+  "tv-153312": {
+   "titel": "Tulsa King",
+   "original": "Tulsa King",
+   "leitsatz": "Ursprünglicher Gangster. Neue Stadt.",
+   "handlung": "Kurz nachdem er nach 25 Jahren aus dem Gefängnis entlassen wurde, wird der New Yorker Mafia-Capo Dwight \"The General\" Manfredi von seinem Boss kurzerhand ins Exil geschickt, um sich in Tulsa, Oklahoma, niederzulassen. Dwight erkennt, dass seine Mafia-Familie möglicherweise nicht sein Bestes im Sinn hat, und baut langsam eine \"Crew\" aus einer Gruppe unwahrscheinlicher Charaktere auf, die ihm dabei hilft, ein neues kriminelles Imperium an einem Ort aufzubauen, der für ihn genauso gut ein anderer Planet sein könnte.",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "4 Staffeln, 39 Folgen"
+    ],
+    [
+     "Von",
+     "Taylor Sheridan"
+    ],
+    [
+     "Mit",
+     "Sylvester Stallone, Martin Starr, Jay Will, Vincent Piazza"
+    ],
+    [
+     "Sender/Dienst",
+     "Paramount+"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=Mh417ri7rgk",
+   "link": "https://www.themoviedb.org/tv/153312",
+   "bild": "https://image.tmdb.org/t/p/w500/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
+   "news": [
+    {
+     "quelle": "DWDL",
+     "art": "film",
+     "titel": "Neue Spin-Offs von \"Navy CIS\" und \"Tulsa King\" ab Dezember",
+     "link": "https://www.dwdl.de/nachrichten/108643/neue_spinoffs_von_navy_cis_und_tulsa_king_ab_dezember/",
+     "datum": "2026-11-20T09:56:00.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "Sylvester Stallone Officially Wants a Former Spider-Man To Join Taylor Sheridan’s ‘Tulsa King’",
+     "link": "https://collider.com/taylor-sheridan-tulsa-king-andrew-garfield-casting-hopes-sylvester-stallone/",
+     "datum": "2026-11-12T13:00:12.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Manny Montana Joins ‘Tulsa King’ For Season 5",
+     "link": "https://deadline.com/2026/11/manny-montana-cast-tulsa-king-season-5-1237214711/",
+     "datum": "2026-11-05T21:00:00.000Z"
+    }
+   ]
+  },
+  "tv-279246": {
+   "titel": "Die neuvermählte Kaiserin",
+   "original": "재혼 황후",
+   "leitsatz": null,
+   "handlung": "Die Beziehung zwischen Navier (Shin Min-a), Kaiserin des Östlichen Reiches, und ihrem Ehemann, Kaiser Sovieshu (Ju Ji-hoon), ist mehr als angespannt. Nicht nur in ihrem Reich wird die Stimmung innerhalb der Bevölkerung immer unruhiger, auch privat wird das regierende Paar vor eine große Herausforderung gestellt. Denn der Kaiser hat sich in eine entlaufene Sklavin verliebt und somit das Versprechen gebrochen, das er einst Navier gegeben hat: niemals eine Nebenfrau zu haben. Gleichzeitig reist Prinz Heinrey (Lee Jong-Suk), der Thronfolger des Westlichen Königreichs, zum Palast des Östlichen Kaiserreichs. Dort soll er als Spion fungieren, doch er verliebt sich schließlich in Kaiserin Navier.",
+   "genres": [
+    "Drama",
+    "Sci-Fi & Fantasy"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 10 Folgen"
+    ],
+    [
+     "Mit",
+     "Shin Min-a, 주지훈, Lee Jong-suk, 이세영"
+    ],
+    [
+     "Sender/Dienst",
+     "Disney+"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.8 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=aScUjuKvHSo",
+   "link": "https://www.themoviedb.org/tv/279246",
+   "bild": "https://image.tmdb.org/t/p/w500/l0v4MHlLMtmn1DrhL4G6fM9en3s.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "„Bridgerton“-Fans aufgepasst: „Die neuvermählte Kaiserin“ startet bei Disney+",
+     "link": "https://www.serienjunkies.de/news/storys/bridgerton-fans-aufgepasst-die-neuvermaehlte-kaiserin-startet-bei-disney-zr-94568678.html",
+     "datum": "2026-11-01T15:22:13.000Z"
+    }
+   ]
+  },
+  "tv-4614": {
+   "titel": "Navy CIS",
+   "original": "NCIS",
+   "leitsatz": null,
+   "handlung": "Der Naval Crime Investigative Service wird dann gerufen, wenn Verbrechen begangen werden, die gegen den Uniform Code of Military Justice verstoßen und innerhalb der Navy stattfinden. Das Hauptquartier befindet sich in Washington D.C. und steht unter der Leitung von Special Agent Leroy Jethro Gibbs. Er selbst ist ein Veteran aus dem Irak-Krieg und hat mit moderner Technik wenig zu tun. Aus diesem Grund ermittelt er gemeinsam mit einem Elite-Team, bestehend aus dem Ballistik-Experten Tony DiNozzo, dem Technikspezialisten Tim McGee, der Forensikspezialistin Abby Sciuto sowie dem Gerichtsmediziner Ducky Mallard.",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Action & Adventure"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "24 Staffeln, 515 Folgen"
+    ],
+    [
+     "Von",
+     "Don McGill, Donald P. Bellisario"
+    ],
+    [
+     "Mit",
+     "Sean Murray, Wilmer Valderrama, Katrina Law, Brian Dietzen"
+    ],
+    [
+     "Sender/Dienst",
+     "CBS"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=BhtDgn31XZo",
+   "link": "https://www.themoviedb.org/tv/4614",
+   "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
+   "news": [
+    {
+     "quelle": "DWDL",
+     "art": "film",
+     "titel": "Neue Spin-Offs von \"Navy CIS\" und \"Tulsa King\" ab Dezember",
+     "link": "https://www.dwdl.de/nachrichten/108643/neue_spinoffs_von_navy_cis_und_tulsa_king_ab_dezember/",
+     "datum": "2026-11-20T09:56:00.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "CBS’s Forgotten ‘NCIS’ Action Series Replacement Doesn’t Have a Single Bad Episode 17 Years Later",
+     "link": "https://collider.com/cbs-ncis-replacement-the-unit-perfect-action-series/",
+     "datum": "2026-11-18T20:29:12.000Z"
+    },
+    {
+     "quelle": "DWDL",
+     "art": "film",
+     "titel": "\"Navy CIS\" verabschiedet sich mit leicht steigenden Quoten",
+     "link": "https://www.dwdl.de/zahlenzentrale/108606/navy_cis_verabschiedet_sich_mit_leicht_steigenden_quoten/",
+     "datum": "2026-11-18T08:11:00.000Z"
+    }
+   ]
+  },
+  "tv-549": {
+   "titel": "Law & Order",
+   "original": "Law & Order",
+   "leitsatz": null,
+   "handlung": "Vertreter der Polizei und der Staatsanwaltschaft klären Kriminalverbrechen in und um New York auf. Mit allen zur Verfügung stehenden Mitteln versuchen die Ermittler dabei, den oder die Straftäter zur Verantwortung zu ziehen.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "26 Staffeln, 552 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf"
+    ],
+    [
+     "Mit",
+     "Maura Tierney, David Ajala, James Badge Dale, Tony Goldwyn"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=RzN8cPlcMTU",
+   "link": "https://www.themoviedb.org/tv/549",
+   "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Law & Order: SVU, Folge 600: Olivia Benson rollt alten Fall neu auf",
+     "link": "https://www.serienjunkies.de/news/serien/law-order-svu-folge-600-olivia-benson-rollt-alten-fall-neu-auf-94589021.html",
+     "datum": "2026-11-13T13:45:00.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "NBC Officially Announces New 'Law & Order' Replacement",
+     "link": "https://collider.com/nbc-law-and-order-replacement-great-gatsby-reboot-detective-series/",
+     "datum": "2026-10-30T18:18:47.000Z"
+    }
+   ]
+  },
+  "tv-44006": {
+   "titel": "Chicago Fire",
+   "original": "Chicago Fire",
+   "leitsatz": null,
+   "handlung": "Für die Feuerwehrmänner und Rettungssanitäter der Feuerwache 51 in Chicago sind Stress und Gefahren an der Tagesordnung. Die enorme Verantwortung, der sich die Alltagshelden aussetzen, macht auch vor dem Privatleben nicht halt. Matthew Casey, der Chef von Truck 81, steckt gerade mitten in einer Scheidung und sucht in seinem Job Ablenkung. Nach dem Tod eines Feuerwehrmanns gerät er mit Kelly Severide, dem Anführer von Rescue Squad 3, aneinander. Trotz gelegentlicher Scharmützel ist das Department für die meisten Teammitglieder wie eine Ersatzfamilie, zumal die bisweilen traumatischen Erlebnisse während der Einsätze für eine emotionale Bindung sorgen.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "15 Staffeln, 304 Folgen"
+    ],
+    [
+     "Von",
+     "Derek Haas, Michael Brandt"
+    ],
+    [
+     "Mit",
+     "Taylor Kinney, David Eigenberg, Christian Stolte, Miranda Rae Mayo"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=IIeSDILTE5M",
+   "link": "https://www.themoviedb.org/tv/44006",
+   "bild": "https://image.tmdb.org/t/p/w500/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "„Chicago Fire“ feiert 300. Folge: Joe Miñoso verlässt Serie nach 14 Jahren",
+     "link": "https://www.serienjunkies.de/news/serien/chicago-fire-joe-minoso-steigt-in-folge-300-bei-nbc-aus-94575529.html",
+     "datum": "2026-11-05T12:02:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Joe Miñoso Talks Cruz’s Exit From ‘Chicago Fire,’ Storylines That Almost Happened  Plans To Direct",
+     "link": "https://deadline.com/2026/11/chicago-fire-joe-minoso-exit-interview-1237213901/",
+     "datum": "2026-11-05T03:02:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "How Joe Miñoso Exits ‘Chicago Fire’ As Cruz In Season 15",
+     "link": "https://deadline.com/2026/11/joe-minoso-exit-cruz-chicago-fire-season-15-recap-1237211554/",
+     "datum": "2026-11-05T03:00:00.000Z"
+    }
+   ]
+  },
+  "tv-30983": {
+   "titel": "Detektiv Conan",
+   "original": "名探偵コナン",
+   "leitsatz": null,
+   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
+   "genres": [
+    "Animation",
+    "Krimi",
+    "Mystery",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 1221 Folgen"
+    ],
+    [
+     "Mit",
+     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
+    ],
+    [
+     "Sender/Dienst",
+     "YTV"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
+   "link": "https://www.themoviedb.org/tv/30983",
+   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "news": []
+  },
+  "tv-2190": {
+   "titel": "South Park",
+   "original": "South Park",
+   "leitsatz": null,
+   "handlung": "Die Serie konzentriert sich hauptsächlich auf die Abenteuer der vier Kinder Stan Marsh, Kyle Broflovski, Eric Cartman und Kenny McCormick in der fiktionalen Kleinstadt South Park in den Rocky Mountains in den USA der Gegenwart. Neben den vier Hauptcharakteren wird die Stadt von einer Reihe von zusätzlichen Charakteren bevölkert.",
+   "genres": [
+    "Komödie",
+    "Animation"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "29 Staffeln, 337 Folgen"
+    ],
+    [
+     "Von",
+     "Trey Parker, Matt Stone"
+    ],
+    [
+     "Mit",
+     "Trey Parker, Matt Stone, Mona Marshall, Jennifer Howell"
+    ],
+    [
+     "Sender/Dienst",
+     "Comedy Central"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=oUIK01ek-Ko",
+   "link": "https://www.themoviedb.org/tv/2190",
+   "bild": "https://image.tmdb.org/t/p/w500/k7n2EVge7G77eMr3brztRGG1fFU.jpg",
+   "news": [
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘South Park’ Serves Up a Steaming Pile of Beef Satire — and a ‘GTA VI’ Sneak Peek",
+     "link": "https://www.hollywoodreporter.com/tv/tv-features/south-park-recap-beef-gta-vi-sneak-peek-1236742371/",
+     "datum": "2026-10-29T06:40:29.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘South Park’ Parodies ‘GTA VI’ Hype With Dog Poop Gameplay",
+     "link": "https://deadline.com/2026/10/south-park-parodies-gta-vi-dog-poop-gameplay-1237207932/",
+     "datum": "2026-10-29T04:16:47.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "‘South Park’: Cartman, Stan and Kyle Must Solve South America’s Beef Crisis in Halloween Week Episode",
+     "link": "https://variety.com/2026/tv/news/south-park-season-29-episode-4-1236933789/",
+     "datum": "2026-10-29T03:05:04.000Z"
+    }
+   ]
+  },
+  "tv-65334": {
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "original": "Miraculous, les aventures de Ladybug et Chat Noir",
+   "leitsatz": null,
+   "handlung": "Marinette und Adrien sind zwei Schüler – fast – wie andere auch. Bei der kleinsten Bedrohung von Paris werden sie zu Ladybug und Cat Noir. Ihre Mission: Die Akumas des mysteriösen Hawk Moth fangen, der die Pariser in Super-Bösewichte verwandelt. Obwohl die beiden Helden ein Team bilden, wissen sie wenig voneinander: Marinette weiß nicht, dass sich hinter Cat Noir Adrien verbirgt, der Junge, in den sie heimlich verliebt ist; und Adrien, dessen Herzen für Ladybug schlägt, ignoriert, dass sich hinter dem Kostüm der Superheldin das nette und zerstreute Mädchen aus seiner Klasse verbirgt",
+   "genres": [
+    "Action & Adventure",
+    "Animation",
+    "Kids"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "7 Staffeln, 181 Folgen"
+    ],
+    [
+     "Von",
+     "Thomas Astruc, Jeremy Zag"
+    ],
+    [
+     "Mit",
+     "Anouck Hautbois, Benjamin Bollen, Marie Nonnenmacher, Thierry Kazazian"
+    ],
+    [
+     "Sender/Dienst",
+     "TF1"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.1 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=xK9KUNoMQCc",
+   "link": "https://www.themoviedb.org/tv/65334",
+   "bild": "https://image.tmdb.org/t/p/w500/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
+   "news": []
+  },
+  "tv-58841": {
+   "titel": "Chicago P.D.",
+   "original": "Chicago P.D.",
+   "leitsatz": null,
+   "handlung": "Der District 21 des Chicago Police Departments besteht aus zwei unterschiedlichen Abteilungen: Einmal gibt es die Uniformed Cops, die ihren Einsatz auf den Straßen der Stadt haben und sich um Kleinkriminelle kümmern. Die Intelligence Unit hingegen bekämpft Straftaten im großen Stil, sei es Drogenschmuggel oder Morde aller Art.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "14 Staffeln, 271 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Matt Olmstead"
+    ],
+    [
+     "Mit",
+     "Jason Beghe, Marina Squerciati, Patrick John Flueger, Benjamin Levy Aguilar"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=NZcr9IFS9R0",
+   "link": "https://www.themoviedb.org/tv/58841",
+   "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Neue Ära bei „Chicago P.D.“: Nach dem Abschied eines Publikumslieblings übernimmt dieser neue Officer",
+     "link": "https://www.serienjunkies.de/news/serien/neue-aera-bei-chicago-nach-dem-abschied-eines-publikumslieblings-uebernimmt-dieser-neue-officer-94566196.html",
+     "datum": "2026-10-30T11:00:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Naiqui Macabroad Joins ‘Chicago P.D.’ Following LaRoyce Hawkins Exit",
+     "link": "https://deadline.com/2026/10/naiqui-macabroad-chicago-p-d-season-14-cast-1237208550/",
+     "datum": "2026-10-29T20:11:11.000Z"
+    }
+   ]
+  },
+  "tv-303745": {
+   "titel": "Undercover-Liebe",
+   "original": "나의 유죄인간",
+   "leitsatz": null,
+   "handlung": "Yoon Yi-jun, der Erbe der Taekang-Gruppe, ist der Hauptverdächtige in einem Mordfall. Um die Wahrheit aufzudecken, schleust sich Kang Jae-hee als männlicher Sekretär ein. Doch je näher sie der Wahrheit kommen, desto näher kommen sich auch Yi-jun und Jae-hee. Werden Jae-hee, die ihre wahre Identität verbirgt, und Yi-jun, der ein Geheimnis hütet, einander ihre wahren Gefühle offenbaren?",
+   "genres": [
+    "Komödie",
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 12 Folgen"
+    ],
+    [
+     "Von",
+     "문수정"
+    ],
+    [
+     "Mit",
+     "임시완, Seol In-a, 김정현, 연우"
+    ],
+    [
+     "Sender/Dienst",
+     "tvN"
+    ],
+    [
+     "TMDB-Wertung",
+     "9.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=Q7Xj7sASXSU",
+   "link": "https://www.themoviedb.org/tv/303745",
+   "bild": "https://image.tmdb.org/t/p/w500/fFcn3MngCVaQ19kAraXgmIOshN0.jpg",
+   "news": []
+  },
+  "tv-85077": {
+   "titel": "The Chosen",
+   "original": "The Chosen",
+   "leitsatz": null,
+   "handlung": "Das Leben des Christus gesehen durch die Augen derer, die ihn kannten.",
+   "genres": [
+    "Action & Adventure",
+    "Familie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "6 Staffeln, 46 Folgen"
+    ],
+    [
+     "Von",
+     "Dallas Jenkins"
+    ],
+    [
+     "Mit",
+     "Elizabeth Tabish"
+    ],
+    [
+     "Sender/Dienst",
+     "Prime Video, VidAngel"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=D93sE9d-M38",
+   "link": "https://www.themoviedb.org/tv/85077",
+   "bild": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "news": [
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "Prime Video’s ‘The Chosen’ Christmas Special Officially Sets December Release Date",
+     "link": "https://collider.com/the-chosen-the-three-kings-release-date-fox-december-2026/",
+     "datum": "2026-11-12T12:00:12.000Z"
+    }
+   ]
+  },
+  "tv-3034": {
+   "titel": "Tatort",
+   "original": "Tatort",
+   "leitsatz": null,
+   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
+   "genres": [
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "57 Staffeln, 1348 Folgen"
+    ],
+    [
+     "Sender/Dienst",
+     "ORF 1, Das Erste"
+    ],
+    [
+     "TMDB-Wertung",
+     "6.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
+   "link": "https://www.themoviedb.org/tv/3034",
+   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+   "news": []
   },
   "tv-2734": {
    "titel": "Law & Order: Special Victims Unit",
@@ -4635,48 +5293,42 @@
    "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
    "news": []
   },
-  "tv-1416": {
-   "titel": "Grey's Anatomy",
-   "original": "Grey's Anatomy",
-   "leitsatz": "Das Leben, das Sie retten, kann Ihr eigenes sein.",
-   "handlung": "Die Serie erzählt die Geschichte von fünf jungen Assistenzärzten des fiktiven Krankenhauses Seattle Grace Hospital in Seattle. Im Mittelpunkt steht die junge Ärztin Meredith Grey, die zusammen mit ihren Kollegen Cristina Yang, Isobel „Izzie“ Stevens, George O’Malley und Alex Karev ihre Ausbildung in der Chirurgie absolviert. Im Kern der Handlung stehen die verschiedenen Beziehungen der Assistenzärzte untereinander und mit ihren Stationsoberärzten.",
+  "tv-80748": {
+   "titel": "FBI",
+   "original": "FBI",
+   "leitsatz": null,
+   "handlung": "Die Agenten des New Yorker Büro des FBI arbeiten rund um die Uhr daran, die Stadt und ihr Land vor Terror, organisiertem Verbrechen und fremden Spionen zu beschützen. Unter der Leitung von Special Agent in Charge Dana Mosier setzt sich ihr Team aus verschiedenen Spezialisten mit einzigartigen Fähigkeiten zusammen.",
    "genres": [
+    "Krimi",
+    "Action & Adventure",
     "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "23 Staffeln, 467 Folgen"
+     "9 Staffeln, 167 Folgen"
     ],
     [
      "Von",
-     "Shonda Rhimes"
+     "Dick Wolf, Craig Turk"
     ],
     [
      "Mit",
-     "Ellen Pompeo, Chandra Wilson, James Pickens Jr., Caterina Scorsone"
+     "Missy Peregrym, Zeeko Zaki, John Boyd, Jeremy Sisto"
     ],
     [
      "Sender/Dienst",
-     "ABC"
+     "CBS"
     ],
     [
      "TMDB-Wertung",
-     "8.2 / 10"
+     "7.9 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=hc0ZFCHbR40",
-   "link": "https://www.themoviedb.org/tv/1416",
-   "bild": "https://image.tmdb.org/t/p/w500/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Nach „Station 19“: ABC bestellt neues Texas-Spin-off von „Grey's Anatomy“ mit Karla Souza",
-     "link": "https://www.serienjunkies.de/news/serien/grey-anatomy-karla-souza-fuehrt-neues-spin-off-bei-abc-an-94586505.html",
-     "datum": "2026-11-12T09:51:24.000Z"
-    }
-   ]
+   "trailer": "https://www.youtube.com/watch?v=r-btgaBL6-4",
+   "link": "https://www.themoviedb.org/tv/80748",
+   "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "news": []
   },
   "tv-84773": {
    "titel": "Der Herr der Ringe: Die Ringe der Macht",
@@ -4729,656 +5381,6 @@
     }
    ]
   },
-  "tv-279246": {
-   "titel": "Die neuvermählte Kaiserin",
-   "original": "재혼 황후",
-   "leitsatz": null,
-   "handlung": "Die Beziehung zwischen Navier (Shin Min-a), Kaiserin des Östlichen Reiches, und ihrem Ehemann, Kaiser Sovieshu (Ju Ji-hoon), ist mehr als angespannt. Nicht nur in ihrem Reich wird die Stimmung innerhalb der Bevölkerung immer unruhiger, auch privat wird das regierende Paar vor eine große Herausforderung gestellt. Denn der Kaiser hat sich in eine entlaufene Sklavin verliebt und somit das Versprechen gebrochen, das er einst Navier gegeben hat: niemals eine Nebenfrau zu haben. Gleichzeitig reist Prinz Heinrey (Lee Jong-Suk), der Thronfolger des Westlichen Königreichs, zum Palast des Östlichen Kaiserreichs. Dort soll er als Spion fungieren, doch er verliebt sich schließlich in Kaiserin Navier.",
-   "genres": [
-    "Drama",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 10 Folgen"
-    ],
-    [
-     "Mit",
-     "Shin Min-a, 주지훈, Lee Jong-suk, 이세영"
-    ],
-    [
-     "Sender/Dienst",
-     "Disney+"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.8 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=aScUjuKvHSo",
-   "link": "https://www.themoviedb.org/tv/279246",
-   "bild": "https://image.tmdb.org/t/p/w500/l0v4MHlLMtmn1DrhL4G6fM9en3s.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "„Bridgerton“-Fans aufgepasst: „Die neuvermählte Kaiserin“ startet bei Disney+",
-     "link": "https://www.serienjunkies.de/news/storys/bridgerton-fans-aufgepasst-die-neuvermaehlte-kaiserin-startet-bei-disney-zr-94568678.html",
-     "datum": "2026-11-01T15:22:13.000Z"
-    }
-   ]
-  },
-  "tv-153312": {
-   "titel": "Tulsa King",
-   "original": "Tulsa King",
-   "leitsatz": "Ursprünglicher Gangster. Neue Stadt.",
-   "handlung": "Kurz nachdem er nach 25 Jahren aus dem Gefängnis entlassen wurde, wird der New Yorker Mafia-Capo Dwight \"The General\" Manfredi von seinem Boss kurzerhand ins Exil geschickt, um sich in Tulsa, Oklahoma, niederzulassen. Dwight erkennt, dass seine Mafia-Familie möglicherweise nicht sein Bestes im Sinn hat, und baut langsam eine \"Crew\" aus einer Gruppe unwahrscheinlicher Charaktere auf, die ihm dabei hilft, ein neues kriminelles Imperium an einem Ort aufzubauen, der für ihn genauso gut ein anderer Planet sein könnte.",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "4 Staffeln, 39 Folgen"
-    ],
-    [
-     "Von",
-     "Taylor Sheridan"
-    ],
-    [
-     "Mit",
-     "Sylvester Stallone, Martin Starr, Jay Will, Vincent Piazza"
-    ],
-    [
-     "Sender/Dienst",
-     "Paramount+"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=Mh417ri7rgk",
-   "link": "https://www.themoviedb.org/tv/153312",
-   "bild": "https://image.tmdb.org/t/p/w500/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "Sylvester Stallone Officially Wants a Former Spider-Man To Join Taylor Sheridan’s ‘Tulsa King’",
-     "link": "https://collider.com/taylor-sheridan-tulsa-king-andrew-garfield-casting-hopes-sylvester-stallone/",
-     "datum": "2026-11-12T13:00:12.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Manny Montana Joins ‘Tulsa King’ For Season 5",
-     "link": "https://deadline.com/2026/11/manny-montana-cast-tulsa-king-season-5-1237214711/",
-     "datum": "2026-11-05T21:00:00.000Z"
-    }
-   ]
-  },
-  "tv-4614": {
-   "titel": "Navy CIS",
-   "original": "NCIS",
-   "leitsatz": null,
-   "handlung": "Der Naval Crime Investigative Service wird dann gerufen, wenn Verbrechen begangen werden, die gegen den Uniform Code of Military Justice verstoßen und innerhalb der Navy stattfinden. Das Hauptquartier befindet sich in Washington D.C. und steht unter der Leitung von Special Agent Leroy Jethro Gibbs. Er selbst ist ein Veteran aus dem Irak-Krieg und hat mit moderner Technik wenig zu tun. Aus diesem Grund ermittelt er gemeinsam mit einem Elite-Team, bestehend aus dem Ballistik-Experten Tony DiNozzo, dem Technikspezialisten Tim McGee, der Forensikspezialistin Abby Sciuto sowie dem Gerichtsmediziner Ducky Mallard.",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Action & Adventure"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "24 Staffeln, 515 Folgen"
-    ],
-    [
-     "Von",
-     "Don McGill, Donald P. Bellisario"
-    ],
-    [
-     "Mit",
-     "Sean Murray, Wilmer Valderrama, Katrina Law, Brian Dietzen"
-    ],
-    [
-     "Sender/Dienst",
-     "CBS"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=BhtDgn31XZo",
-   "link": "https://www.themoviedb.org/tv/4614",
-   "bild": "https://image.tmdb.org/t/p/w500/y4fGncqELtnvRQuwSpuH8LncZqU.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "CBS’s Forgotten ‘NCIS’ Action Series Replacement Doesn’t Have a Single Bad Episode 17 Years Later",
-     "link": "https://collider.com/cbs-ncis-replacement-the-unit-perfect-action-series/",
-     "datum": "2026-11-18T20:29:12.000Z"
-    },
-    {
-     "quelle": "DWDL",
-     "art": "film",
-     "titel": "\"Navy CIS\" verabschiedet sich mit leicht steigenden Quoten",
-     "link": "https://www.dwdl.de/zahlenzentrale/108606/navy_cis_verabschiedet_sich_mit_leicht_steigenden_quoten/",
-     "datum": "2026-11-18T08:11:00.000Z"
-    }
-   ]
-  },
-  "tv-247718": {
-   "titel": "MobLand: Familie bis aufs Blut",
-   "original": "MobLand",
-   "leitsatz": "Jetzt regiert das Chaos.",
-   "handlung": "Die Karten werden neu gemischt, als zwei verfeindete Verbrecherfamilien in einer Schlacht aneinandergeraten, die Imperien zu stürzen droht. Harry Da Souza, ein gewiefter Mann fürs Grobe, gerät ins Kreuzfeuer und stellt seine Loyalität unter Beweis.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "2 Staffeln, 20 Folgen"
-    ],
-    [
-     "Von",
-     "Ronan Bennett"
-    ],
-    [
-     "Mit",
-     "Tom Hardy, Pierce Brosnan, Paddy Considine, Joanne Froggatt"
-    ],
-    [
-     "Sender/Dienst",
-     "Paramount+, Paramount+"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.7 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=cyYZAc0TZ7U",
-   "link": "https://www.themoviedb.org/tv/247718",
-   "bild": "https://image.tmdb.org/t/p/w500/a3o7wAGUTu6Yw4fJbKYwrMOwHST.jpg",
-   "news": []
-  },
-  "tv-549": {
-   "titel": "Law & Order",
-   "original": "Law & Order",
-   "leitsatz": null,
-   "handlung": "Vertreter der Polizei und der Staatsanwaltschaft klären Kriminalverbrechen in und um New York auf. Mit allen zur Verfügung stehenden Mitteln versuchen die Ermittler dabei, den oder die Straftäter zur Verantwortung zu ziehen.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "26 Staffeln, 552 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf"
-    ],
-    [
-     "Mit",
-     "Maura Tierney, David Ajala, James Badge Dale, Tony Goldwyn"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=RzN8cPlcMTU",
-   "link": "https://www.themoviedb.org/tv/549",
-   "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Law & Order: SVU, Folge 600: Olivia Benson rollt alten Fall neu auf",
-     "link": "https://www.serienjunkies.de/news/serien/law-order-svu-folge-600-olivia-benson-rollt-alten-fall-neu-auf-94589021.html",
-     "datum": "2026-11-13T13:45:00.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "NBC Officially Announces New 'Law & Order' Replacement",
-     "link": "https://collider.com/nbc-law-and-order-replacement-great-gatsby-reboot-detective-series/",
-     "datum": "2026-10-30T18:18:47.000Z"
-    }
-   ]
-  },
-  "tv-2190": {
-   "titel": "South Park",
-   "original": "South Park",
-   "leitsatz": null,
-   "handlung": "Die Serie konzentriert sich hauptsächlich auf die Abenteuer der vier Kinder Stan Marsh, Kyle Broflovski, Eric Cartman und Kenny McCormick in der fiktionalen Kleinstadt South Park in den Rocky Mountains in den USA der Gegenwart. Neben den vier Hauptcharakteren wird die Stadt von einer Reihe von zusätzlichen Charakteren bevölkert.",
-   "genres": [
-    "Komödie",
-    "Animation"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "29 Staffeln, 337 Folgen"
-    ],
-    [
-     "Von",
-     "Trey Parker, Matt Stone"
-    ],
-    [
-     "Mit",
-     "Trey Parker, Matt Stone, Mona Marshall, Jennifer Howell"
-    ],
-    [
-     "Sender/Dienst",
-     "Comedy Central"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=oUIK01ek-Ko",
-   "link": "https://www.themoviedb.org/tv/2190",
-   "bild": "https://image.tmdb.org/t/p/w500/k7n2EVge7G77eMr3brztRGG1fFU.jpg",
-   "news": [
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘South Park’ Serves Up a Steaming Pile of Beef Satire — and a ‘GTA VI’ Sneak Peek",
-     "link": "https://www.hollywoodreporter.com/tv/tv-features/south-park-recap-beef-gta-vi-sneak-peek-1236742371/",
-     "datum": "2026-10-29T06:40:29.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "‘South Park’ Parodies ‘GTA VI’ Hype With Dog Poop Gameplay",
-     "link": "https://deadline.com/2026/10/south-park-parodies-gta-vi-dog-poop-gameplay-1237207932/",
-     "datum": "2026-10-29T04:16:47.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "‘South Park’: Cartman, Stan and Kyle Must Solve South America’s Beef Crisis in Halloween Week Episode",
-     "link": "https://variety.com/2026/tv/news/south-park-season-29-episode-4-1236933789/",
-     "datum": "2026-10-29T03:05:04.000Z"
-    }
-   ]
-  },
-  "tv-44006": {
-   "titel": "Chicago Fire",
-   "original": "Chicago Fire",
-   "leitsatz": null,
-   "handlung": "Für die Feuerwehrmänner und Rettungssanitäter der Feuerwache 51 in Chicago sind Stress und Gefahren an der Tagesordnung. Die enorme Verantwortung, der sich die Alltagshelden aussetzen, macht auch vor dem Privatleben nicht halt. Matthew Casey, der Chef von Truck 81, steckt gerade mitten in einer Scheidung und sucht in seinem Job Ablenkung. Nach dem Tod eines Feuerwehrmanns gerät er mit Kelly Severide, dem Anführer von Rescue Squad 3, aneinander. Trotz gelegentlicher Scharmützel ist das Department für die meisten Teammitglieder wie eine Ersatzfamilie, zumal die bisweilen traumatischen Erlebnisse während der Einsätze für eine emotionale Bindung sorgen.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "15 Staffeln, 304 Folgen"
-    ],
-    [
-     "Von",
-     "Derek Haas, Michael Brandt"
-    ],
-    [
-     "Mit",
-     "Taylor Kinney, David Eigenberg, Christian Stolte, Miranda Rae Mayo"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=IIeSDILTE5M",
-   "link": "https://www.themoviedb.org/tv/44006",
-   "bild": "https://image.tmdb.org/t/p/w500/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "„Chicago Fire“ feiert 300. Folge: Joe Miñoso verlässt Serie nach 14 Jahren",
-     "link": "https://www.serienjunkies.de/news/serien/chicago-fire-joe-minoso-steigt-in-folge-300-bei-nbc-aus-94575529.html",
-     "datum": "2026-11-05T12:02:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Joe Miñoso Talks Cruz’s Exit From ‘Chicago Fire,’ Storylines That Almost Happened  Plans To Direct",
-     "link": "https://deadline.com/2026/11/chicago-fire-joe-minoso-exit-interview-1237213901/",
-     "datum": "2026-11-05T03:02:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "How Joe Miñoso Exits ‘Chicago Fire’ As Cruz In Season 15",
-     "link": "https://deadline.com/2026/11/joe-minoso-exit-cruz-chicago-fire-season-15-recap-1237211554/",
-     "datum": "2026-11-05T03:00:00.000Z"
-    }
-   ]
-  },
-  "tv-65334": {
-   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
-   "original": "Miraculous, les aventures de Ladybug et Chat Noir",
-   "leitsatz": null,
-   "handlung": "Marinette und Adrien sind zwei Schüler – fast – wie andere auch. Bei der kleinsten Bedrohung von Paris werden sie zu Ladybug und Cat Noir. Ihre Mission: Die Akumas des mysteriösen Hawk Moth fangen, der die Pariser in Super-Bösewichte verwandelt. Obwohl die beiden Helden ein Team bilden, wissen sie wenig voneinander: Marinette weiß nicht, dass sich hinter Cat Noir Adrien verbirgt, der Junge, in den sie heimlich verliebt ist; und Adrien, dessen Herzen für Ladybug schlägt, ignoriert, dass sich hinter dem Kostüm der Superheldin das nette und zerstreute Mädchen aus seiner Klasse verbirgt",
-   "genres": [
-    "Action & Adventure",
-    "Animation",
-    "Kids"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "7 Staffeln, 181 Folgen"
-    ],
-    [
-     "Von",
-     "Thomas Astruc, Jeremy Zag"
-    ],
-    [
-     "Mit",
-     "Anouck Hautbois, Benjamin Bollen, Marie Nonnenmacher, Thierry Kazazian"
-    ],
-    [
-     "Sender/Dienst",
-     "TF1"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.1 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=xK9KUNoMQCc",
-   "link": "https://www.themoviedb.org/tv/65334",
-   "bild": "https://image.tmdb.org/t/p/w500/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
-   "news": []
-  },
-  "tv-303745": {
-   "titel": "Undercover-Liebe",
-   "original": "나의 유죄인간",
-   "leitsatz": null,
-   "handlung": "Yoon Yi-jun, der Erbe der Taekang-Gruppe, ist der Hauptverdächtige in einem Mordfall. Um die Wahrheit aufzudecken, schleust sich Kang Jae-hee als männlicher Sekretär ein. Doch je näher sie der Wahrheit kommen, desto näher kommen sich auch Yi-jun und Jae-hee. Werden Jae-hee, die ihre wahre Identität verbirgt, und Yi-jun, der ein Geheimnis hütet, einander ihre wahren Gefühle offenbaren?",
-   "genres": [
-    "Komödie",
-    "Drama",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 12 Folgen"
-    ],
-    [
-     "Von",
-     "문수정"
-    ],
-    [
-     "Mit",
-     "임시완, Seol In-a, 김정현, 연우"
-    ],
-    [
-     "Sender/Dienst",
-     "tvN"
-    ],
-    [
-     "TMDB-Wertung",
-     "9.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=Q7Xj7sASXSU",
-   "link": "https://www.themoviedb.org/tv/303745",
-   "bild": "https://image.tmdb.org/t/p/w500/fFcn3MngCVaQ19kAraXgmIOshN0.jpg",
-   "news": []
-  },
-  "tv-58841": {
-   "titel": "Chicago P.D.",
-   "original": "Chicago P.D.",
-   "leitsatz": null,
-   "handlung": "Der District 21 des Chicago Police Departments besteht aus zwei unterschiedlichen Abteilungen: Einmal gibt es die Uniformed Cops, die ihren Einsatz auf den Straßen der Stadt haben und sich um Kleinkriminelle kümmern. Die Intelligence Unit hingegen bekämpft Straftaten im großen Stil, sei es Drogenschmuggel oder Morde aller Art.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "14 Staffeln, 271 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Jason Beghe, Marina Squerciati, Patrick John Flueger, Benjamin Levy Aguilar"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.4 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=NZcr9IFS9R0",
-   "link": "https://www.themoviedb.org/tv/58841",
-   "bild": "https://image.tmdb.org/t/p/w500/xjaAEVaZEI8qmchnJmfhNdXDuuv.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Neue Ära bei „Chicago P.D.“: Nach dem Abschied eines Publikumslieblings übernimmt dieser neue Officer",
-     "link": "https://www.serienjunkies.de/news/serien/neue-aera-bei-chicago-nach-dem-abschied-eines-publikumslieblings-uebernimmt-dieser-neue-officer-94566196.html",
-     "datum": "2026-10-30T11:00:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Naiqui Macabroad Joins ‘Chicago P.D.’ Following LaRoyce Hawkins Exit",
-     "link": "https://deadline.com/2026/10/naiqui-macabroad-chicago-p-d-season-14-cast-1237208550/",
-     "datum": "2026-10-29T20:11:11.000Z"
-    }
-   ]
-  },
-  "tv-3034": {
-   "titel": "Tatort",
-   "original": "Tatort",
-   "leitsatz": null,
-   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
-   "genres": [
-    "Drama",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "57 Staffeln, 1348 Folgen"
-    ],
-    [
-     "Sender/Dienst",
-     "ORF 1, Das Erste"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
-   "link": "https://www.themoviedb.org/tv/3034",
-   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
-   "news": []
-  },
-  "tv-30983": {
-   "titel": "Detektiv Conan",
-   "original": "名探偵コナン",
-   "leitsatz": null,
-   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
-   "genres": [
-    "Animation",
-    "Krimi",
-    "Mystery",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 1221 Folgen"
-    ],
-    [
-     "Mit",
-     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
-    ],
-    [
-     "Sender/Dienst",
-     "YTV"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
-   "link": "https://www.themoviedb.org/tv/30983",
-   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
-   "news": []
-  },
-  "tv-85077": {
-   "titel": "The Chosen",
-   "original": "The Chosen",
-   "leitsatz": null,
-   "handlung": "Das Leben des Christus gesehen durch die Augen derer, die ihn kannten.",
-   "genres": [
-    "Action & Adventure",
-    "Familie",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "6 Staffeln, 46 Folgen"
-    ],
-    [
-     "Von",
-     "Dallas Jenkins"
-    ],
-    [
-     "Mit",
-     "Elizabeth Tabish"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video, VidAngel"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.9 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=D93sE9d-M38",
-   "link": "https://www.themoviedb.org/tv/85077",
-   "bild": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "Prime Video’s ‘The Chosen’ Christmas Special Officially Sets December Release Date",
-     "link": "https://collider.com/the-chosen-the-three-kings-release-date-fox-december-2026/",
-     "datum": "2026-11-12T12:00:12.000Z"
-    }
-   ]
-  },
-  "tv-80748": {
-   "titel": "FBI",
-   "original": "FBI",
-   "leitsatz": null,
-   "handlung": "Die Agenten des New Yorker Büro des FBI arbeiten rund um die Uhr daran, die Stadt und ihr Land vor Terror, organisiertem Verbrechen und fremden Spionen zu beschützen. Unter der Leitung von Special Agent in Charge Dana Mosier setzt sich ihr Team aus verschiedenen Spezialisten mit einzigartigen Fähigkeiten zusammen.",
-   "genres": [
-    "Krimi",
-    "Action & Adventure",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "9 Staffeln, 167 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Craig Turk"
-    ],
-    [
-     "Mit",
-     "Missy Peregrym, Zeeko Zaki, John Boyd, Jeremy Sisto"
-    ],
-    [
-     "Sender/Dienst",
-     "CBS"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.9 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=r-btgaBL6-4",
-   "link": "https://www.themoviedb.org/tv/80748",
-   "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
-   "news": []
-  },
-  "tv-62650": {
-   "titel": "Chicago Med",
-   "original": "Chicago Med",
-   "leitsatz": null,
-   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "12 Staffeln, 229 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/62650",
-   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
-   "news": []
-  },
   "tv-75219": {
    "titel": "9-1-1 Notruf L.A.",
    "original": "9-1-1",
@@ -5423,6 +5425,41 @@
      "datum": "2026-11-09T07:59:49.000Z"
     }
    ]
+  },
+  "tv-62650": {
+   "titel": "Chicago Med",
+   "original": "Chicago Med",
+   "leitsatz": null,
+   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "12 Staffeln, 229 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Matt Olmstead"
+    ],
+    [
+     "Mit",
+     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/62650",
+   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "news": []
   }
  }
 }
