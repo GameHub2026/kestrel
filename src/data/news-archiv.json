@@ -1,5 +1,943 @@
 [
  {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "HBO Max’s New 6-Part Rom-Com Is a Masterclass in Breaking the Genre’s Rules",
+  "link": "https://collider.com/hbo-max-new-romcom-series-break-clause/",
+  "datum": "2026-11-20T22:16:12.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Roald Dahl’s Fantasy Masterpiece Officially Finds New Streaming Success 30 Years Later",
+  "link": "https://collider.com/roald-dahl-matilda-streaming-success-hbo-max-november-2026/",
+  "datum": "2026-11-20T22:15:12.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "CBS News Staffers Take Buyout Offers; Less Than 10% Of Those Offered Take Package As Skydance Looks For Cost Savings",
+  "link": "https://deadline.com/2026/11/cbs-news-buyout-offers-skydance-1237230568/",
+  "datum": "2026-11-20T22:12:28.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘You Can See Everything’: Elizabeth Holmes Documentary Crossing $100M Worldwide Tonight",
+  "link": "https://deadline.com/2026/11/box-office-global-you-can-see-everything-1237230458/",
+  "datum": "2026-11-20T22:07:47.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "TV Ratings: CMA Awards Score Seven-Year High",
+  "link": "https://www.hollywoodreporter.com/tv/tv-news/cma-awards-2026-tv-ratings-1236760246/",
+  "datum": "2026-11-20T22:06:14.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "3 Best War Movies To Watch on Netflix This Weekend (November 21-22)",
+  "link": "https://collider.com/best-netflix-war-movies-watch-weekend-november-21-2026/",
+  "datum": "2026-11-20T22:05:12.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Harry Potter Officially Says Goodbye to Streaming Ahead of HBO Reboot",
+  "link": "https://collider.com/harry-potter-franchise-leaving-peacock-december-2026/",
+  "datum": "2026-11-20T22:00:12.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘War’ Creator George Kay on Writing the Celebrity Divorce Drama, That Shocking Season Finale and the Real Couple Who Inspired a Key Scene: ‘It’s Probably an Awful Moment in Someone’s Life’",
+  "link": "https://variety.com/2026/tv/global/war-creator-george-kay-finale-spoilers-season-2-1236951842/",
+  "datum": "2026-11-20T22:00:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Hello Sunshine’s Lauren Neustadter Stepping Down at Year’s End (Exclusive)",
+  "link": "https://www.hollywoodreporter.com/business/business-news/lauren-neustadter-leaving-hello-sunshine-1236760220/",
+  "datum": "2026-11-20T22:00:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Marvel’s ‘Blade’ Director Exited Failed Movie Because ‘Life’s Too Short to Make S Films’ and It Was ‘Dangerous’ Working ‘Without a Proper Script’",
+  "link": "https://variety.com/2026/film/news/blade-director-exited-marvel-movie-script-never-finished-1236954556/",
+  "datum": "2026-11-20T21:55:50.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "The 10 Best Book Heroes of All Time, Ranked",
+  "link": "https://collider.com/best-book-heroes-all-time-ranked/",
+  "datum": "2026-11-20T21:50:12.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Egyptian Actor Asser Yassin on His Dark Role in Psychological Thriller ‘Asal Ahmar,’ Alongside Hend Sabry: ‘I Like to Indulge in Intense Characters’",
+  "link": "https://variety.com/2026/film/global/asser-yassin-asal-ahmar-1236954598/",
+  "datum": "2026-11-20T21:49:21.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "James Bond Officially Says Goodbye to Prime Video This Month",
+  "link": "https://collider.com/james-bond-movies-removed-from-prime-video-november-2026/",
+  "datum": "2026-11-20T21:45:12.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "How to Watch ‘Yellowjackets’ Season 4 Online: The Hit Thriller Returns for Its Final Season",
+  "link": "https://variety.com/2026/shopping/news/how-to-watch-yellowjackets-season-4-online-streaming-1236954592/",
+  "datum": "2026-11-20T21:45:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Bowen Yang Apologizes For Using Word \"Without Knowing Its Antisemitic History\"",
+  "link": "https://deadline.com/2026/11/bowen-yang-apologizes-using-word-antisemitic-history-1237230608/",
+  "datum": "2026-11-20T21:44:02.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Kevin – Allein zu Haus: Macaulay Culkin soll nach 34 Jahren für neuen Film zurückkehren – Bericht",
+  "link": "https://www.play3.de/2026/11/20/kevin-allein-zu-haus-macaulay-culkin-soll-nach-34-jahren-fuer-neuen-film-zurueckkehren-bericht/",
+  "datum": "2026-11-20T21:37:23.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Indie Holiday Push: ‘Minotaur’, ‘Elsinore’  ‘Josephine’ Debut With Cameron Winter Concert Film; ‘Club Kid’ Expands – Specialty Preview",
+  "link": "https://deadline.com/2026/11/indie-films-opening-minotaur-elisnore-josephine-cameron-winter-1237230528/",
+  "datum": "2026-11-20T21:36:31.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "The 25 Best Christmas Gifts for Every Kind of Boyfriend, Whether He’s a Situationship or Soulmate",
+  "link": "https://www.hollywoodreporter.com/lifestyle/shopping/best-christmas-gifts-for-boyfriend-2026-holiday-presents-1236756642/",
+  "datum": "2026-11-20T21:31:58.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Jennifer Lawrence’s ‘Slow Horses’ Alternative Is Officially an HBO Max Hit",
+  "link": "https://collider.com/jennifer-lawrence-red-sparrow-streaming-success-hbo-max-november-2026/",
+  "datum": "2026-11-20T21:30:12.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "‘Disclosure Day’ Did Its Biggest Stunts Practically, So the VFX Team Worked Hard to Look Invisible — Watch",
+  "link": "https://www.indiewire.com/features/craft/disclosure-day-vfx-craft-roundtables-1235229693/",
+  "datum": "2026-11-20T21:30:00.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "GTA 6 full cast confirmed – Every actor in Grand Theft Auto 6",
+  "link": "https://www.videogameschronicle.com/guide/gta-6-full-cast-confirmed-every-actor-in-grand-theft-auto-6/",
+  "datum": "2026-11-20T21:24:43.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "I Play Rocky: A 50-Year-Old Tape Inspired Rocky’s Stairs | Collider BTS",
+  "link": "https://collider.com/video/i-play-rocky-a-50-year-old-tape-inspired-rocky-s-stairs-collider-bts/",
+  "datum": "2026-11-20T21:15:12.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Netflix Officially Scores Star Wars Icon’s Forgotten Crime Thriller",
+  "link": "https://collider.com/hayden-christensen-awake-streaming-release-date-netflix-december-2026/",
+  "datum": "2026-11-20T21:15:12.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Tallinn Black Nights Fest Awards: ‘On Top of the Cliff’ Scores Grand Prix, ’When She Hears the Bells’ Bags Best First Feature",
+  "link": "https://variety.com/2026/film/global/tallinn-black-nights-fest-awards-on-top-of-the-cliff-1236954570/",
+  "datum": "2026-11-20T21:10:09.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘I Play Rocky’ Fact vs Fiction: Butkus the Dog, Bloody Knuckles and Stallone’s Fight to Get ‘Rocky’ Made",
+  "link": "https://variety.com/2026/film/news/i-play-rocky-fact-vs-fiction-butkus-dog-stallone-fee-1236952451/",
+  "datum": "2026-11-20T21:10:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Searchlight Pictures Casting Head Yesi Ramirez Leaving Division Amid Restructuring",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/searchlight-pictures-casting-head-leaving-restructuring-1236760157/",
+  "datum": "2026-11-20T21:07:21.000Z"
+ },
+ {
+  "quelle": "Collider",
+  "art": "film",
+  "titel": "Nicolas Cage’s Horror Icon Officially Returns With a ‘Paradise’ Star",
+  "link": "https://collider.com/nicolas-cage-longlegs-spin-off-cast-sterling-k-brown/",
+  "datum": "2026-11-20T21:04:48.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Persona 6: „Nicht das Ende“ – und warum Persona 7 nicht so lange auf sich warten lässt",
+  "link": "https://www.play3.de/2026/11/20/persona-6-nicht-das-ende-und-warum-persona-7-nicht-so-lange-auf-sich-warten-laesst/",
+  "datum": "2026-11-20T21:01:46.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘Hunger Games: Sunrise On The Reaping’ Hot $110M+ U.S. Opening – Box Office Update",
+  "link": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
+  "datum": "2026-11-20T21:01:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Catholic Girls’ School Thriller ‘On Top of the Cliff’ Wins Top Tallinn Black Nights Film Festival Award",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/tallinn-black-nights-film-festival-2026-awards-winners-poff-1236759928/",
+  "datum": "2026-11-20T21:00:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "1666: Amsterdam: Erstes großes Update verdoppelt die Spielwelt und bringt neue Zauber",
+  "link": "https://www.eurogamer.de/1666-amsterdam-dezember-update-spielwelt",
+  "datum": "2026-11-20T21:00:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "The Flagship Sonos Arc Ultra Dolby Atmos Soundbar Drops to a New Price Low for Black Friday",
+  "link": "https://www.ign.com/articles/sonos-arc-ultra-soundbar-deal-november-2026",
+  "datum": "2026-11-20T21:00:00.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘Artificial’ Writer Simon Rich Boards Oscar-Qualified Sci-Fi Short ‘Houston, We Have a Crush’ as Executive Producer (EXCLUSIVE)",
+  "link": "https://variety.com/2026/film/columns/artificial-simon-rich-short-houston-we-have-a-crush-producer-new-yorker-1236954543/",
+  "datum": "2026-11-20T20:59:21.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Sterling K. Brown in Talks to Star in New ‘Longlegs’ Movie with Nicolas Cage",
+  "link": "https://variety.com/2026/film/news/sterling-k-brown-new-longlegs-movie-nicolas-cage-1236954539/",
+  "datum": "2026-11-20T20:54:54.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "How to open the GTA 6 Kingpin Bowling Alley safe",
+  "link": "https://www.videogameschronicle.com/guide/how-to-open-the-gta-6-kingpin-bowling-alley-safe/",
+  "datum": "2026-11-20T20:52:16.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "‘Narnia’ White Witches Tilda Swinton and Emma Mackey Excited to Meet for the First Time at Marrakech Film Festival: ‘My Absolute Dream’",
+  "link": "https://variety.com/2026/film/festivals/narnia-white-witches-tilda-swinton-emma-mackey-meet-marrakech-fest-1236954244/",
+  "datum": "2026-11-20T20:51:58.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Sexyy Red Had the Best Response to Her Viral GTA 6 Moment With Jason",
+  "link": "https://www.ign.com/articles/sexyy-red-had-the-best-response-to-her-viral-gta-6-moment-with-jason",
+  "datum": "2026-11-20T20:47:54.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Jill Scott, Grammy Award-Winning Singer  Actress, Signs With Independent Artist Group",
+  "link": "https://deadline.com/2026/11/jill-scott-independent-artist-group-agency-1237230457/",
+  "datum": "2026-11-20T20:46:24.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Creator Kennedy Eurich to Launch YouTube Series (Exclusive)",
+  "link": "https://www.hollywoodreporter.com/business/digital/creator-kennedy-eurich-youtube-series-1236760125/",
+  "datum": "2026-11-20T20:42:27.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "These Electric Star Wars Lightsaber Salt and Pepper Grinders Are the Cheapest They've Been in Years",
+  "link": "https://www.ign.com/articles/star-wars-lightsaber-salt-and-pepper-grinders-deal-black-friday-2026",
+  "datum": "2026-11-20T20:34:12.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Steven Paul Talks Up Federal Film  TV Tax Credit: \"It’s Going To Be Good For The World\" – Industry Days Doha",
+  "link": "https://deadline.com/2026/11/steven-paul-federal-film-tv-tax-credit-good-world-1237230531/",
+  "datum": "2026-11-20T20:30:23.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Bruce Greenwood, Johnny Knoxville And Dylan Hawco Join ‘Fake Skating’ Adaptation At Sony",
+  "link": "https://deadline.com/2026/11/bruce-greenwood-johnny-knoxville-fake-skating-1237230348/",
+  "datum": "2026-11-20T20:30:00.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "How World-Class Filmmaker Andrey Zvyagintsev Came Back to Life for ‘Minotaur’",
+  "link": "https://www.indiewire.com/features/interviews/andrey-zvyagintsev-cannes-interview-minotaur-1235195741/",
+  "datum": "2026-11-20T20:30:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "\"The Secrecy Was Insane:\" The Making of ‘The Hunger Games: Sunrise on the Reaping,’ From Locked Safes to Original Cast’s Return",
+  "link": "https://www.hollywoodreporter.com/movies/movie-features/sunrise-on-the-reaping-making-hunger-games-prequel-1236746299/",
+  "datum": "2026-11-20T20:29:51.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "GTA 6: Take-Two legt offizielle Verkaufszahlen vor – und sie sprengen alle Rekorde",
+  "link": "https://www.play3.de/2026/11/20/gta-6-take-two-legt-offizielle-verkaufszahlen-vor-und-sie-sprengen-alle-rekorde/",
+  "datum": "2026-11-20T20:25:10.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "Curry Barker Would Have Completely Reshot ‘Obsession’ If He Could",
+  "link": "https://www.indiewire.com/features/podcast/curry-barker-obsession-directing-lessons-whats-next-1235229732/",
+  "datum": "2026-11-20T20:25:00.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Emmy Rossum on Producing and Starring in ‘Furious’: \"I Have Been ‘Matrix’-Style Dodging Mega-Predators Since I Was Seven\"",
+  "link": "https://www.hollywoodreporter.com/tv/tv-news/emmy-rossum-furious-awards-chatter-newport-beach-1236746071/",
+  "datum": "2026-11-20T20:21:30.000Z"
+ },
+ {
+  "quelle": "Variety",
+  "art": "film",
+  "titel": "Laura Poitras Turns Lens on ICE’s ‘Paramilitary Occupation’ of Minneapolis in ‘They’re Here’",
+  "link": "https://variety.com/2026/film/global/laura-poitras-theyre-here-ice-1236954019/",
+  "datum": "2026-11-20T20:21:03.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Save 26% Off the ASUS ROG Strix G16 RTX 5060 Gaming Laptop During the Amazon Black Friday Sale",
+  "link": "https://www.ign.com/articles/asus-rog-strix-g16-rtx-5060-gaming-laptop-deal-november-2026",
+  "datum": "2026-11-20T20:20:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Macaulay Culkin to Return as Kevin McCallister in Home Alone Sequel",
+  "link": "https://www.ign.com/articles/macaulay-culkin-to-return-as-kevin-mccallister-in-home-alone-sequel",
+  "datum": "2026-11-20T20:19:57.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "Podcast: GTA 6 Deep (ish) Dive with Jeff Gerstmann",
+  "link": "https://www.videogameschronicle.com/blog/podcast/podcast-gta-6-deep-ish-dive-with-jeff-gerstmann/",
+  "datum": "2026-11-20T20:16:22.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "‘Home Alone’ Sequel in Development at Disney With Macaulay Culkin, Seth Rogen and Evan Goldberg",
+  "link": "https://www.hollywoodreporter.com/movies/movie-news/home-alone-sequel-disney-macaulay-culkin-seth-rogen-1236760116/",
+  "datum": "2026-11-20T20:15:48.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "The 2026 MacBook Air 15-Inch Laptop With New Apple M5 Processor Drops to a New Price Low for Black Friday",
+  "link": "https://www.ign.com/articles/2026-apple-macbook-air-15-inch-laptop-deal-november-2026",
+  "datum": "2026-11-20T20:15:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘GTA VI’ Sales Near $4B In First Day Of Launch; Yes, You Read That Correctly, Nearly $4B",
+  "link": "https://deadline.com/2026/11/gta6-first-day-sales-4-billion-1237230465/",
+  "datum": "2026-11-20T20:09:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "Jennifer Lawrence Teases Miss Piggy Movie Update: \"I Always Get In Trouble For Saying Stuff\"",
+  "link": "https://deadline.com/2026/11/jennifer-lawrence-miss-piggy-movie-update-1237230448/",
+  "datum": "2026-11-20T20:05:12.000Z"
+ },
+ {
+  "quelle": "The Hollywood Reporter",
+  "art": "film",
+  "titel": "Jasmin Savoy Brown Bids Farewell to ‘Yellowjackets’ and Finds Her Way to ‘Hadestown’",
+  "link": "https://www.hollywoodreporter.com/tv/tv-features/jasmin-savoy-brown-yellowjackets-ending0hadestown-interview-1236759992/",
+  "datum": "2026-11-20T20:04:32.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "GTA 6: Über 8,5 Stunden Spielzeit zum Launch – Analyst spricht von „völlig verrückten“ Zahlen",
+  "link": "https://www.play3.de/2026/11/20/gta-6-ueber-85-stunden-spielzeit-zum-launch-analyst-spricht-von-voellig-verrueckten-zahlen/",
+  "datum": "2026-11-20T20:03:24.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "‘Upgraded 2’ Film Casts Tanner Zagarino, Christopher McDonald, Andrea Arcangeli  Alessandro Preziosi",
+  "link": "https://deadline.com/2026/11/upgraded-2-cast-tanner-zagarino-christopher-mcdonald-1237230367/",
+  "datum": "2026-11-20T20:00:00.000Z"
+ },
+ {
+  "quelle": "Deadline",
+  "art": "film",
+  "titel": "SXSW, Deadline  The Improv Launching New Comedy Competition Circuit Breakers For 2027",
+  "link": "https://deadline.com/2026/11/circuit-breakers-competition-sxsw-deadline-the-improv-1237230243/",
+  "datum": "2026-11-20T20:00:00.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "How a Filipino Facial Expression in ‘Forgotten Island’ Became a Universal Symbol of Representation",
+  "link": "https://www.indiewire.com/features/animation/forgotten-island-directors-interview-filipino-mythology-1235229700/",
+  "datum": "2026-11-20T20:00:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Vor 5 Jahren killte Netflix eine seiner größten Sci-Fi-Serien nach nur 3 Wochen",
+  "link": "https://www.moviepilot.de/news/netflix-killt-cowboy-bebop-1134308",
+  "datum": "2026-11-20T19:45:00.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "GTA 6 earns $3.79 billion in one day as the biggest entertainment launch in history",
+  "link": "https://www.videogameschronicle.com/news/gta-6-earns-3-79-billion-in-one-day-as-the-biggest-entertainment-launch-in-history/",
+  "datum": "2026-11-20T19:41:21.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "GTA 6 Is the Biggest Entertainment Launch of All Time at $3.79 Billion on Day One",
+  "link": "https://www.ign.com/articles/gta-6-is-the-biggest-entertainment-launch-of-all-time-at-379-billion-on-day-one",
+  "datum": "2026-11-20T19:37:29.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "A ‘Home Alone’ Legacyquel with Macaulay Culkin in Early Development with Seth Rogen and Evan Goldberg",
+  "link": "https://www.indiewire.com/news/breaking-news/home-alone-sequel-macaulay-culkin-seth-rogen-evan-goldberg-1235229735/",
+  "datum": "2026-11-20T19:33:40.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Vor Tribute von Panem hat Mckenna Grace fast jeden Hollywood-Star gespielt – von Brie Larson bis Margot Robbie",
+  "link": "https://www.moviepilot.de/news/hunger-games-mckenna-grace-junge-schauspielerin-1165573",
+  "datum": "2026-11-20T19:26:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Neuer Tribute von Panem-Film im Kino: So versteht ihr die Handlung von Sunrise on the Reaping",
+  "link": "https://www.moviepilot.de/news/neuer-tribute-von-panem-film-im-kino-1165559",
+  "datum": "2026-11-20T19:22:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Today’s Top Deals: Logitech G Pro X2 Superstrike Mouse, Elden Ring for Switch 2, and the 8Bitdo Controller",
+  "link": "https://www.ign.com/articles/best-deals-for-november-20-2026",
+  "datum": "2026-11-20T19:10:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Spider-Man Brand New Day: Erstes Bild zum Extended Cut zeigt Rückkehr eines vermissten Fan-Lieblings",
+  "link": "https://www.play3.de/2026/11/20/spider-man-brand-new-day-erstes-bild-zum-extended-cut-zeigt-rueckkehr-eines-vermissten-fan-lieblings/",
+  "datum": "2026-11-20T19:09:48.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Von wegen langweilig: Robert Pattinsons Bond-Casting ist eine extrem aufregende Entscheidung",
+  "link": "https://www.moviepilot.de/news/robert-pattinson-james-bond-casting-von-wegen-langweilig-1165536",
+  "datum": "2026-11-20T19:00:00.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "What ‘Digger’ Has in Common with Gary Oldman’s Winston Churchill and Charlize Theron’s Megyn Kelly",
+  "link": "https://www.indiewire.com/features/craft/kazu-hiro-inarritu-tom-cruise-digger-prosthetics-1235225134/",
+  "datum": "2026-11-20T19:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "GTA 6 ist gerade erschienen – doch Rockstars nächster großer Coup könnte Hollywood sein",
+  "link": "https://www.pcgames.de/Rockstar-Games-Firma-15709/News/RDR-2-GTa-Hollywood-1560698/",
+  "datum": "2026-11-20T19:00:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Echograph Is a Retro-3D Survival Horror Game That’s Equal Parts Resident Evil and Pokemon Snap",
+  "link": "https://www.ign.com/articles/echograph-is-a-retro-3d-survival-horror-game-thats-equal-parts-resident-evil-and-pokemon-snap",
+  "datum": "2026-11-20T19:00:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Hot Toys’ Lord Doom Figure Reveals Robert Downey Jr.’s Alternate MCU Look",
+  "link": "https://www.ign.com/articles/hot-toys-lord-doom-figure-reveals-robert-downey-jrs-alternate-mcu-look",
+  "datum": "2026-11-20T18:45:32.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "GTA 6 Slam Dunk Mission Walkthrough",
+  "link": "https://www.videogameschronicle.com/guide/gta-6-slam-dunk-mission-walkthrough/",
+  "datum": "2026-11-20T18:45:30.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "80 Jahre alt, 2 Oscars und immer noch aktiv: Neuer Netflix-Film dieser Hollywood-Legende wurde schon über 50 Millionen Mal gesehen",
+  "link": "https://www.moviepilot.de/news/sally-field-netflix-oscars-1165501",
+  "datum": "2026-11-20T18:30:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "The Thermaltake LGCS GeForce RTX 5070 Gaming PC Drops to $1,500 Shipped for Black Friday",
+  "link": "https://www.ign.com/articles/thermaltake-rtx-5070-gaming-pc-deal-november-2026",
+  "datum": "2026-11-20T18:30:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "99 Incredible Little Details in Grand Theft Auto 6",
+  "link": "https://www.ign.com/articles/99-incredible-little-details-in-grand-theft-auto-6",
+  "datum": "2026-11-20T18:00:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Nvidia: Jensen Huang wird des Mobbings und Schikane am Arbeitsplatz beschuldigt",
+  "link": "https://www.eurogamer.de/jensen-huang-nvidia-investigation-harassment",
+  "datum": "2026-11-20T17:52:40.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Nach Persona 6 geht es weiter: Atlus macht Fans Hoffnung auf schnellen Nachschub",
+  "link": "https://www.eurogamer.de/persona-6-atlus-schnellere-releases",
+  "datum": "2026-11-20T17:39:40.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Star Wars Galactic Racer: „Nicht zu träumen gewagt“ – Team spricht über unerwarteten Fanliebling",
+  "link": "https://www.play3.de/2026/11/20/star-wars-galactic-racer-nicht-zu-traeumen-gewagt-team-spricht-ueber-unerwarteten-fanliebling/",
+  "datum": "2026-11-20T17:37:01.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Preorders Are Live for The Hunger Games: Sunrise on the Reaping’s 4K Steelbook, Which Comes in Two Variants",
+  "link": "https://www.ign.com/articles/the-hunger-games-sunrise-on-the-reaping-4k-steelbook-blu-ray-where-to-buy",
+  "datum": "2026-11-20T17:32:11.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Shadowheart Baldur's Gate 3 Prequel Novel Revealed",
+  "link": "https://www.ign.com/articles/shadowheart-baldurs-gate-3-prequel-novel-revealed",
+  "datum": "2026-11-20T17:30:33.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Zelda: Ocarina of Time – alle sieben Hühner für das Hühnermädchen in Kakariko finden – Fundort-Tipps",
+  "link": "https://www.pcgames.de/The-Legend-of-Zelda-Ocarina-of-Time-Remake-Spiel-78201/Tipps/Quest-Guide-Kakariko-Huehner-finden-1560682/",
+  "datum": "2026-11-20T17:30:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Marvel’s DNX Crossover Finale Ends in Tragedy for the X-Men",
+  "link": "https://www.ign.com/articles/marvel-dnx-crossover-ending-tragedy-x-men",
+  "datum": "2026-11-20T17:22:41.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Every LEGO Animal Crossing Set Is on Sale — But the Best Deal Ends Tonight",
+  "link": "https://www.ign.com/articles/best-lego-animal-crossing-deals-black-friday-2026",
+  "datum": "2026-11-20T17:18:39.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "GTA 6 Players Agree That Jason's Stash Needs a Major Tweak",
+  "link": "https://www.ign.com/articles/gta-6-players-agree-that-jasons-stash-needs-a-major-tweak",
+  "datum": "2026-11-20T17:15:44.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "GTA 6 Has Only Been Out For a Day and People Are Already Asking Take-Two's Boss About GTA 7",
+  "link": "https://www.ign.com/articles/gta-6-has-only-been-out-for-a-day-and-people-are-already-asking-take-twos-boss-about-gta-7",
+  "datum": "2026-11-20T17:12:54.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "GTA 6: Diese Filme haben die Dynamik zwischen Jason und Lucia inspiriert",
+  "link": "https://www.eurogamer.de/gta-6-filminspiration-fuer-jason-und-lucia",
+  "datum": "2026-11-20T17:08:50.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Chef von Cyberpunk 2077 lobt GTA 6 als absolutes Meisterwerk",
+  "link": "https://www.eurogamer.de/gta-6-cd-projekt-red-meisterwerk",
+  "datum": "2026-11-20T17:08:20.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "17 Jahre vor Scarlett Johanssons Solo-Auftritt: Der erste Black Widow-Film scheiterte aus einem enttäuschenden Grund",
+  "link": "https://www.moviepilot.de/news/scarlett-johansson-black-widow-film-1165589",
+  "datum": "2026-11-20T17:00:00.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "‘Cameron Winter at Carnegie Hall’ Review: PTA’s Spellbinding Concert Doc Is a Gorgeously Tender Performance",
+  "link": "https://www.indiewire.com/criticism/movies/cameron-winter-at-carnegie-hall-movie-review-pta-concert-1235219827/",
+  "datum": "2026-11-20T17:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "GTA 6: Diese geheime Quest solltet ihr unbedingt so früh wie möglich erledigen",
+  "link": "https://www.pcgames.de/GTA-6-Spiel-55239/Tipps/Alien-Quest-Mysterium-permanente-Buffs-Ausdauer-Leben-1560648/",
+  "datum": "2026-11-20T17:00:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "PS5  PS4: Was spielt ihr am Wochenende? Das solltet ihr nicht verpassen",
+  "link": "https://www.play3.de/2026/11/20/ps5-ps4-was-spielt-ihr-am-wochenende-das-solltet-ihr-nicht-verpassen-108/",
+  "datum": "2026-11-20T17:00:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "Image Comics Reveals We're Taking Everyone Down With Us Prequel In Good Hands With Bad Company",
+  "link": "https://www.ign.com/articles/image-comics-reveals-were-taking-everyone-down-with-us-prequel-in-good-hands-with-bad-company",
+  "datum": "2026-11-20T17:00:00.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Was aktuell auf Instagram und TikTok viral geht",
+  "link": "https://www.dwdl.de/magazin/105105/was_aktuell_auf_instagram_und_tiktok_viral_geht/",
+  "datum": "2026-11-20T16:58:00.000Z"
+ },
+ {
+  "quelle": "IGN",
+  "art": "spiel",
+  "titel": "GTA 6 Display Settings Explained — Our Recommendations for Motion Blur, Brightness Reduction, and More",
+  "link": "https://www.ign.com/articles/gta-6-display-settings-explained-our-recommendations-for-motion-blur-brightness-reduction-and-more",
+  "datum": "2026-11-20T16:56:06.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "Box Office: ‘Hunger Games: Sunrise on the Reaping’ Scores $21 Million in Previews, Second-Best Result of 2026",
+  "link": "https://www.indiewire.com/news/box-office/box-office-hunger-games-sunrise-on-the-reaping-previews-1235229692/",
+  "datum": "2026-11-20T16:37:29.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "‘Josephine’ Review: Another Heartsick Horror Film About Real Monsters from ‘Soft  Quiet’ Filmmaker",
+  "link": "https://www.indiewire.com/criticism/movies/josephine-review-channing-tatum-gemma-chan-beth-de-araujo-1235173700/",
+  "datum": "2026-11-20T16:30:35.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "GTA 6: Technisch machbar? Experten ordnen Chancen auf eine Switch-2-Version ein",
+  "link": "https://www.play3.de/2026/11/20/gta-6-technisch-machbar-experten-ordnen-chancen-auf-eine-switch-2-version-ein/",
+  "datum": "2026-11-20T16:23:31.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Vor 111 Jahren schrieb dieser Film Kinogeschichte – heute ist er so gut wie vergessen",
+  "link": "https://www.moviepilot.de/news/vor-111-jahren-hat-dieser-film-kinogeschichte-geschrieben-1165560",
+  "datum": "2026-11-20T16:15:00.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "Fanatical’s Black Friday Build Your Own Capcom Collection bundle lets you stock up on classics from $6.20 per game",
+  "link": "https://www.videogameschronicle.com/news/fanaticals-black-friday-build-your-own-capcom-collection-bundle-lets-you-stock-up-on-classics-from-6-20-per-game/",
+  "datum": "2026-11-20T16:10:49.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "Walter Hill on Sam Peckinpah, Steve McQueen, and His Revolutionary Screenplay for ‘The Getaway’",
+  "link": "https://www.indiewire.com/features/interviews/walter-hill-on-sam-peckinpah-steve-mcqueen-the-getaway-1235229598/",
+  "datum": "2026-11-20T16:04:05.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Vor One Piece Staffel 3: Bei Netflix zeigt Emilio Sakraya jetzt schon, dass er für die Rolle von Koza geboren wurde",
+  "link": "https://www.moviepilot.de/news/vor-one-piece-staffel-3-bei-netflix-emilio-sakraya-koza-rheingold-xatar-1164417",
+  "datum": "2026-11-20T16:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "GTA 6: So verdient ihr schnell unendlich viel Geld",
+  "link": "https://www.pcgames.de/GTA-6-Spiel-55239/Tipps/Geldverdienen-Glitch-Dollar-farmen-Trick-1560712/",
+  "datum": "2026-11-20T16:00:00.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "GTA 6 Wrestling: How to become a backyard wrestler in GTA 6",
+  "link": "https://www.videogameschronicle.com/guide/gta-6-wrestling-how-to-become-a-backyard-wrestler-in-gta-6/",
+  "datum": "2026-11-20T15:56:36.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "GTA 6 ist laut ehemaligem Take-Two-CEO der letzte Blockbuster vor dem KI-Umbruch",
+  "link": "https://www.eurogamer.de/gta-6-ben-feder-letzter-blockbuster-vor-ki-umbruch",
+  "datum": "2026-11-20T15:48:20.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "Anno 117: Ubisoft muss nach großem Update erneut nachbessern",
+  "link": "https://www.pcgames.de/Anno-117-Pax-Romana-Spiel-74719/News/Hotfix-fuer-Update-301-1560689/",
+  "datum": "2026-11-20T15:45:00.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "Podcast: Should your teenager play GTA 6?",
+  "link": "https://www.videogameschronicle.com/blog/podcast/podcast-should-your-teenager-play-gta-6/",
+  "datum": "2026-11-20T15:39:06.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "GTA 6: „Gehört nicht in Kinderhände“ – USK richtet Appell an Eltern",
+  "link": "https://www.play3.de/2026/11/20/gta-6-gehoert-nicht-in-kinderhaende-usk-richtet-appell-an-eltern/",
+  "datum": "2026-11-20T15:33:17.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "Short Film ‘Lightning Bug’ Gives Stage and Screen Legend Lois Smith One of Her Greatest Roles — Watch It Here",
+  "link": "https://www.indiewire.com/features/interviews/short-film-lightning-bug-lois-smith-greatest-role-1235229661/",
+  "datum": "2026-11-20T15:31:58.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Die mit dem Streamer des Jahres, 007 und 99 von 100 Punkten",
+  "link": "https://www.dwdl.de/magazin/108642/die_mit_dem_streamer_des_jahres_007_und_99_von_100_punkten/",
+  "datum": "2026-11-20T15:25:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "GTA 6 für PC: Gefälschte Downloads verbreiten gefährliche Malware",
+  "link": "https://www.pcgames.de/GTA-6-Spiel-55239/News/Warnung-vor-PC-Version-1560664/",
+  "datum": "2026-11-20T15:15:00.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "RTLzwei nimmt \"Zuhause im Glück\" aus der Primetime",
+  "link": "https://www.dwdl.de/nachrichten/108649/rtlzwei_nimmt_zuhause_im_glueck_aus_der_primetime/",
+  "datum": "2026-11-20T15:08:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "TV-Tipp: Düsterer Krimi-Geheimtipp Cardinal lohnt sich immer",
+  "link": "https://www.serienjunkies.de/news/serien/cardinal-bei-sat-kanadischer-krimi-tipp-im-ueberblick-94598777.html",
+  "datum": "2026-11-20T15:02:23.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "“Werde deine ganze Familie töten“: Steven Seagal bedrohte einen Regisseur, stürmte davon und fiel ins Meer",
+  "link": "https://www.moviepilot.de/news/steven-seagal-exit-wounds-1165554",
+  "datum": "2026-11-20T15:00:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Die ultimative Star Trek-Übersicht: Alle aktuellen sowie geplanten Serien und Filme der seit 60 Jahre laufenden Sci-Fi-Reihe",
+  "link": "https://www.moviepilot.de/news/die-ultimative-star-trek-uebersicht-alle-aktuellen-sowie-geplanten-serien-und-filme-der-seit-60-jahre-laufenden-sci-fi-reihe-1158876",
+  "datum": "2026-11-20T14:45:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Beliebter US-Thriller geht weiter: 2. Staffel mit völlig neuen Darstellern startet im Februar",
+  "link": "https://www.serienjunkies.de/news/serien/aus-mangel-an-beweisen-staffel-ab-februar-2027-94600524.html",
+  "datum": "2026-11-20T14:41:40.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "Filmförderung: FFA schließt auch Antragstellung für TV-Produktionen",
+  "link": "https://www.dwdl.de/nachrichten/108648/filmfoerderung_ffa_schliesst_auch_antragstellung_fuer_tvproduktionen/",
+  "datum": "2026-11-20T14:39:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "Star Wars Knights of the Old Republic: Insider nennt Termin für die große Rückkehr",
+  "link": "https://www.play3.de/2026/11/20/star-wars-knights-of-the-old-republic-insider-nennt-termin-fuer-die-grosse-rueckkehr/",
+  "datum": "2026-11-20T14:36:22.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "\"No Stigma\": Inititative tritt Schizophrenie-Klischees entgegen",
+  "link": "https://www.dwdl.de/nachrichten/108647/no_stigma_inititative_tritt_schizophrenieklischees_entgegen/",
+  "datum": "2026-11-20T14:35:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Jetzt trifft es auch Bridgerton: Der Netflix-Hit verliert im Synchro-Streit eine seiner beliebtesten Stimmen",
+  "link": "https://www.moviepilot.de/news/jetzt-trifft-es-auch-bridgerton-netflix-synchro-streit-1165600",
+  "datum": "2026-11-20T14:30:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Marvel’s Wolverine: Chart-Platzierung rutscht im Oktober deutlich ab",
+  "link": "https://www.eurogamer.de/marvels-wolverine-chart-platzierung-oktober-abgerutscht",
+  "datum": "2026-11-20T14:28:30.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "SWR: Ruther verantwortet Portfoliomanagement und Innovation",
+  "link": "https://www.dwdl.de/nachrichten/108646/swr_ruther_verantwortet_portfoliomanagement_und_innovation/",
+  "datum": "2026-11-20T14:20:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "In 5 Tagen startet ein Kriegsfilm bei Netflix, der eine unfassbare wahre Geschichte aus dem Zweiten Weltkrieg erzählt",
+  "link": "https://www.moviepilot.de/news/kriegsfilm-mosquito-bowl-netflix-5-tage-1165535",
+  "datum": "2026-11-20T14:15:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Nach Die Ringe der Macht bei Amazon geht heute auch das größte Fantasy-Flaggschiff von Disney+ weiter",
+  "link": "https://www.moviepilot.de/news/percy-jackson-staffel-3-start-disney-plus-1165595",
+  "datum": "2026-11-20T14:00:00.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "Deutsche Serienstarts im November 2026 - Teil 3: „Scrubs“, „Blade Runner 2099“, „Tracker“",
+  "link": "https://www.serienjunkies.de/news/serien/deutsche-serienstarts-im-november-2026-teil-scrubs-blade-runner-2099-tracker-94600422.html",
+  "datum": "2026-11-20T14:00:00.000Z"
+ },
+ {
+  "quelle": "PC Games",
+  "art": "spiel",
+  "titel": "GTA 6: So stellt ihr die HDR-Werte auf PS5 und Xbox Series X bestmöglich ein",
+  "link": "https://www.pcgames.de/GTA-6-Spiel-55239/News/HDR-Einstellung-Setting-OLED-1560671/",
+  "datum": "2026-11-20T14:00:00.000Z"
+ },
+ {
+  "quelle": "Play3",
+  "art": "spiel",
+  "titel": "KI-Debatte: Zwei bekannte Spieleentwickler könnten kaum unterschiedlicher denken",
+  "link": "https://www.play3.de/2026/11/20/ki-debatte-zwei-bekannte-spieleentwickler-koennten-kaum-unterschiedlicher-denken/",
+  "datum": "2026-11-20T13:48:01.000Z"
+ },
+ {
+  "quelle": "Serienjunkies",
+  "art": "film",
+  "titel": "7 Serien, die Ihr nach „Dexter“ unbedingt sehen müsst",
+  "link": "https://www.serienjunkies.de/news/serien/serien-die-ihr-nach-dexter-unbedingt-sehen-muesst-94600381.html",
+  "datum": "2026-11-20T13:45:00.000Z"
+ },
+ {
+  "quelle": "DWDL",
+  "art": "film",
+  "titel": "\"The Voice Kids\": Sat.1 reduziert die Zahl der Coaches",
+  "link": "https://www.dwdl.de/nachrichten/108645/the_voice_kids_sat1_reduziert_die_zahl_der_coaches/",
+  "datum": "2026-11-20T13:45:00.000Z"
+ },
+ {
+  "quelle": "Moviepilot",
+  "art": "film",
+  "titel": "Neu im Kino: Der spannendste Abenteuerfilm des Jahres",
+  "link": "https://www.moviepilot.de/news/neu-im-kino-der-spannendste-abenteuerfilm-des-jahres-1165596",
+  "datum": "2026-11-20T13:30:00.000Z"
+ },
+ {
+  "quelle": "IndieWire",
+  "art": "film",
+  "titel": "Is A24 Finally Big Enough to Be Considered a Major Studio?",
+  "link": "https://www.indiewire.com/news/analysis/is-a24-big-enough-major-studio-1235229546/",
+  "datum": "2026-11-20T13:30:00.000Z"
+ },
+ {
+  "quelle": "Eurogamer.de",
+  "art": "spiel",
+  "titel": "Stellar Blade: Blood Rain soll handgemacht wirken – doch Shift Up nutzt weiter KI",
+  "link": "https://www.eurogamer.de/stellar-blade-blood-rain-ki-kritik",
+  "datum": "2026-11-20T13:26:30.000Z"
+ },
+ {
+  "quelle": "VGC",
+  "art": "spiel",
+  "titel": "GTA 6: How to use the first-person mode glitch in Grand Theft Auto 6",
+  "link": "https://www.videogameschronicle.com/guide/gta-6-first-person-mode-glitch-grand-theft-auto/",
+  "datum": "2026-11-20T13:21:39.000Z"
+ },
+ {
   "quelle": "Play3",
   "art": "spiel",
   "titel": "Stellar Blade Blood Rain: „Handgemacht“, aber ganz ohne KI geht es nicht – Shift Up erläutert den neuen Ansatz",
@@ -761,13 +1699,6 @@
   "titel": "World of WarCraft Forever: So viele wöchentliche Spieler wie seit 15 Jahren nicht mehr",
   "link": "https://www.eurogamer.de/world-of-warcraft-forever-spieler-rekord",
   "datum": "2026-11-20T07:27:30.000Z"
- },
- {
-  "quelle": "Deadline",
-  "art": "film",
-  "titel": "‘Hunger Games: Sunrise On The Reaping’ 2nd Best Franchise Previews With $21M+; Scorches ‘Wicked’  ‘The Odyssey’ – Box Office",
-  "link": "https://deadline.com/2026/11/box-office-hunger-games-sunrise-on-the-reaping-1237229925/",
-  "datum": "2026-11-20T07:22:42.000Z"
  },
  {
   "quelle": "Play3",
@@ -1547,13 +2478,6 @@
   "datum": "2026-11-19T19:48:37.000Z"
  },
  {
-  "quelle": "Moviepilot",
-  "art": "film",
-  "titel": "Von wegen langweilig: Robert Pattinsons Bond-Casting ist eine extrem aufregende Entscheidung",
-  "link": "https://www.moviepilot.de/news/robert-pattinson-james-bond-casting-von-wegen-langweilig-1165536",
-  "datum": "2026-11-19T19:48:00.000Z"
- },
- {
   "quelle": "The Hollywood Reporter",
   "art": "film",
   "titel": "‘GTA 6’ Sales Have Already Surpassed Christopher Nolan’s ‘The Odyssey’",
@@ -1776,13 +2700,6 @@
   "titel": "GTA 6 Vicki: Can you romance Vicki in GTA 6?",
   "link": "https://www.videogameschronicle.com/guide/gta-6-vicki-can-you-romance-vicki-in-gta-6/",
   "datum": "2026-11-19T17:00:28.000Z"
- },
- {
-  "quelle": "Moviepilot",
-  "art": "film",
-  "titel": "Vor Tribute von Panem hat Mckenna Grace ungefähr jeden Star in Hollywood gespielt – von Brie Larson bis Margot Robbie",
-  "link": "https://www.moviepilot.de/news/hunger-games-mckenna-grace-junge-schauspielerin-1165573",
-  "datum": "2026-11-19T17:00:00.000Z"
  },
  {
   "quelle": "IndieWire",
@@ -3178,13 +4095,6 @@
   "datum": "2026-11-18T22:38:43.000Z"
  },
  {
-  "quelle": "Moviepilot",
-  "art": "film",
-  "titel": "Neuer Tribute von Panem-Film im Kino: Was ihr davor gesehen haben müsst und was nicht",
-  "link": "https://www.moviepilot.de/news/neuer-tribute-von-panem-film-im-kino-1165559",
-  "datum": "2026-11-18T22:32:00.000Z"
- },
- {
   "quelle": "Collider",
   "art": "film",
   "titel": "20 Years Later, Guillermo del Toro’s Dark Fantasy Classic Gets a Stunning 4K Release",
@@ -3836,13 +4746,6 @@
   "datum": "2026-11-18T16:30:00.000Z"
  },
  {
-  "quelle": "IGN",
-  "art": "spiel",
-  "titel": "The 2026 MacBook Air 15-Inch Laptop With New Apple M5 Processor Drops to a New Price Low for Black Friday",
-  "link": "https://www.ign.com/articles/2026-apple-macbook-air-15-inch-laptop-deal-november-2026",
-  "datum": "2026-11-18T16:30:00.000Z"
- },
- {
   "quelle": "Play3",
   "art": "spiel",
   "titel": "GTA 6: Rockstar streicht beliebtes Feature aus GTA 5 – und das ist der Grund",
@@ -3885,13 +4788,6 @@
   "datum": "2026-11-18T16:03:14.000Z"
  },
  {
-  "quelle": "Moviepilot",
-  "art": "film",
-  "titel": "Heute vor 111 Jahren schrieb dieser bahnbrechende Film Kinogeschichte",
-  "link": "https://www.moviepilot.de/news/vor-111-jahren-hat-dieser-film-kinogeschichte-geschrieben-1165560",
-  "datum": "2026-11-18T16:00:00.000Z"
- },
- {
   "quelle": "Serienjunkies",
   "art": "film",
   "titel": "SJ Weekly: Body, Bond und Bankkonto: Wer verdient 2 Mio. pro Folge?",
@@ -3932,13 +4828,6 @@
   "titel": "Netflix: Diese 88 neuen Serien-Staffeln erwarten euch 2026",
   "link": "https://www.moviepilot.de/news/netflix-diese-87-neuen-serien-staffeln-erwarten-euch-2026-1156762",
   "datum": "2026-11-18T15:50:00.000Z"
- },
- {
-  "quelle": "DWDL",
-  "art": "film",
-  "titel": "Was aktuell auf Instagram und TikTok viral geht",
-  "link": "https://www.dwdl.de/magazin/105105/was_aktuell_auf_instagram_und_tiktok_viral_geht/",
-  "datum": "2026-11-18T15:49:00.000Z"
  },
  {
   "quelle": "Play3",
@@ -15797,13 +16686,6 @@
   "titel": "Nicht nur „The Rings of Power“ Staffel 3: Das alles steht demnächst im „Herr der Ringe“-Universum an",
   "link": "https://www.serienjunkies.de/news/serien/herr-der-ringe-alle-neuen-filme-und-serien-im-ueberblick-94585155.html",
   "datum": "2026-11-11T13:37:08.000Z"
- },
- {
-  "quelle": "Moviepilot",
-  "art": "film",
-  "titel": "Die ultimative Star Trek-Übersicht: Alle aktuellen sowie geplanten Serien und Filme der seit 60 Jahre laufenden Sci-Fi-Reihe",
-  "link": "https://www.moviepilot.de/news/die-ultimative-star-trek-uebersicht-alle-aktuellen-sowie-geplanten-serien-und-filme-der-seit-60-jahre-laufenden-sci-fi-reihe-1158876",
-  "datum": "2026-11-11T13:35:00.000Z"
  },
  {
   "quelle": "Serienjunkies",
