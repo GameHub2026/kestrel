@@ -130,11 +130,11 @@
    "id": "tv-290826-s1",
    "art": "serie",
    "typ": "serienstart",
-   "titel": "Dig",
+   "titel": "DIG",
    "datum": "2026-11-23",
    "text": "Neue Serie",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/okLAVH9jJhUxwmQ2Zn2x2BXf9r.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/jLGP8R7N0MeZqDkTlOOMMQ3HutW.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/tv/290826",
    "info": "tv-290826"
@@ -672,6 +672,21 @@
    "info": "movie-1765072"
   },
   {
+   "id": "tv-300398-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Alice",
+   "datum": "2026-12-04",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/jNWgYoIGpDMwfjI7k29N6lH4Dxf.jpg",
+   "anbieter": [
+    "HBO Max"
+   ],
+   "link": "https://www.themoviedb.org/tv/300398",
+   "info": "tv-300398"
+  },
+  {
    "id": "tv-233732-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -891,6 +906,21 @@
    ],
    "link": "https://www.themoviedb.org/tv/58841",
    "info": "tv-58841"
+  },
+  {
+   "id": "tv-270596-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "The Murder of JonBenét Ramsey",
+   "datum": "2026-12-09",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/jhYhx8vR2tFf83D8yb9rwpRlpCb.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/270596",
+   "info": "tv-270596"
   },
   {
    "id": "movie-1403676-kino",
@@ -1521,7 +1551,7 @@
    "id": "movie-1165366-kino",
    "art": "film",
    "typ": "kino",
-   "titel": "De Gaulle - Zeit des Widerstands",
+   "titel": "De Gaulle: Zeit des Widerstands",
    "datum": "2027-02-04",
    "text": "Kinostart",
    "jahr": "2026",
@@ -1614,7 +1644,7 @@
    "id": "movie-1165369-kino",
    "art": "film",
    "typ": "kino",
-   "titel": "De Gaulle: Zeit der Freiheit",
+   "titel": "De Gaulle - Zeit der Freiheit",
    "datum": "2027-03-04",
    "text": "Kinostart",
    "jahr": "2026",
@@ -1692,10 +1722,17 @@
      "8.5 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=f_1rHzdY4Qc",
+   "trailer": "https://www.youtube.com/watch?v=6S1CDWZfuM0",
    "link": "https://www.themoviedb.org/movie/969681",
    "bild": "https://image.tmdb.org/t/p/w500/h2R2dPbIyjxXorGL6V8Mau01hJy.jpg",
    "news": [
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Golden Globes: ‘Spider-Man: Brand New Day’ Goes Comedy, ‘Dune 3’ Skips Box Office Achievement Category and More (EXCLUSIVE)",
+     "link": "https://variety.com/2026/film/awards/golden-globes-2027-spider-man-comedy-dune-box-office-1236957413/",
+     "datum": "2026-11-24T23:31:30.000Z"
+    },
     {
      "quelle": "Moviepilot",
      "art": "film",
@@ -1723,13 +1760,6 @@
      "titel": "„Spider-Man: Brand New Day“: Rosario Dawson kehrt im Extended Cut zurück – Re-Release im Januar",
      "link": "https://www.serienjunkies.de/news/film/spider-man-brand-new-day-extended-cut-mit-rosario-dawson-94596310.html",
      "datum": "2026-11-18T12:22:10.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "‘Spider-Man: Brand New Day’ Officially Returns to Theaters With New Footage",
-     "link": "https://collider.com/spider-man-brand-new-day-extended-cut-theatrical-release-date/",
-     "datum": "2026-11-16T23:40:04.000Z"
     }
    ]
   },
@@ -1762,6 +1792,20 @@
    "bild": "https://image.tmdb.org/t/p/w500/1zqWkLwC1zLBBBtIWzmkmWeMWnT.jpg",
    "news": [
     {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘Avengers: Doomsday’ Final Trailer Clocks 563M Views, Best Ever For Disney; 2nd Most Viewed Of All-Time",
+     "link": "https://deadline.com/2026/11/avengers-doomsday-final-trailer-viewership-record-1237232943/",
+     "datum": "2026-11-24T23:31:33.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Patrick Stewart Was ‘Struggling With His Health’ on Last Day of Filming ‘Avengers: Doomsday’; Marvel Plans to Add Tribute to Movie",
+     "link": "https://variety.com/2026/film/news/patrick-stewart-avengers-doomsday-marvel-tribute-1236957522/",
+     "datum": "2026-11-24T23:27:20.000Z"
+    },
+    {
      "quelle": "Variety",
      "art": "film",
      "titel": "Marvel’s ‘Avengers: Doomsday’ Won’t Screen for BAFTA, Golden Globes and Other Early Awards Groups to Guard Its Spoilers (EXCLUSIVE)",
@@ -1781,20 +1825,6 @@
      "titel": "„Avengers: Doomsday“ – Finaler Trailer rückt eine Figur ganz besonders ins Zentrum",
      "link": "https://www.serienjunkies.de/news/film/avengers-doomsday-finaler-trailer-rueckt-eine-figur-ganz-besonders-ins-zentrum-94604394.html",
      "datum": "2026-11-23T15:39:34.000Z"
-    },
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘Avengers: Doomsday’ Final Trailer Shows Major X-Men Moment",
-     "link": "https://www.hollywoodreporter.com/movies/movie-news/avengers-doomsday-final-trailer-x-men-1236761061/",
-     "datum": "2026-11-23T14:43:49.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Final ‘Avengers: Doomsday’ Trailer Has Fantastic Four Pulling Steve Rogers Out Of His Quiet Life",
-     "link": "https://deadline.com/2026/11/avengers-doomsday-final-trailer-1237231535/",
-     "datum": "2026-11-23T14:19:52.000Z"
     }
    ]
   },
@@ -1942,7 +1972,8 @@
     "Abenteuer",
     "Animation",
     "Familie",
-    "Fantasy"
+    "Fantasy",
+    "Komödie"
    ],
    "fakten": [
     [
@@ -1962,6 +1993,13 @@
    "link": "https://www.themoviedb.org/movie/1538497",
    "bild": "https://image.tmdb.org/t/p/w500/lMYJ4ogEBiB6pTxi5sm73kBsxiE.jpg",
    "news": [
+    {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "Neues Fantasy-Abenteuer Wie verhext im Kino: Lohnt sich Disneys Harry Potter?",
+     "link": "https://www.moviepilot.de/news/fantasy-abenteuer-wie-verhext-kino-film-check-1165633",
+     "datum": "2026-11-24T17:00:00.000Z"
+    },
     {
      "quelle": "Variety",
      "art": "film",
@@ -2112,7 +2150,7 @@
     ],
     [
      "TMDB-Wertung",
-     "7.0 / 10"
+     "7.3 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=XBQXIBsLQsY",
@@ -2211,7 +2249,7 @@
     ],
     [
      "TMDB-Wertung",
-     "7.4 / 10"
+     "7.5 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=kA9NfV4pM_Q",
@@ -2530,7 +2568,7 @@
    "sprache": "en"
   },
   "movie-1165366": {
-   "titel": "De Gaulle - Zeit des Widerstands",
+   "titel": "De Gaulle: Zeit des Widerstands",
    "original": "La Bataille de Gaulle : L’Âge de fer",
    "leitsatz": null,
    "handlung": "Juni 1940. Frankreich bricht zusammen und unterzeichnet den Waffenstillstand. Inmitten des Chaos weigert sich ein Mann, aufzugeben. Ganz auf sich allein gestellt, flieht dieser bis dahin unbekannte General nach London, um zu retten, was von der Freiheit geblieben ist.",
@@ -2557,7 +2595,7 @@
      "7.8 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=P_bc5JtHsZk",
+   "trailer": "https://www.youtube.com/watch?v=w_4zj4YcJJY",
    "link": "https://www.themoviedb.org/movie/1165366",
    "bild": "https://image.tmdb.org/t/p/w500/pNaHwxMkymhGky2VXl3ARd3hc7o.jpg",
    "news": []
@@ -2665,7 +2703,7 @@
    ]
   },
   "movie-1165369": {
-   "titel": "De Gaulle: Zeit der Freiheit",
+   "titel": "De Gaulle - Zeit der Freiheit",
    "original": "La Bataille de Gaulle : J'écris ton nom",
    "leitsatz": null,
    "handlung": "Im Juni 1940, nach Frankreichs Kapitulation vor Nazi-Deutschland, flieht der noch unbekannte General Charles de Gaulle mit Churchills Hilfe nach London. Über die BBC ruft er die Franzosen zum Widerstand auf und gründet eine Exilregierung, die die Alliierten anfangs kaum ernst nehmen. Seine Beziehung zu Churchill ist eng, aber spannungsreich. Nach und nach wächst seine Bewegung, und als sich schließlich die afrikanischen Kolonien ihm anschließen, kommt die Wende.",
@@ -2720,7 +2758,7 @@
      "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=rd_s5QdHdYw",
+   "trailer": "https://www.youtube.com/watch?v=CL1EFACsWag",
    "link": "https://www.themoviedb.org/movie/1421903",
    "bild": "https://image.tmdb.org/t/p/w500/imnkSt4PSQpxIuyiRpJCiLk3SZz.jpg",
    "news": []
@@ -3364,7 +3402,15 @@
    "trailer": "https://www.youtube.com/watch?v=a20LtkPALYM",
    "link": "https://www.themoviedb.org/movie/621304",
    "bild": "https://image.tmdb.org/t/p/w500/qxUPu92DF5Bo6jcCDhnMTHFPEEc.jpg",
-   "news": [],
+   "news": [
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Everything We Know About Gina Prince-Bythewood’s ‘Children Of Blood And Bone’ Movie So Far",
+     "link": "https://deadline.com/feature/children-of-blood-and-bone-movie-news-updates-adaptation-1237012631/",
+     "datum": "2026-11-24T23:46:44.000Z"
+    }
+   ],
    "sprache": "en"
   },
   "movie-1517333": {
@@ -3388,7 +3434,7 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=j8mVWxWRvO0",
    "link": "https://www.themoviedb.org/movie/1517333",
-   "bild": "https://image.tmdb.org/t/p/w500/k6p8n5fILMdPYEHZBj7bIb6pbwB.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/9MED2GFhwsMJvYKEc9Wt7aB0S2a.jpg",
    "news": [],
    "sprache": "en"
   },
@@ -3704,8 +3750,8 @@
    "sprache": "en"
   },
   "tv-290826": {
-   "titel": "Dig",
-   "original": "Dig",
+   "titel": "DIG",
+   "original": "DIG",
    "leitsatz": null,
    "handlung": "Follow four women who work at an archeological dig in Greece. When the team uncovers a long-buried secret with the potential to rewrite history, they find themselves at the center of a high-stakes international conspiracy.",
    "genres": [
@@ -3731,7 +3777,7 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=ir2zni8_tP4",
    "link": "https://www.themoviedb.org/tv/290826",
-   "bild": "https://image.tmdb.org/t/p/w500/l44uAt5yfDOxJeiB0t3B6xNlbxu.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/eyW6V0R0SzG3BqtYKhlZKGBaUCn.jpg",
    "news": [
     {
      "quelle": "Serienjunkies",
@@ -3774,6 +3820,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/qAcXaAoJiYry9nGEyxTirnJ82Jj.jpg",
    "news": [
     {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "‘Blade Runner 2099’ Bosses Reveal Ridley Scott’s Take on Prime Video’s New Sci-Fi Series",
+     "link": "https://collider.com/blade-runner-2099-bosses-reveal-ridley-scotts-take-on-prime-videos-new-sci-fi-series/",
+     "datum": "2026-11-24T23:00:12.000Z"
+    },
+    {
      "quelle": "Moviepilot",
      "art": "film",
      "titel": "Amazons Sci-Fi-Serie Blade Runner 2099 hat das gleiche Problem wie Der Herr der Ringe: Die Ringe der Macht",
@@ -3800,13 +3853,6 @@
      "titel": "WatchList: „Blade Runner 2099“, „Scrubs“ und Brad Pitt als Cliff Booth",
      "link": "https://www.serienjunkies.de/news/serien/watchlist-blade-runner-2099-scrubs-und-brad-pitt-als-cliff-booth-94602665.html",
      "datum": "2026-11-22T17:15:00.000Z"
-    },
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Deutsche Serienstarts im November 2026 - Teil 3: „Scrubs“, „Blade Runner 2099“, „Tracker“",
-     "link": "https://www.serienjunkies.de/news/serien/deutsche-serienstarts-im-november-2026-teil-scrubs-blade-runner-2099-tracker-94600422.html",
-     "datum": "2026-11-20T14:00:00.000Z"
     }
    ],
    "sprache": "en"
@@ -3839,6 +3885,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/6spxkjxCcog8HR3cLsDVROsjz3h.jpg",
    "news": [
     {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "Neues Fantasy-Abenteuer Wie verhext im Kino: Lohnt sich Disneys Harry Potter?",
+     "link": "https://www.moviepilot.de/news/fantasy-abenteuer-wie-verhext-kino-film-check-1165633",
+     "datum": "2026-11-24T17:00:00.000Z"
+    },
+    {
      "quelle": "The Hollywood Reporter",
      "art": "film",
      "titel": "SHEGLAM Opens the Wizards’ Vault With Its Third Harry Potter Makeup Collection",
@@ -3865,13 +3918,6 @@
      "titel": "Nicola Coughlan \"Will Not Be Watching\" HBO’s ‘Harry Potter’: \"And I Would Never Be in It\"",
      "link": "https://www.hollywoodreporter.com/tv/tv-news/nicola-coughlan-harry-potter-jk-rowling-show-series-trans-1236756089/",
      "datum": "2026-11-16T12:04:39.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "Nicola Coughlan ‘Will Not Be Watching’ New ‘Harry Potter’ Series Over J.K. Rowling’s Trans Views: ‘It’s Not for Me’",
-     "link": "https://variety.com/2026/tv/global/nicola-coughlan-not-watching-harry-potter-series-jk-rowling-views-1236948687/",
-     "datum": "2026-11-16T11:13:43.000Z"
     }
    ]
   },
@@ -4052,6 +4098,47 @@
      "titel": "Netflix’s ‘Trinity’ Sets December Release Date, Drops Tense New Trailer (TV News Roundup)",
      "link": "https://variety.com/2026/tv/news/tv-news-roundup-week-of-nov-2-1236937906/",
      "datum": "2026-11-04T19:22:55.000Z"
+    }
+   ],
+   "sprache": "en"
+  },
+  "tv-270596": {
+   "titel": "The Murder of JonBenét Ramsey",
+   "original": "The Murder of JonBenét Ramsey",
+   "leitsatz": null,
+   "handlung": "The series centers on one of the most infamous unsolved murder cases in American history, and the devastating personal and public reckoning that followed the death of JonBenet Ramsey on Christmas night in 1996.",
+   "genres": [
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 8 Folgen"
+    ],
+    [
+     "Von",
+     "Harrison Query, Tommy Wallach"
+    ],
+    [
+     "Mit",
+     "Melissa McCarthy, Clive Owen, Emily Mitchell, Garrett Hedlund"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/270596",
+   "bild": "https://image.tmdb.org/t/p/w500/jhYhx8vR2tFf83D8yb9rwpRlpCb.jpg",
+   "news": [
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘The Murder of JonBenét Ramsey’: Melissa McCarthy  Clive Owen Play Grieving, Overly Scrutinized Parents In Trailer For Netflix Series",
+     "link": "https://deadline.com/2026/11/the-murder-of-jonbenet-ramsey-trailer-netflix-series-1237232085/",
+     "datum": "2026-11-24T15:00:00.000Z"
     }
    ],
    "sprache": "en"
@@ -4257,6 +4344,38 @@
    "news": [],
    "sprache": "en"
   },
+  "tv-300398": {
+   "titel": "Alice",
+   "original": "Alice",
+   "leitsatz": null,
+   "handlung": "From Paris's Belle Époque to New-York and early Hollywood, follow the remarkable journey of a visionary artist who defied conventions and expectations as a filmmaker, entrepreneur, wife, and mother. Her loves, her battles, and her relentless pursuit of recognition unfold against the birth of modern cinema.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 6 Folgen"
+    ],
+    [
+     "Von",
+     "Claire Lemaréchal, Tim Loane"
+    ],
+    [
+     "Mit",
+     "Bérénice Bejo, Thibaut Évrard, Oscar Lesage, Irène Jacob"
+    ],
+    [
+     "Sender/Dienst",
+     "HBO Max"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/300398",
+   "bild": "https://image.tmdb.org/t/p/w500/jNWgYoIGpDMwfjI7k29N6lH4Dxf.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "tv-79744": {
    "titel": "The Rookie",
    "original": "The Rookie",
@@ -4435,41 +4554,40 @@
    "bild": "https://image.tmdb.org/t/p/w500/pbpoLLp4kvnYVfnEGiEhagpJuVZ.jpg",
    "news": []
   },
-  "tv-2734": {
-   "titel": "Law & Order: Special Victims Unit",
-   "original": "Law & Order: Special Victims Unit",
+  "tv-456": {
+   "titel": "Die Simpsons",
+   "original": "The Simpsons",
    "leitsatz": null,
-   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
+   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
    "genres": [
-    "Krimi",
-    "Drama",
-    "Mystery"
+    "Animation",
+    "Komödie"
    ],
    "fakten": [
     [
      "Umfang",
-     "28 Staffeln, 602 Folgen"
+     "38 Staffeln, 816 Folgen"
     ],
     [
      "Von",
-     "Dick Wolf"
+     "Matt Groening"
     ],
     [
      "Mit",
-     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
+     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
     ],
     [
      "Sender/Dienst",
-     "NBC"
+     "FOX"
     ],
     [
      "TMDB-Wertung",
      "8.0 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=O53wYUc_fA4",
-   "link": "https://www.themoviedb.org/tv/2734",
-   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
+   "link": "https://www.themoviedb.org/tv/456",
+   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
    "news": []
   },
   "tv-1416": {
@@ -4515,40 +4633,41 @@
     }
    ]
   },
-  "tv-456": {
-   "titel": "Die Simpsons",
-   "original": "The Simpsons",
+  "tv-2734": {
+   "titel": "Law & Order: Special Victims Unit",
+   "original": "Law & Order: Special Victims Unit",
    "leitsatz": null,
-   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
+   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
    "genres": [
-    "Animation",
-    "Komödie"
+    "Krimi",
+    "Drama",
+    "Mystery"
    ],
    "fakten": [
     [
      "Umfang",
-     "38 Staffeln, 816 Folgen"
+     "28 Staffeln, 602 Folgen"
     ],
     [
      "Von",
-     "Matt Groening"
+     "Dick Wolf"
     ],
     [
      "Mit",
-     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
+     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
     ],
     [
      "Sender/Dienst",
-     "FOX"
+     "NBC"
     ],
     [
      "TMDB-Wertung",
      "8.0 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
-   "link": "https://www.themoviedb.org/tv/456",
-   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "trailer": "https://www.youtube.com/watch?v=O53wYUc_fA4",
+   "link": "https://www.themoviedb.org/tv/2734",
+   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
    "news": []
   },
   "tv-84773": {
@@ -4606,6 +4725,65 @@
      "titel": "'The Lord of the Rings: The Rings of Power' Officially Debuts New Release Today",
      "link": "https://collider.com/the-lord-of-the-rings-the-rings-of-power-seasons-1-2-4k-blu-ray-release-november-2026/",
      "datum": "2026-11-03T20:46:23.000Z"
+    }
+   ]
+  },
+  "tv-153312": {
+   "titel": "Tulsa King",
+   "original": "Tulsa King",
+   "leitsatz": "Ursprünglicher Gangster. Neue Stadt.",
+   "handlung": "Kurz nachdem er nach 25 Jahren aus dem Gefängnis entlassen wurde, wird der New Yorker Mafia-Capo Dwight \"The General\" Manfredi von seinem Boss kurzerhand ins Exil geschickt, um sich in Tulsa, Oklahoma, niederzulassen. Dwight erkennt, dass seine Mafia-Familie möglicherweise nicht sein Bestes im Sinn hat, und baut langsam eine \"Crew\" aus einer Gruppe unwahrscheinlicher Charaktere auf, die ihm dabei hilft, ein neues kriminelles Imperium an einem Ort aufzubauen, der für ihn genauso gut ein anderer Planet sein könnte.",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "4 Staffeln, 39 Folgen"
+    ],
+    [
+     "Von",
+     "Taylor Sheridan"
+    ],
+    [
+     "Mit",
+     "Sylvester Stallone, Martin Starr, Jay Will, Vincent Piazza"
+    ],
+    [
+     "Sender/Dienst",
+     "Paramount+"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=aaQSScwZPbA",
+   "link": "https://www.themoviedb.org/tv/153312",
+   "bild": "https://image.tmdb.org/t/p/w500/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
+   "news": [
+    {
+     "quelle": "DWDL",
+     "art": "film",
+     "titel": "Neue Spin-Offs von \"Navy CIS\" und \"Tulsa King\" ab Dezember",
+     "link": "https://www.dwdl.de/nachrichten/108643/neue_spinoffs_von_navy_cis_und_tulsa_king_ab_dezember/",
+     "datum": "2026-11-20T09:56:00.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "Sylvester Stallone Officially Wants a Former Spider-Man To Join Taylor Sheridan’s ‘Tulsa King’",
+     "link": "https://collider.com/taylor-sheridan-tulsa-king-andrew-garfield-casting-hopes-sylvester-stallone/",
+     "datum": "2026-11-12T13:00:12.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Manny Montana Joins ‘Tulsa King’ For Season 5",
+     "link": "https://deadline.com/2026/11/manny-montana-cast-tulsa-king-season-5-1237214711/",
+     "datum": "2026-11-05T21:00:00.000Z"
     }
    ]
   },
@@ -4677,65 +4855,6 @@
      "titel": "‘The Gilded Age’ Season 4 Debuts To Series’ Best Premiere Audience Yet",
      "link": "https://deadline.com/2026/11/the-gilded-age-season-4-premiere-audience-record-hbo-1237214741/",
      "datum": "2026-11-05T20:17:08.000Z"
-    }
-   ]
-  },
-  "tv-153312": {
-   "titel": "Tulsa King",
-   "original": "Tulsa King",
-   "leitsatz": "Ursprünglicher Gangster. Neue Stadt.",
-   "handlung": "Kurz nachdem er nach 25 Jahren aus dem Gefängnis entlassen wurde, wird der New Yorker Mafia-Capo Dwight \"The General\" Manfredi von seinem Boss kurzerhand ins Exil geschickt, um sich in Tulsa, Oklahoma, niederzulassen. Dwight erkennt, dass seine Mafia-Familie möglicherweise nicht sein Bestes im Sinn hat, und baut langsam eine \"Crew\" aus einer Gruppe unwahrscheinlicher Charaktere auf, die ihm dabei hilft, ein neues kriminelles Imperium an einem Ort aufzubauen, der für ihn genauso gut ein anderer Planet sein könnte.",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "4 Staffeln, 39 Folgen"
-    ],
-    [
-     "Von",
-     "Taylor Sheridan"
-    ],
-    [
-     "Mit",
-     "Sylvester Stallone, Martin Starr, Jay Will, Vincent Piazza"
-    ],
-    [
-     "Sender/Dienst",
-     "Paramount+"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=z--TuK-FWYU",
-   "link": "https://www.themoviedb.org/tv/153312",
-   "bild": "https://image.tmdb.org/t/p/w500/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
-   "news": [
-    {
-     "quelle": "DWDL",
-     "art": "film",
-     "titel": "Neue Spin-Offs von \"Navy CIS\" und \"Tulsa King\" ab Dezember",
-     "link": "https://www.dwdl.de/nachrichten/108643/neue_spinoffs_von_navy_cis_und_tulsa_king_ab_dezember/",
-     "datum": "2026-11-20T09:56:00.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "Sylvester Stallone Officially Wants a Former Spider-Man To Join Taylor Sheridan’s ‘Tulsa King’",
-     "link": "https://collider.com/taylor-sheridan-tulsa-king-andrew-garfield-casting-hopes-sylvester-stallone/",
-     "datum": "2026-11-12T13:00:12.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Manny Montana Joins ‘Tulsa King’ For Season 5",
-     "link": "https://deadline.com/2026/11/manny-montana-cast-tulsa-king-season-5-1237214711/",
-     "datum": "2026-11-05T21:00:00.000Z"
     }
    ]
   },
@@ -4896,43 +5015,6 @@
     }
    ]
   },
-  "tv-65334": {
-   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
-   "original": "Miraculous, les aventures de Ladybug et Chat Noir",
-   "leitsatz": null,
-   "handlung": "Marinette und Adrien sind zwei Schüler – fast – wie andere auch. Bei der kleinsten Bedrohung von Paris werden sie zu Ladybug und Cat Noir. Ihre Mission: Die Akumas des mysteriösen Hawk Moth fangen, der die Pariser in Super-Bösewichte verwandelt. Obwohl die beiden Helden ein Team bilden, wissen sie wenig voneinander: Marinette weiß nicht, dass sich hinter Cat Noir Adrien verbirgt, der Junge, in den sie heimlich verliebt ist; und Adrien, dessen Herzen für Ladybug schlägt, ignoriert, dass sich hinter dem Kostüm der Superheldin das nette und zerstreute Mädchen aus seiner Klasse verbirgt",
-   "genres": [
-    "Action & Adventure",
-    "Animation",
-    "Kids"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "7 Staffeln, 181 Folgen"
-    ],
-    [
-     "Von",
-     "Thomas Astruc, Jeremy Zag"
-    ],
-    [
-     "Mit",
-     "Anouck Hautbois, Benjamin Bollen, Marie Nonnenmacher, Thierry Kazazian"
-    ],
-    [
-     "Sender/Dienst",
-     "TF1"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.1 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=xK9KUNoMQCc",
-   "link": "https://www.themoviedb.org/tv/65334",
-   "bild": "https://image.tmdb.org/t/p/w500/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
-   "news": []
-  },
   "tv-44006": {
    "titel": "Chicago Fire",
    "original": "Chicago Fire",
@@ -5018,246 +5100,41 @@
    "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
    "news": []
   },
-  "tv-290856": {
-   "titel": "Marshals - A Yellowstone Story",
-   "original": "Marshals",
+  "tv-65334": {
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "original": "Miraculous, les aventures de Ladybug et Chat Noir",
    "leitsatz": null,
-   "handlung": "Nach dem Ende der Yellowstone-Ranch schließt sich Kayce den U.S.-Marshals an. Seine Erfahrungen als Cowboy und Navy SEAL helfen dabei. Er und seine Kollegen sind die letzte Bastion gegen das Verbrechen in der Region.",
+   "handlung": "Marinette und Adrien sind zwei Schüler – fast – wie andere auch. Bei der kleinsten Bedrohung von Paris werden sie zu Ladybug und Cat Noir. Ihre Mission: Die Akumas des mysteriösen Hawk Moth fangen, der die Pariser in Super-Bösewichte verwandelt. Obwohl die beiden Helden ein Team bilden, wissen sie wenig voneinander: Marinette weiß nicht, dass sich hinter Cat Noir Adrien verbirgt, der Junge, in den sie heimlich verliebt ist; und Adrien, dessen Herzen für Ladybug schlägt, ignoriert, dass sich hinter dem Kostüm der Superheldin das nette und zerstreute Mädchen aus seiner Klasse verbirgt",
    "genres": [
-    "Drama",
-    "Krimi",
-    "Action & Adventure"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "2 Staffeln, 22 Folgen"
-    ],
-    [
-     "Von",
-     "Spencer Hudnut"
-    ],
-    [
-     "Mit",
-     "Luke Grimes, Logan Marshall-Green, Arielle Kebbel, Ash Santos"
-    ],
-    [
-     "Sender/Dienst",
-     "CBS"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=1Tb4tybNx40",
-   "link": "https://www.themoviedb.org/tv/290856",
-   "bild": "https://image.tmdb.org/t/p/w500/tUIXVv3kaub7yDxhBcYQUj5BCxZ.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "„Marshals“ Staffel 2: Das Slow-Burn-Liebesdrama zwischen Kayce und Andrea im „Yellowstone“-Ableger",
-     "link": "https://www.serienjunkies.de/news/serien/marshals-staffel-kayce-dutton-andrea-cruz-im-fokus-94577342.html",
-     "datum": "2026-11-06T11:10:54.000Z"
-    }
-   ]
-  },
-  "tv-30983": {
-   "titel": "Detektiv Conan",
-   "original": "名探偵コナン",
-   "leitsatz": null,
-   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
-   "genres": [
+    "Action & Adventure",
     "Animation",
-    "Krimi",
-    "Mystery",
-    "Komödie"
+    "Kids"
    ],
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 1221 Folgen"
-    ],
-    [
-     "Mit",
-     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
-    ],
-    [
-     "Sender/Dienst",
-     "YTV"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
-   "link": "https://www.themoviedb.org/tv/30983",
-   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
-   "news": []
-  },
-  "tv-85077": {
-   "titel": "The Chosen",
-   "original": "The Chosen",
-   "leitsatz": null,
-   "handlung": "Das Leben des Christus gesehen durch die Augen derer, die ihn kannten.",
-   "genres": [
-    "Action & Adventure",
-    "Familie",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "6 Staffeln, 46 Folgen"
+     "7 Staffeln, 181 Folgen"
     ],
     [
      "Von",
-     "Dallas Jenkins"
+     "Thomas Astruc, Jeremy Zag"
     ],
     [
      "Mit",
-     "Elizabeth Tabish"
+     "Anouck Hautbois, Benjamin Bollen, Marie Nonnenmacher, Thierry Kazazian"
     ],
     [
      "Sender/Dienst",
-     "Prime Video, VidAngel"
+     "TF1"
     ],
     [
      "TMDB-Wertung",
-     "8.9 / 10"
+     "8.1 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=D93sE9d-M38",
-   "link": "https://www.themoviedb.org/tv/85077",
-   "bild": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "Prime Video’s ‘The Chosen’ Christmas Special Officially Sets December Release Date",
-     "link": "https://collider.com/the-chosen-the-three-kings-release-date-fox-december-2026/",
-     "datum": "2026-11-12T12:00:12.000Z"
-    }
-   ]
-  },
-  "tv-103540": {
-   "titel": "Percy Jackson: Die Serie",
-   "original": "Percy Jackson and the Olympians",
-   "leitsatz": "Das Meer der Monster ruft.",
-   "handlung": "Percy Jackson befindet sich auf einer gefährlichen Suche. Er muss vor Monstern fliehen, Götter überlisten und quer durch Amerika reisen, um Zeus' Herrscherblitz zurückzubringen und einen Krieg zu verhindern. Mit der Hilfe seiner Freunde Annabeth und Grover kommt Percy auf seiner Reise den Antworten näher, um zu verstehen wie er in eine Welt passt, in der er sich fehl am Platz fühlt, und wozu er bestimmt ist.",
-   "genres": [
-    "Action & Adventure",
-    "Sci-Fi & Fantasy",
-    "Drama",
-    "Familie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "3 Staffeln, 24 Folgen"
-    ],
-    [
-     "Von",
-     "Rick Riordan, Jonathan E. Steinberg"
-    ],
-    [
-     "Mit",
-     "Walker Scobell, Leah Sava Jeffries, Aryan Simhadri, Charlie Bushnell"
-    ],
-    [
-     "Sender/Dienst",
-     "Hulu, Disney+"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=E59PR5vY5xY",
-   "link": "https://www.themoviedb.org/tv/103540",
-   "bild": "https://image.tmdb.org/t/p/w500/5Ldw6Gwprw6JPNKPSIUggWXg9l2.jpg",
-   "news": [
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Everything We Know About ‘Percy Jackson And The Olympians’ Season 3 So Far",
-     "link": "https://deadline.com/feature/percy-jackson-and-the-olympians-season-3-news-updates-1236495797/",
-     "datum": "2026-11-10T19:09:04.000Z"
-    }
-   ]
-  },
-  "tv-62650": {
-   "titel": "Chicago Med",
-   "original": "Chicago Med",
-   "leitsatz": null,
-   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "12 Staffeln, 229 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/62650",
-   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
-   "news": []
-  },
-  "tv-303745": {
-   "titel": "Undercover-Liebe",
-   "original": "나의 유죄인간",
-   "leitsatz": null,
-   "handlung": "Yoon Yi-jun, der Erbe der Taekang-Gruppe, ist der Hauptverdächtige in einem Mordfall. Um die Wahrheit aufzudecken, schleust sich Kang Jae-hee als männlicher Sekretär ein. Doch je näher sie der Wahrheit kommen, desto näher kommen sich auch Yi-jun und Jae-hee. Werden Jae-hee, die ihre wahre Identität verbirgt, und Yi-jun, der ein Geheimnis hütet, einander ihre wahren Gefühle offenbaren?",
-   "genres": [
-    "Komödie",
-    "Drama",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 12 Folgen"
-    ],
-    [
-     "Von",
-     "문수정"
-    ],
-    [
-     "Mit",
-     "임시완, Seol In-a, 김정현, 연우"
-    ],
-    [
-     "Sender/Dienst",
-     "tvN"
-    ],
-    [
-     "TMDB-Wertung",
-     "9.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=Q7Xj7sASXSU",
-   "link": "https://www.themoviedb.org/tv/303745",
-   "bild": "https://image.tmdb.org/t/p/w500/fFcn3MngCVaQ19kAraXgmIOshN0.jpg",
+   "trailer": "https://www.youtube.com/watch?v=xK9KUNoMQCc",
+   "link": "https://www.themoviedb.org/tv/65334",
+   "bild": "https://image.tmdb.org/t/p/w500/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
    "news": []
   },
   "tv-58841": {
@@ -5369,6 +5246,40 @@
     }
    ]
   },
+  "tv-30983": {
+   "titel": "Detektiv Conan",
+   "original": "名探偵コナン",
+   "leitsatz": null,
+   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
+   "genres": [
+    "Animation",
+    "Krimi",
+    "Mystery",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 1221 Folgen"
+    ],
+    [
+     "Mit",
+     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
+    ],
+    [
+     "Sender/Dienst",
+     "YTV"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
+   "link": "https://www.themoviedb.org/tv/30983",
+   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "news": []
+  },
   "tv-45790": {
    "titel": "JoJo's Bizarre Adventure",
    "original": "ジョジョの奇妙な冒険",
@@ -5400,6 +5311,214 @@
    "trailer": "https://www.youtube.com/watch?v=2esDNWsLAXQ",
    "link": "https://www.themoviedb.org/tv/45790",
    "bild": "https://image.tmdb.org/t/p/w500/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+   "news": []
+  },
+  "tv-85077": {
+   "titel": "The Chosen",
+   "original": "The Chosen",
+   "leitsatz": null,
+   "handlung": "Das Leben des Christus gesehen durch die Augen derer, die ihn kannten.",
+   "genres": [
+    "Action & Adventure",
+    "Familie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "6 Staffeln, 46 Folgen"
+    ],
+    [
+     "Von",
+     "Dallas Jenkins"
+    ],
+    [
+     "Mit",
+     "Elizabeth Tabish"
+    ],
+    [
+     "Sender/Dienst",
+     "Prime Video, VidAngel"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=D93sE9d-M38",
+   "link": "https://www.themoviedb.org/tv/85077",
+   "bild": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "news": [
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "Prime Video’s ‘The Chosen’ Christmas Special Officially Sets December Release Date",
+     "link": "https://collider.com/the-chosen-the-three-kings-release-date-fox-december-2026/",
+     "datum": "2026-11-12T12:00:12.000Z"
+    }
+   ]
+  },
+  "tv-290856": {
+   "titel": "Marshals - A Yellowstone Story",
+   "original": "Marshals",
+   "leitsatz": null,
+   "handlung": "Nach dem Ende der Yellowstone-Ranch schließt sich Kayce den U.S.-Marshals an. Seine Erfahrungen als Cowboy und Navy SEAL helfen dabei. Er und seine Kollegen sind die letzte Bastion gegen das Verbrechen in der Region.",
+   "genres": [
+    "Drama",
+    "Krimi",
+    "Action & Adventure"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "2 Staffeln, 22 Folgen"
+    ],
+    [
+     "Von",
+     "Spencer Hudnut"
+    ],
+    [
+     "Mit",
+     "Luke Grimes, Logan Marshall-Green, Arielle Kebbel, Ash Santos"
+    ],
+    [
+     "Sender/Dienst",
+     "CBS"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=FGKuQa6ulEQ",
+   "link": "https://www.themoviedb.org/tv/290856",
+   "bild": "https://image.tmdb.org/t/p/w500/tUIXVv3kaub7yDxhBcYQUj5BCxZ.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "„Marshals“ Staffel 2: Das Slow-Burn-Liebesdrama zwischen Kayce und Andrea im „Yellowstone“-Ableger",
+     "link": "https://www.serienjunkies.de/news/serien/marshals-staffel-kayce-dutton-andrea-cruz-im-fokus-94577342.html",
+     "datum": "2026-11-06T11:10:54.000Z"
+    }
+   ]
+  },
+  "tv-103540": {
+   "titel": "Percy Jackson: Die Serie",
+   "original": "Percy Jackson and the Olympians",
+   "leitsatz": "Das Meer der Monster ruft.",
+   "handlung": "Percy Jackson befindet sich auf einer gefährlichen Suche. Er muss vor Monstern fliehen, Götter überlisten und quer durch Amerika reisen, um Zeus' Herrscherblitz zurückzubringen und einen Krieg zu verhindern. Mit der Hilfe seiner Freunde Annabeth und Grover kommt Percy auf seiner Reise den Antworten näher, um zu verstehen wie er in eine Welt passt, in der er sich fehl am Platz fühlt, und wozu er bestimmt ist.",
+   "genres": [
+    "Action & Adventure",
+    "Sci-Fi & Fantasy",
+    "Drama",
+    "Familie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "3 Staffeln, 24 Folgen"
+    ],
+    [
+     "Von",
+     "Rick Riordan, Jonathan E. Steinberg"
+    ],
+    [
+     "Mit",
+     "Walker Scobell, Leah Sava Jeffries, Aryan Simhadri, Charlie Bushnell"
+    ],
+    [
+     "Sender/Dienst",
+     "Hulu, Disney+"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=ANI52GvNvQE",
+   "link": "https://www.themoviedb.org/tv/103540",
+   "bild": "https://image.tmdb.org/t/p/w500/5Ldw6Gwprw6JPNKPSIUggWXg9l2.jpg",
+   "news": [
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Everything We Know About ‘Percy Jackson And The Olympians’ Season 3 So Far",
+     "link": "https://deadline.com/feature/percy-jackson-and-the-olympians-season-3-news-updates-1236495797/",
+     "datum": "2026-11-10T19:09:04.000Z"
+    }
+   ]
+  },
+  "tv-303745": {
+   "titel": "Undercover-Liebe",
+   "original": "나의 유죄인간",
+   "leitsatz": null,
+   "handlung": "Yoon Yi-jun, der Erbe der Taekang-Gruppe, ist der Hauptverdächtige in einem Mordfall. Um die Wahrheit aufzudecken, schleust sich Kang Jae-hee als männlicher Sekretär ein. Doch je näher sie der Wahrheit kommen, desto näher kommen sich auch Yi-jun und Jae-hee. Werden Jae-hee, die ihre wahre Identität verbirgt, und Yi-jun, der ein Geheimnis hütet, einander ihre wahren Gefühle offenbaren?",
+   "genres": [
+    "Komödie",
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 12 Folgen"
+    ],
+    [
+     "Von",
+     "문수정"
+    ],
+    [
+     "Mit",
+     "임시완, Seol In-a, 김정현, 연우"
+    ],
+    [
+     "Sender/Dienst",
+     "tvN"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=Q7Xj7sASXSU",
+   "link": "https://www.themoviedb.org/tv/303745",
+   "bild": "https://image.tmdb.org/t/p/w500/fFcn3MngCVaQ19kAraXgmIOshN0.jpg",
+   "news": []
+  },
+  "tv-62650": {
+   "titel": "Chicago Med",
+   "original": "Chicago Med",
+   "leitsatz": null,
+   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "12 Staffeln, 229 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Matt Olmstead"
+    ],
+    [
+     "Mit",
+     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/62650",
+   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
    "news": []
   }
  }
