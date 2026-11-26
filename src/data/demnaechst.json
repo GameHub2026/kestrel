@@ -1,50 +1,7 @@
 {
- "von": "2026-11-23",
- "bis": "2027-03-25",
+ "von": "2026-11-24",
+ "bis": "2027-03-26",
  "eintraege": [
-  {
-   "id": "tv-290826-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "DIG",
-   "datum": "2026-11-23",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/jLGP8R7N0MeZqDkTlOOMMQ3HutW.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/tv/290826",
-   "info": "tv-290826"
-  },
-  {
-   "id": "tv-340615-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "The Trials of Karen Read",
-   "datum": "2026-11-23",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/449rpusr7ZtAqSsLcYHXqiIJfw7.jpg",
-   "anbieter": [
-    "Netflix"
-   ],
-   "link": "https://www.themoviedb.org/tv/340615",
-   "info": "tv-340615"
-  },
-  {
-   "id": "tv-303745-s1-2026-11-23",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Undercover-Liebe",
-   "datum": "2026-11-23",
-   "text": "S1E11",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/fFcn3MngCVaQ19kAraXgmIOshN0.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/303745",
-   "info": "tv-303745"
-  },
   {
    "id": "tv-171802-s1",
    "art": "serie",
@@ -137,7 +94,7 @@
    "id": "movie-1457866-kino",
    "art": "film",
    "typ": "kino",
-   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "titel": "The Further Mis-Adventures of Cliff Booth",
    "datum": "2026-11-25",
    "text": "Kinostart",
    "jahr": "2026",
@@ -145,6 +102,36 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1457866",
    "info": "movie-1457866"
+  },
+  {
+   "id": "tv-302837-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Die Entführung von Toos van der Valk",
+   "datum": "2026-11-26",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/lh1Lyphx331zesTGlKUueJjvMVB.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/302837",
+   "info": "tv-302837"
+  },
+  {
+   "id": "tv-338930-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Die Notaufnahme",
+   "datum": "2026-11-26",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/oQUJId55qF6YZ3bhPZ12WP1c5m4.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/338930",
+   "info": "tv-338930"
   },
   {
    "id": "movie-1286656-kino",
@@ -171,21 +158,6 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1400336",
    "info": "movie-1400336"
-  },
-  {
-   "id": "tv-302837-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Toos: De van der valk ontvoering",
-   "datum": "2026-11-26",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/btI2oK42WghsXktCMP1ULt7l7bG.jpg",
-   "anbieter": [
-    "Netflix"
-   ],
-   "link": "https://www.themoviedb.org/tv/302837",
-   "info": "tv-302837"
   },
   {
    "id": "movie-1538497-kino",
@@ -1048,6 +1020,21 @@
    "info": "movie-1260649"
   },
   {
+   "id": "tv-334919-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Call the Midwife: Sisters in Arms",
+   "datum": "2026-12-24",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/YCH3NPIVeJW9eK2JSnIwv5KEjY.jpg",
+   "anbieter": [
+    "BBC One"
+   ],
+   "link": "https://www.themoviedb.org/tv/334919",
+   "info": "tv-334919"
+  },
+  {
    "id": "movie-1496491-kino",
    "art": "film",
    "typ": "kino",
@@ -1055,7 +1042,7 @@
    "datum": "2026-12-24",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/3ykToOKrgIlKBOkxpRscXNAkzET.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/tmfj0vwLuFRPeyGXWAYCyZ2zxHQ.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1496491",
    "info": "movie-1496491"
@@ -1227,21 +1214,6 @@
    ],
    "link": "https://www.themoviedb.org/tv/79744",
    "info": "tv-79744"
-  },
-  {
-   "id": "tv-75219-s10-2027-01-07",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "9-1-1 Notruf L.A.",
-   "datum": "2027-01-07",
-   "text": "S10E7",
-   "jahr": "2018",
-   "bild": "https://image.tmdb.org/t/p/w342/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
-   "anbieter": [
-    "Disney+"
-   ],
-   "link": "https://www.themoviedb.org/tv/75219",
-   "info": "tv-75219"
   },
   {
    "id": "movie-1401459-kino",
@@ -1577,11 +1549,11 @@
    "id": "movie-458896-kino",
    "art": "film",
    "typ": "kino",
-   "titel": "The Nightingale",
+   "titel": "Die Nachtigall",
    "datum": "2027-03-18",
    "text": "Kinostart",
    "jahr": "2027",
-   "bild": "https://image.tmdb.org/t/p/w342/b6CN8AAjev9ud7z9DXCKk0ipAsm.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/mAdIrA5V1fjoyN04UCIxsBzdJlO.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/458896",
    "info": "movie-458896"
@@ -1745,7 +1717,7 @@
     ],
     [
      "TMDB-Wertung",
-     "8.7 / 10"
+     "8.6 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=rD0gIlrClP8",
@@ -1814,7 +1786,7 @@
     ],
     [
      "TMDB-Wertung",
-     "7.4 / 10"
+     "7.5 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=kA9NfV4pM_Q",
@@ -1905,74 +1877,6 @@
     }
    ]
   },
-  "movie-1286656": {
-   "titel": "I Play Rocky",
-   "original": "I Play Rocky",
-   "leitsatz": "Sein Traum. Sein Wille. Sein Weg.",
-   "handlung": "Die Entstehung des Boxerfilms „Rocky“ (1976) ist selbst Stoff für großes Kino: Der damals unbekannte Schauspieler Sylvester Stallone schreibt innerhalb von nur dreieinhalb Tagen ein Drehbuch und ist fest davon überzeugt, für die Hauptrolle bestimmt zu sein. Obwohl ihm immer wieder Steine in den Weg gelegt werden, setzt der später weltbekannte Actionstar alles auf eine Karte und beharrt trotz scheinbar unüberwindbarer Widerstände darauf, selbst als Rocky Balboa vor der Kamera zu stehen. Der Rest ist Filmgeschichte.",
-   "genres": [
-    "Drama",
-    "Historie"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 8 Min"
-    ],
-    [
-     "Regie",
-     "Peter Farrelly"
-    ],
-    [
-     "Mit",
-     "Anthony Ippolito, AnnaSophia Robb, P.J. Byrne, Toby Kebbell"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=RQlRrtDfsSo",
-   "link": "https://www.themoviedb.org/movie/1286656",
-   "bild": "https://image.tmdb.org/t/p/w500/fViZxjUGsR6IQD77FP22PIMfk0R.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "I Play Rocky: An iPhone Audition Found Its Stallone | Collider BTS",
-     "link": "https://collider.com/video/i-play-rocky-an-iphone-audition-found-its-stallone-collider-bts/",
-     "datum": "2026-11-21T20:21:25.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "Stephan James on Honoring Carl Weathers’ Legacy and Learning to Box for ‘I Play Rocky’",
-     "link": "https://variety.com/2026/film/features/i-play-rocky-stephan-james-carl-weathers-boxing-training-1236954058/",
-     "datum": "2026-11-21T18:30:00.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "How This Year’s Movies From ‘Artificial’ to ‘I Play Rocky’ Turn Political Anxiety Into Compelling Stories",
-     "link": "https://variety.com/2026/film/focus/political-anxietyartificial-ink-weight-rocky-1236953703/",
-     "datum": "2026-11-21T17:05:00.000Z"
-    },
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "How ‘I Play Rocky’ Star P.J. Byrne Became One of Hollywood’s Go-To Character Actors",
-     "link": "https://www.hollywoodreporter.com/movies/movie-features/i-play-rocky-star-p-j-byrne-1236760259/",
-     "datum": "2026-11-20T23:48:08.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "I Play Rocky: A 50-Year-Old Tape Inspired Rocky’s Stairs | Collider BTS",
-     "link": "https://collider.com/video/i-play-rocky-a-50-year-old-tape-inspired-rocky-s-stairs-collider-bts/",
-     "datum": "2026-11-20T21:15:12.000Z"
-    }
-   ]
-  },
   "movie-1400336": {
    "titel": "Meine Frau, unsere Schwiegertochter und ich",
    "original": "Focker In-Law",
@@ -2034,6 +1938,74 @@
      "titel": "Ariana Grande Celebrates ‘Focker In-Law,’ ‘How to Rob a Bank’ Hits NYC and This Week’s Best Events",
      "link": "https://www.hollywoodreporter.com/gallery/focker-in-law-how-to-rob-bank-red-carpet-events-1236750052/",
      "datum": "2026-11-13T20:58:40.000Z"
+    }
+   ]
+  },
+  "movie-1286656": {
+   "titel": "I Play Rocky",
+   "original": "I Play Rocky",
+   "leitsatz": "Sein Traum. Sein Wille. Sein Weg.",
+   "handlung": "Die Entstehung des Boxerfilms „Rocky“ (1976) ist selbst Stoff für großes Kino: Der damals unbekannte Schauspieler Sylvester Stallone schreibt innerhalb von nur dreieinhalb Tagen ein Drehbuch und ist fest davon überzeugt, für die Hauptrolle bestimmt zu sein. Obwohl ihm immer wieder Steine in den Weg gelegt werden, setzt der später weltbekannte Actionstar alles auf eine Karte und beharrt trotz scheinbar unüberwindbarer Widerstände darauf, selbst als Rocky Balboa vor der Kamera zu stehen. Der Rest ist Filmgeschichte.",
+   "genres": [
+    "Drama",
+    "Historie"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 8 Min"
+    ],
+    [
+     "Regie",
+     "Peter Farrelly"
+    ],
+    [
+     "Mit",
+     "Anthony Ippolito, AnnaSophia Robb, P.J. Byrne, Toby Kebbell"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.4 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=RQlRrtDfsSo",
+   "link": "https://www.themoviedb.org/movie/1286656",
+   "bild": "https://image.tmdb.org/t/p/w500/fViZxjUGsR6IQD77FP22PIMfk0R.jpg",
+   "news": [
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "I Play Rocky: An iPhone Audition Found Its Stallone | Collider BTS",
+     "link": "https://collider.com/video/i-play-rocky-an-iphone-audition-found-its-stallone-collider-bts/",
+     "datum": "2026-11-21T20:21:25.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "Stephan James on Honoring Carl Weathers’ Legacy and Learning to Box for ‘I Play Rocky’",
+     "link": "https://variety.com/2026/film/features/i-play-rocky-stephan-james-carl-weathers-boxing-training-1236954058/",
+     "datum": "2026-11-21T18:30:00.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "How This Year’s Movies From ‘Artificial’ to ‘I Play Rocky’ Turn Political Anxiety Into Compelling Stories",
+     "link": "https://variety.com/2026/film/focus/political-anxietyartificial-ink-weight-rocky-1236953703/",
+     "datum": "2026-11-21T17:05:00.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "How ‘I Play Rocky’ Star P.J. Byrne Became One of Hollywood’s Go-To Character Actors",
+     "link": "https://www.hollywoodreporter.com/movies/movie-features/i-play-rocky-star-p-j-byrne-1236760259/",
+     "datum": "2026-11-20T23:48:08.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "I Play Rocky: A 50-Year-Old Tape Inspired Rocky’s Stairs | Collider BTS",
+     "link": "https://collider.com/video/i-play-rocky-a-50-year-old-tape-inspired-rocky-s-stairs-collider-bts/",
+     "datum": "2026-11-20T21:15:12.000Z"
     }
    ]
   },
@@ -2249,7 +2221,7 @@
    "news": []
   },
   "movie-1457866": {
-   "titel": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
+   "titel": "The Further Mis-Adventures of Cliff Booth",
    "original": "THE FURTHER MIS-ADVENTURES OF CLIFF BOOTH",
    "leitsatz": null,
    "handlung": "Mord, Erpressung, Diebstahl, Nötigung: ein ganz normaler Sommer in Hollywood. Wir schreiben das Jahr 1977. Los Angeles braucht keinen Stuntman mehr, der Hippies jagt. Doch Hollywood wird immer Probleme haben. Probleme, die nur jemand mit Cliffs einzigartigen, bisweilen nicht ganz legalen Fähigkeiten lösen kann. Wenn Cliff Booth sein Geld nicht gerade als Barkeeper oder Filmvorführer verdient, arbeitet er als Mann fürs Grobe. Er kümmert sich um heikle Angelegenheiten für die Grossen Hollywoods und manchmal auch für zwielichtige Figuren.",
@@ -2261,7 +2233,7 @@
    "fakten": [
     [
      "Laufzeit",
-     "2 Std 0 Min"
+     "2 Std 23 Min"
     ],
     [
      "Regie",
@@ -2444,6 +2416,34 @@
    ],
    "sprache": "en"
   },
+  "movie-1421903": {
+   "titel": "Werwulf",
+   "original": "Werwulf",
+   "leitsatz": null,
+   "handlung": "Eine erschütternde Geschichte von Hingabe, Verdammnis und dem Teufel im Inneren.",
+   "genres": [
+    "Horror",
+    "Fantasy"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 0 Min"
+    ],
+    [
+     "Regie",
+     "Robert Eggers"
+    ],
+    [
+     "Mit",
+     "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=CL1EFACsWag",
+   "link": "https://www.themoviedb.org/movie/1421903",
+   "bild": "https://image.tmdb.org/t/p/w500/imnkSt4PSQpxIuyiRpJCiLk3SZz.jpg",
+   "news": []
+  },
   "movie-1440769": {
    "titel": "The Beekeeper 2",
    "original": "The Beekeeper 2",
@@ -2501,34 +2501,6 @@
    "trailer": "https://www.youtube.com/watch?v=w_4zj4YcJJY",
    "link": "https://www.themoviedb.org/movie/1165366",
    "bild": "https://image.tmdb.org/t/p/w500/pNaHwxMkymhGky2VXl3ARd3hc7o.jpg",
-   "news": []
-  },
-  "movie-1421903": {
-   "titel": "Werwulf",
-   "original": "Werwulf",
-   "leitsatz": null,
-   "handlung": "Eine erschütternde Geschichte von Hingabe, Verdammnis und dem Teufel im Inneren.",
-   "genres": [
-    "Horror",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 0 Min"
-    ],
-    [
-     "Regie",
-     "Robert Eggers"
-    ],
-    [
-     "Mit",
-     "Aaron Taylor-Johnson, Lily-Rose Depp, Willem Dafoe, Bodhi Rae Breathnach"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=CL1EFACsWag",
-   "link": "https://www.themoviedb.org/movie/1421903",
-   "bild": "https://image.tmdb.org/t/p/w500/imnkSt4PSQpxIuyiRpJCiLk3SZz.jpg",
    "news": []
   },
   "movie-1437981": {
@@ -2601,6 +2573,42 @@
    "link": "https://www.themoviedb.org/movie/1300926",
    "bild": "https://image.tmdb.org/t/p/w500/xyml31x5gu23tOMIFJ43XO4aTD6.jpg",
    "news": []
+  },
+  "movie-1452168": {
+   "titel": "Behemoth! Stücke eines Lebens",
+   "original": "Behemoth!",
+   "leitsatz": null,
+   "handlung": "Der begnadete Cellist Alex Serian kehrt nach 20 Jahren auf Tournee in seine Heimatstadt Los Angeles zurück. Die Musik, die stets der beständige, alles verzehrende Strom seines Lebens war, trägt Alex nun in ein Abenteuer, das ihn für immer verändern wird.",
+   "genres": [
+    "Musik",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 7 Min"
+    ],
+    [
+     "Regie",
+     "Tony Gilroy"
+    ],
+    [
+     "Mit",
+     "Pedro Pascal, Olivia Wilde, Eva Victor, Will Arnett"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=476sg1G_PC8",
+   "link": "https://www.themoviedb.org/movie/1452168",
+   "bild": "https://image.tmdb.org/t/p/w500/bcyGYWfcXr0GnXewaE5gkvYy1iQ.jpg",
+   "news": [
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘Behemoth!’s Humanity Gave Pedro Pascal \"Tremendous Amount Of Hope\" Amid AI Boom, Tony Gilroy Wants To \"Blow Up AI Centers At The Voting Box\"",
+     "link": "https://deadline.com/2026/11/behemoth-humanity-pedro-pascal-hope-amid-ai-boom-1237224503/",
+     "datum": "2026-11-15T17:51:03.000Z"
+    }
+   ]
   },
   "movie-1165369": {
    "titel": "De Gaulle - Zeit der Freiheit",
@@ -2751,82 +2759,6 @@
     }
    ]
   },
-  "movie-1452168": {
-   "titel": "Behemoth! Stücke eines Lebens",
-   "original": "Behemoth!",
-   "leitsatz": null,
-   "handlung": "Der begnadete Cellist Alex Serian kehrt nach 20 Jahren auf Tournee in seine Heimatstadt Los Angeles zurück. Die Musik, die stets der beständige, alles verzehrende Strom seines Lebens war, trägt Alex nun in ein Abenteuer, das ihn für immer verändern wird.",
-   "genres": [
-    "Musik",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 7 Min"
-    ],
-    [
-     "Regie",
-     "Tony Gilroy"
-    ],
-    [
-     "Mit",
-     "Pedro Pascal, Olivia Wilde, Eva Victor, Will Arnett"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=476sg1G_PC8",
-   "link": "https://www.themoviedb.org/movie/1452168",
-   "bild": "https://image.tmdb.org/t/p/w500/bcyGYWfcXr0GnXewaE5gkvYy1iQ.jpg",
-   "news": [
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "‘Behemoth!’s Humanity Gave Pedro Pascal \"Tremendous Amount Of Hope\" Amid AI Boom, Tony Gilroy Wants To \"Blow Up AI Centers At The Voting Box\"",
-     "link": "https://deadline.com/2026/11/behemoth-humanity-pedro-pascal-hope-amid-ai-boom-1237224503/",
-     "datum": "2026-11-15T17:51:03.000Z"
-    }
-   ]
-  },
-  "movie-1096228": {
-   "titel": "Musk",
-   "original": "Musk",
-   "leitsatz": null,
-   "handlung": "An incisive look behind the legend of Elon Musk, the world's most heralded \"inventor-entrepreneur\" who has enormous influence on the world in which we all live.",
-   "genres": [
-    "Dokumentarfilm"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "3 Std 58 Min"
-    ],
-    [
-     "Regie",
-     "Alex Gibney"
-    ],
-    [
-     "Mit",
-     "Elon Musk, Alex Gibney, Justine Musk, Ashley St. Clair"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.8 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=eY_8SyndC10",
-   "link": "https://www.themoviedb.org/movie/1096228",
-   "bild": "https://image.tmdb.org/t/p/w500/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
-   "news": [
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "Bleecker Street CEO on Why the Social Media Suppression of ‘Musk’ Is About Much More Than Film",
-     "link": "https://www.indiewire.com/news/breaking-news/bleecker-street-ceo-social-media-ad-suppression-musk-1235224208/",
-     "datum": "2026-10-29T20:15:00.000Z"
-    }
-   ],
-   "sprache": "en"
-  },
   "movie-1391239": {
    "titel": "Das Debüt - Ihr großer Auftritt",
    "original": "The Debut",
@@ -2878,38 +2810,6 @@
     }
    ]
   },
-  "movie-458896": {
-   "titel": "The Nightingale",
-   "original": "The Nightingale",
-   "leitsatz": null,
-   "handlung": "The lives of two French sisters are torn apart by the onset of World War II.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Michael Morris"
-    ],
-    [
-     "Mit",
-     "Elle Fanning, Dakota Fanning, Mark Rylance, Shira Haas"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=gNHr2-JjKRM",
-   "link": "https://www.themoviedb.org/movie/458896",
-   "bild": "https://image.tmdb.org/t/p/w500/b6CN8AAjev9ud7z9DXCKk0ipAsm.jpg",
-   "news": [
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Everything We Know About ‘The Nightingale’ Movie So Far: Release Date, Stars  More",
-     "link": "https://deadline.com/feature/the-nightingale-movie-news-updates-kristin-hannah-book-1236690359/",
-     "datum": "2026-11-19T21:40:48.000Z"
-    }
-   ],
-   "sprache": "en"
-  },
   "movie-940009": {
    "titel": "Ray Gunn",
    "original": "Ray Gunn",
@@ -2940,6 +2840,37 @@
    "bild": "https://image.tmdb.org/t/p/w500/rpP29aOKpHy1FhX8OZQdUICEs2j.jpg",
    "news": [],
    "sprache": "en"
+  },
+  "movie-458896": {
+   "titel": "Die Nachtigall",
+   "original": "The Nightingale",
+   "leitsatz": null,
+   "handlung": "Basierend auf dem weltweiten Bestseller von Kristin Hannah, erzählt DIE NACHTIGALL die bewegende Geschichte zweier Schwestern, die während des Zweiten Weltkriegs auf unterschiedliche, aber gleichermaßen mutige Wege geraten. Inmitten von Krieg und Widerstand kämpfen sie für ihr Überleben und ihre Freiheit. Die mehrfach ausgezeichneten Schauspielerinnen und Schwestern Elle Fanning und Dakota Fanning stehen dafür erstmals gemeinsam vor der Kamera.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Michael Morris"
+    ],
+    [
+     "Mit",
+     "Elle Fanning, Dakota Fanning, Mark Rylance, Shira Haas"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=t_zHjNW_Cjs",
+   "link": "https://www.themoviedb.org/movie/458896",
+   "bild": "https://image.tmdb.org/t/p/w500/mAdIrA5V1fjoyN04UCIxsBzdJlO.jpg",
+   "news": [
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Everything We Know About ‘The Nightingale’ Movie So Far: Release Date, Stars  More",
+     "link": "https://deadline.com/feature/the-nightingale-movie-news-updates-kristin-hannah-book-1236690359/",
+     "datum": "2026-11-19T21:40:48.000Z"
+    }
+   ]
   },
   "movie-1497464": {
    "titel": "Gatto",
@@ -2976,62 +2907,44 @@
    ],
    "sprache": "en"
   },
-  "movie-1517333": {
-   "titel": "K-POP: The Debut",
-   "original": "K-POP: The Debut",
+  "movie-1096228": {
+   "titel": "Musk",
+   "original": "Musk",
    "leitsatz": null,
-   "handlung": "Lizzy Lee, a young Korean-American woman, has spent her life following the path her family chose for her, but when she earns a spot in a globally televised competition to form the next K-pop girl group, she travels to Seoul, South Korea, to pursue the dream she must still keep hidden.",
+   "handlung": "An incisive look behind the legend of Elon Musk, the world's most heralded \"inventor-entrepreneur\" who has enormous influence on the world in which we all live.",
    "genres": [
-    "Musik",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Benson Lee"
-    ],
-    [
-     "Mit",
-     "Ji-young Yoo, Eric Nam, Tony Revolori, Yoo Ji-tae"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=j8mVWxWRvO0",
-   "link": "https://www.themoviedb.org/movie/1517333",
-   "bild": "https://image.tmdb.org/t/p/w500/9MED2GFhwsMJvYKEc9Wt7aB0S2a.jpg",
-   "news": [],
-   "sprache": "en"
-  },
-  "movie-1554956": {
-   "titel": "Der Festländer",
-   "original": "The Incomer",
-   "leitsatz": null,
-   "handlung": "On an Orkney isle, siblings Isla and Sandy survive by hunting seabirds, retelling the stories of their ancestors, and defending the isle from dreaded \"Incomers\". Their world is upended with the arrival of an awkward council worker who has come to uproot them from their homeland.",
-   "genres": [
-    "Komödie",
-    "Drama"
+    "Dokumentarfilm"
    ],
    "fakten": [
     [
      "Laufzeit",
-     "1 Std 42 Min"
+     "3 Std 58 Min"
     ],
     [
      "Regie",
-     "Louis Paxton"
+     "Alex Gibney"
     ],
     [
      "Mit",
-     "Domhnall Gleeson, Gayle Rankin, Grant O'Rourke, Emun Elliott"
+     "Elon Musk, Alex Gibney, Justine Musk, Ashley St. Clair"
     ],
     [
      "TMDB-Wertung",
-     "7.3 / 10"
+     "6.8 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=TNH4i8lrDFo",
-   "link": "https://www.themoviedb.org/movie/1554956",
-   "bild": "https://image.tmdb.org/t/p/w500/GtMzqttY4jn1x5rnHt7saLWKJC.jpg",
-   "news": [],
+   "trailer": "https://www.youtube.com/watch?v=eY_8SyndC10",
+   "link": "https://www.themoviedb.org/movie/1096228",
+   "bild": "https://image.tmdb.org/t/p/w500/kTOeFV92c3QHJ3bEkT660P7BcWN.jpg",
+   "news": [
+    {
+     "quelle": "IndieWire",
+     "art": "film",
+     "titel": "Bleecker Street CEO on Why the Social Media Suppression of ‘Musk’ Is About Much More Than Film",
+     "link": "https://www.indiewire.com/news/breaking-news/bleecker-street-ceo-social-media-ad-suppression-musk-1235224208/",
+     "datum": "2026-10-29T20:15:00.000Z"
+    }
+   ],
    "sprache": "en"
   },
   "movie-1147572": {
@@ -3068,6 +2981,39 @@
    ],
    "sprache": "en"
   },
+  "movie-1554956": {
+   "titel": "Der Festländer",
+   "original": "The Incomer",
+   "leitsatz": null,
+   "handlung": "On an Orkney isle, siblings Isla and Sandy survive by hunting seabirds, retelling the stories of their ancestors, and defending the isle from dreaded \"Incomers\". Their world is upended with the arrival of an awkward council worker who has come to uproot them from their homeland.",
+   "genres": [
+    "Komödie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "1 Std 42 Min"
+    ],
+    [
+     "Regie",
+     "Louis Paxton"
+    ],
+    [
+     "Mit",
+     "Domhnall Gleeson, Gayle Rankin, Grant O'Rourke, Emun Elliott"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=TNH4i8lrDFo",
+   "link": "https://www.themoviedb.org/movie/1554956",
+   "bild": "https://image.tmdb.org/t/p/w500/GtMzqttY4jn1x5rnHt7saLWKJC.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "movie-1496491": {
    "titel": "Comédie Française",
    "original": "De la Comédie-Française",
@@ -3096,8 +3042,33 @@
    ],
    "trailer": "https://www.youtube.com/watch?v=5XIcnV-1qZI",
    "link": "https://www.themoviedb.org/movie/1496491",
-   "bild": "https://image.tmdb.org/t/p/w500/3ykToOKrgIlKBOkxpRscXNAkzET.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/tmfj0vwLuFRPeyGXWAYCyZ2zxHQ.jpg",
    "news": []
+  },
+  "movie-1517333": {
+   "titel": "K-POP: The Debut",
+   "original": "K-POP: The Debut",
+   "leitsatz": null,
+   "handlung": "Lizzy Lee, a young Korean-American woman, has spent her life following the path her family chose for her, but when she earns a spot in a globally televised competition to form the next K-pop girl group, she travels to Seoul, South Korea, to pursue the dream she must still keep hidden.",
+   "genres": [
+    "Musik",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Benson Lee"
+    ],
+    [
+     "Mit",
+     "Ji-young Yoo, Eric Nam, Tony Revolori, Yoo Ji-tae"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=j8mVWxWRvO0",
+   "link": "https://www.themoviedb.org/movie/1517333",
+   "bild": "https://image.tmdb.org/t/p/w500/9MED2GFhwsMJvYKEc9Wt7aB0S2a.jpg",
+   "news": [],
+   "sprache": "en"
   },
   "movie-1301248": {
    "titel": "2 Aile Arasında",
@@ -3603,6 +3574,39 @@
    ],
    "sprache": "en"
   },
+  "movie-1157869": {
+   "titel": "Parallele Leben",
+   "original": "Histoires parallèles",
+   "leitsatz": null,
+   "handlung": "Auf der Suche nach Inspiration für ihren neuen Roman spioniert Sylvie ihre Nachbarn in dem Gebäude auf der anderen Straßenseite mit einem Teleskop aus. Als sie den jungen Adam anheuert, um ihr bei ihrer täglichen Routine zu helfen, hat sie keine Ahnung, dass er ihr Leben und ihre Arbeit auf den Kopf stellen wird, bis die Fiktion, die sie sich vorgestellt hatte, die Realität von allen übertrifft.",
+   "genres": [
+    "Drama",
+    "Thriller",
+    "Mystery"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 20 Min"
+    ],
+    [
+     "Regie",
+     "اصغر فرهادی"
+    ],
+    [
+     "Mit",
+     "Isabelle Huppert, Virginie Efira, Vincent Cassel, Pierre Niney"
+    ],
+    [
+     "TMDB-Wertung",
+     "5.7 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=y3BV9KeJzGM",
+   "link": "https://www.themoviedb.org/movie/1157869",
+   "bild": "https://image.tmdb.org/t/p/w500/opBYB8DIdQ1pk8GZIJRVOjrDxcj.jpg",
+   "news": []
+  },
   "movie-1365378": {
    "titel": "Große Träume",
    "original": "Le rêve américain",
@@ -3685,96 +3689,14 @@
    ],
    "sprache": "en"
   },
-  "movie-1603262": {
-   "titel": "Everest: The Other Side",
-   "original": "Everest: The Other Side",
-   "leitsatz": null,
-   "handlung": "An intimate portrait of two people bound by love, ambition, and the pursuit of the impossible. Elite ski mountaineers Jim Morrison and Hilaree Nelson fell deeply in love while reaching the pinnacle of their sport. Their drive sharpened into a shared dream: to climb and ski the direct North Face of Mount Everest—the most difficult and dangerous climb on the mountain and the most coveted ski line on Earth—something only a handful have ever achieved, and no one has successfully skied down.",
-   "genres": [
-    "Dokumentarfilm"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "1 Std 55 Min"
-    ],
-    [
-     "Regie",
-     "Jimmy Chin, Elizabeth Chai Vasarhelyi"
-    ],
-    [
-     "Mit",
-     "Hilaree Nelson, Jim Morrison, Jimmy Chin, Elizabeth Chai Vasarhelyi"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=q6XUlPdTuto",
-   "link": "https://www.themoviedb.org/movie/1603262",
-   "bild": "https://image.tmdb.org/t/p/w500/2m9ts8LfjG8d4xcUtx66aApngJL.jpg",
-   "news": [
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Steep Height? No Sweat: ‘Everest: The Other Side’s Jim Morrison And Jimmy Chin Rappel Down Side Of West Hollywood Building [Video]",
-     "link": "https://deadline.com/2026/10/everest-the-other-side-director-and-star-rappel-down-building-1237210694/",
-     "datum": "2026-11-01T00:26:17.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘Everest: The Other Side’ Review: A Grieving Ski Mountaineer Scales the Face of Death in Chai Vasarhelyi and Jimmy Chin’s Climbing Doc",
-     "link": "https://www.indiewire.com/criticism/movies/everest-the-other-side-review-everest-climbing-doc-1235214536/",
-     "datum": "2026-10-30T12:09:00.000Z"
-    }
-   ],
-   "sprache": "en"
-  },
-  "tv-290826": {
-   "titel": "DIG",
-   "original": "DIG",
-   "leitsatz": null,
-   "handlung": "Follow four women who work at an archeological dig in Greece. When the team uncovers a long-buried secret with the potential to rewrite history, they find themselves at the center of a high-stakes international conspiracy.",
-   "genres": [
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 10 Folgen"
-    ],
-    [
-     "Von",
-     "Michael Schur, Amy Poehler"
-    ],
-    [
-     "Mit",
-     "Amy Poehler, Geraldine Viswanathan, Antonia Thomas, Fina Strazza"
-    ],
-    [
-     "Sender/Dienst",
-     "Peacock"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=ir2zni8_tP4",
-   "link": "https://www.themoviedb.org/tv/290826",
-   "bild": "https://image.tmdb.org/t/p/w500/eyW6V0R0SzG3BqtYKhlZKGBaUCn.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Internationale Serienstarts im November 2026: „The Hunting Wives“, „Dig“, „The Witch Farm“",
-     "link": "https://www.serienjunkies.de/news/serien/internationale-serienstarts-im-november-2026-the-hunting-wives-dig-the-witch-farm-94601566.html",
-     "datum": "2026-11-21T14:00:00.000Z"
-    }
-   ],
-   "sprache": "en"
-  },
   "tv-171802": {
    "titel": "Blade Runner 2099",
    "original": "Blade Runner 2099",
    "leitsatz": null,
    "handlung": "Cora, eine flüchtige Frau, die zur Blade Runnerin wurde, tut sich mit Olwen zusammen - einer sterbenden Replikantin -, um im wiederauferstandenen Los Angeles einen Flüchtigen aufzuspüren. Gemeinsam decken sie eine Wahrheit auf, die ihre zerbrechliche Stadt zu zerstören droht.",
    "genres": [
-    "Sci-Fi & Fantasy"
+    "Sci-Fi & Fantasy",
+    "Drama"
    ],
    "fakten": [
     [
@@ -3792,12 +3714,23 @@
     [
      "Sender/Dienst",
      "Prime Video"
+    ],
+    [
+     "TMDB-Wertung",
+     "5.2 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=POu4zDIxIus",
    "link": "https://www.themoviedb.org/tv/171802",
    "bild": "https://image.tmdb.org/t/p/w500/d8IKBDXQvj3d6clsjqydT4xcw14.jpg",
    "news": [
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "'Blade Runner 2099' Stars Break Down the Prime Video Series' Biggest Finale Twists",
+     "link": "https://collider.com/blade-runner-2099-finale-matthew-needham-lewis-gribben-dimitri-abold/",
+     "datum": "2026-11-26T14:00:12.000Z"
+    },
     {
      "quelle": "Collider",
      "art": "film",
@@ -3825,13 +3758,6 @@
      "titel": "‘Blade Runner 2099’ Review: Michelle Yeoh and Hunter Schafer Are a Fine Pair in an Awesome World",
      "link": "https://www.indiewire.com/criticism/shows/blade-runner-2099-review-amazon-series-michelle-yeoh-1235229717/",
      "datum": "2026-11-23T14:00:00.000Z"
-    },
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "WatchList: „Blade Runner 2099“, „Scrubs“ und Brad Pitt als Cliff Booth",
-     "link": "https://www.serienjunkies.de/news/serien/watchlist-blade-runner-2099-scrubs-und-brad-pitt-als-cliff-booth-94602665.html",
-     "datum": "2026-11-22T17:15:00.000Z"
     }
    ]
   },
@@ -3865,6 +3791,27 @@
     {
      "quelle": "Collider",
      "art": "film",
+     "titel": "15 Harry Potter Movie Details That Only Make Sense if You Read the Books",
+     "link": "https://collider.com/harry-potter-movie-details-work-if-you-read-the-books/",
+     "datum": "2026-11-26T13:32:12.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "6 Fantasy Books That Tried to Be Harry Potter",
+     "link": "https://collider.com/fantasy-books-tried-to-be-harry-potter/",
+     "datum": "2026-11-26T12:56:12.000Z"
+    },
+    {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "Die Harry Potter-Serie kommt: Was über Start, Besetzung und Handlung bekannt ist",
+     "link": "https://www.moviepilot.de/news/die-harry-potter-serie-kommt-was-ueber-start-besetzung-und-handlung-bekannt-ist-1141403",
+     "datum": "2026-11-26T11:15:00.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
      "titel": "Harry Potter’s Dumbledore Officially Scores a Spin-Off Ahead of HBO Max’s Reboot Series",
      "link": "https://collider.com/harry-potter-jk-rowling-dumbledore-luna-lovegood-pocket-potters-books/",
      "datum": "2026-11-25T14:30:12.000Z"
@@ -3875,59 +3822,8 @@
      "titel": "Disney’s 3-Part ‘Harry Potter’ Replacement Officially Returns in 48 Hours",
      "link": "https://collider.com/percy-jackson-season-3-episodes-3-4-release-date-disney-plus-november-2026/",
      "datum": "2026-11-25T13:00:12.000Z"
-    },
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "Harry Potter und dystopischer Squid Game-Ersatz bei Netflix: Das sind die 15 besten Serien im Dezember",
-     "link": "https://www.moviepilot.de/news/harry-potter-und-dystopischer-squid-game-ersatz-bei-netflix-das-sind-die-15-besten-serien-im-dezember-1165544",
-     "datum": "2026-11-25T07:30:00.000Z"
-    },
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "Neues Fantasy-Abenteuer Wie verhext im Kino: Lohnt sich Disneys Harry Potter?",
-     "link": "https://www.moviepilot.de/news/fantasy-abenteuer-wie-verhext-kino-film-check-1165633",
-     "datum": "2026-11-24T17:00:00.000Z"
-    },
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "SHEGLAM Opens the Wizards’ Vault With Its Third Harry Potter Makeup Collection",
-     "link": "https://www.hollywoodreporter.com/lifestyle/shopping/sheglam-harry-potter-makeup-collection-2026-products-review-1236759625/",
-     "datum": "2026-11-22T20:40:18.000Z"
     }
    ]
-  },
-  "tv-340615": {
-   "titel": "The Trials of Karen Read",
-   "original": "The Trials of Karen Read",
-   "leitsatz": null,
-   "handlung": "An accident, a deadly fight or an elaborate cover-up? This true-crime series digs into the murder trials of Karen Read that sparked viral conspiracies.",
-   "genres": [
-    "Krimi",
-    "Dokumentarfilm",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 3 Folgen"
-    ],
-    [
-     "Mit",
-     "Karen Read"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=cya18nTNMzI",
-   "link": "https://www.themoviedb.org/tv/340615",
-   "bild": "https://image.tmdb.org/t/p/w500/449rpusr7ZtAqSsLcYHXqiIJfw7.jpg",
-   "news": [],
-   "sprache": "en"
   },
   "tv-288672": {
    "titel": "Pride and Prejudice",
@@ -4193,10 +4089,10 @@
    "sprache": "en"
   },
   "tv-302837": {
-   "titel": "Toos: De van der valk ontvoering",
+   "titel": "Die Entführung von Toos van der Valk",
    "original": "Toos: De van der valk ontvoering",
    "leitsatz": null,
-   "handlung": "1982. When the matriarch of a Dutch hotel empire is kidnapped for ransom, her family launches a desperate effort to free her.",
+   "handlung": "1982. Als die Matriarchin eines niederländischen Hotelimperiums entführt wird – mit dem Ziel, ein Lösegeld zu erpressen –, unternimmt ihre Familie einen verzweifelten Versuch, sie zu befreien.",
    "genres": [
     "Drama",
     "Krimi"
@@ -4204,7 +4100,11 @@
    "fakten": [
     [
      "Umfang",
-     "1 Staffel, 1 Folgen"
+     "1 Staffel, 6 Folgen"
+    ],
+    [
+     "Von",
+     "Inti Calfat"
     ],
     [
      "Mit",
@@ -4218,8 +4118,7 @@
    "trailer": null,
    "link": "https://www.themoviedb.org/tv/302837",
    "bild": "https://image.tmdb.org/t/p/w500/yTn41duVqEmiBimV3itSyOpUPnU.jpg",
-   "news": [],
-   "sprache": "en"
+   "news": []
   },
   "tv-300398": {
    "titel": "Alice",
@@ -4252,6 +4151,70 @@
    "bild": "https://image.tmdb.org/t/p/w500/jNWgYoIGpDMwfjI7k29N6lH4Dxf.jpg",
    "news": [],
    "sprache": "en"
+  },
+  "tv-334919": {
+   "titel": "Call the Midwife: Sisters in Arms",
+   "original": "Call the Midwife: Sisters in Arms",
+   "leitsatz": null,
+   "handlung": "In September 1939, Nonnatus House is the beating heart of the East End community of Poplar. The nurses and nuns dedicate their lives to mothers, babies and the poor. But there is no gas and air, no penicillin, no cure for TB, and no welfare state. Then war is declared — and life gets even harder. While bombs rain from the sky, women give birth underground, families are shattered and whole streets are reduced to ruins. But courage and resilience triumphs as the community unites to survive.",
+   "genres": [
+    "Drama",
+    "War & Politics"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 3 Folgen"
+    ],
+    [
+     "Von",
+     "Heidi Thomas"
+    ],
+    [
+     "Mit",
+     "Julie Hesmondhalgh, Amy Booth-Steel, Helen Schlesinger, Helena Wilson"
+    ],
+    [
+     "Sender/Dienst",
+     "BBC One"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/334919",
+   "bild": "https://image.tmdb.org/t/p/w500/YCH3NPIVeJW9eK2JSnIwv5KEjY.jpg",
+   "news": [],
+   "sprache": "en"
+  },
+  "tv-338930": {
+   "titel": "Die Notaufnahme",
+   "original": "Legevakta",
+   "leitsatz": null,
+   "handlung": "In der größten Notaufnahme Norwegens, mitten in Oslo, zählt nur eines: Wer Hilfe braucht, bekommt diese auch. Doch aufgrund des Personalmangels und enormen Zeitdrucks ist das Team aus Ärzten und Krankenschwestern teils am Ende seiner Grenzen. In diesem chaotischen Umfeld landet die Chirurgin Sofia (Sara Khorami), um ihre Karriere zu retten. Doch obwohl sie über großes Talent verfügt, mangelt es ihr an Geduld. Was sie dort erwartet, ist ein hektischer Alltag mit anspruchsvollen Patienten, Intrigen und Kollegen, die auch außerhalb ihrer Arbeit mit Herausforderungen zu kämpfen haben. Doch trotz der Unordnung und des Widerstands entdeckt Sofia etwas, womit sie nicht gerechnet hat: Wärme, Gemeinschaft und Liebe. Schnell merkt sie, dass sie sich einem Umfeld behaupten muss, in dem nicht nur medizinisches Können zählt, sondern auch Teamgeist und Vertrauen.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 7 Folgen"
+    ],
+    [
+     "Von",
+     "Harald Rosenløw-Eeg, Jan Trygve Røyneland"
+    ],
+    [
+     "Mit",
+     "Sara Khorami, Thorbjørn Harr, Jan Gunnar Røise, Silje Storstein"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=fqZR2dreobc",
+   "link": "https://www.themoviedb.org/tv/338930",
+   "bild": "https://image.tmdb.org/t/p/w500/oFoT6GRACWN9X6fFvtCys0ViDUl.jpg",
+   "news": []
   },
   "tv-79744": {
    "titel": "The Rookie",
@@ -4338,7 +4301,7 @@
    "fakten": [
     [
      "Umfang",
-     "24 Staffeln, 3250 Folgen"
+     "24 Staffeln, 3251 Folgen"
     ],
     [
      "Von",
@@ -4431,40 +4394,149 @@
    "bild": "https://image.tmdb.org/t/p/w500/pbpoLLp4kvnYVfnEGiEhagpJuVZ.jpg",
    "news": []
   },
-  "tv-456": {
-   "titel": "Die Simpsons",
-   "original": "The Simpsons",
-   "leitsatz": null,
-   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
+  "tv-84773": {
+   "titel": "Der Herr der Ringe: Die Ringe der Macht",
+   "original": "The Lord of the Rings: The Rings of Power",
+   "leitsatz": "Das Böse hat viele Namen gehabt.",
+   "handlung": "Bekannte und neue Charaktere müssen sich dem Wiedererstarken des Bösen in Mittelerde stellen. Von den dunkelsten Tiefen des Nebelgebirges bis zu den majestätischen Wäldern von Lindon, vom Inselkönigreich Númenor bis zu den entlegensten Winkeln der Landkarte werden diese Reiche und Charaktere ein Vermächtnis schaffen, das die Zukunft von Mittelerde prägen wird.",
    "genres": [
-    "Animation",
-    "Komödie"
+    "Action & Adventure",
+    "Sci-Fi & Fantasy"
    ],
    "fakten": [
     [
      "Umfang",
-     "38 Staffeln, 816 Folgen"
+     "3 Staffeln, 24 Folgen"
     ],
     [
      "Von",
-     "Matt Groening"
+     "Patrick McKay, John D. Payne"
     ],
     [
      "Mit",
-     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
+     "Charlie Vickers, Morfydd Clark, Robert Aramayo, Owain Arthur"
     ],
     [
      "Sender/Dienst",
-     "FOX"
+     "Prime Video"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=-aCsZkSYPGQ",
+   "link": "https://www.themoviedb.org/tv/84773",
+   "bild": "https://image.tmdb.org/t/p/w500/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Amazon entscheidet über Zukunft von „Der Herr der Ringe: Die Ringe der Macht“",
+     "link": "https://www.serienjunkies.de/news/serien/der-herr-der-ringe-die-ringe-der-macht-wird-um-vierte-staffel-verlaengert-94606844.html",
+     "datum": "2026-11-25T07:58:10.000Z"
+    },
+    {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "Amazons Sci-Fi-Serie Blade Runner 2099 hat das gleiche Problem wie Der Herr der Ringe: Die Ringe der Macht",
+     "link": "https://www.moviepilot.de/news/amazons-sci-fi-serie-balde-runner-2099-kritik-1165553",
+     "datum": "2026-11-23T14:00:00.000Z"
+    },
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Deutsche Serienstarts im November 2026 - Teil 2: „The Lord of the Rings: The Rings of Power“, „Yellowjackets“, „Die Kaiserin“",
+     "link": "https://www.serienjunkies.de/news/serien/deutsche-serienstarts-im-november-2026-teil-the-lord-of-the-rings-the-rings-of-power-yellowjackets-die-kaiserin-94583343.html",
+     "datum": "2026-11-10T14:00:00.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "'The Lord of the Rings: The Rings of Power' Officially Debuts New Release Today",
+     "link": "https://collider.com/the-lord-of-the-rings-the-rings-of-power-seasons-1-2-4k-blu-ray-release-november-2026/",
+     "datum": "2026-11-03T20:46:23.000Z"
+    }
+   ]
+  },
+  "tv-1416": {
+   "titel": "Grey's Anatomy",
+   "original": "Grey's Anatomy",
+   "leitsatz": "Das Leben, das Sie retten, kann Ihr eigenes sein.",
+   "handlung": "Die Serie erzählt die Geschichte von fünf jungen Assistenzärzten des fiktiven Krankenhauses Seattle Grace Hospital in Seattle. Im Mittelpunkt steht die junge Ärztin Meredith Grey, die zusammen mit ihren Kollegen Cristina Yang, Isobel „Izzie“ Stevens, George O’Malley und Alex Karev ihre Ausbildung in der Chirurgie absolviert. Im Kern der Handlung stehen die verschiedenen Beziehungen der Assistenzärzte untereinander und mit ihren Stationsoberärzten.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "23 Staffeln, 467 Folgen"
+    ],
+    [
+     "Von",
+     "Shonda Rhimes"
+    ],
+    [
+     "Mit",
+     "Ellen Pompeo, Chandra Wilson, James Pickens Jr., Caterina Scorsone"
+    ],
+    [
+     "Sender/Dienst",
+     "ABC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.2 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=hc0ZFCHbR40",
+   "link": "https://www.themoviedb.org/tv/1416",
+   "bild": "https://image.tmdb.org/t/p/w500/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Nach „Station 19“: ABC bestellt neues Texas-Spin-off von „Grey's Anatomy“ mit Karla Souza",
+     "link": "https://www.serienjunkies.de/news/serien/grey-anatomy-karla-souza-fuehrt-neues-spin-off-bei-abc-an-94586505.html",
+     "datum": "2026-11-12T09:51:24.000Z"
+    }
+   ]
+  },
+  "tv-2734": {
+   "titel": "Law & Order: Special Victims Unit",
+   "original": "Law & Order: Special Victims Unit",
+   "leitsatz": null,
+   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Mystery"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "28 Staffeln, 602 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf"
+    ],
+    [
+     "Mit",
+     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
     ],
     [
      "TMDB-Wertung",
      "8.0 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
-   "link": "https://www.themoviedb.org/tv/456",
-   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
+   "trailer": "https://www.youtube.com/watch?v=O53wYUc_fA4",
+   "link": "https://www.themoviedb.org/tv/2734",
+   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
    "news": []
   },
   "tv-81723": {
@@ -4538,166 +4610,41 @@
     }
    ]
   },
-  "tv-84773": {
-   "titel": "Der Herr der Ringe: Die Ringe der Macht",
-   "original": "The Lord of the Rings: The Rings of Power",
-   "leitsatz": "Das Böse hat viele Namen gehabt.",
-   "handlung": "Bekannte und neue Charaktere müssen sich dem Wiedererstarken des Bösen in Mittelerde stellen. Von den dunkelsten Tiefen des Nebelgebirges bis zu den majestätischen Wäldern von Lindon, vom Inselkönigreich Númenor bis zu den entlegensten Winkeln der Landkarte werden diese Reiche und Charaktere ein Vermächtnis schaffen, das die Zukunft von Mittelerde prägen wird.",
-   "genres": [
-    "Action & Adventure",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "3 Staffeln, 24 Folgen"
-    ],
-    [
-     "Von",
-     "Patrick McKay, John D. Payne"
-    ],
-    [
-     "Mit",
-     "Charlie Vickers, Morfydd Clark, Robert Aramayo, Owain Arthur"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=-aCsZkSYPGQ",
-   "link": "https://www.themoviedb.org/tv/84773",
-   "bild": "https://image.tmdb.org/t/p/w500/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Amazon entscheidet über Zukunft von „Der Herr der Ringe: Die Ringe der Macht“",
-     "link": "https://www.serienjunkies.de/news/serien/der-herr-der-ringe-die-ringe-der-macht-wird-um-vierte-staffel-verlaengert-94606844.html",
-     "datum": "2026-11-25T07:58:10.000Z"
-    },
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "Amazons Sci-Fi-Serie Blade Runner 2099 hat das gleiche Problem wie Der Herr der Ringe: Die Ringe der Macht",
-     "link": "https://www.moviepilot.de/news/amazons-sci-fi-serie-balde-runner-2099-kritik-1165553",
-     "datum": "2026-11-23T14:00:00.000Z"
-    },
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Deutsche Serienstarts im November 2026 - Teil 2: „The Lord of the Rings: The Rings of Power“, „Yellowjackets“, „Die Kaiserin“",
-     "link": "https://www.serienjunkies.de/news/serien/deutsche-serienstarts-im-november-2026-teil-the-lord-of-the-rings-the-rings-of-power-yellowjackets-die-kaiserin-94583343.html",
-     "datum": "2026-11-10T14:00:00.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "'The Lord of the Rings: The Rings of Power' Officially Debuts New Release Today",
-     "link": "https://collider.com/the-lord-of-the-rings-the-rings-of-power-seasons-1-2-4k-blu-ray-release-november-2026/",
-     "datum": "2026-11-03T20:46:23.000Z"
-    }
-   ]
-  },
-  "tv-2734": {
-   "titel": "Law & Order: Special Victims Unit",
-   "original": "Law & Order: Special Victims Unit",
+  "tv-456": {
+   "titel": "Die Simpsons",
+   "original": "The Simpsons",
    "leitsatz": null,
-   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
+   "handlung": "Die Simpsons sind eine amerikanische Durchschnittsfamilie. Immer neue Geschichten gibt es über Homer, Marge, Bart, Lisa und Maggie und über die weiteren Bewohner von Springfield zu erzählen.",
    "genres": [
-    "Krimi",
-    "Drama",
-    "Mystery"
+    "Animation",
+    "Komödie"
    ],
    "fakten": [
     [
      "Umfang",
-     "28 Staffeln, 602 Folgen"
+     "38 Staffeln, 816 Folgen"
     ],
     [
      "Von",
-     "Dick Wolf"
+     "Matt Groening"
     ],
     [
      "Mit",
-     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
+     "Dan Castellaneta, Julie Kavner, Nancy Cartwright, Yeardley Smith"
     ],
     [
      "Sender/Dienst",
-     "NBC"
+     "FOX"
     ],
     [
      "TMDB-Wertung",
      "8.0 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=O53wYUc_fA4",
-   "link": "https://www.themoviedb.org/tv/2734",
-   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "trailer": "https://www.youtube.com/watch?v=_jgYEYERYFQ",
+   "link": "https://www.themoviedb.org/tv/456",
+   "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
    "news": []
-  },
-  "tv-153312": {
-   "titel": "Tulsa King",
-   "original": "Tulsa King",
-   "leitsatz": "Ursprünglicher Gangster. Neue Stadt.",
-   "handlung": "Kurz nachdem er nach 25 Jahren aus dem Gefängnis entlassen wurde, wird der New Yorker Mafia-Capo Dwight \"The General\" Manfredi von seinem Boss kurzerhand ins Exil geschickt, um sich in Tulsa, Oklahoma, niederzulassen. Dwight erkennt, dass seine Mafia-Familie möglicherweise nicht sein Bestes im Sinn hat, und baut langsam eine \"Crew\" aus einer Gruppe unwahrscheinlicher Charaktere auf, die ihm dabei hilft, ein neues kriminelles Imperium an einem Ort aufzubauen, der für ihn genauso gut ein anderer Planet sein könnte.",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "4 Staffeln, 39 Folgen"
-    ],
-    [
-     "Von",
-     "Taylor Sheridan"
-    ],
-    [
-     "Mit",
-     "Sylvester Stallone, Martin Starr, Jay Will, Vincent Piazza"
-    ],
-    [
-     "Sender/Dienst",
-     "Paramount+"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=aaQSScwZPbA",
-   "link": "https://www.themoviedb.org/tv/153312",
-   "bild": "https://image.tmdb.org/t/p/w500/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
-   "news": [
-    {
-     "quelle": "DWDL",
-     "art": "film",
-     "titel": "Neue Spin-Offs von \"Navy CIS\" und \"Tulsa King\" ab Dezember",
-     "link": "https://www.dwdl.de/nachrichten/108643/neue_spinoffs_von_navy_cis_und_tulsa_king_ab_dezember/",
-     "datum": "2026-11-20T09:56:00.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "Sylvester Stallone Officially Wants a Former Spider-Man To Join Taylor Sheridan’s ‘Tulsa King’",
-     "link": "https://collider.com/taylor-sheridan-tulsa-king-andrew-garfield-casting-hopes-sylvester-stallone/",
-     "datum": "2026-11-12T13:00:12.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Manny Montana Joins ‘Tulsa King’ For Season 5",
-     "link": "https://deadline.com/2026/11/manny-montana-cast-tulsa-king-season-5-1237214711/",
-     "datum": "2026-11-05T21:00:00.000Z"
-    }
-   ]
   },
   "tv-549": {
    "titel": "Law & Order",
@@ -4747,49 +4694,6 @@
      "titel": "NBC Officially Announces New 'Law & Order' Replacement",
      "link": "https://collider.com/nbc-law-and-order-replacement-great-gatsby-reboot-detective-series/",
      "datum": "2026-10-30T18:18:47.000Z"
-    }
-   ]
-  },
-  "tv-1416": {
-   "titel": "Grey's Anatomy",
-   "original": "Grey's Anatomy",
-   "leitsatz": "Das Leben, das Sie retten, kann Ihr eigenes sein.",
-   "handlung": "Die Serie erzählt die Geschichte von fünf jungen Assistenzärzten des fiktiven Krankenhauses Seattle Grace Hospital in Seattle. Im Mittelpunkt steht die junge Ärztin Meredith Grey, die zusammen mit ihren Kollegen Cristina Yang, Isobel „Izzie“ Stevens, George O’Malley und Alex Karev ihre Ausbildung in der Chirurgie absolviert. Im Kern der Handlung stehen die verschiedenen Beziehungen der Assistenzärzte untereinander und mit ihren Stationsoberärzten.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "23 Staffeln, 467 Folgen"
-    ],
-    [
-     "Von",
-     "Shonda Rhimes"
-    ],
-    [
-     "Mit",
-     "Ellen Pompeo, Chandra Wilson, James Pickens Jr., Caterina Scorsone"
-    ],
-    [
-     "Sender/Dienst",
-     "ABC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=hc0ZFCHbR40",
-   "link": "https://www.themoviedb.org/tv/1416",
-   "bild": "https://image.tmdb.org/t/p/w500/4Cl0JlrdtFFKwrzKoa9zf13U6zM.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Nach „Station 19“: ABC bestellt neues Texas-Spin-off von „Grey's Anatomy“ mit Karla Souza",
-     "link": "https://www.serienjunkies.de/news/serien/grey-anatomy-karla-souza-fuehrt-neues-spin-off-bei-abc-an-94586505.html",
-     "datum": "2026-11-12T09:51:24.000Z"
     }
    ]
   },
@@ -4866,6 +4770,65 @@
     }
    ]
   },
+  "tv-153312": {
+   "titel": "Tulsa King",
+   "original": "Tulsa King",
+   "leitsatz": "Ursprünglicher Gangster. Neue Stadt.",
+   "handlung": "Kurz nachdem er nach 25 Jahren aus dem Gefängnis entlassen wurde, wird der New Yorker Mafia-Capo Dwight \"The General\" Manfredi von seinem Boss kurzerhand ins Exil geschickt, um sich in Tulsa, Oklahoma, niederzulassen. Dwight erkennt, dass seine Mafia-Familie möglicherweise nicht sein Bestes im Sinn hat, und baut langsam eine \"Crew\" aus einer Gruppe unwahrscheinlicher Charaktere auf, die ihm dabei hilft, ein neues kriminelles Imperium an einem Ort aufzubauen, der für ihn genauso gut ein anderer Planet sein könnte.",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "4 Staffeln, 39 Folgen"
+    ],
+    [
+     "Von",
+     "Taylor Sheridan"
+    ],
+    [
+     "Mit",
+     "Sylvester Stallone, Martin Starr, Jay Will, Vincent Piazza"
+    ],
+    [
+     "Sender/Dienst",
+     "Paramount+"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=aaQSScwZPbA",
+   "link": "https://www.themoviedb.org/tv/153312",
+   "bild": "https://image.tmdb.org/t/p/w500/y13WOeZ2rz2Ezpws0RJ0I8sQpG4.jpg",
+   "news": [
+    {
+     "quelle": "DWDL",
+     "art": "film",
+     "titel": "Neue Spin-Offs von \"Navy CIS\" und \"Tulsa King\" ab Dezember",
+     "link": "https://www.dwdl.de/nachrichten/108643/neue_spinoffs_von_navy_cis_und_tulsa_king_ab_dezember/",
+     "datum": "2026-11-20T09:56:00.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "Sylvester Stallone Officially Wants a Former Spider-Man To Join Taylor Sheridan’s ‘Tulsa King’",
+     "link": "https://collider.com/taylor-sheridan-tulsa-king-andrew-garfield-casting-hopes-sylvester-stallone/",
+     "datum": "2026-11-12T13:00:12.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Manny Montana Joins ‘Tulsa King’ For Season 5",
+     "link": "https://deadline.com/2026/11/manny-montana-cast-tulsa-king-season-5-1237214711/",
+     "datum": "2026-11-05T21:00:00.000Z"
+    }
+   ]
+  },
   "tv-279246": {
    "titel": "Die neuvermählte Kaiserin",
    "original": "재혼 황후",
@@ -4918,7 +4881,7 @@
    "fakten": [
     [
      "Umfang",
-     "57 Staffeln, 1348 Folgen"
+     "57 Staffeln, 1352 Folgen"
     ],
     [
      "Sender/Dienst",
@@ -4991,76 +4954,77 @@
     }
    ]
   },
-  "tv-65334": {
-   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
-   "original": "Miraculous, les aventures de Ladybug et Chat Noir",
+  "tv-2190": {
+   "titel": "South Park",
+   "original": "South Park",
    "leitsatz": null,
-   "handlung": "Marinette und Adrien sind zwei Schüler – fast – wie andere auch. Bei der kleinsten Bedrohung von Paris werden sie zu Ladybug und Cat Noir. Ihre Mission: Die Akumas des mysteriösen Hawk Moth fangen, der die Pariser in Super-Bösewichte verwandelt. Obwohl die beiden Helden ein Team bilden, wissen sie wenig voneinander: Marinette weiß nicht, dass sich hinter Cat Noir Adrien verbirgt, der Junge, in den sie heimlich verliebt ist; und Adrien, dessen Herzen für Ladybug schlägt, ignoriert, dass sich hinter dem Kostüm der Superheldin das nette und zerstreute Mädchen aus seiner Klasse verbirgt",
+   "handlung": "Die Serie konzentriert sich hauptsächlich auf die Abenteuer der vier Kinder Stan Marsh, Kyle Broflovski, Eric Cartman und Kenny McCormick in der fiktionalen Kleinstadt South Park in den Rocky Mountains in den USA der Gegenwart. Neben den vier Hauptcharakteren wird die Stadt von einer Reihe von zusätzlichen Charakteren bevölkert.",
    "genres": [
-    "Action & Adventure",
-    "Animation",
-    "Kids"
+    "Komödie",
+    "Animation"
    ],
    "fakten": [
     [
      "Umfang",
-     "7 Staffeln, 181 Folgen"
+     "29 Staffeln, 337 Folgen"
     ],
     [
      "Von",
-     "Thomas Astruc, Jeremy Zag"
+     "Trey Parker, Matt Stone"
     ],
     [
      "Mit",
-     "Anouck Hautbois, Benjamin Bollen, Marie Nonnenmacher, Thierry Kazazian"
+     "Trey Parker, Matt Stone, Mona Marshall, Jennifer Howell"
     ],
     [
      "Sender/Dienst",
-     "TF1"
+     "Comedy Central"
     ],
     [
      "TMDB-Wertung",
-     "8.1 / 10"
+     "8.3 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=xK9KUNoMQCc",
-   "link": "https://www.themoviedb.org/tv/65334",
-   "bild": "https://image.tmdb.org/t/p/w500/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
-   "news": []
-  },
-  "tv-30983": {
-   "titel": "Detektiv Conan",
-   "original": "名探偵コナン",
-   "leitsatz": null,
-   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
-   "genres": [
-    "Animation",
-    "Krimi",
-    "Mystery",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 1221 Folgen"
-    ],
-    [
-     "Mit",
-     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
-    ],
-    [
-     "Sender/Dienst",
-     "YTV"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
-   "link": "https://www.themoviedb.org/tv/30983",
-   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
-   "news": []
+   "trailer": "https://www.youtube.com/watch?v=oUIK01ek-Ko",
+   "link": "https://www.themoviedb.org/tv/2190",
+   "bild": "https://image.tmdb.org/t/p/w500/k7n2EVge7G77eMr3brztRGG1fFU.jpg",
+   "news": [
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘South Park’ Season Finale Drops Kenny Into ‘Grand Theft Auto VI’ as South America Comes Clean",
+     "link": "https://www.hollywoodreporter.com/tv/tv-news/south-park-season-29-finale-kenny-grand-theft-auto-vi-1236763867/",
+     "datum": "2026-11-26T05:15:37.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘South Park’ Celebrates ‘GTA VI’ But Outages, AI Data Centers  Zombie Kenny Stand In The Way In Season 29 Finale",
+     "link": "https://deadline.com/2026/11/south-park-gta-vi-outages-zombie-kenny-season-29-finale-1237233874/",
+     "datum": "2026-11-26T03:52:37.000Z"
+    },
+    {
+     "quelle": "The Hollywood Reporter",
+     "art": "film",
+     "titel": "‘South Park’ Serves Up a Steaming Pile of Beef Satire — and a ‘GTA VI’ Sneak Peek",
+     "link": "https://www.hollywoodreporter.com/tv/tv-features/south-park-recap-beef-gta-vi-sneak-peek-1236742371/",
+     "datum": "2026-10-29T06:40:29.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "‘South Park’ Parodies ‘GTA VI’ Hype With Dog Poop Gameplay",
+     "link": "https://deadline.com/2026/10/south-park-parodies-gta-vi-dog-poop-gameplay-1237207932/",
+     "datum": "2026-10-29T04:16:47.000Z"
+    },
+    {
+     "quelle": "Variety",
+     "art": "film",
+     "titel": "‘South Park’: Cartman, Stan and Kyle Must Solve South America’s Beef Crisis in Halloween Week Episode",
+     "link": "https://variety.com/2026/tv/news/south-park-season-29-episode-4-1236933789/",
+     "datum": "2026-10-29T03:05:04.000Z"
+    }
+   ]
   },
   "tv-58841": {
    "titel": "Chicago P.D.",
@@ -5113,95 +5077,38 @@
     }
    ]
   },
-  "tv-2190": {
-   "titel": "South Park",
-   "original": "South Park",
+  "tv-30983": {
+   "titel": "Detektiv Conan",
+   "original": "名探偵コナン",
    "leitsatz": null,
-   "handlung": "Die Serie konzentriert sich hauptsächlich auf die Abenteuer der vier Kinder Stan Marsh, Kyle Broflovski, Eric Cartman und Kenny McCormick in der fiktionalen Kleinstadt South Park in den Rocky Mountains in den USA der Gegenwart. Neben den vier Hauptcharakteren wird die Stadt von einer Reihe von zusätzlichen Charakteren bevölkert.",
-   "genres": [
-    "Komödie",
-    "Animation"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "29 Staffeln, 337 Folgen"
-    ],
-    [
-     "Von",
-     "Trey Parker, Matt Stone"
-    ],
-    [
-     "Mit",
-     "Trey Parker, Matt Stone, Mona Marshall, Jennifer Howell"
-    ],
-    [
-     "Sender/Dienst",
-     "Comedy Central"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=oUIK01ek-Ko",
-   "link": "https://www.themoviedb.org/tv/2190",
-   "bild": "https://image.tmdb.org/t/p/w500/k7n2EVge7G77eMr3brztRGG1fFU.jpg",
-   "news": [
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘South Park’ Serves Up a Steaming Pile of Beef Satire — and a ‘GTA VI’ Sneak Peek",
-     "link": "https://www.hollywoodreporter.com/tv/tv-features/south-park-recap-beef-gta-vi-sneak-peek-1236742371/",
-     "datum": "2026-10-29T06:40:29.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "‘South Park’ Parodies ‘GTA VI’ Hype With Dog Poop Gameplay",
-     "link": "https://deadline.com/2026/10/south-park-parodies-gta-vi-dog-poop-gameplay-1237207932/",
-     "datum": "2026-10-29T04:16:47.000Z"
-    },
-    {
-     "quelle": "Variety",
-     "art": "film",
-     "titel": "‘South Park’: Cartman, Stan and Kyle Must Solve South America’s Beef Crisis in Halloween Week Episode",
-     "link": "https://variety.com/2026/tv/news/south-park-season-29-episode-4-1236933789/",
-     "datum": "2026-10-29T03:05:04.000Z"
-    }
-   ]
-  },
-  "tv-45790": {
-   "titel": "JoJo's Bizarre Adventure",
-   "original": "ジョジョの奇妙な冒険",
-   "leitsatz": null,
-   "handlung": "Im England des Jahres 1880 nimmt der Adlige George Joestar seinen neuen Adoptivsohn bei sich auf: den jungen Dio Brando, dessen Vater Georges Leben vor 12 Jahren gerettet hat. Doch statt friedlich in seinem neuen Heim einzuziehen, möchte der in Armut großgewordene Dio die Joestar-Familie zerstören und ihren Status für sich gewinnen. Was als simple Fehde mit Georges Sohn Jonathan beginnt, entwickelt sich bald zu einem Konflikt, welcher weit über 100 Jahre andauert und sämtliche Generationen der Joestars in den Kampf gegen Vampire, aztekische Gottheiten, Nazis und gewitzte Serienmörder schickt.",
+   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
    "genres": [
     "Animation",
-    "Action & Adventure",
-    "Sci-Fi & Fantasy"
+    "Krimi",
+    "Mystery",
+    "Komödie"
    ],
    "fakten": [
     [
      "Umfang",
-     "6 Staffeln, 202 Folgen"
+     "1 Staffel, 1221 Folgen"
     ],
     [
      "Mit",
-     "Shogo Sakata, Yohei Azakami, Kaito Ishikawa, Kenta Miyake"
+     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
     ],
     [
      "Sender/Dienst",
-     "Netflix, TOKYO MX"
+     "YTV"
     ],
     [
      "TMDB-Wertung",
-     "8.6 / 10"
+     "8.0 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=2esDNWsLAXQ",
-   "link": "https://www.themoviedb.org/tv/45790",
-   "bild": "https://image.tmdb.org/t/p/w500/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
+   "link": "https://www.themoviedb.org/tv/30983",
+   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
    "news": []
   },
   "tv-303745": {
@@ -5240,6 +5147,84 @@
    "link": "https://www.themoviedb.org/tv/303745",
    "bild": "https://image.tmdb.org/t/p/w500/fFcn3MngCVaQ19kAraXgmIOshN0.jpg",
    "news": []
+  },
+  "tv-45790": {
+   "titel": "JoJo's Bizarre Adventure",
+   "original": "ジョジョの奇妙な冒険",
+   "leitsatz": null,
+   "handlung": "Im England des Jahres 1880 nimmt der Adlige George Joestar seinen neuen Adoptivsohn bei sich auf: den jungen Dio Brando, dessen Vater Georges Leben vor 12 Jahren gerettet hat. Doch statt friedlich in seinem neuen Heim einzuziehen, möchte der in Armut großgewordene Dio die Joestar-Familie zerstören und ihren Status für sich gewinnen. Was als simple Fehde mit Georges Sohn Jonathan beginnt, entwickelt sich bald zu einem Konflikt, welcher weit über 100 Jahre andauert und sämtliche Generationen der Joestars in den Kampf gegen Vampire, aztekische Gottheiten, Nazis und gewitzte Serienmörder schickt.",
+   "genres": [
+    "Animation",
+    "Action & Adventure",
+    "Sci-Fi & Fantasy"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "6 Staffeln, 202 Folgen"
+    ],
+    [
+     "Mit",
+     "Shogo Sakata, Yohei Azakami, Kaito Ishikawa, Kenta Miyake"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix, TOKYO MX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=2esDNWsLAXQ",
+   "link": "https://www.themoviedb.org/tv/45790",
+   "bild": "https://image.tmdb.org/t/p/w500/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+   "news": []
+  },
+  "tv-85077": {
+   "titel": "The Chosen",
+   "original": "The Chosen",
+   "leitsatz": null,
+   "handlung": "Das Leben des Christus gesehen durch die Augen derer, die ihn kannten.",
+   "genres": [
+    "Action & Adventure",
+    "Familie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "6 Staffeln, 46 Folgen"
+    ],
+    [
+     "Von",
+     "Dallas Jenkins"
+    ],
+    [
+     "Mit",
+     "Elizabeth Tabish"
+    ],
+    [
+     "Sender/Dienst",
+     "Prime Video, VidAngel"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=D93sE9d-M38",
+   "link": "https://www.themoviedb.org/tv/85077",
+   "bild": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "news": [
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "Prime Video’s ‘The Chosen’ Christmas Special Officially Sets December Release Date",
+     "link": "https://collider.com/the-chosen-the-three-kings-release-date-fox-december-2026/",
+     "datum": "2026-11-12T12:00:12.000Z"
+    }
+   ]
   },
   "tv-103540": {
    "titel": "Percy Jackson: Die Serie",
@@ -5287,50 +5272,40 @@
     }
    ]
   },
-  "tv-85077": {
-   "titel": "The Chosen",
-   "original": "The Chosen",
+  "tv-62650": {
+   "titel": "Chicago Med",
+   "original": "Chicago Med",
    "leitsatz": null,
-   "handlung": "Das Leben des Christus gesehen durch die Augen derer, die ihn kannten.",
+   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
    "genres": [
-    "Action & Adventure",
-    "Familie",
     "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "6 Staffeln, 46 Folgen"
+     "12 Staffeln, 229 Folgen"
     ],
     [
      "Von",
-     "Dallas Jenkins"
+     "Dick Wolf, Matt Olmstead"
     ],
     [
      "Mit",
-     "Elizabeth Tabish"
+     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
     ],
     [
      "Sender/Dienst",
-     "Prime Video, VidAngel"
+     "NBC"
     ],
     [
      "TMDB-Wertung",
-     "8.9 / 10"
+     "8.3 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=D93sE9d-M38",
-   "link": "https://www.themoviedb.org/tv/85077",
-   "bild": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "Prime Video’s ‘The Chosen’ Christmas Special Officially Sets December Release Date",
-     "link": "https://collider.com/the-chosen-the-three-kings-release-date-fox-december-2026/",
-     "datum": "2026-11-12T12:00:12.000Z"
-    }
-   ]
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/62650",
+   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "news": []
   },
   "tv-80748": {
    "titel": "FBI",
@@ -5369,91 +5344,41 @@
    "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
    "news": []
   },
-  "tv-75219": {
-   "titel": "9-1-1 Notruf L.A.",
-   "original": "9-1-1",
+  "tv-65334": {
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "original": "Miraculous, les aventures de Ladybug et Chat Noir",
    "leitsatz": null,
-   "handlung": "Die Serie folgt den Leben der Ersthelfer von Los Angeles: Polizisten, Sanitäter, Feuerwehrleute und Mitarbeitern der Leitstelle.",
+   "handlung": "Marinette und Adrien sind zwei Schüler – fast – wie andere auch. Bei der kleinsten Bedrohung von Paris werden sie zu Ladybug und Cat Noir. Ihre Mission: Die Akumas des mysteriösen Hawk Moth fangen, der die Pariser in Super-Bösewichte verwandelt. Obwohl die beiden Helden ein Team bilden, wissen sie wenig voneinander: Marinette weiß nicht, dass sich hinter Cat Noir Adrien verbirgt, der Junge, in den sie heimlich verliebt ist; und Adrien, dessen Herzen für Ladybug schlägt, ignoriert, dass sich hinter dem Kostüm der Superheldin das nette und zerstreute Mädchen aus seiner Klasse verbirgt",
    "genres": [
-    "Drama",
-    "Krimi",
-    "Action & Adventure"
+    "Action & Adventure",
+    "Animation",
+    "Kids"
    ],
    "fakten": [
     [
      "Umfang",
-     "10 Staffeln, 150 Folgen"
+     "7 Staffeln, 181 Folgen"
     ],
     [
      "Von",
-     "Ryan Murphy, Brad Falchuk"
+     "Thomas Astruc, Jeremy Zag"
     ],
     [
      "Mit",
-     "Angela Bassett, Jennifer Love Hewitt, Oliver Stark, Aisha Hinds"
+     "Anouck Hautbois, Benjamin Bollen, Marie Nonnenmacher, Thierry Kazazian"
     ],
     [
      "Sender/Dienst",
-     "ABC, FOX"
+     "TF1"
     ],
     [
      "TMDB-Wertung",
-     "8.2 / 10"
+     "8.1 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=R4vKvvmt9vk",
-   "link": "https://www.themoviedb.org/tv/75219",
-   "bild": "https://image.tmdb.org/t/p/w500/sv17SPivB8UHa1yU4RW9C7rWclh.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "‘Final Destination’ Director Officially Returns to ‘9-1-1’ for Season 10",
-     "link": "https://collider.com/james-wong-final-destination-9-1-1season-10-directing/",
-     "datum": "2026-11-23T12:00:12.000Z"
-    },
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Wann kehren „Grey‘s Anatomy“, „High Potential“, „9-1-1“ und „The Rookie“ mit neuen Staffeln zurück?",
-     "link": "https://www.serienjunkies.de/news/serien/abc-midseason-2027-alle-starttermine-im-ueberblick-94580446.html",
-     "datum": "2026-11-09T07:59:49.000Z"
-    }
-   ]
-  },
-  "tv-62650": {
-   "titel": "Chicago Med",
-   "original": "Chicago Med",
-   "leitsatz": null,
-   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "12 Staffeln, 229 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf, Matt Olmstead"
-    ],
-    [
-     "Mit",
-     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.3 / 10"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/62650",
-   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "trailer": "https://www.youtube.com/watch?v=xK9KUNoMQCc",
+   "link": "https://www.themoviedb.org/tv/65334",
+   "bild": "https://image.tmdb.org/t/p/w500/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
    "news": []
   }
  }
