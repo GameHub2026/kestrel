@@ -1,65 +1,7 @@
 {
- "von": "2026-11-24",
- "bis": "2027-03-26",
+ "von": "2026-11-25",
+ "bis": "2027-03-27",
  "eintraege": [
-  {
-   "id": "tv-171802-s1",
-   "art": "serie",
-   "typ": "serienstart",
-   "titel": "Blade Runner 2099",
-   "datum": "2026-11-24",
-   "text": "Neue Serie",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/d8IKBDXQvj3d6clsjqydT4xcw14.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/171802",
-   "info": "tv-171802"
-  },
-  {
-   "id": "tv-84773-s3-2026-11-24",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Der Herr der Ringe: Die Ringe der Macht",
-   "datum": "2026-11-24",
-   "text": "Staffel 3 · Folgen 7–8",
-   "jahr": "2022",
-   "bild": "https://image.tmdb.org/t/p/w342/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/84773",
-   "info": "tv-84773"
-  },
-  {
-   "id": "movie-822653-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
-   "datum": "2026-11-24",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/822653",
-   "info": "movie-822653"
-  },
-  {
-   "id": "tv-303745-s1-2026-11-24",
-   "art": "serie",
-   "typ": "folge",
-   "titel": "Undercover-Liebe",
-   "datum": "2026-11-24",
-   "text": "S1E12",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/fFcn3MngCVaQ19kAraXgmIOshN0.jpg",
-   "anbieter": [
-    "Amazon Prime Video"
-   ],
-   "link": "https://www.themoviedb.org/tv/303745",
-   "info": "tv-303745"
-  },
   {
    "id": "tv-279246-s1-2026-11-25",
    "art": "serie",
@@ -119,6 +61,19 @@
    "info": "tv-310209"
   },
   {
+   "id": "movie-1608012-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Aşk Tesadüfleri Sever 3",
+   "datum": "2026-11-26",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/7yUyo0Z0DMuCDYn7Mrkug40UmuT.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1608012",
+   "info": "movie-1608012"
+  },
+  {
    "id": "tv-302837-s1",
    "art": "serie",
    "typ": "serienstart",
@@ -149,6 +104,21 @@
    "info": "tv-338930"
   },
   {
+   "id": "tv-326247-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Fool Night",
+   "datum": "2026-11-26",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/mlha1PlRjfjPMtpJN73lGT21V15.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/326247",
+   "info": "tv-326247"
+  },
+  {
    "id": "movie-1286656-kino",
    "art": "film",
    "typ": "kino",
@@ -173,6 +143,21 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1400336",
    "info": "movie-1400336"
+  },
+  {
+   "id": "tv-313701-s1",
+   "art": "serie",
+   "typ": "serienstart",
+   "titel": "Paskong Pinoy",
+   "datum": "2026-11-26",
+   "text": "Neue Serie",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/zYUsYASG6gLiSnddKEj2fNRS4R3.jpg",
+   "anbieter": [
+    "Netflix"
+   ],
+   "link": "https://www.themoviedb.org/tv/313701",
+   "info": "tv-313701"
   },
   {
    "id": "tv-310209-s1-2026-11-26",
@@ -261,7 +246,7 @@
    "datum": "2026-11-27",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/kUxkvh6GMZL4AHNgNDty68yTnwQ.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/dtI3xTdEPmBiIPXLDgDxNKHCkDV.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1209723",
    "info": "movie-1209723"
@@ -329,6 +314,22 @@
    ],
    "link": "https://www.themoviedb.org/tv/81723",
    "info": "tv-81723"
+  },
+  {
+   "id": "tv-80748-s9-2026-11-30",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "FBI",
+   "datum": "2026-11-30",
+   "text": "S9E8",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/80748",
+   "info": "tv-80748"
   },
   {
    "id": "tv-4614-s24-2026-12-01",
@@ -661,6 +662,22 @@
    "info": "tv-81723"
   },
   {
+   "id": "tv-80748-s9-2026-12-07",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "FBI",
+   "datum": "2026-12-07",
+   "text": "S9E9",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/80748",
+   "info": "tv-80748"
+  },
+  {
    "id": "tv-4614-s24-2026-12-08",
    "art": "serie",
    "typ": "folge",
@@ -692,6 +709,21 @@
    ],
    "link": "https://www.themoviedb.org/tv/44006",
    "info": "tv-44006"
+  },
+  {
+   "id": "tv-62650-s12-2026-12-09",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago Med",
+   "datum": "2026-12-09",
+   "text": "S12E8",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "anbieter": [
+    "WOW"
+   ],
+   "link": "https://www.themoviedb.org/tv/62650",
+   "info": "tv-62650"
   },
   {
    "id": "tv-58841-s14-2026-12-09",
@@ -855,6 +887,22 @@
    ],
    "link": "https://www.themoviedb.org/tv/81723",
    "info": "tv-81723"
+  },
+  {
+   "id": "tv-80748-s9-2026-12-14",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "FBI",
+   "datum": "2026-12-14",
+   "text": "S9E10",
+   "jahr": "2018",
+   "bild": "https://image.tmdb.org/t/p/w342/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "anbieter": [
+    "Amazon Prime Video",
+    "Paramount+"
+   ],
+   "link": "https://www.themoviedb.org/tv/80748",
+   "info": "tv-80748"
   },
   {
    "id": "movie-1003596-kino",
@@ -1234,6 +1282,21 @@
    "info": "tv-44006"
   },
   {
+   "id": "tv-62650-s12-2027-01-06",
+   "art": "serie",
+   "typ": "folge",
+   "titel": "Chicago Med",
+   "datum": "2027-01-06",
+   "text": "S12E9",
+   "jahr": "2015",
+   "bild": "https://image.tmdb.org/t/p/w342/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "anbieter": [
+    "WOW"
+   ],
+   "link": "https://www.themoviedb.org/tv/62650",
+   "info": "tv-62650"
+  },
+  {
    "id": "tv-58841-s14-2027-01-06",
    "art": "serie",
    "typ": "folge",
@@ -1468,32 +1531,6 @@
    "info": "movie-1165366"
   },
   {
-   "id": "movie-1425859-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "Remain",
-   "datum": "2027-02-04",
-   "text": "Kinostart",
-   "jahr": "2027",
-   "bild": "https://image.tmdb.org/t/p/w342/5hPNq5h2y8Ux6nPBRMEwZ8npVTp.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1425859",
-   "info": "movie-1425859"
-  },
-  {
-   "id": "movie-1074074-kino",
-   "art": "film",
-   "typ": "kino",
-   "titel": "The Beloved - Mein liebster Mensch",
-   "datum": "2027-02-04",
-   "text": "Kinostart",
-   "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/LdKLipXCdKHNXxUxn8l7UTdnXJ.jpg",
-   "anbieter": [],
-   "link": "https://www.themoviedb.org/movie/1074074",
-   "info": "movie-1074074"
-  },
-  {
    "id": "movie-1147572-kino",
    "art": "film",
    "typ": "kino",
@@ -1507,6 +1544,19 @@
    "info": "movie-1147572"
   },
   {
+   "id": "movie-1372443-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Ein Leben für einen Traum - Mr. Irrelevant",
+   "datum": "2027-02-11",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/v9xESDLVKXw9CqzbzA7MNWs1ROT.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/1372443",
+   "info": "movie-1372443"
+  },
+  {
    "id": "movie-1195803-kino",
    "art": "film",
    "typ": "kino",
@@ -1514,7 +1564,7 @@
    "datum": "2027-02-11",
    "text": "Kinostart",
    "jahr": "2026",
-   "bild": "https://image.tmdb.org/t/p/w342/5sVi66aTT9X2uMldmIwu9JW3hZ2.jpg",
+   "bild": "https://image.tmdb.org/t/p/w342/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/1195803",
    "info": "movie-1195803"
@@ -1611,6 +1661,19 @@
    "anbieter": [],
    "link": "https://www.themoviedb.org/movie/458896",
    "info": "movie-458896"
+  },
+  {
+   "id": "movie-539745-kino",
+   "art": "film",
+   "typ": "kino",
+   "titel": "Animal Farm",
+   "datum": "2027-03-25",
+   "text": "Kinostart",
+   "jahr": "2026",
+   "bild": "https://image.tmdb.org/t/p/w342/6pzI1DIlxwAFffw9OZcG6cr031U.jpg",
+   "anbieter": [],
+   "link": "https://www.themoviedb.org/movie/539745",
+   "info": "movie-539745"
   }
  ],
  "infos": {
@@ -1840,12 +1903,12 @@
     ],
     [
      "TMDB-Wertung",
-     "7.7 / 10"
+     "7.6 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=kA9NfV4pM_Q",
    "link": "https://www.themoviedb.org/movie/1195803",
-   "bild": "https://image.tmdb.org/t/p/w500/5sVi66aTT9X2uMldmIwu9JW3hZ2.jpg",
+   "bild": "https://image.tmdb.org/t/p/w500/6FcBZOKvyrLCKGCyBG0ySCR4okt.jpg",
    "news": [
     {
      "quelle": "The Hollywood Reporter",
@@ -1889,7 +1952,7 @@
     ],
     [
      "TMDB-Wertung",
-     "5.8 / 10"
+     "5.5 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=3v0Ey26TOJs",
@@ -2108,36 +2171,6 @@
     }
    ]
   },
-  "movie-822653": {
-   "titel": "Puella Magi Madoka Magica the Movie -Walpurgisnacht: Rising-",
-   "original": "劇場版 魔法少女まどか☆マギカ〈ワルプルギスの廻天〉",
-   "leitsatz": null,
-   "handlung": "Nach den Ereignissen von „Rebellion“ scheint die Welt im Gleichgewicht zu sein – doch dieser Frieden ist brüchig. Als eine neue Bedrohung im Zusammenhang mit der Walpurgisnacht auftaucht, ist Homura Akemi gezwungen, sich den Konsequenzen ihrer Entscheidungen zu stellen und sich zu fragen, wie weit sie bereit ist zu gehen, um Madoka zu beschützen.",
-   "genres": [
-    "Animation",
-    "Drama",
-    "Mystery",
-    "Fantasy"
-   ],
-   "fakten": [
-    [
-     "Laufzeit",
-     "2 Std 0 Min"
-    ],
-    [
-     "Regie",
-     "宮本幸裕, Akiyuki Simbo"
-    ],
-    [
-     "Mit",
-     "Aoi Yuki, Chiwa Saito, Eri Kitamura, Ai Nonaka"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=lAIYKMbMMcg",
-   "link": "https://www.themoviedb.org/movie/822653",
-   "bild": "https://image.tmdb.org/t/p/w500/tc7wW6whJSvxM9f5RdqmQVpdl6n.jpg",
-   "news": []
-  },
   "movie-1117898": {
    "titel": "Der Kater mit Hut",
    "original": "The Cat in the Hat",
@@ -2305,6 +2338,13 @@
    "bild": "https://image.tmdb.org/t/p/w500/thX8Rs7nfgmPHfCgjoFuRovy49l.jpg",
    "news": [
     {
+     "quelle": "Spiegel Kultur",
+     "art": "film",
+     "titel": "Quentin Tarantino: Warum »The Further Mis-Adventures of Cliff Booth« misslungen ist",
+     "link": "https://www.spiegel.de/kultur/kino/quentin-tarantino-warum-the-further-mis-adventures-of-cliff-booth-misslungen-ist-a-4be461fa-11f6-4c07-a1cf-63f0089bf036#ref=rss",
+     "datum": "2026-11-26T22:54:00.000Z"
+    },
+    {
      "quelle": "IndieWire",
      "art": "film",
      "titel": "How Much of Quentin Tarantino’s Scrapped Film ‘The Movie Critic’ Made It Into ‘The Further Mis-Adventures of Cliff Booth’?",
@@ -2331,13 +2371,6 @@
      "titel": "‘The Further Mis-Adventures of Cliff Booth’ Review: David Fincher’s Breezy Tarantino Spinoff Is a Disappointing Compromise Between Great Directors",
      "link": "https://www.indiewire.com/criticism/movies/further-misadventures-of-cliff-booth-movie-review-netflix-1235229234/",
      "datum": "2026-11-19T18:00:00.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘The Further Mis-Adventures of Cliff Booth’ Throws Netflix’s Oscar Campaign a Curveball",
-     "link": "https://www.indiewire.com/awards/predictions/further-mis-adventures-cliff-booth-netflix-oscar-chances-1235228865/",
-     "datum": "2026-11-17T20:53:37.000Z"
     }
    ]
   },
@@ -2364,15 +2397,7 @@
    "trailer": "https://www.youtube.com/watch?v=1y9vp9GLoYU",
    "link": "https://www.themoviedb.org/movie/1260649",
    "bild": "https://image.tmdb.org/t/p/w500/ntjF2gemedf3ZcWzARGt6cuZlnJ.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Neuer Trailer zum Trilogie-Finale: „Jumanji: Open World“ startet an Weihnachten im Kino",
-     "link": "https://www.serienjunkies.de/news/serien/jumanji-open-world-trailer-und-starttermin-im-kino-94562683.html",
-     "datum": "2026-10-28T13:52:04.000Z"
-    }
-   ],
+   "news": [],
    "sprache": "en"
   },
   "movie-1078446": {
@@ -2533,6 +2558,32 @@
    "bild": "https://image.tmdb.org/t/p/w500/pNaHwxMkymhGky2VXl3ARd3hc7o.jpg",
    "news": []
   },
+  "movie-1440769": {
+   "titel": "The Beekeeper 2",
+   "original": "The Beekeeper 2",
+   "leitsatz": null,
+   "handlung": "Pulled back into the fight when the Beekeeper organization goes rogue and sets its sights on controlling the government, Clay must take on the very group that made him.",
+   "genres": [
+    "Action",
+    "Krimi",
+    "Thriller"
+   ],
+   "fakten": [
+    [
+     "Regie",
+     "Timo Tjahjanto"
+    ],
+    [
+     "Mit",
+     "Jason Statham, Jeremy Irons, Yara Shahidi, Emmy Raver-Lampman"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=Q7MvYmUttXM",
+   "link": "https://www.themoviedb.org/movie/1440769",
+   "bild": "https://image.tmdb.org/t/p/w500/bNlIm8bk5AHrinnUmi4Y8A8W0XM.jpg",
+   "news": [],
+   "sprache": "en"
+  },
   "movie-1300926": {
    "titel": "Angry Birds 3 - Der Film",
    "original": "The Angry Birds Movie 3",
@@ -2562,32 +2613,6 @@
    "link": "https://www.themoviedb.org/movie/1300926",
    "bild": "https://image.tmdb.org/t/p/w500/xyml31x5gu23tOMIFJ43XO4aTD6.jpg",
    "news": []
-  },
-  "movie-1440769": {
-   "titel": "The Beekeeper 2",
-   "original": "The Beekeeper 2",
-   "leitsatz": null,
-   "handlung": "Pulled back into the fight when the Beekeeper organization goes rogue and sets its sights on controlling the government, Clay must take on the very group that made him.",
-   "genres": [
-    "Action",
-    "Krimi",
-    "Thriller"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Timo Tjahjanto"
-    ],
-    [
-     "Mit",
-     "Jason Statham, Jeremy Irons, Yara Shahidi, Emmy Raver-Lampman"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=Q7MvYmUttXM",
-   "link": "https://www.themoviedb.org/movie/1440769",
-   "bild": "https://image.tmdb.org/t/p/w500/bNlIm8bk5AHrinnUmi4Y8A8W0XM.jpg",
-   "news": [],
-   "sprache": "en"
   },
   "movie-1476614": {
    "titel": "All of a Sudden",
@@ -3036,31 +3061,6 @@
    ],
    "sprache": "en"
   },
-  "movie-1517333": {
-   "titel": "K-POP: The Debut",
-   "original": "K-POP: The Debut",
-   "leitsatz": null,
-   "handlung": "Lizzy Lee, a young Korean-American woman, has spent her life following the path her family chose for her, but when she earns a spot in a globally televised competition to form the next K-pop girl group, she travels to Seoul, South Korea, to pursue the dream she must still keep hidden.",
-   "genres": [
-    "Musik",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Regie",
-     "Benson Lee"
-    ],
-    [
-     "Mit",
-     "Ji-young Yoo, Eric Nam, Tony Revolori, Yoo Ji-tae"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=j8mVWxWRvO0",
-   "link": "https://www.themoviedb.org/movie/1517333",
-   "bild": "https://image.tmdb.org/t/p/w500/9MED2GFhwsMJvYKEc9Wt7aB0S2a.jpg",
-   "news": [],
-   "sprache": "en"
-  },
   "movie-1301248": {
    "titel": "2 Aile Arasında",
    "original": "2 Aile Arasında",
@@ -3119,34 +3119,30 @@
    "bild": "https://image.tmdb.org/t/p/w500/tmfj0vwLuFRPeyGXWAYCyZ2zxHQ.jpg",
    "news": []
   },
-  "movie-1209723": {
-   "titel": "Yeh Prem Mol Liya",
-   "original": "ये प्रेम मोल लिया",
+  "movie-1517333": {
+   "titel": "K-POP: The Debut",
+   "original": "K-POP: The Debut",
    "leitsatz": null,
-   "handlung": "Ein herzergreifendes, romantisches Familiendrama über zwei beste Freunde, deren enge Verbundenheit sich langsam in Liebe verwandelt. Doch eine Lüge führt zu Missverständnissen und Konflikten, die ihre Beziehung und ihre familiären Bindungen auf eine harte Probe stellen. Die Geschichte handelt von Liebe, Opferbereitschaft, Verständnis und der Bedeutung der Familie.",
+   "handlung": "Lizzy Lee, a young Korean-American woman, has spent her life following the path her family chose for her, but when she earns a spot in a globally televised competition to form the next K-pop girl group, she travels to Seoul, South Korea, to pursue the dream she must still keep hidden.",
    "genres": [
-    "Liebesfilm",
-    "Familie",
-    "Drama"
+    "Musik",
+    "Komödie"
    ],
    "fakten": [
     [
-     "Laufzeit",
-     "2 Std 53 Min"
-    ],
-    [
      "Regie",
-     "Sooraj Barjatya"
+     "Benson Lee"
     ],
     [
      "Mit",
-     "Ayushmann Khurrana, Sharvari Wagh, अनुपम खेर, Geeta Agrawal Sharma"
+     "Ji-young Yoo, Eric Nam, Tony Revolori, Yoo Ji-tae"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=vdhNar4uxm4",
-   "link": "https://www.themoviedb.org/movie/1209723",
-   "bild": "https://image.tmdb.org/t/p/w500/kUxkvh6GMZL4AHNgNDty68yTnwQ.jpg",
-   "news": []
+   "trailer": "https://www.youtube.com/watch?v=j8mVWxWRvO0",
+   "link": "https://www.themoviedb.org/movie/1517333",
+   "bild": "https://image.tmdb.org/t/p/w500/9MED2GFhwsMJvYKEc9Wt7aB0S2a.jpg",
+   "news": [],
+   "sprache": "en"
   },
   "movie-1554956": {
    "titel": "Der Festländer",
@@ -3172,7 +3168,7 @@
     ],
     [
      "TMDB-Wertung",
-     "7.3 / 10"
+     "7.2 / 10"
     ]
    ],
    "trailer": "https://www.youtube.com/watch?v=TNH4i8lrDFo",
@@ -3209,6 +3205,35 @@
    "trailer": "https://www.youtube.com/watch?v=okeELGJFG2I",
    "link": "https://www.themoviedb.org/movie/1403676",
    "bild": "https://image.tmdb.org/t/p/w500/8ESrQhJW1q3a96CkQ4TZjCIo91r.jpg",
+   "news": []
+  },
+  "movie-1209723": {
+   "titel": "Yeh Prem Mol Liya",
+   "original": "ये प्रेम मोल लिया",
+   "leitsatz": null,
+   "handlung": "Ein herzergreifendes, romantisches Familiendrama über zwei beste Freunde, deren enge Verbundenheit sich langsam in Liebe verwandelt. Doch eine Lüge führt zu Missverständnissen und Konflikten, die ihre Beziehung und ihre familiären Bindungen auf eine harte Probe stellen. Die Geschichte handelt von Liebe, Opferbereitschaft, Verständnis und der Bedeutung der Familie.",
+   "genres": [
+    "Liebesfilm",
+    "Familie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Laufzeit",
+     "2 Std 53 Min"
+    ],
+    [
+     "Regie",
+     "Sooraj Barjatya"
+    ],
+    [
+     "Mit",
+     "Ayushmann Khurrana, Sharvari Wagh, अनुपम खेर, Geeta Agrawal Sharma"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=vdhNar4uxm4",
+   "link": "https://www.themoviedb.org/movie/1209723",
+   "bild": "https://image.tmdb.org/t/p/w500/dtI3xTdEPmBiIPXLDgDxNKHCkDV.jpg",
    "news": []
   },
   "movie-1074074": {
@@ -3513,7 +3538,7 @@
    "titel": "Witch on the Holy Night",
    "original": "魔法使いの夜",
    "leitsatz": null,
-   "handlung": "Near the end of the Showa era in the late 1980s, in Misaki town, an old mansion is rumored to be the home of a witch. After moving into the mansion, Aoko Aozaki begins to learn sorcery from a young mage, Alice Kuonji, the rumored witch of the mansion. The Aozaki family oversees the land on which Misaki is built and the heir (Aoko) is tasked with protecting it. Mysterious intruders have been disrupting the bounded field in Misaki, leading Alice and Aoko to investigate. A mannequin or puppet attacks them and is incinerated. As this happens, both of them spot someone running away, a civilian who must not get away having seen magic alive. Unexpectedly, a young boy named Soujuurou Shizuki is drawn to the mansion and comes to reside with them as well.",
+   "handlung": "Aoko Aozaki, an ordinary high school girl, is actually a Magician who lives in the modern world...though she is still only an apprentice. As she spends her days living alongside her housemate, Alice Kuonji, striving to become a full-fledged Magician...she meets a boy, beginning of one young girl's story — the tale of a Witch.",
    "genres": [
     "Animation",
     "Fantasy",
@@ -3685,77 +3710,68 @@
    "bild": "https://image.tmdb.org/t/p/w500/opBYB8DIdQ1pk8GZIJRVOjrDxcj.jpg",
    "news": []
   },
-  "tv-171802": {
-   "titel": "Blade Runner 2099",
-   "original": "Blade Runner 2099",
+  "movie-1241803": {
+   "titel": "Les Misérables",
+   "original": "Les Misérables",
    "leitsatz": null,
-   "handlung": "Cora, eine flüchtige Frau, die zur Blade Runnerin wurde, tut sich mit Olwen zusammen - einer sterbenden Replikantin -, um im wiederauferstandenen Los Angeles einen Flüchtigen aufzuspüren. Gemeinsam decken sie eine Wahrheit auf, die ihre zerbrechliche Stadt zu zerstören droht.",
+   "handlung": "Nach 19 Jahren im Gefängnis, verurteilt wegen eines gestohlenen Brotes, kommt Jean Valjean frei. Unter falschem Namen beginnt er ein neues Leben. Als die todkranke Fabrikarbeiterin Fantine ihn um Hilfe bittet, verspricht er ihr, für ihre Tochter Cosette zu sorgen. Das Mädchen wächst bei den Thénardiers auf, die es ausbeuten und misshandeln.  Valjean nimmt Cosette zu sich und zieht sie auf wie seine eigene Tochter. Doch Inspektor Javert lässt nicht locker und will ihn um jeden Preis zurück hinter Gitter bringen. Im aufständischen Paris werden schließlich Valjean, Javert, Cosette und ihr geliebter Marius in die Wirren einer Gesellschaft im Umbruch hineingezogen.",
    "genres": [
-    "Sci-Fi & Fantasy",
+    "Historie",
+    "Liebesfilm",
     "Drama"
    ],
    "fakten": [
     [
-     "Umfang",
-     "1 Staffel, 8 Folgen"
+     "Laufzeit",
+     "2 Std 58 Min"
     ],
     [
-     "Von",
-     "Silka Luisa"
+     "Regie",
+     "Fred Cavayé"
     ],
     [
      "Mit",
-     "Michelle Yeoh, Hunter Schafer, Dimitri Abold, Lewis Gribben"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video"
+     "Vincent Lindon, Tahar Rahim, Camille Cottin, Benjamin Lavernhe"
     ],
     [
      "TMDB-Wertung",
-     "5.2 / 10"
+     "6.9 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=POu4zDIxIus",
-   "link": "https://www.themoviedb.org/tv/171802",
-   "bild": "https://image.tmdb.org/t/p/w500/d8IKBDXQvj3d6clsjqydT4xcw14.jpg",
-   "news": [
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "'Blade Runner 2099' Stars Break Down the Prime Video Series' Biggest Finale Twists",
-     "link": "https://collider.com/blade-runner-2099-finale-matthew-needham-lewis-gribben-dimitri-abold/",
-     "datum": "2026-11-26T14:00:12.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "‘Blade Runner 2099’ Bosses Reveal Ridley Scott’s Take on Prime Video’s New Sci-Fi Series",
-     "link": "https://collider.com/blade-runner-2099-bosses-reveal-ridley-scotts-take-on-prime-videos-new-sci-fi-series/",
-     "datum": "2026-11-24T23:00:12.000Z"
-    },
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "Amazons Sci-Fi-Serie Blade Runner 2099 hat das gleiche Problem wie Der Herr der Ringe: Die Ringe der Macht",
-     "link": "https://www.moviepilot.de/news/amazons-sci-fi-serie-balde-runner-2099-kritik-1165553",
-     "datum": "2026-11-23T14:00:00.000Z"
-    },
-    {
-     "quelle": "The Hollywood Reporter",
-     "art": "film",
-     "titel": "‘Blade Runner 2099’ Review: Michelle Yeoh and Hunter Schafer Lead Amazon’s Visually Rich, Emotionally Deficient Sci-Fi Sequel",
-     "link": "https://www.hollywoodreporter.com/tv/tv-reviews/blade-runner-2099-review-michelle-yeoh-hunter-schafer-amazon-1236760567/",
-     "datum": "2026-11-23T14:00:00.000Z"
-    },
-    {
-     "quelle": "IndieWire",
-     "art": "film",
-     "titel": "‘Blade Runner 2099’ Review: Michelle Yeoh and Hunter Schafer Are a Fine Pair in an Awesome World",
-     "link": "https://www.indiewire.com/criticism/shows/blade-runner-2099-review-amazon-series-michelle-yeoh-1235229717/",
-     "datum": "2026-11-23T14:00:00.000Z"
-    }
-   ]
+   "trailer": "https://www.youtube.com/watch?v=PyBTjrK43Hg",
+   "link": "https://www.themoviedb.org/movie/1241803",
+   "bild": "https://image.tmdb.org/t/p/w500/tY3CoBNTCpvJayVRLqIIGDa4Ep8.jpg",
+   "news": []
+  },
+  "tv-326247": {
+   "titel": "Fool Night",
+   "original": "フールナイト",
+   "leitsatz": null,
+   "handlung": "In einer Zukunft ohne Sonne werden Menschen zu Pflanzen, um Sauerstoff zu produzieren. Während ein junger Mann mit seiner Umwandlung beginnt, deckt er eine Verschwörung auf.",
+   "genres": [
+    "Animation",
+    "Drama",
+    "Sci-Fi & Fantasy",
+    "Mystery"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 12 Folgen"
+    ],
+    [
+     "Mit",
+     "Koki Uchiyama, Minako Kotobuki, Junya Enoki, Aya Endo"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=2Qg_AfPF2sM",
+   "link": "https://www.themoviedb.org/tv/326247",
+   "bild": "https://image.tmdb.org/t/p/w500/vTTr4YG3qIUq6E5uahU0fWSWch7.jpg",
+   "news": []
   },
   "tv-310209": {
    "titel": "Von neun bis sechs",
@@ -3789,6 +3805,37 @@
    "bild": "https://image.tmdb.org/t/p/w500/ltlWBwFzgd5SLK39KmzTLEtEVSp.jpg",
    "news": []
   },
+  "tv-338930": {
+   "titel": "Die Notaufnahme",
+   "original": "Legevakta",
+   "leitsatz": null,
+   "handlung": "In der größten Notaufnahme Norwegens, mitten in Oslo, zählt nur eines: Wer Hilfe braucht, bekommt diese auch. Doch aufgrund des Personalmangels und enormen Zeitdrucks ist das Team aus Ärzten und Krankenschwestern teils am Ende seiner Grenzen. In diesem chaotischen Umfeld landet die Chirurgin Sofia (Sara Khorami), um ihre Karriere zu retten. Doch obwohl sie über großes Talent verfügt, mangelt es ihr an Geduld. Was sie dort erwartet, ist ein hektischer Alltag mit anspruchsvollen Patienten, Intrigen und Kollegen, die auch außerhalb ihrer Arbeit mit Herausforderungen zu kämpfen haben. Doch trotz der Unordnung und des Widerstands entdeckt Sofia etwas, womit sie nicht gerechnet hat: Wärme, Gemeinschaft und Liebe. Schnell merkt sie, dass sie sich einem Umfeld behaupten muss, in dem nicht nur medizinisches Können zählt, sondern auch Teamgeist und Vertrauen.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 7 Folgen"
+    ],
+    [
+     "Von",
+     "Harald Rosenløw-Eeg, Jan Trygve Røyneland"
+    ],
+    [
+     "Mit",
+     "Sara Khorami, Thorbjørn Harr, Jan Gunnar Røise, Silje Storstein"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=fqZR2dreobc",
+   "link": "https://www.themoviedb.org/tv/338930",
+   "bild": "https://image.tmdb.org/t/p/w500/oFoT6GRACWN9X6fFvtCys0ViDUl.jpg",
+   "news": []
+  },
   "tv-224377": {
    "titel": "Harry Potter",
    "original": "Harry Potter",
@@ -3819,6 +3866,20 @@
     {
      "quelle": "Collider",
      "art": "film",
+     "titel": "J.K. Rowling’s Foreword Officially Removed From Bestselling Harry Potter Companion Book",
+     "link": "https://collider.com/harry-potter-jk-rowling-foreword-removed-harry-a-history/",
+     "datum": "2026-11-27T13:31:12.000Z"
+    },
+    {
+     "quelle": "Moviepilot",
+     "art": "film",
+     "titel": "Harry Potter-Star Warwick Davis, der Professor Flitwick spielt, äußert sich dazu, dass er der einzige Schauspieler aus den Filmen ist, der in der HBO-Serie mitwirkt: \"Es ist eine Ehre\"",
+     "link": "https://www.moviepilot.de/news/harry-potter-star-warwick-davis-professor-flitwick-serie-1165699",
+     "datum": "2026-11-27T10:00:00.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
      "titel": "The Harry Potter Books Answer These 10 Questions That the Movies Don’t",
      "link": "https://collider.com/harry-potter-movie-questions-answered-by-books/",
      "datum": "2026-11-26T22:53:12.000Z"
@@ -3836,22 +3897,40 @@
      "titel": "15 Harry Potter Movie Details That Only Make Sense if You Read the Books",
      "link": "https://collider.com/harry-potter-movie-details-work-if-you-read-the-books/",
      "datum": "2026-11-26T13:32:12.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "6 Fantasy Books That Tried to Be Harry Potter",
-     "link": "https://collider.com/fantasy-books-tried-to-be-harry-potter/",
-     "datum": "2026-11-26T12:56:12.000Z"
-    },
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "Die Harry Potter-Serie kommt: Was über Start, Besetzung und Handlung bekannt ist",
-     "link": "https://www.moviepilot.de/news/die-harry-potter-serie-kommt-was-ueber-start-besetzung-und-handlung-bekannt-ist-1141403",
-     "datum": "2026-11-26T11:15:00.000Z"
     }
    ]
+  },
+  "tv-302837": {
+   "titel": "Die Entführung von Toos van der Valk",
+   "original": "Toos: De van der valk ontvoering",
+   "leitsatz": null,
+   "handlung": "1982. Als die Matriarchin eines niederländischen Hotelimperiums entführt wird, versucht ihre Familie verzweifelt, sie zu befreien. Nach einer wahren Geschichte.",
+   "genres": [
+    "Drama",
+    "Krimi"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 6 Folgen"
+    ],
+    [
+     "Von",
+     "Inti Calfat"
+    ],
+    [
+     "Mit",
+     "Lies Visschedijk, Frank Lammers, Gijs Blom, Victor Löw"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/302837",
+   "bild": "https://image.tmdb.org/t/p/w500/yTn41duVqEmiBimV3itSyOpUPnU.jpg",
+   "news": []
   },
   "tv-288672": {
    "titel": "Pride and Prejudice",
@@ -3891,6 +3970,30 @@
      "datum": "2026-11-18T19:41:34.000Z"
     }
    ],
+   "sprache": "en"
+  },
+  "tv-313701": {
+   "titel": "Paskong Pinoy",
+   "original": "Paskong Pinoy",
+   "leitsatz": null,
+   "handlung": "Discover the true meaning of the season in this touching anthology featuring estranged friends, a snowy Christmas, office rivals, and clashing sisters.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 4 Folgen"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/313701",
+   "bild": "https://image.tmdb.org/t/p/w500/zYUsYASG6gLiSnddKEj2fNRS4R3.jpg",
+   "news": [],
    "sprache": "en"
   },
   "tv-270596": {
@@ -3976,6 +4079,35 @@
    ],
    "sprache": "en"
   },
+  "tv-283220": {
+   "titel": "Quiztopia",
+   "original": "国民クイズ",
+   "leitsatz": null,
+   "handlung": "Bei einem Sieg werden Wünsche wahr. Bei einer Niederlage folgt Zwangsarbeit. In einem alternativen Japan bricht Chaos aus, als Rebellen einen Quizshow-Moderator anvisieren.",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Action & Adventure",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 6 Folgen"
+    ],
+    [
+     "Mit",
+     "山田孝之, 倉科カナ, 石田莉子, 瀬戸康史"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/283220",
+   "bild": "https://image.tmdb.org/t/p/w500/bxXkZhCj5CVLgkEP1Mh4mdy8wM6.jpg",
+   "news": []
+  },
   "tv-243214": {
    "titel": "Criminal",
    "original": "Criminal",
@@ -4022,35 +4154,6 @@
      "datum": "2026-11-05T16:10:00.000Z"
     }
    ]
-  },
-  "tv-283220": {
-   "titel": "Quiztopia",
-   "original": "国民クイズ",
-   "leitsatz": null,
-   "handlung": "Bei einem Sieg werden Wünsche wahr. Bei einer Niederlage folgt Zwangsarbeit. In einem alternativen Japan bricht Chaos aus, als Rebellen einen Quizshow-Moderator anvisieren.",
-   "genres": [
-    "Sci-Fi & Fantasy",
-    "Action & Adventure",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 6 Folgen"
-    ],
-    [
-     "Mit",
-     "山田孝之, 倉科カナ, 石田莉子, 瀬戸康史"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/283220",
-   "bild": "https://image.tmdb.org/t/p/w500/bxXkZhCj5CVLgkEP1Mh4mdy8wM6.jpg",
-   "news": []
   },
   "tv-274395": {
    "titel": "The Land",
@@ -4116,38 +4219,6 @@
    "news": [],
    "sprache": "en"
   },
-  "tv-302837": {
-   "titel": "Die Entführung von Toos van der Valk",
-   "original": "Toos: De van der valk ontvoering",
-   "leitsatz": null,
-   "handlung": "1982. Als die Matriarchin eines niederländischen Hotelimperiums entführt wird, versucht ihre Familie verzweifelt, sie zu befreien. Nach einer wahren Geschichte.",
-   "genres": [
-    "Drama",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 6 Folgen"
-    ],
-    [
-     "Von",
-     "Inti Calfat"
-    ],
-    [
-     "Mit",
-     "Lies Visschedijk, Frank Lammers, Gijs Blom, Victor Löw"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": null,
-   "link": "https://www.themoviedb.org/tv/302837",
-   "bild": "https://image.tmdb.org/t/p/w500/yTn41duVqEmiBimV3itSyOpUPnU.jpg",
-   "news": []
-  },
   "tv-300398": {
    "titel": "Alice",
    "original": "Alice",
@@ -4212,37 +4283,6 @@
    "bild": "https://image.tmdb.org/t/p/w500/YCH3NPIVeJW9eK2JSnIwv5KEjY.jpg",
    "news": [],
    "sprache": "en"
-  },
-  "tv-338930": {
-   "titel": "Die Notaufnahme",
-   "original": "Legevakta",
-   "leitsatz": null,
-   "handlung": "In der größten Notaufnahme Norwegens, mitten in Oslo, zählt nur eines: Wer Hilfe braucht, bekommt diese auch. Doch aufgrund des Personalmangels und enormen Zeitdrucks ist das Team aus Ärzten und Krankenschwestern teils am Ende seiner Grenzen. In diesem chaotischen Umfeld landet die Chirurgin Sofia (Sara Khorami), um ihre Karriere zu retten. Doch obwohl sie über großes Talent verfügt, mangelt es ihr an Geduld. Was sie dort erwartet, ist ein hektischer Alltag mit anspruchsvollen Patienten, Intrigen und Kollegen, die auch außerhalb ihrer Arbeit mit Herausforderungen zu kämpfen haben. Doch trotz der Unordnung und des Widerstands entdeckt Sofia etwas, womit sie nicht gerechnet hat: Wärme, Gemeinschaft und Liebe. Schnell merkt sie, dass sie sich einem Umfeld behaupten muss, in dem nicht nur medizinisches Können zählt, sondern auch Teamgeist und Vertrauen.",
-   "genres": [
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 7 Folgen"
-    ],
-    [
-     "Von",
-     "Harald Rosenløw-Eeg, Jan Trygve Røyneland"
-    ],
-    [
-     "Mit",
-     "Sara Khorami, Thorbjørn Harr, Jan Gunnar Røise, Silje Storstein"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=fqZR2dreobc",
-   "link": "https://www.themoviedb.org/tv/338930",
-   "bild": "https://image.tmdb.org/t/p/w500/oFoT6GRACWN9X6fFvtCys0ViDUl.jpg",
-   "news": []
   },
   "tv-79744": {
    "titel": "The Rookie",
@@ -4493,6 +4533,43 @@
     }
    ]
   },
+  "tv-2734": {
+   "titel": "Law & Order: Special Victims Unit",
+   "original": "Law & Order: Special Victims Unit",
+   "leitsatz": null,
+   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
+   "genres": [
+    "Krimi",
+    "Drama",
+    "Mystery"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "28 Staffeln, 602 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf"
+    ],
+    [
+     "Mit",
+     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=O53wYUc_fA4",
+   "link": "https://www.themoviedb.org/tv/2734",
+   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
+   "news": []
+  },
   "tv-1416": {
    "titel": "Grey's Anatomy",
    "original": "Grey's Anatomy",
@@ -4536,108 +4613,6 @@
     }
    ]
   },
-  "tv-84773": {
-   "titel": "Der Herr der Ringe: Die Ringe der Macht",
-   "original": "The Lord of the Rings: The Rings of Power",
-   "leitsatz": "Das Böse hat viele Namen gehabt.",
-   "handlung": "Bekannte und neue Charaktere müssen sich dem Wiedererstarken des Bösen in Mittelerde stellen. Von den dunkelsten Tiefen des Nebelgebirges bis zu den majestätischen Wäldern von Lindon, vom Inselkönigreich Númenor bis zu den entlegensten Winkeln der Landkarte werden diese Reiche und Charaktere ein Vermächtnis schaffen, das die Zukunft von Mittelerde prägen wird.",
-   "genres": [
-    "Action & Adventure",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "3 Staffeln, 24 Folgen"
-    ],
-    [
-     "Von",
-     "Patrick McKay, John D. Payne"
-    ],
-    [
-     "Mit",
-     "Charlie Vickers, Morfydd Clark, Robert Aramayo, Owain Arthur"
-    ],
-    [
-     "Sender/Dienst",
-     "Prime Video"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=-aCsZkSYPGQ",
-   "link": "https://www.themoviedb.org/tv/84773",
-   "bild": "https://image.tmdb.org/t/p/w500/k2JoKm6FCt1aurhV9taI4Zjn0ff.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Amazon entscheidet über Zukunft von „Der Herr der Ringe: Die Ringe der Macht“",
-     "link": "https://www.serienjunkies.de/news/serien/der-herr-der-ringe-die-ringe-der-macht-wird-um-vierte-staffel-verlaengert-94606844.html",
-     "datum": "2026-11-25T07:58:10.000Z"
-    },
-    {
-     "quelle": "Moviepilot",
-     "art": "film",
-     "titel": "Amazons Sci-Fi-Serie Blade Runner 2099 hat das gleiche Problem wie Der Herr der Ringe: Die Ringe der Macht",
-     "link": "https://www.moviepilot.de/news/amazons-sci-fi-serie-balde-runner-2099-kritik-1165553",
-     "datum": "2026-11-23T14:00:00.000Z"
-    },
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Deutsche Serienstarts im November 2026 - Teil 2: „The Lord of the Rings: The Rings of Power“, „Yellowjackets“, „Die Kaiserin“",
-     "link": "https://www.serienjunkies.de/news/serien/deutsche-serienstarts-im-november-2026-teil-the-lord-of-the-rings-the-rings-of-power-yellowjackets-die-kaiserin-94583343.html",
-     "datum": "2026-11-10T14:00:00.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "'The Lord of the Rings: The Rings of Power' Officially Debuts New Release Today",
-     "link": "https://collider.com/the-lord-of-the-rings-the-rings-of-power-seasons-1-2-4k-blu-ray-release-november-2026/",
-     "datum": "2026-11-03T20:46:23.000Z"
-    }
-   ]
-  },
-  "tv-2734": {
-   "titel": "Law & Order: Special Victims Unit",
-   "original": "Law & Order: Special Victims Unit",
-   "leitsatz": null,
-   "handlung": "Bei Polizei und Staatsanwaltschaft gelten Sexualverbrechen als besonders abscheulich. In New York City gehören die engagierten Detectives, die in diesen brutalen Fällen ermitteln, zur Sondereinheit für Sexualdelikte. Dies sind ihre Geschichten. Innerhalb der New Yorker Polizei gibt es eine Sondereinheit, die Special Victims Unit. Die Fälle, die das SVU untersucht, beschränken sich ausschließlich auf Sexualdelikte und Verbrechen an Kindern",
-   "genres": [
-    "Krimi",
-    "Drama",
-    "Mystery"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "28 Staffeln, 602 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf"
-    ],
-    [
-     "Mit",
-     "Mariska Hargitay, Ice-T, Kelli Giddish, Peter Scanavino"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=O53wYUc_fA4",
-   "link": "https://www.themoviedb.org/tv/2734",
-   "bild": "https://image.tmdb.org/t/p/w500/pHNhUwSXuDQ9jPZOCb8SgJaQZsc.jpg",
-   "news": []
-  },
   "tv-456": {
    "titel": "Die Simpsons",
    "original": "The Simpsons",
@@ -4673,6 +4648,57 @@
    "link": "https://www.themoviedb.org/tv/456",
    "bild": "https://image.tmdb.org/t/p/w500/bVkuU5MMGu9Bvmmeb9uvPV7j4z3.jpg",
    "news": []
+  },
+  "tv-549": {
+   "titel": "Law & Order",
+   "original": "Law & Order",
+   "leitsatz": null,
+   "handlung": "Vertreter der Polizei und der Staatsanwaltschaft klären Kriminalverbrechen in und um New York auf. Mit allen zur Verfügung stehenden Mitteln versuchen die Ermittler dabei, den oder die Straftäter zur Verantwortung zu ziehen.",
+   "genres": [
+    "Krimi",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "26 Staffeln, 552 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf"
+    ],
+    [
+     "Mit",
+     "Maura Tierney, David Ajala, James Badge Dale, Tony Goldwyn"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.3 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=RzN8cPlcMTU",
+   "link": "https://www.themoviedb.org/tv/549",
+   "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
+   "news": [
+    {
+     "quelle": "Serienjunkies",
+     "art": "film",
+     "titel": "Law & Order: SVU, Folge 600: Olivia Benson rollt alten Fall neu auf",
+     "link": "https://www.serienjunkies.de/news/serien/law-order-svu-folge-600-olivia-benson-rollt-alten-fall-neu-auf-94589021.html",
+     "datum": "2026-11-13T13:45:00.000Z"
+    },
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "NBC Officially Announces New 'Law & Order' Replacement",
+     "link": "https://collider.com/nbc-law-and-order-replacement-great-gatsby-reboot-detective-series/",
+     "datum": "2026-10-30T18:18:47.000Z"
+    }
+   ]
   },
   "tv-4614": {
    "titel": "Navy CIS",
@@ -4744,57 +4770,6 @@
      "titel": "\"Navy CIS\" verabschiedet sich mit leicht steigenden Quoten",
      "link": "https://www.dwdl.de/zahlenzentrale/108606/navy_cis_verabschiedet_sich_mit_leicht_steigenden_quoten/",
      "datum": "2026-11-18T08:11:00.000Z"
-    }
-   ]
-  },
-  "tv-549": {
-   "titel": "Law & Order",
-   "original": "Law & Order",
-   "leitsatz": null,
-   "handlung": "Vertreter der Polizei und der Staatsanwaltschaft klären Kriminalverbrechen in und um New York auf. Mit allen zur Verfügung stehenden Mitteln versuchen die Ermittler dabei, den oder die Straftäter zur Verantwortung zu ziehen.",
-   "genres": [
-    "Krimi",
-    "Drama"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "26 Staffeln, 552 Folgen"
-    ],
-    [
-     "Von",
-     "Dick Wolf"
-    ],
-    [
-     "Mit",
-     "Maura Tierney, David Ajala, James Badge Dale, Tony Goldwyn"
-    ],
-    [
-     "Sender/Dienst",
-     "NBC"
-    ],
-    [
-     "TMDB-Wertung",
-     "7.3 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=RzN8cPlcMTU",
-   "link": "https://www.themoviedb.org/tv/549",
-   "bild": "https://image.tmdb.org/t/p/w500/hmd2tEtjolLWpNLCTvXS2PO5VCi.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "Law & Order: SVU, Folge 600: Olivia Benson rollt alten Fall neu auf",
-     "link": "https://www.serienjunkies.de/news/serien/law-order-svu-folge-600-olivia-benson-rollt-alten-fall-neu-auf-94589021.html",
-     "datum": "2026-11-13T13:45:00.000Z"
-    },
-    {
-     "quelle": "Collider",
-     "art": "film",
-     "titel": "NBC Officially Announces New 'Law & Order' Replacement",
-     "link": "https://collider.com/nbc-law-and-order-replacement-great-gatsby-reboot-detective-series/",
-     "datum": "2026-10-30T18:18:47.000Z"
     }
    ]
   },
@@ -4897,62 +4872,33 @@
     }
    ]
   },
-  "tv-44006": {
-   "titel": "Chicago Fire",
-   "original": "Chicago Fire",
+  "tv-3034": {
+   "titel": "Tatort",
+   "original": "Tatort",
    "leitsatz": null,
-   "handlung": "Für die Feuerwehrmänner und Rettungssanitäter der Feuerwache 51 in Chicago sind Stress und Gefahren an der Tagesordnung. Die enorme Verantwortung, der sich die Alltagshelden aussetzen, macht auch vor dem Privatleben nicht halt. Matthew Casey, der Chef von Truck 81, steckt gerade mitten in einer Scheidung und sucht in seinem Job Ablenkung. Nach dem Tod eines Feuerwehrmanns gerät er mit Kelly Severide, dem Anführer von Rescue Squad 3, aneinander. Trotz gelegentlicher Scharmützel ist das Department für die meisten Teammitglieder wie eine Ersatzfamilie, zumal die bisweilen traumatischen Erlebnisse während der Einsätze für eine emotionale Bindung sorgen.",
+   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
    "genres": [
-    "Drama"
+    "Drama",
+    "Krimi"
    ],
    "fakten": [
     [
      "Umfang",
-     "15 Staffeln, 305 Folgen"
-    ],
-    [
-     "Von",
-     "Derek Haas, Michael Brandt"
-    ],
-    [
-     "Mit",
-     "Taylor Kinney, David Eigenberg, Christian Stolte, Miranda Rae Mayo"
+     "57 Staffeln, 1352 Folgen"
     ],
     [
      "Sender/Dienst",
-     "NBC"
+     "ORF 1, Das Erste"
     ],
     [
      "TMDB-Wertung",
-     "8.4 / 10"
+     "6.2 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=IIeSDILTE5M",
-   "link": "https://www.themoviedb.org/tv/44006",
-   "bild": "https://image.tmdb.org/t/p/w500/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
-   "news": [
-    {
-     "quelle": "Serienjunkies",
-     "art": "film",
-     "titel": "„Chicago Fire“ feiert 300. Folge: Joe Miñoso verlässt Serie nach 14 Jahren",
-     "link": "https://www.serienjunkies.de/news/serien/chicago-fire-joe-minoso-steigt-in-folge-300-bei-nbc-aus-94575529.html",
-     "datum": "2026-11-05T12:02:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "Joe Miñoso Talks Cruz’s Exit From ‘Chicago Fire,’ Storylines That Almost Happened  Plans To Direct",
-     "link": "https://deadline.com/2026/11/chicago-fire-joe-minoso-exit-interview-1237213901/",
-     "datum": "2026-11-05T03:02:00.000Z"
-    },
-    {
-     "quelle": "Deadline",
-     "art": "film",
-     "titel": "How Joe Miñoso Exits ‘Chicago Fire’ As Cruz In Season 15",
-     "link": "https://deadline.com/2026/11/joe-minoso-exit-cruz-chicago-fire-season-15-recap-1237211554/",
-     "datum": "2026-11-05T03:00:00.000Z"
-    }
-   ]
+   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
+   "link": "https://www.themoviedb.org/tv/3034",
+   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
+   "news": []
   },
   "tv-2190": {
    "titel": "South Park",
@@ -5026,219 +4972,62 @@
     }
    ]
   },
-  "tv-3034": {
-   "titel": "Tatort",
-   "original": "Tatort",
+  "tv-44006": {
+   "titel": "Chicago Fire",
+   "original": "Chicago Fire",
    "leitsatz": null,
-   "handlung": "Unter dem Titel Tatort sind streng genommen Dutzende von Krimiserien vereint. Jede ARD-Anstalt produziert innerhalb der Tatort-Reihe 90 Minuten lange Filme mit eigenen Ermittlern, die in der Regel Mordfälle aufzuklären haben. Auch das Schweizer und das Österreichische Fernsehen schicken eigene Polizisten ins Rennen.",
+   "handlung": "Für die Feuerwehrmänner und Rettungssanitäter der Feuerwache 51 in Chicago sind Stress und Gefahren an der Tagesordnung. Die enorme Verantwortung, der sich die Alltagshelden aussetzen, macht auch vor dem Privatleben nicht halt. Matthew Casey, der Chef von Truck 81, steckt gerade mitten in einer Scheidung und sucht in seinem Job Ablenkung. Nach dem Tod eines Feuerwehrmanns gerät er mit Kelly Severide, dem Anführer von Rescue Squad 3, aneinander. Trotz gelegentlicher Scharmützel ist das Department für die meisten Teammitglieder wie eine Ersatzfamilie, zumal die bisweilen traumatischen Erlebnisse während der Einsätze für eine emotionale Bindung sorgen.",
    "genres": [
-    "Drama",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "57 Staffeln, 1352 Folgen"
-    ],
-    [
-     "Sender/Dienst",
-     "ORF 1, Das Erste"
-    ],
-    [
-     "TMDB-Wertung",
-     "6.2 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=25xwL4s_tQU",
-   "link": "https://www.themoviedb.org/tv/3034",
-   "bild": "https://image.tmdb.org/t/p/w500/j73WOp6ArCy8vK4vreIdSunoXAr.jpg",
-   "news": []
-  },
-  "tv-65334": {
-   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
-   "original": "Miraculous, les aventures de Ladybug et Chat Noir",
-   "leitsatz": null,
-   "handlung": "Marinette und Adrien sind zwei Schüler – fast – wie andere auch. Bei der kleinsten Bedrohung von Paris werden sie zu Ladybug und Cat Noir. Ihre Mission: Die Akumas des mysteriösen Hawk Moth fangen, der die Pariser in Super-Bösewichte verwandelt. Obwohl die beiden Helden ein Team bilden, wissen sie wenig voneinander: Marinette weiß nicht, dass sich hinter Cat Noir Adrien verbirgt, der Junge, in den sie heimlich verliebt ist; und Adrien, dessen Herzen für Ladybug schlägt, ignoriert, dass sich hinter dem Kostüm der Superheldin das nette und zerstreute Mädchen aus seiner Klasse verbirgt",
-   "genres": [
-    "Action & Adventure",
-    "Animation",
-    "Kids"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "7 Staffeln, 181 Folgen"
-    ],
-    [
-     "Von",
-     "Thomas Astruc, Jeremy Zag"
-    ],
-    [
-     "Mit",
-     "Anouck Hautbois, Benjamin Bollen, Marie Nonnenmacher, Thierry Kazazian"
-    ],
-    [
-     "Sender/Dienst",
-     "TF1"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.1 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=xK9KUNoMQCc",
-   "link": "https://www.themoviedb.org/tv/65334",
-   "bild": "https://image.tmdb.org/t/p/w500/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
-   "news": []
-  },
-  "tv-85077": {
-   "titel": "The Chosen",
-   "original": "The Chosen",
-   "leitsatz": null,
-   "handlung": "Das Leben des Christus gesehen durch die Augen derer, die ihn kannten.",
-   "genres": [
-    "Action & Adventure",
-    "Familie",
     "Drama"
    ],
    "fakten": [
     [
      "Umfang",
-     "6 Staffeln, 46 Folgen"
+     "15 Staffeln, 305 Folgen"
     ],
     [
      "Von",
-     "Dallas Jenkins"
+     "Derek Haas, Michael Brandt"
     ],
     [
      "Mit",
-     "Elizabeth Tabish"
+     "Taylor Kinney, David Eigenberg, Christian Stolte, Miranda Rae Mayo"
     ],
     [
      "Sender/Dienst",
-     "Prime Video, VidAngel"
+     "NBC"
     ],
     [
      "TMDB-Wertung",
-     "8.9 / 10"
+     "8.4 / 10"
     ]
    ],
-   "trailer": "https://www.youtube.com/watch?v=D93sE9d-M38",
-   "link": "https://www.themoviedb.org/tv/85077",
-   "bild": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "trailer": "https://www.youtube.com/watch?v=IIeSDILTE5M",
+   "link": "https://www.themoviedb.org/tv/44006",
+   "bild": "https://image.tmdb.org/t/p/w500/c1gvOG6a4UWkP4d6IUomYdwGs4G.jpg",
    "news": [
     {
-     "quelle": "Collider",
+     "quelle": "Serienjunkies",
      "art": "film",
-     "titel": "Prime Video’s ‘The Chosen’ Christmas Special Officially Sets December Release Date",
-     "link": "https://collider.com/the-chosen-the-three-kings-release-date-fox-december-2026/",
-     "datum": "2026-11-12T12:00:12.000Z"
+     "titel": "„Chicago Fire“ feiert 300. Folge: Joe Miñoso verlässt Serie nach 14 Jahren",
+     "link": "https://www.serienjunkies.de/news/serien/chicago-fire-joe-minoso-steigt-in-folge-300-bei-nbc-aus-94575529.html",
+     "datum": "2026-11-05T12:02:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "Joe Miñoso Talks Cruz’s Exit From ‘Chicago Fire,’ Storylines That Almost Happened  Plans To Direct",
+     "link": "https://deadline.com/2026/11/chicago-fire-joe-minoso-exit-interview-1237213901/",
+     "datum": "2026-11-05T03:02:00.000Z"
+    },
+    {
+     "quelle": "Deadline",
+     "art": "film",
+     "titel": "How Joe Miñoso Exits ‘Chicago Fire’ As Cruz In Season 15",
+     "link": "https://deadline.com/2026/11/joe-minoso-exit-cruz-chicago-fire-season-15-recap-1237211554/",
+     "datum": "2026-11-05T03:00:00.000Z"
     }
    ]
-  },
-  "tv-45790": {
-   "titel": "JoJo's Bizarre Adventure",
-   "original": "ジョジョの奇妙な冒険",
-   "leitsatz": null,
-   "handlung": "Im England des Jahres 1880 nimmt der Adlige George Joestar seinen neuen Adoptivsohn bei sich auf: den jungen Dio Brando, dessen Vater Georges Leben vor 12 Jahren gerettet hat. Doch statt friedlich in seinem neuen Heim einzuziehen, möchte der in Armut großgewordene Dio die Joestar-Familie zerstören und ihren Status für sich gewinnen. Was als simple Fehde mit Georges Sohn Jonathan beginnt, entwickelt sich bald zu einem Konflikt, welcher weit über 100 Jahre andauert und sämtliche Generationen der Joestars in den Kampf gegen Vampire, aztekische Gottheiten, Nazis und gewitzte Serienmörder schickt.",
-   "genres": [
-    "Animation",
-    "Action & Adventure",
-    "Sci-Fi & Fantasy"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "6 Staffeln, 202 Folgen"
-    ],
-    [
-     "Mit",
-     "Shogo Sakata, Yohei Azakami, Kaito Ishikawa, Kenta Miyake"
-    ],
-    [
-     "Sender/Dienst",
-     "Netflix, TOKYO MX"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.6 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=2esDNWsLAXQ",
-   "link": "https://www.themoviedb.org/tv/45790",
-   "bild": "https://image.tmdb.org/t/p/w500/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
-   "news": []
-  },
-  "tv-303745": {
-   "titel": "Undercover-Liebe",
-   "original": "나의 유죄인간",
-   "leitsatz": null,
-   "handlung": "Yoon Yi-jun, der Erbe der Taekang-Gruppe, ist der Hauptverdächtige in einem Mordfall. Um die Wahrheit aufzudecken, schleust sich Kang Jae-hee als männlicher Sekretär ein. Doch je näher sie der Wahrheit kommen, desto näher kommen sich auch Yi-jun und Jae-hee. Werden Jae-hee, die ihre wahre Identität verbirgt, und Yi-jun, der ein Geheimnis hütet, einander ihre wahren Gefühle offenbaren?",
-   "genres": [
-    "Komödie",
-    "Drama",
-    "Krimi"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 12 Folgen"
-    ],
-    [
-     "Von",
-     "문수정"
-    ],
-    [
-     "Mit",
-     "임시완, Seol In-a, 김정현, 연우"
-    ],
-    [
-     "Sender/Dienst",
-     "tvN"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.9 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=Q7Xj7sASXSU",
-   "link": "https://www.themoviedb.org/tv/303745",
-   "bild": "https://image.tmdb.org/t/p/w500/fFcn3MngCVaQ19kAraXgmIOshN0.jpg",
-   "news": []
-  },
-  "tv-30983": {
-   "titel": "Detektiv Conan",
-   "original": "名探偵コナン",
-   "leitsatz": null,
-   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
-   "genres": [
-    "Animation",
-    "Krimi",
-    "Mystery",
-    "Komödie"
-   ],
-   "fakten": [
-    [
-     "Umfang",
-     "1 Staffel, 1221 Folgen"
-    ],
-    [
-     "Mit",
-     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
-    ],
-    [
-     "Sender/Dienst",
-     "YTV"
-    ],
-    [
-     "TMDB-Wertung",
-     "8.0 / 10"
-    ]
-   ],
-   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
-   "link": "https://www.themoviedb.org/tv/30983",
-   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
-   "news": []
   },
   "tv-58841": {
    "titel": "Chicago P.D.",
@@ -5290,6 +5079,227 @@
      "datum": "2026-10-29T20:11:11.000Z"
     }
    ]
+  },
+  "tv-65334": {
+   "titel": "Miraculous - Geschichten von Ladybug und Cat Noir",
+   "original": "Miraculous, les aventures de Ladybug et Chat Noir",
+   "leitsatz": null,
+   "handlung": "Marinette und Adrien sind zwei Schüler – fast – wie andere auch. Bei der kleinsten Bedrohung von Paris werden sie zu Ladybug und Cat Noir. Ihre Mission: Die Akumas des mysteriösen Hawk Moth fangen, der die Pariser in Super-Bösewichte verwandelt. Obwohl die beiden Helden ein Team bilden, wissen sie wenig voneinander: Marinette weiß nicht, dass sich hinter Cat Noir Adrien verbirgt, der Junge, in den sie heimlich verliebt ist; und Adrien, dessen Herzen für Ladybug schlägt, ignoriert, dass sich hinter dem Kostüm der Superheldin das nette und zerstreute Mädchen aus seiner Klasse verbirgt",
+   "genres": [
+    "Action & Adventure",
+    "Animation",
+    "Kids"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "7 Staffeln, 181 Folgen"
+    ],
+    [
+     "Von",
+     "Thomas Astruc, Jeremy Zag"
+    ],
+    [
+     "Mit",
+     "Anouck Hautbois, Benjamin Bollen, Marie Nonnenmacher, Thierry Kazazian"
+    ],
+    [
+     "Sender/Dienst",
+     "TF1"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.1 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=xK9KUNoMQCc",
+   "link": "https://www.themoviedb.org/tv/65334",
+   "bild": "https://image.tmdb.org/t/p/w500/2gIfJXgcz6N2wgOZ4qXoNKh0qFZ.jpg",
+   "news": []
+  },
+  "tv-30983": {
+   "titel": "Detektiv Conan",
+   "original": "名探偵コナン",
+   "leitsatz": null,
+   "handlung": "Conan Edogawa sieht aus wie ein Grundschüler. Tatsächlich ist er Shinichi Kudo, der 17-jährige Meisterdetektiv Japans, der von zwei Verbrechern vergiftet wurde. Er starb zwar nicht, entwickelte sich aber körperlich zum Kind zurück. Im Kopf ist er aber weiter der brillante Ermittler von einst und so stürzt er sich weiterhin auf geheimnisvolle Mordfälle.",
+   "genres": [
+    "Animation",
+    "Krimi",
+    "Mystery",
+    "Komödie"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "1 Staffel, 1221 Folgen"
+    ],
+    [
+     "Mit",
+     "Minami Takayama, Kappei Yamaguchi, Wakana Yamazaki, 岡村明美"
+    ],
+    [
+     "Sender/Dienst",
+     "YTV"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.0 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=wkmijEtcr4w",
+   "link": "https://www.themoviedb.org/tv/30983",
+   "bild": "https://image.tmdb.org/t/p/w500/1IfcpJRkSUnXbzy2ZVjHtxtqtdL.jpg",
+   "news": []
+  },
+  "tv-85077": {
+   "titel": "The Chosen",
+   "original": "The Chosen",
+   "leitsatz": null,
+   "handlung": "Das Leben des Christus gesehen durch die Augen derer, die ihn kannten.",
+   "genres": [
+    "Action & Adventure",
+    "Familie",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "7 Staffeln, 46 Folgen"
+    ],
+    [
+     "Von",
+     "Dallas Jenkins"
+    ],
+    [
+     "Mit",
+     "Elizabeth Tabish"
+    ],
+    [
+     "Sender/Dienst",
+     "Prime Video, VidAngel"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=D93sE9d-M38",
+   "link": "https://www.themoviedb.org/tv/85077",
+   "bild": "https://image.tmdb.org/t/p/w500/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
+   "news": [
+    {
+     "quelle": "Collider",
+     "art": "film",
+     "titel": "Prime Video’s ‘The Chosen’ Christmas Special Officially Sets December Release Date",
+     "link": "https://collider.com/the-chosen-the-three-kings-release-date-fox-december-2026/",
+     "datum": "2026-11-12T12:00:12.000Z"
+    }
+   ]
+  },
+  "tv-80748": {
+   "titel": "FBI",
+   "original": "FBI",
+   "leitsatz": null,
+   "handlung": "Die Agenten des New Yorker Büro des FBI arbeiten rund um die Uhr daran, die Stadt und ihr Land vor Terror, organisiertem Verbrechen und fremden Spionen zu beschützen. Unter der Leitung von Special Agent in Charge Dana Mosier setzt sich ihr Team aus verschiedenen Spezialisten mit einzigartigen Fähigkeiten zusammen.",
+   "genres": [
+    "Krimi",
+    "Action & Adventure",
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "9 Staffeln, 167 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Craig Turk"
+    ],
+    [
+     "Mit",
+     "Missy Peregrym, Zeeko Zaki, John Boyd, Jeremy Sisto"
+    ],
+    [
+     "Sender/Dienst",
+     "CBS"
+    ],
+    [
+     "TMDB-Wertung",
+     "7.9 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=r-btgaBL6-4",
+   "link": "https://www.themoviedb.org/tv/80748",
+   "bild": "https://image.tmdb.org/t/p/w500/br3xWBUu7W0dXsMev0XXVvoMxuE.jpg",
+   "news": []
+  },
+  "tv-45790": {
+   "titel": "JoJo's Bizarre Adventure",
+   "original": "ジョジョの奇妙な冒険",
+   "leitsatz": null,
+   "handlung": "Im England des Jahres 1880 nimmt der Adlige George Joestar seinen neuen Adoptivsohn bei sich auf: den jungen Dio Brando, dessen Vater Georges Leben vor 12 Jahren gerettet hat. Doch statt friedlich in seinem neuen Heim einzuziehen, möchte der in Armut großgewordene Dio die Joestar-Familie zerstören und ihren Status für sich gewinnen. Was als simple Fehde mit Georges Sohn Jonathan beginnt, entwickelt sich bald zu einem Konflikt, welcher weit über 100 Jahre andauert und sämtliche Generationen der Joestars in den Kampf gegen Vampire, aztekische Gottheiten, Nazis und gewitzte Serienmörder schickt.",
+   "genres": [
+    "Animation",
+    "Action & Adventure",
+    "Sci-Fi & Fantasy"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "6 Staffeln, 202 Folgen"
+    ],
+    [
+     "Mit",
+     "Shogo Sakata, Yohei Azakami, Kaito Ishikawa, Kenta Miyake"
+    ],
+    [
+     "Sender/Dienst",
+     "Netflix, TOKYO MX"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.6 / 10"
+    ]
+   ],
+   "trailer": "https://www.youtube.com/watch?v=2esDNWsLAXQ",
+   "link": "https://www.themoviedb.org/tv/45790",
+   "bild": "https://image.tmdb.org/t/p/w500/2Sc0veFPh9CcHMtNqMyiQqIW9ZF.jpg",
+   "news": []
+  },
+  "tv-62650": {
+   "titel": "Chicago Med",
+   "original": "Chicago Med",
+   "leitsatz": null,
+   "handlung": "Im täglichen Kampf gegen Krankheit und Tod müssen alle Mitarbeiter des modernsten Krankenhauses der Stadt an einem Strang ziehen. Zusammen stehen sie den medizinisch kompliziertesten Fällen Chicagos gegenüber und meistern moralische Dilemma mit Mut, Entschlossenheit und hochmodernen Behandlungsmethoden.",
+   "genres": [
+    "Drama"
+   ],
+   "fakten": [
+    [
+     "Umfang",
+     "12 Staffeln, 229 Folgen"
+    ],
+    [
+     "Von",
+     "Dick Wolf, Matt Olmstead"
+    ],
+    [
+     "Mit",
+     "Steven Weber, Jessy Schram, Luke Mitchell, Sarah Ramos"
+    ],
+    [
+     "Sender/Dienst",
+     "NBC"
+    ],
+    [
+     "TMDB-Wertung",
+     "8.3 / 10"
+    ]
+   ],
+   "trailer": null,
+   "link": "https://www.themoviedb.org/tv/62650",
+   "bild": "https://image.tmdb.org/t/p/w500/nw8jlrALg0m1PQbxNNLrDNAdxZj.jpg",
+   "news": []
   }
  }
 }
